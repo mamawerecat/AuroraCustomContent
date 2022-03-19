@@ -1,5 +1,5 @@
 # AuroraCustomContent
-Visit the <a href="aurorabuilder.com/">website</a> for more information about the Aurora character builder app.
+Visit the <a href="https://aurorabuilder.com/">website</a> for more information about the Aurora character builder app.
 
 
 <h1>Extending Content</h1>
