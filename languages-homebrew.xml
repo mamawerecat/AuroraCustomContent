@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	
+	<element name="Kandaoni" type="Language" source="Bohemian Trash Collective" id="ID_BTC_RMC_LANGUAGE_KANDAONI">
+		<supports>Exotic</supports>
+		<description>
+			<p>Typically spoken by the Kandaoni race.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Kandaoni</set>
+			<set name="script"></set>
+		</setters>
+	</element>
+
+	<element name="Walpurgian" type="Language" source="Bohemian Trash Collective" id="ID_BTC_RMC_LANGUAGE_WALPURGIAN">
+		<supports>Exotic</supports>
+		<description>
+			<p>Typically spoken on the continent of Walpurgis.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Walpurgians</set>
+			<set name="script"></set>
+		</setters>
+	</element>
+
+	<element name="Sycoraxi" type="Language" source="Bohemian Trash Collective" id="ID_BTC_RMC_LANGUAGE_SYCORAXI">
+		<supports>Exotic</supports>
+		<description>
+			<p>Typically spoken by the Sycoraxi race.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Sycoraxians</set>
+			<set name="script"></set>
+		</setters>
+	</element>
+
+	<element name="Anastasoi" type="Language" source="Bohemian Trash Collective" id="ID_BTC_RMC_LANGUAGE_ANASTASOI">
+		<supports>Exotic</supports>
+		<description>
+			<p>Typically spoken by the Anastasoi race.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Anastasoians</set>
+			<set name="script"></set>
+		</setters>
+	</element>
+    
+</elements>

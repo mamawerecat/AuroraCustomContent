@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<elements>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Ghoulhide CLOAK~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+    <element name="Ghoulhide Cloak" type="Magic Item" source="Red Masque Campaign" id="ID_BTC_RMC_MAGIC_ITEM_GHOULHIDE_CLOAK">
+		<description>
+			<p>When wearing this strange cloak of dark-and-pale leather, you are resistant to necrotic damage. In addition, you have advantage on deception and stealth checks against the undead.</p>
+		</description>
+		<setters>
+			<set name="keywords">cloak, Ghoulhide, necrotic</set>
+			<set name="category">Red Masque</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Cloak</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+        </rules>
+	</element>
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Ghoulhide armor~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+    <element name="Ghoulhide Armor" type="Magic Item" source="Red Masque Campaign" id="ID_BTC_RMC_MAGIC_ITEM_GHOULHIDE_ARMOR">
+		<description>
+			<p>When wearing this strange suit of dark-and-pale leather, you are resistant to necrotic damage. In addition, you have +1 to AC, and you have advantage on deception and stealth checks against the undead.</p>
+		</description>
+		<setters>
+			<set name="keywords">armor, Ghoulhide, necrotic</set>
+			<set name="category">Red Masque</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="slot">body</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+		</setters>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+        </rules>
+	</element>
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Medic's Bulwark~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+	<element name="Medic's Bulwark" type="Magic Item" source="Red Masque Campaign" id="ID_BTC_RMC_MAGIC_ITEM_MEDICS_BULWARK">
+		<description>
+			<p><em>The interior of this large shield is lined with pouches and leather sheathes. This shield adds +1 to ac in addition to what a shield normally grants.</em></p>
+			<p class="indent"> It can hold up to 4 potions and 4 scrolls and a medic's kit (though this can be substituted for another kit).</p> 
+			<p class="indent">In addition, when a healing spell is cast by the user, they may add their proficiency bonus to the spell. This can be done three times, and recharges within 24 hours.</p>
+		</description>
+		<setters>
+			<set name="keywords">shield</set>
+			<set name="category">Red Masque</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+		</setters>
+		<rules>
+			<stat name="ac:shield" value="1" bonus="enhancement" />
+		</rules>
+	</element>
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Plate of the Four~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+	<element name="Plate of the Four" type="Magic Item" source="Red Masque Campaign" id="ID_RMC_BTC_MAGIC_ITEM_PLATE_OF_THE_FOUR">
+		<description>
+			<p>This suit of plate armor is decorated with symbols of Death and Undeath. You gain a +1 to AC.</p>
+			<p class="indent">When wearing this armor, ritual casting time is cut in half.</p>
+			<p class ="indent"> In addition, roll 1d4 at the end of a long rest. This determines whether you are given necrotic, fire, cold, or poison resistance.</p>
+				<table>
+					<thead><tr><td>d4</td><td>Resistance</td></tr></thead>
+					<tr><td>1</td><td><em>Necrotic</em></td></tr>
+					<tr><td>2</td><td><em>Fire</em></td></tr>
+					<tr><td>3</td><td><em>Cold</em></td></tr>
+					<tr><td>4</td><td><em>Poison</em></td></tr>
+				</table>
+		</description>
+		<setters>
+			<set name="category">Red Masque</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="heavy">Armor</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+		</rules>
+	</element>
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Forcefire Bead~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+	<element name="Forcefire Bead" type="Magic Item" source="Red Masque Campaign" id="ID_BTC_RMC_MAGIC_ITEM_FORCEFIRE_BEAD">
+		<description>
+			<p><em>This small bead seems to glow slightly with a red hue, and is warm to touch. These were developed by an alchemist artificer from clan Sycorax. They are sometimes best used as grapeshot for cannons. A favored tactic for the dragon riders of Clan Solomonar and the Xang Imperium is to drop barrels of the things on enemy battalions and caravans and fortresses. </em></p>
+			<p class="indent"> You can use an action to throw the bead up to 60 feet. The bead explodes on impact and is destroyed. Each creature within a 10-foot radius of where the bead landed must succeed on a <em>DC 15 Dexterity saving throw</em>. Those that fail the role take <em><strong>4d4 force damage and 1d4 fire damage</strong></em> and then roll a 1d4 to see if they are made stunned, rendered prone, become deafened, or are knocked unconscious.</p>
+			<table>
+					<thead><tr><td>d4</td><td>Conidtion</td></tr></thead>
+					<tr><td>1</td><td><em>Stunned</em></td></tr>
+					<tr><td>2</td><td><em>Knocked Prone</em></td></tr>
+					<tr><td>3</td><td><em>Deafened</em></td></tr>
+					<tr><td>4</td><td><em>Knocked Unconscious</em></td></tr>
+				</table>
+		</description>
+		<setters>
+			<set name="keywords">Magic Item</set>
+			<set name="category">Red Masque</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type">Magic item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+
+	</element>
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Nyx's Salt Shaker~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+	<element name="Nyx's Salt Shaker" type="Magic Item" source="Red Masque Campaign" id="ID_RMC_BTC_MAGIC_ITEM_NYXS_SALT_SHAKER">
+		<description>
+			<p><em><strong>This might look like a simple salt shaker, but the contents have been bewitched to turn a bright shade of pink if sprinkled over food or drink that contains poison. Also makes food delicious!</strong></em></p>
+		</description>
+		<setters>
+			<set name="category">Red Masque</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Riegel’s Pocket of Perpetual Bacon~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+	<element name="Riegel’s Pocket of Perpetual Bacon" type="Magic Item" source="Red Masque Campaign" id="ID_RMC_BTC_MAGIC_ITEM_RIEGELS_POCKET_OF_PERPETUAL_BACON">
+		<description>
+			<p><em><strong>Creates 1d10 strips of bacon per day at dawn. Bacon does not stack, and uneaten bacon disappears at dawn the following day. Bacon is cooked exactly how you like it (chewy, crispy, burnt, or somewhere in between) and comes out at the perfect temperature. named for Sam Riegel (AKA Nott the Brave/Veth Bernato) on Critical role, the first to stuff bacon in a pocket </strong></em> </p>
+		</description>
+		<setters>
+			<set name="category">Red Masque</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+
+<!-- Infiniflask -->
+
+
+	<element name="Solina's Potion of Processing" type="Magic Item" source="Red Masque Campaign" id="ID_RMC_BTC_MAGIC_ITEM_SOLINA_POTION_OF_PROCESSING">
+		<description>
+			<p>Solina's Potion of Processing is a flask magically engraved with a tiefling drinking and falling down repeatedly. This flask is always full with the owner's alocohol and cannot be used to store anything other than alcohol. You can change the type of liquor stored after 1 hour of concentration.  </p>
+		</description>
+		<setters>
+			<set name="category">Red Masque</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+</elements>
+

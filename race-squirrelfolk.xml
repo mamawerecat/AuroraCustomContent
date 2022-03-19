@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<elements> 
+
+<!-- MAIN RACE -->
+
+	<element name="Squirrelfolk" type="Race" source="Red Masque Campaign" id="ID_BTC_RMC_RACE_SQUIRRELFOLK">
+
+			<description>
+				<p class="flavor">Squirrelfolk as a whole accept life only happens once, and should be lived in the moment as it comes, which is common among the children of the Fjeldheim lands, if not with a good deal more frenzy.</p>
+
+				<h4>SQUIRRELFOLK TRAITS</h4>
+
+					<p>Your Squirrelfolk character has a variety of natural abilities. </p>
+						<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 2.</p>
+						<p class="indent"><strong><em>Age.</em></strong> The Squirrelfolk mature quickly, within the span of a year, and live about as long as humans, if not a little less.</p>
+						<p class="indent"><strong><em>Alignment.</em></strong> They vacillate between neutral and chaotic .</p>
+						<p class="indent"><strong><em>Size.</em></strong> Your size is Small. This grants you advantage when hiding and fitting into small spaces.</p>
+						<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+						<p class="indent"><strong><em>Darkvision.</em></strong> You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.</p>
+						<p class="indent"><strong><em>Fleet-Footed.</em></strong> You are a race of able climbers, and have proficiency in athletics and acrobatics.</p>
+						<p class="indent"><strong><em>Fangs and Claws.</em></strong>  Your teeth and claws count as weapons, and you can use either to make an attack. You deal 1d4 plus your strength modifier piercing or slashing damage. </p>
+						<p class="indent"><strong><em>Large Cheeks.</em></strong> You can expand your cheeks into pouches, and hold a small amount of items in them, up to 8 + your strength modifier pounds. This also grants you advantage in holding your breath.  </p>
+						<p class="indent"><strong><em>Memory of the Messengers.</em></strong> You have advantage and proficiency in intelligence checks involving memory   </p>		
+						<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common, Sylvan, Giant </p>
+						<p class="indent"><strong><em>Subrace.</em></strong> Five main subraces: Brown, Black, Red, White, Grey. Choose one of these subraces.</p>
+			</description>
+
+			<sheet display="false" />
+
+			<rules>
+				<stat name="dexterity" value="2" />
+				<stat name="innate speed" value="30" bonus="base" />
+
+				<grant type="Size" id="ID_SIZE_SMALL" />
+				<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+				<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_UA20171113_SUB_RACE_GRUGACH" />
+
+
+	 			<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_FLEET_FOOTED" />
+				<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_FANGS_AND_CLAWS" />
+				<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_LARGE_CHEEKS" />
+				<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_MEMORY_OF_THE_MESSENGERS" />
+				<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_SMALL_STATURE" />
+				<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_SQUIRRELFOLK_SUBRACE" />
+			</rules>
+		</element>
+
+		<element name="Small Stature" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_SMALL_STATURE">
+			<description>
+				<p>Because of your size you have advantage on hiding and fitting into small spaces.</p>
+			</description>
+			<sheet>
+				<description>Because of your size you have advantage on hiding and fitting into small spaces.</description>
+			</sheet>
+		</element>
+
+		<element name="Fleet-Footed" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_FLEET_FOOTED">
+			<description>
+				<p>You have proficiency in the Athletics and Acrobatics skills.</p>
+			</description>
+			<sheet display="false">
+				<description>You have proficiency in the Athletics and Acrobatics skills.</description>
+			</sheet>
+			<rules>
+				<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+			</rules>
+		</element>
+
+		<element name="Fangs and Claws" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_FANGS_AND_CLAWS">
+			<description>
+				<p>Your teeth and claws count as weapons, and can use either to make a 1d4 + (your strength modifier) attack. </p>
+			</description>
+			<sheet> 
+				<description>Your teeth and claws count as weapons, and can use either to make a 1d4 + {{strength:modifier}} attack. </description>
+			</sheet>
+		</element>
+
+		<element name="Large Cheeks" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_LARGE_CHEEKS">
+			<description>
+				<p>You can expand your cheeks into pouches, and hold a small amount of items in them, up to 8 + (your strength modifier) pounds. This also grants you advantage in holding your breath.</p>
+			</description>
+			<sheet>
+				<description>You can expand your cheeks into pouches, and hold a small amount of items in them, up to 8 + {{strength:modifier}} pounds. This also grants you advantage in holding your breath.</description>
+			</sheet>
+		</element>
+
+		<element name="Memory of the Messengers" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_MEMORY_OF_THE_MESSENGERS">
+			<description>
+				<p>You have advantage on intelligence checks involving memory. In addition, you may add your proficiency bonus to these checks.</p>
+			</description>
+			<sheet>
+				<description>You have advantage on intelligence checks involving memory. In addition, you may add your proficiency bonus ({{proficiency}}) to your roll.</description>
+			</sheet>
+		</element>
+
+		<element name="Squirrelfolk Subrace" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_SQUIRRELFOLK_SUBRACE">
+			<description>
+				<p>There are five main subraces of Squirrelfolk: Brown Furs, Black Furs, White Furs, Red Furs, Grey Furs.</p>
+			</description>
+			<sheet display="false" />
+			<rules>
+				<select type="Sub Race" name="Squirrelfolk Subrace" supports="Squirrelfolk" />
+			</rules>
+		</element>
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Black Fur~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+		<element name="Black Fur" type="Sub Race" source="Red Masque Campaign" id="ID_BTC_RMC_SUB_RACE_BLACK_FUR">
+			<supports>Squirrelfolk</supports>
+
+				<description>
+					<p>The priests of the Squirrelfolk, the black furs are often zealous and fervent in their worship of the hero gods and the Great Tree, and are said to know when they are being lied to.</p>
+						<p class="indent"><strong><em>Ability Score Increase:</em></strong> Your Wisdom score increases by 1.</p>
+						<p class="indent"><strong><em>Whispers of the Divine: </em></strong> You are proficient in religion and insight. You have advantage when using insight to discern if someone is lying.</p>
+						<p class="indent"><strong><em>Gift of the Great Tree: </em></strong> You know one cantrip from the cleric spell list and the spell Goodberry, which you can cast once per long rest without expending a spell slot. </p>
+				</description>
+
+				<sheet display="false" />
+
+				<rules>
+					<stat name="wisdom" value="1" />
+					<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_WHISPERS_OF_THE_DIVINE" />
+					<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_GIFT_OF_THE_GREAT_TREE" />
+				</rules>
+		</element>
+
+		<element name="Whispers of the Divine" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_WHISPERS_OF_THE_DIVINE">
+			<description>
+				<p>You are proficient in religion and insight. You have advantage when using insight to discern if someone is lying.</p>
+			</description>
+			<sheet>
+				<description>You have advantage when using insight to discern if someone is lying.</description>
+			</sheet>
+			<rules>
+				<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			</rules>
+		</element>
+
+		<element name="Gift of the Great Tree" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_GIFT_OF_THE_GREAT_TREE">
+			<description>
+				<p>You know one cantrip from the cleric spell list and the spell Goodberry, which you can cast once per long rest without expending a spell slot.</p>
+			</description>
+			<sheet>
+				<description>You know the spell Goodberry and can cast it once per long rest without expending a spell slot.</description> 
+			</sheet>
+			<rules>
+				<select type="Spell" name="Cleric Cantrip (Gift of the Great Tree)" supports="0,Cleric" /> 
+				<grant type="Spell" id="ID_PHB_SPELL_GOODBERRY" level="1" />
+			</rules>
+		</element>
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~BROWN FUR~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+		<element name="Brown Fur" type="Sub Race" source="Red Masque Campaign" id="ID_BTC_RMC_SUB_RACE_BROWN_FUR">
+			<supports>Squirrelfolk</supports>
+				<description>
+					<p>The flying Brown Furs are regarded as risk takers and daredevils, and are notable for the wide membranes under their arms. Their coloriations are usually brown.</p>
+						<p class="indent"><strong><em>Ability Score Increase:</em></strong> Your Constitution score increases by 1.</p>
+						<p class="indent"><strong><em>High-Flyers:</em></strong> The membranes under your arms give you a flying speed of 30 feet, provided you are not wearing medium or heavy armor. You are also adapted to surviving in high-altitude environments, especially those with low oxygen or extreme cold, and you have proficiency in survival</p>
+						<p class="indent"><strong><em>Gift of the Flyer:</em></strong> You know the Feather Fall spell, and can cast it once per long rest.</p>
+				</description>
+
+				<sheet display="false" />
+
+				<rules>
+					<stat name="constitution" value="1" />
+					<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_HIGH_FLYERS" />
+					<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_GIFT_OF_THE_FLYER" />
+				</rules>
+		</element> 	
+
+		<element name="High Flyers" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_HIGH_FLYERS">
+			<description>
+				<p>The membranes under your arms give you a flying speed of 30 feet, provided you are not wearing medium or heavy armor. You are also adapted to surviving in high-altitude environments, especially those with low oxygen or extreme cold, and you have proficiency in survival</p>
+			</description>
+			<sheet display="false">
+				<description>The membranes under your arms give you a flying speed of 30 feet, provided you are not wearing medium or heavy armor. You are also adapted to surviving in high-altitude environments, especially those with low oxygen or extreme cold, and you have proficiency in survival</description>
+			</sheet>
+			<rules>
+				<stat name="innate speed:fly" value="30" bonus="base" equipped= "![armor:medium], ![armor:heavy]" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+			</rules>
+		</element>
+
+		<element name="Gift of the Flyer" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_GIFT_OF_THE_FLYER">
+			<description>
+				<p>You know the Feather Fall spell, and can cast it once per long rest.</p>
+			</description>
+			<sheet>
+				<description>You know the Feather Fall spell, and can cast it once per long rest.</description>
+			</sheet>
+			<rules>
+				<grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" level="1" />
+			</rules>
+		</element>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Grey Fur~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+		<element name="Grey Fur" type="Sub Race" source="Red Masque Campaign" id="ID_BTC_RMC_SUB_RACE_GREY_FUR">
+			<supports>Squirrelfolk</supports>
+				<description>
+					<p>The Grey furs are often considered the most noble of the squirrelfolk, and can often be found leading a clan or lodge, though they have to prove themselves just as much as any other.</p>
+						<p class="indent"><strong><em>Ability Score Increase:</em></strong> Your Charisma score increases by 1.</p>
+						<p class="indent"><strong><em>Leader's Eloquence: </em></strong> You have proficiency in Persuasion and Performance.</p>
+						<p class="indent"><strong><em>Rousing Prescence: </em></strong>You know the Heroism spell and can cast it once per long rest.</p>
+				</description>
+				<sheet display="false" />
+				<rules>
+					<stat name="charisma" value="1" />
+					<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_LEADERS_ELOQUENCE" />
+					<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_ROUSING_PRESCENCE" />
+				</rules>
+		</element>
+
+		<element name="Leader's Eloquence" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_LEADERS_ELOQUENCE">
+			<description>
+					<p>You have proficiency in Persuasion and Performance.</p>
+			</description>
+			<sheet display="false">
+				<description>You have proficiency in Persuasion and Performance.</description>
+			</sheet>
+			<rules>
+				<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+			</rules>
+		</element>
+
+		<element name="Rousing Prescence" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_ROUSING_PRESCENCE">
+			<description>
+				<p>You know the Heroism spell and can cast it once per long rest.</p>
+			</description>
+			<sheet>
+				<description>You know the Heroism spell and can cast it once per long rest.</description>
+			</sheet>
+			<rules>
+				<grant type="Spell" id="ID_PHB_SPELL_HEROISM" level="1" />
+			</rules>
+		</element>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~RED FUR~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+		<element name="Red Fur" type="Sub Race" source="Red Masque Campaign" id="ID_BTC_RMC_SUB_RACE_RED_FUR">
+			<supports>Squirrelfolk</supports>
+
+				<description>
+					<p>The largest and most boisterous of the Squirrelfolk, the Redfurs are more often those on the front lines of raids and wars. </p>
+						<p class="indent"><strong><em>Ability Score Increase:</em></strong> Your Strength score increases by 1.</p>
+						<p class="indent"><strong><em>Large Build:</em></strong> You count as one size larger when carrying large loads, and when it comes to weapons. In addition, you are proficient in intimidation, and you have advantage on intimidation checks.</p>
+						<p class="indent"><strong><em>Weapon Proficiency:</em></strong> You are proficient with the great axe and great sword.</p>
+				</description>
+
+				<sheet display="false" />
+
+				<rules>
+					<stat name="strength" value="1" />
+					<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_LARGE_BUILD" />
+					<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_RED_FUR_WEAPON_PROFICIENCY" />
+				</rules>
+		</element>
+
+		<element name="Large Build" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_LARGE_BUILD">
+			<description>
+				<p>You count as one size larger when carrying large loads, and when it comes to weapons. In addition, you are proficient in intimidation, and you have advantage on intimidation checks.</p>
+			</description>
+			<sheet>
+				<description>You count as one size larger when carrying large loads, and when it comes to weapons. In addition, you have advantage on intimidation checks.</description>
+			</sheet>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+
+				<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			</rules>
+		</element>
+
+		<element name="Weapon Proficiency" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_RED_FUR_WEAPON_PROFICIENCY">
+			<description>
+				<p>You are proficient with a great axe and greatsword.</p>
+			</description>
+			<sheet display="false">
+				<description>You are proficient with a great axe and greatsword.</description>
+			</sheet>
+			<rules>
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATAXE" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD" />
+			</rules>
+		</element>
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~White Fur~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+		<element name="White Fur" type="Sub Race" source="Red Masque Campaign" id="ID_BTC_RMC_SUB_RACE_WHITE_FUR">
+			<supports>Squirrelfolk</supports>
+
+				<description>
+					<p>The white furs are considered the most odd of the squirrelfolk, and are said to have knowledge of strange and arcane secrets.</p>
+						<p class="indent"><strong><em>Ability Score Increase: </em></strong>Your Intelligence score increases by 1.</p>
+						<p class="indent"><strong><em>Caster's Knowledge: </em></strong>You have proficiency in Arcana.</p>
+						<p class="indent"><strong><em>Touched by Magic: </em></strong>You know two cantrips and a first level spell of your choice from the wizard spellbook.</p>
+				</description>
+
+				<sheet display="false" />
+
+				<rules>
+					<stat name="intelligence" value="1" />
+					<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_CASTERS_KNOWLEDGE" />
+					<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_TOUCHED_BY_MAGIC" />
+				</rules>
+		</element>
+
+		<element name="Caster's Knowledge" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_CASTERS_KNOWLEDGE">
+			<description>
+				<p>You have proficiency in Arcana.</p>
+			</description>
+			<sheet display="false">
+				<description>You have proficiency in Arcana.</description>
+			</sheet>
+			<rules>
+				<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+			</rules>
+		</element>
+
+		<element name="Touched by Magic" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_TOUCHED_BY_MAGIC">
+			<description>
+				<p>You know two cantrips and a first level spell of your choice from the wizard spellbook.</p>
+			</description>
+			<sheet display="false">
+				<description>You know two cantrips and a first level spell of your choice from the wizard spellbook.</description>
+			</sheet>
+			<rules>
+				<select type="Spell" name="Wizard Cantrip (White Fur)" supports="0,Wizard" number="2" />
+				<select type="Spell" name="1st-level Spell (White Fur)" supports="1,Wizard" />
+			</rules>
+		</element>
+
+
+
+</elements>
