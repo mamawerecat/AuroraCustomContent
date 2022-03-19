@@ -10,7 +10,11 @@
 	</info>
 	<files>
 		
-    <file name="items-homebrew-weapons.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Red%20Masque%20Campaign/items-homebrew-weapons.xml" />
-
+    		<file name="items-homebrew-weapons.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Red%20Masque%20Campaign/items-homebrew-weapons.xml" />
+		<file name="items-homebrew.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Red%20Masque%20Campaign/items-homebrew.xml" />
+		<file name="languages-homebrew.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Red%20Masque%20Campaign/languages-homebrew.xml" />
+		<file name="race-bloodblessed.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Red%20Masque%20Campaign/race-bloodblessed.xml" />
+		<file name="race-squirrelfolk.index" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Red%20Masque%20Campaign/race-squirrelfolk.xml" />
+		<file name="race-valkori.index" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Red%20Masque%20Campaign/race-valkori.xml" />
 	</files>
 </index>
