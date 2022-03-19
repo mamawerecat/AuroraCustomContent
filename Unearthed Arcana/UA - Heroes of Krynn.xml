@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <elements>
+	
+    <info>
+        <name>Ua: Heroes of Krynn (2022)</name>
+        <update version="0.0.4">
+            <file name="UA - Heroes of Krynn.xml" url="https://github.com/mamawerecat/AuroraCustomContent/blob/20a0ef3ae4c1261b832c636b529f111b3f22d26e/UA%20-%20Heroes%20of%20Krynn.xml" />
+        </update>
+    </info>
 
 <!-- Kender Race -->
 
