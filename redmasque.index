@@ -5,7 +5,7 @@
 		<description>Red Masque Campaign homebrew content</description>
 		<author>Bohemian Trash Collective</author>
 		<update version="0.0.1">
-			<file name="redmasque.index" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/supplements.index" />
+			<file name="redmasque.index" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/redmasque.index" />
 		</update>
 	</info>
 	<files>
