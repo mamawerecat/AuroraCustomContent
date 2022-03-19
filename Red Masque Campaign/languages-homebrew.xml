@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+	<info>
+		<name>Languages</name>
+		<description>Red Masque Campaign Languages</description>
+		<author>Bohemian Trash Collective</author>
+		<update version="0.0.1">
+				 <file name="languages-homebrew.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/languages-homebrew.xml" />
+		</update>
+	</info>
 	
 	<element name="Kandaoni" type="Language" source="Bohemian Trash Collective" id="ID_BTC_RMC_LANGUAGE_KANDAONI">
 		<supports>Exotic</supports>
