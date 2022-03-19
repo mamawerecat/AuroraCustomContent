@@ -5,7 +5,7 @@
     <info>
         <name>UA: Heroes of Krynn (2022)</name>
         <update version="0.0.1">
-            <file name="UA - Heroes of Krynn.xml" url="https://github.com/mamawerecat/AuroraCustomContent/blob/8914a1317e8540740a6123591906a59e6c96ad6d/Unearthed%20Arcana/HeroesofKrynn.xml" />
+            <file name="HeroesofKrynn.xml" url="https://github.com/mamawerecat/AuroraCustomContent/blob/8914a1317e8540740a6123591906a59e6c96ad6d/Unearthed%20Arcana/HeroesofKrynn.xml" />
         </update>
     </info>
 
