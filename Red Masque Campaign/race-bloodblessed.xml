@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Bloodblessed Race</name>
-		<description>Red Masque Campaign Homebrew Weapons</description>
+		<description>Bloodblessed Race</description>
 		<author>Bohemian Trash Collective</author>
 		<update version="0.0.1">
 				 <file name="race-bloodblessed.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Red%20Masque%20Campaign/race-bloodblessed.xml" />
