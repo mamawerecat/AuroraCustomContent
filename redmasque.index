@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Red Masque</name>
+		<description>Red Masque Campaign homebrew content</description>
+		<author>Bohemian Trash Collective</author>
+		<update version="0.0.1">
+			<file name="redmasque.index" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/supplements.index" />
+		</update>
+	</info>
+	<files>
+		
+    <file name="items-homebrew-weapons.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Red%20Masque%20Campaign/items-homebrew-weapons.xml" />
+
+	</files>
+</index>
