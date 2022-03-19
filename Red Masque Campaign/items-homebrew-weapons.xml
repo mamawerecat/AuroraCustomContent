@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+	<info>
+		<name>Weapons</name>
+		<description>Red Masque Campaign Homebrew Weapons</description>
+		<author>Bohemian Trash Collective</author>
+		<update version="0.0.1">
+				 <file name="items-homebrew-weapons.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Red%20Masque%20Campaign/items-homebrew-weapons.xml" />
+		</update>
+	</info>
+				
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~BASTARDSWORD~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
