@@ -8,4 +8,5 @@ Go to the Additional Content tab in Aurora, enter the URL of the index file, and
 <h2>My index files:</h2>
 <ul>
   <li>https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Unearthed%20Arcana/unearthed-arcana.index</li>
+  <li>https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/redmasque.index</li>
 </ul>
