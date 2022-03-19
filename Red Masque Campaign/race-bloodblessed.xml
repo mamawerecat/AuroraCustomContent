@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-
+	<info>
+		<name>Bloodblessed Race</name>
+		<description>Red Masque Campaign Homebrew Weapons</description>
+		<author>Bohemian Trash Collective</author>
+		<update version="0.0.1">
+				 <file name="race-bloodblessed.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Red%20Masque%20Campaign/race-bloodblessed.xml" />
+		</update>
+	</info>
+	
+	
 <!-- MAIN RACE -->
 
     <element name="Bloodblessed" type="Race" source="Red Masque Campaign" id="ID_BTC_RMC_RACE_BLOODBLESSED">
