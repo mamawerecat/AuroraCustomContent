@@ -6,7 +6,7 @@
 		<name>Items</name>
 		<description>Red Masque Campaign Homebrew</description>
 		<author>Bohemian Trash Collective</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 				 <file name="items-homebrew.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Red%20Masque%20Campaign/items-homebrew.xml" />
 		</update>
 	</info>
@@ -120,7 +120,7 @@
 	<element name="Forcefire Bead" type="Magic Item" source="Red Masque Campaign" id="ID_BTC_RMC_MAGIC_ITEM_FORCEFIRE_BEAD">
 		<description>
 			<p><em>This small bead seems to glow slightly with a red hue, and is warm to touch. These were developed by an alchemist artificer from clan Sycorax. They are sometimes best used as grapeshot for cannons. A favored tactic for the dragon riders of Clan Solomonar and the Xang Imperium is to drop barrels of the things on enemy battalions and caravans and fortresses. </em></p>
-			<p class="indent"> You can use an action to throw the bead up to 60 feet. The bead explodes on impact and is destroyed. Each creature within a 10-foot radius of where the bead landed must succeed on a <em>DC 15 Dexterity saving throw</em>. Those that fail the role take <em><strong>4d4 force damage and 1d4 fire damage</strong></em> and then roll a 1d4 to see if they are made stunned, rendered prone, become deafened, or are knocked unconscious.</p>
+			<p class="indent"> You can use an action to throw the bead up to 60 feet. The bead explodes on impact and is destroyed. Each creature within a 10-foot radius of where the bead landed must succeed on a <em>DC 15 Dexterity saving throw</em>. Those that fail the role take <em><strong>4d4 force damage and 1d4 fire damage</strong></em> and then roll a 1d4 to see if they are stunned, rendered prone, become deafened, or are knocked unconscious.</p>
 			<table>
 					<thead><tr><td>d4</td><td>Conidtion</td></tr></thead>
 					<tr><td>1</td><td><em>Stunned</em></td></tr>
@@ -179,7 +179,7 @@
 
 	<element name="Solina's Potion of Processing" type="Magic Item" source="Red Masque Campaign" id="ID_RMC_BTC_MAGIC_ITEM_SOLINA_POTION_OF_PROCESSING">
 		<description>
-			<p>Solina's Potion of Processing is a flask magically engraved with a tiefling drinking and falling down repeatedly. This flask is always full with the owner's alocohol and cannot be used to store anything other than alcohol. You can change the type of liquor stored after 1 hour of concentration.  </p>
+			<p>Solina's Potion of Processing is a flask magically engraved with a tiefling drinking and falling down repeatedly. This flask is always full with the owner's alcohol and cannot be used to store anything other than alcohol. You can change the type of liquor stored after 1 hour of concentration.  </p>
 		</description>
 		<setters>
 			<set name="category">Red Masque</set>
