@@ -4,7 +4,7 @@
 	
     <info>
         <name>UA: Heroes of Krynn (2022)</name>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="HeroesofKrynn.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Unearthed%20Arcana/2022/HeroesofKrynn.xml" />
         </update>
     </info>
@@ -95,8 +95,13 @@
 					<p>You have a supernatural ability to home in on a creature’s emotional raw nerves and craft a taunt that flusters that creature. As a bonus action, you can unleash a barrage of insults at a creature within 60 feet of you that can hear and understand you. The target must succeed on a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Charisma modifier), or it has disadvantage on attack rolls until the start of your next turn.You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
 				</description>
 				<sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
-					<description>As a bonus action, you can unleash a barrage of insults at a creature within 60 feet of you that can hear and understand you. The target must succeed on a Wisdom saving throw (DC equal to 8 + {{proficiency}} + {{charisma:modifier}}), or it has disadvantage on attack rolls until the start of your next turn.You can use this bonus action {{proficiency}} times, and you regain all expended uses when you finish a long rest.</description>
+					<description>As a bonus action, you can unleash a barrage of insults at a creature within 60 feet of you that can hear and understand you. The target must succeed on a Wisdom saving throw (DC equal to {{kender taunt:dc}}), or it has disadvantage on attack rolls until the start of your next turn.You can use this bonus action {{proficiency}} times, and you regain all expended uses when you finish a long rest.</description>
 				</sheet>
+				<rules>
+			        	<stat name="kender taunt:dc" value="8" />
+			        	<stat name="kender taunt:dc" value="proficiency" />
+			        	<stat name="kender taunt:dc" value="charisma:modifier" />
+		        	</rules>
 			</element>
 		<!-- Kender - Racial Trait - ASI Options -->
 			<!-- Kender - Racial Trait - ASI - 2,1 -->
