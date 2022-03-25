@@ -193,7 +193,7 @@
 					<tr><td>9th</td><td><em>Mass Cure Wounds</em></td></tr>
 				</table>
 
-    	        <table>
+    	        		<table>
 					<thead>
 						<tr><td>Sorcererer Level</td><td>New Moon Spells</td></tr>
 					</thead>
@@ -204,7 +204,7 @@
 						<tr><td>9th</td><td><em>Mislead</em></td></tr>
 				</table>
 
-    	        <table>
+    	        		<table>
 					<thead>
 						<tr><td>Sorcererer Level</td><td>Crescent Moon Spells</td></tr>
 					</thead>
@@ -221,9 +221,9 @@
 					<p class="indent">
 						<em>Full Moon</em>: Faerie Fire, Moonbeam, Death Ward, Freedom of Movement
 						<em>New Moon</em>: Dissonant Whispers, Darkness, Bestow Curse, Evard's Black Tentacles, Mislead
-    	        		<em>Crescent Moon</em>: Sanctuary, Blindness/Deafness, Phantom Steed, Hallucinatory Terrain, Dream
+    	        				<em>Crescent Moon</em>: Sanctuary, Blindness/Deafness, Phantom Steed, Hallucinatory Terrain, Dream
 					</p>	
-    	        </description>
+    	        		</description>
 			</sheet>
 			<rules>
 				<grant type="Spell" name="Lunar Magic (Full Moon Spell)" id="ID_PHB_SPELL_FAERIE_FIRE" level="1" spellcasting="Sorcererer" />
