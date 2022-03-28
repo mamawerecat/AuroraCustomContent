@@ -9,4 +9,5 @@ Go to the Additional Content tab in Aurora, enter the URL of the index file, and
 <ul>
   <li>https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Unearthed%20Arcana/unearthed-arcana.index</li>
   <li>https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/redmasque.index</li>
+  <li>https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/taldorei-reborn.index</li>
 </ul>
