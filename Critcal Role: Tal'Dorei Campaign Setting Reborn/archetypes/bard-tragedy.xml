@@ -27,7 +27,7 @@
                 <grant type="Archetype Feature" id="ID_TALDOREI_CR_ARCHETYPE_FEATURE_BARD_COLLEGE_OF_TRAGEDY_IMPENDING_MISFORTUNE" level="6" />
                 <grant type="Archetype Feature" id="ID_TALDOREI_CR_ARCHETYPE_FEATURE_BARD_COLLEGE_OF_TRAGEDY_NIMBUS_OF_PATHOS" level="14" />
             </rules>
-        </element>
+    </element>
 
         <!-- College of Tragedy Archetype Feature Poetry in Misery -->
         
@@ -79,7 +79,8 @@
                 </sheet>
             </element>
         
-        <!-- College of Tragedy Archetype Feature Nimbus of Pathos -->
+       
+    <!-- College of Tragedy Archetype Feature Nimbus of Pathos -->
 
             <element name="Nimbus of Pathos" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_ARCHETYPE_FEATURE_BARD_COLLEGE_OF_TRAGEDY_NIMBUS_OF_PATHOS">
                 <description>
