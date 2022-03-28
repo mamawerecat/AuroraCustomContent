@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="source.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide/source.xml" />
+			<file name="source.xml" url=https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%3A%20Tal'Dorei%20Campaign%20Setting%20Reborn/source.xml" />
 		</update>
 	</info>
 	<element name="Tal'Dorei Campaign Setting Reborn" type="Source" source="Core" id="ID_TALDOREI_CRITCAL_ROLE">
