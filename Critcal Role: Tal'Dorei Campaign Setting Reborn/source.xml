@@ -14,7 +14,7 @@
 			<set name="url">https://darringtonpress.com/taldorei-campaign-setting-reborn/</set>
 			<set name="image">https://darringtonpress.com/wp-content/uploads/2021/12/TDR-Lifestyle-Book-and-Map-watermarked.jpg</set>
 			<set name="author" abbreviation="CR" url="https://critrole.com/">Critcal Role</set>
-      <set name="third party">true</set>
+      			<set name="third-party">true</set>
 			<set name="release">20140930</set>
 		</setters>
 	</element>
