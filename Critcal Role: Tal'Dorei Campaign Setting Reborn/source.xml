@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide/source.xml" />
+		</update>
+	</info>
+	<element name="Tal'Dorei Campaign Setting Reborn" type="Source" source="Core" id="ID_TALDOREI_CRITCAL_ROLE">
+		<description>
+			<![CDATA[<p><strong>Tal’Dorei Campaign Setting Reborn is the definitive sourcebook for bringing the locations, people, creatures, and character options of Critical Role‘s Tal’Dorei continent to roleplaying games everywhere.</strong></p><p>An outstanding team of designers and artists have created an unparalleled resource for playing in and learning about this iconic locale from the hit series Critical Role.</0p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">TCSR</set>
+			<set name="url">https://darringtonpress.com/taldorei-campaign-setting-reborn/</set>
+			<set name="image">https://darringtonpress.com/wp-content/uploads/2021/12/TDR-Lifestyle-Book-and-Map-watermarked.jpg</set>
+			<set name="author" abbreviation="CR" url="https://critrole.com/">Critcal Role</set>
+      <set name="third party">true</set>
+			<set name="release">20140930</set>
+		</setters>
+	</element>
+</elements>
