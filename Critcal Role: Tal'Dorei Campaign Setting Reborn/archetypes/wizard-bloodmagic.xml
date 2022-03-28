@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Wizard Blood Magic</name>
+        <update version="0.0.1">
+            <file name="wizard-bloodmagic.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/Untitled-1" />
+        </update>
+    </info>
+
+     <!-- Wizard - Blood Magic -->
+
+        <element name="Blood Magic" type="Archetype" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_ARCHETYPE_BLOOD_MAGIC">
+            <supports>Arcane Tradition</supports>
+            <description>
+                <p>Considered taboo by many societies and magic practitioners, the use of blood magic—also known as hemocraft—is a rare art that harnesses the latent powers of a creature’s vitality to fuel and amplify the caster’s own capabilities, while manipulating and weakening the bodies of enemies from the inside. Some of the more macabre mages seeking to empower their arcane pursuits turn to hemocraft as a means of bolstering their spells, giving their own life’s blood to reach new heights of frightening magical prowess.</p>
+                <p class="indent">The secrets of hemocraft and other forms of blood magic were once the sole purview of the mysterious Claret Orders. In recent years, however, these secrets have begun to spread beyond the order’s members and into the hands of less scrupulous mages. Blood magic has a bad reputation in Tal’Dorei, even though its powers can be used for much more than evil.</p>
+                <div element="ID_TALDOREI_CR_ARCHETYPE_FEATURE_BLOOD_MAGIC_BLOOD_CHANNELING" />
+                <div element="ID_TALDOREI_CR_ARCHETYPE_FEATURE_BLOOD_MAGIC_SANGUINE_BURST" />
+                <div element="ID_TALDOREI_CR_ARCHETYPE_FEATURE_BLOOD_MAGIC_BOND_OF_MUTUAL_SUFFERING" />
+                <div element="ID_TALDOREI_CR_ARCHETYPE_FEATURE_BLOOD_MAGIC_GLYPH_OF_HEMORRHAGING" />
+                <div element="ID_TALDOREI_CR_ARCHETYPE_FEATURE_BLOOD_MAGIC_THICKER_THAN_WATER" />
+            </description>
+            <sheet display="false"/>
+            <rules>
+                <grant type="Archetype Feature" id="ID_TALDOREI_CR_ARCHETYPE_FEATURE_BLOOD_MAGIC_BLOOD_CHANNELING" level="2" />
+                <grant type="Archetype Feature" id="ID_TALDOREI_CR_ARCHETYPE_FEATURE_BLOOD_MAGIC_SANGUINE_BURST" level="2" />
+                <grant type="Archetype Feature" id="ID_TALDOREI_CR_ARCHETYPE_FEATURE_BLOOD_MAGIC_BOND_OF_MUTUAL_SUFFERING" level="6" />
+                <grant type="Archetype Feature" id="ID_TALDOREI_CR_ARCHETYPE_FEATURE_BLOOD_MAGIC_GLYPH_OF_HEMORRHAGING" level="10" />
+                <grant type="Archetype Feature" id="ID_TALDOREI_CR_ARCHETYPE_FEATURE_BLOOD_MAGIC_THICKER_THAN_WATER" level="14" />
+            </rules>
+        </element>
+
+            <!-- Blood Magic Archetype Feature Blood Channeling -->
+
+                <element name="Blood Channeling" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_ARCHETYPE_FEATURE_BLOOD_MAGIC_BLOOD_CHANNELING">
+                    <description>
+                        <p><em>2nd-level Blood Magic feature</em></p>
+                        <p>When you choose this arcane tradition at 2nd level, you are able to use your own depleted life essence to channel your magical abilities. Whenever your current hit points are below your hit point maximum, you can use your own body as an arcane focus. In addition, when casting a wizard spell that requires a costly material component, you can forego the component by taking 1d10 necrotic damage per 50 gp of the cost of the component (minimum 1d10).</p>
+                        <p class="indent">This damage can’t be reduced in any way. If this damage reduces you to 0 hit points, the spell fails but the spell slot is not expended.</p>
+                    </description>
+                    <sheet>
+                        <description>Whenever your current hit points are below your hit point maximum, you can use your own body as an arcane focus. In addition, when casting a wizard spell that requires a costly material component, you can forego the component by taking 1d10 necrotic damage per 50 gp of the cost of the component (minimum 1d10).This damage can’t be reduced in any way. If this damage reduces you to 0 hit points, the spell fails but the spell slot is not expended.</description>
+                    </sheet>
+                </element>
+
+            <!-- Blood Magic Archetype Feature Sanguine Burst -->
+
+                <element name="Sanguine Burst" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_ARCHETYPE_FEATURE_BLOOD_MAGIC_SANGUINE_BURST">
+                    <description>
+                        <p><em>2nd-level Blood Magic feature</em></p>
+                        <p>Whenever you roll damage for a spell you’ve cast of 1st level or higher, you can choose to take necrotic damage equal to the spell’s level to reroll a number of the damage dice up to your Intelligence modifier (minimum one). This damage can’t be reduced in any way, and you must use the new rolls.</p>
+                    </description>
+                    <sheet>
+                        <description>Whenever you roll damage for a spell you’ve cast of 1st level or higher, you can choose to take necrotic damage equal to the spell’s level to reroll a number of the damage dice up to {{intelligence:modifier}}. This damage can’t be reduced in any way, and you must use the new rolls.</description>
+                    </sheet>
+                </element>
+
+            <!-- Blood Magic Archetype Feature Bond of Mutual Suffering -->
+
+                <element name="Bond of Mutual Suffering" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_ARCHETYPE_FEATURE_BLOOD_MAGIC_BOND_OF_MUTUAL_SUFFERING">
+                    <description>
+                        <p><em>6th-level Blood Magic feature</em></p>
+                        <p>When a creature you can see hits you with an attack, you can use your reaction to bind your vitality to the attacker and force them to share your pain. The attacker takes damage equal to the damage you took.</p>
+                        <p class="indent">This feature cannot be used against constructs or undead. You can use this feature once. You must finish a short or long rest before you can use it again. At 14th level, you can use this feature twice between rests.</p>
+                    </description>
+                    <sheet alt="Bond of Mutual Suffering" action="Reaction">
+                        <description usage="1/Short Rest" level="6">When a creature you can see hits you with an attack, you can use your reaction to bind your vitality to the attacker and force them to share your pain. The attacker takes damage equal to the damage you took. This feature cannot be used against constructs or undead.</description>
+                        <description usage="2/Short Rest" level="14">When a creature you can see hits you with an attack, you can use your reaction to bind your vitality to the attacker and force them to share your pain. The attacker takes damage equal to the damage you took. This feature cannot be used against constructs or undead.</description>
+                    </sheet>
+                </element>
+
+            <!-- Blood Magic Archetype Feature Glyph of Hemorrhaging -->
+
+                <element name="Glyph of Hemorrhaging" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_ARCHETYPE_FEATURE_BLOOD_MAGIC_GLYPH_OF_HEMORRHAGING">
+                    <description>
+                        <p><em>10th-level Blood Magic feature</em></p>
+                        <p>When you damage a creature with a spell, you can choose to curse that creature for 1 minute. While cursed in this way, whenever the creature is hit by an attack, it takes an extra 1d6 necrotic damage. At the end of each of the creature’s turns, it can make a Constitution saving throw against your spell save DC, ending the curse on a success.</p>
+                        <p class="indent">This feature cannot be used against creatures that are undead or constructs. Once you use this feature, you can’t use it again until you finish a short or long rest.</p>
+                    </description>
+                    <sheet alt="Glyph of Hemorrhaging" usage="1/Short Rest">
+                        <description>When you damage a creature with a spell, you can choose to curse that creature for 1 minute. While cursed in this way, whenever the creature is hit by an attack, it takes an extra 1d6 necrotic damage. At the end of each of the creature’s turns, it can make a Constitution saving throw DC {{spellcasting:dc}}, ending the curse on a success. This feature cannot be used against creatures that are undead or constructs.</description>
+                    </sheet>
+                </element>
+            <!-- Blood Magic Archetype Feature Thicker than Water -->
+
+                <element name="Thicker Than Water" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_ARCHETYPE_FEATURE_BLOOD_MAGIC_THICKER_THAN_WATER">
+                    <description>
+                        <p><em>14th-level Blood Magic feature</em></p>
+                        <p>The blood that flows through your veins is empowered with arcane vigor that mends wounds and helps preserve your life. Whenever a spell or magical effect causes you to regain hit points, you regain an additional number of hit points equal to your proficiency bonus.</p>
+                        <p class="indent">In addition, while you are concentrating on a spell, you have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.</p>
+                    </description>
+                    <sheet>
+                        <description>The blood that flows through your veins is empowered with arcane vigor that mends wounds and helps preserve your life. Whenever a spell or magical effect causes you to regain hit points, you regain an additional {{proficiency}} hit points. In addition, while you are concentrating on a spell, you have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.</description>
+                    </sheet>
+                </element>
+
+</elements>
