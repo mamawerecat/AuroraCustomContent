@@ -2,13 +2,11 @@
 <elements>
     <info>
         <name>Whitestone Rifle Corps Background</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="whitestone-rifle-corps.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%3A%20Tal'Dorei%20Campaign%20Setting%20Reborn/backgrounds/whitestone-rifle-corps.xml" />
         </update>
     </info>
     
-<!-- source="Tal'Dorei Campaign Setting Reborn" -->
-<!-- ID_TALDOREI_CR_ -->
 
     <element name="Whitestone Rifle Corps" type="Background" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_BACKGROUND_WHITESTONE_RIFLE_CORPS">
         <description>
@@ -90,7 +88,7 @@
 
 
         <!-- Feature: Legacy of Secrecy -->
-            <element name="Feature: Legacy of Secrecy" type="Background Feature" source="Tal'Dorei Campaign Setting Reborn id="ID_BACKGROUND_FEATURE_LEGACY_OF_SECRECY">
+            <element name="Feature: Legacy of Secrecy" type="Background Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_BACKGROUND_FEATURE_LEGACY_OF_SECRECY">
                 <description>
                     <p>You have been entrusted with the use and care of a weapon both powerful and terrifying. The rifle you wield might transform the face of warfare and life in Tal’Dorei. It is a weapon that haunts the mind of its creator, Percival de Rolo, manifesting as a pain that lives always behind his kind eyes.</p>
                     <p class="indent">You were granted a musket or a pistol (as described in the fifth edition core rules) by your commander in the Whitestone Rifle Corps. This weapon is a symbol of your status, and when you display it, other folk around you—particularly adventurers, mercenaries, guards, engineers, and weapons enthusiasts—treat you differently. You might be seen as a noble defender of the people, a selfish hoarder of power, or anything in between, at the GM’s discretion.</p>
