@@ -4,7 +4,7 @@
 		<name>Critical Role: Tal'Dorei Campaign Setting Reborn</name>
 		<description>The Tal’Dorei Campaign Setting Reborn is a sourcebook from Darrington Press. It expands on the Critical Role: Tal'Dorei Campaign Setting sourcebook.</description>
 		<author url="https://darringtonpress.com/taldorei-campaign-setting-reborn/">Critical Role, Darrington Press</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="taldorei-reborn.index" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/taldorei-reborn.index" />
 		</update>
 	</info>
@@ -25,6 +25,9 @@
 		
 		<!--Backgrounds-->
 		<file name="ashari.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%3A%20Tal'Dorei%20Campaign%20Setting%20Reborn/backgrounds/ashari.xml" />
+		<file name="clasp-member.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%3A%20Tal'Dorei%20Campaign%20Setting%20Reborn/backgrounds/clasp-member.xml" />
+		<file name="lyceum-scholar.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%3A%20Tal'Dorei%20Campaign%20Setting%20Reborn/backgrounds/lyceum-scholar.xml" />
+		<file name="reformed-cultist.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%3A%20Tal'Dorei%20Campaign%20Setting%20Reborn/backgrounds/reformed-cultist.xml" />
 		
 		<!--Spells-->
 		<file name="taldorei-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%3A%20Tal'Dorei%20Campaign%20Setting%20Reborn/taldorei-spells.xml" />
