@@ -8,7 +8,7 @@
     </info>
     <!-- source="Tal'Dorei Campaign Setting Reborn" -->
 
-    <element name="Reformed Cultist" type="Background" source="source" id="ID_TALDOREI_CR_BACKGROUND_REFORMED_CULTIST">
+    <element name="Reformed Cultist" type="Background" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_BACKGROUND_REFORMED_CULTIST">
         <description>
             <p>Two pantheons have battled over the fate of Exandria since the world’s founding—the Prime Deities and the Betrayer Gods. During the Calamity, the Prime Deities allied themselves with the mortal races of Exandria, their original creations, to protect their flawed world and its multifarious forms of life. The Betrayers sought to wipe the slate clean. </p>
             <p class="indent">At the end of that devastating war, the Prime Deities established a Divine Gate that would prevent all gods, good or evil, from directly affecting the world, but which would leave the gods’ mortal followers and supernal servants to enact their will. And so the corrupting whispers of the Betrayer Gods have ensnared the minds of power-hungry mortals for centuries, promising them a sliver of the gods’ great power in exchange for dedicating their souls to occult lore. </p>
@@ -71,7 +71,7 @@
 
     <!-- Reformed Cultist Background Feature Fell Teachings -->
 
-        <element name="Feature: Fell Teachings" type="Background Feature" source="source" id="ID_BACKGROUND_FEATURE_FELL_TEACHINGS">
+        <element name="Feature: Fell Teachings" type="Background Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_BACKGROUND_FEATURE_FELL_TEACHINGS">
             <description>
                 <p>You were inundated with knowledge about one of the Betrayer Gods, and know by heart everything from their basic commandments to some of their most esoteric secrets. Choose one of the Betrayer Gods described in chapter 2. You have advantage on Intelligence (Religion) checks to know information about their faith, including obscure secrets unknown to most worshipers.</p>
                 <p class="indent">Additionally, you can work with your GM to create a secret that you learned during your time in the cult. This secret might be the seed of a conspiracy, a myth of a legendary hero whose true meaning has mutated over the years, or even the location of a fabled artifact of the gods.</p>
