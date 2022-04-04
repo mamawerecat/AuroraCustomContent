@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Tal'Dorei Campaign Setting Reborn Items- Armor</name>
+        <update version="0.0.1">
+            <file name="items-armor.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/Untitled-1" />
+        </update>
+    </info>
+<!-- source="Tal'Dorei Campaign Setting Reborn" -->
+<!-- ID_TALDOREI_CR_ -->    
+    
+    <!-- Armor of the Valiant Soul -->
+        <!-- Armor of the Valiant Soul Dormant -->
+            <element name="Armor of the Valiant Soul (Dormant)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_ARMOR_OF_THE_VALIANT_SOUL_DORMANT">
+                <description>
+                   <p>This antique armor forged from jade and black dragon scales was once worn by J’mon Sa Ord of Ank’Harel.</p>
+                   <p class="indent">While the Armor of the Valiant Soul is in a dormant state, you gain a +1 bonus to AC while wearing it. You can also cast the command spell (save DC 14) while attuned to this armor. Once this property is used, it can’t be used again until you finish a long rest.</p>
+                </description>
+                <setters>
+                    <set name="category">Magic Armor</set>
+                    <set name="cost" currency="gp">0</set>
+                    <set name="slot">body</set>
+                    <set name="type" addition="scale mail">Armor</set>
+                    <set name="rarity">Legendary</set>
+                    <set name="enhancement">1</set>
+                    <set name="armor">Scale Mail</set>
+                    <set name="attunement">true</set>
+                </setters>
+                <rules>
+                   <stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+                   <grant type="Spell" id="ID_PHB_SPELL_COMMAND" />
+                </rules>
+            </element>
+        <!-- Armor of the Valiant Soul Awakened -->
+            <element name="Armor of the Valiant Soul (Awakened)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_ARMOR_OF_THE_VALIANT_SOUL_AWAKENED">
+                <description>
+                   <p>This antique armor forged from jade and black dragon scales was once worn by J’mon Sa Ord of Ank’Harel.</p>
+                   <p class="indent">While the Armor of the Valiant Soul is in a dormant state, you gain a +2 bonus to AC while wearing it. You can also cast the command spell (save DC 16) on up to 3 creatures while attuned to this armor. Once this property is used, it can’t be used again until you finish a long rest.</p> 
+                   <p class="indent">You are immune to the frightened condition while wearing this armor.</p>
+                </description>
+                <setters>
+                    <set name="category">Magic Armor</set>
+                    <set name="cost" currency="gp">0</set>
+                    <set name="slot">body</set>
+                    <set name="type" addition="scale mail">Armor</set>
+                    <set name="rarity">Legendary</set>
+                    <set name="enhancement">2</set>
+                    <set name="armor">Scale Mail</set>
+                    <set name="attunement">true</set>
+                </setters>
+                <rules>
+                   <stat name="ac:armored:enhancement" value="2" bonus="enhancement" />
+                   <grant type="Spell" id="ID_PHB_SPELL_COMMAND" />
+                   <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+                </rules>
+            </element>
+        <!-- Armor of the Valiant Soul Exalted -->
+            <element name="Armor of the Valiant Soul (Exalted)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_ARMOR_OF_THE_VALIANT_SOUL_EXALTED">
+                <description>
+                   <p>This antique armor forged from jade and black dragon scales was once worn by J’mon Sa Ord of Ank’Harel.</p>
+                   <p class="indent">While the Armor of the Valiant Soul is in a dormant state, you gain a +2 bonus to AC while wearing it. You can also cast the command spell (save DC 18) on up to 5 creatures while attuned to this armor. Once this property is used, it can’t be used again until you finish a long rest.</p> 
+                   <p class="indent">All friendly creatures within 15 feet of you are immune to the frightened condition as long as you are conscious.</p>
+                </description>
+                <setters>
+                    <set name="category">Magic Armor</set>
+                    <set name="cost" currency="gp">0</set>
+                    <set name="slot">body</set>
+                    <set name="type" addition="scale mail">Armor</set>
+                    <set name="rarity">Legendary</set>
+                    <set name="enhancement">3</set>
+                    <set name="armor">Scale Mail</set>
+                    <set name="attunement">true</set>
+                </setters>
+                <rules>
+                   <stat name="ac:armored:enhancement" value="3" bonus="enhancement" />
+                   <grant type="Spell" id="ID_PHB_SPELL_COMMAND" />
+                   <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_ACID" />
+                </rules>
+            </element>
+    <!-- Deathwalker’s Ward -->
+
+        <!-- Deathwalker's Ward Dormant -->
+            <element name="Deathwalker's Ward (Dormant)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_DEATHWALKERS_WARD_DORMANT">
+		        <description>
+		        	<p>This beautiful black leather armor is covered in intricate scrollwork, and has a mantle bearing the black feathers of the Matron of Ravens. Legends say that it has been worn by a number of that deity’s champions over the centuries—most recently, Vax’ildan of Vox Machina.</p>
+                    <p class="indent">When the Deathwalker’s Ward is in a dormant state, you gain a +1 bonus to AC and you have advantage on death saving throws while wearing the armor.</p>
+		        </description>
+		        <setters>
+		        	<set name="keywords">studded, leather</set>
+		        	<set name="category">Magic Armor</set>
+		        	<set name="cost" currency="gp">0</set>
+		        	<set name="slot">body</set>
+		        	<set name="type" addition="studded leather">Armor</set>
+		        	<set name="rarity">Legendary</set>
+		        	<set name="armor">Studded Leather</set>
+		        	<set name="enhancement">1</set>
+		        </setters>
+		        <rules>
+		        	<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+		        </rules>
+	        </element>
+
+        <!-- Deathwalker's Ward Awakened -->
+            <element name="Deathwalker's Ward (Awakened)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_DEATHWALKERS_WARD_AWAKENED">
+		        <description>
+		        	<p>This beautiful black leather armor is covered in intricate scrollwork, and has a mantle bearing the black feathers of the Matron of Ravens. Legends say that it has been worn by a number of that deity’s champions over the centuries—most recently, Vax’ildan of Vox Machina.</p>
+                    <p class="indent">When the Deathwalker’s Ward reaches an awakened state, you gain the following benefits:</p>
+                    <ul>
+                        <li> The AC bonus of the armor increases to +3.</li>
+                        <li>While wearing the armor, you have resistance to one of the following damage types of your choice: acid, cold, fire, lightning, necrotic, or poison. You can change the damage type when you finish a short rest.</li>
+                    </ul>
+		        </description>
+		        <setters>
+		        	<set name="keywords">studded, leather</set>
+		        	<set name="category">Magic Armor</set>
+		        	<set name="cost" currency="gp">0</set>
+		        	<set name="slot">body</set>
+		        	<set name="type" addition="studded leather">Armor</set>
+		        	<set name="rarity">Legendary</set>
+		        	<set name="armor">Studded Leather</set>
+		        	<set name="enhancement">2</set>
+		        </setters>
+		        <rules>
+		        	<stat name="ac:armored:enhancement" value="2" bonus="enhancement" />
+		        </rules>
+	        </element>
+
+        <!-- Deathwalker's Ward Exalted -->
+            <element name="Deathwalker's Ward (Exalted)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_DEATHWALKERS_WARD_EXALTED">
+		        <description>
+		        	<p>This beautiful black leather armor is covered in intricate scrollwork, and has a mantle bearing the black feathers of the Matron of Ravens. Legends say that it has been worn by a number of that deity’s champions over the centuries—most recently, Vax’ildan of Vox Machina.</p>
+                    <p class="indent">When the Deathwalker’s Ward reaches an awakened state, you gain the following benefits:</p>
+                    <ul>
+                        <li>The AC bonus of the armor increases to +2.</li>
+                        <li>While wearing the armor, you have resistance to one of the following damage types of your choice: acid, cold, fire, lightning, necrotic, or poison. You can change the damage type when you finish a short rest.</li>
+                        <li>As a bonus action, you grow large black raven wings that grant you a flying speed of 60 feet and last for 1 hour. Once this property is used, it can’t be used again until you finish a long rest.</li>
+                    </ul>
+		        </description>
+		        <setters>
+		        	<set name="keywords">studded, leather</set>
+		        	<set name="category">Magic Armor</set>
+		        	<set name="cost" currency="gp">0</set>
+		        	<set name="slot">body</set>
+		        	<set name="type" addition="studded leather">Armor</set>
+		        	<set name="rarity">Legendary</set>
+		        	<set name="armor">Studded Leather</set>
+		        	<set name="enhancement">3</set>
+		        </setters>
+		        <rules>
+		        	<stat name="ac:armored:enhancement" value="3" bonus="enhancement" />
+		        </rules>
+	        </element>
+
+
+    <!-- Honor’s Last Stand -->
+
+        <!-- Honor's Last Stand Dormant -->
+            <element name="Honor's Last Stand (Dormant)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_HONORS_LAST_STAND_DORMANT">
+		        <description>
+		        	<p>This massive silvered shield bears the crest of the Platinum Dragon and never tarnishes. Its metal is always warm to the touch.</p>
+                    
+                    <p class="indent">You also can’t be knocked prone while bearing this shield.</p>
+		        </description>
+		        <setters>
+		        	<set name="keywords">shield</set>
+		        	<set name="category">Magic Armor</set>
+		        	<set name="cost" currency="gp">0</set>
+		        	<set name="type" addition="shield">Armor</set>
+		        	<set name="rarity">Legendary</set>
+		        	<set name="enhancement">1</set>
+		        	<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+                    <set name="attunement" addition="by a creature of non-evil alignment">true</set>
+		        </setters>
+		        <rules>
+		        	<stat name="ac:shield" value="1" bonus="enhancement" />
+		        </rules>
+            </element>
+
+        <!-- Honor's Last Stand Awakened -->
+            
+            <element name="Honor's Last Stand (Awakened)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_HONORS_LAST_STAND_AWAKENED">
+		        <description>
+		        	<p>This massive silvered shield bears the crest of the Platinum Dragon and never tarnishes. Its metal is always warm to the touch.</p>
+                    <p class="indent">When Honor’s Last Stand reaches an awakened state, you gain the following benefits:</p>
+                    <ul>
+                        <li>You can’t be knocked prone while bearing this shield.</li>
+                        <li>The shield’s bonus to AC increases to +2.</li>
+                        <li>If you successfully shove a creature while holding this shield, that creature takes 2d6 force damage.</li>
+                        <li>When a creature within 5 feet of you misses you with an attack, you can attempt to shove that creature as a reaction.</li>
+                    </ul>
+		        </description>
+		        <setters>
+		        	<set name="keywords">shield</set>
+		        	<set name="category">Magic Armor</set>
+		        	<set name="cost" currency="gp">0</set>
+		        	<set name="type" addition="shield">Armor</set>
+		        	<set name="rarity">Legendary</set>
+		        	<set name="enhancement">2</set>
+		        	<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+                    <set name="attunement" addition="by a creature of non-evil alignment">true</set>
+		        </setters>
+		        <rules>
+		        	<stat name="ac:shield" value="2" bonus="enhancement" />
+		        </rules>
+            </element>
+
+        <!-- Honor's Last Stand Exalted -->
+            
+            <element name="Honor's Last Stand (Exalted)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_HONORS_LAST_STAND_EXALTED">
+		        <description>
+		        	<p>This massive silvered shield bears the crest of the Platinum Dragon and never tarnishes. Its metal is always warm to the touch.</p>
+                    <p class="indent">When Honor’s Last Stand reaches an exalted state, you gain the following benefits:</p>
+                    <ul>
+                        <li>You can’t be knocked prone while bearing this shield.</li>
+                        <li>The shield’s bonus to AC increases to +3.</li>
+                        <li>If you successfully shove a creature while holding this shield, that creature takes 2d6 force damage.</li>
+                        <li>When you successfully shove a creature while holding this shield, you can move it up to 15 feet away from you.</li>
+                        <li>When a creature within 5 feet of you misses you with an attack, you can attempt to shove that creature as a reaction.</li>
+                        <li>As a bonus action, you can protect an ally within 5 feet of you, granting that ally a +3 bonus to AC until the start of your next turn or until they are no longer within 5 feet of you.</li>
+                    </ul>
+		        </description>
+		        <setters>
+		        	<set name="keywords">shield</set>
+		        	<set name="category">Magic Armor</set>
+		        	<set name="cost" currency="gp">0</set>
+		        	<set name="type" addition="shield">Armor</set>
+		        	<set name="rarity">Legendary</set>
+		        	<set name="enhancement">3</set>
+		        	<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+                    <set name="attunement" addition="by a creature of non-evil alignment">true</set>
+		        </setters>
+		        <rules>
+		        	<stat name="ac:shield" value="3" bonus="enhancement" />
+		        </rules>
+            </element>
+
+            
+
+    <!-- Plate of the Dawnmartyr -->
+
+        <!-- Plate of the Dawnmartyr Dormant -->
+            
+            <element name="Plate of the Dawnmartyr (Dormant)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_PLATE_OF_THE_DAWNMARTYR_DORMANT">
+		        <description>
+		        	<p>Beautiful silver scrollwork and priceless cut rubies adorn this set of brass-and-gold armor. Legend holds that it was worn by Duana, High Priest of the Dawnfather, when she was martyred in the Battle of Ghor Dranas in the final days of the Calamity. In more recent times, it was worn by Pike Trickfoot, a legendary cleric of the Everlight, while fighting against the Chroma Conclave and the Whispered One.</p>
+		        	<p class="indent">While the Plate of the Dawnmartyr is in a dormant state, you gain a +1 bonus to AC while wearing it. When a creature within 5 feet of you hits you with a melee attack, you can use your reaction to rebuke that creature, dealing it 1d6 fire damage.</p>
+		        </description>
+		        <setters>
+		        	<set name="keywords">plate</set>
+		        	<set name="category">Magic Armor</set>
+		        	<set name="cost" currency="gp">0</set>
+		        	<set name="slot">body</set>
+		        	<set name="type" addition="plate">Armor</set>
+		        	<set name="attunement">true</set>
+		        	<set name="rarity">Legendary</set>
+		        	<set name="armor">Plate</set>
+                    <set name="enhancement">1</set>
+		        </setters>
+                <rules>
+		        	<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+		        </rules>
+	        </element>
+
+
+        <!-- Plated of the Dawnmartyr Awakened -->
+
+            <element name="Plate of the Dawnmartyr (Awakened)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_PLATE_OF_THE_DAWNMARTYR_AWAKENED">
+		        <description>
+		        	<p>Beautiful silver scrollwork and priceless cut rubies adorn this set of brass-and-gold armor. Legend holds that it was worn by Duana, High Priest of the Dawnfather, when she was martyred in the Battle of Ghor Dranas in the final days of the Calamity. In more recent times, it was worn by Pike Trickfoot, a legendary cleric of the Everlight, while fighting against the Chroma Conclave and the Whispered One.</p>
+		        	<p class="indent">When the Plate of the Dawnmartyr reaches an awakened state, you gain the following benefits:</p>
+                    <ul>
+                        <li>The armor’s bonus to AC increases to +2.</li>
+                        <li>You are immune to the frightened condition.</li>
+                        <li>You have resistance to fire damage.</li>
+                        <li>When a creature within 5 feet of you hits you with a melee attack, you can use your reaction to rebuke that creature, dealing it 2d6 fire damage.</li>
+                    </ul>
+		        </description>
+		        <setters>
+		        	<set name="keywords">plate</set>
+		        	<set name="category">Magic Armor</set>
+		        	<set name="cost" currency="gp">0</set>
+		        	<set name="slot">body</set>
+		        	<set name="type" addition="plate">Armor</set>
+		        	<set name="attunement">true</set>
+		        	<set name="rarity">Legendary</set>
+		        	<set name="armor">Plate</set>
+                    <set name="enhancement">2</set>
+		        </setters>
+                <rules>
+		        	<stat name="ac:armored:enhancement" value="2" bonus="enhancement" />
+                    <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+		        </rules>
+	        </element>
+
+        <!-- Plated of the Dawnmartyr Exalted -->
+
+            <element name="Plate of the Dawnmartyr (Exalted)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_PLATE_OF_THE_DAWNMARTYR_EXALTED">
+		        <description>
+		        	<p>Beautiful silver scrollwork and priceless cut rubies adorn this set of brass-and-gold armor. Legend holds that it was worn by Duana, High Priest of the Dawnfather, when she was martyred in the Battle of Ghor Dranas in the final days of the Calamity. In more recent times, it was worn by Pike Trickfoot, a legendary cleric of the Everlight, while fighting against the Chroma Conclave and the Whispered One.</p>
+		        	<p class="indent">When the Plate of the Dawnmartyr reaches an exalted state, you gain the following benefits:</p>
+                    <ul>
+                        <li>The armor’s bonus to AC increases to +3.</li>
+                        <li>You are immune to the frightened condition.</li>
+                        <li>You have resistance to fire damage.</li>
+                        <li>When a creature within 5 feet of you hits you with a melee attack, you can use your reaction to rebuke that creature, dealing it 2d6 fire or radiant damage (your choice).</li>
+                        <li>When you are reduced to 0 hit points, you can choose to have a blast of healing flame surround you. You regain 1 hit point and are lifted to your feet. Each enemy within 10 feet of you takes 2d6 fire damage or radiant damage (your choice). This property of the armor can’t be used again until you finish a long rest.</li>
+                    </ul>
+		        </description>
+		        <setters>
+		        	<set name="keywords">plate</set>
+		        	<set name="category">Magic Armor</set>
+		        	<set name="cost" currency="gp">0</set>
+		        	<set name="slot">body</set>
+		        	<set name="type" addition="plate">Armor</set>
+		        	<set name="attunement">true</set>
+		        	<set name="rarity">Legendary</set>
+		        	<set name="armor">Plate</set>
+                    <set name="enhancement">3</set>
+		        </setters>
+                <rules>
+		        	<stat name="ac:armored:enhancement" value="3" bonus="enhancement" />
+                    <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+		        </rules>
+	        </element>
+
+
+
+</elements>
