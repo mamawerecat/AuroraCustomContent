@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Tal'Dorei Campaign Setting Reborn Items- Weapons</name>
+        <update version="0.0.1">
+            <file name="items-weapons.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/Untitled-1" />
+        </update>
+    </info>
+
+<!-- source="Tal'Dorei Campaign Setting Reborn" -->
+<!-- ID_TALDOREI_CR_ -->
+    <!-- Appending ID for crossbows -->
+        
+        <element name="Weapon Group (Heavy Crossbows)" type="Weapon Group" source="Internal" id="ID_INTERNAL_WEAPON_GROUP_HEAVY_CROSSBOWS" />
+	        <append id="ID_WOTC_PHB_WEAPON_CROSSBOW_HEAVY">
+		        <supports>ID_INTERNAL_WEAPON_GROUP_HEAVY_CROSSBOWS</supports>
+	        </append>
+        
+        <element name="Weapon Group (Hand Crossbows)" type="Weapon Group" source="Internal" id="ID_INTERNAL_WEAPON_GROUP_HAND_CROSSBOWS" />
+	        <append id="ID_WOTC_PHB_WEAPON_CROSSBOW_HAND">
+	        	<supports>ID_INTERNAL_WEAPON_GROUP_HAND_CROSSBOWS</supports>
+	        </append>
+
+
+    <!-- Cataclysm Bolts -->
+
+            <element name="Cataclysm Bolts" type="Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_ITEM_CATACLYSM_BOLTS">
+		        <description>
+		        	<p>These steel crossbow bolts were first created by the Jaggenstrike Clan during the Scattered War, and the secret to crafting them remains well guarded by the Houses of Kraghammer. Cataclysm bolts are usually kept in sets of ten, though anyone who holds even one can feel it thrumming with magical power. When you hit with an attack using a cataclysm bolt, the attack deals normal damage. Then roll a d6 on the following table to determine its additional effect. Once the bolt hits, the enchantment ends and it becomes a normal piece of ammunition.</p>
+                    <table>
+                        <thead>
+                            <tr><td>d6</td><td>Effect</td></tr>
+                        </thead>
+                        <tr><td>1-2</td><td>The bolt explodes in a blast of fire, dealing 3d8 fire damage to the target and each creature within 5 feet of it.</td></tr>
+                        <tr><td>3-4</td><td>The bolt freezes the air around the target into jagged ice. The target and each creature within 5 feet of it must succeed on a DC 17 Dexterity saving throw or take 1d10 cold damage and be restrained until the end of your next turn.</td></tr>
+                        <tr><td>5</td><td>The bolt releases a pulse of necrotic energy. The target takes 2d6 necrotic damage and must succeed on a DC 16 Strength saving throw or be stunned until the end of your next turn.</td></tr>
+                        <tr><td>6</td><td>The bolt shatters to unleash a burst of shrapnel. Make six additional ranged attacks against the target, each of which has a +7 attack bonus and deals 1d6 piercing damage on a hit.</td></tr>
+                    </table>
+		        </description>
+		        <setters>
+		        	<set name="category">Ammunition</set>
+		        	<set name="cost" currency="cp">5</set>
+		        	<set name="weight" lb="0.05">1/20 lb.</set>
+		        	<set name="type">Ammunition</set>
+		        	<set name="stackable">true</set>
+                    <set name="rarity">Very Rare</set>
+		        </setters>
+	        </element>
+
+     <!-- Corecut Dagger -->
+            <!-- Dagger, very rare (requires attunement)
+            This dark metal blade bends in a wicked, hooked curve. You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you hit with an attack using this weapon, you can spend 1 Hit Die to deal an extra 3d6 necrotic damage. Curse. This weapon is cursed, a fact that is revealed only when an identify spell is cast on the weapon or you attune to it. Attuning to the dagger curses you until you are targeted by the remove curse spell or similar magic; disposing of the dagger fails to end the curse. While cursed, whenever you receive magical healing, you must spend 1 Hit Die to regain any hit points. If you spend all your Hit Dice at any point, you die. -->
+
+
+    <!-- Dagger of Denial -->
+
+        <element name="Dagger of Denial" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_DAGGER_OF_DENIAL">		
+		    <description>
+		    	<p>This silver stiletto blade bears intricate grooves that spiral from its tip to its ivory hilt and handle. </p>
+		    	<p class="indent">You gain a +2 bonus to attack and damage rolls made with this magic weapon.</p>
+		    	<p class="indent">As an action, you can place the point of the blade into any keyhole and seal it shut. A keyhole sealed in this way can’t be unlocked until this dagger is placed into that keyhole once more (though a sealed door or container can still be broken, bypassing the lock). Sealing a keyhole unseals any keyholes previously sealed with this weapon.</p>
+		    </description>
+		    <setters>
+		    	<set name="category">Magic Weapons</set>
+		    	<set name="cost" currency="gp">0</set>
+		    	<set name="type" addition="dagger">Weapon</set>
+		    	<set name="rarity">Rare</set>
+		    	<set name="weapon">Dagger</set>
+                <set name="attunement">true</set>
+		    	<set name="enhancement">2</set>
+		    </setters>
+	    </element> 
+
+    <!-- Graz’tchar, the Decadent End -->
+
+        <element name="Graz’tchar, the Decadent End" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_GRAZTCHAR_THE_DECADENT_END">
+		    <description>
+		    	<p>This blade appears to be a beautiful cruciform sword of shining silver, inlaid with sparkling rubies.</p>
+		    	<p class="indent"> You gain a +3 bonus to attack and damage rolls made with this magic weapon, which has the following properties.</p>
+		    	<p class="indent"><i><b>Corrosive Submission.</b></i> When you hit a creature that has an Intelligence score of 4 or higher with an attack using this sword, the target takes an extra 3d6 acid damage and must succeed on a DC 17 Charisma saving throw or be charmed by you for 1 hour. If you attack the creature again while it is charmed in this way, the extra acid damage increases to 10d6 and the charmed condition ends. If the target succeeds on its saving throw or the charm ends for it, it can’t be charmed again in this way for 24 hours.</p> 
+		    	<p class="indent"><i><b>Hidden Nature.</b></i> The acid damage dealt by this greatsword appears to be radiant damage to all who perceive it. A true seeing spell or similar magic reveals that the sword is actually a rusted, pitted blade dripping with acid.</p>	
+                <p class="indent"><i><b>Sentience.</b> Graz’tchar</i> is a sentient neutral evil weapon with an Intelligence of 14, a Wisdom of 12, and a Charisma of 18. It has hearing and darkvision out to a range of 120 feet. The sword can speak, read, and understand Common, and can communicate with its wielder telepathically. Anyone who holds it hears the wise voice of a sorrowful king, beckoning the user to seize their destiny. A creature that succeeds on a DC 26 Wisdom (Insight) check while listening to the blade’s voice hears a sliver of malice that suggests the truth: the voice is a corrupting trick of the Demon Prince of Indulgence.</p>
+                <p class="indent"><i><b>Personality.</b> Graz’tchar</i> slowly attempts to sway its wielder to sow chaos in Exandria, telling lies and spreading malign truths about great leaders, and claiming that the members of the Tal’Dorei Council are corrupt and must be overthrown. The voice of this blade is actually the Demon Prince of Indulgence, speaking from his Abyssal prison.</p>
+                <p class="indent">If the sword’s attuned wielder disobeys the urges of the weapon for an extended period of time, <i>Graz’tchar</i> can attempt to control the wielder, who must succeed on a DC 17 Charisma saving throw or become charmed by the sword for 24 hours. While the wielder is charmed in this way, the sword can compel them to take an action of the sword’s choice once per hour, though the wielder believes this action is taken of their own free will. If the chosen action leads to the harm of someone the wielder considers a trusted friend or ally, the charmed condition immediately ends. On a successful saving throw or if the charmed condition ends for the wielder, they are immune to this property of the sword for 24 hours.</p>
+		    </description>
+		    <setters>
+		    	<set name="keywords">greatsword</set>
+		    	<set name="category">Magic Weapons</set>
+		    	<set name="cost" currency="gp">0</set>
+		    	<set name="type" addition="greatsword">Weapon</set>
+		    	<set name="attunement">true</set>
+		    	<set name="rarity">Legendary</set>
+		    	<set name="enhancement">3</set>
+		    	<set name="weapon">Greatsword</set>
+		    </setters>
+	    </element>
+
+    <!-- Inescapable Lash -->
+
+        <element name="Inescapable Lash" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_INESCAPABLE_LASH">
+		    <description>
+		    	<p>This braided cord is dull bronze in color, ends in a splayed set of three barbs, and gleams like metal under any light. You gain a +1 bonus to attack and damage rolls made with this magic weapon, which has a reach of 20 feet. When you hit a creature or object using this whip, you can attempt to grapple the target as a bonus action.</p>
+		    	<p class="indent">While you have a creature grappled using this whip, you can use your action to either pull the creature up to 20 feet toward you, or cause the creature to be restrained until you let go of the whip. A creature restrained in this way can escape by making a successful Strength (Athletics) or Dexterity (Acrobatics) check as an action. The DC of this check equals 8 + your proficiency bonus + your Strength modifier.</p>
+		    </description>
+		    <setters>
+		    	<set name="category">Magic Weapons</set>
+		    	<set name="cost" currency="gp">0</set>
+		    	<set name="type" addition="whip">Weapon</set>
+		    	<set name="rarity">Rare</set>
+		    	<set name="weapon">Whip</set>
+		    	<set name="enhancement">1</set>
+		    	<set name="attunement">true</set>
+		    </setters>
+	    </element>
+
+    <!-- Magician’s Judge -->
+        
+        <element name="Magician’s Judge " type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_MAGICIANS_JUDGE">
+            <description>
+                <p>An executioner’s blade from the Age of Arcanum, this magic greatsword is one of many similar weapons once used to execute magic-wielding criminals. Though most commonly found in the lands now known as Wildemount and Issylra, a few such blades have found their way to Tal’Dorei.</p>
+                <p class="indent"> If you hit a creature with an attack using this weapon, you can cast the dispel magic spell from the sword against the target as part of the attack.</p>
+                <p class="indent">Alternatively, you can use an action to cast dispel magic from the sword against a target of your choice. If you need to make a check with your spellcasting ability modifier as part of casting the spell, you make this check with a +3 modifier or your own spellcasting ability modifier, whichever is higher. Once you cast dispel magic using this weapon, you can’t do so again until the next dawn.</p>
+            </description>
+            <setters>
+		    	<set name="keywords">greatsword</set>
+		    	<set name="category">Magic Weapons</set>
+		    	<set name="cost" currency="gp">0</set>
+		    	<set name="type" addition="greatsword">Weapon</set>
+		    	<set name="rarity">Rare</set>
+		    	<set name="weapon">Greatsword</set>
+		    </setters>
+            <rules>
+                <grant type="Spell" name="Magician's Judge" id="ID_PHB_SPELL_DISPEL_MAGIC" />
+            </rules>
+        </element>
+    <!-- Summer’s Dance -->
+
+        <element name="Summer’s Dance" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_SUMMERS_DANCE">
+            <description>
+                <p>This beautiful golden blade appears to bend and flex like a reed with your movements. You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+                <p class="indent">Additionally, the scimitar has 3 charges and regains 1 expended charge daily at dawn. While wielding this scimitar, you can expend 1 charge as a bonus action to cast the misty step spell.</p>
+            </description>
+            <setters>
+		    	<set name="keywords">scimitar</set>
+		    	<set name="category">Magic Weapons</set>
+		    	<set name="cost" currency="gp">0</set>
+		    	<set name="type" addition="scimitar">Weapon</set>
+		    	<set name="rarity">Rare</set>
+                <set name="attunement">true</set>
+		    	<set name="weapon">Scimitar</set>
+                <set name="enhancement">1</set>
+		    </setters>
+            <rules>
+                <grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" />
+            </rules>
+        </element>
+
+    <!-- Tinkertop Boltblaster 1000 -->
+
+            <element name="Tinkertop Boltblaster 1000" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_TINKERTOP_BOLTBLASTER_1000">
+		        <description>
+		        	<p>This strange contraption of gears, wires, and lacquered wood has a handle with a metal grip and crank. Its stock bears a flamboyant maker’s mark that reads: “Made in Hupperdook,” a city in Wildemount.</p>
+                    <p class="indent">You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+                    <p class="indent">When you roll a 20 on an attack roll made with this weapon, you can immediately make another attack with this weapon after resolving the critical hit..</p>
+                    <p class="indent">When you roll a 1 on an attack roll made with this weapon, you must succeed on a DC 14 Dexterity saving throw or take 1d6 piercing damage as some of its gears and wires spring loose.</p>
+		        </description>
+		        <setters>
+                    <set name="keywords">crossbow</set>
+		        	<set name="category">Magic Weapons</set>
+		        	<set name="cost" currency="gp">0</set>
+		        	<set name="type" addition="Hand Crossbow">Weapon</set>
+		        	<set name="attunement">true</set>
+		        	<set name="rarity">Very Rare</set>
+		        	<set name="enhancement">1</set>
+                    <set name="attunement">true</set>
+		        	<set name="weapon">ID_INTERNAL_WEAPON_GROUP_HAND_CROSSBOWS</set>
+		        </setters>
+	        </element>
+    <!-- Oceanic Weapon -->
+ 
+        <element name="Oceanic Weapon" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_OCEANIC_WEAPON">
+		    <description>
+		    	<p>This elegant Ashari weapon is adorned with engravings depicting leaping dolphins and drifting jellyfish. You gain a +1 bonus to attack and damage rolls made with this magic weapon, and you ignore the normal penalties on ranged weapon attacks while using this weapon underwater. While holding the weapon in front of you with both hands, you have a swimming speed of 30 feet.</p>
+                <p class="indent">Additionally, while you hold the weapon, you can use an action to cast the water breathing spell. Once this property is used, it can’t be used again until the next dawn.</p>
+		    </description>
+		    <setters>
+		    	<set name="category">Magic Weapons</set>
+		    	<set name="cost" currency="gp">0</set>
+		    	<set name="type" addition="any ranged or thrown">Weapon</set>
+		    	<set name="rarity">Rare</set>
+		    	<set name="enhancement">1</set>
+                <set name="attunement">true</set>
+		    	<set name="weapon">ID_INTERNAL_WEAPON_PROPERTY_THROWN||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED||ID_INTERNAL_WEAPON_PROPERTY_RANGED</set>
+                <set name="name-format">Oceanic {{parent}}</set>
+		    </setters>
+            <rules>
+                <grant type="Spell" id="ID_PHB_SPELL_WATER_BREATHING" />
+            </rules>
+	    </element>
+    <!-- Agony -->
+
+        <!-- Agony (Dormant) -->
+
+            <element name="Agony (Dormant)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_AGONY_DORMANT">
+		        <description>
+		        	<p>Utilized in countless tortures and slow executions, the hooked chains of this brutal weapon constantly show dried blood and rot. Legend says that Agony was wielded in the Calamity by the gnoll scion of a flesh-eating Demon Lord.</p>
+                    <p class="indent">While Agony is in a dormant state, you gain a +2 bonus to attack and damage rolls made with this magic weapon. </p>
+                    <p class="indent">Whenever you damage a creature with Agony, that creature is marked for 10 minutes or until you damage a different creature. When you hit a creature marked in this way with this weapon, the target takes an extra 1d6 piercing damage.</p>
+		        </description>
+		        <setters>
+                    <set name="keywords">flail</set>
+		        	<set name="category">Magic Weapons</set>
+		        	<set name="cost" currency="gp">0</set>
+		        	<set name="type" addition="flail">Weapon</set>
+		        	<set name="attunement" addition="by a creature of non-good alignment">true</set>
+		        	<set name="rarity">Legendary</set>
+		        	<set name="enhancement">2</set>
+		        	<set name="weapon">Flail</set>
+		        </setters>
+	        </element>
+
+        <!-- Agony (Awakened) -->
+
+            <element name="Agony (Awakened)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_AGONY_AWAKENED">
+		        <description>
+		        	<p>Utilized in countless tortures and slow executions, the hooked chains of this brutal weapon constantly show dried blood and rot. Legend says that Agony was wielded in the Calamity by the gnoll scion of a flesh-eating Demon Lord.</p>
+                    <p class="indent">While Agony is in an awakened state, you gain a +2 bonus to attack and damage rolls made with this magic weapon.</p>
+                    <p class="indent">Whenever you damage a creature with Agony, that creature is marked for 10 minutes or until you damage a different creature. When you hit a creature marked in this way with this weapon, the target takes an extra 1d8 piercing damage.</p>
+                    <p class="indent">A marked creature has disadvantage on Constitution checks and Constitution saving throws.</p>
+                    <p class="indent">When you reduce a creature to 0 hit points with an attack using Agony, you can immediately make an additional melee attack with this weapon as a bonus action.</p>
+		        </description>
+		        <setters>
+                    <set name="keywords">flail</set>
+		        	<set name="category">Magic Weapons</set>
+		        	<set name="cost" currency="gp">0</set>
+		        	<set name="type" addition="flail">Weapon</set>
+		        	<set name="attunement" addition="by a creature of non-good alignment">true</set>
+		        	<set name="rarity">Legendary</set>
+		        	<set name="enhancement">2</set>
+		        	<set name="weapon">Flail</set>
+		        </setters>
+	        </element>
+
+        <!-- Agony (Exalted) -->
+
+            <element name="Agony (Exalted)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_AGONY_EXALTED">
+		        <description>
+		        	<p>Utilized in countless tortures and slow executions, the hooked chains of this brutal weapon constantly show dried blood and rot. Legend says that Agony was wielded in the Calamity by the gnoll scion of a flesh-eating Demon Lord.</p>
+                    <p class="indent">While Agony is in an exalted state, you gain a +3 bonus to attack and damage rolls made with this magic weapon.</p>
+                    <p class="indent">Whenever you damage a creature with Agony, that creature is marked for 10 minutes or until you damage a different creature. When you hit a creature marked in this way with this weapon, the target takes an extra 2d8 piercing damage.</p>
+                    <p class="indent">A marked creature has disadvantage on Constitution checks and Constitution saving throws.</p>
+                    <p class="indent">When you reduce a creature to 0 hit points with an attack using Agony, you can immediately make an additional melee attack with this weapon as a bonus action.</p>
+                    <p class="indent">When you score a critical hit with this weapon, the target must succeed on a DC 17 Wisdom saving throw or become frightened of you for 1 minute. On a success, the target is immune to this effect for 24 hours.</p>
+		        </description>
+		        <setters>
+                    <set name="keywords">flail</set>
+		        	<set name="category">Magic Weapons</set>
+		        	<set name="cost" currency="gp">0</set>
+		        	<set name="type" addition="flail">Weapon</set>
+		        	<set name="attunement" addition="by a creature of non-good alignment">true</set>
+		        	<set name="rarity">Legendary</set>
+		        	<set name="enhancement">3</set>
+		        	<set name="weapon">Flail</set>
+		        </setters>
+	        </element>
+
+    <!-- Condemner -->
+
+        <!-- Condemner (Dormant) -->
+            <element name="Condemner (Dormant)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_CONDEMNER_DORMANT">
+		        <description>
+		        	<p>This shadow-touched hand crossbow once served as the weapon of choice for the legendary assassin Todora. Though few know this, Condemner is now in the possession of an equally infamous assassin named Ixrattu Khar.</p>
+                    <p class="indent">When Condemner is in a dormant state, you gain a +1 bonus to attack and damage rolls made with this magic weapon. When you hit with an attack using this weapon, the target takes an extra 1d4 poison damage.</p>
+                    <p class="indent">Additionally, if you hit with an attack using this weapon, you can cast <i>fog cloud</i> or <i>silence</i> centered on the target's space.</p>
+                    <p class="indent">When an effect is used, it can’t be used again until you finish a short or long rest.</p>
+		        </description>
+		        <setters>
+                    <set name="keywords">crossbow</set>
+		        	<set name="category">Magic Weapons</set>
+		        	<set name="cost" currency="gp">0</set>
+		        	<set name="type" addition="Heavy Crossbow">Weapon</set>
+		        	<set name="attunement">true</set>
+		        	<set name="rarity">Legendary</set>
+		        	<set name="enhancement">1</set>
+		        	<set name="weapon">ID_INTERNAL_WEAPON_GROUP_HEAVY_CROSSBOWS</set>
+		        </setters>
+                <rules>
+                    <grant type="Spell" name="Condemner" id="ID_PHB_SPELL_SILENCE" />
+                    <grant type="Spell" name="Condemner" id="ID_PHB_SPELL_FOG_CLOUD" />
+                </rules>
+	        </element>
+
+        <!-- Condemner (Awakened) -->
+                <element name="Condemner (Awakened)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_CONDEMNER_AWAKENED">
+	    	        <description>
+	    	        	<p>This shadow-touched hand crossbow once served as the weapon of choice for the legendary assassin Todora. Though few know this, Condemner is now in the possession of an equally infamous assassin named Ixrattu Khar.</p>
+                        <p class="indent">When Condemner reaches an awakened state, you gain the following benefits:</p>
+                        <p class="indent">When Condemner is in a dormant state, you gain a +2 bonus to attack and damage rolls made with this magic weapon. When you hit with an attack using this weapon, the target takes an extra 1d6 poison damage.</p>
+                        <p class="indent">Additionally, if you hit with an attack using this weapon, you can cast <i>fog cloud</i>, <i>silence</i>, or <i>hold person</i> (DC 15) centered on the target's space.</p>
+                        <p class="indent">When an effect is used, it can’t be used again until you finish a short or long rest.</p>
+	    	        </description>
+	    	        <setters>
+                        <set name="keywords">crossbow</set>
+	    	        	<set name="category">Magic Weapons</set>
+	    	        	<set name="cost" currency="gp">0</set>
+	    	        	<set name="type" addition="Heavy Crossbow">Weapon</set>
+	    	        	<set name="attunement">true</set>
+	    	        	<set name="rarity">Legendary</set>
+	    	        	<set name="enhancement">2</set>
+	    	        	<set name="weapon">ID_INTERNAL_WEAPON_GROUP_HEAVY_CROSSBOWS</set>
+	    	        </setters>
+                    <rules>
+                        <grant type="Spell" name="Condemner" id="ID_PHB_SPELL_SILENCE" />
+                        <grant type="Spell" name="Condemner" id="ID_PHB_SPELL_HOLD_PERSON" />
+                        <grant type="Spell" name="Condemner" id="ID_PHB_SPELL_FOG_CLOUD" />
+                    </rules>
+	            </element>
+
+        <!-- Condemner (Exalted) -->
+
+                <element name="Condemner (Exalted)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_CONDEMNER_EXALTED">
+	    	        <description>
+	    	        	<p>This shadow-touched hand crossbow once served as the weapon of choice for the legendary assassin Todora. Though few know this, Condemner is now in the possession of an equally infamous assassin named Ixrattu Khar.</p>
+                        <p class="indent">When Condemner reaches an exalted state, you gain the following benefits:</p>
+                        <p class="indent">You gain a +3 bonus to attack and damage rolls made with this magic weapon. When you hit with an attack using this weapon, the target takes an extra 1d8 poison damage.</p>
+                        <p class="indent">Additionally, if you hit with an attack using this weapon, you can cast <i>fog cloud</i>, <i>silence</i>, <i>hold person</i> (DC 17), or <i>blight</i> (DC 17) centered on the target's space.</p>
+                        <p class="indent">When an effect is used, it can’t be used again until you finish a short or long rest.</p>
+	    	        </description>
+	    	        <setters>
+                        <set name="keywords">crossbow</set>
+	    	        	<set name="category">Magic Weapons</set>
+	    	        	<set name="cost" currency="gp">0</set>
+	    	        	<set name="type" addition="Heavy Crossbow">Weapon</set>
+	    	        	<set name="attunement">true</set>
+	    	        	<set name="rarity">Legendary</set>
+	    	        	<set name="enhancement">3</set>
+	    	        	<set name="weapon">ID_INTERNAL_WEAPON_GROUP_HEAVY_CROSSBOWS</set>
+	    	        </setters>
+                    <rules>
+                        <grant type="Spell" name="Condemner" id="ID_PHB_SPELL_SILENCE" />
+                        <grant type="Spell" name="Condemner" id="ID_PHB_SPELL_HOLD_PERSON" />
+                        <grant type="Spell" name="Condemner" id="ID_PHB_SPELL_FOG_CLOUD" />
+                        <grant type="Spell" name="Condemner" id="ID_PHB_SPELL_BLIGHT" />
+                    </rules>
+	            </element>
+    <!-- Fenthras -->
+
+        <!-- Fenthras (Dormant) -->
+
+            <element name="Fenthras (Dormant)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_FENTHRAS_DORMANT">
+		        <description>
+		        	<p>This gorgeous longbow made of everbark from the Fey Realm flexes and shifts like a living entity. It is said to have been wielded by the legendary ranger Vex’ahlia against great evils.</p>
+		        	<p class="indent">While Fenthras is in a dormant state, you gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+		        	<p class="indent">When you make an attack with Fenthras, you can declare it an oracle shot, allowing you to experience the area around the arrow using your normal senses for 10 minutes. Once this property is used, it can’t be used again until you finish a short or long rest.</p>
+                    <p class="indent">Additionally, when a creature is killed by an attack using this weapon, a six-foot-tall tree rapidly grows out of the corpse over the next minute. The tree is rooted in the ground to make the body difficult to move, but does not permanently damage the corpse or its organs.</p>
+		        </description>
+		        <setters>
+		        	<set name="keywords">longbow</set>
+		        	<set name="category">Magic Weapons</set>
+		        	<set name="cost" currency="gp">0</set>
+		        	<set name="type" addition="longbow">Weapon</set>
+		        	<set name="attunement">true</set>
+		        	<set name="rarity">Legendary</set>
+		        	<set name="weapon">Longbow</set>
+                    <set name="enhancement">1</set>
+		        </setters>
+	        </element>
+
+        <!-- Fenthras (Awakened) -->
+
+            <element name="Fenthras (Awakened)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_FENTHRAS_AWAKENED">
+		        <description>
+		        	<p>This gorgeous longbow made of everbark from the Fey Realm flexes and shifts like a living entity. It is said to have been wielded by the legendary ranger Vex’ahlia against great evils.</p>
+		        	<p class="indent">While Fenthras is in an Awakened state, you gain a +2 bonus to attack and damage rolls made with this magic weapon.</p>
+                    <p class="indent">Additionally, when you hit with an attack using this weapon, the target takes an extra 1d4 lightning damage.</p>
+		        	<p class="indent">When you make an attack with Fenthras, you can declare it an oracle shot, allowing you to experience the area around the arrow using your normal senses for 10 minutes. Once this property is used, it can’t be used again until you finish a short or long rest.</p>
+                    <p class="indent">When you hit with an attack using this weapon, you can declare it a bramble shot. The attack deals an extra 3d8 piercing damage, and the target must succeed on a DC 15 Strength saving throw or become restrained by steely brambles that burst from the arrow. A restrained target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Once this property is used, it can’t be used again until you finish a short or long rest.</p>
+                    <p class="indent">Additionally, when a creature is killed by an attack using this weapon, a six-foot-tall tree rapidly grows out of the corpse over the next minute. The tree is rooted in the ground to make the body difficult to move, but does not permanently damage the corpse or its organs.</p>
+		        </description>
+		        <setters>
+		        	<set name="keywords">longbow</set>
+		        	<set name="category">Magic Weapons</set>
+		        	<set name="cost" currency="gp">0</set>
+		        	<set name="type" addition="longbow">Weapon</set>
+		        	<set name="attunement">true</set>
+		        	<set name="rarity">Legendary</set>
+		        	<set name="weapon">Longbow</set>
+                    <set name="enhancement">2</set>
+		        </setters>
+	        </element>
+        
+        <!-- Fenthras (Exalted) -->
+        
+            <element name="Fenthras (Exalted)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_FENTHRAS_EXALTED">
+		        <description>
+		        	<p>This gorgeous longbow made of everbark from the Fey Realm flexes and shifts like a living entity. It is said to have been wielded by the legendary ranger Vex’ahlia against great evils.</p>
+		        	<p class="indent">While Fenthras is in an Exalted state, you gain a +3 bonus to attack and damage rolls made with this magic weapon.</p>
+                    <p class="indent">Additionally, when you hit with an attack using this weapon, the target takes an extra 1d6 lightning damage.</p>
+		        	<p class="indent">When you make an attack with Fenthras, you can declare it an oracle shot, allowing you to experience the area around the arrow using your normal senses for 10 minutes. Once this property is used, it can’t be used again until you finish a short or long rest.</p>
+                    <p class="indent">When you hit with an attack using this weapon, you can declare it a bramble shot. The attack deals an extra 3d8 piercing damage, and the target must succeed on a DC 17 Strength saving throw or become restrained by steely brambles that burst from the arrow. A restrained target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. You can declare a bramble shot twice between (long or short) rests.</p>
+                    <p class="indent">Additionally, when a creature is killed by an attack using this weapon, a six-foot-tall tree rapidly grows out of the corpse over the next minute. The tree is rooted in the ground to make the body difficult to move, but does not permanently damage the corpse or its organs.</p>
+		        </description>
+		        <setters>
+		        	<set name="keywords">longbow</set>
+		        	<set name="category">Magic Weapons</set>
+		        	<set name="cost" currency="gp">0</set>
+		        	<set name="type" addition="longbow">Weapon</set>
+		        	<set name="attunement">true</set>
+		        	<set name="rarity">Legendary</set>
+		        	<set name="weapon">Longbow</set>
+                    <set name="enhancement">3</set>
+		        </setters>
+	        </element>
+
+    <!-- Whisper -->
+
+        <!-- Whisper (Dormant) -->
+
+            <element name="Whisper (Dormant)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_WHISPER_DORMANT">		
+		        <description>
+		        	<p>Forged with a mercurial metal accidentally drawn from the Realms Beyond, this dagger shimmers with an unsettling sourceless light. It was once wielded by Vax’ildan, a legendary champion of the Matron of Ravens. Two raven feathers are linked to its pommel as a memento of its former bearer.</p>
+		        	<p class="indent">While Whisper is in a dormant state, you gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+		        	<p class="indent">Additionally, when you score a critical hit with this dagger, the target must succeed on a DC 13 Wisdom saving throw or become frightened of you for 1 minute. On a success, the target is immune to this effect for 24 hours.</p>
+		        </description>
+		        <setters>
+		        	<set name="category">Magic Weapons</set>
+		        	<set name="cost" currency="gp">0</set>
+		        	<set name="type" addition="dagger">Weapon</set>
+		        	<set name="rarity">Legendary</set>
+		        	<set name="weapon">Dagger</set>
+                    <set name="attunement">true</set>
+		        	<set name="enhancement">1</set>
+		        </setters>
+	        </element> 
+
+        <!-- Whisper (Awakened) -->
+
+            <element name="Whisper (Awakened)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_WHISPER_AWAKENED">		
+		        <description>
+		        	<p>Forged with a mercurial metal accidentally drawn from the Realms Beyond, this dagger shimmers with an unsettling sourceless light. It was once wielded by Vax’ildan, a legendary champion of the Matron of Ravens. Two raven feathers are linked to its pommel as a memento of its former bearer.</p>
+		        	<p class="indent">While Whisper is in an Awakened state, you gain a +2 bonus to attack and damage rolls made with this magic weapon.</p>
+                    <p class="indent">When you hit with an attack using this dagger, the target takes an extra 1d6 psychic damage.</p>
+		        	<p class="indent">Additionally, when you score a critical hit with this dagger, the target must succeed on a DC 15 Wisdom saving throw or become frightened of you for 1 minute. On a success, the target is immune to this effect for 24 hours.</p>
+		        </description>
+		        <setters>
+		        	<set name="category">Magic Weapons</set>
+		        	<set name="cost" currency="gp">0</set>
+		        	<set name="type" addition="dagger">Weapon</set>
+		        	<set name="rarity">Legendary</set>
+		        	<set name="weapon">Dagger</set>
+                    <set name="attunement">true</set>
+		        	<set name="enhancement">2</set>
+		        </setters>
+	        </element> 
+
+        <!-- Whisper (Exalted) -->
+
+            <element name="Whisper (Exalted)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_WHISPER_EXALTED">		
+		        <description>
+		        	<p>Forged with a mercurial metal accidentally drawn from the Realms Beyond, this dagger shimmers with an unsettling sourceless light. It was once wielded by Vax’ildan, a legendary champion of the Matron of Ravens. Two raven feathers are linked to its pommel as a memento of its former bearer.</p>
+		        	<p class="indent">While Whisper is in an exalted state, you gain a +3 bonus to attack and damage rolls made with this magic weapon.</p>
+                    <p class="indent">When you hit with an attack using this dagger, the target takes an extra 1d8 psychic damage.</p>
+		        	<p class="indent">Additionally, when you score a critical hit with this dagger, the target must succeed on a DC 17 Wisdom saving throw or become frightened of you for 1 minute. On a success, the target is immune to this effect for 24 hours.</p>
+                    <p class="indent">When this dagger is used to make a ranged attack, you can choose to transform into shadow and merge with the blade as part of the action used to attack, teleporting to another location. If the attack hits, you appear in an unoccupied space of your choice within 5 feet of the target. If the attack misses, you appear where the GM determines the dagger lands (typically within 1d6 × 5 feet of the target). In either case, you appear with the dagger in your hand.</p>
+		        </description>
+		        <setters>
+		        	<set name="category">Magic Weapons</set>
+		        	<set name="cost" currency="gp">0</set>
+		        	<set name="type" addition="dagger">Weapon</set>
+		        	<set name="rarity">Legendary</set>
+		        	<set name="weapon">Dagger</set>
+                    <set name="attunement">true</set>
+		        	<set name="enhancement">3</set>
+		        </setters>
+	        </element> 
+
+
+    <!-- Star Razor -->
+
+        <!-- Star Razor (Dormant) -->
+        
+            <element name="Star Razor (Dormant)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_STAR_RAZOR_DORMANT">
+		        <description>
+		        	<p>The thick, grooved blade of this shining silver longsword is lined with etched runes that sparkle blue in the light. Star Razor—known also as Dwueth’var— was thought to have been destroyed or lost after the Calamity, but new rumors suggest that it might be wielded by a half-orc somewhere in Wildemount.</p>
+		        	<p class="indent">While Star Razor is in a dormant state, you can hold this magic longsword and use a bonus action to speak the command word Galas-var, causing the sword to emit a pale blue glow that sheds bright light in a 20-foot radius and dim light for an additional 20 feet. This glow lasts until you use a bonus action to speak the command word again, or until you drop or sheathe the sword.</p>
+		        	<p class="indent">While this longsword is glowing, you gain a +1 bonus to attack and damage rolls made with the weapon, and you have resistance to radiant damage.</p>
+                    <p class="indent">You can cast the faerie fire spell from the weapon as an action, requiring no components (save DC 13). Once a spell has been cast using Star Razor, that spell can’t be cast from the sword until the next dawn.</p>
+		        </description>
+		        <setters>
+		        	<set name="keywords">longsword</set>
+		        	<set name="category">Magic Weapons</set>
+		        	<set name="cost" currency="gp">0</set>
+		        	<set name="type" addition="longsword">Weapon</set>
+		        	<set name="attunement">true</set>
+		        	<set name="rarity">Legendary</set>
+		        	<set name="weapon">Longsword</set>
+		        </setters>
+                <rules>
+                    <grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" />
+                </rules>
+	        </element>
+        
+        <!-- Star Razor (Awakened) -->
+        
+            <element name="Star Razor (Awakened)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_STAR_RAZOR_AWAKENED">
+		        <description>
+		        	<p>The thick, grooved blade of this shining silver longsword is lined with etched runes that sparkle blue in the light. Star Razor—known also as Dwueth’var— was thought to have been destroyed or lost after the Calamity, but new rumors suggest that it might be wielded by a half-orc somewhere in Wildemount.</p>
+		        	<p class="indent">While Star Razor is in an awakened state, you can hold this magic longsword and use a bonus action to speak the command word Galas-var, causing the sword to emit a pale blue glow that sheds bright light in a 20-foot radius and dim light for an additional 20 feet. This glow lasts until you use a bonus action to speak the command word again, or until you drop or sheathe the sword.</p>
+		        	<p class="indent">While this longsword is glowing, you gain a +2 bonus to attack and damage rolls made with the weapon, and you have resistance to radiant damage.</p>
+                    <p class="indent">When a creature within 5 feet of you hits you with a melee attack, you can use your reaction to create a burst of radiance from the sword, dealing 1d8 radiant damage to the attacker.</p>
+                    <p class="indent">You can cast the <i>faerie fire</i> or <i>see invisibility</i> spell from the weapon as an action, requiring no components (save DC 15). Once a spell has been cast using Star Razor, that spell can’t be cast from the sword until the next dawn.</p>
+		        </description>
+		        <setters>
+		        	<set name="keywords">longsword,radiant</set>
+		        	<set name="category">Magic Weapons</set>
+		        	<set name="cost" currency="gp">0</set>
+		        	<set name="type" addition="longsword">Weapon</set>
+		        	<set name="attunement">true</set>
+		        	<set name="rarity">Legendary</set>
+		        	<set name="weapon">Longsword</set>
+		        </setters>
+                <rules>
+                    <grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" />
+                    <grant type="Spell" id="ID_PHB_SPELL_SEE_INVISIBILITY" />
+                </rules>
+	        </element>
+        
+        <!-- Star Razor (Exalted) -->
+
+            <element name="Star Razor (Exalted)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_STAR_RAZOR_EXALTED">
+		        <description>
+		        	<p>The thick, grooved blade of this shining silver longsword is lined with etched runes that sparkle blue in the light. Star Razor—known also as Dwueth’var— was thought to have been destroyed or lost after the Calamity, but new rumors suggest that it might be wielded by a half-orc somewhere in Wildemount.</p>
+		        	<p class="indent">While Star Razor is in an exalted state, you can hold this magic longsword and use a bonus action to speak the command word Galas-var, causing the sword to emit a pale blue glow that sheds bright light in a 20-foot radius and dim light for an additional 20 feet. This glow lasts until you use a bonus action to speak the command word again, or until you drop or sheathe the sword.</p>
+		        	<p class="indent">While this longsword is glowing, you gain a +3 bonus to attack and damage rolls made with the weapon, and you have resistance to radiant damage.</p>
+                    <p class="indent">When a creature within 5 feet of you hits you with a melee attack, you can use your reaction to create a burst of radiance from the sword, dealing 1d12 radiant damage to the attacker, and you can immediately teleport to an unoccupied space you can see within 15 feet of you as part of the same reaction.</p>
+                    <p class="indent">You can cast the <i>faerie fire</i>, <i>see invisibility</i>, <i>fly</i> spell from the weapon as an action, requiring no components (save DC 17). Once a spell has been cast using Star Razor, that spell can’t be cast from the sword until the next dawn.</p>
+		        </description>
+		        <setters>
+		        	<set name="keywords">longsword,radiant</set>
+		        	<set name="category">Magic Weapons</set>
+		        	<set name="cost" currency="gp">0</set>
+		        	<set name="type" addition="longsword">Weapon</set>
+		        	<set name="attunement">true</set>
+		        	<set name="rarity">Legendary</set>
+		        	<set name="weapon">Longsword</set>
+		        </setters>
+                <rules>
+                    <grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" />
+                    <grant type="Spell" id="ID_PHB_SPELL_SEE_INVISIBILITY" />
+                    <grant type="Spell" id="ID_PHB_SPELL_FLY" />
+                </rules>
+	        </element>
+
+    <!-- Mythcarver -->
+
+        <!-- Mythcarver (Dormant) -->
+        
+            <element name="Mythcarver (Dormant)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_MYTHCARVER_DORMANT">
+		        <description>
+		        	<p>This incredible silvered blade once belonged to the legendary White Duke, a founding member of the Golden Grin, and many other master bards before him. It resonates with nearby musical tones. In the modern era, it is best known as the personal weapon of famed bard Scanlan Shorthalt.</p>
+		        	<p class="indent">While Mythcarver is in a dormant state, you gain a +1 bonus to attack and damage rolls made with this  magic weapon. This longsword’s enchantments and light construction also grant it the Finesse property, which allows you to use either your Strength or Dexterity modifier for the attack and damage rolls when making an attack with this weapon.</p>
+		        	<p class="indent">Additionally, when you target an ally with your Bardic Inspiration feature, you gain advantage on attacks with this weapon until the end of your turn.</p>
+		        </description>
+		        <setters>
+		        	<set name="keywords">longsword</set>
+		        	<set name="category">Magic Weapons</set>
+		        	<set name="cost" currency="gp">0</set>
+		        	<set name="type" addition="longsword">Weapon</set>
+		        	<set name="attunement" addition="by a bard">true</set>
+		        	<set name="rarity">Legendary</set>
+		        	<set name="weapon">Longsword</set>
+                    <set name="enhancement">1</set>
+		        </setters>
+                <append id="ID_INTERNAL_WEAPON_PROPERTY_FINESSE" />
+	        </element>
+        
+        <!-- Mythcarver (Awakened) -->
+        
+            <element name="Mythcarver (Awakened)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_MYTHCARVER_AWAKENED">
+		        <description>
+		        	<p>This incredible silvered blade once belonged to the legendary White Duke, a founding member of the Golden Grin, and many other master bards before him. It resonates with nearby musical tones. In the modern era, it is best known as the personal weapon of famed bard Scanlan Shorthalt.</p>
+		        	<p class="indent">While Mythcarver is in an awakened state, you gain a +2 bonus to attack and damage rolls made with this  magic weapon. This longsword’s enchantments and light construction also grant it the Finesse property, which allows you to use either your Strength or Dexterity modifier for the attack and damage rolls when  making an attack with this weapon.</p>
+                    <p class="indent">When you hit with an attack using this weapon, the target takes an extra 1d6 force damage.</p>
+		        	<p class="indent">Additionally, when you target an ally with your Bardic Inspiration feature, you gain advantage on attacks with this weapon until the end of your turn.</p>
+                    <p class="indent">When you use your Bardic Inspiration to affect an enemy while wielding this sword, that enemy has disadvantage on their next saving throw.</p>
+		        </description>
+		        <setters>
+		        	<set name="keywords">longsword</set>
+		        	<set name="category">Magic Weapons</set>
+		        	<set name="cost" currency="gp">0</set>
+		        	<set name="type" addition="longsword">Weapon</set>
+		        	<set name="attunement" addition="by a bard">true</set>
+		        	<set name="rarity">Legendary</set>
+		        	<set name="weapon">Longsword</set>
+                    <set name="enhancement">2</set>
+		        </setters>
+                <append id="ID_INTERNAL_WEAPON_PROPERTY_FINESSE" />
+	        </element>
+        
+        <!-- Mythcarver (Exalted) -->
+
+            <element name="Mythcarver (Exalted)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_MYTHCARVER_EXALTED">
+		        <description>
+		        	<p>This incredible silvered blade once belonged to the legendary White Duke, a founding member of the Golden Grin, and many other master bards before him. It resonates with nearby musical tones. In the modern era, it is best known as the personal weapon of famed bard Scanlan Shorthalt.</p>
+		        	<p class="indent">While Mythcarver is in an exalted state, you gain a +3 bonus to attack and damage rolls made with this  magic weapon. This longsword’s enchantments and light construction also grant it the Finesse property, which allows you to use either your Strength or Dexterity modifier for the attack and damage rolls when  making an attack with this weapon.</p>
+                    <p class="indent">When you hit with an attack using this weapon, the target takes an extra 1d6 force damage.</p>
+		        	<p class="indent">Additionally, when you target an ally with your Bardic Inspiration feature, you gain advantage on attacks with this weapon until the end of your turn.</p>
+                    <p class="indent">When you use your Bardic Inspiration to affect an enemy while wielding this sword, that enemy has disadvantage on their next saving throw.</p>
+                    <p class="indent">As an action, you let the spirit of the sword overtake your body and guide your strikes. You make 4 melee attacks with the sword, then gain 1 level of exhaustion. Once this property is used, it can’t be used again until you finish a long rest.</p>
+		        </description>
+		        <setters>
+		        	<set name="keywords">longsword</set>
+		        	<set name="category">Magic Weapons</set>
+		        	<set name="cost" currency="gp">0</set>
+		        	<set name="type" addition="longsword">Weapon</set>
+		        	<set name="attunement" addition="by a bard">true</set>
+		        	<set name="rarity">Legendary</set>
+		        	<set name="weapon">Longsword</set>
+                    <set name="enhancement">3</set>
+		        </setters>
+                <append id="ID_INTERNAL_WEAPON_PROPERTY_FINESSE" />
+	        </element>
+    
+    <!-- Pyremaul -->
+
+        <!-- Pyremaul (Dormant) -->
+
+            <element name="Pyremaul (Dormant)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_PYREMAUL_DORMANT">
+		        <description>
+		        	<p>Forged from deep red iron, this massive hammer is set with a brilliant fire opal that shimmers with eternal flame. It is rumored to be currently wielded by Grand Legate Phaestor, the fire giant ruler of Vulkanon, somewhere beneath the Cliffkeep Mountains.</p>
+		        	<p class="indent">While Pyremaul is in a dormant state, you gain a +1 bonus to attack rolls made with this magic weapon. When you hit with an attack using this weapon, the target takes an extra 1d6 fire damage.</p>
+		        	<p class="indent">Additionally, you can choose to have this weapon shed bright light in a 30-foot radius and dim light for an additional 30 feet (no action required).</p>
+		        </description>
+		        <setters>
+		        	<set name="keywords">maul</set>
+		        	<set name="category">Magic Weapons</set>
+		        	<set name="cost" currency="gp">0</set>
+		        	<set name="type" addition="maul">Weapon</set>
+		        	<set name="rarity">Legendary</set>
+		        	<set name="attunement">true</set>
+		        	<set name="enhancement">1</set>
+		        	<set name="weapon">ID_INTERNAL_WEAPON_GROUP_MAULS</set>
+		        </setters>
+	        </element>
+
+        <!-- Pyremaul (Awakened) -->
+
+            <element name="Pyremaul (Awakened)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_PYREMAUL_AWAKENED">
+		        <description>
+		        	<p>Forged from deep red iron, this massive hammer is set with a brilliant fire opal that shimmers with eternal flame. It is rumored to be currently wielded by Grand Legate Phaestor, the fire giant ruler of Vulkanon, somewhere beneath the Cliffkeep Mountains.</p>
+		        	<p class="indent">While Pyremaul is in an awakened state, you gain a +2 bonus to attack rolls made with this magic weapon. When you hit with an attack using this weapon, the target takes an extra 2d6 fire damage.</p>
+		        	<p class="indent">Additionally, you can choose to have this weapon shed bright light in a 30-foot radius and dim light for an additional 30 feet (no action required).</p>
+                    <p class="indent">As an action, you can slam Pyremaul into the ground to cast the burning hands spell at 2nd level (save DC 15). You can’t use this property again until you finish a short or long rest.</p>
+                    <p class="indent">Whenever you score a critical hit with this weapon, the target must succeed on a DC 15 Strength saving throw or be knocked prone.</p>
+		        </description>
+		        <setters>
+		        	<set name="keywords">maul</set>
+		        	<set name="category">Magic Weapons</set>
+		        	<set name="cost" currency="gp">0</set>
+		        	<set name="type" addition="maul">Weapon</set>
+		        	<set name="rarity">Legendary</set>
+		        	<set name="attunement">true</set>
+		        	<set name="enhancement">2</set>
+		        	<set name="weapon">ID_INTERNAL_WEAPON_GROUP_MAULS</set>
+		        </setters>
+                <rules>
+                    <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" />
+                </rules>
+	        </element>
+
+        <!-- Pyremaul (Exalted) -->
+
+            <element name="Pyremaul (Exalted)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_PYREMAUL_EXALTED">
+		        <description>
+		        	<p>Forged from deep red iron, this massive hammer is set with a brilliant fire opal that shimmers with eternal flame. It is rumored to be currently wielded by Grand Legate Phaestor, the fire giant ruler of Vulkanon, somewhere beneath the Cliffkeep Mountains.</p>
+		        	<p class="indent">While Pyremaul is in an exalted state, you gain a +3 bonus to attack rolls made with this magic weapon. When you hit with an attack using this weapon, the target takes an extra 3d6 fire damage.</p>
+		        	<p class="indent">Additionally, you can choose to have this weapon shed bright light in a 30-foot radius and dim light for an additional 30 feet (no action required).</p>
+                    <p class="indent">As an action, you can slam Pyremaul into the ground to cast the burning hands spell at 3rd level (save DC 17). You can’t use this property again until you finish a short or long rest.</p>
+                    <p class="indent">Whenever you score a critical hit with this weapon, the target must succeed on a DC 17 Strength saving throw or be knocked prone. You also roll an extra 3d6 fire damage when determining the extra damage for the critical hit.</p>
+                    <p class="indent">When you kill a creature with an attack using this weapon, you can take 10d10 fire damage and immolate the creature’s corpse. This damage can’t be reduced in any way, and you die if this damage reduces you to 0 hit points. The immolated creature and everything it is wearing and carrying, except magic items, are reduced to a pile of ash. The creature can be restored to life only by means of a true resurrection or a wish spell. You can’t use this property of the maul again until 7 days have passed. </p>
+		        </description>
+		        <setters>
+		        	<set name="keywords">maul</set>
+		        	<set name="category">Magic Weapons</set>
+		        	<set name="cost" currency="gp">0</set>
+		        	<set name="type" addition="maul">Weapon</set>
+		        	<set name="rarity">Legendary</set>
+		        	<set name="attunement">true</set>
+		        	<set name="enhancement">3</set>
+		        	<set name="weapon">ID_INTERNAL_WEAPON_GROUP_MAULS</set>
+		        </setters>
+                <rules>
+                    <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" />
+                </rules>
+	        </element>
+</elements>
