@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Miscellaneous</name>
+		<description>Miscellaneous spells, subclasses, etc from around the internet.</description>
+		<update version="0.0.1">
+			<file name="misc.index" url="https://raw.githubusercontent.com" />
+		</update>
+	</info>
+	<files>			
+  
+		<file name="taldorei-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%3A%20Tal'Dorei%20Campaign%20Setting%20Reborn/taldorei-spells.xml" />
+		
+  </files>
+</index>
