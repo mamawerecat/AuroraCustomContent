@@ -4,7 +4,7 @@
 		<name>Critical Role: Tal'Dorei Campaign Setting Reborn</name>
 		<description>The Tal’Dorei Campaign Setting Reborn is a sourcebook from Darrington Press. It expands on the Critical Role: Tal'Dorei Campaign Setting sourcebook.</description>
 		<author url="https://darringtonpress.com/taldorei-campaign-setting-reborn/">Critical Role, Darrington Press</author>
-		<update version="0.0.9">
+		<update version="0.1.0">
 			<file name="taldorei-reborn.index" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/taldorei-reborn.index" />
 		</update>
 	</info>
@@ -39,5 +39,6 @@
 		<!--Magic Items-->
 		<file name="items-armor.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%3A%20Tal'Dorei%20Campaign%20Setting%20Reborn/items-armor.xml" />
 		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%3A%20Tal'Dorei%20Campaign%20Setting%20Reborn/items-weapons.xml" />
+		<file name="items-wonderous.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%3A%20Tal'Dorei%20Campaign%20Setting%20Reborn/items-wonderous.xml" />
 	</files>
 </index>
