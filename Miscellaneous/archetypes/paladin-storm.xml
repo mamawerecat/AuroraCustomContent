@@ -4,7 +4,7 @@
         <name>Paladin - Oath of the Storm</name>
         <update version="0.0.1">
             <author url="https://www.dndbeyond.com/forums/dungeons-dragons-discussion/homebrew-house-rules/16836-oath-of-the-storm">DnD Beyond User Wayne1017</author>
-            <file name="paladin-storm.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/Untitled-1" />
+            <file name="paladin-storm.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Miscellaneous/archetypes/paladin-storm.xml" />
         </update>
     </info>
     
