@@ -3,7 +3,7 @@
     <info>
         <name>Misc. Spells</name>
         <update version="0.0.1">
-            <file name="misc-spells.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/misc-spells.xml" />
+            <file name="misc-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Miscellaneous/misc-spells.xml" />
         </update>
     </info>
     
