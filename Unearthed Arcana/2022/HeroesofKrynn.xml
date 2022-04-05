@@ -1146,7 +1146,6 @@
 			<sheet display="false"/>
 			<rules>
 				<grant type="Feat Feature" id="ID_WOTC_UA_HOK_FEAT_KNIGHT_OF_THE_ROSE_ABILITY_SCORE_INCREASE"/>
-				<grant type="Feat Feature" id="ID_WOTC_UA_HOK_FEAT_KNIGHT_OF_THE_ROSE_BOLSTERING_RALLY"/>
 			</rules>
 		</element>
 
