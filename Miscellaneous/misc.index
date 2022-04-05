@@ -4,12 +4,10 @@
 		<name>Miscellaneous</name>
 		<description>Miscellaneous spells, subclasses, etc from around the internet.</description>
 		<update version="0.0.1">
-			<file name="misc.index" url="https://raw.githubusercontent.com" />
+			<file name="misc.index" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Miscellaneous/misc.index" />
 		</update>
 	</info>
 	<files>			
-  
-		<file name="taldorei-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%3A%20Tal'Dorei%20Campaign%20Setting%20Reborn/taldorei-spells.xml" />
-		
-  </files>
+		<file name="misc-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Miscellaneous/misc-spells.xml" />		
+  	</files>
 </index>
