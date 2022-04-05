@@ -4,7 +4,7 @@
 	
     <info>
         <name>UA: Heroes of Krynn (2022)</name>
-        <update version="0.0.4">
+        <update version="0.0.5">
             <file name="HeroesofKrynn.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Unearthed%20Arcana/2022/HeroesofKrynn.xml" />
         </update>
     </info>
@@ -1193,9 +1193,13 @@
 					<description>
 						<p>When you roll initiative, you can choose up to three other creatures you can see within 30 of you. Each creature can gain temporary hit points equal to a roll of your Hit Die + your proficiency bonus + the ability modifier of the ability score increased by this feat. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
 					</description>
-					<sheet alt="Blostered Rally, Charisma" usage="{{proficiency}}/Long Rest">
-						<description>When you roll initiative, you can choose up to three other creatures you can see within 30 of you. Each creature can gain temporary hit points equal to a roll of your Hit Die + {{proficiency}} + {{charisma:modifier}}. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</description>
+					<sheet alt="Bolstered Rally, Charisma" usage="{{proficiency}}/Long Rest">
+						<description>When you roll initiative, you can choose up to three other creatures you can see within 30 of you. Each creature can gain temporary hit points equal to a roll of your Hit Die + {{bolstered rally char}}. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</description>
 					</sheet>
+					<rules>
+						<stat name="bolstered rally char" value="proficiency" />
+						<stat name="bolstered rally char" value="{{charisma:modifier}}" />
+					</rules>
 				</element>
 
 			<!-- Knight of the Rose - Feat Feature - Bolstering Rally - Constitution -->
@@ -1203,9 +1207,13 @@
 					<description>
 						<p>When you roll initiative, you can choose up to three other creatures you can see within 30 of you. Each creature can gain temporary hit points equal to a roll of your Hit Die + your proficiency bonus + the ability modifier of the ability score increased by this feat. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
 					</description>
-					<sheet alt="Blostered Rally, Constitution" usage="{{proficiency}}/Long Rest">
-						<description>When you roll initiative, you can choose up to three other creatures you can see within 30 of you. Each creature can gain temporary hit points equal to a roll of your Hit Die + {{proficiency}} + {{constitution:modifier}}. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</description>
+					<sheet alt="Bolstered Rally, Constitution" usage="{{proficiency}}/Long Rest">
+						<description>When you roll initiative, you can choose up to three other creatures you can see within 30 of you. Each creature can gain temporary hit points equal to a roll of your Hit Die + {{bolstered rally con}}. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</description>
 					</sheet>
+					<rules>
+						<stat name="bolstered rally con" value="proficiency" />
+						<stat name="bolstered rally con" value="constitution:modifier" />
+					</rules>
 				</element>
  
 </elements>
