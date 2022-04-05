@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Paladin - Oath of the Storm</name>
+        <update version="0.0.1">
+            <author url="https://www.dndbeyond.com/forums/dungeons-dragons-discussion/homebrew-house-rules/16836-oath-of-the-storm">DnD Beyond User Wayne1017</author>
+            <file name="paladin-storm.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/Untitled-1" />
+        </update>
+    </info>
+    
+    <element name="Oath of the Storm" type="Archetype" source="DnD Beyond Homebrew" id="ID_DNDBEYOND_HB_ARCHETYPE_OATH_OF_THE_STORM">
+        <supports>Sacred Oath</supports>
+        <description>
+            <p>The Oath of the Storm calls to paladins who wish to harness the primal power of the storm itself. Like a storm of lightning that strikes down from above, or a whirlwind of destruction that sucks up everything in it's path, a Paladin who adheres to this oath learns to become a storm themselves. And strike down evil with a combination of flesh slicing winds, and skin frying lightning.</p>
+            <h5 class="caption">Tenets of the Storm</h5>
+            <p>A paladin who takes this oath has the tenets of the storm etched deep into their mind.</p>
+            <p class="indent"><strong><em>Thundering Voice.</em></strong> Your voice shall be heard. And like thunder, it shall be heard by all.</p>
+            <p class="indent"><strong><em>Strike like Lightning.</em></strong> Be swift. Be fast. And most importantly of all, be lethal.</p>
+            <p class="indent"><strong><em>Positive Conducting.</em></strong> Like metal conducts electricity, so do the people around you. Let your unwavering energy surge into all those around you, so they may be transformed into something greater.</p>
+            <p class="indent"><strong><em>Eye of the Storm.</em></strong> You are the embodiment of change. Make it happen!</p>
+            <div element="ID_DNDBEYOND_HB_ARCHETYPE_OATH_OF_THE_STORM_ARCHETYPE_FEATURE_OATH_SPELLS" />
+            <div element="ID_DNDBEYOND_HB_ARCHETYPE_OATH_OF_THE_STORM_ARCHETYPE_FEATURE_STORM_SMITE" />
+            <div element="ID_DNDBEYOND_HB_ARCHETYPE_OATH_OF_THE_STORM_ARCHETYPE_FEATURE_CHANNEL_DIVINITY" />
+            <div element="ID_DNDBEYOND_HB_ARCHETYPE_OATH_OF_THE_STORM_ARCHETYPE_FEATURE_CHOSEN_OF_STORMS" />
+            <div element="ID_DNDBEYOND_HB_ARCHETYPE_OATH_OF_THE_STORM_ARCHETYPE_FEATURE_STORMS_HERALD" />
+            <div element="ID_DNDBEYOND_HB_ARCHETYPE_OATH_OF_THE_STORM_ARCHETYPE_FEATURE_ENVOY_OF_THE_STORM" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_DNDBEYOND_HB_ARCHETYPE_OATH_OF_THE_STORM_ARCHETYPE_FEATURE_OATH_SPELLS" level="3" />
+            <grant type="Archetype Feature" id="ID_DNDBEYOND_HB_ARCHETYPE_OATH_OF_THE_STORM_ARCHETYPE_FEATURE_STORM_SMITE" level="3" />
+            <grant type="Archetype Feature" id="ID_DNDBEYOND_HB_ARCHETYPE_OATH_OF_THE_STORM_ARCHETYPE_FEATURE_CHANNEL_DIVINITY" level="3" />
+            <grant type="Archetype Feature" id="ID_DNDBEYOND_HB_ARCHETYPE_OATH_OF_THE_STORM_ARCHETYPE_FEATURE_CHOSEN_OF_STORMS" level="7" />
+            <grant type="Archetype Feature" id="ID_DNDBEYOND_HB_ARCHETYPE_OATH_OF_THE_STORM_ARCHETYPE_FEATURE_STORMS_HERALD" level="15" />
+            <grant type="Archetype Feature" id="ID_DNDBEYOND_HB_ARCHETYPE_OATH_OF_THE_STORM_ARCHETYPE_FEATURE_ENVOY_OF_THE_STORM" level="20" />
+        </rules>
+    </element>
+
+<!-- Oath Spells -->
+
+    <element name="Oath Spells" type="Archetype Feature" source="DnD Beyond Homebrew" id="ID_DNDBEYOND_HB_ARCHETYPE_OATH_OF_THE_STORM_ARCHETYPE_FEATURE_OATH_SPELLS">
+		<description>
+			<p><em>3rd-level Oath of the Storm feature</em></p>
+			<p>You gain oath spells at the paladin levels listed in the Oath of the Storms Spells table. See the Sacred Oath class feature for how oath spells work.</p>
+			<h5 class="caption">Oath of the Storm Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Paladin Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>thunderwave, witch bolt</em></td></tr>
+				<tr><td>5th</td><td><em>lightning bolt, haste</em></td></tr>
+				<tr><td>9th</td><td><em>call lighting, thunder step</em></td></tr>
+				<tr><td>13th</td><td><em>ice storm, storm sphere</em></td></tr>
+				<tr><td>17th</td><td><em>cone of cold, maelstrom</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" spellcasting="Paladin" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WITCH_BOLT" spellcasting="Paladin" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_LIGHTNING_BOLT" spellcasting="Paladin" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HASTE" spellcasting="Paladin" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CALL_LIGHTNING" spellcasting="Paladin" level="9" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_THUNDER_STEP" spellcasting="Paladin" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ICE_STORM" spellcasting="Paladin" level="13" prepared="true" />
+			<grant type="Spell" id="ID_POTA_SPELL_STORMSPHERE" spellcasting="Paladin" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONE_OF_COLD" spellcasting="Paladin" level="17" prepared="true" />
+			<grant type="Spell" id="ID_POTA_SPELL_MAELSTROM" spellcasting="Paladin" level="17" prepared="true" />
+		</rules>
+	</element>
+
+<!-- Storm Smite -->
+
+    <element name="Storm Smite" type="Archetype Feature" source="DnD Beyond Homebrew" id="ID_DNDBEYOND_HB_ARCHETYPE_OATH_OF_THE_STORM_ARCHETYPE_FEATURE_STORM_SMITE">
+        <description>
+            <p><em>3rd-level Oath of the Storm feature</em></p>
+            <p>When you take this subclass at 3rd level, the radiant damage of your divine smite is replaced by thunder, lightning, or cold damage (your choice).</p>
+        </description>
+        <sheet>
+            <description>The radiant damage of your divine smite is replaced by thunder, lightning, or cold damage (your choice).</description>
+        </sheet>
+    </element>
+
+<!-- Channel Divinity -->
+
+    <element name="Channel Divinity" type="Archetype Feature" source="DnD Beyond Homebrew" id="ID_DNDBEYOND_HB_ARCHETYPE_OATH_OF_THE_STORM_ARCHETYPE_FEATURE_CHANNEL_DIVINITY">
+		<description>
+			<p><em>3rd-level Oath of the Storm feature</em></p>
+			<p>You gain the following two Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.</p>
+			<p class="indent"><strong><em>Static Lightning.</em></strong> You may use a channel divinity as a reaction, anytime you are attacked with a melee attack you deal lightning damage equal to your Charisma Modifier. Any creature within 10 ft. of you that you choose also receives the damage. If the Target of the affect is wearing Full metal armor they take double the damage. At 12th Level you can add your Paladin Level to the damage.</p>
+			<p class="indent"><strong><em>Thunder Leap.</em></strong> As an action, you can choose to jump up to your movement speed in any direction. When you do this, you can choose to have lightning explode around you when you land, forcing all creatures in a 5 foot radius to make a Dexterity saving throw. On failure, they take damage equal to 2d6 + your Charisma modifier and are knocked back 10 feet or half as much on a success.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_DNDBEYOND_HB_ARCHETYPE_OATH_OF_THE_STORM_ARCHETYPE_FEATURE_CHANNEL_DIVINITY_STATIC_LIGHTNING" />
+			<grant type="Archetype Feature" id="ID_DNDBEYOND_HB_ARCHETYPE_OATH_OF_THE_STORM_ARCHETYPE_FEATURE_CHANNEL_DIVINITY_THUNDER_LEAP" />
+		</rules>
+	</element>
+
+    <!-- Channel Divinity: Static Lightning -->
+    
+	    <element name="Channel Divinity: Static Lightning" type="Archetype Feature" source="DnD Beyond Homebrew" id="ID_DNDBEYOND_HB_ARCHETYPE_OATH_OF_THE_STORM_ARCHETYPE_FEATURE_CHANNEL_DIVINITY_STATIC_LIGHTNING">
+	    	<compendium display="false" />
+	    	<description>
+	    		<p>You may use a channel divinity as a reaction, anytime you are attacked with a melee attack you deal lightning damage equal to your Charisma Modifier. Any creature within 10 ft. of you that you choose also receives the damage. If the Target of the affect is wearing Full metal armor they take double the damage. At 12th Level you can add your Paladin Level to the damage.</p>
+	    	</description>
+	    	<sheet alt="Static Lightning" action="Reaction" usage="Channel Divinity">
+	    		<description level="3">Anytime you are attacked with a melee attack you deal {{charisma:modifier}} lightning damage. Any creature within 10 ft. of you that you choose also receives the damage. If the Target of the affect is wearing Full metal armor they take double the damage.</description>
+	    		<description level="12">Anytime you are attacked with a melee attack you deal {{static lightning damage}} lightning damage. Any creature within 10 ft. of you that you choose also receives the damage. If the Target of the affect is wearing Full metal armor they take double the damage.</description>
+	    	</sheet>
+            <rules>
+                <stat name="static lightning damage" value="charisma:modifier" />
+                <stat name="static lightning damage" value="level:paladin" />
+            </rules>
+	    </element>
+	
+    <!-- Channel Divinity: Thunder Leap -->
+
+        <element name="Channel Divinity: Inspiring Smite" type="Archetype Feature" source="DnD Beyond Homebrew" id="ID_DNDBEYOND_HB_ARCHETYPE_OATH_OF_THE_STORM_ARCHETYPE_FEATURE_CHANNEL_DIVINITY_THUNDER_LEAP">
+	    	<compendium display="false" />
+	    	<description>
+	    		<p>As an action, you can choose to jump up to your movement speed in any direction. When you do this, you can choose to have lightning explode around you when you land, forcing all creatures in a 5 foot radius to make a Dexterity saving throw. On failure, they take damage equal to 2d6 + your Charisma modifier and are knocked back 10 feet or half as much on a success.</p>
+	    	</description>
+	    	<sheet alt="Inspiring Smite" action="Action" usage="Channel Divinity">
+	    		<description>IAs an action, you can choose to jump up to your movement speed in any direction. When you do this, you can choose to have lightning explode around you when you land, forcing all creatures in a 5 foot radius to make a Dexterity saving throw (DC {{spellcasting:dc}}). On failure, they take 2d6 + {{charisma:modifier}} damage and are knocked back 10 feet or half as much on a success.</description>
+	    	</sheet>
+	    </element>
+
+<!-- Chosen of Storms -->
+
+    <element name="Chosen of Storms" type="Archetype Feature" source="DnD Beyond Homebrew" id="ID_DNDBEYOND_HB_ARCHETYPE_OATH_OF_THE_STORM_ARCHETYPE_FEATURE_CHOSEN_OF_STORMS">
+        <description>
+            <p><em>7th-level Oath of the Storm feature</em></p>
+            <p>Starting at 7th level, you may imbue a single, nonmagical melee weapon of your choice with the fury and might of your God. This process requires eight hours of uninterrupted prayer to your deity, detailing your accomplishments, why you must be granted such power, and how you are worthy of such a weapon. </p>
+            <p class="indent">Upon success, lightning strikes the weapon, and becomes attuned to you, but doesn't expend an attunement slot. This weapon becomes a +2 magical weapon, and you may cast Lightning Lure through this weapon when you use an action to attack with it.</p>
+            <p class="indent">Additionally, this weapon gains the Thrown (range 30/120) property if it doesn't already possess it. As a bonus action, you may call your imbued weapon to you, which travels at a speed of 90 ft in a straight line, dealing 2d8 force damage to anything it encounters along its path. This damage is doubled against structures and objects. If this weapon is on another plane, it appears on your next turn as if using the Plane Shift spell in the same space as you, and returns to your hand. Anyone else attempting to wield or otherwise manipulate this weapon must succeed in a Strength check with a DC equal to your 10 + your Paladin level + your charisma modifier. On failure, the weapon is effectively too heavy to move. </p>
+            <p class="indent">If your imbued weapon is destroyed, you may repeat the imbuement process. At level 15, you may imbue a Hammer of Thunderbolts or a Dwarven Thrower with these properties, ignoring the nonmagical rule. In addition, you do not need a Belt of Giant Strength or Gauntlets of Ogre Power to become attuned to a Hammer of Thunderbolts.</p>
+        </description>
+        <sheet alt="Chosen of Storms">
+            <description>You may imbue a single, nonmagical melee weapon of your choice with the fury and might of your God. This process requires eight hours of uninterrupted prayer to your deity, Upon success, it becomes attuned to you, but doesn't expend an attunement slot, becoming a +2 magical weapon with the Thrown property. You may cast Lightning Lure through this weapon when you use an action to attack with it. As a bonus action, you may call your imbued weapon to you, which travels at a speed of 90 ft in a straight line, dealing 2d8 force damage (doubled against structures/objects) to anything it encounters along its path. If this weapon is on another plane, it appears on your next turn as if using the Plane Shift spell in the same space as you, and returns to your hand. Anyone else attempting to wield or otherwise manipulate this weapon must succeed in a Strength check (DC {{chosen storms:dc}}). On failure, the weapon is effectively too heavy to move. If your imbued weapon is destroyed, you may repeat the imbuement process. At level 15, you may imbue a Hammer of Thunderbolts or a Dwarven Thrower with these properties, ignoring the nonmagical rule. In addition, you do not need a Belt of Giant Strength or Gauntlets of Ogre Power to become attuned to a Hammer of Thunderbolts</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_WOTC_TCOE_SPELL_LIGHTNING_LURE" />
+
+            <stat name="chosen storms:dc" value="10" />
+			<stat name="chosen storms:dc" value="level:paladin" />
+			<stat name="chosen storms:dc" value="charisma:modifier" />
+        </rules>
+    </element>
+
+<!-- Storm's Herald -->
+
+    <element name="Storm's Herald" type="Archetype Feature" source="DnD Beyond Homebrew" id="ID_DNDBEYOND_HB_ARCHETYPE_OATH_OF_THE_STORM_ARCHETYPE_FEATURE_STORMS_HERALD">
+        <description>
+            <p><em>15th-level Oath of the Storm feature</em></p>
+            <p>Beginning at 15th level you gain resistance to either lightning or thunder damage (your choice) additionally whenever you use a smite the damage can be lightning or thunder damage.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Archetype Feature" name="Storm's Herald" supports="ID_DNDBEYOND_HB_ARCHETYPE_OATH_OF_THE_STORM_ARCHETYPE_FEATURE_STORMS_HERALD_LIGHTNING_RESISTANCE|ID_DNDBEYOND_HB_ARCHETYPE_OATH_OF_THE_STORM_ARCHETYPE_FEATURE_STORMS_HERALD_THUNDER_RESISTANCE" />
+        </rules>
+    </element>
+
+    <!-- Storm's Herald Lightning Resistance -->
+    
+        <element name="Storm's Herald (Lightning Resistance)" type="Archetype Feature" source="DnD Beyond Homebrew" id="ID_DNDBEYOND_HB_ARCHETYPE_OATH_OF_THE_STORM_ARCHETYPE_FEATURE_STORMS_HERALD_LIGHTNING_RESISTANCE">
+            <description>
+                <p>Beginning at 15th level you gain resistance to either lightning damage additionally whenever you use a smite the damage can be lightning or thunder damage.</p>
+            </description>
+            <sheet alt="Storm's Herald">
+                <description>Whenever you use a smite the damage can be lightning or thunder damage</description>
+            </sheet>
+            <rules>
+                <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+            </rules>
+        </element>
+
+    <!-- Storm's Herald Lightning Resistance -->
+
+        <element name="Storm's Herald (Thunder Resistance)" type="Archetype Feature" source="DnD Beyond Homebrew" id="ID_DNDBEYOND_HB_ARCHETYPE_OATH_OF_THE_STORM_ARCHETYPE_FEATURE_STORMS_THUNDER_RESISTANCE">
+            <description>
+                <p>Beginning at 15th level you gain resistance to either thunder damage additionally whenever you use a smite the damage can be lightning or thunder damage.</p>
+            </description>
+            <sheet alt="Storm's Herald">
+                <description>Whenever you use a smite the damage can be lightning or thunder damage</description>
+            </sheet>
+            <rules>
+                <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+            </rules>
+        </element>
+
+<!-- Envoy of the Storm -->
+
+    <element name="Envoy of the Storm" type="Archetype Feature" source="DnD Beyond Homebrew" id="ID_DNDBEYOND_HB_ARCHETYPE_OATH_OF_THE_STORM_ARCHETYPE_FEATURE_ENVOY_OF_THE_STORM">
+        <description>
+            <p><em>20th-level Oath of the Storm feature</em></p>
+            <p>At 20th level, you can use an action to channel the essence of the storm itself into you to become a thunderous avatar of the storm. For 1 hour, you gain the following benefits:</p>
+            <ul>
+                <li>When you hit a creature with an attack on your turn, the creature takes an additional 3D8 lighting, thunder, and cold damage.</li>
+                <li>Lightning and thunder damage you deal bypasses resistance, and immunity only halves the damage. Creatures cannot benefit from the Lightning Absorption trait from damage you deal.</li>
+                <li>A tornado of thunder and wind forms around you in a 30-foot radius. The first time any enemy creature enters the storm or starts its turn there during a battle, the creature must succeed on a Wisdom saving throw or become frightened of you for 1 minute or until it takes any damage. Attack rolls against the frightened creature have advantage.</li>
+            </ul>
+            <p class="indent">Once you use this feature, you can't use it again until you finish a long rest.</p>
+        </description>
+        <sheet alt="Envoy of the Storm" action="Action" usage="1/Long Rest">
+            <description>For 1 hour, you gain the following benefits:
+                When you hit a creature with an attack on your turn, the creature takes an additional 3D8 lighting, thunder, and cold damage.
+                Lightning and thunder damage you deal bypasses resistance, and immunity only halves the damage. Creatures cannot benefit from the Lightning Absorption trait from damage you deal.
+                A tornado of thunder and wind forms around you in a 30-foot radius. The first time any enemy creature enters the storm or starts its turn there during a battle, the creature must succeed on a Wisdom saving throw or become frightened of you for 1 minute or until it takes any damage. Attack rolls against the frightened creature have advantage.
+            </description>
+        </sheet>
+    </element>
+
+
+</elements>
