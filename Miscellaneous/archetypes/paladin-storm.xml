@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Paladin - Oath of the Storm</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <author url="https://www.dndbeyond.com/forums/dungeons-dragons-discussion/homebrew-house-rules/16836-oath-of-the-storm">DnD Beyond User Wayne1017</author>
             <file name="paladin-storm.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Miscellaneous/archetypes/paladin-storm.xml" />
         </update>
@@ -118,13 +118,13 @@
 	
     <!-- Channel Divinity: Thunder Leap -->
 
-        <element name="Channel Divinity: Inspiring Smite" type="Archetype Feature" source="DnD Beyond Homebrew" id="ID_DNDBEYOND_HB_ARCHETYPE_OATH_OF_THE_STORM_ARCHETYPE_FEATURE_CHANNEL_DIVINITY_THUNDER_LEAP">
+        <element name="Channel Divinity: Thunder Leap" type="Archetype Feature" source="DnD Beyond Homebrew" id="ID_DNDBEYOND_HB_ARCHETYPE_OATH_OF_THE_STORM_ARCHETYPE_FEATURE_CHANNEL_DIVINITY_THUNDER_LEAP">
 	    	<compendium display="false" />
 	    	<description>
 	    		<p>As an action, you can choose to jump up to your movement speed in any direction. When you do this, you can choose to have lightning explode around you when you land, forcing all creatures in a 5 foot radius to make a Dexterity saving throw. On failure, they take damage equal to 2d6 + your Charisma modifier and are knocked back 10 feet or half as much on a success.</p>
 	    	</description>
-	    	<sheet alt="Inspiring Smite" action="Action" usage="Channel Divinity">
-	    		<description>IAs an action, you can choose to jump up to your movement speed in any direction. When you do this, you can choose to have lightning explode around you when you land, forcing all creatures in a 5 foot radius to make a Dexterity saving throw (DC {{spellcasting:dc}}). On failure, they take 2d6 + {{charisma:modifier}} damage and are knocked back 10 feet or half as much on a success.</description>
+	    	<sheet alt="Thunder Leap" action="Action" usage="Channel Divinity">
+	    		<description>As an action, you can choose to jump up to your movement speed in any direction. When you do this, you can choose to have lightning explode around you when you land, forcing all creatures in a 5 foot radius to make a Dexterity saving throw (DC {{spellcasting:dc}}). On failure, they take 2d6 + {{charisma:modifier}} damage and are knocked back 10 feet or half as much on a success.</description>
 	    	</sheet>
 	    </element>
 
