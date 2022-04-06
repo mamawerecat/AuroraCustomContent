@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="source.xml" url="https://raw.githubusercontent.com/" />
+			<file name="source.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Vault%20of%20Magic/source.xml" />
 		</update>
 	</info>
   <element name="Valult of Magic" type="Source" source="Kobold Press" id="ID_KBP_SOURCE_VAULT_OF_MAGIC">
