@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Vault of Magic</name>
+		<description>Inside Vault of Magic, you’ll find a vast treasure trove of enchanted items of every imaginable use—more than 900 in all!</description>
+		<author url="https://koboldpress.com/kpstore/product/vault-of-magic-for-5th-edition/">Kobold Press</author>
+		<update version="0.0.1">
+			<file name="vault-of-magic.index url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook.index" />
+		</update>
+	</info>
+	<files>	
+		<file name="source.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Vault%20of%20Magic/source.xml" />
+		
+	
+	</files>
+</index>
