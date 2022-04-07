@@ -236,7 +236,7 @@
 			<set name="category">Magic Weapons</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
-			<set name="type" addition="shortswored">Weapon</set>
+			<set name="type" addition="shortsword">Weapon</set>
 			<set name="rarity">Uncommon</set>
 			<set name="weapon">Shortsword</set>
 			<set name="attunement" addition="by a monk">true</set>
