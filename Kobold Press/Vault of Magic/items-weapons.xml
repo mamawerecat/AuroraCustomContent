@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name></name>
+		<update version="0.0.1">
+			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/TEST.xml" />
+		</update>
+	</info>
+	
+<!-- Akaasit Blade -->
+	<element name="Akaasit Blade" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_AKAASIT_BLADE">
+		<description>
+			<p>This dagger is crafted from the arm blade of a defeated akaasit (see Tome of Beasts 2).</p>
+			<p class="indent">You gain a +1 bonus to attack and damage rolls made with this magic weapon. You can use an action to activate a small measure of prescience within the dagger for 1 minute. If you are attacked by a creature you can see within 5 feet of you while this effect is active, you can use your reaction to make one attack with this dagger against the attacker. If your attack hits, the dagger loses its prescience, and its prescience can’t be activated again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="dagger">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Dagger</set>
+		</setters>
+	</element>
+	
+<!-- Anchor of Striking -->
+	<element name="Anchor of Striking" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ANCHOR_OF_STRIKING">
+		<description>
+			<p>This small rusty iron anchor feels sturdy in spite of its appearance. You gain a +1 bonus to attack and damage rolls made with this magic war pick.</p>
+			<p class="indent">When you roll a 20 on an attack roll made with this weapon, the target is wrapped in ethereal golden chains that extend from the bottom of the anchor. As an action, the chained target can make a DC 15 Strength or Dexterity check, freeing itself from the chains on a success. Alternatively, you can use a bonus action to command the chains to disappear, freeing the target. The chains are constructed of magical force and can’t be damaged, though they can be destroyed with a disintegrate spell. While the target is wrapped in these chains, you and the target can’t move further than 50 feet from each other.</p>
+	  	</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="war pick">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">War Pick</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+
+<!-- Angry Hornet -->
+	<element name="Angry Hornet" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ANGRY_HORNET">
+		<description>
+		  <p>This black ammunition has yellow fletching or yellow paint.</p>
+		  <p class="indent">When you fire this magic ammunition, it makes an angry buzzing sound, and it multiplies in flight. As it flies, 2d4 identical pieces of ammunition magically appear around it, all speeding toward your target. Roll separate attack rolls for each additional arrow or bullet. Duplicate ammunition disappears after missing or after dealing its damage. If the angry hornet and all its duplicates miss, the angry hornet remains magical and can be fired again, otherwise it is destroyed.</p>
+		</description>
+		<setters>
+		  <set name="category">Ammunition</set>
+		  <set name="cost" currency="gp">0</set>
+		  <set name="weight" lb="0">0 lb.</set>
+		  <set name="type">Ammunition</set>
+		  <set name="rarity">Uncommon</set>
+		  <set name="stackable">true</set>
+		</setters>
+	</element>
+
+<!-- Anointing Mace --> 
+
+	<element name="Anointing Mace" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ANOINTING_MACE">
+		<description>
+		  <p>Also called an anointing gada, you gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+		  <p class="indent">In addition, the ornately decorated head of the mace holds a reservoir perforated with small holes. As an action, you can fill the reservoir with a single potion or vial of liquid, such as holy water or alchemist’s fire. You can press a button on the haft of the weapon as a bonus action, which opens the holes. If you hit a target with the weapon while the holes are open, the weapon deals damage as normal and the target suffers the effects of the liquid. For example, an anointing mace filled with holy water deals an extra 2d6 radiant damage if it hits a fiend or undead. After you press the button and make an attack roll, the liquid is expended, regardless if your attack hits.</p>
+		</description>
+		<setters>
+		  <set name="category">Magic Weapons</set>
+		  <set name="cost" currency="gp">0</set>
+		  <set name="weight" lb="0">0 lb.</set>
+		  <set name="type" addition="maul">Weapon</set>
+		  <set name="rarity">Uncommon</set>
+		  <set name="enhancement">1</set>
+		  <set name="weapon">Maul</set>
+		  <set name="attunement">true</set>
+		</setters>
+	</element>
+
+<!-- Arrow of Grabbing -->
+
+	<element name="Arrow of Grabbing" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ARROW_OF_GRABBING">
+		<description>
+			<p>This arrow has a barbed head and is wound with a fine but strong thread that unravels as the arrow soars. If a creature takes damage from the arrow, the creature must succeed on a DC 17 Constitution saving throw or take 4d6 damage and have the arrowhead lodged in its flesh. A creature grabbed by this arrow can’t move farther away from you. At the end of its turn, the creature can attempt a DC 17 Constitution saving throw, taking 4d6 piercing damage and dislodging the arrow on a success.</p>
+			<p class="indent">As an action, you can attempt to pull the grabbed creature up to 10 feet in a straight line toward you, forcing the creature to repeat the saving throw. If the creature fails, it moves up to 10 feet closer to you. If it succeeds, it takes 4d6 piercing damage and the arrow is dislodged.</p>
+		</description>
+		<setters>
+		  	<set name="category">Ammunition</set>
+		  	<set name="cost" currency="gp">0</set>
+		  	<set name="weight" lb="0">0 lb.</set>
+		  	<set name="type">Ammunition</set>
+		  	<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+	
+<!-- Arrow of Unpleasant Herbs -->
+
+	<element name="Arrow of Unpleasant Herbs" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ARROW_OF_UNPLEASANT_HERBS">
+		<description>
+		  <p>This arrow’s tip is filled with magically preserved, poisonous herbs. When a creature takes damage from the arrow, the arrowhead breaks, releasing the herbs. The creature must succeed on a DC 15 Constitution saving throw or be incapacitated until the end of its next turn as it retches and reels from the poison.</p>
+		</description>
+		<setters>
+		  	<set name="category">Ammunition</set>
+		  	<set name="cost" currency="gp">0</set>
+		  	<set name="weight" lb="0">0 lb.</set>
+		  	<set name="type">Ammunition</set>
+		  	<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	
+<!-- Asp’s Kiss -->
+	
+	<element name="Asp's Kiss" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ASPS_KISS">
+		<description>
+			<p>This haladie features two short, slightly curved blades attached to a single hilt with a short, blue-sheened spike on the hand guard. You gain a +2 bonus to attack and damage rolls made with this magic weapon. While attuned to this sword, you have immunity to poison damage, and, when you take the Dash action, the extra movement you gain is double your speed instead of equal to your speed. When you use the Attack action with this sword, you can make one attack with its hand guard spike (treat as a dagger) as a bonus action. You can use an action to cause indigo poison to coat the blades of this sword. </p>
+			<p class="indent">The poison remains for 1 minute or until two attacks using the blade of this weapon hit one or more creatures. The target must succeed on a DC 17 Constitution saving throw or take 2d10 poison damage and its hit point maximum is reduced by an amount equal to the poison damage taken. This reduction lasts until the target finishes a long rest.</p>
+			<p class="indent">The target dies if this effect reduces its hit point maximum to 0. The sword can’t be used this way again until the next dawn. </p>
+			<p class="indent">When you kill a creature with this weapon, it sheds a single, blue tear as it takes its last breath.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="shortsword">Weapon</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">Shortsword</set>
+			<set name="attunement" addition="by a bard, fighter, ranger, or rogue">true</set>
+		</setters>
+	</element>
+
+<!-- Axe of the Ancients -->
+	<element name="Axe of the Ancients" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_AXE_OF_THE_ANCIENTS">
+		<description>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p class="indent">When you draw this weapon, you can use a bonus action to cast the thaumaturgy spell from it. You can have only one of the spell’s effects active at a time when you cast it in this way.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="handaxe">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Handaxe</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY" />
+		</rules>
+	</element>
+
+<!-- Black and White Daggers -->
+	<element name="Black and White Daggers" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BLACK_AND_WHITE_DAGGERS">
+		<description>
+			<p>These matched daggers are identical except for the stones set in their pommels. One pommel is chalcedony (opaque white), the other is obsidian (opaque black).</p>
+			<p class="indent">You gain a +1 bonus to attack and damage rolls with both magic weapons. </p>
+			<p class="indent">The bonus increases to +3 when you use the white dagger to attack a monstrosity, and it increases to +3 when you use the black dagger to attack an undead.</p>
+			<p class="indent">When you hit a monstrosity or undead with both daggers in the same turn, that creature takes an extra 1d6 piercing damage from the second attack.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+		    <set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="dagger">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Dagger</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+
+</elements>
