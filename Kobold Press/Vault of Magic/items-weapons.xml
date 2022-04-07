@@ -2,10 +2,20 @@
 <elements>
 	<info>
 		<name></name>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Vault%20of%20Magic/items-weapons.xml" />
 		</update>
 	</info>
+	
+<!-- Appending IDs for weapon groups -->
+	<element name="Weapon Group (Daggers)" type="Weapon Group" source="Internal" id="ID_INTERNAL_WEAPON_GROUP_DAGGERS" />
+	    <append id="ID_WOTC_PHB_WEAPON_DAGGER">
+		    <supports>ID_INTERNAL_WEAPON_GROUP_DAGGERS</supports>
+	    </append>
+	<element name="Weapon Group (Heavy Crossbows)" type="Weapon Group" source="Internal" id="ID_INTERNAL_WEAPON_GROUP_HEAVY_CROSSBOWS" />
+	    <append id="ID_WOTC_PHB_WEAPON_CROSSBOW_HEAVY">
+		    <supports>ID_INTERNAL_WEAPON_GROUP_HEAVY_CROSSBOWS</supports>
+	    </append>
 	
 <!-- Akaasit Blade -->
 	<element name="Akaasit Blade" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_AKAASIT_BLADE">
@@ -567,4 +577,321 @@
 		</setters>
 	</element>	
 
+<!-- Dimensional Net -->
+	<element name="Dimensional Net" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_DIMENSIONAL_NET">
+		<description>
+			<p>Woven from the hair of celestials and fiends, this shimmering iridescent net can subdue and capture otherworldly creatures. You have a +1 bonus to attack rolls with this magic weapon. In addition to the normal effects of a net, this net prevents any Large or smaller aberration, celestial, or fiend hit by it from using any method of extradimensional movement, including teleportation or travel to a different plane of existence. When such a creature is bound in this way, a creature must succeed on a DC 30 Strength (Athletics) check to free the bound creature.</p>
+			<p class="indent">The net has immunity to damage dealt by the bound creature, but another creature can deal 20 slashing damage to the net and free the bound creature, ending the effect.</p>
+			<p class="indent">The net has AC 15 and 30 hit points. It regains 1 hit point every 5 minutes as long as it has at least 1 hit point. If the net drops to 0 hit points, it is destroyed.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="net">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Net</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+<!-- Dirgeblade -->
+	<element name="Dirgeblade" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_DIRGEBLADE">
+		<description>
+			<p>This weapon is an exquisitely crafted rapier set in a silver and leather scabbard. The blade glows a faint stormy blue and is encircled by swirling wisps of clouds. You gain a +3 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p class="indent">This weapon, when unsheathed, sheds dim blue light in a 20-foot radius. When you hit a creature with it, you can expend 1 Bardic Inspiration to impart a sense of overwhelming grief in the target. A creature affected by this grief must succeed on a DC 15 Wisdom saving throw or fall prone and become incapacitated by sadness until the end of its next turn. </p>
+			<p class="indent">Once a month under an open sky, you can use a bonus action to speak this magic sword’s command word and cause the sword to sing a sad dirge. This dirge conjures heavy rain (or snow in freezing temperatures) in the region for 2d6 hours. The precipitation falls in an X-mile radius around you, where X is equal to your level.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="rapier">Weapon</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">3</set>
+			<set name="weapon">Rapier</set>
+			<set name="attunement" addition="by a bard">true</set>
+		</setters>
+	</element>
+
+<!-- Dagger of the Barbed Devil -->
+	<element name="Dagger of the Barbed Devil" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_DAGGER_OF_THE_BARBED_DEVIL">
+		<description>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p class="indent">You can use an action to cause sharp, pointed barbs to sprout from this blade. The barbs remain for 1 minute. When you hit a creature while the barbs are active, the creature must succeed on a DC 15 Dexterity saving throw or a barb breaks off into its flesh and the dagger loses its barbs. At the start of each of its turns, a creature with a barb in its flesh must make a DC 15 Constitution saving throw. On a failure, it has disadvantage on attack rolls and ability checks until the start of its next turn as it is wracked with pain. The barb remains until a creature uses its action to remove the barb, dealing 1d4 piercing damage to the barbed creature. Once you cause barbs to sprout from the dagger, you can’t do so again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="dagger">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Dagger</set>
+		</setters>
+	</element>
+
+<!-- Dawn Shard -->
+	<element name="Dawn Shard" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_DAWN_SHARD">
+		<description>
+			<p>The blade of this magic weapon gleams with a faint golden shine, and the pommel is etched with a sunburst. As a bonus action, you can command the weapon to shed dim light out to 5 feet, to shed bright light out to 20 feet and dim light for an additional 20 feet, or to douse the light.</p>
+			<p class="indent">The weapon deals an extra 1d6 radiant damage to any creature it hits. This increases to 2d6 radiant damage if the target is undead or a creature of shadow.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="any sword or dagger">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS||ID_INTERNAL_WEAPON_GROUP_DAGGERS</set>
+			<set name="attunement">true</set>
+			<set name="name-format">Dawn Shard {{parent}}</set>
+		</setters>
+	</element>
+
+<!-- Dirk of Daring -->
+	<element name="Dirk of Daring" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_DIRK_OF_DARING">
+		<description>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon. While holding the dagger, you have advantage on saving throws against being frightened.</p>
+			<p class="indent"></p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="dagger">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Dagger</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>	
+
+<!-- Deadfall Arrow -->
+	<element name="Deadfall Arrow" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_DEADFALL_ARROW">
+		<description>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic arrow. On a hit, the arrow transforms into a 10-foot-long wooden log centered on the target, destroying the arrow. The target and each creature in the log’s area must make a DC 15 Dexterity saving throw. On a failure, a creature takes 3d6 bludgeoning damage and is knocked prone and restrained under the log. On a success, a creature takes half the damage and isn’t knocked prone or restrained. A restrained creature can take its action to free itself by succeeding on a DC 15 Strength check. The log lasts for 1 minute then crumbles to dust, freeing those restrained by it.</p>
+			<p class="indent"></p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+		</setters>
+	</element>
+	
+<!-- Dragonstooth Blade -->
+	<element name="Dragonstooth Blade" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_DRAGONSTOOTH_BLADE">
+		<description>
+			<p>This razor-sharp blade, little more than leather straps around the base of a large tooth, still carries the power of a dragon. This weapon’s properties are determined by the type of dragon that once owned this tooth. The GM chooses the dragon type or determines it randomly from the options below. When you hit with an attack using this magic sword, the target takes an extra 1d6 damage of a type determined by the kind of dragon that once owned the tooth. In addition, you have resistance to the type of damage associated with that dragon.</p>
+			<table>
+				<thead>
+					<tr><td>d6</td><td>Dragon</td><td>Damage</td></tr>
+				</thead>
+				<tr><td>1</td><td>Black or Copper</td><td>Acid</td></tr>
+				<tr><td>2</td><td>Brass, Gold, or Red</td><td>Fire</td></tr>
+				<tr><td>3</td><td>Green</td><td>Poison</td></tr>
+				<tr><td>4</td><td>Blue or Bronze</td><td>Lightning</td></tr>
+				<tr><td>5</td><td>Silver or White</td><td>Cold</td></tr>
+				<tr><td>6</td><td>Undead</td><td>Necrotic</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="greatsword or longsword">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+			<set name="weapon">Greatsword||Longsword</set>
+			<set name="name-format">Dragonstooth {{parent}}</set>
+		</setters>
+	</element>	
+
+<!-- Enraging Ammunition  -->
+	<element name="Enraging Ammunition" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ENRAGING_AMMUNITION">
+		<description>
+			<p>When you hit a creature with a ranged attack using this magical ammunition, the target must succeed on a DC 13 Wisdom saving throw or become enraged for 1 minute. On its turn, an enraged creature moves toward you by the most direct route, trying to get within 5 feet of you. It doesn’t avoid opportunity attacks, but it moves around or avoids damaging terrain, such as lava or a pit. If the enraged creature is within 5 feet of you, it attacks you. An enraged creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+<!-- Ensnaring Ammunition -->
+	 <element name="Ensnaring Ammunition" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ENSNARING_AMMUNITION">
+		 <description>
+			 <p>When you hit a creature with a ranged attack using this magical ammunition, the target takes only half the damage from the attack, and the target is restrained as the ammunition bursts into entangling strands that wrap around it. As an action, the restrained target can make a DC 13 Strength check, bursting the bonds on a success. The strands can also be attacked and destroyed (AC 10; hp 5; immunity to bludgeoning, poison, and psychic damage).</p>
+		 </description>
+		 <setters>
+			 <set name="category">Ammunition</set>
+			 <set name="cost" currency="gp">0</set>
+			 <set name="weight" lb="0">0 lb.</set>
+			 <set name="type">Ammunition</set>
+			 <set name="rarity">Uncommon</set>
+		 </setters>
+	 </element>
+
+<!-- Entrenching Mattock -->
+	<element name="Entrenching Weapon" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ENTRENCHING_MATTOCK">
+		<description>
+			<p>You gain a +1 to attack and damage rolls with this magic weapon. This bonus increases to +3 when you use the pick to attack a creature made of earth or stone, such as an earth elemental or stone golem. As a bonus action, you can slam the head of the pick into earth, sand, mud, or rock within 5 feet of you to create a wall of that material up to 30 feet long, 3 feet high, and 1 foot thick along that surface. The wall provides half cover to creatures behind it. The pick can’t be used this way again until the next dawn.</p>
+			<p class="indent"></p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="war pick">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">War Pick</set>
+		</setters>
+	</element>
+
+<!-- Exsanguinating Blade -->
+	<element name="Exsanguinating Blade" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_EXSANGUINATING_BLADE">
+		<description>
+			<p>This double-bladed dagger has an ivory hilt, and its gold pommel is shaped into a woman’s head with ruby eyes and a fanged mouth opened in a scream. You gain a +1 bonus to attack and damage rolls made with this magic weapon. </p>
+			<p class="indent">When you roll a 20 on an attack roll made with this weapon against a creature that has blood, the dagger gains 1 charge. The dagger can hold 1 charge at a time. You can use a bonus action to expend 1 charge from the dagger to cause one of the following effects: </p>
+			<p class="indent">You or a creature you touch with the blade regains 2d8 hit points. </p>
+			<p class="indent">The next time you hit a creature that has blood with this weapon, it deals an extra 2d8 necrotic damage.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="dagger">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Dagger</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>	
+	
+<!-- Flash Bullet -->
+	 <element name="Flash Bullet" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_FLASH_BULLET">
+		 <description>
+			 <p>When you hit a creature with a ranged attack using this shiny, polished stone, it releases a sudden flash of bright light. The target takes damage as normal and must succeed on a DC 11 Constitution saving throw or be blinded until the end of its next turn. Creatures with the Sunlight Sensitivity trait have disadvantage on this saving throw.</p>
+		 </description>
+		 <setters>
+			 <set name="category">Ammunition</set>
+			 <set name="cost" currency="gp">0</set>
+			 <set name="weight" lb="0">0 lb.</set>
+			 <set name="type" addition="sling bullet">Ammunition</set>
+			 <set name="rarity">Common</set>
+		 </setters>
+	 </element>
+
+<!-- Fog Stone -->
+	 <element name="Fog Stone" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_FOG_STONE">
+		 <description>
+			 <p>This sling stone is carved to look like a fluffy cloud. Typically, 1d4 + 1 fog stones are found together. When you fire the stone from a sling, it transforms into a miniature cloud as it flies through the air, and it creates a 20-foot-radius sphere of fog centered on the target or point of impact. The sphere spreads around corners, and its area is heavily obscured. It lasts for 10 minutes or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it.</p>
+			 <p class="indent"></p>
+		 </description>
+		 <setters>
+			 <set name="category">Ammunition</set>
+			 <set name="cost" currency="gp">0</set>
+			 <set name="weight" lb="0">0 lb.</set>
+			 <set name="type" addition="sling bullet">Ammunition</set>
+			 <set name="rarity">Uncommon</set>
+		 </setters>
+	 </element>
+
+<!-- Forgefire Hammer -->
+	<element name="Forgefire Hammer" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_FORGEFIRE_HAMMER">
+		<description>
+			<p>The head of this weapon is shaped like an anvil, and engravings of fire and arcane runes decorate it. You can use a bonus action to speak this magic weapon’s command word, causing its head to glow red-hot. While red-hot, the weapon deals an extra 1d6 fire damage to any target it hits. The weapon’s anvil-like head remains red-hot until you use a bonus action to speak the command word again or until you drop or sheathe the weapon.</p>
+			<p class="indent"></p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="maul or warhammer">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">When you roll a 20 on an attack roll made with this weapon against a target holding or wearing a metal object, such as a metal weapon or metal armor, the target takes an extra 1d4 fire damage and the metal object becomes red-hot for 1 minute. While the object is red-hot and the creature still wears or carries it, the creature takes 1d4 fire damage at the start of each of its turns.</set>
+			<set name="weapon">Maul||Warhammer</set>
+		</setters>
+	</element>
+	
+<!-- Gale Javelin -->
+	<element name="Gale Javelin" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_GALE_JAVELIN">
+		<description>
+			<p>The metallic head of this javelin is embellished with three small wings. When you speak a command word while making a ranged weapon attack with this magic weapon, a swirling vortex of wind follows its path through the air. Draw a line between you and the target of your attack; each creature within 10 feet of this line must make a DC 13 Strength saving throw. On a failed save, the creature is pushed backward 10 feet and falls prone. In addition, if this ranged weapon attack hits, the target must make a DC 13 Strength saving throw. On a failed save, the target is pushed backward 15 feet and falls prone. </p>
+			<p class="indent">The javelin’s property can’t be used again until the next dawn. In the meantime, it can still be used as a magic weapon.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="javelin">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">Javelin</set>
+		</setters>
+	</element>
+
+
+<!-- Glazed Blade -->
+	 <element name="Glazed Blade" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_GLAZED_BLADE">
+		 <description>
+			 <p>A pleasant scent emerges from this weapon. While it is on your person, you have advantage on Charisma (Persuasion) checks made to interact with humanoids and fey.</p>
+			 <p class="indent"></p>
+		 </description>
+		 <setters>
+			 <set name="category">Magic Weapons</set>
+			 <set name="cost" currency="gp">0</set>
+			 <set name="weight" lb="0">0 lb.</set>
+			 <set name="type" addition="any sword or axe">Weapon</set>
+			 <set name="rarity">Common</set>
+			 <set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS||ID_INTERNAL_WEAPON_GROUP_AXES</set>
+			 <set name="name-format">Glazed {{parent}}</set>
+		 </setters>
+	 </element>
+
+<!-- Gnawing Spear -->
+	<element name="Gnawing Spear" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_GNAWING_SPEAR">
+		<description>
+			<p>You gain a +1 bonus to attack and damage rolls with this magic weapon. </p>
+			<p class="indent">When you roll a 20 on an attack roll made with this spear, its head animates, grows serrated teeth, and lodges itself in the target. While the spear is lodged in the target and you are wielding the spear, the target is grappled by you. At the start of each of your turns, the spear twists and grinds, dealing 2d6 piercing damage to the grappled target. If you release the spear, it remains lodged in the target, dealing damage each round as normal, but the target is no longer grappled by you. While the spear is lodged in a target, you can’t make attacks with it. A creature, including the restrained target, can take its action to remove the spear by succeeding on a DC 15 Strength check. The target takes 1d6 piercing damage when the spear is removed. You can use an action to speak the spear’s command word, causing it to dislodge itself and fall into an unoccupied space within 5 feet of the target.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="spear">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Spear</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	
+<!-- Golden Bolt -->
+	 <element name="Golden Bolt" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_GOLDEN_BOLT">
+		 <description>
+			 <p>You gain a +1 bonus to attack and damage rolls made with this magic weapon. This crossbow doesn’t have the loading property, and it doesn’t require ammunition. Immediately after firing a bolt from this weapon, another golden bolt forms to take its place.</p>
+			 <p class="indent"></p>
+		 </description>
+		 <setters>
+			 <set name="category">Magic Weapons</set>
+			 <set name="cost" currency="gp">0</set>
+			 <set name="weight" lb="0">0 lb.</set>
+			 <set name="type" addition="heavy crossbow">Weapon</set>
+			 <set name="rarity">Uncommon</set>
+			 <set name="enhancement">1</set>
+			 <set name="weapon">ID_INTERNAL_WEAPON_GROUP_HEAVY_CROSSBOWS</set>
+			 <set name="attunement">true</set>
+		 </setters>
+	 </element>
+
+	 	
 </elements>
