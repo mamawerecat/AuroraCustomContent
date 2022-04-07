@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name></name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Vault%20of%20Magic/items-weapons.xml" />
 		</update>
 	</info>
@@ -171,5 +171,76 @@
 		</setters>
 	</element>
 
+<!-- Blackguard’s Blade -->
+	
+	<element name="Blackguard's Blade" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BLACKGUARDS_BLADE">
+		<description>
+			<p>You have advantage on attack rolls made with this weapon against a target if another enemy of the target is within 5 feet of it, and it has no allies within 5 feet of it</p>
+			<p class="indent"></p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="dagger or shortsword">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">Dagger||Shortsword</set>
+			<set name="name-format">Blackguard's {{parent}}</set>
+		</setters>
+	</element>
 
+<!-- Blade of Petals -->
+	<element name="Blade of Petals" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BLADE_OF_PETALS">
+		<description>
+			<p>You gain a +2 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p class="indent">This brightly-colored shortsword is kept in a wooden scabbard with eternally blooming flowers. The blade is made of dull green steel, and its pommel is fashioned from hard rosewood. As a bonus action, you can conjure a flowery mist which fills a 20-foot area around you with pleasant-smelling perfume. The scent dissipates after 1 minute. </p>
+			<p class="indent">A creature damaged by the blade must succeed on a DC 15 Charisma saving throw or be charmed by you until the end of its next turn. A creature can’t be charmed this way more than once every 24 hours.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="shortsword">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">Shortsword</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+<!-- Blade of the Dervish -->
+
+	<element name="Blade of the Dervish" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BLADE_OF_THE_DERVISH">
+		<description>
+			<p>This magic scimitar is empowered by your movements. For every 10 feet you move before making an attack, you gain a +1 bonus to the attack and damage rolls of that attack, and the scimitar deals an extra 1d6 slashing damage if the attack hits (maximum of +3 and 3d6). </p>
+			<p class="indent">In addition, if you use the Dash action and move within 5 feet of a creature, you can attack that creature as a bonus action. On a hit, the target takes an extra 2d6 slashing damage.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="scimitar">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">Scimitar</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+<!-- Blade of the Temple Guardian --> 
+	<element name="Blade of the Temple Guardian" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BLADE_OF_THE_TEMPLE_GUARDIAN">
+		<description>
+			<p>This simple but elegant shortsword is a magic weapon. When you are wielding it and use the Flurry of Blows class feature, you can make your bonus attacks with the sword rather than unarmed strikes. If you deal damage to a creature with this weapon and reduce it to 0 hit points, you absorb some of its energy, regaining 1 expended ki point.</p>
+			<p class="indent"></p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="shortswored">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">Shortsword</set>
+			<set name="attunement" addition="by a monk">true</set>
+		</setters>
+	</element>
+		
 </elements>
