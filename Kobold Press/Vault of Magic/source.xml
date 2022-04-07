@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="source.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Vault%20of%20Magic/source.xml" />
 		</update>
 	</info>
@@ -14,6 +14,7 @@
       <set name="url">https://koboldpress.com/kpstore/product/vault-of-magic-for-5th-edition/</set>
       <set name="image">https://koboldpress.com/kpstore/wp-content/uploads/Vault-of-Magic-5E-COVER.jpg</set>
       <set name="author" abbreviation="KBP" url="https://koboldpress.com/">Kobold Press</set>
+      <set name="third-party">true</set>
       <set name="release">20211110</set>
     </setters>
   </element>
