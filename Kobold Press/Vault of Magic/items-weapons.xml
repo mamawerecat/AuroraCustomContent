@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name></name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Vault%20of%20Magic/items-weapons.xml" />
 		</update>
 	</info>
@@ -242,5 +242,329 @@
 			<set name="attunement" addition="by a monk">true</set>
 		</setters>
 	</element>
+	
+<!-- Bloodbow -->
+
+	<element name="Bloodbow" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BLOODBOW">
+		<description>
+			<p>This longbow is carved of a light, sturdy wood such as hickory or yew, and it is almost always stained a deep maroon hue, lacquered and aged under layers of sundried blood. The bow is sometimes decorated with reptilian teeth, centaur tails, or other battle trophies. </p>
+			<p class="indent">The bow is designed to harm the particular type of creature whose blood most recently soaked the weapon. When you make a ranged attack roll with this magic weapon against a creature of that type, you have a +1 bonus to the attack and damage rolls. If the attack hits, the target must succeed on a DC 15 Wisdom saving throw or become enraged until the end of your next turn. While enraged, the target suffers a random short-term madness. Bloodbows are most commonly soaked in the blood of bandits, thieves, or other humanoids. If you soak this weapon in the blood of a different type of creature for at least 1 hour, it ceases to affect the previous type of creature. The bow affects the new type of creature after you finish a long rest.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="longbow">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Longbow</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+
+<!-- Blooddrinker Spear -->
+	<element name="Blooddrinker Spear" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BLOODDRINKER_SPEAR">
+		<description>
+			<p>Prized by gnolls, the upper haft of this spear is decorated with tiny animal skulls, feathers, and other adornments. You gain a +1 bonus to attack and damage rolls with this magic weapon.</p>
+			<p class="indent">When you hit a creature with this spear, you mark that creature for 1 hour. Until the mark ends, you deal an extra 1d6 damage to the target whenever you hit it with the spear, an dyou have advantage on any Wisdom (Perception) or Wisdom (Survival) check you make to find the target. If the target drops to 0 hit points, the mark ends. This property can't be used on a different creature until you spend a short rest cleaning the previous target's blood from the spear.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="spear">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="weapon">Spear</set>
+		</setters>
+	</element>
+
+<!-- Bloodfuel Weapon -->
+
+	<element name="Bloodfuel Weapon" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BLOODFUEL_WEAPON">
+		<description>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon. The first time you attack with the weapon on each of your turns, you can spend one or more Hit Dice, up to your maximum Hit Dice. For each Hit Die spent in this way, you roll the die and add your Constitution modifier to it. You lose hit points equal to the total, and the target takes extra necrotic damage equal to the total. You can’t use this feature of the weapon if you don’t have blood. </p>
+			<p class="indent">Hit Dice spent using this weapon’s feature can’t be used to regain hit points during a short rest. You regain spent Hit Dice as normal.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="any that deals piercing or slashing">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_INTERNAL_DAMAGE_TYPE_PIERCING||ID_INTERNAL_DAMAGE_TYPE_SLASHING</set>
+			<set name="attunement">true</set>
+			<set name="name-format">Bloodfuel {{parent}}</set>
+		</setters>
+	</element>
+
+<!-- Bloodthirsty Weapon -->
+	<element name="Bloodthirsty Weapon" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BLOODTHIRSTY_WEAPON">
+		<description>
+			<p>This magic weapon bears long, branching channels inscribed into its blade or head, and it gives off a coppery scent. When you damage a creature that has blood with this weapon, it loses an additional 2d6 hit points from blood loss. </p>
+			<p class="indent"><b><i>Thirsting.</i></b> The weapon acquires a taste for creatures it damaged. When you miss an attack with this weapon against a creature you damaged with this weapon within the last 1 minute, the target loses 2d6 hit points due to blood loss as the weapon draws blood out of open wounds as it passes. If the wounded creature uses an action to stanch the wound with a successful DC 15 Wisdom (Medicine) check or the creature receives magical healing, the blade no longer has a taste for it, preventing this property from triggering. This property doesn’t work against creatures that don’t have blood.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="any weapon that deals piercing or slashing damage">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">ID_INTERNAL_DAMAGE_TYPE_PIERCING|ID_INTERNAL_DAMAGE_TYPE_SLASHING</set>
+			<set name="attunement">true</set>
+			<set name="name-format">Bloodthirsty {{parent}}</set>
+		</setters>
+	</element>
+
+<!-- Bludgeon of Nightmares -->
+	<element name="Bludgeon of Nightmares" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BLUDGEON_OF_NIGHTMARES">
+		<description>
+			<p>You gain a +2 bonus to attack and damage rolls made with this weapon. The weapon appears to be a mace of disruption, and an identify spell reveals it to be such.</p>
+			<p class="indent"><b><i>Curse.</i></b> This weapon is cursed. Becoming attuned to it extends the curse to you. As long as you remain cursed, you are unwilling to part with the weapon, keeping it on your person at all times. While attuned to this weapon, you have disadvantage on attack rolls made with weapons other than this one.</p>
+			<p class="indent">The first time you use this weapon to kill a creature that has an Intelligence score of 5 or higher, you begin having nightmares and disturbing visions that disrupt your rest. Each time you complete a long rest, you must make a Wisdom saving throw. The DC equals 10 + the total number of creatures with Intelligence 5 or higher that you’ve reduced to 0 hit points with this weapon. On a failure, you gain no benefits from that long rest, and you gain one level of exhaustion.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="flail, mace, or morningstar">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">Flail||Mace||Morningstar</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+<!-- Bone Whip --> 
+	<element name="Bone Whip" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BONE_WHIP">
+		<description>
+			<p>This whip is constructed of humanoid vertebrae with their edges magically sharpened and pointed. The bones are joined together into a coiled line by strands of steel wire. The handle is half a femur wrapped in soft leather of tanned humanoid skin. You gain a +1 bonus to attack and damage rolls with this weapon.</p>
+			<p class="indent">You can use an action to cause fiendish energy to coat the whip. For 1 minute, you gain 5 temporary hit points the first time you hit a creature on each turn. In addition, when you deal damage to a creature with this weapon, the creature must succeed on a DC 17 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage dealt. This reduction lasts until the creature finishes a long rest. Once used, this property of the whip can’t be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="whip">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="weapon">Whip</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+<!-- Bonebreaker Mace -->
+	<element name="Bonebreaker Mace" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BONEBREAKER_MACE">
+		<description>
+			<p>You gain a +1 bonus on attack and damage rolls made with this magic weapon. The bonus increases to +3 when you use it to attack an undead creature. Often given to the grim enforcers of great necropolises, these weapons can reduce the walking dead to splinters with a single strike.</p>
+			<p class="indent">When you hit an undead creature with this magic weapon, treat that creature as if it is vulnerable to bludgeoning damage. If it is already vulnerable to bludgeoning damage, your attack deals an additional 1d6 radiant damage.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="any weapon that deals bludgeoning damage">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+<!-- Bow of Accuracy -->
+	<element name="Bow of Accuracy" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BOW_OF_ACCURACY">
+		<description>
+			<p>The normal range of this bow is doubled, but its long range remains the same.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="any bow">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_BOWS</set>
+		</setters>
+	</element>
+
+<!-- Breaker Lance -->
+	<element name="Breaker Lance" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BREAKER_LANCE">
+		<description>
+			<p>You gain a +1 bonus to attack and damage rolls with this magic weapon. When you attack an object or structure with this magic lance and hit, maximize your weapon damage dice against the target.</p>
+			<p class="indent">The lance has 3 charges. As part of an attack action with the lance, you can expend a charge while striking a barrier created by a spell, such as a wall of fire or wall of force, or an entryway protected by the arcane lock spell. You must make a Strength check against a DC equal to 10 + the spell’s level. On a successful check, the spell ends. The lance regains 1d3 expended charges daily at dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="lance">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Lance</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+<!-- Bullseye Arrow -->
+	<element name="Bullseye Arrow" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BULLSEYE_ARROW">
+		<description>
+			<p>This arrow has bright red fletching and a blunt, red tip. You gain a +1 bonus to attack rolls made with this magic arrow. On a hit, the arrow deals no damage, but it paints a magical red dot on the target for 1 minute. While the dot lasts, the target takes an extra 1d4 damage of the weapon’s type from any ranged attack that hits it. In addition, ranged weapon attacks against the target score a critical hit on a roll of 19 or 20. When this arrow hits a target, the arrow vanishes in a flash of red light and is destroyed.</p>
+			<p class="indent"></p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+		</setters>
+	</element>
+
+<!-- Buzzing Blade -->
+	<element name="Buzzing Blade" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BUZZING_BLADE">
+		<description>
+			<p>You can use a bonus action to speak this weapon’s command word, causing the blade to emit a loud buzzing sound. The buzzing noise is audible out to 100 feet. While the sword is buzzing, it deals an extra 2d6 thunder damage to any target it hits. The buzzing lasts until you use a bonus action to speak the command word again or until you drop or sheathe the weapon.</p>
+			<p class="indent"></p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="any sword or axe">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS||ID_INTERNAL_WEAPON_GROUP_AXES</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
 		
+<!-- Candied Axe -->
+	<element name="Candied Axe" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_CANDIED_AXE">
+		<description>
+			<p>This battleaxe bears a golden head spun from crystalized honey. Its wooden handle is carved with reliefs of bees. You gain a +2 bonus to attack and damage rolls made with this magic weapon. </p>
+			<p class="indent"><b><i>Blessing of the Bee.</i></b> While you are attuned to the axe, you have immunity to poison damage, and you have advantage on any Charisma check to interact with beasts.</p>
+			<p class="indent"><b><i>Honey Drip.</i></b> While you are holding the battleaxe, you can use an action to cast the slow spell (save DC 15) from the weapon. Once used, this property can’t be used again until the next dawn. </p>
+			<p class="indent"><b><i>Curse.</i></b> The axe bears a curse that affects any non bearfolk that attunes to it. Even if the attunement ends, the curse remains. With each passing day, the creature’s physical appearance and stature become more bearlike. After 7 days, the creature looks like a typical bearfolk, but the creature neither loses its racial traits nor gains the racial traits of a bearfolk. </p>
+			<p class="indent">The physical changes wrought by the axe can’t be dispelled, but they can be undone by any effect that removes a curse, such as the remove curse spell.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="battleaxe">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">Battleaxe</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
+			<grant type="Spell" id="ID_PHB_SPELL_SLOW" />
+		</rules>
+	</element>
+
+<!-- Chainbreaker Blade -->
+	<element name="Chainbreaker Blade" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_CHAINBREAKER_BLADE">
+		<description>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you use this weapon to attack or break chains, manacles, or similar metal objects restraining creatures, you have advantage on the attack roll or ability check. In addition, such items have vulnerability to this sword’s weapon damage.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="any sword">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+			<set name="name-format">Chainbreaker {{parent}}</set>
+		</setters>
+	</element>
+
+<!-- Chieftain’s Axe -->
+	<element name="Chieftain's Axe" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_CHIEFTAINS_AXE">
+		<description>
+			<p>Furs conceal the worn runes lining the haft of this oversized, silver-headed battleaxe. You gain a +2 bonus to attack and damage rolls made with this silvered, magic weapon. Chieftain’s Rally. You can use an action to raise the axe while shouting a rallying cry. All allies who can hear and see you can use a reaction to make a melee attack. Once used, this property can’t be used again until the next dawn. </p>
+			<p class="indent"><b><i>Bearfolk Belonging.</i></b> If you aren’t a bearfolk, bearfolk who see you carrying the chieftain’s axe are immediately hostile. In addition, you have disadvantage on Charisma checks to influence bearfolk. However, if you turn the axe over to bearfolk, provided you haven’t used the axe against bearfolk to their knowledge, they become friendly and, at the GM’s discretion, might provide aid to you and your allies.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="battleaxe">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">Battleaxe</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+<!-- Clockwork Mace of Divinity -->
+	<element name="Clockwork Mace of Divinity" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_CLOCKWORK_MACE_OF_DIVINITY">
+		<description>
+			<p>This clockwork mace is composed of several different metals. While attuned to this magic weapon, you have proficiency with it. As a bonus action, you can command the mace to transform into a trident. When you hit with an attack using this weapon’s trident form, the target takes an extra 1d6 radiant damage.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="mace">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">Mace</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MACE" />
+		</rules>
+	</element>
+
+<!-- Constant Dagger -->
+	 <element name="Constant Dagger" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_CONSTANT_DAGGER">
+		 <description>
+			 <p>You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you roll a 20 on an attack roll made with this weapon, the target loses its resistance to bludgeoning, piercing, and slashing damage until the start of your next turn. If it has immunity to bludgeoning, piercing, and slashing damage, its immunity instead becomes resistance to such damage until the start of your next turn. If the creature doesn’t have resistance or immunity to such damage, you roll your damage dice three times, instead of twice.</p>
+			 <p class="indent"></p>
+		 </description>
+		 <setters>
+			 <set name="category">Magic Weapons</set>
+			 <set name="cost" currency="gp">0</set>
+			 <set name="weight" lb="0">0 lb.</set>
+			 <set name="type" addition="dagger">Weapon</set>
+			 <set name="rarity">Rare</set>
+			 <set name="enhancement">1</set>
+			 <set name="weapon">Dagger</set>
+		 </setters>
+	 </element>
+
+<!-- Consuming Rod -->
+	<element name="Consuming Rod" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_CONSUMING_ROD">
+		<description>
+			<p>This bone mace is crafted from a humanoid femur. One end is carved to resemble a ghoulish face, its mouth open wide and full of sharp fangs. The mace has 8 charges, and it recovers 1d6 + 2 charges daily at dawn. You gain a +1 bonus to attack and damage rolls made with this magic mace. When it hits a creature, the mace’s mouth stretches gruesomely wide and bites the target, adding 3 (1d6) piercing damage to the attack. As a reaction, you can expend 1 charge to regain hit points equal to the piercing damage dealt.</p>
+			<p class="indent">Alternatively, you can use your reaction to expend 5 charges when you hit a Medium or smaller creature and force the mace to swallow the target. The target must succeed on a DC 15 Dexterity saving throw or be swallowed into an extra-dimensional space within the mace. While swallowed, the target is blinded and restrained, and it has total cover against attacks and other effects outside the mace. The target can still breathe. As an action, you can force the mace to regurgitate the creature, which falls prone in a space within 5 feet of the mace. The mace automatically regurgitates a trapped creature at dawn when it regains charges.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="mace">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Mace</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+<!-- Crimson Starfall Arrow -->
+	<element name="Crimson Starfall Arrow" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_CRIMSON_STARFALL_ARROW">
+		<description>
+			<p>This arrow is a magic weapon powered by the sacrifice of your own life energy and explodes upon impact. If you hit a creature with this arrow, you can spend one or more Hit Dice, up to your maximum Hit Dice. For each Hit Die spent in this way, you roll the die and add your Constitution modifier to it. You lose hit points equal to the total, and each creature within 10 feet of the target, including the target, must make a DC 15 Dexterity saving throw, taking necrotic damage equal to the hit points you lost on a failed save, or half as much damage on a successful one. </p>
+			<p class="indent">You can’t use this feature of the arrow if you don’t have blood. Hit Dice spent on this arrow’s feature can’t be used to regain hit points during a short rest. You regain spent Hit Dice as normal.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>	
+
 </elements>
