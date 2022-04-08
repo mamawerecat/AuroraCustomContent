@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name></name>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Vault%20of%20Magic/items-weapons.xml" />
 		</update>
 	</info>
@@ -892,6 +892,232 @@
 			 <set name="attunement">true</set>
 		 </setters>
 	 </element>
+	
+<!-- Hammer of Throwing -->
+	<element name="Hammer of Throwing" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_HAMMER_OF_THROWING">
+		<description>
+			<p>You gain a +1 bonus to attack and damage rolls with this magic weapon. In addition, when you throw the hammer, it returns to your hand at the end of your turn. If you have no hand free, it falls to the ground at your feet.</p>
+			<p class="indent"></p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="light hammer">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Light Hammer</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
 
+<!-- Hexen Blade -->
+	<element name="Hexen Blade" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_HEXEN_BLADE">
+		<description>
+			<p>The colorful surface of this sleek adamantine shortsword exhibits a perpetually shifting, iridescent sheen. You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p class="indent">The sword has 5 charges and regains 1d4 + 1 charges daily at dawn. While holding it, you can use an action and expend 1 or more of its charges to cast one of the following spells from it, using spell save DC 15: disguise self (1 charge), hypnotic pattern (3 charges), or mirror image (2 charges).</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="shortsword">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Shortsword</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+<!-- Hidden Armament -->  <!-- come back to, may make weapon group with one handed melee weapons so this restriction works -->
+	<element name="Hidden Armament" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_HIDDEN_ARMAMENT">
+		<description>
+			<p>While holding this magic weapon, you can use an action to transform it into a tattoo on the palm of your hand. You can use a bonus action to transform the tattoo back into a weapon.</p>
+			<p class="indent"></p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="any melee weapon that isn't two-handed">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement"></set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+<!-- Humble Cudgel of Temperance -->
+	<element name="Humble Cudgel of Temperance" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_HUMBLE_CUDGEL_OF_TEMPERANCE">
+		<description>
+			<p>This simple, polished club has a studded iron band around one end. When you attack a poisoned creature with this magic weapon, you have advantage on the attack roll.</p>
+			<p class="indent">When you roll a 20 on an attack roll made with this weapon, the target becomes poisoned for 1 minute. If the target was already poisoned, it becomes incapacitated instead. The target can make a DC 13 Constitution saving throw at the end of each of its turns, ending the poisoned or incapacitated condition on itself on a success.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="club">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">Club</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+<!-- Iceblink -->
+	<element name="Iceblink" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ICEBLINK">
+		<description>
+			<p>The blade of this weapon is cool to the touch and gives off a yellow-white radiance, shedding bright light in a 10-foot radius and dim light for an additional 10 feet. In temperatures above freezing, vapor wafts off the chilled blade. When you hit with an attack using this magic sword, the target takes an extra 1d6 cold damage.</p>
+			<p class="indent"><b><i>Freeze Water.</i></b> While holding the sword, you can use an action to plunge the blade into a body of water, causing its surface to freeze over. The water freezes to a depth of 3 inches within a 60-foot radius of the point where you plunged the blade. Creatures that were swimming on the surface of the water must succeed on a DC 15 Dexterity saving throw or be restrained by the ice. A restrained creature can use an action to make a DC 15 Strength check, breaking free on a success. The ice is not magical and melts after 1 minute if temperatures in the area are not cold enough to sustain it. Once used, this property can’t be used again until the next dawn.</p>
+			<p class="indent"><b><i>Snowblind.</i></b> While holding the sword, you can use an action to generate a bright flash of light from the blade at one creature you can see within 5 feet of you. The target must succeed on a DC 15 Constitution saving throw or be blinded for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Once used, this property can’t be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="any sword">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+<!-- Impact Club --> 
+	<element name="Impact Club" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_IMPACT_CLUB">
+		<description>
+			<p>This magic weapon has 3 charges and regains 1d3 expended charges daily at dawn. When you hit a target on your turn, you can take a bonus action to spend 1 charge and attempt to shove the target. The club grants you a +1 bonus on your Strength (Athletics) check to shove the target. If you roll a 20 on your attack roll with the club, you have advantage on your Strength (Athletics) check to shove the target, and you can push the target up to 10 feet away.</p>
+			<p class="indent"></p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="club">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">Club</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+<!-- Impaling Weapon -->
+	<element name="Impaling Weapon" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_IMPALING_WEAPON">
+		<description>
+			<p>When you attack a creature with this magic weapon and roll a 20 on the attack roll, you embed the weapon in the target. If the target is Medium or smaller and is within 5 feet of a wall or other solid object when you hit with this weapon, it is also restrained while the weapon is embedded. At the end of the target’s turn while the weapon is embedded in it, the target takes damage equal to the weapon’s damage, with no additional modifiers. A creature, including the target, can use its action to make a DC 13 Strength check, removing the weapon from the target on a success. You can remove the embedded weapon from the target by speaking the weapon’s command word.</p>
+			<p class="indent"></p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="any melee weapon that deals piercing damage">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">ID_INTERNAL_DAMAGE_TYPE_PIERCING</set>
+			<set name="attunement">true</set>
+			<set name="name-format">Impaling {{parent}}</set>
+		</setters>
+	</element>
+
+<!-- Knockabout Billet -->
+	
+	<element name="Knockabout Billet" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_KNOCKABOUT_BILLET">
+		<description>
+			<p>This stout, oaken cudgel helps you knock your opponents to the ground or away from you. When you hit a creature with this magic weapon, you can shove the target as part of the same attack, using your attack roll in place of a Strength (Athletics) check. The weapon deals damage as normal, regardless of the result of the shove. This property of the club can be used no more than once per hour.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="club">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">Club</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+<!-- Kyshaarth’s Fang -->
+	<element name="Kyshaarth's Fang" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_KYSHAARTHS_FANG">
+		<description>
+			<p>This dagger’s blade is composed of black, bone-like material. Tales suggest the weapon is fashioned from a voidling’s (see Tome of Beasts) tendril barb. When you hit with an attack using this magic weapon, the target takes an extra 2d6 necrotic damage. If you are in dim light or darkness, you regain a number of hit points equal to half the necrotic damage dealt.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="dagger">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">Dagger</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>	
+
+<!-- Labyrs of the Raging Bull -->
+	<element name="Labyrs of the Raging Bull" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_LABYRS_OF_THE_RAGING_BULL">
+		<description>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon. While you wield the axe, you have advantage on Strength (Athletics) checks to shove a creature, and you can shove a creature up to two sizes larger than you.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="battleaxe or greataxe">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Battleaxe||Greataxe</set>
+		</setters>
+	</element>
+
+<!-- Leaf-Bladed Sword -->
+	<element name="Leaf-Bladed Sword" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_LEAF_BLADED_SWORD">
+		<description>
+			<p>This thin, curved blade has a bell guard shaped like a curled, golden leaf. You gain a +1 bonus to attack and damage rolls with this magic weapon. </p>
+			<p class="indent">When you hit an aberration or undead creature with it, that target takes an extra 1d8 damage of the weapon’s type.You can use an action to cast the barkskin spell on yourself for 1 hour, requiring no concentration. Once used, this property can’t be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="any sword">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+			<set name="attunement">true</set>
+			<set name="name-format">Leaf-Bladed {{parent}}</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BARKSKIN" />
+		</rules>
+	</element>
+<!-- Lockbreaker -->
+	<element name="Lockbreaker" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_LOCKBREAKER">
+		<description>
+			<p>You can use this stiletto-bladed dagger to open locks by using an action and making a Strength check. The DC is 5 less than the DC to pick the lock (minimum DC 10). On a success, the lock is broken.</p>
+			<p class="indent"></p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="dagger">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">Dagger</set>
+		</setters>
+	</element>
+	
+<!-- Manticore’s Tail -->
+	<element name="Manticore’s Tail" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_MANTICORES_TAIL">
+		<description>
+			<p>Ten spikes stick out of the head of this magic weapon. While holding the morningstar, you can fire one of the spikes as a ranged attack, using your Strength modifier for the attack and damage rolls. This attack has a normal range of 100 feet and a long range of 200 feet. On a hit, the spike deals 1d8 piercing damage. Once all of the weapon’s spikes have been fired, the morningstar deals bludgeoning damage instead of the piercing damage normal for a morningstar until the next dawn, at which time the spikes regrow.</p>
+			<p class="indent"></p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="morningstar">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">Morningstar</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
 	 	
 </elements>
