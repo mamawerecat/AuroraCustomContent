@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name></name>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Vault%20of%20Magic/items-weapons.xml" />
 		</update>
 	</info>
@@ -373,7 +373,7 @@
 	</element>
 
 <!-- Bonebreaker Mace -->
-	<element name="Bonebreaker Mace" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BONEBREAKER_MACE">
+	<element name="Bonebreaker Weapon" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BONEBREAKER_MACE">
 		<description>
 			<p>You gain a +1 bonus on attack and damage rolls made with this magic weapon. The bonus increases to +3 when you use it to attack an undead creature. Often given to the grim enforcers of great necropolises, these weapons can reduce the walking dead to splinters with a single strike.</p>
 			<p class="indent">When you hit an undead creature with this magic weapon, treat that creature as if it is vulnerable to bludgeoning damage. If it is already vulnerable to bludgeoning damage, your attack deals an additional 1d6 radiant damage.</p>
@@ -387,6 +387,7 @@
 			<set name="enhancement">1</set>
 			<set name="weapon">ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING</set>
 			<set name="attunement">true</set>
+			<set name="name-format">Bonebreaker {{parent}}</set>
 		</setters>
 	</element>
 
