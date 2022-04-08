@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name></name>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Vault%20of%20Magic/items-weapons.xml" />
 		</update>
 	</info>
@@ -16,6 +16,10 @@
 	    <append id="ID_WOTC_PHB_WEAPON_CROSSBOW_HEAVY">
 		    <supports>ID_INTERNAL_WEAPON_GROUP_HEAVY_CROSSBOWS</supports>
 	    </append>
+	<element name="Weapon Group (Hand Crossbows)" type="Weapon Group" source="Internal" id="ID_INTERNAL_WEAPON_GROUP_HAND_CROSSBOWS" />
+	        <append id="ID_WOTC_PHB_WEAPON_CROSSBOW_HAND">
+	        	<supports>ID_INTERNAL_WEAPON_GROUP_HAND_CROSSBOWS</supports>
+	        </append>
 	
 <!-- Akaasit Blade -->
 	<element name="Akaasit Blade" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_AKAASIT_BLADE">
@@ -1119,5 +1123,335 @@
 			<set name="attunement">true</set>
 		</setters>
 	</element>
-	 	
+	
+<!-- Masher Basher -->
+	  <element name="Masher Basher" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_MASHER_BASHER">
+		  <description>
+			  <p>A favored weapon of hill giants, this greatclub appears to be little more than a thick tree branch. When you hit a giant with this magic weapon, the giant takes an extra 1d8 bludgeoning damage. When you roll a 20 on an attack roll made with this weapon, the target is stunned until the end of its next turn.</p>
+		  </description>
+		  <setters>
+			  <set name="category">Magic Weapons</set>
+			  <set name="cost" currency="gp">0</set>
+			  <set name="weight" lb="0">0 lb.</set>
+			  <set name="type" addition="greatclub">Weapon</set>
+			  <set name="rarity">Uncommon</set>
+			  <set name="weapon">Greatclub</set>
+		  </setters>
+	  </element>
+
+<!-- Moonsteel Weapon -->
+	<element name="Moonsteel Weapon" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_MOONSTEEL_WEAPON">
+		<description>
+			<p>The blade of this magic weapon seems to shine from within with a pale, white light. The weapon deals an extra 1d6 radiant damage to any creature it hits. If the creature is a shapechanger or any other creature not in its true form, it becomes frightened until the start of your next turn. At the start of its turn, a creature frightened in this way must succeed on a DC 13 Charisma saving throw or immediately return to its true form. For the purpose of this weapon, “shapechanger” refers to any creature with the Shapechanger trait.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="rapier or dagger">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">Rapier||Dagger</set>
+			<set name="name-format">Moonsteel {{parent}}</set>
+		</setters>
+	</element>
+
+<!-- Mordant Blade -->
+	<element name="Mordant Blade" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_MORDANT_BLADE">
+		<description>
+			<p>You can use a bonus action to speak this magic weapon's command word, causing the blade to weep a caustic, green acid. While weeping acid, the weapon deals an extra 2d6 acid damage to any target it hits. The weapon continues to weep acid until you use a bonus action to speak the command word again or you sheathe or drop the weapon.</p>
+			<p class="indent"><b><i>Acid Arc.</i></b> While holding the weapon, you can use an action to swing it in a wide arc, spraying acid in a 15-foot cone. Each creature in the cone must make a DC 15 Dexterity saving throw, taking 4d6 acid damage on a failed save, or half as much damage on a successful one. Once used, this property can’t be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="any weapon that deals slashing damage">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">ID_INTERNAL_DAMAGE_TYPE_SLASHING</set>
+			<set name="attunement">true</set>
+			<set name="name-format">Mordant {{parent}}</set>
+		</setters>
+	</element>
+
+<!-- Mountain Hewer -->
+	<element name="Mountain Hewer" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_MOUNTAIN_HEWER">
+		<description>
+			<p>You gain a +2 bonus to attack and damage rolls made with this magic weapon. The massive head of this axe is made from chiseled stone lashed to its haft by thick rope and leather strands. Small chips of stone fall from its edge intermittently, though it shows no sign of damage or wear. You can use your action to speak the command word to cause small stones to float and swirl around the axe, shedding bright light in a 30-foot radius and dim light for an additional 30 feet. The light remains until you use a bonus action to speak the command word again or until you drop or sheathe the axe.</p>
+			<p class="indent">As a bonus action, choose a creature you can see. For 1 minute, that creature must succeed on a DC 15 Wisdom saving throw each time it is damaged by the axe or become frightened until the end of your next turn. Creatures of Large size or greater have disadvantage on this save. Once used, this property of the axe can’t be used again until the next dawn. </p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="greataxe">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">Greataxe</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+<!-- Mountaineer’s Crossbow -->
+	<element name="Mountaineer's Crossbow" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_MOUNTAINEERS_CROSSBOW">
+		<description>
+			<p>This crossbow has a weathered look, and scenes of mountains are etched across its stock. An adamantine grappling hook and cable are built into this magic crossbow. While no ammunition is loaded in the crossbow, you can use an action to fire the grappling hook at a surface, structure, precipice, or other similar location that you can see within 60 feet of you. The grappling hook magically attaches to the surface and connects to the crossbow via an adamantine cable. While the grappling hook is attached to a surface and you are holding the crossbow, you can use an action to speak a command word to reel yourself and up to 1,000 pounds of willing creatures and objects connected to you to the surface. Speaking a second command word as a bonus action releases the grappling hook from the surface, reattaching it to the crossbow, and winds the cable back into a tiny pocket dimension inside the crossbow. </p>
+			<p class="indent">This cable has AC 12, 20 hit points, and immunity to all damage except acid, lightning, and slashing damage from adamantine weapons. If the cable drops to 0 hit points, the crossbow can’t be used in this way again until 24 hours have passed.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="any crossbow">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_CROSSBOWS</set>
+		</setters>
+	</element>
+
+<!-- Mutineer’s Blade -->
+	<element name="Mutineer's Blade" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_MUTINEERS_BLADE">
+		<description>
+			<p>This finely balanced scimitar has an elaborate brass hilt. You gain a +2 bonus on attack and damage rolls made with this magic weapon. You can use a bonus action to speak the scimitar’s command word, causing the blade to shed bright green light in a 10-foot radius and dim light for an additional 10 feet. The light lasts until you use a bonus action to speak the command word again or until you drop or sheathe the scimitar.</p>
+			<p class="indent">When you roll a 20 on an attack roll made with this weapon, the target is overcome with the desire for mutiny. On the target’s next turn, it must make one attack against its nearest ally, then the effect ends, whether or not the attack was successful.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="scimitar">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">Scimitar</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+<!-- Odd Bodkin -->
+	 <element name="Odd Bodkin" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ODD_BODKIN">
+		 <description>
+			 <p>This dagger has a twisted, jagged blade. You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you hit a creature other than a construct or an undead with this weapon, it loses 1d4 hit points at the start of each of its turns from a jagged wound. Each time you successfully hit the wounded target with this dagger, the damage dealt by the wound increases by 1d4. Any creature can take an action to stanch the wound with a successful DC 11 Wisdom (Medicine) check. The wound also closes if the wounded creature receives magical healing.</p>
+		 </description>
+		 <setters>
+			 <set name="category">Magic Weapons</set>
+			 <set name="cost" currency="gp">0</set>
+			 <set name="weight" lb="0">0 lb.</set>
+			 <set name="type" addition="dagger">Weapon</set>
+			 <set name="rarity">Rare</set>
+			 <set name="weapon">Dagger</set>
+		 </setters>
+	 </element>	
+
+<!-- Pestilent Spear -->
+	<element name="Pestilent Spear" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_PESTILENT_SPEAR">
+		<description>
+			<p>The head of this spear is deadly sharp, despite the rust and slimy residue on it that always accumulate no matter how well it is cleaned. When you hit a creature with this magic weapon, it must succeed on a DC 13 Constitution saving throw or contract the sewer plague disease.</p>
+			<p class="indent">After the attack, the spinner flies up to 60 feet and tries to return to your hand. If you have no hand free, it falls to the ground at your feet. </p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="spear">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">Spear</set>
+		</setters>
+	</element>
+
+<!-- Pick of Ice Breaking --> 
+	 <element name="Pick of Ice Breaking" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_PICK_OF_ICE_BREAKING">
+		 <description>
+			 <p>The metal head of this war pick is covered in tiny arcane runes. You gain a +1 bonus to attack and damage rolls made with this magic weapon. The bonus increases to +3 when you use the war pick to attack a construct, elemental, fey, or other creature made almost entirely of ice or snow. When you roll a 20 on an attack roll made with this weapon against such a creature, the target takes an extra 2d8 piercing damage. When you hit an object made of ice or snow with this weapon, the object doesn’t have a damage threshold when determining the damage you deal to it with this weapon.</p>
+			 <p class="indent"></p>
+		 </description>
+		 <setters>
+			 <set name="category">Magic Weapons</set>
+			 <set name="cost" currency="gp">0</set>
+			 <set name="weight" lb="0">0 lb.</set>
+			 <set name="type" addition="war pick">Weapon</set>
+			 <set name="rarity">Uncommon</set>
+			 <set name="enhancement">1</set>
+			 <set name="weapon">War Pick</set>
+		 </setters>
+	 </element>
+
+<!-- Pistol of the Umbral Court --> 
+	<element name="Pistol of the Umbral Court" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_PISTOL_OF_THE_UMBRAL_COURT">
+		<description>
+			<p>This hand crossbow is made from coal-colored wood. Its limb is made from cold steel and boasts engravings of sharp teeth. The barrel is magically oiled and smells faintly of ash. The grip is made from rough leather. </p>
+			<p class="indent">You gain a +2 bonus on attack and damage rolls made with this magic weapon. When you hit with an attack with this weapon, you can force the target of your attack to succeed on a DC 15 Strength saving throw or be pushed 5 feet away from you. The target takes damage, as normal, whether it was pushed away or not.</p>
+			<p class="indent">As a bonus action, you can increase the distance creatures are pushed to 20 feet for 1 minute. If the creature strikes a solid object before the movement is complete, it takes 1d6 bludgeoning damage for every 10 feet traveled. Once used, this property of the crossbow can’t be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="hand crossbow">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_HAND_CROSSBOWS</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+<!-- Phidjetz Spinner -->
+	<element name="Phidjetz Spinner" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_PHIDJETZ_SPINNER">
+		<description>
+			<p>This dart was crafted by the monk Phidjetz, a martial recluse obsessed with dragons. The spinner consists of a golden central disk with four metal dragon heads protruding symmetrically from its center point: one red, one white, one blue and one black. </p>
+			<p class="indent">As an action, you can spin the disk using the pinch grip in its center. You choose a single target within 30 feet and make a ranged attack roll. The spinner then flies at the chosen target. </p>
+			<p class="indent">Once airborne, each dragon head emits a blast of elemental energy appropriate to its type. When you hit a creature, determine which dragon head affects it by rolling a d4 on the following chart.</p>
+			<table>
+				<thead>
+					<tr><td>d4</td><td>Effect</td></tr>
+				</thead>
+				<tr><td>1</td><td><b><i>Red.</i></b> The target takes 1d6 fire damage and combustible materials on the target ignite, doing 1d4 fire damage each turn until it is put out.</td></tr>
+				<tr><td>2</td><td><b><i>White.</i></b> The target takes 1d6 cold damage and is restrained until the start of your next turn.</td></tr>
+				<tr><td>3</td><td><b><i>Blue.</i></b> The target takes 1d6 lightning damage and is paralyzed until the start of your next turn.</td></tr>
+				<tr><td>4</td><td><b><i>Black.</i></b> The target takes 1d6 acid damage and is poisoned until the start of your next turn.</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="dart">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">Dart</set>
+			<set name="attunement" addition="by a monk">true</set>
+		</setters>
+	</element>
+
+<!-- Poison Strand -->
+	 <element name="Poison Strand" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_POISON_STRAND">
+		 <description>
+			 <p>When you hit with an attack using this magic whip, the target takes an extra 2d4 poison damage. If you hold one end of the whip and use an action to speak its command word, the other end magically extends and darts forward to entangle a creature you can see within 20 feet of you. The target must succeed on a DC 17 Dexterity saving throw or become restrained. While restrained, the target takes 2d4 poison damage at the start of each of its turns, and you can use an action to pull the target up to 20 feet toward you. If you would move the target into damaging terrain, such as lava or a pit, it can make a DC 17 Strength saving throw. On a success, the target isn’t pulled toward you.</p>
+			 <p class="indent">You can’t use the whip to make attacks while it is restraining a target, and if you release your end of the whip, the target is no longer restrained. The restrained target can use an action to make a DC 17 Strength (Athletics) or Dexterity (Acrobatics) check (target’s choice). On a success, the target is no longer restrained by the whip.When the whip has restrained creatures for a total of 1 minute, you can’t restrain a creature with the whip again until the next dawn.</p>
+		 </description>
+		 <setters>
+			 <set name="category">Magic Weapons</set>
+			 <set name="cost" currency="gp">0</set>
+			 <set name="weight" lb="0">0 lb.</set>
+			 <set name="type" addition="whip">Weapon</set>
+			 <set name="rarity">Very Rare</set>
+			 <set name="enhancement"></set>
+			 <set name="weapon">Whip</set>
+			 <set name="attunement">true</set>
+		 </setters>
+	 </element>
+
+<!-- Rain of Chaos -->
+	<element name="Rain of Chaos" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_RAIN_OF_CHAOS">
+		<description>
+			<p>This magic weapon imbues arrows fired from it with random energies. When you hit with an attack using this magic bow, the target takes an extra 1d6 damage. Roll a d8. The number rolled determines the damage type of the extra damage.</p>
+			<table>
+				<thead>
+					<tr><td>d8</td><td>Damage Type</td></tr>
+				</thead>
+				<tr><td>1</td><td>Acie</td></tr>
+				<tr><td>2</td><td>Cold</td></tr>
+				<tr><td>3</td><td>Fire</td></tr>
+				<tr><td>4</td><td>Lightning</td></tr>
+				<tr><td>5</td><td>Necrotic</td></tr>
+				<tr><td>6</td><td>Poison</td></tr>
+				<tr><td>7</td><td>Radiant</td></tr>
+				<tr><td>8</td><td>Thunder</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="longbow">Weapon</set>
+			<set name="rarity">Uncommon</set> 
+			<set name="weapon">Longbow</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+<!-- Ravager’s Axe -->
+	 <element name="Ravager's Axe" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_RAVAGERS_AXE">
+		 <description>
+			 <p>You gain a +1 bonus to attack and damage rolls made with this magic weapon. Any attack with this axe that hits a structure or an object that isn’t being worn or carried is a critical hit.</p>
+			 <p class="indent">When you roll a 20 on an attack roll made with this axe, the target takes an extra 1d10 cold damage and 1d10 necrotic damage as the axe briefly becomes a rift to the Void.</p>
+		 </description>
+		 <setters>
+			 <set name="category">Magic Weapons</set>
+			 <set name="cost" currency="gp">0</set>
+			 <set name="weight" lb="0">0 lb.</set>
+			 <set name="type" addition="greataxe">Weapon</set>
+			 <set name="rarity">Very Rare</set>
+			 <set name="enhancement">1</set>
+			 <set name="weapon">Greataxe</set>
+		 </setters>
+	 </element>
+
+<!-- Reef Splitter -->
+	 <element name="Reef Splitter" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_REEF_SPLITTER">
+		 <description>
+			 <p>The head of this warhammer is constructed of undersea volcanic rock and etched with images of roaring flames and boiling water. You gain a +3 bonus to attack and damage rolls made with this magic weapon. When you roll a 20 on an attack roll made with this weapon, the hammer erupts with magma, and the target takes an extra 4d6 fire damage. In addition, if the target is underwater, the water around it begins to boil with the heat of your blow, and each creature other than you within 5 feet of the target takes 2d6 fire damage.</p>
+		 </description>
+		 <setters>
+			 <set name="category">Magic Weapons</set>
+			 <set name="cost" currency="gp">0</set>
+			 <set name="weight" lb="0">0 lb.</set>
+			 <set name="type" addition="warhammer">Weapon</set>
+			 <set name="rarity">Very Rare</set>
+			 <set name="enhancement">3</set>
+			 <set name="weapon">Warhammer</set>
+			 <set name="attunement">true</set>
+		 </setters>
+	 </element>
+
+
+<!-- Riverine Blade -->
+	  <element name="Riverine Blade" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_RIVERINE_BLADE">
+		  <description>
+			  <p>The crossguard of this distinctive sword depicts a stylized garroter crab (see Tome of Beasts) with claws extended, and the pommel is set with a smooth, spherical, blue-black river rock. You gain a +2 bonus to attack and damage rolls made with this magic weapon. While on a boat or while standing in any depth of water, you have advantage on Dexterity checks and saving throws.</p>
+			  <p class="indent"></p>
+		  </description>
+		  <setters>
+			  <set name="category">Magic Weapons</set>
+			  <set name="cost" currency="gp">0</set>
+			  <set name="weight" lb="0">0 lb.</set>
+			  <set name="type" addition="longsword">Weapon</set>
+			  <set name="rarity">Rare</set>
+			  <set name="enhancement">2</set>
+			  <set name="weapon">Longsword</set>
+		  </setters>
+	  </element>
+
+<!-- Rowdy’s Club -->
+	 <element name="Rowdy's Club" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ROWDYS_CLUB">
+		 <description>
+			 <p>This knobbed stick is marked with nicks, scratches, and notches. You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			 <p class="indent">While wielding the club, you can use an action to tap it against your open palm, the side of your leg, a surface within reach, or similar. If you do, you have advantage on your next Charisma (Intimidation) check. If you are also wearing a Rowdy’s Ring, you can use an action to frighten a creature you can see within 30 feet of you instead. The target must succeed on a DC 13 Wisdom saving throw or be frightened of you until the end of its next turn. Once this special action has been used three times, it can’t be used again until the next dawn.</p>
+		 </description>
+		 <setters>
+			 <set name="category">Magic Weapons</set>
+			 <set name="cost" currency="gp">0</set>
+			 <set name="weight" lb="0">0 lb.</set>
+			 <set name="type" addition="club">Weapon</set>
+			 <set name="rarity">Uncommon</set>
+			 <set name="enhancement">1</set>
+			 <set name="weapon">Club</set>
+		 </setters>
+	 </element>
+
+<!-- Ruby Crusher -->
+	<element name="Ruby Crusher" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_RUBY_CRUSHER">
+		<description>
+			<p>This greatclub is made entirely of fused rubies with a grip wrapped in manticore hide A roaring fire burns behind its smooth facets.</p>
+			<p class="indent">You gain a +3 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p class="indent">You can use a bonus action to speak this magic weapon’s command word, causing it to be engulfed in flame. These flames shed bright light in a 30-foot radius and dim light for an additional 30 feet. While the greatclub is aflame, it deals fire damage instead of bludgeoning damage. The flames last until you use a bonus action to speak the command word again or until you drop the weapon. When you hit a Large or larger creature with this greatclub, the creature must succeed on a DC 17 Constitution saving throw or be pushed up to 30 feet away from you. If the creature strikes a solid object, such as a door or wall, during this movement, it and the object take 1d6 bludgeoning damage for each 10 feet the creature traveled before hitting the object.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="greatclube">Weapon</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">3</set>
+			<set name="weapon">Greatclub</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	
 </elements>
