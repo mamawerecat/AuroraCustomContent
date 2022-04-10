@@ -19,12 +19,108 @@
 	<element name="Weapon Group (Hand Crossbows)" type="Weapon Group" source="Internal" id="ID_INTERNAL_WEAPON_GROUP_HAND_CROSSBOWS" />
 	        <append id="ID_WOTC_PHB_WEAPON_CROSSBOW_HAND">
 	        	<supports>ID_INTERNAL_WEAPON_GROUP_HAND_CROSSBOWS</supports>
+	        </append>
+	<element name="Weapon Group (One Handed Melee)" type="Weapon Group" source="Vault of Magic" id="ID_KBP_VOM_WEAPON_GROUP_ONE_HANDED_MELEE" />
+	        <append id="ID_WOTC_PHB_WEAPON_BATTLEAXE">
+	        	<supports>ID_KBP_VOM_WEAPON_GROUP_ONE_HANDED_MELEE</supports>
+	        </append>
+			<append id="ID_KBP_VOM_WEAPON_CHAKRAM">
+	        	<supports>ID_KBP_VOM_WEAPON_GROUP_ONE_HANDED_MELEE</supports>
+	        </append>
+			<append id="ID_WOTC_PHB_WEAPON_CLUB">
+	        	<supports>ID_KBP_VOM_WEAPON_GROUP_ONE_HANDED_MELEE</supports>
+	        </append>
+			<append id="ID_WOTC_PHB_WEAPON_DAGGER">
+	        	<supports>ID_KBP_VOM_WEAPON_GROUP_ONE_HANDED_MELEE</supports>
 	        </append>	
-	
+			<append id="ID_WOTC_PHB_WEAPON_FLAIL">
+	        	<supports>ID_KBP_VOM_WEAPON_GROUP_ONE_HANDED_MELEE</supports>
+	        </append>
+			<append id="ID_WOTC_PHB_WEAPON_HANDAXE">
+	        	<supports>ID_KBP_VOM_WEAPON_GROUP_ONE_HANDED_MELEE</supports>
+	        </append>
+			<append id="ID_WOTC_PHB_WEAPON_JAVELIN">
+	        	<supports>ID_KBP_VOM_WEAPON_GROUP_ONE_HANDED_MELEE</supports>
+	        </append>
+			<append id="ID_WOTC_PHB_WEAPON_LANCE">
+	        	<supports>ID_KBP_VOM_WEAPON_GROUP_ONE_HANDED_MELEE</supports>
+	        </append>
+			<append id="ID_WOTC_PHB_WEAPON_LIGHTHAMMER">
+	        	<supports>ID_KBP_VOM_WEAPON_GROUP_ONE_HANDED_MELEE</supports>
+	        </append>
+			<append id="ID_WOTC_PHB_WEAPON_LONGSWORD">
+	        	<supports>ID_KBP_VOM_WEAPON_GROUP_ONE_HANDED_MELEE</supports>
+	        </append>
+			<append id="ID_WOTC_PHB_WEAPON_MACE">
+	        	<supports>ID_KBP_VOM_WEAPON_GROUP_ONE_HANDED_MELEE</supports>
+	        </append>
+			<append id="ID_WOTC_PHB_WEAPON_MORNINGSTAR">
+	        	<supports>ID_KBP_VOM_WEAPON_GROUP_ONE_HANDED_MELEE</supports>
+	        </append>
+			<append id="ID_WOTC_PHB_WEAPON_QUARTERSTAFF">
+	        	<supports>ID_KBP_VOM_WEAPON_GROUP_ONE_HANDED_MELEE</supports>
+	        </append>
+			<append id="ID_WOTC_PHB_WEAPON_SCIMITAR">
+	        	<supports>ID_KBP_VOM_WEAPON_GROUP_ONE_HANDED_MELEE</supports>
+	        </append>
+			<append id="ID_WOTC_PHB_WEAPON_SHORTSWORD">
+	        	<supports>ID_KBP_VOM_WEAPON_GROUP_ONE_HANDED_MELEE</supports>
+	        </append>			
+			<append id="ID_WOTC_PHB_WEAPON_SICKLE">
+	        	<supports>ID_KBP_VOM_WEAPON_GROUP_ONE_HANDED_MELEE</supports>
+	        </append>
+			<append id="ID_WOTC_PHB_WEAPON_SPEAR">
+	        	<supports>ID_KBP_VOM_WEAPON_GROUP_ONE_HANDED_MELEE</supports>
+	        </append>
+			<append id="ID_WOTC_PHB_WEAPON_TRIDENT">
+	        	<supports>ID_KBP_VOM_WEAPON_GROUP_ONE_HANDED_MELEE</supports>
+	        </append>
+			<append id="ID_WOTC_PHB_WEAPON_WAR_PICK">
+	        	<supports>ID_KBP_VOM_WEAPON_GROUP_ONE_HANDED_MELEE</supports>
+	        </append>
+			<append id="ID_WOTC_PHB_WEAPON_WARHAMMER">
+	        	<supports>ID_KBP_VOM_WEAPON_GROUP_ONE_HANDED_MELEE</supports>
+	        </append>
+			<append id="ID_WOTC_PHB_WEAPON_WHIP">
+	        	<supports>ID_KBP_VOM_WEAPON_GROUP_ONE_HANDED_MELEE</supports>
+	        </append>			
+	<element name="Weapon Group (One Handed Melee)" type="Weapon Group" source="Vault of Magic" id="ID_KBP_VOM_WEAPON_GROUP_MELEE_PIERCING" /> 
+			<append id="ID_WOTC_PHB_WEAPON_DAGGER">
+	        	<supports>ID_KBP_VOM_WEAPON_GROUP_MELEE_PIERCING</supports>
+	        </append>
+			<append id="ID_WOTC_PHB_WEAPON_JAVELIN">
+	        	<supports>ID_KBP_VOM_WEAPON_GROUP_MELEE_PIERCING</supports>
+	        </append>
+			<append id="ID_WOTC_PHB_WEAPON_LANCE">
+	        	<supports>ID_KBP_VOM_WEAPON_GROUP_MELEE_PIERCING</supports>
+	        </append>
+			<append id="ID_WOTC_PHB_WEAPON_MORNINGSTAR">
+	        	<supports>ID_KBP_VOM_WEAPON_GROUP_MELEE_PIERCING</supports>
+	        </append>
+			<append id="ID_WOTC_PHB_WEAPON_PIKE">
+	        	<supports>ID_KBP_VOM_WEAPON_GROUP_MELEE_PIERCING</supports>
+	        </append>
+			<append id="ID_WOTC_PHB_WEAPON_RAPIER">
+	        	<supports>ID_KBP_VOM_WEAPON_GROUP_MELEE_PIERCING</supports>
+	        </append>
+			<append id="ID_WOTC_PHB_WEAPON_SHORTSWORD">
+	        	<supports>ID_KBP_VOM_WEAPON_GROUP_MELEE_PIERCING</supports>
+	        </append>
+			<append id="ID_WOTC_PHB_WEAPON_SPEAR">
+	        	<supports>ID_KBP_VOM_WEAPON_GROUP_MELEE_PIERCING</supports>
+	        </append>
+			<append id="ID_WOTC_PHB_WEAPON_TRIDENT">
+	        	<supports>ID_KBP_VOM_WEAPON_GROUP_MELEE_PIERCING</supports>
+	        </append>
+			<append id="ID_WOTC_PHB_WEAPON_WAR_PICK">
+	        	<supports>ID_KBP_VOM_WEAPON_GROUP_MELEE_PIERCING</supports>
+	        </append>
+
+
 <!-- Akaasit Blade -->
 	<element name="Akaasit Blade" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_AKAASIT_BLADE">
 		<description>
-			<p>This dagger is crafted from the arm blade of a defeated akaasit (see Tome of Beasts 2).</p>
+			<p>This dagger is crafted from the arm blade of a defeated Akaasit.</p>
 			<p class="indent">You gain a +1 bonus to attack and damage rolls made with this magic weapon. You can use an action to activate a small measure of prescience within the dagger for 1 minute. If you are attacked by a creature you can see within 5 feet of you while this effect is active, you can use your reaction to make one attack with this dagger against the attacker. If your attack hits, the dagger loses its prescience, and its prescience can’t be activated again until the next dawn.</p>
 		</description>
 		<setters>
@@ -60,16 +156,16 @@
 <!-- Angry Hornet -->
 	<element name="Angry Hornet" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ANGRY_HORNET">
 		<description>
-		  <p>This black ammunition has yellow fletching or yellow paint.</p>
-		  <p class="indent">When you fire this magic ammunition, it makes an angry buzzing sound, and it multiplies in flight. As it flies, 2d4 identical pieces of ammunition magically appear around it, all speeding toward your target. Roll separate attack rolls for each additional arrow or bullet. Duplicate ammunition disappears after missing or after dealing its damage. If the angry hornet and all its duplicates miss, the angry hornet remains magical and can be fired again, otherwise it is destroyed.</p>
+		  	<p>This black ammunition has yellow fletching or yellow paint.</p>
+		  	<p class="indent">When you fire this magic ammunition, it makes an angry buzzing sound, and it multiplies in flight. As it flies, 2d4 identical pieces of ammunition magically appear around it, all speeding toward your target. Roll separate attack rolls for each additional arrow or bullet. Duplicate ammunition disappears after missing or after dealing its damage. If the angry hornet and all its duplicates miss, the angry hornet remains magical and can be fired again, otherwise it is destroyed.</p>
 		</description>
 		<setters>
-		  <set name="category">Ammunition</set>
-		  <set name="cost" currency="gp">0</set>
-		  <set name="weight" lb="0">0 lb.</set>
-		  <set name="type">Ammunition</set>
-		  <set name="rarity">Uncommon</set>
-		  <set name="stackable">true</set>
+		  	<set name="category">Ammunition</set>
+		  	<set name="cost" currency="gp">0</set>
+		  	<set name="weight" lb="0">0 lb.</set>
+		  	<set name="type" addition="any ammunition">Ammunition</set>
+		  	<set name="rarity">Uncommon</set>
+		  	<set name="stackable">true</set>
 		</setters>
 	</element>
 
@@ -77,18 +173,18 @@
 
 	<element name="Anointing Mace" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ANOINTING_MACE">
 		<description>
-		  <p>Also called an anointing gada, you gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
-		  <p class="indent">In addition, the ornately decorated head of the mace holds a reservoir perforated with small holes. As an action, you can fill the reservoir with a single potion or vial of liquid, such as holy water or alchemist’s fire. You can press a button on the haft of the weapon as a bonus action, which opens the holes. If you hit a target with the weapon while the holes are open, the weapon deals damage as normal and the target suffers the effects of the liquid. For example, an anointing mace filled with holy water deals an extra 2d6 radiant damage if it hits a fiend or undead. After you press the button and make an attack roll, the liquid is expended, regardless if your attack hits.</p>
+		  	<p>Also called an anointing gada, you gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+		  	<p class="indent">In addition, the ornately decorated head of the mace holds a reservoir perforated with small holes. As an action, you can fill the reservoir with a single potion or vial of liquid, such as holy water or alchemist’s fire. You can press a button on the haft of the weapon as a bonus action, which opens the holes. If you hit a target with the weapon while the holes are open, the weapon deals damage as normal and the target suffers the effects of the liquid. For example, an anointing mace filled with holy water deals an extra 2d6 radiant damage if it hits a fiend or undead. After you press the button and make an attack roll, the liquid is expended, regardless if your attack hits.</p>
 		</description>
 		<setters>
-		  <set name="category">Magic Weapons</set>
-		  <set name="cost" currency="gp">0</set>
-		  <set name="weight" lb="0">0 lb.</set>
-		  <set name="type" addition="maul">Weapon</set>
-		  <set name="rarity">Uncommon</set>
-		  <set name="enhancement">1</set>
-		  <set name="weapon">Maul</set>
-		  <set name="attunement">true</set>
+		  	<set name="category">Magic Weapons</set>
+		  	<set name="cost" currency="gp">0</set>
+		  	<set name="weight" lb="0">0 lb.</set>
+		  	<set name="type" addition="maul">Weapon</set>
+		  	<set name="rarity">Uncommon</set>
+		  	<set name="enhancement">1</set>
+		  	<set name="weapon">Maul</set>
+		  	<set name="attunement">true</set>
 		</setters>
 	</element>
 
@@ -103,8 +199,9 @@
 		  	<set name="category">Ammunition</set>
 		  	<set name="cost" currency="gp">0</set>
 		  	<set name="weight" lb="0">0 lb.</set>
-		  	<set name="type">Ammunition</set>
+		  	<set name="type" addition="arrow">Ammunition</set>
 		  	<set name="rarity">Very Rare</set>
+			<set name="stackable">true</set>
 		</setters>
 	</element>
 	
@@ -112,14 +209,15 @@
 
 	<element name="Arrow of Unpleasant Herbs" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ARROW_OF_UNPLEASANT_HERBS">
 		<description>
-		  <p>This arrow’s tip is filled with magically preserved, poisonous herbs. When a creature takes damage from the arrow, the arrowhead breaks, releasing the herbs. The creature must succeed on a DC 15 Constitution saving throw or be incapacitated until the end of its next turn as it retches and reels from the poison.</p>
+		  	<p>This arrow’s tip is filled with magically preserved, poisonous herbs. When a creature takes damage from the arrow, the arrowhead breaks, releasing the herbs. The creature must succeed on a DC 15 Constitution saving throw or be incapacitated until the end of its next turn as it retches and reels from the poison.</p>
 		</description>
 		<setters>
 		  	<set name="category">Ammunition</set>
 		  	<set name="cost" currency="gp">0</set>
 		  	<set name="weight" lb="0">0 lb.</set>
-		  	<set name="type">Ammunition</set>
+		  	<set name="type" addition="arrow">Ammunition</set>
 		  	<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
 		</setters>
 	</element>
 	
@@ -239,7 +337,6 @@
 			<set name="rarity">Rare</set>
 			<set name="weapon">Scimitar</set>
 			<set name="attunement">true</set>
-			<set name="enhancement">1</set>
 		</setters>
 	</element>
 
@@ -272,7 +369,6 @@
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type" addition="longbow">Weapon</set>
 			<set name="rarity">Rare</set>
-			<set name="enhancement">1</set>
 			<set name="weapon">Longbow</set>
 			<set name="attunement">true</set>
 		</setters>
@@ -373,7 +469,7 @@
 	</element>
 
 <!-- Bonebreaker Mace -->
-	<element name="Bonebreaker Weapon" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BONEBREAKER_MACE">
+	<element name="Bonebreaker Mace" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BONEBREAKER_MACE">
 		<description>
 			<p>You gain a +1 bonus on attack and damage rolls made with this magic weapon. The bonus increases to +3 when you use it to attack an undead creature. Often given to the grim enforcers of great necropolises, these weapons can reduce the walking dead to splinters with a single strike.</p>
 			<p class="indent">When you hit an undead creature with this magic weapon, treat that creature as if it is vulnerable to bludgeoning damage. If it is already vulnerable to bludgeoning damage, your attack deals an additional 1d6 radiant damage.</p>
@@ -387,7 +483,6 @@
 			<set name="enhancement">1</set>
 			<set name="weapon">ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING</set>
 			<set name="attunement">true</set>
-			<set name="name-format">Bonebreaker {{parent}}</set>
 		</setters>
 	</element>
 
@@ -433,9 +528,10 @@
 			<set name="category">Ammunition</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
-			<set name="type">Ammunition</set>
+			<set name="type" addition="arrow">Ammunition</set>
 			<set name="rarity">Uncommon</set>
 			<set name="enhancement">1</set>
+			<set name="stackable">true</set>
 		</setters>
 	</element>
 
@@ -535,20 +631,20 @@
 	</element>
 
 <!-- Constant Dagger -->
-	 <element name="Constant Dagger" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_CONSTANT_DAGGER">
-		 <description>
-			 <p>You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you roll a 20 on an attack roll made with this weapon, the target loses its resistance to bludgeoning, piercing, and slashing damage until the start of your next turn. If it has immunity to bludgeoning, piercing, and slashing damage, its immunity instead becomes resistance to such damage until the start of your next turn. If the creature doesn’t have resistance or immunity to such damage, you roll your damage dice three times, instead of twice.</p>
-		 </description>
-		 <setters>
-			 <set name="category">Magic Weapons</set>
-			 <set name="cost" currency="gp">0</set>
-			 <set name="weight" lb="0">0 lb.</set>
-			 <set name="type" addition="dagger">Weapon</set>
-			 <set name="rarity">Rare</set>
-			 <set name="enhancement">1</set>
-			 <set name="weapon">Dagger</set>
-		 </setters>
-	 </element>
+	<element name="Constant Dagger" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_CONSTANT_DAGGER">
+		<description>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you roll a 20 on an attack roll made with this weapon, the target loses its resistance to bludgeoning, piercing, and slashing damage until the start of your next turn. If it has immunity to bludgeoning, piercing, and slashing damage, its immunity instead becomes resistance to such damage until the start of your next turn. If the creature doesn’t have resistance or immunity to such damage, you roll your damage dice three times, instead of twice.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="dagger">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Dagger</set>
+		</setters>
+	</element>
 
 <!-- Consuming Rod -->
 	<element name="Consuming Rod" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_CONSUMING_ROD">
@@ -578,10 +674,62 @@
 			<set name="category">Ammunition</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
-			<set name="type">Ammunition</set>
+			<set name="type" addition="arrow">Ammunition</set>
 			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
 		</setters>
 	</element>	
+
+<!-- Dagger of the Barbed Devil -->
+	<element name="Dagger of the Barbed Devil" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_DAGGER_OF_THE_BARBED_DEVIL">
+		<description>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p class="indent">You can use an action to cause sharp, pointed barbs to sprout from this blade. The barbs remain for 1 minute. When you hit a creature while the barbs are active, the creature must succeed on a DC 15 Dexterity saving throw or a barb breaks off into its flesh and the dagger loses its barbs. At the start of each of its turns, a creature with a barb in its flesh must make a DC 15 Constitution saving throw. On a failure, it has disadvantage on attack rolls and ability checks until the start of its next turn as it is wracked with pain. The barb remains until a creature uses its action to remove the barb, dealing 1d4 piercing damage to the barbed creature. Once you cause barbs to sprout from the dagger, you can’t do so again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="dagger">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Dagger</set>
+		</setters>
+	</element>
+
+<!-- Dawn Shard -->
+	<element name="Dawn Shard" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_DAWN_SHARD">
+		<description>
+			<p>The blade of this magic weapon gleams with a faint golden shine, and the pommel is etched with a sunburst. As a bonus action, you can command the weapon to shed dim light out to 5 feet, to shed bright light out to 20 feet and dim light for an additional 20 feet, or to douse the light.</p>
+			<p class="indent">The weapon deals an extra 1d6 radiant damage to any creature it hits. This increases to 2d6 radiant damage if the target is undead or a creature of shadow.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="any sword or dagger">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS||ID_INTERNAL_WEAPON_GROUP_DAGGERS</set>
+			<set name="attunement">true</set>
+			<set name="name-format">Dawn Shard {{parent}}</set>
+		</setters>
+	</element>
+
+<!-- Deadfall Arrow -->
+	<element name="Deadfall Arrow" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_DEADFALL_ARROW">
+		<description>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic arrow. On a hit, the arrow transforms into a 10-foot-long wooden log centered on the target, destroying the arrow. The target and each creature in the log’s area must make a DC 15 Dexterity saving throw. On a failure, a creature takes 3d6 bludgeoning damage and is knocked prone and restrained under the log. On a success, a creature takes half the damage and isn’t knocked prone or restrained. A restrained creature can take its action to free itself by succeeding on a DC 15 Strength check. The log lasts for 1 minute then crumbles to dust, freeing those restrained by it.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
 
 <!-- Dimensional Net -->
 	<element name="Dimensional Net" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_DIMENSIONAL_NET">
@@ -621,41 +769,6 @@
 		</setters>
 	</element>
 
-<!-- Dagger of the Barbed Devil -->
-	<element name="Dagger of the Barbed Devil" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_DAGGER_OF_THE_BARBED_DEVIL">
-		<description>
-			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
-			<p class="indent">You can use an action to cause sharp, pointed barbs to sprout from this blade. The barbs remain for 1 minute. When you hit a creature while the barbs are active, the creature must succeed on a DC 15 Dexterity saving throw or a barb breaks off into its flesh and the dagger loses its barbs. At the start of each of its turns, a creature with a barb in its flesh must make a DC 15 Constitution saving throw. On a failure, it has disadvantage on attack rolls and ability checks until the start of its next turn as it is wracked with pain. The barb remains until a creature uses its action to remove the barb, dealing 1d4 piercing damage to the barbed creature. Once you cause barbs to sprout from the dagger, you can’t do so again until the next dawn.</p>
-		</description>
-		<setters>
-			<set name="category">Magic Weapons</set>
-			<set name="cost" currency="gp">0</set>
-			<set name="weight" lb="0">0 lb.</set>
-			<set name="type" addition="dagger">Weapon</set>
-			<set name="rarity">Rare</set>
-			<set name="enhancement">1</set>
-			<set name="weapon">Dagger</set>
-		</setters>
-	</element>
-
-<!-- Dawn Shard -->
-	<element name="Dawn Shard" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_DAWN_SHARD">
-		<description>
-			<p>The blade of this magic weapon gleams with a faint golden shine, and the pommel is etched with a sunburst. As a bonus action, you can command the weapon to shed dim light out to 5 feet, to shed bright light out to 20 feet and dim light for an additional 20 feet, or to douse the light.</p>
-			<p class="indent">The weapon deals an extra 1d6 radiant damage to any creature it hits. This increases to 2d6 radiant damage if the target is undead or a creature of shadow.</p>
-		</description>
-		<setters>
-			<set name="category">Magic Weapons</set>
-			<set name="cost" currency="gp">0</set>
-			<set name="weight" lb="0">0 lb.</set>
-			<set name="type" addition="any sword or dagger">Weapon</set>
-			<set name="rarity">Uncommon</set>
-			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS||ID_INTERNAL_WEAPON_GROUP_DAGGERS</set>
-			<set name="attunement">true</set>
-			<set name="name-format">Dawn Shard {{parent}}</set>
-		</setters>
-	</element>
-
 <!-- Dirk of Daring -->
 	<element name="Dirk of Daring" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_DIRK_OF_DARING">
 		<description>
@@ -672,21 +785,6 @@
 			<set name="attunement">true</set>
 		</setters>
 	</element>	
-
-<!-- Deadfall Arrow -->
-	<element name="Deadfall Arrow" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_DEADFALL_ARROW">
-		<description>
-			<p>You gain a +1 bonus to attack and damage rolls made with this magic arrow. On a hit, the arrow transforms into a 10-foot-long wooden log centered on the target, destroying the arrow. The target and each creature in the log’s area must make a DC 15 Dexterity saving throw. On a failure, a creature takes 3d6 bludgeoning damage and is knocked prone and restrained under the log. On a success, a creature takes half the damage and isn’t knocked prone or restrained. A restrained creature can take its action to free itself by succeeding on a DC 15 Strength check. The log lasts for 1 minute then crumbles to dust, freeing those restrained by it.</p>
-		</description>
-		<setters>
-			<set name="category">Ammunition</set>
-			<set name="cost" currency="gp">0</set>
-			<set name="weight" lb="0">0 lb.</set>
-			<set name="type">Ammunition</set>
-			<set name="rarity">Rare</set>
-			<set name="enhancement">1</set>
-		</setters>
-	</element>
 	
 <!-- Dragonstooth Blade -->
 	<element name="Dragonstooth Blade" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_DRAGONSTOOTH_BLADE">
@@ -725,24 +823,26 @@
 			<set name="category">Ammunition</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
-			<set name="type">Ammunition</set>
+			<set name="type" addition="any ammunition">Ammunition</set>
 			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
 		</setters>
 	</element>
 
 <!-- Ensnaring Ammunition -->
-	 <element name="Ensnaring Ammunition" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ENSNARING_AMMUNITION">
-		 <description>
-			 <p>When you hit a creature with a ranged attack using this magical ammunition, the target takes only half the damage from the attack, and the target is restrained as the ammunition bursts into entangling strands that wrap around it. As an action, the restrained target can make a DC 13 Strength check, bursting the bonds on a success. The strands can also be attacked and destroyed (AC 10; hp 5; immunity to bludgeoning, poison, and psychic damage).</p>
-		 </description>
-		 <setters>
-			 <set name="category">Ammunition</set>
-			 <set name="cost" currency="gp">0</set>
-			 <set name="weight" lb="0">0 lb.</set>
-			 <set name="type">Ammunition</set>
-			 <set name="rarity">Uncommon</set>
-		 </setters>
-	 </element>
+	<element name="Ensnaring Ammunition" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ENSNARING_AMMUNITION">
+		<description>
+			<p>When you hit a creature with a ranged attack using this magical ammunition, the target takes only half the damage from the attack, and the target is restrained as the ammunition bursts into entangling strands that wrap around it. As an action, the restrained target can make a DC 13 Strength check, bursting the bonds on a success. The strands can also be attacked and destroyed (AC 10; hp 5; immunity to bludgeoning, poison, and psychic damage).</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="any ammunition">Ammunition</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
 
 <!-- Entrenching Mattock -->
 	<element name="Entrenching Weapon" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ENTRENCHING_MATTOCK">
@@ -781,37 +881,40 @@
 	</element>	
 	
 <!-- Flash Bullet -->
-	 <element name="Flash Bullet" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_FLASH_BULLET">
-		 <description>
-			 <p>When you hit a creature with a ranged attack using this shiny, polished stone, it releases a sudden flash of bright light. The target takes damage as normal and must succeed on a DC 11 Constitution saving throw or be blinded until the end of its next turn. Creatures with the Sunlight Sensitivity trait have disadvantage on this saving throw.</p>
-		 </description>
-		 <setters>
-			 <set name="category">Ammunition</set>
-			 <set name="cost" currency="gp">0</set>
-			 <set name="weight" lb="0">0 lb.</set>
-			 <set name="type" addition="sling bullet">Ammunition</set>
-			 <set name="rarity">Common</set>
-		 </setters>
-	 </element>
+	<element name="Flash Bullet" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_FLASH_BULLET">
+		<description>
+			<p>When you hit a creature with a ranged attack using this shiny, polished stone, it releases a sudden flash of bright light. The target takes damage as normal and must succeed on a DC 11 Constitution saving throw or be blinded until the end of its next turn. Creatures with the Sunlight Sensitivity trait have disadvantage on this saving throw.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="sling bullet">Ammunition</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
 
 <!-- Fog Stone -->
-	 <element name="Fog Stone" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_FOG_STONE">
-		 <description>
-			 <p>This sling stone is carved to look like a fluffy cloud. Typically, 1d4 + 1 fog stones are found together. When you fire the stone from a sling, it transforms into a miniature cloud as it flies through the air, and it creates a 20-foot-radius sphere of fog centered on the target or point of impact. The sphere spreads around corners, and its area is heavily obscured. It lasts for 10 minutes or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it.</p>
-		 </description>
-		 <setters>
-			 <set name="category">Ammunition</set>
-			 <set name="cost" currency="gp">0</set>
-			 <set name="weight" lb="0">0 lb.</set>
-			 <set name="type" addition="sling bullet">Ammunition</set>
-			 <set name="rarity">Uncommon</set>
-		 </setters>
-	 </element>
+	<element name="Fog Stone" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_FOG_STONE">
+		<description>
+			<p>This sling stone is carved to look like a fluffy cloud. Typically, 1d4 + 1 fog stones are found together. When you fire the stone from a sling, it transforms into a miniature cloud as it flies through the air, and it creates a 20-foot-radius sphere of fog centered on the target or point of impact. The sphere spreads around corners, and its area is heavily obscured. It lasts for 10 minutes or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="sling bullet">Ammunition</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
 
 <!-- Forgefire Hammer -->
 	<element name="Forgefire Hammer" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_FORGEFIRE_HAMMER">
 		<description>
 			<p>The head of this weapon is shaped like an anvil, and engravings of fire and arcane runes decorate it. You can use a bonus action to speak this magic weapon’s command word, causing its head to glow red-hot. While red-hot, the weapon deals an extra 1d6 fire damage to any target it hits. The weapon’s anvil-like head remains red-hot until you use a bonus action to speak the command word again or until you drop or sheathe the weapon.</p>
+			<p class="indent">When you roll a 20 on an attack roll made with this weapon against a target holding or wearing a metal object, such as a metal weapon or metal armor, the target takes an extra 1d4 fire damage and the metal object becomes red-hot for 1 minute. While the object is red-hot and the creature still wears or carries it, the creature takes 1d4 fire damage at the start of each of its turns.</p>
 		</description>
 		<setters>
 			<set name="category">Magic Weapons</set>
@@ -819,7 +922,6 @@
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type" addition="maul or warhammer">Weapon</set>
 			<set name="rarity">Rare</set>
-			<set name="enhancement">When you roll a 20 on an attack roll made with this weapon against a target holding or wearing a metal object, such as a metal weapon or metal armor, the target takes an extra 1d4 fire damage and the metal object becomes red-hot for 1 minute. While the object is red-hot and the creature still wears or carries it, the creature takes 1d4 fire damage at the start of each of its turns.</set>
 			<set name="weapon">Maul||Warhammer</set>
 		</setters>
 	</element>
@@ -842,20 +944,20 @@
 
 
 <!-- Glazed Blade -->
-	 <element name="Glazed Blade" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_GLAZED_BLADE">
-		 <description>
-			 <p>A pleasant scent emerges from this weapon. While it is on your person, you have advantage on Charisma (Persuasion) checks made to interact with humanoids and fey.</p>
-		 </description>
-		 <setters>
-			 <set name="category">Magic Weapons</set>
-			 <set name="cost" currency="gp">0</set>
-			 <set name="weight" lb="0">0 lb.</set>
-			 <set name="type" addition="any sword or axe">Weapon</set>
-			 <set name="rarity">Common</set>
-			 <set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS||ID_INTERNAL_WEAPON_GROUP_AXES</set>
-			 <set name="name-format">Glazed {{parent}}</set>
-		 </setters>
-	 </element>
+	<element name="Glazed Blade" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_GLAZED_BLADE">
+		<description>
+			<p>A pleasant scent emerges from this weapon. While it is on your person, you have advantage on Charisma (Persuasion) checks made to interact with humanoids and fey.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="any sword or axe">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS||ID_INTERNAL_WEAPON_GROUP_AXES</set>
+			<set name="name-format">Glazed {{parent}}</set>
+		</setters>
+	</element>
 
 <!-- Gnawing Spear -->
 	<element name="Gnawing Spear" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_GNAWING_SPEAR">
@@ -892,13 +994,6 @@
 		 </setters>
 	 </element>
 
-	 <element name="Weapon Group (Heavy Crossbows)" type="Weapon Group" source="Internal" id="ID_INTERNAL_WEAPON_GROUP_HEAVY_CROSSBOWS" />
-	    <append id="ID_WOTC_PHB_WEAPON_CROSSBOW_HEAVY">
-		    <supports>ID_INTERNAL_WEAPON_GROUP_HEAVY_CROSSBOWS</supports>
-	    </append>
-
-
-
 <!-- Hammer of Throwing -->
 	<element name="Hammer of Throwing" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_HAMMER_OF_THROWING">
 		<description>
@@ -934,7 +1029,7 @@
 		</setters>
 	</element>
 
-<!-- Hidden Armament -->  <!-- come back to, may make weapon group with one handed melee weapons so this restriction works -->
+<!-- Hidden Armament -->  <!-- MADE WEAPON GROUP ID_KBP_VOM_WEAPON_GROUP_ONE_HANDED_MELEE SEE IF IT WORKS -->
 	<element name="Hidden Armament" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_HIDDEN_ARMAMENT">
 		<description>
 			<p>While holding this magic weapon, you can use an action to transform it into a tattoo on the palm of your hand. You can use a bonus action to transform the tattoo back into a weapon.</p>
@@ -945,7 +1040,7 @@
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type" addition="any melee weapon that isn't two-handed">Weapon</set>
 			<set name="rarity">Uncommon</set>
-			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE</set>
+			<set name="weapon">ID_KBP_VOM_WEAPON_GROUP_ONE_HANDED_MELEE</set>
 			<set name="attunement">true</set>
 		</setters>
 	</element>
@@ -963,7 +1058,6 @@
 			<set name="type" addition="club">Weapon</set>
 			<set name="rarity">Uncommon</set>
 			<set name="weapon">Club</set>
-			<set name="attunement">true</set>
 		</setters>
 	</element>
 
@@ -1012,7 +1106,7 @@
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type" addition="any melee weapon that deals piercing damage">Weapon</set>
 			<set name="rarity">Rare</set>
-			<set name="weapon">ID_INTERNAL_DAMAGE_TYPE_PIERCING</set>
+			<set name="weapon">ID_KBP_VOM_WEAPON_GROUP_MELEE_PIERCING</set>
 			<set name="attunement">true</set>
 			<set name="name-format">Impaling {{parent}}</set>
 		</setters>
@@ -1031,14 +1125,13 @@
 			<set name="type" addition="club">Weapon</set>
 			<set name="rarity">Common</set>
 			<set name="weapon">Club</set>
-			<set name="attunement">true</set>
 		</setters>
 	</element>
 
 <!-- Kyshaarth’s Fang -->
 	<element name="Kyshaarth's Fang" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_KYSHAARTHS_FANG">
 		<description>
-			<p>This dagger’s blade is composed of black, bone-like material. Tales suggest the weapon is fashioned from a voidling’s (see Tome of Beasts) tendril barb. When you hit with an attack using this magic weapon, the target takes an extra 2d6 necrotic damage. If you are in dim light or darkness, you regain a number of hit points equal to half the necrotic damage dealt.</p>
+			<p>This dagger’s blade is composed of black, bone-like material. Tales suggest the weapon is fashioned from a Voidling’s tendril barb. When you hit with an attack using this magic weapon, the target takes an extra 2d6 necrotic damage. If you are in dim light or darkness, you regain a number of hit points equal to half the necrotic damage dealt.</p>
 		</description>
 		<setters>
 			<set name="category">Magic Weapons</set>
@@ -1252,6 +1345,33 @@
 		</setters>
 	</element>
 
+<!-- Phidjetz Spinner -->
+	<element name="Phidjetz Spinner" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_PHIDJETZ_SPINNER">
+		<description>
+			<p>This dart was crafted by the monk Phidjetz, a martial recluse obsessed with dragons. The spinner consists of a golden central disk with four metal dragon heads protruding symmetrically from its center point: one red, one white, one blue and one black. </p>
+			<p class="indent">As an action, you can spin the disk using the pinch grip in its center. You choose a single target within 30 feet and make a ranged attack roll. The spinner then flies at the chosen target. </p>
+			<p class="indent">Once airborne, each dragon head emits a blast of elemental energy appropriate to its type. When you hit a creature, determine which dragon head affects it by rolling a d4 on the following chart.</p>
+			<table>
+				<thead>
+					<tr><td>d4</td><td>Effect</td></tr>
+				</thead>
+				<tr><td>1</td><td><b><i>Red.</i></b> The target takes 1d6 fire damage and combustible materials on the target ignite, doing 1d4 fire damage each turn until it is put out.</td></tr>
+				<tr><td>2</td><td><b><i>White.</i></b> The target takes 1d6 cold damage and is restrained until the start of your next turn.</td></tr>
+				<tr><td>3</td><td><b><i>Blue.</i></b> The target takes 1d6 lightning damage and is paralyzed until the start of your next turn.</td></tr>
+				<tr><td>4</td><td><b><i>Black.</i></b> The target takes 1d6 acid damage and is poisoned until the start of your next turn.</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="dart">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">Dart</set>
+			<set name="attunement" addition="by a monk">true</set>
+		</setters>
+	</element>
+
 <!-- Pick of Ice Breaking --> 
 	 <element name="Pick of Ice Breaking" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_PICK_OF_ICE_BREAKING">
 		 <description>
@@ -1284,33 +1404,6 @@
 			<set name="enhancement">2</set>
 			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_HAND_CROSSBOWS</set>
 			<set name="attunement">true</set>
-		</setters>
-	</element>
-
-<!-- Phidjetz Spinner -->
-	<element name="Phidjetz Spinner" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_PHIDJETZ_SPINNER">
-		<description>
-			<p>This dart was crafted by the monk Phidjetz, a martial recluse obsessed with dragons. The spinner consists of a golden central disk with four metal dragon heads protruding symmetrically from its center point: one red, one white, one blue and one black. </p>
-			<p class="indent">As an action, you can spin the disk using the pinch grip in its center. You choose a single target within 30 feet and make a ranged attack roll. The spinner then flies at the chosen target. </p>
-			<p class="indent">Once airborne, each dragon head emits a blast of elemental energy appropriate to its type. When you hit a creature, determine which dragon head affects it by rolling a d4 on the following chart.</p>
-			<table>
-				<thead>
-					<tr><td>d4</td><td>Effect</td></tr>
-				</thead>
-				<tr><td>1</td><td><b><i>Red.</i></b> The target takes 1d6 fire damage and combustible materials on the target ignite, doing 1d4 fire damage each turn until it is put out.</td></tr>
-				<tr><td>2</td><td><b><i>White.</i></b> The target takes 1d6 cold damage and is restrained until the start of your next turn.</td></tr>
-				<tr><td>3</td><td><b><i>Blue.</i></b> The target takes 1d6 lightning damage and is paralyzed until the start of your next turn.</td></tr>
-				<tr><td>4</td><td><b><i>Black.</i></b> The target takes 1d6 acid damage and is poisoned until the start of your next turn.</td></tr>
-			</table>
-		</description>
-		<setters>
-			<set name="category">Magic Weapons</set>
-			<set name="cost" currency="gp">0</set>
-			<set name="weight" lb="0">0 lb.</set>
-			<set name="type" addition="dart">Weapon</set>
-			<set name="rarity">Uncommon</set>
-			<set name="weapon">Dart</set>
-			<set name="attunement" addition="by a monk">true</set>
 		</setters>
 	</element>
 
@@ -1398,7 +1491,7 @@
 <!-- Riverine Blade -->
 	  <element name="Riverine Blade" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_RIVERINE_BLADE">
 		  <description>
-			  <p>The crossguard of this distinctive sword depicts a stylized garroter crab (see Tome of Beasts) with claws extended, and the pommel is set with a smooth, spherical, blue-black river rock. You gain a +2 bonus to attack and damage rolls made with this magic weapon. While on a boat or while standing in any depth of water, you have advantage on Dexterity checks and saving throws.</p>
+			  <p>The crossguard of this distinctive sword depicts a stylized Garroter Crab with claws extended, and the pommel is set with a smooth, spherical, blue-black river rock. You gain a +2 bonus to attack and damage rolls made with this magic weapon. While on a boat or while standing in any depth of water, you have advantage on Dexterity checks and saving throws.</p>
 		  </description>
 		  <setters>
 			  <set name="category">Magic Weapons</set>
@@ -1484,19 +1577,20 @@
 	</element>
 
 <!-- Sand Arrow -->
-	 <element name="Sand Arrow" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_SAND_ARROW">
-		 <description>
-			 <p>The shaft of this arrow is made of tightly packed white sand that discorporates into a blast of grit when it strikes a target. On a hit, the sand catches in the fittings and joints of metal armor, and the target’s speed is reduced by 10 feet until it cleans or removes the armor.</p>
+	<element name="Sand Arrow" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_SAND_ARROW">
+		<description>
+			<p>The shaft of this arrow is made of tightly packed white sand that discorporates into a blast of grit when it strikes a target. On a hit, the sand catches in the fittings and joints of metal armor, and the target’s speed is reduced by 10 feet until it cleans or removes the armor.</p>
 			 <p class="indent">In addition, the target must succeed on a DC 11 Constitution saving throw or be blinded until the end of its next turn.</p>
-		 </description>
-		 <setters>
-			 <set name="category">Ammunition</set>
-			 <set name="cost" currency="gp">0</set>
-			 <set name="weight" lb="0">0 lb.</set>
-			 <set name="type" addition="arrow">Ammunition</set>
-			 <set name="rarity">Uncommon</set>
-		 </setters>
-	 </element>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="arrow">Ammunition</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
 
 <!-- Sanguine Lance -->
 	 <element name="Sanguine Lance" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_SANGUINE_LANCE">
@@ -1573,7 +1667,7 @@
 <!-- Searing Whip -->
 	<element name="Searing Whip" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_SEARING_WHIP">
 		<description>
-			<p>Inspired by the searing breath weapon of a light drake (see Tome of Beasts 2), this whip seems to have filaments of light interwoven within its strands. You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you hit a creature with this weapon, the creature takes an extra 1d4 radiant damage. When you roll a 20 on an attack roll made with this weapon, the target is blinded until the end of its next turn.</p>
+			<p>Inspired by the searing breath weapon of a Light Drake, this whip seems to have filaments of light interwoven within its strands. You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you hit a creature with this weapon, the creature takes an extra 1d4 radiant damage. When you roll a 20 on an attack roll made with this weapon, the target is blinded until the end of its next turn.</p>
 			<p class="indent">The whip has 3 charges, and it regains 1d3 expended charges daily at dawn or when exposed to a daylightspell for 1 minute. While wielding the whip, you can use an action to expend 1 of its charges to transform the whip into a searing beam of light. Choose one creature you can see within 30 feet of you and make one attack roll with this whip against that creature. If the attack hits, that creature and each creature in a line that is 5 feet wide between you and the target takes damage as if hit by this whip. All of this damage is radiant. If the target is undead, you have advantage on the attack roll.</p>
 		</description>
 		<setters>
@@ -1669,6 +1763,7 @@
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type" addition="arrow">Ammunition</set>
 			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
 		</setters>
 	</element>
 
@@ -1683,6 +1778,7 @@
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type" addition="any ammunition">Ammunition</set>
 			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
 		</setters>
 	</element>
 
@@ -1717,6 +1813,7 @@
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type" addition="sling bullet">Ammunition</set>
 			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
 		</setters>
 	</element>
 
@@ -2159,9 +2256,7 @@
 		</setters>
 	</element>
 
-<!-- Web Arrows
-	Weapon (arrow), uncommon
-	-->
+<!-- Web Arrows -->
 	<element name="Web Arrows" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_WEB_ARROWS">
 		<description>
 			<p>Carvings of spiderwebs decorate the arrowhead and shaft of these arrows, which always come in pairs.</p>
@@ -2174,6 +2269,7 @@
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type" addition="arrow">Ammunition</set>
 			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
 		</setters>
 	</element>
 
@@ -2328,8 +2424,8 @@
 	 <element name="Witch's Circle" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_WITCHS_CIRCLE">
 		 <description>
 			 <p>This damask steel weapon is a simple ring with the interior edge dulled to rest comfortably in hand. You gain a +2 bonus to attack and damage rolls made with this magic weapon.</p>
-			 <p class="indent">Call the Four. When you hit with a ranged attack using this weapon, the target takes an extra 1d8 damage of one of the following types (your choice): cold, fire, lightning, or thunder. Immediately after the attack, the weapon flies up to 60 feet and tries to return to your hand. If you have no hand free, it falls to the ground at your feet.</p>
-			 <p class="indent">Witch’s Light. While holding this weapon, you can use an action to cast the moonbeam spell from it, using your spell save DC. You cast the 6th-level version of the spell. Once used, this property can’t be used again until the next dawn.</p>
+			 <p class="indent"><b><i>Call the Four.</i></b> When you hit with a ranged attack using this weapon, the target takes an extra 1d8 damage of one of the following types (your choice): cold, fire, lightning, or thunder. Immediately after the attack, the weapon flies up to 60 feet and tries to return to your hand. If you have no hand free, it falls to the ground at your feet.</p>
+			 <p class="indent"><b><i>Witch’s Light.</i></b> While holding this weapon, you can use an action to cast the moonbeam spell from it, using your spell save DC. You cast the 6th-level version of the spell. Once used, this property can’t be used again until the next dawn.</p>
 		 </description>
 		 <setters>
 			 <set name="category">Magic Weapons</set>
@@ -2362,4 +2458,5 @@
 			<set name="attunement">true</set>
 		</setters>
 	</element>
+
 </elements>
