@@ -1,0 +1,1165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Armor</name>
+        <update version="0.0.1">
+            <file name="items-armor.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/Untitled-1" />
+        </update>
+    </info>
+    
+
+<!-- Agile Armor --> 
+
+    <element name="Agile Armor" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_AGILE_ARMOR">
+        <description>
+            <p>This magically enhanced armor is less bulky than its nonmagical version. While wearing a suit of medium agile armor, the maximum Dexterity modifier you can add to determine your Armor Class is 3, instead of 2. While wearing a suit of heavy agile armor, the maximum Dexterity modifier you can add to determine your Armor Class is 1, instead of 0.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="medium or heavy">Armor</set>
+            <set name="rarity">Common</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_MEDIUM||ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+        </setters>
+    </element>
+
+<!-- Animated Chain Mail -->
+
+    <element name="Animated Chain Mail" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ARMOR_ANIMATED_CHAIN_MAIL">
+        <description>
+            <p>While wearing this armor, you gain a +1 bonus to AC, and you can use an action to cause parts of the armor to unravel into long, animated chains. While the chains are active, you have a climbing speed equal to your walking speed, and your AC is reduced by 2. You can use a bonus action to deactivate the chains, returning the armor to normal.</p>
+            <p class="indent"><b><i>Grasping Chains.</i></b> While wearing this armor with the chains active, you can use an action to attack twice with the chains. You are proficient with the chains. Each chain has a reach of 10 feet and deals bludgeoning damage equal to 1d6 + your Strength modifier on a hit.If you hit a creature of your size or smaller using a chain, you automatically grapple the creature with the chain.You can have no more than two creatures grappled in this way at a time. While grappling a target with a chain, you can’t attack other creatures with that chain. You can’t attack a creature with either chain if you are climbing.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="chain mail">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">Chain Mail</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+        </rules>
+    </element>
+
+<!-- Armor of Cushioning --> 
+
+    <element name="Armor of Cushioning" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ARMOR_OF_CUSHIONING">
+        <description>
+            <p>While wearing this armor, you have resistance to bludgeoning damage. In addition, you can use a reaction when you fall to reduce any falling damage you take by an amount equal to twice your level.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="slot">body</set>
+            <set name="type" addition="padded">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">Padded</set>
+        </setters>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+        </rules>
+    </element>
+
+<!-- Armor of Spite -->
+    <element name="Armor of Spite" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ARMOR_ARMOR_OF_SPITE">
+        <description>
+            <p>Unholy glyphs engraved on this black iron magic armor burn with a faint, orange light. While wearing the armor, you gain a +1 bonus to your AC.</p>
+            <p class="indent">At the start of your turn, you can choose to allow attack rolls against you to have advantage. If you do, the glyphs shed dim light in a 5-foot radius, and you can use a reaction when a creature hits you with an attack to force the attacker to take necrotic damage equal to twice your proficiency bonus</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="heavy">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="name-format">Armor of Spite {{parent}}</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+        </rules>
+    </element>
+
+<!-- Armor of the Leaf -->
+    <element name="Armor of the Leaf" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ARMOR_OF_THE_LEAF">
+        <description>
+            <p>This suit of armor always has a forest or leaf motif and is usually green or brown in color. While wearing this armor in forest terrain, you have advantage on Strength (Athletics) and Dexterity (Stealth) checks.</p>
+            <p class="indent">You can use an action to transform the armor into a cloud of swirling razor-sharp leaves, and each creature within 10 feet of you must succeed on a DC 13 Dexterity saving throw or take 2d8 slashing damage. For 1 minute, the cloud of leaves spreads out in a 10-foot radius from you, making the area lightly obscured for creatures other than you. The cloud moves with you, remaining centered on you. A wind of at least 10 miles per hour disperses the cloud and ends the effect. While the armor is transformed, you don’t gain a base Armor Class from the armor. The armor can’t be used this way again until the next dawn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="slot">body</set>
+            <set name="type" addition="light or hide">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT||Hide</set>
+            <set name="attunement" addition="by a ranger">true</set>
+        </setters>
+    </element>
+
+<!-- Armor of the Ngobou -->
+    <element name="Armor of the Ngobou" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ARMOR_ARMOR_OF_THE_NGOBOU">
+        <description>
+            <p>This thick and rough armor is made from the hide of a Ngobou, an aggressive, ox-sized dinosaur known to threaten elephants of the plains. The horns and tusks of the dinosaur are worked into the armor as spiked shoulder pads. While wearing this armor, you gain a +1 bonus to AC, and you have a magical sense for elephants. You automatically detect if an elephant has passed within 90 feet of your location within the last 24 hours, and you have advantage on any Wisdom (Perception) or Wisdom (Survival) checks you make to find elephants. </p>
+            <p class="indent"><b><i>Ngobou Charge.</i></b> If you move at least 20 feet straight toward a creature and then hit it with a melee weapon attack on the same turn, the target must succeed on a DC 15 Strength saving throw or be knocked prone. Elephants have disadvantage on this saving throw. Once used, this property can’t be used again until the next dawn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="hide">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">Hide</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+        </rules>
+    </element>
+
+<!-- Armor of Warding +1 --> 
+    <element name="Armor of Warding, +1" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ARMOR_ARMOR_OF_WARDING_1">
+        <description>
+            <p>Charms and wards made of claws, feathers, scales, or similar objects adorn this armor, which is etched with the likenesses of the creatures that contributed the adornments. The armor provides protection against a specific type of foe, indicated by its adornments. While wearing this armor, you have a bonus to AC against attacks from creatures of the type the armor wards against. The bonus is determined by its rarity. The armor provides protection against one of the following creature types: aberration, beast, celestial, construct, dragon, elemental, fey, fiend, giant, humanoid, monstrosity, ooze, plant, or undead.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="light, medium, or heavy">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT||ID_INTERNAL_ARMOR_GROUP_MEDIUM||ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="enhancement">1</set>
+            <set name="name-format">{{parent}} of Warding, +{{enhancement}}</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+        </rules>
+    </element>
+
+<!-- Armor of Warding +2 -->
+    <element name="Armor of Warding, +2" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ARMOR_ARMOR_OF_WARDING_2">
+        <description>
+            <p>Charms and wards made of claws, feathers, scales, or similar objects adorn this armor, which is etched with the likenesses of the creatures that contributed the adornments. The armor provides protection against a specific type of foe, indicated by its adornments. While wearing this armor, you have a bonus to AC against attacks from creatures of the type the armor wards against. The bonus is determined by its rarity. The armor provides protection against one of the following creature types: aberration, beast, celestial, construct, dragon, elemental, fey, fiend, giant, humanoid, monstrosity, ooze, plant, or undead.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="light, medium, or heavy">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT||ID_INTERNAL_ARMOR_GROUP_MEDIUM||ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="enhancement">2</set>
+            <set name="name-format">{{parent}} of Warding, +{{enhancement}}</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="2" bonus="enhancement" />
+        </rules>
+    </element>
+
+<!-- Armor of Warding +3 -->
+    <element name="Armor of Warding, +3" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ARMOR_ARMOR_OF_WARDING_3">
+        <description>
+            <p>Charms and wards made of claws, feathers, scales, or similar objects adorn this armor, which is etched with the likenesses of the creatures that contributed the adornments. The armor provides protection against a specific type of foe, indicated by its adornments. While wearing this armor, you have a bonus to AC against attacks from creatures of the type the armor wards against. The bonus is determined by its rarity. The armor provides protection against one of the following creature types: aberration, beast, celestial, construct, dragon, elemental, fey, fiend, giant, humanoid, monstrosity, ooze, plant, or undead.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="light, medium, or heavy">Armor</set>
+            <set name="rarity">Very Rare</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT||ID_INTERNAL_ARMOR_GROUP_MEDIUM||ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="enhancement">3</set>
+            <set name="name-format">{{parent}} of Warding, +{{enhancement}}</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="3" bonus="enhancement" />
+        </rules>
+    </element>
+
+<!-- Badger Hide -->  
+    <element name="Badger Hide" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BADGER_HIDE">
+        <description>
+            <p>While wearing this hairy, black and white armor, you have a burrowing speed of 20 feet, and you have advantage on Wisdom (Perception) checks that rely on smell.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="hide">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">Hide</set>
+        </setters>
+    </element>
+
+<!-- Bloodprice Armor  -->
+   <element name="Bloodprice Armor" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BLOODPRICE_ARMOR">
+        <description>
+            <p>When a melee attack would hit you while you are wearing this armor, you can use your reaction to increase your Armor Class by up to 10 against that attack. If you do so, you lose hit points equal to 5 times the bonus you want to add to your AC. For example, if you want to increase your AC by 2 against that attack, you lose 10 hit points.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="light, medium, or heavy">Armor</set>
+            <set name="rarity">Legendary</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT||ID_INTERNAL_ARMOR_GROUP_MEDIUM||ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+<!-- Blood-Soaked Hide -->
+    <element name="Blood-Soaked Hide" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BLOODSOAKED_HIDE">
+        <description>
+            <p>Blood-soaked hide armor is crafted from the tanned skins of humanoids, carefully preserved and layered. The armor is always smeared in tacky, semi-dried blood, no matter how carefully it’s cleaned. While wearing this armor, you gain a +1 bonus to AC, and you are immune to any effect that would cause you to lose hit points due to blood loss or ongoing wounds, such as the infernal wounds caused by a horned devil’s tail or the necrotic damage caused by a sword of wounding. </p>
+            <p class="indent"><b><i>Blood Form.</i></b> As an action, you can transform into a flowing pool of thick blood for 1 minute, or until you use a bonus action to revert back to your true form. Any equipment you are wearing or carrying melds into your form or falls to the ground (your choice). Your statistics remain the same, but any magic items other than the blood-soaked hide cease to function. While in blood form, you can’t speak, you are resistant to bludgeoning, piercing, and slashing damage, you can move through any opening as small as 1 inch wide without squeezing, and you can enter the space of other creatures and end your turn there. </p>
+            <p class="indent">A creature that starts its turn in your space must succeed on a DC 15 Constitution saving throw or lose 3d6 hit points due to blood loss, and you regain a number of hit points equal to half the number of hit points the creature lost. Constructs and undead who aren’t vampires are immune to this effect. Once used, you can’t use this property of the armor again until the next dawn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="hide">Armor</set>
+            <set name="rarity">Very Rare</set>
+            <set name="armor">Hide</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+        </rules>
+     </element>
+
+<!-- Brawn Armor -->
+    <element name="Brawn Armor" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BRAWN_ARMOR">
+        <description>
+            <p>This armor was crafted from the hide of an ancient grizzly bear. While wearing it, you gain a +1 bonus to AC, and you have advantage on grapple checks.</p>
+            <p class="indent">The armor has 3 charges. You can use a bonus action to expend 1 charge to deal your unarmed strike damage to a creature you are grappling. The armor regains all expended charges daily at dawn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="hide">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">Hide</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+        </rules>
+    </element>
+
+<!-- Brazen Bulwark -->
+
+    <element name="Brazen Bulwark" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_SHIELD_BRAZEN_BULWARK">
+        <description>
+            <p>This rectangular shield is plated with polished brass and resembles a crenelated tower. While wielding this shield, you gain a +1 bonus to AC. This bonus is in addition to the shield’s normal bonus to AC.</p>
+            <p class="indent"><b><i>Brazen Wall.</i></b> As an action, you can plant the shield in the ground in front of you, transforming it into a steel wall 10 feet high, 3 inches thick, and up to 20 feet wide. The wall has arrow slits set at 5-foot intervals and provides three-quarters cover to creatures behind it. The wall remains in place for 1 hour or until you use an action while within 5 feet of the wall to don the shield. Each 10-foot-by-10-foot section of the wall has AC 17 and 30 hit points. If both sections of the wall are reduced to 0 hit points, the shield reverts to its normal form, and its magic ceases to function until the next dawn. Once used, this property can’t be used again until the next dawn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="shield">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="ac:shield" value="1" bonus="enhancement" />
+        </rules>
+    </element>
+
+<!-- Cephalopod Breastplate -->
+    <element name="Cephalopod Breastplate" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_CEPHALOPOD_BREASTPLATE">
+        <description>
+            <p>This bronze breastplate depicts two krakens fighting. While wearing this armor, you gain a +1 bonus to AC. You can use an action to speak the armor’s command word to release a cloud of black mist (if above water) or black ink (if underwater). It billows out from you in a 20-foot-radius cloud of mist or ink. The area is heavily obscured for 1 minute, although a wind of moderate or greater speed (at least 10 miles per hour) or a significant current disperses it. The armor can’t be used this way again until the next dawn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="breastplate">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">Breastplate</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+        </rules>
+    </element>
+
+<!-- Chillblain Armor -->
+    <element name="Chillblain Armor" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_CHILLBLAIN_ARMOR">
+        <description>
+            <p>This armor is forged from overlapping blue steel plates or blue rings and has a frosted appearance. While wearing this armor, you gain a +1 bonus to AC, and you have resistance to cold damage. In addition, when a creature hits you with a melee weapon attack, it must succeed on a DC 15 Constitution saving throw or become numbed by the supernatural cold radiating from the armor. A creature numbed by the cold can use either an action or bonus action on its turn, not both, and its movement speed is reduced by 10 feet until the end of its next turn.</p>
+            <p class="indent"><b><i>Curse.</i></b> This armor is cursed, a fact that is revealed only when an identify spell is cast on the armor or you attune to it. Attuning to the armor curses you until you are targeted by the remove curse spell or similar magic; removing the armor fails to end the curse. While cursed, you have vulnerability to fire damage. If you are hit by a critical hit that deals fire damage while wearing this armor, the armor shatters into useless fragments.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="medium or heavy, but not hide">Armor</set>
+            <set name="rarity">Very Rare</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_MEDIUM||ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+        </rules>
+     </element>
+
+
+<!-- Commander’s Plate -->
+   <element name="Commander's Plate" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_COMMANDERS_PLATE">
+        <description>
+            <p>This armor is typically emblazoned or decorated with imagery of lions, bears, griffons, eagles, or other symbols of bravery and courage. While wearing this armor, your voice can be clearly heard by all friendly creatures within 300 feet of you if you so choose. Your voice doesn’t carry in areas where sound is prevented, such as in the area of the silence spell. Each friendly creature that can see or hear you has advantage on saving throws against being frightened. You can use a bonus action to rally a friendly creature that can see or hear you. The target gains a +1 bonus to attack or damage rolls on its next turn. Once you have rallied a creature, you can’t rally that creature again until it finishes a long rest.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="plate">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">Plate</set>
+        </setters>
+    </element>
+
+<!-- Crocodile Armor -->
+    <element name="Crocodile Armor" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_CROCODILE_ARMOR">
+        <description>
+            <p>While wearing this armor fashioned from crocodile skin, you gain a +1 bonus to AC. In addition, you can hold your breath for 15 minutes, and you have a swimming speed equal to your walking speed.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="leather or hide">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">Leather||Hide</set>
+            <set name="name-format">Crocodile {{parent}}</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+            <stat name="innate speed:swim" value="innate speed" bonus="base" />
+        </rules>
+    </element>
+
+<!-- Crusader’s Shield -->
+    <element name="Crusader's Shield" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_CRUSADERS_SHIELD">
+        <description>
+            <p>A bronze boss is set in the center of this round shield. When you attune to the shield, the boss changes shape, becoming a symbol of your divine connection: a holy symbol for a cleric or paladin or an engraving of mistletoe or other sacred plant for a druid. You can use the shield as a spellcasting focus for your spells.</p>
+            <p class="indent"><b><i>Versatile Cantrip.</i></b> While holding the shield, you can try to cast a cantrip that you don’t know. The cantrip must be on your spell list, and you must make a DC 10 Intelligence (Religion) check. If the check succeeds, you cast the spell. If the check fails, so does the spell, and the action used to cast the spell is wasted. In either case, you can’t use this property again until you finish a long rest.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="shield">Armor</set>
+            <set name="rarity">Common</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+            <set name="attunement" addition="by a cleric, druid, or paladin">true</set>
+        </setters>
+    </element>
+
+<!-- Encouraging Armor -->
+    <element name="Encouraging Armor" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ENCOURAGING_ARMOR">
+        <description>
+            <p>While wearing this armor, you gain a +1 bonus to AC. In addition, each friendly creature within 10 feet of you that can see you gains a +1 bonus to attack rolls and saving throws. If you are a paladin with the Aura of Courage feature, this bonus increases to +2.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="light, medium, or heavy">Armor</set>
+            <set name="rarity">Very Rare</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT||ID_INTERNAL_ARMOR_GROUP_MEDIUM||ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="attunement">true</set>
+            <set name="name-format">Encouraging {{parent}}</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+        </rules>
+    </element>
+       
+<!-- Fellforged Armor -->
+    <element name="Fellforged Armor" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_FELLFORGED_ARMOR">
+        <description>
+            <p>While wearing this steam-powered magic armor, you gain a +1 bonus to AC, your Strength score increases by 2, and you gain the ability to cast speak with dead as an action. As long as you remain cursed, you exude an unnatural aura, causing beasts with Intelligence 3 or less within 30 feet of you to be frightened. Once you have used the armor to cast speak with dead, you can’t cast it again until the next dawn.</p>
+            <p class="indent"><b><i>Curse.</i></b> Once attuned to this armor, you can’t remove it unless you are the subject of a remove curse spell or similar magic. As long as you remain cursed, while wearing the armor, you gain an unnatural aura, causing all animals to panic when you are within 30 feet of them. You also gain disadvantage on attack rolls against incorporeal undead and on saving throws made against their spells and abilities.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="plate">Armor</set>
+            <set name="rarity">Very Rare</set>
+            <set name="armor">Plate</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+            <stat name="strength" value="2" />
+            <grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" />
+        </rules>
+    </element>
+
+
+<!-- Fountmail -->
+    <element name="Fountmail" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_FOUNTMAIL">
+        <description>
+            <p>This armor is a dazzling white suit of chain mail with an alabaster-colored steel collar that covers part of the face. You gain a +3 bonus to AC while you wear this armor. In addition, you gain the following benefits: </p>
+            <p class="indent">You add your Strength and Wisdom modifiers in addition to your Constitution modifier on all rolls when spending Hit Die to recover hit points.</p>
+            <p class="indent">You can’t be frightened.</p>
+            <p class="indent">You have resistance to necrotic damage.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="chain mail">Armor</set>
+            <set name="rarity">Legendary</set>
+            <set name="armor">Chain Mail</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="3" bonus="enhancement" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+        </rules>
+    </element>
+
+<!-- Ghost Barding -->
+   <element name="Ghost Barding" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_GHOST_BARDING">
+        <description>
+            <p>This armor is blue-green and translucent. It weighs only 1 pound, and if the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, this version of the armor doesn’t. The armor’s base Armor Class applies only against attacks by undead creatures and doesn’t provide protection against any other attacks. When a beast wears this armor, the beast gains a +1 bonus to AC against attacks by undead creatures, and it has advantage on saving throws against the spells and special abilities of undead creatures.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="light, medium, or heavy">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_HEAVY||ID_INTERNAL_ARMOR_GROUP_LIGHT||ID_INTERNAL_ARMOR_GROUP_MEDIUM</set>
+        </setters>
+    </element>
+
+<!-- Goblin Shield -->
+    <element name="Goblin Shield" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_GOBLIN_SHIELD">
+        <description>
+            <p>This shield resembles a snarling goblin’s head. It has 3 charges and regains 1d3 expended charges daily at dawn. While wielding this shield, you can use a bonus action to expend 1 charge and command the goblin’s head to bite a creature within 5 feet of you. Make a melee weapon attack with the shield. You have proficiency with this attack if you are proficient with shields. On a hit, the target takes 2d4 piercing damage.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="shield">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+<!-- Gorgon Scale -->
+    <element name="Gorgon Scale" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_GORGON_SCALE">
+        <description>
+            <p>The iron scales of this armor have a green-tinged iridescence. While wearing this armor, you gain a +1 bonus to AC, and you have immunity to the petrified condition.</p>
+            <p class="indent">If you move at least 20 feet straight toward a creature and then hit it with a melee weapon attack on the same turn, you can use a bonus action to imbue the hit with some of the armor’s petrifying magic. The target must make a DC 15 Constitution saving throw.</p>
+            <p class="indent">On a failed save, the target begins to turn to stone and is restrained. The restrained target must repeat the saving throw at the end of its next turn. On a success, the effect ends on the target. On a failure, the target is petrified until freed by the greater restoration spell or other magic. The armor can’t be used this way again until the next dawn</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="scale mail">Armor</set>
+            <set name="rarity">Very Rare</set>
+            <set name="armor">Scale Mail</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+        </rules>
+    </element>
+
+
+<!-- Grasping Shield -->
+    <element name="Grasping Shield" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_GRASPING_SHIELD">
+        <description>
+            <p>The boss at the center of this shield is a hand fashioned of metal. While wielding this shield, you gain a +1 bonus to AC. This bonus is in addition to the shield’s normal bonus to AC.</p>
+            <p class="indent"><i><b>Grasping Defense.</b></i> When a creature you can see within 5 feet of you hits you with a melee weapon attack, you can use a reaction to animate the hand on the shield. Make a melee weapon attack with the shield. You have proficiency with this attack if you are proficient with shields, and you gain a +1 bonus to the attack roll. On a hit, the attacker is grappled (escape DC 13) by the hand. While the shield is grappling a creature, you gain no bonuses to AC from the shield. The grapple ends when you can command the shield to release the target (no action required), when the creature escapes, or when you drop the shield.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="shield">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="ac:shield" value="1" bonus="enhancement" />
+        </rules>
+     </element>
+
+<!-- Grave Ward Armor -->
+    <element name="Grave Ward Armor" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_GRAVE_WARD_ARMOR">
+        <description>
+            <p>This armor bears gold or brass symbols of sunlight and sun deities and never tarnishes or rusts. The armor is immune to necrotic damage and rusting attacks such as those of a rust monster.</p>
+            <p class="indent">While wearing this armor, your maximum hit points can’t be reduced. As an action, you can speak a command word to gain the effect of a protection from evil and good spell for 1 minute (no concentration required). While the spell is active, if you are reduced to 0 hit points, you drop to 1 hit point instead. Once you use this property, it can’t be used again until the next dawn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="light, medium, or heavy">Armor</set>
+            <set name="rarity">Very Rare</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT||ID_INTERNAL_ARMOR_GROUP_MEDIUM||ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" />
+        </rules>
+    </element>
+
+
+<!-- Grim Escutcheon -->
+    <element name="Grim Escutcheon" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_GRIM_ESCUTCHEON">
+        <description>
+            <p>This blackened iron shield is adorned with the menacing relief of a monstrously gaunt skull. You gain a +1 bonus to AC while you wield this shield. This bonus is in addition to the shield’s normal bonus to AC.</p>
+            <p class="indent">While holding this shield, you can use a bonus action to speak its command word to cast the fear spell (save DC 13). The shield can’t be used this way again until the next dusk.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="shield">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="ac:shield" value="1" bonus="enhancement" />
+            <grant type="Spell" id="ID_PHB_SPELL_FEAR" />
+        </rules>
+    </element>
+
+<!-- Hellfire Armor -->
+   <element name="Hellfire Armor" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_HELLFIRE_ARMOR">
+        <description>
+            <p>This spiked armor is a dark, almost black crimson when inactive.</p>
+            <p class="indent">While wearing this armor, you can use an action to cause it to glow and appear red-hot, giving you a hellish appearance. The armor sheds light as a candle, but it doesn’t emit heat. The effect lasts until you use a bonus action to end it.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="any metal">Armor</set>
+            <set name="rarity">Common</set>
+            <set name="armor">Breastplate||Chain Shirt||Scale Mail||Half Plate||Splint||Plate</set>
+            <set name="name-format">Hellfire {{parent}}</set>
+        </setters>
+    </element>
+
+<!-- Molten Hellfire Armor -->
+   <element name="Molten Hellfire Armor" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_MOLTEN_HELLFIRE_ARMOR">
+        <description>
+            <p>This spiked armor is a dark, almost black crimson when inactive.</p>
+            <p class="indent">While wearing this armor, you can use an action to cause it to glow and appear red-hot, giving you a hellish appearance. The armor sheds light as a candle, but it doesn’t emit heat. The effect lasts until you use a bonus action to end it.</p>
+            <p class="indent">This more powerful version of hellfire armor has 3 charges. It regains all expended charges daily at dawn. If you expend 1 charge as part of the action to make the armor glow, you can make the armor emit heat in addition to light for 1 minute. For the duration, when a creature touches you or hits you with a melee attack while within 5 feet of you, it takes 1d4 fire damage. You are immune to the armor’s heat while wearing it.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="any metal">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">Breastplate||Chain Shirt||Scale Mail||Half Plate||Splint||Plate</set>
+            <set name="name-format">Molten Hellfire {{parent}}</set>
+        </setters>
+    </element>
+
+<!-- Larkmail -->
+    <element name="Larkmail" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_LARKMAIL">
+        <description>
+            <p>While wearing this armor, you gain a +1 bonus to AC. The links of this mail have been stained to create the optical illusion that you are wearing a brown-and russet feathered tunic. While you wear this armor, you have advantage on Charisma (Performance) checks made with an instrument.</p>
+            <p class="indent">In addition, while playing an instrument, you can use a bonus action and choose any number of creatures within 30 feet of you that can hear your song. Each target must succeed on a DC 15 Charisma saving throw or be charmed by you for 1 minute.</p>
+            <p class="indent">Once used, this property can’t be used again until the next dawn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="chain mail">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">Chain Mail</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+        </rules>
+    </element>
+
+<!-- Living Juggernaut -->
+    <element name="Living Juggernaut" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_LIVING_JUGGERNAUT">
+        <description>
+            <p>This broad, bulky suit of plate is adorned with large, blunt spikes and has curving bull horns affixed to its helm. While wearing this armor, you gain a +1 bonus to AC, and difficult terrain doesn’t cost you extra movement.</p>
+            <p class="indent"><b><i>Juggernaut Rush.</i></b> While wearing this armor, you can use the Dash action to move into and through the spaces of any creatures no more than one size larger than you, physically ramming into them as you pass. You can’t ram into a creature more than once during the same movement. Each creature you ram must make a DC 15 Dexterity saving throw. On a successful save, the creature can choose to be pushed 5 feet away from your path. A creature that chooses not to be pushed or that chooses to make an opportunity attack against you suffers the consequences of a failed saving throw. On a failed save, the creature takes bludgeoning damage equal to 2d6 + your Strength modifier, and it is pushed 5 feet in a direction of your choice. Once used, this property of the armor can’t be used again until the next dawn. </p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="plate">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">Plate</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+        </rules>
+    </element>
+
+<!-- Mail of the Sword Master -->
+    <element name="Mail of the Sword Master" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_MAIL_OF_THE_SWORD_MASTER">
+        <description>
+            <p>While wearing this armor, the maximum Dexterity modifier you can add to determine your Armor Class is 4, instead of 2. While wearing this armor, if you are wielding a sword and no other weapons, you gain a +2 bonus to damage rolls with that sword.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="half plate">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">Half Plate</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+<!-- Meteoric Plate -->
+   <element name="Meteoric Plate" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_METEORIC_PLATE">
+        <description>
+            <p>This plate armor was magically crafted from plates of interlocking stone. Tiny rubies inlaid in the chest create a glittering mosaic of flames. When you fall while wearing this armor, you can tuck your knees against your chest and curl into a ball.</p>
+            <p class="indent">While falling in this way, flames form around your body. You take half the usual falling damage when you hit the ground, and fire explodes from your form in a 20-foot-radius sphere. Each creature in this area must make a DC 15 Dexterity saving throw. On a failed save, a target takes fire damage equal to the falling damage you took, or half as much on a successful saving throw.</p>
+            <p class="indent">The fire spreads around corners and ignites flammable objects in the area that aren’t being worn or carried.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="plate">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">Plate</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+<!-- Mirrored Armor -->
+    <element name="Mirrored Armor" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_MIRRORED_ARMOR">
+        <description>
+            <p>This metal armor is always polished to a mirror sheen, highly reflective, and can’t be dulled. If a creature has an action or trait that requires it to gaze at you to affect you, such as a basilisk’s Petrifying Gaze or a lich’s Frightening Gaze, it sees its reflection in the armor and is also affected by the gaze.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="shield">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD||Breastplate||Half Plate||Plate</set>
+            <set name="name-format">Mirrored {{parent}}</set>
+        </setters>
+    </element>
+
+<!-- Muffled Armor -->
+    <element name="Muffled Armor" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_MUFFLED_ARMOR">
+        <description>
+            <p>This magical armor is laid with enchantments to mute its noise and ease movement, even muting and dulling its colors and shine when you attempt to conceal yourself. While wearing this armor, you don’t have disadvantage on Dexterity (Stealth) checks as a result of wearing the armor, but you might still have disadvantage on such checks from other effects.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="padded, scale mail, half plate, or any heavy">Armor</set>
+            <set name="rarity">Common</set>
+            <set name="armor">Padded||Scale Mail||Half Plate||ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+        </setters>
+    </element>
+
+<!-- Primordial Scale -->
+   <element name="Primordial Scale" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_PRIMORDIAL_SCALE">
+        <description>
+            <p>This armor is fashioned from the scales of a great, subterranean beast shunned by the gods. While wearing it, you have darkvision out to a range of 60 feet. If you already have darkvision, wearing the armor increases its range by 60 feet, but you have disadvantage on attack rolls and Wisdom (Perception) checks that rely on sight when you are in sunlight. In addition, while wearing this armor, you have advantage on saving throws against spells cast by agents of the gods, such as celestials, fiends, clerics, and cultists.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="scale mail">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">Scale Mail</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+        </rules>
+    </element>
+
+<!-- Retribution Armor -->
+
+    <element name="Retribution Armor" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_RETRIBUTION_ARMOR">   
+        <description>   
+            <p>Etchings of flames adorn this breastplate, which is wrapped in chains of red gold, silver, and black iron. While wearing this armor, you gain a +1 bonus to AC. In addition, if a creature scores a critical hit against you, you have advantage on any attacks against that creature until the end of your next turn or until you score a critical hit against that creature.</p>
+            <p class="indent">Retributive Resurrection. If you are killed by a creature while wearing this armor, you arise the following round as a tireless, vengeful undead. Your type changes to undead, and you gain the following benefits: </p>
+            <p class="indent">• You have resistance to necrotic damage, and you are immune to poison damage. </p>
+            <p class="indent">• You can’t be charmed or poisoned, and you don’t suffer from exhaustion. </p>
+            <p class="indent">• You have darkvision out to a range of 60 feet. </p>
+            <p class="indent">• You have advantage on saving throws against effects that turn undead. </p>
+            <p class="indent">• You can use an action to sense the direction of your killer. This works like the locate creature spell, except you can sense only the creature that killed you. </p>
+            <p class="indent">You rise as an undead only if your death was caused with intent; accidental deaths or deaths from unintended consequences (such as dying from a disease unintentionally passed to you) don’t activate this property of the armor. You exist in this deathly state for up to 1 week per Hit Die or until you exact revenge on your killer, at which time your body crumbles to ash and you finally die. You can be restored to life only by means of a true resurrection or wish spell.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="breastplate">Armor</set>
+            <set name="rarity">Very Rare</set>
+            <set name="armor">Breastplate</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+        </rules>
+    </element>
+
+<!-- Rust Monster Shell-->
+
+    <element name="Rust Monster Shell" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_RUST_MONSTER_SHELL">
+        <description>
+            <p>While wearing this armor, you gain a +1 bonus to AC. In addition, you can use an action to magically coat the armor in rusty flakes for 1 minute. While the armor is coated in rusty flakes, any nonmagical weapon made of metal that hits you corrodes. After dealing damage, the weapon takes a permanent and cumulative –1 penalty to damage rolls. If its penalty drops to –5, the weapon is destroyed. Nonmagical ammunition made of metal that hits you is destroyed after dealing damage. The armor can’t be used this way again until the next dawn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="breastplate">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">Breastplate</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+        </rules>
+    </element>
+
+    
+<!-- Sand Suit -->
+
+    <element name="Sand Suit" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_SAND_SUIT">
+        <description>
+            <p>Created from the treated body of a destroyed Apaxrusl, this leather armor constantly sheds fine sand. The faint echoes of damned souls also emanate from the armor. While wearing this armor, you gain a +1 bonus to AC, and you can understand and speak Abyssal. In addition, you can move through nonmagical, unworked earth and stone at your speed. While doing so, you don’t disturb the material you move through. Because the souls that once infused the apaxrusl remain within the armor, you are susceptible to effects that sense, target, or harm fiends, such as a paladin’s Divine Smite or a ranger’s Primeval Awareness.This armor has 3 charges, and it regains 1d3 expended charges daily at dawn. As a reaction, when you are hit by an attack, you can expend 1 charge and make the armor flow like sand. Roll a d12 and reduce the damage you take by the number rolled.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="leather">Armor</set>
+            <set name="rarity">Very Rare</set>
+            <set name="armor">Leather</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+            <grant type="Language" id="ID_LANGUAGE_ABYSSAL" />
+        </rules>
+    </element>
+
+<!-- Serpent’s Scales -->
+    <element name="Serpent's Scales" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_SERPENTS_SCALES">
+        <description>
+            <p>While wearing this armor made from the skin of a giant snake, you gain a +1 bonus to AC, and you have resistance to poison damage.</p>
+            <p class="indent">While wearing the armor, you can use an action to cast polymorph on yourself, transforming into a giant poisonous snake. While you are in the form of a snake, you retain your Intelligence, Wisdom, and Charisma scores.</p>
+            <p class="indent">In addition, you don’t need to maintain concentration on the spell, and the transformation lasts for 1 hour, until you use a bonus action to revert to your normal form, or until you drop to 0 hit points or die. The armor can’t be used this way again until the next dawn</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="scale mail">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">Scale Mail</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+        </rules>
+    </element>
+    
+<!-- Sharkskin Vest -->
+    <element name="Sharkskin Vest" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_SHARKSKIN_VEST">
+        <description>
+            <p>While wearing this armor, you gain a +1 bonus to AC, and you have advantage on Strength (Athletics) checks made to swim.</p>
+            <p class="indent">While wearing this armor underwater, you can use an action to cast polymorph on yourself, transforming into a reef shark. While you are in the form of the reef shark, you retain your Intelligence, Wisdom, and Charisma scores. In addition, you don’t need to maintain concentration on the spell, and the transformation lasts for 1 hour, until you use a bonus action to revert to your normal form, or until you drop to 0 hit points or die. The armor can’t be used this way again until the next dawn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="leather">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">Leather</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+        </rules>
+    </element>
+    
+<!-- Shield of Gnawing -->
+
+    <element name="Shield of Gnawing" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_SHIELD_OF_GNAWING">
+        <description>
+            <p>The wooden rim of this battered oak shield is covered in bite marks. While holding this shield, you gain a +1 bonus to AC. This bonus is in addition to the shield’s normal bonus to AC. In addition, you can use the Shove action as a bonus action while raging.</p>
+            <p class="indent"><b><i>Gnawing Attack.</i></b> If you bite down on the shield while moving at least 20 feet straight toward a creature and then hit it with a melee weapon attack on the same turn, the target takes an extra 4d6 necrotic damage. You gain temporary hit points equal to the necrotic damage dealt. Once used, this property can’t be used again until the next dawn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="shield">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+            <set name="attunement" addition="by a barbarian">true</set>
+        </setters>
+        <rules>
+            <stat name="ac:shield" value="1" bonus="enhancement" />
+        </rules>
+    </element>
+    
+<!-- Shield of Missile Reversal -->
+
+    <element name="Shield of Missile Reversal" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_SHIELD_OF_MISSILE_REVERSAL">
+        <description>
+            <p>While wielding this shield, you gain a +1 bonus to AC. This bonus is in addition to the shield’s normal bonus to AC. When you would be struck by a ranged attack, you can use a reaction to cause the outer surface of the shield to emit a flash of magical energy, sending the missile hurtling back at your attacker. Make a ranged weapon attack roll against your attacker using the attacker’s bonuses on the roll. If the attack hits, roll damage as normal, using the attacker’s bonuses.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="shield">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="ac:shield" value="1" bonus="enhancement" />
+        </rules>
+    </element>
+
+<!-- Shield of the Fallen -->
+    <element name="Shield of the Fallen" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_SHIELD_OF_THE_FALLEN">
+        <description>
+            <p>Your allies can use this shield to move you when you aren’t capable of moving. If you are paralyzed, petrified, or unconscious, and a creature lays you on this shield, the shield rises up under you, bearing you and anything you currently wear or carry. The shield then follows the creature that laid you on the shield for up to 1 hour before gently lowering to the ground. This property otherwise works like the floating diskspell. Once used, the shield can’t be used this way again for 1d12 hours.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="shield">Armor</set>
+            <set name="rarity">Common</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+        </setters>
+    </element>
+
+<!-- Slick Cuirass -->
+   <element name="Slick Cuirass" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_SLICK_CUIRASS">
+       <description>
+           <p>This suit of leather armor has a shiny, greasy look to it. While wearing the armor, you have advantage on ability checks and saving throws made to escape a grapple. In addition, while squeezing through a smaller space, you don’t have disadvantage on attack rolls and Dexterity saving throws.</p>
+       </description>
+       <setters>
+           <set name="category">Magic Armor</set>
+           <set name="cost" currency="gp">0</set>
+           <set name="type" addition="leather">Armor</set>
+           <set name="rarity">Common</set>
+           <set name="armor">Leather</set>
+       </setters>
+   </element>
+
+<!-- Smoking Plate of Heithmir -->
+    <element name="Smoking Plate of Heithmir" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_SMOKING_PLATE_OF_HEITHMIR">
+        <description>
+            <p>This armor is soot-colored plate with grim dwarf visages on the pauldrons. The pauldrons emit curling smoke and are warm to the touch. You gain a +3 bonus to AC and are resistant to cold damage while wearing this armor.</p>
+            <p class="indent">In addition, when you are struck by an attack while wearing this armor, you can use a reaction to fill a 30-foot cone in front of you with dense smoke. The smoke spreads around corners, and its area is heavily obscured. Each creature in the smoke when it appears and each creature that ends its turn in the smoke must succeed on a DC 17 Constitution saving throw or be poisoned for 1 minute. A wind of at least 20 miles per hour disperses the smoke. Otherwise, the smoke lasts for 5 minutes. Once used, this property of the armor can’t be used again until the next dawn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="plate">Armor</set>
+            <set name="rarity">Legendary</set>
+            <set name="armor">Plate</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="3" bonus="enhancement" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+        </rules>
+    </element>
+
+<!-- Spearbiter -->
+
+    <element name="Spearbiter" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_SPEARBITER_">
+        <description>
+            <p>The front of this shield is fashioned in the shape of a snarling wolf ’s head.</p>
+            <p class="indent">When a creature you can see within 5 feet of you makes a melee weapon attack against you, you can use a reaction to attack the attacker’s weapon, the wolf ’s head animating and snapping its jaws at the weapon. Make a melee weapon attack with the shield. You have proficiency with this attack if you are proficient with shields.</p>
+            <p class="indent">If the result is higher than the attacker’s attack roll against you, the attacker’s attack misses you. You can’t use this property of the shield again until the next dawn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="shield">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+<!-- Adamantine Spearbiter -->
+
+    <element name="Adamantine Spearbiter" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM__ADAMATINE_SPEARBITER">
+        <description>
+            <p>The front of this shield is fashioned in the shape of a large and menacing snarling wolf ’s head, fitted with adamantine fangs..</p>
+            <p class="indent">When a creature you can see within 5 feet of you makes a melee weapon attack against you, you can use a reaction to attack the attacker’s weapon, the wolf ’s head animating and snapping its jaws at the weapon. Make a melee weapon attack with advantage with the shield. You have proficiency with this attack if you are proficient with shields.</p>
+            <p class="indent">If the result is higher than the attacker’s attack roll against you, the attacker’s attack misses you.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="shield">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+<!-- Steadfast Splint -->
+    <element name="Steadfast Splint" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_STEADFAST_SPLINT">
+        <description>
+            <p>This armor makes you difficult to manipulate both mentally and physically. While wearing this armor, you have advantage on saving throws against being charmed or frightened, and you have advantage on ability checks and saving throws against spells and effects that would move you against your will.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="splint">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">Splint</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+<!-- Swarmfoe Suit -->
+
+    <element name="Swarmfoe Suit" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_SWARMFOE_SUIT">
+        <description>
+            <p>While wearing this armor festooned with thin draconic scales, you gain a +1 bonus to AC. You can use the scales as a melee weapon while wearing the armor. You have proficiency with the scales and deal 1d4 slashing damage on a hit (your Strength modifier applies to the attack and damage rolls as normal).</p>
+            <p class="indent">Swarms don’t have resistance to the damage dealt by the scales. In addition, if a swarm occupies your space, you can attack with the scales as a bonus action.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="leather or hide">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">Leather||Hide</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+        </rules>
+    </element>
+
+<!-- Tarian Graddfeydd Ddraig -->
+    <element name="Tarian Graddfeydd Ddraig" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_TARIAN_GRADDFEYDD_DDRAIG">
+        <description>
+            <p>This metal shield has an outer coating consisting of hardened resinous insectoid secretions embedded with flakes from ground dragon scales collected from various dragon wyrmlings and one dragon that was killed by shadow magic. While holding this shield, you gain a +2 bonus to AC. This bonus is in addition to the shield’s normal bonus to AC. In addition, you have resistance to acid, cold, fire, lightning, necrotic, and poison damage dealt by the breath weapons of dragons. </p>
+            <p class="indent">While wielding the shield in an area of dim or bright light, you can use an action to reflect the light off the shield’s dragon scale flakes to cause a cone of multicolored light to flash from it (15-foot cone if in dim light; 30-foot cone if in bright light). Each creature in the area must make a DC 17 Dexterity saving throw. For each target, roll a d6 and consult the following table to determine which color is reflected at it. The shield can’t be used this way again until the next dawn.</p>
+            <table>
+                <thead>
+                    <tr><td>d6</td><td>Effect</td></tr>
+                </thead>
+                <tr><td>1</td><td>Red. The target takes 6d6 fire damage on a failed save, or half as much damage on a successful one.</td></tr>
+                <tr><td>2</td><td>White. The target takes 4d6 cold damage and is restrained until the start of your next turn on a failed save, or half as much damage and is not restrained on a successful one.</td></tr>
+                <tr><td>3</td><td>Blue. The target takes 4d6 lightning damage and is paralyzed until the start of your next turn on a failed save, or half as much damage and is not paralyzed on a successful one.</td></tr>
+                <tr><td>4</td><td>Black. The target takes 4d6 acid damage on a failed save, or half as much damage on a successful one. If the target failed the save, it also takes an extra 2d6 acid damage on the start of your next turn.</td></tr>
+                <tr><td>5</td><td>Green. The target takes 4d6 poison damage and is poisoned until the start of your next turn on a failed save, or half as much damage and is not poisoned on a successful one.</td></tr>
+                <tr><td>6</td><td>Shadow. The target takes 4d6 necrotic damage and its Strength score is reduced by 1d4 on a failed save, or half as much damage and does not reduce its Strength score on a successful one. The target dies if this Strength reduction reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest.</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="shield">Armor</set>
+            <set name="rarity">Very Rare</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="ac:shield" value="2" bonus="enhancement" />
+        </rules>
+    </element>
+
+<!-- Troll Skin Armor -->
+
+    <element name="Troll SKin Armor" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_TROLL_SKIN_ARMOR">
+        <description>
+            <p>While wearing troll skin armor, you gain a +1 bonus to AC, and you stabilize whenever you are dying at the start of your turn. In addition, you can use an action to regenerate for 1 minute. While regenerating, you regain 2 hit points at the start of each of your turns. The armor can’t be used this way again until the next dawn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="leather or hide">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">Leather||Hide</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+        </rules>
+    </element>
+
+<!-- Undine Plate -->
+
+    <element name="Undine Plate" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_UNDINE_PLATE">
+        <description>
+            <p>This bright green plate armor is embossed with images of various marine creatures, such as octopuses and rays. While wearing this armor, you have a swimming speed of 40 feet, and you don’t have disadvantage on Dexterity (Stealth) checks while underwater.</p>
+            <p class="indent"><b><i>Seawater Shield.</i></b> While wearing this armor, you can use a bonus action to surround yourself in a sheath of seawater until the start of your next turn. While sheathed in seawater, you have resistance to fire damage, and you are heavily obscured from melee and ranged attacks against you. The seawater doesn’t obscure your vision. Once used, this property can’t be used again until the next dawn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="plate">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">Plate</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+        </rules>
+    </element>
+
+<!-- Verses of Vengeance -->
+
+    <element name="Verse of Vengeance" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_VERSES_OF_VENGEANCE">
+        <description>
+            <p>This massive, holy tome is bound in brass with a handle on the back cover. A steel chain dangles from the sturdy metal cover, allowing you to hang the tome from your belt or hook it to your armor. A locked clasp holds the tome closed, securing its contents.</p>
+            <p class="indent">You gain a +1 bonus to AC while you wield this tome as a shield. This bonus is in addition to the shield’s normal bonus to AC. Alternatively, you can make melee weapon attacks with the tome as if it was a club. If you make an attack using use the tome as a weapon, you lose the shield’s bonus to your AC until the start of your next turn.</p>
+            <p class="indent"><b><i>Verse of Vengeance.</i></b> As a reaction when a creature hits you with a melee attack or when you hit a creature with the tome, you can shout a verse of vengeance, and the target takes 1d4 radiant damage. Such verses include, “Surrender and know divine mercy!”, “Repent! The hour of judgment is upon you!”, “Confess and be purged from your unrighteousness!”, or similar verse appropriate to your deity.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="shield">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+            <set name="attunement" addition="by a cleric or paladin">true</set>
+        </setters>
+        <rules>
+            <stat name="ac:shield" value="1" bonus="enhancement" />
+        </rules>
+    </element>
+
+<!-- Vestments of the Bleak Shinobi -->
+
+    <element name="Vestments of the Bleak Shinobi" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_VESTMENTS_OF_THE_BLEAK_SHINOBI">
+        <description>
+            <p>This padded black armor is fashioned in the furtive style of shinobi shōzoku garb. You have advantage on Dexterity (Stealth) checks while you wear this armor.</p>
+            <p class="indent"><b><i>Darkness.</i></b> While wearing this armor, you can use an  action to cast the darkness spell from it with a range  of 30 feet. Once used,  this property can’t be  used again until the  next dawn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="padded">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">Padded</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+            <grant type="Spell" id="ID_PHB_SPELL_DARKNESS" />
+        </rules>
+    </element>
+
+<!-- Void-Touched Buckler -->
+
+    <element name="Void-Touched Buckler" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_VOID_TOUCHED_BUCKLER">
+        <description>
+            <p>This simple wood and metal buckler belonged to an adventurer slain by a Void Dragon Wyrmling.</p>
+            <p class="indent">It sat for decades next to a small tear in the fabric of reality, which led to the outer planes. It has since become tainted by the Void.</p>
+            <p class="indent">While wielding this shield, you have a +1 bonus to AC. This bonus is in addition to the shield’s normal bonus to AC.</p>
+            <p class="indent"><i><b>Invoke the Void.</b></i> While wielding this shield, you can use an action to invoke the shield’s latent Void energy for 1 minute, causing a dark, swirling aura to envelop the shield. For the duration, when a creature misses you with a weapon attack, it must succeed on a DC 17 Wisdom saving throw or be frightened of you until the end of its next turn. In addition, when a creature hits you with a weapon attack, it has advantage on weapon attack rolls against you until the end of its next turn. You can’t use this property of the shield again until the next dawn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="shield">Armor</set>
+            <set name="rarity">Very Rare</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="ac:shield" value="1" bonus="enhancement" />
+        </rules>
+    </element>
+
+<!-- Warlock’s Aegis -->
+
+    <element name="Warlock's Aegis" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_WARLOCKS_AEGIS">
+        <description>
+            <p>When you attune to this mundane-looking suit of leather armor, symbols related to your patron burn themselves into the leather, and the armor’s colors change to those most closely associated with your patron. While wearing this armor, you can use an action and expend a spell slot to increase your AC by an amount equal to your Charisma modifier for the next 8 hours. The armor can’t be used this way again until the next dawn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="leather">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">Leather</set>
+            <set name="attunement" addition="by a warlock">true</set>
+        </setters>
+    </element>
+
+<!-- Wave Chain Mail -->
+    <element name="Wave Chain Mail" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_WAVE_CHAIN_MAIL">
+        <description>
+            <p>The rows of chain links of this armor seem to ebb and flow like waves while worn. Attacks against you have disadvantage while at least half of your body is submerged in water.</p>
+            <p class="indent">In addition, when you are attacked, you can turn all or part of your body into water as a reaction, gaining immunity to bludgeoning, piercing, and slashing damage from nonmagical weapons, until the end of the attacker’s turn. Once used, this property of the armor can’t be used again until the next dawn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="chain mail">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">Chain Mail</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+<!-- White Ape Hide -->
+
+    <element name="White Ape Hide" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_WHITE_APE_HIDE">
+        <description>
+            <p>This armor was made from the remains of a White Ape that fell in battle. While wearing this armor, you gain a +2 bonus to AC. In addition, the armor has the following properties while you wear it.</p>
+            <p class="indent"><b><i>White Ape’s Speed.</i></b> As a bonus action, you can gain a climbing speed of 30 feet for 1 hour. Once used, this property of the armor can’t be used again until the next dawn.</p>
+            <p class="indent"><b><i>White Ape’s Strength.</i></b> As a bonus action, you can call on the power of the white ape. For 1 minute, you have advantage on Strength and Constitution ability checks and saving throws, and you have a +1 bonus to attack and damage rolls with melee weapons. Once used, this property of the armor can’t be used again until the next dawn.</p>
+            <p class="indent"><b><i>White Ape’s Wasting.</i></b> When you hit a creature with a melee weapon attack, you can choose to imbue the weapon with disease. The target must succeed on a DC 15 Constitution saving throw or become infected with the arcane wasting disease. It takes 1d6 days for arcane wasting’s symptoms to manifest in an infected creature, which include forgetfulness and minor delirium. At the end of each long rest, the infected creature must succeed on a DC 15 Constitution saving throw or its Intelligence and Wisdom scores are each reduced by 1d3. The creature dies if this reduces either score to 0. Otherwise, the reduction lasts until the creature finishes a long rest after the disease is cured. The creature recovers from the disease by making two consecutive successful saving throws. The lesser restoration spell cures the disease if the spellcaster succeeds on a DC 15 spellcasting check. Once used, this property of the armor can’t be used again until 7 days have passed.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="leather or hide">Armor</set>
+            <set name="rarity">Very Rare</set>
+            <set name="armor">Leather||Hide</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="2" bonus="enhancement" />
+        </rules>
+    </element>
+
+<!-- Witch Hunter’s Armor -->
+
+    <element name="Witch Hunter's Armor" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_WITCH_HUNTERS_ARMOR">
+        <description>
+            <p>A suit of this armor is typically etched or embroidered with protective glyphs and runes. While wearing this armor, you gain a +1 bonus to AC, and you have advantage on saving throws against spells. If you fail a saving throw against a spell while wearing this armor, you can choose to succeed instead. If you do, the armor’s magic ceases to function until the next dawn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="light, medium, or heavy">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT||ID_INTERNAL_ARMOR_GROUP_MEDIUM||ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+        </rules>
+    </element>
+
+<!-- Zephyr Shield -->
+    <element name="Zephyr Shield" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ZEPHYR_SHIELD">
+        <description>
+            <p>This round metal shield is painted bright blue with swirling white lines across it. You gain a +2 bonus to AC while you wield this shield. This is an addition to the shield's normal AC bonus.</p>
+            <p class="indent"><i><b>Air Bubble.</b></i> Whenever you are immersed in a body of water while holding this shield, you can use a reaction to envelop yourself in a 10-foot radius bubble of fresh air. This bubble floats in place, but you can move it up to 30 feet during your turn. You are moved with the bubble when it moves. The air within the bubble magically replenishes itself every round and prevents foreign particles, such as poison gases and water-borne parasites, from entering the area. Other creatures can leave or enter the bubble freely, but it collapses as soon as you exit it. The exterior of the bubble is immune to damage and creatures making ranged attacks against anyone inside the bubble have disadvantage on their attack rolls. The bubble lasts for 1 minute or until you exit it. Once used, this property can’t be used again until the next dawn.</p>
+            <p class="indent"><i><b>Sanctuary.</b></i> You can use a bonus action to cast the sanctuary spell (save DC 13) from the shield. This spell protects you from only water elementals and other creatures composed of water. Once used, this property can’t be used again until the next dawn.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="shield">Armor</set>
+            <set name="rarity">Very Rare</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="ac:shield" value="2" bonus="enhancement" />
+            <grant type="Spell" id="ID_PHB_SPELL_SANCTUARY" />
+        </rules>
+    </element>
+
+</elements>
