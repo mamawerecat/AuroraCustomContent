@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Specialty consumables</name>
+        <update version="0.0.1">
+            <file name="bezoars.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/Untitled-1" />
+        </update>
+    </info>
+
+<!-- Bezoar of the Behir  -->
+    <element name="Bexoar of the Behir" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BEZOAR_OF_THE_BEHIR">
+        <description>
+            <p>While this bezoar sits in your stomach, you have resistance to lightning damage. In addition, you can use an action to exhale lightning in a line that is 30 feet long and 5 feet wide. Each creature in that line must make a DC 15 Dexterity saving throw, taking 4d10 lightning damage on a failed save, or half as much damage on a successful one. You must finish a long rest before you can exhale lightning again.</p>
+            <p class="indent"><i>When you swallow a bezoar,  your hp max is reducded by 2d4, and the bezoar remains in your stomach for a number of days equal to that amount You can gain the benefits of only one bezoar at a time, and while a bezoar sits in your stomach, you can’t gain any benefit from other edible magic items, such as potions. Although the bezoar is uncomfortable, it doesn’t impact your ability to eat or drink, but it does prevent you from gaining any special benefits from consuming magical foodstuffs, such as those produced by the goodberry and heroes’ feasts spells or fantastical foods and beverages</i></p>
+            <p class="indent"><i><b>See page 61 in Vault of Magic for more information on Bezoars and thier properties.</b></i></p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Bezoar of the Bespectacled Owlbear --> 
+    <element name="Bexoar of the Bespectacled Owlbear" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BEZOAR_OF_THE_BESPECTACLED_OWLBEAR">
+        <description>
+            <p>While this bezoar sits in your stomach, you have advantage on saving throws against poison, and you have immunity to the poisoned condition. In addition, you can’t be surprised while you are conscious.</p>
+            <p class="indent">Curse. Voices constantly tell you terrible things, maybe true and maybe not but certainly off-putting. The first time a creature damages you, you must succeed on a DC 15 Wisdom saving throw or be frightened of that creature until it or you fall unconscious or until the creature is no longer within your line of sight for 1 minute. Once frightened by a creature, you can’t be frightened by that creature again until 24 hours have passed. <i>You can’t remove a cursed bezoar before its full duration (when you regurgitate it as normal) unless you are first targeted by a remove curse spell. However, if the bezoar is not removed before your next short or long rest after the spell’s casting, the curse returns. The curse ends automatically once the bezoar is regurgitated.</i></p>
+            <p class="indent"><i>When you swallow a bezoar,  your hp max is reducded by 2d4, and the bezoar remains in your stomach for a number of days equal to that amount You can gain the benefits of only one bezoar at a time, and while a bezoar sits in your stomach, you can’t gain any benefit from other edible magic items, such as potions. Although the bezoar is uncomfortable, it doesn’t impact your ability to eat or drink, but it does prevent you from gaining any special benefits from consuming magical foodstuffs, such as those produced by the goodberry and heroes’ feasts spells or fantastical foods and beverages</i></p>
+            <p class="indent"><i><b>See page 61 in Vault of Magic for more information on Bezoars and thier properties.</b></i></p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Bezoar of the Chimera -->
+    <element name="Bezoar of the Chimera" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BEZOAR_OF_THE_CHIMERA">
+        <description>
+            <p>While this bezoar sits in your stomach, red scales cover your body, two small horns curl from your temples, and your nose widens and flattens. When you aren’t wearing armor, your AC equals 13 + your Dexterity modifier, and with a 10-foot running start, you can long jump up to 25 feet. In addition, you have advantage on Strength and Dexterity saving throws made against effects that would knock you prone, and you have advantage on Wisdom (Perception) checks that rely on smell.</p>
+            <p class="indent"><i>When you swallow a bezoar,  your hp max is reducded by 2d4, and the bezoar remains in your stomach for a number of days equal to that amount You can gain the benefits of only one bezoar at a time, and while a bezoar sits in your stomach, you can’t gain any benefit from other edible magic items, such as potions. Although the bezoar is uncomfortable, it doesn’t impact your ability to eat or drink, but it does prevent you from gaining any special benefits from consuming magical foodstuffs, such as those produced by the goodberry and heroes’ feasts spells or fantastical foods and beverages</i></p>
+            <p class="indent"><i><b>See page 61 in Vault of Magic for more information on Bezoars and thier properties.</b></i></p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Bezoar of the Cockatrice  -->
+    <element name="Bezoar of the Cockatrice" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BEZOAR_OF_THE_COCKATRICE">
+        <description>
+            <p>While this bezoar sits in your stomach, you are immune to the petrified condition, and you have darkvision out to a range of 60 feet. If you already have darkvision, your vision is unaffected by this bezoar.</p>
+            <p class="indent"><i>When you swallow a bezoar,  your hp max is reducded by 2d4, and the bezoar remains in your stomach for a number of days equal to that amount You can gain the benefits of only one bezoar at a time, and while a bezoar sits in your stomach, you can’t gain any benefit from other edible magic items, such as potions. Although the bezoar is uncomfortable, it doesn’t impact your ability to eat or drink, but it does prevent you from gaining any special benefits from consuming magical foodstuffs, such as those produced by the goodberry and heroes’ feasts spells or fantastical foods and beverages</i></p>
+            <p class="indent"><i><b>See page 61 in Vault of Magic for more information on Bezoars and thier properties.</b></i></p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Common</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Bezoar of the Dire Owlbear -->
+    <element name="Bezoar of the Dire Owlbear" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BEZOAR_OF_THE_DIRE_OWL_BEAR">
+        <description>
+            <p>While this bezoar sits in your stomach, you are immune to exhaustion and curses (except a curse tied to this bezoar). Whenever you make an opportunity attack, you can make two attacks.</p>
+            <p class="indent">Curse. Your bloodlust gets the most of you. Once you enter melee, you aren’t willing to stop fighting the creature until one of you is dead or you’re both somehow physically separated for at least 3 rounds. <i>You can’t remove a cursed bezoar before its full duration (when you regurgitate it as normal) unless you are first targeted by a remove curse spell. However, if the bezoar is not removed before your next short or long rest after the spell’s casting, the curse returns. The curse ends automatically once the bezoar is regurgitated.</i></p>
+            <p class="indent"><i>When you swallow a bezoar,  your hp max is reducded by 2d4, and the bezoar remains in your stomach for a number of days equal to that amount You can gain the benefits of only one bezoar at a time, and while a bezoar sits in your stomach, you can’t gain any benefit from other edible magic items, such as potions. Although the bezoar is uncomfortable, it doesn’t impact your ability to eat or drink, but it does prevent you from gaining any special benefits from consuming magical foodstuffs, such as those produced by the goodberry and heroes’ feasts spells or fantastical foods and beverages</i></p>
+            <p class="indent"><i><b>See page 61 in Vault of Magic for more information on Bezoars and thier properties.</b></i></p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Very Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Bezoar of the Great Horned Owlbear  -->
+    <element name="Bezoar of the Great Horned Owlbear" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BEZOAR_OF_THE_GREAT_HORNED_OWLBEAR">
+        <description>
+            <p>While this bezoar sits in your stomach, you are immune to the charmed and frightened conditions. In addition, creatures must be at least two sizes larger than you to grapple you.</p>
+            <p class="indent">Curse. Your scent, demeanor, personality, or attitude irritates creatures around you. When interacting socially with creatures with an Intelligence of 5 or higher, you have disadvantage on Charisma checks. Creatures with an Intelligence of 4 or lower are immediately hostile toward you, and the first such creature to attack you each day has advantage on the attack roll. <i>You can’t remove a cursed bezoar before its full duration (when you regurgitate it as normal) unless you are first targeted by a remove curse spell. However, if the bezoar is not removed before your next short or long rest after the spell’s casting, the curse returns. The curse ends automatically once the bezoar is regurgitated.</i></p>
+            <p class="indent"><i>When you swallow a bezoar,  your hp max is reducded by 2d4, and the bezoar remains in your stomach for a number of days equal to that amount You can gain the benefits of only one bezoar at a time, and while a bezoar sits in your stomach, you can’t gain any benefit from other edible magic items, such as potions. Although the bezoar is uncomfortable, it doesn’t impact your ability to eat or drink, but it does prevent you from gaining any special benefits from consuming magical foodstuffs, such as those produced by the goodberry and heroes’ feasts spells or fantastical foods and beverages</i></p>
+            <p class="indent"><i><b>See page 61 in Vault of Magic for more information on Bezoars and thier properties.</b></i></p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Bezoar of the Hippogriff  -->
+    <element name="Bezoar of the Hippogriff" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BEZOAR_OF_THE_HIPPOGRIFF">
+        <description>
+            <p>While this bezoar sits in your stomach, you have advantage on Wisdom (Perception) checks that rely on sight. In addition, you can use a bonus action to sprout eagle wings from your back, gaining a flying speed equal to your walking speed for 1 minute. If you are flying when the duration expires, you descend at a rate of 30 feet per round until you land. When you’ve used the wings for a total of 1 hour, you can’t use them again until you finish a long rest. </p>
+            <p class="indent"><i>When you swallow a bezoar,  your hp max is reducded by 2d4, and the bezoar remains in your stomach for a number of days equal to that amount You can gain the benefits of only one bezoar at a time, and while a bezoar sits in your stomach, you can’t gain any benefit from other edible magic items, such as potions. Although the bezoar is uncomfortable, it doesn’t impact your ability to eat or drink, but it does prevent you from gaining any special benefits from consuming magical foodstuffs, such as those produced by the goodberry and heroes’ feasts spells or fantastical foods and beverages</i></p>
+            <p class="indent"><i><b>See page 61 in Vault of Magic for more information on Bezoars and thier properties.</b></i></p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Bezoar of the Hoary Owlbear -->
+    <element name="Bezoar of the Hoary Owlbear" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BEZOAR_OF_THE_HOARY_OWLBEAR">
+        <description>
+            <p>While this bezoar sits in your stomach, you have resistance to cold damage, and you can tolerate temperatures as low as –50 degrees Fahrenheit. In addition, your speed increases by 5 feet. </p>
+            <p class="indent">Curse. The bezoar is not sitting well with you and triggers intense heartburn and nausea. When you would regain hit points for any reason (magical healing, resting, or similar), you instead regain only half the amount.<i>You can’t remove a cursed bezoar before its full duration (when you regurgitate it as normal) unless you are first targeted by a remove curse spell. However, if the bezoar is not removed before your next short or long rest after the spell’s casting, the curse returns. The curse ends automatically once the bezoar is regurgitated.</i></p>
+            <p class="indent"><i>When you swallow a bezoar,  your hp max is reducded by 2d4, and the bezoar remains in your stomach for a number of days equal to that amount You can gain the benefits of only one bezoar at a time, and while a bezoar sits in your stomach, you can’t gain any benefit from other edible magic items, such as potions. Although the bezoar is uncomfortable, it doesn’t impact your ability to eat or drink, but it does prevent you from gaining any special benefits from consuming magical foodstuffs, such as those produced by the goodberry and heroes’ feasts spells or fantastical foods and beverages</i></p>
+            <p class="indent"><i><b>See page 61 in Vault of Magic for more information on Bezoars and thier properties.</b></i></p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Bezoar of the Manticore -->
+    <element name="Bezoar of the Manticore" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BEZOAR_OF_THE_MANTICORE">
+        <description>
+            <p>While this bezoar sits in your stomach, small spikes sprout from your skin. While you are grappling a creature or while a creature is grappling you, the creature takes 1d4 piercing damage at the start of your turn. In addition, you have proficiency with the spikes, and you can make a ranged weapon attack with a spike, hurling it as if it had the thrown property with a normal range of 30 feet and a long range of 120 feet. If the attack hits, the target takes piercing damage equal to 1d8 + your Strength modifier. You can throw up to 12 spikes. Used spikes regrow when you finish a long rest.</p>
+            <p class="indent"><i>When you swallow a bezoar,  your hp max is reducded by 2d4, and the bezoar remains in your stomach for a number of days equal to that amount You can gain the benefits of only one bezoar at a time, and while a bezoar sits in your stomach, you can’t gain any benefit from other edible magic items, such as potions. Although the bezoar is uncomfortable, it doesn’t impact your ability to eat or drink, but it does prevent you from gaining any special benefits from consuming magical foodstuffs, such as those produced by the goodberry and heroes’ feasts spells or fantastical foods and beverages</i></p>
+            <p class="indent"><i><b>See page 61 in Vault of Magic for more information on Bezoars and thier properties.</b></i></p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Bezoar of the Screech Owlbear -->
+    <element name="Bezoar of the Screech Owlbear" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BEZOAR_OF_THE_SCREECH_OWLBEAR">
+        <description>
+            <p>While this bezoar sits in your stomach, you are immune to the blinded and deafened conditions. In addition, you can communicate with beasts. This works like the speak with animals spell, except it lasts until you expel the bezoar.</p>
+            <p class="indent">Curse. The animals—and even the forest spirits that you can now see floating and cavorting all around—are chattier and more distracting than would be ideal. You have disadvantage on Wisdom (Perception) checks. </p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    
+</elements>
+
+
+<!-- BEZOARS  -->
+
+<!-- A bezoar is a solid mass of indigestible material that accumulates in a creature’s digestive tract. A bezoar looks and feels like a small stone. Any creature can expel a bezoar, but bezoars from creatures with magical origins or with a natural inclination for magic have unique, magical properties when consumed by another creature.  -->
+
+<!-- To gain the benefits of a bezoar, you must swallow it whole. When you swallow a bezoar, your hit point maximum is reduced by 2d4, and the bezoar remains in your stomach for a number of days equal to that amount. At the end of the duration, you automatically regurgitate the used-up bezoar, take 2d4 acid damage from the process of expelling the bezoar, and your hit point maximum returns to normal. A used-up bezoar is nonmagical and crumbles to dust within minutes. A successful DC 15 Wisdom (Medicine) check can force you to regurgitate the bezoar early. A bezoar that has been regurgitated before the end of its duration recharges and becomes fully functional again after 24 hours have passed, provided it remains outside of a creature’s body this entire time. --> 
+
+<!-- You can gain the benefits of only one bezoar at a time, and while a bezoar sits in your stomach, you can’t gain any benefit from other edible magic items, such as potions. Although the bezoar is uncomfortable, it doesn’t impact your ability to eat or drink, but it does prevent you from gaining any special benefits from consuming magical foodstuffs, such as those produced by the goodberry and heroes’ feasts spells or fantastical foods and beverages (described later in this section).  -->
+
+<!-- Owlbear Curses. Owlbears are not picky eaters and wind up devouring all sorts of nastiness: carrion, furry creatures, magical plants, fey river stones, feathery things, nut shells, and magic-infused bone. As such, bezoars from owlbears have a 50 percent chance of being cursed. You can’t remove a cursed bezoar before its full duration (when you regurgitate it as normal) unless you are first targeted by a remove curse spell. However, if the bezoar is not removed before your next short or long rest after the spell’s casting, the curse returns. The curse ends automatically once the bezoar is regurgitated.  -->
