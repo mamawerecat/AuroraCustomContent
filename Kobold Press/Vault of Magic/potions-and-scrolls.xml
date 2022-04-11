@@ -1,0 +1,1198 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Potiions and Scrolls</name>
+        <update version="0.0.1">
+            <file name="potions-and-scrolls.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/potions-and-scrolls.xml" />
+        </update>
+    </info>
+    
+<!-- Aberrant Agreement -->
+    <element name="Aberrant Agreement" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ABERRANT_AGREEMENT">
+        <description>
+            <p>This long scroll bears strange runes and seals of eldritch powers. When you use an action to present this scroll to an aberration whose Challenge Rating is equal to or less than your level, the binding powers of the scroll compel it to listen to you. You can then attempt to strike a bargain with the aberration, negotiating a service from it in exchange for a reward. The aberration is under no compulsion to strike the bargain; it is compelled only to parley long enough for you to present a bargain and allow for negotiations. If you or your allies attack or otherwise attempt to harm the aberration, the truce is broken, and the creature can act normally. If the aberration refuses the offer, it is free to take any actions it wishes. </p>
+            <p class="indent">Should you and the aberration reach an agreement that is satisfactory to both parties, you must sign the agreement and have the aberration do likewise (or make its mark, if it has no form of writing). The writing on the scroll changes to reflect the terms of the agreement struck. The magic of the charter holds both you and the aberration to the agreement until its service is rendered and the reward paid, at which point the scroll blackens and crumbles to dust. An aberration's thinking is alien to most humanoids, and vaguely worded contracts may result in unintended consequences, as the creature may have different thoughts as to how to best meet the goal. If either party breaks the bargain, that creature immediately takes 10d6 psychic damage, and the charter is destroyed, ending the contract.</p>
+        </description>
+        <setters>
+            <set name="category">Scrolls</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Scroll</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Ash of the Ebon Birch -->
+    <element name="Ash of the Ebon Birch" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ASH_OF_THE_EBON_BIRCH">
+        <description>
+            <p>This salve is created by burning bark from a rare ebon birch tree then mixing that ash with oil and animal blood to create a cerise pigment used to paint yourself or another creature with profane protections. Painting the pigment on a creature takes 1 minute, and you can choose to paint a specific sigil or smear the pigment on a specific part of the creature’s body.</p>
+            <p class="indent"><i><b>Sigils.</b></i> You can paint one of the following sigils on a creature for a specific effect. </p>
+            <table>
+                <thead>
+                    <tr><td>Sigil</td><td>Effect</td></tr>
+                </thead>
+                <tr><td><i><b>Antlers</b></i></td><td>The creature gains the effect of the see invisibility spell for 1 hour.</td></tr>
+                <tr><td><i><b>Beak</b></i></td><td>The creature is immune to being charmed and can’t be scried upon for 1 hour.</td></tr>
+                <tr><td><i><b>Claw</b></i></td><td>The creature can’t be surprised for 1 hour.</td></tr>
+                <tr><td><i><b>Hoof</b></i></td><td>The creature’s remains are prevented from rising or being animated as an undead for 24 hours. </td></tr>
+            </table>
+            <p class="indent"><i><b>Smear.</b></i> You can smear the pigment across specific parts of a creature’s body, and the creature gains an effect based on the body part.</p>
+            <table>
+                <thead>
+                    <tr><td>Area</td><td>Effect</td></tr>
+                </thead>
+                <tr><td><i><b>Arms or Shoulders</b></i></td><td>The creature’s Strength score increases by 2 for 1 hour.</td></tr>
+                <tr><td><i><b>Chest or Back</b></i></td><td>The creature has advantage on one type of saving throw (your choice) for 10 minutes. </td></tr>
+                <tr><td><i><b>Eyes</b></i></td><td>The creature gains truesight out to 30 feet for 10 minutes.</td></tr>
+                <tr><td><i><b>Legs or Limbs</b></i></td><td>The creature’s speed increases by 10 feet for 1 hour.</td></tr>
+                <tr><td><i><b>Stomach</b></i></td><td>The creature’s maximum hit points increase by 10 for 1 hour.</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Binding Oath -->
+    <element name="Binding Oath" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BINDING_OATH">
+        <description>
+            <p>This lengthy scroll is the testimony of a pious individual’s adherence to their faith. The author has emphatically rewritten these claims many times, and its two slim, metal rollers are wrapped in yards of parchment. When you attune to the item, you rewrite certain passages to align with your own religious views.</p>
+            <p class="indent">You can use an action to throw the scroll at a Huge or smaller creature you can see within 30 feet of you. Make a ranged attack roll. On a hit, the scroll unfurls and wraps around the creature. The target is restrained until you take a bonus action to command the scroll to release the creature. If you command it to release the creature or if you miss with the attack, the scroll curls back into a rolled-up scroll. If the restrained target’s alignment is the opposite of yours along the law/chaos or good/evil axis, you can use a bonus action to cause the writing to blaze with light, dealing 2d6 radiant damage to the target.</p>
+            <p class="indent">A creature, including the restrained target, can use an action to make a DC 17 Strength check to tear apart the scroll. On a success, the scroll is destroyed. Such an attempt causes the writing to blaze with light, dealing 2d6 radiant damage to both the creature making the attempt and the restrained target, whether or not the attempt is successful. Alternatively, the restrained creature can use an action to make a DC 17 Dexterity check to slip free of the scroll. This action also triggers the damage effect, but it doesn’t destroy the scroll.</p>
+            <p class="indent">Once used, the scroll can’t be used again until the next dawn.</p>
+        </description>
+        <setters>
+            <set name="category">Scrolls</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Scroll</set>
+            <set name="rarity">Very Rare</set>
+            <set name="stackable">true</set>
+            <set name="attunement" addition="by a cleric or paladin">true</set>
+        </setters>
+    </element>  
+
+<!-- Black Dragon Oil -->
+    <element name="Black Dragon Oil" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BLACK_DRAGON_OIL">
+        <description>
+            <p>The viscous green-black oil within this magical ceramic pot bubbles slightly. The pot’s stone stopper is sealed with greasy, dark wax. The pot contains 5 ounces of pure black dragon essence, obtained by slowly boiling the dragon in its own acidic secretions. You can use an action to apply 1 ounce of the oil to a weapon or single piece of ammunition. The next attack made with that weapon or ammunition deals an extra 2d8 acid damage to the target. A creature that takes the acid damage must succeed on a DC 15 Constitution saving throw at the start of its next turn or be burned for an extra 2d8 acid damage.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Blasphemous Writ -->
+    <element name="Blasphemous Writ" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BLASPHEMOUS_WRIT">
+        <description>
+            <p>The Infernal runes inscribed upon this vellum scroll radiate a faint, crimson glow. When you use this spell scroll of command, the save DC is 15 instead of 13, and you can also affect targets that are undead or that don’t understand your language.</p>
+        </description>
+        <setters>
+            <set name="category">Scrolls</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Scroll</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Bloodlink Potion --> 
+    <element name="Bloodlink Potion" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BLOODLINK_POTION">
+        <description>
+            <p>When you and another willing creature each drink at least half this potion, your life energies are linked for 1 hour.</p>
+            <p class="indent">When you or the creature who drank the potion with you take damage while your life energies are linked, the total damage is divided equally between you. If the damage is an odd number, roll randomly to assign the extra point of damage. The effect is halted while you and the other creature are separated by more than 60 feet. The effect ends if either of you drop to 0 hit points. This potion’s red liquid is viscous and has a metallic taste.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Common</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Brain Juice --> 
+    <element name="Brain Juice" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BRAIN_JUICE">
+        <description>
+            <p>This foul-smelling, murky, purple-gray liquid is created from the liquefied brains of spellcasting creatures, such as aboleths. Anyone consuming this repulsive mixture must make a DC 15 Intelligence saving throw. On a successful save, the drinker is infused with magical power and regains 1d6 + 4 expended spell slots. On a failed save, the drinker is afflicted with short-term madness for 1 day. If a creature consumes multiple doses of brain juice and fails three consecutive Intelligence saving throws, it is afflicted with long-term madness permanently and automatically fails all further saving throws brought about by drinking brain juice.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Very Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Catalyst Oil -->
+    <element name="Catalyst Oil" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_CATALYST_OIL">
+        <description>
+            <p>This special elemental compound draws on nearby energy sources. Catalyst oils are tailored to one specific damage type (not including bludgeoning, piercing, or slashing damage) and have one dose. Whenever a spell or effect of this type goes off within 60 feet of a dose of catalyst oil, the oil catalyzes and becomes the spell’s new point of origin. If the spell affects a single target, its original point of origin becomes the new target. If the spell’s area is directional (such as a cone or a cube) you determine the spell’s new direction.</p>
+            <p class="indent">This redirected spell is easier to evade. Targets have advantage on saving throws against the spell, and the caster has disadvantage on the spell attack roll.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Celestial Charter -->
+    <element name="Celestial Charter" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_CELESTIAL_CHARTER">
+        <description>
+            <p>This long, beautifully illuminated scroll bears the mark of a powerful entity of good, whether an archangel, saint, or a good deity. When you use an action to present this scroll to a celestial whose Challenge Rating is equal to or less than your level, the binding powers of the scroll compel it to listen to you. You can then attempt to strike a bargain with the celestial, negotiating a service from it in exchange for a reward. The celestial is under no compulsion to strike the bargain; it is compelled only to parley long enough for you to present a bargain and allow for negotiations. If you or your allies attack or otherwise attempt to harm the celestial, the truce is broken, and the creature can act normally. If the celestial refuses the offer, it is free to take any actions it wishes.</p>
+            <p class="indent">Should you and the celestial reach an agreement that is satisfactory to both parties, you must sign the charter and have the celestial do likewise (or make its mark, if it has no form of writing). The writing on the scroll changes to reflect the terms of the agreement struck. The magic of the charter holds both you and the celestial to the agreement until its service is rendered and the reward paid, at which point the scroll vanishes in a bright flash of light. A celestial typically attempts to fulfill its end of the bargain as best it can, and it is angry if you exploit any loopholes or literal interpretations to your advantage. If either party breaks the bargain, that creature immediately takes 10d6 radiant damage, and the charter is destroyed, ending the contract.</p>
+        </description>
+        <setters>
+            <set name="category">Scrolls</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Scroll</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Cleaning Concoction -->
+    <element name="Cleaning Concoction" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_CLEANING_CONCOCTION">
+        <description>
+            <p>This fresh-smelling, clear green liquid can cover a Medium or smaller creature or object (or matched set of objects, such as a suit of clothes or pair of boots). Applying the liquid takes 1 minute. It removes soiling, stains, and residue, and it neutralizes and removes odors, unless those odors are particularly pungent, such as in skunks or creatures with the Stench trait. Once the potion has cleaned the target, it evaporates, leaving the creature or object both clean and dry.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Common</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Cordial of Understanding -->
+    <element name="Cordial of Understanding" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_CORDIAL_OF_UNDERSTANDING">
+        <description>
+            <p>When you drink this tangy, violet liquid, your mind opens to new forms of communication. For 1 hour, if you spend 1 minute listening to creatures speaking a particular language, you gain the ability to communicate in that language for the duration. This potion’s magic can also apply to non-verbal languages, such as a hand signal-based or dance-based language, so long as you spend 1 minute watching it being used and have the appropriate anatomy and limbs to communicate in the language.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Common</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Courtesan’s Allure --> 
+    <element name="Courtesan's Allure" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_COURTESANS_ALLURE">
+        <description>
+            <p>This perfume has a sweet, floral scent and captivates those with high social standing. The perfume can cover one Medium or smaller creature, and applying it takes 1 minute. For 1 hour, the affected creature gains a +5 bonus to Charisma checks made to socially interact with or influence nobles, politicians, or other individuals with high social standing.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Draught of Ambrosia -->
+    <element name="Draught of Ambrosia" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_DRAUGHT_OF_AMBROSIA">
+        <description>
+            <p>The liquid in this tiny vial is golden and has a heady, floral scent. When you drink the draught, it fortifies your body and mind, removing any infirmity caused by old age. You stop aging and are immune to any magical and nonmagical aging effects. The magic of the ambrosia lasts ten years, after which time its power fades, and you are once again subject to the ravages of time and continue aging.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Legendary</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Draught of the Black Owl -->
+    <element name="Draught of the Black Owl" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_DRAUGHT_OF_THE_BLACK_OWL">
+        <description>
+            <p>When you drink this potion, you transform into a black-feathered owl for 1 hour. This effect works like the polymorph spell, except you can take only the form of an owl. While you are in the form of an owl, you retain your Intelligence, Wisdom, and Charisma scores.</p>
+            <p class="indent">If you are a druid with the Wild Shape feature, you can transform into a giant owl instead. Drinking this potion doesn’t expend a use of Wild Shape.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Common</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Efficacious Eyewash -->
+    <element name="Efficacious Eyewash" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_EFFICACIOUS_EYEWASH">
+        <description>
+            <p>This clear liquid glitters with miniscule particles of light. A bottle of this potion contains 6 doses, and its lid comes with a built-in dropper. You can use an action to apply 1 dose to the eyes of a blinded creature. The blinded condition is suppressed for 2d4 rounds. If the blinded condition has a duration, subtract those rounds from the total duration; if doing so reduces the overall duration to 0 rounds or less, then the condition is removed rather than suppressed. This eyewash doesn’t work on creatures that are naturally blind, such as grimlocks, or creatures blinded by severe damage or removal of their eyes.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Elixir of Corruption -->
+    <element name="Elixir of Courruption" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ELIXIR_OF_CORRUPTION">
+        <description>
+            <p>This elixir looks, smells, and tastes like a potion of heroism; however, it is actually a poisonous elixir masked by illusion magic. An identify spell reveals its true nature.</p>
+            <p class="indent">If you drink it, you must succeed on a DC 15 Constitution saving throw or be corrupted by the diabolical power within the elixir for 1 week. While corrupted, you lose immunity to diseases, poison damage, and the poisoned condition. If you aren’t normally immune to poison damage, you instead have vulnerability to poison damage while corrupted. The corruption can be removed with greater restoration or similar magic.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Elixir of Deep Slumber -->
+    <element name="Elixir of Deep Slumber" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ELIXIR_OF_DEEP_SLUMBER">
+        <description>
+            <p>The milky-white liquid in this vial smells of jasmine and sandalwood. When you drink this potion, you fall into a deep sleep, from which you can’t be physically awakened, for 1 hour. A successful dispel magic (DC 13) cast on you awakens you but cancels any beneficial effects of the elixir. When you awaken at the end of the hour, you benefit from the sleep as if you had finished a long rest.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Elixir of Focus -->
+    <element name="Elixir of Focus" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ELIXIR_OF_FOCUS">
+        <description>
+            <p>This deep amber concoction seems to glow with an inner light. When you drink this potion, you have advantage on the next ability check you make within 10 minutes, then the elixir’s effect ends.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Common</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Elixir of Mimicry -->
+    <element name="Elixir of Mimicry" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ELIXIR_OF_MIMICRY">
+        <description>
+            <p>When you drink this sweet, oily, black liquid, you can imitate the voice of a single creature that you have heard speak within the past 24 hours. The effects last for 3 minutes.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Common</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Elixir of Oracular Delirium -->
+    <element name="Elixir of Oracular Delirium" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ELIXIR_OF_ORACULAR_DELIRIUM">
+        <description>
+            <p>This pearlescent fluid perpetually swirls inside its container with a slow kaleidoscopic churn. When you drink this potion, you can cast the guidance spell for 1 hour at will. You can end this effect early as an action and gain the effects of the augury spell. If you do, you are afflicted with short-term madness after learning the spell’s results.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Common</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Elixir of Spike Skin -->
+    <element name="Elixir of Spike Skin" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ELIXIR_OF_SPIKE_SKIN">
+        <description>
+            <p>Slivers of bone float in the viscous, gray liquid inside this vial. When you drink this potion, bone-like spikes protrude from your skin for 1 hour. Each time a creature hits you with a melee weapon attack while within 5 feet of you, it must succeed on a DC 15 Dexterity saving throw or take 1d4 piercing damage from the spikes. In addition, while you are grappling a creature or while a creature is grappling you, it takes 1d4 piercing damage at the start of your turn.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Elixir of the Clear Mind -->
+    <element name="Elixir of the Clear Mind" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ELIXIR_OF_THE_CLEAR_MIND">
+        <description>
+            <p>This cerulean blue liquid sits calmly in its flask even when jostled or shaken. When you drink this potion, you have advantage on Wisdom checks and saving throws for 1 hour. For the duration, if you fail a saving throw against an enchantment or illusion spell or similar magic effect, you can choose to succeed instead. If you do, you draw upon all the potion’s remaining power, and its effects end immediately thereafter.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Elixir of the Deep -->
+    <element name="Elixir of the Deep" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ELIXIR_OF_THE_DEEP">
+        <description>
+            <p>This thick, green, swirling liquid tastes like salted mead. For 1 hour after drinking this elixir, you can breathe underwater, and you can see clearly underwater out to a range of 60 feet. The elixir doesn’t allow you to see through magical darkness, but you can see through nonmagical clouds of silt and other sedimentary particles as if they didn’t exist. For the duration, you also have advantage on saving throws against the spells and other magical effects of fey creatures native to water environments, such as a Lorelei or Water Horse.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+
+<!-- Elixir of Wakefulness -->
+    <element name="Elixir of Wakefulness" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ELIXIR_OF_WAKEFULNESS">
+        <description>
+            <p>This effervescent, crimson liquid is commonly held in a thin, glass vial capped in green wax. When you drink this elixir, its effects last for 8 hours. While the elixir is in effect, you can’t fall asleep by normal means. You have advantage on saving throws against effects that would put you to sleep. If you are affected by the sleep spell, your current hit points are considered 10 higher when determining the effects of the spell.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Extract of Dual-Mindedness -->
+    <element name="Extract of Dual-Mindedness" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_EXTRACT_OF_DUAL_MINDEDNESS">
+        <description>
+            <p>This potion can be distilled only from a hormone found in the hypothalamus of a two-headed giant of genius intellect. For 1 minute after drinking this potion, you can concentrate on two spells at the same time, and you have advantage on Constitution saving throws made to maintain your concentration on a spell when you take damage.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Legendary</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Feysworn Contract -->
+    <element name="Feysworn Contract" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_FEYSWORN_CONTRACT">
+        <description>
+            <p>This long scroll is written in flowing Elvish, the words flickering with a pale witchlight, and marked with the seal of a powerful fey or a fey lord or lady. When you use an action to present this scroll to a fey whose Challenge Rating is equal to or less than your level, the binding powers of the scroll compel it to listen to you. You can then attempt to strike a bargain with the fey, negotiating a service from it in exchange for a reward. The fey is under no compulsion to strike the bargain; it is compelled only to parley long enough for you to present a bargain and allow for negotiations. If you or your allies attack or otherwise attempt to harm the fey, the truce is broken, and the creature can act normally. If the fey refuses the offer, it is free to take any actions it wishes.</p>
+            <p class="indent">Should you and the fey reach an agreement that is satisfactory to both parties, you must sign the agreement and have the fey do likewise (or make its mark, if it has no form of writing). The writing on the scroll changes to reflect the terms of the agreement struck. The magic of the charter holds both you and the fey to the agreement until its service is rendered and the reward paid, at which point the scroll fades into nothingness. Fey are notoriously clever folk, and while they must adhere to the letter of any bargains they make, they always look for any advantage in their favor. If either party breaks the bargain, that creature immediately takes 10d6 poison damage, and the charter is destroyed, ending the contract.</p>
+        </description>
+        <setters>
+            <set name="category">Scrolls</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Scroll</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Fiendish Charter -->
+    <element name="Fiendish Charter" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_FIENDISH_CHARTER">
+        <description>
+            <p>This long scroll bears the mark of a powerful creature of the Lower Planes, whether an archduke of Hell, a demon lord of the Abyss, or some other powerful fiend or evil deity. When you use an action to present this scroll to a fiend whose Challenge Rating is equal to or less than your level, the binding powers of the scroll compel it to listen to you. You can then attempt to strike a bargain with the fiend, negotiating a service from it in exchange for a reward. The fiend is under no compulsion to strike the bargain; it is compelled only to parley long enough for you to present a bargain and allow for negotiations. If you or your allies attack or otherwise attempt to harm the fiend, the truce is broken, and the creature can act normally. If the fiend refuses the offer, it is free to take any actions it wishes.</p>
+            <p class="indent">Should you and the fiend reach an agreement that is satisfactory to both parties, you must sign the charter in blood and have the fiend do likewise (or make its mark, if it has no form of writing). The writing on the scroll changes to reflect the terms of the agreement struck. The magic of the charter holds both you and the fiend to the agreement until its service is rendered and the reward paid, at which point the scroll ignites and burns into ash. The contract's wording should be carefully considered, as fiends are notorious for finding loopholes or adhering to the letter of the agreement to their advantage. If either party breaks the bargain, that creature immediately takes 10d6 necrotic damage, and the charter is destroyed, ending the contract.</p>
+        </description>
+        <setters>
+            <set name="category">Scrolls</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Scroll</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Ghoulbane Oil -->
+    <element name="Ghoulbane Oil" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_GHOULBANE_OIL">
+        <description>
+            <p>This rusty-red gelatinous liquid glistens with tiny sparkling crystal flecks. The oil can coat one weapon or 5 pieces of ammunition. Applying the oil takes 1 minute. For 1 hour, if a ghoul, ghast, or darakhul (see Tome of Beasts) takes damage from the coated item, it takes an extra 2d6 damage of the weapon’s type.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Very Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Grave Reagent -->
+    <element name="Grave Reagent" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_GRAVE_REAGENT">
+        <description>
+            <p>This luminous green concoction creates an undead servant. If you spend 1 minute anointing the corpse of a Small or Medium humanoid, this arcane solution imbues the target with a foul mimicry of life, raising it as an undead creature. The target becomes a zombie under your control (the GM has the zombie’s statistics).</p>
+            <p class="indent">On each of your turns, you can use a bonus action to verbally command the zombie if it is within 60 feet of you. You decide what action the zombie will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the zombie only defends itself against hostile creatures. Once given an order, the zombie continues to follow it until its task is complete. The zombie is under your control for 24 hours, after which it stops obeying any command you've given it.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Hardening Polish -->
+    <element name="Hardening Polish" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_HARDENING_POLISH">
+        <description>
+            <p>This gray polish is viscous and difficult to spread. The polish can coat one metal weapon or up to 10 pieces of ammunition. Applying the polish takes 1 minute. For 1 hour, the coated item hardens and becomes stronger, and it counts as an adamantine weapon for the purpose of overcoming resistance and immunity to attacks and damage not made with adamantine weapons.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Hewer’s Draught -->
+    <element name="Hewer's Draught" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_HEWERS_DRAUGHT">
+        <description>
+            <p>When you drink this potion, you have advantage on attack rolls made with weapons that deal piercing or slashing damage for 1 minute. This potion’s translucent amber liquid glimmers when agitated.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Interplanar Paint -->
+    <element name="Interplanar Paint" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_INTERPLANAR_PAINT">
+        <description>
+            <p>This black, tarry substance can be used to paint a single black doorway on a flat surface. A pot contains enough paint to create one doorway. While painting, you must concentrate on a plane of existence other than the one you currently occupy. If you are not interrupted, the doorway can be painted in 5 minutes. Once completed, the painting opens a two-way portal to the plane you imagined. The doorway is mirrored on the other plane, often appearing on a rocky face or the wall of a building. The doorway lasts for 1 week or until 5 gallons of water with flecks of silver worth at least 2,000 gp is applied to one side of the door.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Legendary</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Ironskin Oil -->
+    <element name="Ironskin Oil" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_IRONSKIN_OIL">
+        <description>
+            <p>This grayish fluid is cool to the touch and slightly gritty. The oil can cover a Medium or smaller creature, along with the equipment it's wearing and carrying (one additional vial is required for each size category above Medium). Applying the oil takes 10 minutes. The affected creature has resistance to piercing and slashing damage for 1 hour.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Liquid Courage -->
+    <element name="Liquid Courage" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_LIQUID_COURAGE">
+        <description>
+            <p>This magical cordial is deep red and smells strongly of fennel. You have advantage on the next saving throw against being frightened. The effect ends after you make such a saving throw or when 1 hour has passed.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Common</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Liquid Shadow -->
+    <element name="Liquid Shadow" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_LIQUID_SHADOW">
+        <description>
+            <p>The contents of this bottle are inky black and seem to absorb the light. The dark liquid can cover a single Small or Medium creature. Applying the liquid takes 1 minute. For 1 hour, the coated creature has advantage on Dexterity (Stealth) checks.</p>
+            <p class="indent">Alternately, you can use an action to hurl the bottle up to 20 feet, shattering it on impact. Magical darkness spreads from the point of impact to fill a 15-foot radius sphere for 1 minute. This darkness works like the darkness spell.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Locksmith’s Oil -->
+    <element name="Locksmith's Oil" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_LOCKSMITHS_OIL">
+        <description>
+            <p>This shimmering oil can be applied to a lock. Applying the oil takes 1 minute. For 1 hour, any creature that makes a Dexterity check to pick the lock using thieves’ tools rolls a d4 and adds the number rolled to the check.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Common</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Luring Perfume -->
+    <element name="Luring Perfume" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_LURING_PERFUME">
+        <description>
+            <p>This pungent perfume has a woodsy and slightly musky scent. As an action, you can splash or spray the contents of this vial on yourself or another creature within 5 feet of you. For 1 minute, the perfumed creature attracts nearby humanoids and beasts.</p>
+            <p class="indent">Each humanoid and beast within 60 feet of the perfumed creature and that can smell the perfume must succeed on a DC 15 Wisdom saving throw or be charmed by the perfumed creature until the perfume fades or is washed off with at least 1 gallon of water. While charmed, a creature is incapacitated, and, if the creature is more than 5 feet away from the perfumed creature, it must move on its turn toward the perfumed creature by the most direct route, trying to get within 5 feet. It doesn’t avoid opportunity attacks, but before moving into damaging terrain, such as lava or a pit, and whenever it takes damage, the target can repeat the saving throw. A charmed target can also repeat the saving throw at the end of each of its turns. If the saving throw is successful, the effect ends on it.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Odorless Oil -->
+    <element name="Odorless Oil" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ODORLESS_OIL">
+        <description>
+            <p>This odorless, colorless oil can cover a Medium or smaller object or creature, along with the equipment the creature is wearing or carrying (one additional vial is required for each size category above Medium). Applying the oil takes 10 minutes. For 1 hour, the affected target gives off no scent, can’t be tracked by scent, and can’t be detected with Wisdom (Perception) checks that rely on smell.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Oil of Concussion -->
+    <element name="Oil of Concussion" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_OIL_OF_CONCUSSION">
+        <description>
+            <p>You can apply this thick, gray oil to one bludgeoning weapon or up to 5 pieces of bludgeoning ammunition. Applying the oil takes 1 minute. For 1 hour, any attack with the coated item scores a critical hit on a roll of 19 or 20.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Common</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Oil of Defoliation -->
+    <element name="Oil of Defoliation" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_OIL_OF_DEFOLIATION">
+        <description>
+            <p>Sometimes known as weedkiller oil, this greasy amber fluid contains the crushed husks of dozens of locusts. One vial of the oily substance can coat one weapon or up to 5 pieces of ammunition. Applying the oil takes 1 minute. For 1 hour, the coated item deals an extra 1d6 necrotic damage to plants or plant creatures on a successful hit.</p>
+            <p class="indent">The oil can also be applied directly to a willing, restrained, or immobile plant or plant creature. In this case, the substance deals 4d6 necrotic damage, which is enough to kill most ordinary plant life smaller than a large tree.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Oil of Extreme Bludgeoning -->
+    <element name="Oil of Extreme Bludgeoning" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_OIL_OF_EXTREME_BLUDGEONING">
+        <description>
+            <p>This viscous indigo-hued oil smells of iron. The oil can coat one bludgeoning weapon or up to 5 pieces of bludgeoning ammunition. Applying the oil takes 1 minute. For 1 hour, the coated item is magical, has a +1 bonus to attack and damage rolls, and deals an extra 1d4 force damage on a hit.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Oil of Numbing -->
+    <element name="Oil of Numbing" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_OIL_OF_NUMBING">
+        <description>
+            <p>This astringent-smelling oil stings slightly when applied to flesh, but the feeling quickly fades. The oil can cover a Medium or smaller creature (one additional vial is required for each size category above Medium). Applying the oil takes 10 minutes. For 1 hour, the affected creature has advantage on Constitution saving throws to maintain its concentration on a spell when it takes damage, and it has advantage on ability checks and saving throws made to endure pain. However, the affected creature’s flesh is slightly numbed and senseless, and it has disadvantage on ability checks that require fine motor skills or a sense of touch.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Common</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Oil of Sharpening -->
+    <element name="Oil of Sharpening" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_OIL_OF_SHARPENING">
+        <description>
+            <p>You can apply this fine, silvery oil to one piercing or slashing weapon or up to 5 pieces of piercing or slashing ammunition. Applying the oil takes 1 minute. For 1 hour, any attack with the coated item scores a critical hit on a roll of 19 or 20.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Common</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Orb of Obfuscation --> 
+   <element name="Orb of Obfuscation" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ORB_OF_OBFUSCATION">
+       <description>
+           <p>Originally fashioned in the laboratory of the archmage Lugax for his good natured but often roguish friend, Kennich, these spherical ceramic containers are the size of a large human fist. Arcane sigils decorate each orb, detailing its properties to those capable of reading the sigils. The magic-infused chemicals in each orb must be briefly exposed to air before being thrown to activate them. A metal rod sits in the cork of each orb, allowing you to quickly twist open the container before throwing it.</p>
+           <p class="indent">Typically, 1d4 + 1 orbs of obfuscation are found together. You can use an action to activate and throw the orb up to 60 feet. The orb explodes on impact and is destroyed. The orb’s effects are determined by its type.</p>
+           <p class="indent">This orb is a dark olive color with a stripe of bright blue paint encircling it. When activated, the orb releases an opaque grey gas and creates a 30-foot radius sphere of this gas centered on the point where the orb landed. The sphere spreads around corners, and its area is heavily obscured. The magical gas also dampens sound. Each creature in the gas can hear only sounds originating within 5 feet of it, and creatures outside of the gas can’t hear sounds originating inside the gas. The gas lasts for 5 minutes or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it.</p>
+       </description>
+       <setters>
+           <set name="category">Potions</set>
+           <set name="weight">0 lb.</set>
+           <set name="type">Potion</set>
+           <set name="rarity">Uncommon</set>
+           <set name="stackable">true</set>
+       </setters>
+   </element>
+
+<!-- Explosive Orb of Obfuscation -->
+    <element name="Explosive Orb of OBfuscation" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_EXPLOSIVE_ORB_OF_OBFUSCATION">
+        <description>
+            <p>Originally fashioned in the laboratory of the archmage Lugax for his good natured but often roguish friend, Kennich, these spherical ceramic containers are the size of a large human fist. Arcane sigils decorate each orb, detailing its properties to those capable of reading the sigils. The magic-infused chemicals in each orb must be briefly exposed to air before being thrown to activate them. A metal rod sits in the cork of each orb, allowing you to quickly twist open the container before throwing it.</p>
+            <p class="indent">Typically, 1d4 + 1 orbs of obfuscation are found together. You can use an action to activate and throw the orb up to 60 feet. The orb explodes on impact and is destroyed. The orb’s effects are determined by its type.</p>
+            <p class="indent">This oblong orb has a putty grey color with a stripe of yellow paint encircling it. When activated, this orb releases the same opaque grey gas as the orb of obfuscation. In addition to the effects of that gas, this orb also releases a burst of caustic chemicals on impact. Each creature within a 15-foot radius of where the orb landed must make a DC 15 Dexterity saving throw, taking 4d4 acid damage on a failed save, or half as much damage on a successful one. If a creature fails this saving throw, the chemicals cling to it for 1 minute. At the end of each of its turns, the creature must succeed on a DC 15 Constitution saving throw or take 2d4 acid damage from the clinging chemicals. Any creature can take an action to remove the clinging chemicals with a successful DC 15 Wisdom (Medicine) check.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Pact Paper -->
+    <element name="Pact Paper" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_PACT_PAPER">
+        <description>
+            <p>This smooth paper is like vellum but is prepared from dozens of scales cast off by a pact drake (see Creature Codex). A contract can be inked on this paper, and the paper limns all falsehoods on it with a fiery glow. A command word clears the paper, allowing for several drafts. Another command word locks the contract in place and leaves space for signatures. Creatures signing the contract are afterward bound by the contract with all other signatories alerted when one of the signatories breaks the contract. The creature breaking the contract must succeed on a DC 15 Charisma saving throw or become blinded, deafened, and stunned for 1d6 minutes. A creature can repeat the saving throw at the end of each of minute, ending the conditions on itself on a success. After the conditions end, the creature has disadvantage on saving throws until it finishes a long rest.</p>
+            <p class="indent">Once a contract has been locked in place and signed, the paper can’t be cleared. If the contract has a duration or stipulation for its end, the pact paper is destroyed when the contract ends, releasing all signatories from any further obligations and immediately ending any effects on them.</p>
+        </description>
+        <setters>
+            <set name="category">Scrolls</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Scroll</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Philter of Luck -->
+    <element name="Philter of Luck" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_PHILTER_OF_LUCK">
+        <description>
+            <p>When you drink this vibrant green, effervescent potion, you gain a finite amount of good fortune. Roll a d3 to determine where your fortune falls: ability checks (1), saving throws (2), or attack rolls (3). When you make a roll associated with your fortune, you can choose to tap into your good fortune and reroll the d20. This effect ends after you tap into your good fortune or when 1 hour has passed.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Potent Cure-All -->
+    <element name="Potent Cure-All" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_POTENT_CURE_ALL"> 
+        <description>
+            <p>The milky liquid in this bottle shimmers when agitated, as small, glittering particles swirl within it. When you drink this potion, it reduces your exhaustion level by one, removes any reduction to one of your ability scores, removes the blinded, deafened, paralyzed, and poisoned conditions, and cures you of any diseases currently afflicting you.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Legendary</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Potion of Air Breathing -->
+    <element name="Potion of Air Breathing" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_POTION_OF_AIR_BREATHING">
+        <description>
+            <p>This potion's pale blue fluid smells like salty air, and a seagull's feather floats in it. You can breathe air for 1 hour after drinking this potion. If you could already breathe air, this potion has no effect.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Potion of Bad Taste -->
+    <element name="Potion of Bad Taste" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_POTION_OF_BAD_TASTE">
+        <description>
+            <p>This brown, sludgy potion tastes extremely foul. When you drink this potion, the taste of your flesh is altered to be unpalatable for 1 hour. During this time, if a creature hits you with a bite attack, it must succeed on a DC 10 Constitution saving throw or spend its next action gagging and retching. A creature with an Intelligence of 4 or lower avoids biting you again unless compelled or commanded by an outside force or if you attack it.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Common</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Potion of Bouncing -->
+    <element name="Potion of Bouncing" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_POTION_OF_BOUNCING">
+        <description>
+            <p>A small, red sphere bobs up and down in the clear, effervescent liquid inside this bottle but disappears when the bottle is opened. When you drink this potion, your body becomes rubbery, and you are immune to falling damage for 1 hour. If you fall at least 10 feet, your body bounces back the same distance. As a reaction while falling, you can angle your fall and position your legs to redirect this distance. For example, if you fall 60 feet, you can redirect your bounce to propel you 30 feet up and 30 feet forward from the position where you landed.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Potion of Buoyancy -->
+    <element name="Potion of Buoyancy" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_POTION_OF_BUOYANCY">
+        <description>
+            <p>When you drink this clear, effervescent liquid, your body becomes unnaturally buoyant for 1 hour. When you are immersed in water or other liquids, you rise to the surface (at a rate of up to 30 feet per round) to float and bob there. You have advantage on Strength (Athletics) checks made to swim or stay afloat in rough water, and you automatically succeed on such checks in calm waters.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Common</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Potion of Dire Cleansing -->
+    <element name="Potion of Dire Cleansing" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_POTION_OF_DIRE_CLEANSING">
+        <description>
+            <p>For 1 hour after drinking this potion, you have resistance to poison damage, and you have advantage on saving throws against being blinded, deafened, paralyzed, and poisoned. In addition, if you are poisoned, this potion neutralizes the poison. Known for its powerful, somewhat burning smell, this potion is difficult to drink, requiring a successful DC 13 Constitution saving throw to drink it. On a failure, you are poisoned for 10 minutes and don’t gain the benefits of the potion.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Potion of Ebbing Strength -->
+    <element name="Potion of Ebbing Strength" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_POTION_OF_EBBING_STRENGTH">
+        <description>
+            <p>When you drink this potion, your Strength score changes to 25 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score. The recipe for this potion is flawed and infused with dangerous Void energies. When you drink this potion, you are also poisoned. While poisoned, you take 2d4 poison damage at the end of each minute. If you are reduced to 0 hit points while poisoned, you have disadvantage on death saving throws.</p>
+            <p class="indent">This bubbling, pale blue potion is commonly used by the derro and is almost always paired with a potion of dire cleansing or holy verdant bat droppings (see page 147). Warriors who use this potion without a method of removing the poison don’t intend to return home from battle.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Potion of Effulgence -->
+    <element name="Potion of Effulgence" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_POTION_OF_EFFULGENCE">
+        <description>
+            <p>When you drink this potion, your skin glows with radiance, and you are filled with joy and bliss for 1 minute. You shed bright light in a 30-foot radius and dim light for an additional 30 feet. This light is sunlight. While glowing, you are blinded and have disadvantage on Dexterity (Stealth) checks to hide. If a creature with the Sunlight Sensitivity trait starts its turn in the bright light you shed, it takes 2d4 radiant damage. This potion’s golden liquid sparkles with motes of sunlight.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Common</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Potion of Empowering Truth -->
+    <element name="Potion of Empowering Truth" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_POTION_OF_EMPOWERING_TRUTH">
+        <description>
+            <p>A withered snake’s tongue floats in the shimmering gold liquid within this crystalline vial. When you drink this potion, you regain one expended spell slot or one expended use of a class feature, such as Divine Sense, Rage, Wild Shape, or other feature with limited uses. Until you finish a long rest, you can’t speak a deliberate lie. You are aware of this effect after drinking the potion. Your words can be evasive, as long as they remain within the boundaries of the truth.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Potion of Freezing Fog -->
+    <element name="Potion of Malleability" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_POTION_OF_MALLEABILITY">
+        <description>
+            <p>The glass bottle holding this thick, red liquid is strangely pliable, and compresses in your hand under the slightest pressure while it still holds the magical liquid. When you drink this potion, your body becomes extremely flexible and adaptable to pressure. For 1 hour, you have resistance to bludgeoning damage, can squeeze through a space large enough for a creature two sizes smaller than you, and have advantage on Dexterity (Acrobatics) checks made to escape a grapple.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Potion of Sand Form -->
+    <element name="Potion of Sand Form" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_POTION_OF_SAND_FORM">
+        <description>
+            <p>This potion’s container holds a gritty liquid that moves and pours like water filled with fine particles of sand. When you drink this potion, you gain the effect of the gaseous form spell for 1 hour (no concentration  required) or until you end the effect as a bonus action. While in this gaseous form, your appearance is that of a vortex of spiraling sand instead of a misty cloud. In addition, you have advantage on Dexterity (Stealth) checks while in a sandy environment, and, while motionless in a sandy environment, you are indistinguishable from an ordinary swirl of sand.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Very Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Potion of Skating -->
+    <element name="Potion of Skating" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_POTION_OF_SKATING">
+        <description>
+            <p>For 1 hour after you drink this potion, you can move across icy surfaces without needing to make an ability check, and difficult terrain composed of ice or snow doesn’t cost you extra movement. This sparkling blue liquid contains tiny snowflakes that disappear when shaken.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Common</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+
+<!-- Potion of Transparency -->
+    <element name="Potion of " type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_POTION_OF_TRANSPARENCY">
+        <description>
+            <p>The liquid in this vial is clear like water, and it gives off a slight iridescent sheen when shaken or swirled. When you drink this potion, you and everything you are wearing and carrying turn transparent, but not completely invisible, for 10 minutes. During this time, you have advantage on Dexterity (Stealth) checks, and ranged attacks against you have disadvantage.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Common</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Potion of Worg Form -->
+    <element name="Potion of Worg Form" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_POTION_OF_WARG_FORM">
+        <description>
+            <p>Small flecks of brown hair are suspended in this clear, syrupy liquid. When you drink this potion, you transform into a worg for 1 hour. This works like the polymorph spell, but you retain your Intelligence, Wisdom, and Charisma scores. While in worg form, you can speak normally, and you can cast spells that have only verbal components. This transformation doesn’t give you knowledge of the Goblin or Worg languages, and you are able to speak and understand those languages only if you knew them before the transformation.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Rainbow Extract -->
+    <element name="Rainbow Extract" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_RAINBOW_EXTRACT">
+        <description>
+            <p>This thin, oily liquid shimmers with the colors of the spectrum. For 1 hour after drinking this potion, you can use an action to change the color of your hair, skin, eyes, or all three to any color or mixture of colors in any hue, pattern, or saturation you choose. You can change the colors as often as you want for the duration, but the color changes disappear at the end of the duration.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Common</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Royal Jelly -->
+    <element name="Royal Jelly" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ROYAL_JELLY">
+        <description>
+            <p>This oil is distilled from the pheromones of queen bees and smells faintly of bananas. The oil can cover a Medium or smaller creature, along with the equipment it’s wearing and carrying. For larger creatures, one additional vial is required for each size category above Medium. Applying the oil takes 10 minutes. The affected creature then has advantage on Charisma (Persuasion) checks for 1 hour.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Least Scroll of Conjuring -->
+    <element name="Least Scroll of Conjuring" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_LEAST_SCROLL_OF_CONJURING">
+        <description>
+            <p>By using an action to recite the incantation inscribed on this scroll, you can conjure a creature to assist you, chosen by the GM or determined by rolling a d8 and consulting the appropriate table. Once the creature appears, the scroll crumbles to dust and is destroyed. The creature vanishes after 8 hours or when it is reduced to 0 hit points. </p>
+            <p class="indent">The creature is friendly to you and your companions, and it acts on your turn. You can use a bonus action to command how the creature moves and what action it takes on its next turn, or to give it general orders, such as to attack your enemies. In absence of such orders, the creature acts in a fashion appropriate to its nature.</p>
+            <p class="indent">Alternately, you can command the creature to perform a single task, which it will do to the best of its ability. A task can be simple (“Remove the debris blocking this passage.”) or complex (“Search the castle, taking care to remain unnoticed. Take a count of the guards and their locations, then return here and draw me a map.”) but must be completable within 8 hours.</p>
+            <h5>Least Scroll of Conjuring Table</h5>
+            <table>
+                <thead>
+                    <tr><td>d8</td><td>Creature</td></tr>
+                </thead>
+                <tr><td>1</td><td>Dust/Ice/Magma mephit or lantern dragonette</td></tr>
+                <tr><td>2</td><td>Hippogriff or clockwork soldier</td></tr>
+                <tr><td>3</td><td>Imp/Quasit or aviere</td></tr>
+                <tr><td>4</td><td>Death dog or shockwing giant moth</td></tr>
+                <tr><td>5</td><td>Centaur or roggenwolf</td></tr>
+                <tr><td>6</td><td>Ettercap or clockwork hound</td></tr>
+                <tr><td>7</td><td>Ogre or spider thief</td></tr>
+                <tr><td>8</td><td>Griffon or light dragon wyrmling</td></tr>
+            </table>    
+        </description>
+        <setters>
+            <set name="category">Scrolls</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Scroll</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Lesser Scroll of Conjuring -->
+    <element name="Lesser Scroll of Conjuring" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_LESSER_SCROLL_OF_CONJURING">
+        <description>
+            <p>By using an action to recite the incantation inscribed on this scroll, you can conjure a creature to assist you, chosen by the GM or determined by rolling a d8 and consulting the appropriate table. Once the creature appears, the scroll crumbles to dust and is destroyed. The creature vanishes after 8 hours or when it is reduced to 0 hit points. </p>
+            <p class="indent">The creature is friendly to you and your companions, and it acts on your turn. You can use a bonus action to command how the creature moves and what action it takes on its next turn, or to give it general orders, such as to attack your enemies. In absence of such orders, the creature acts in a fashion appropriate to its nature.</p>
+            <p class="indent">Alternately, you can command the creature to perform a single task, which it will do to the best of its ability. A task can be simple (“Remove the debris blocking this passage.”) or complex (“Search the castle, taking care to remain unnoticed. Take a count of the guards and their locations, then return here and draw me a map.”) but must be completable within 8 hours.</p>
+            <h5>Lesser Scroll of Conjuring Table</h5>
+            <table>
+                <thead>
+                    <tr><td>d8</td><td>Creature</td></tr>
+                </thead>
+                <tr><td>1</td><td>Copper dragon wyrmling or wind dragonwyrmling</td></tr>
+                <tr><td>2</td><td>Pegasus or wind demon</td></tr>
+                <tr><td>3</td><td>Gargoyle or hoarfrost drake</td></tr>
+                <tr><td>4</td><td>Grick or kitsune</td></tr>
+                <tr><td>5</td><td>Hell hound or swolbold</td></tr>
+                <tr><td>6</td><td>Winter wolf or clockwork huntsman</td></tr>
+                <tr><td>7</td><td>Minotaur or peluda drake</td></tr>
+                <tr><td>8</td><td>Doppelganger or pombero</td></tr>
+            </table>    
+        </description>
+        <setters>
+            <set name="category">Scrolls</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Scroll</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Greater Scroll of Conjuring -->
+    <element name="Greater Scroll of Conjuring" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_GREATER_SCROLL_OF_CONJURING">
+        <description>
+            <p>By using an action to recite the incantation inscribed on this scroll, you can conjure a creature to assist you, chosen by the GM or determined by rolling a d8 and consulting the appropriate table. Once the creature appears, the scroll crumbles to dust and is destroyed. The creature vanishes after 8 hours or when it is reduced to 0 hit points. </p>
+            <p class="indent">The creature is friendly to you and your companions, and it acts on your turn. You can use a bonus action to command how the creature moves and what action it takes on its next turn, or to give it general orders, such as to attack your enemies. In absence of such orders, the creature acts in a fashion appropriate to its nature.</p>
+            <p class="indent">Alternately, you can command the creature to perform a single task, which it will do to the best of its ability. A task can be simple (“Remove the debris blocking this passage.”) or complex (“Search the castle, taking care to remain unnoticed. Take a count of the guards and their locations, then return here and draw me a map.”) but must be completable within 8 hours.</p>
+            <h5>Greater Scroll of Conjuring Table</h5>
+            <table>
+                <thead>
+                    <tr><td>d8</td><td>Creature</td></tr>
+                </thead>
+                <tr><td>1</td><td>Bearded devil or korrigan</td></tr>
+                <tr><td>2</td><td>Nightmare or flame dragon wyrmling</td></tr>
+                <tr><td>3</td><td>Phase spider or bloodsapper</td></tr>
+                <tr><td>4</td><td>Chuul or venom elemental</td></tr>
+                <tr><td>5</td><td>Ettin or domovoi</td></tr>
+                <tr><td>6</td><td>Succubus/Incubus or ratatosk</td></tr>
+                <tr><td>7</td><td>Salamander or moon drake</td></tr>
+                <tr><td>8</td><td>Xorn or karakura </td></tr>
+            </table>    
+        </description>
+        <setters>
+            <set name="category">Scrolls</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Scroll</set>
+            <set name="rarity">Very Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+<!-- Scroll of Fabrication --> 
+    <element name="Scroll of Fabrication" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_SCROLL_OF_FABRICATIONQ">
+        <description>
+            <p>You can draw a picture of any object that is Large or smaller on the face of this blank scroll. When the drawing is complete, it becomes a real, nonmagical, three-dimensional object. Thus, a drawing of a backpack becomes an actual backpack you can use to store and carry items. Any object created by the scroll can be destroyed by the dispel magic spell, by taking it into the area of an antimagic field, or by similar circumstances. Nothing created by the scroll can have a value greater than 25 gp. If you draw an object of greater value, such as a diamond, the object appears authentic, but close inspection reveals it to be made from glass, paste, bone or some other common or worthless material. The object remains for 24 hours or until you dismiss it as a bonus action. The scroll can’t be used this way again until the next dawn. </p>
+        </description>
+        <setters>
+            <set name="category">Scrolls</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Scroll</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Scroll of Treasure Finding -->
+    <element name="Scroll of Treasure Finding" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_SCROLL_OF_TREASURE_FINDING">
+        <description>
+            <p>Each scroll of treasure finding works for a specific type of treasure. You can use an action to read the scroll and sense whether that type of treasure is present within 1 mile of you for 1 hour. This scroll reveals the treasure’s general direction, but not its specific location or amount. The GM chooses the type of treasure or determines it by rolling a d100 and consulting the following table.</p>
+            <table>
+                <thead>
+                    <tr><td>d100</td><td>Treasure Type</td></tr>
+                </thead>
+                <tr><td>01-10</td><td>Copper</td></tr>
+                <tr><td>11-20</td><td>Silver</td></tr>
+                <tr><td>21-30</td><td>Electrum</td></tr>
+                <tr><td>31-40</td><td>Gold</td></tr>
+                <tr><td>41-50</td><td>Platinum</td></tr>
+                <tr><td>51-75</td><td>Gemstones</td></tr>
+                <tr><td>76-80</td><td>Art Objects</td></tr>
+                <tr><td>81-00</td><td>Magic Items</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="category">Scrolls</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Scroll</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Tonic of Blandness -->
+    <element name="Tonic of Blandness" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_TONIC_OF_BLANDNESS">
+        <description>
+            <p>This deeply bitter, black, oily liquid deadens your sense of taste. When you drink this tonic, you can eat all manner of food without reaction, even if the food isn’t to your liking, for 1 hour. During this time, you automatically fail Wisdom (Perception) checks that rely on taste. This tonic doesn’t protect you from the effects of consuming poisoned or spoiled food, but it can prevent you from detecting such impurities when you taste the food.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Common</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Trollsblood Elixir -->
+    <element name="Trollsblood Elixir" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_TROLLSBLOOD_ELILXIR">
+        <description>
+            <p>This thick, pink liquid sloshes and moves even when the bottle is still. When you drink this potion, you regenerate lost hit points for 1 hour. At the start of your turn, you regain 5 hit points. If you take acid or fire damage, the potion doesn’t function at the start of your next turn. If you lose a limb, you can reattach it by holding it in place for 1 minute. For the duration, you can die from damage only by being reduced to 0 hit points and not regenerating on your turn.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Very Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Unstable Midshatter Bombard (Rare) -->
+    <element name="Unstable Mindshatter Bombard" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_UNSTABLE_MINDSHATTER_BOMBARD">
+        <description>
+            <p>These brass and crystal cylinders are 6 inches long with 1-inch diameters. Each cylinder has a funnel on one end and a wooden plunger on the other end. You can use an action to quickly press the plunger, expelling the cylinder’s contents out through the funnel in a 30-foot line that is 5 feet wide. Once its contents are expelled, a cylinder is destroyed, and there is a 25 percent chance you are also subjected to the bombard’s effects as if you were caught in the line.</p>
+            <p class="indent">A vermilion solution sloshes and boils inside this canister. Each creature in the line of this substance must make a DC 15 Wisdom saving throw. On a failure, a creature takes 3d6 psychic damage and is incapacitated for 1 minute. On a success, a creature takes half the damage and isn’t incapacitated. An incapacitated creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. </p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Unstable Murderous Bombard (Uncommon) -->
+    <element name="Unstable Murderous Bombard" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_UNSTABLE_MURDEROUS_BOMBARD">
+        <description>
+            <p>These brass and crystal cylinders are 6 inches long with 1-inch diameters. Each cylinder has a funnel on one end and a wooden plunger on the other end. You can use an action to quickly press the plunger, expelling the cylinder’s contents out through the funnel in a 30-foot line that is 5 feet wide. Once its contents are expelled, a cylinder is destroyed, and there is a 25 percent chance you are also subjected to the bombard’s effects as if you were caught in the line. </p>
+            <p class="indent">A gruesome crimson slurry sloshes inside this canister with strange bits of ivory floating in it. Each creature in the line of this substance must succeed on a DC 13 Wisdom saving throw or be overcome with rage for 1 minute. While overcome with rage, the creature can’t distinguish friend from foe and must attack the nearest creature. If no other creature is near enough to move to and attack, the creature stalks off in a random direction, seeking a target for its rage. A creature overcome with rage can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. </p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Unstable Sloughide Bombard (Very Rare) -->
+    <element name="Unstable Sloughide Bombard" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_UNSTABLE_SLOUGHIDE_BOMBARD">
+        <description>
+            <p>These brass and crystal cylinders are 6 inches long with 1-inch diameters. Each cylinder has a funnel on one end and a wooden plunger on the other end. You can use an action to quickly press the plunger, expelling the cylinder’s contents out through the funnel in a 30-foot line that is 5 feet wide. Once its contents are expelled, a cylinder is destroyed, and there is a 25 percent chance you are also subjected to the bombard’s effects as if you were caught in the line. </p>
+            <p class="indent">A clear, gelatinous substance fills this canister. Each creature in the line of this substance must make a DC 17 Constitution saving throw. On a failure, a creature takes 6d6 acid damage and is paralyzed for 1 minute. On a success, a creature takes half the damage and isn’t paralyzed. While paralyzed, the creature takes 2d6 acid damage at the start of each of its turns. A paralyzed creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Very Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Verdant Elixir -->
+    <element name="Verdant Elixir" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_VERDANT_ELIXIR">
+        <description>
+            <p>Multi-colored streaks of light occasionally flash through the clear liquid in this container, like bottled lightning. As an action, you can pour the contents of the vial onto the ground. All normal plants in a 100-foot radius centered on the point where you poured the vial become thick and overgrown. A creature moving through the area must spend 4 feet of movement for every 1 foot it moves.</p>
+            <p class="indent">Alternatively, you can apply the contents of the vial to a plant creature within 5 feet of you. For 1 hour, the target gains 2d10 temporary hit points, and it gains the “enlarge” effect of the enlarge/reduce spell (no concentration required).</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Wisp of the Void -->
+    <element name="Wisp of the Void" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_WISP_OF_THE_VOID">
+        <description>
+            <p>The interior of this bottle is pitch black, and it feels empty. When opened, it releases a black vapor. When you inhale this vapor, your eyes go completely black. For 1 minute, you have darkvision out to a range of 60 feet, and you have resistance to necrotic damage. In addition, you gain a +1 bonus to damage rolls made with a weapon.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Witch’s Brew -->
+    <element name="Witch's Brew" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_WITCHS_BREW">
+        <description>
+            <p>For 1 minute after drinking this potion, your spell attacks deal an extra 1d4 necrotic damage on a hit. This revolting green potion’s opaque liquid bubbles and steams as if boiling.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Wrathful Vapors -->
+    <element name="Wrathful Vapors" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_WRATHFUL_VAPORS">
+        <description>
+            <p>Roiling vapors of red, orange, and black swirl in a frenzy of color inside a sealed glass bottle. As an action, you can open the bottle and empty its contents within 5 feet of you or throw the bottle up to 20 feet, shattering it on impact. If you throw it, make a ranged attack against a creature or object, treating the bottle as an improvised weapon.</p>
+            <p class="indent">When you open or break the bottle, the smoke releases in a 20-foot-radius sphere that dissipates at the end of your next turn. A creature that isn’t an undead or a construct that enters or starts its turn in the area must succeed on a DC 13 Wisdom saving throw or be overcome with rage for 1 minute. On its turn, a creature overcome with rage must attack the creature nearest to it with whatever melee weapon it has on hand, moving up to its speed toward the target, if necessary. The raging creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    
+</elements>
