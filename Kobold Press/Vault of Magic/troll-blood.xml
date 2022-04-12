@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>troll Blood</name>
+        <update version="0.0.1">
+            <file name="troll-blood.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/Untitled-2" />
+        </update>
+    </info>
+    
+
+<!-- Potion of Troll Blood -->
+    <element name="Potion of Troll Blood" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_POTION_OF_TROLL_BLOOD">
+        <description>
+            <p>When you drink this potion, you regain 2 hit points at the start of each of your turns. After it has restored 20 hit points, the potion’s effects end.</p>
+            <p class="indent"><b><i>Mutations.</i> This potion can cause up to 1 minor mutation.</b> </p>
+            <p class="indent"><i>To gain the benefits of troll blood, you must drink the viscous substance like a potion. When you drink the troll blood, you regain hit points at the start of each of your turns up to an amount determined by the type of potion. If you take acid or fire damage, this regeneration doesn’t function at the start of your next turn. While under the effects of troll blood, you die only if you start your turn with 0 hit points and don’t regenerate. In addition, you can reattach a severed body part by holding it in place for 1d4 rounds. However, the potion’s magic can’t regrow missing body parts.</i></p>
+            <p class="indent"><i>A potion of troll blood continues regenerating your body up to an amount determined by the potion’s potency, even if you are restored to your hit point maximum before reaching that amount. Excessive regeneration, especially in a short amount of time, can mutate or even kill creatures that don’t naturally regenerate. Although you can’t receive healing that exceeds your hit point maximum, the potion’s regeneration can cause other effects if it would regenerate hit points beyond your maximum.</i></p>
+            <p class="indent"><b><i>For more information on Troll Blood, see Vault of Magic pg 68.</i></b></p>
+        </description>
+        <setters>
+            <set name="category">Troll Blood</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Potion of Troll Blood, Greater  -->
+    <element name="Potion of Troll Blood, Greater" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_POTION_OF_TROLL_BLOOD_GREATER">
+        <description>
+            <p>When drink this potion, you regain 3 hit points at the start of each of your turns. After it has restored 30 hit points, the potion’s effects end. </p>
+            <p class="indent"><b><i>Mutations.</i> This potion can cause up to 2 minor mutations.</b> </p>
+            <p class="indent"><i>To gain the benefits of troll blood, you must drink the viscous substance like a potion. When you drink the troll blood, you regain hit points at the start of each of your turns up to an amount determined by the type of potion. If you take acid or fire damage, this regeneration doesn’t function at the start of your next turn. While under the effects of troll blood, you die only if you start your turn with 0 hit points and don’t regenerate. In addition, you can reattach a severed body part by holding it in place for 1d4 rounds. However, the potion’s magic can’t regrow missing body parts.</i></p>
+            <p class="indent"><i>A potion of troll blood continues regenerating your body up to an amount determined by the potion’s potency, even if you are restored to your hit point maximum before reaching that amount. Excessive regeneration, especially in a short amount of time, can mutate or even kill creatures that don’t naturally regenerate. Although you can’t receive healing that exceeds your hit point maximum, the potion’s regeneration can cause other effects if it would regenerate hit points beyond your maximum.</i></p>
+            <p class="indent"><b><i>For more information on Troll Blood, see Vault of Magic pg 68.</i></b></p>
+        </description>
+        <setters>
+            <set name="category">Troll Blood</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Potion of Troll Blood, Superior  -->
+    <element name="Potion of Troll Blood, Superior" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_POTION_OF_TROLL_BLOOD_SUPERIOR">
+        <description>
+            <p>When you drink this potion, you regain 5 hit points at the start of each of your turns. After it has restored 50 hit points, the potion’s effects end.</p>
+            <p class="indent"><b><i>Mutations.</i> This potion can cause up to 1 minor mutation and 1 major mutation.</b> </p>
+            <p class="indent"><i>To gain the benefits of troll blood, you must drink the viscous substance like a potion. When you drink the troll blood, you regain hit points at the start of each of your turns up to an amount determined by the type of potion. If you take acid or fire damage, this regeneration doesn’t function at the start of your next turn. While under the effects of troll blood, you die only if you start your turn with 0 hit points and don’t regenerate. In addition, you can reattach a severed body part by holding it in place for 1d4 rounds. However, the potion’s magic can’t regrow missing body parts.</i></p>
+            <p class="indent"><i>A potion of troll blood continues regenerating your body up to an amount determined by the potion’s potency, even if you are restored to your hit point maximum before reaching that amount. Excessive regeneration, especially in a short amount of time, can mutate or even kill creatures that don’t naturally regenerate. Although you can’t receive healing that exceeds your hit point maximum, the potion’s regeneration can cause other effects if it would regenerate hit points beyond your maximum.</i></p>
+            <p class="indent"><b><i>For more information on Troll Blood, see Vault of Magic pg 68.</i></b></p>
+        </description>
+        <setters>
+            <set name="category">Troll Blood</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Very Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Potion of Troll Blood, Supreme  -->
+    <element name="Potion of Troll Blood, Supreme" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_POTION_OF_TROLL_BLOOD_SUPREME">
+        <description>
+            <p>When you drink this potion, you regain 8 hit points at the start of each of your turns. After it has restored 80 hit points, the potion’s effects end. </p>
+            <p class="indent"><b><i>Mutations.</i> This potion can cause up to 1d4 minor mutations and 2 major mutations.</b></p>
+            <p class="indent"><i>To gain the benefits of troll blood, you must drink the viscous substance like a potion. When you drink the troll blood, you regain hit points at the start of each of your turns up to an amount determined by the type of potion. If you take acid or fire damage, this regeneration doesn’t function at the start of your next turn. While under the effects of troll blood, you die only if you start your turn with 0 hit points and don’t regenerate. In addition, you can reattach a severed body part by holding it in place for 1d4 rounds. However, the potion’s magic can’t regrow missing body parts.</i></p>
+            <p class="indent"><i>A potion of troll blood continues regenerating your body up to an amount determined by the potion’s potency, even if you are restored to your hit point maximum before reaching that amount. Excessive regeneration, especially in a short amount of time, can mutate or even kill creatures that don’t naturally regenerate. Although you can’t receive healing that exceeds your hit point maximum, the potion’s regeneration can cause other effects if it would regenerate hit points beyond your maximum.</i></p>
+            <p class="indent"><b><i>For more information on Troll Blood, see Vault of Magic pg 68.</i></b></p>
+        </description>
+        <setters>
+            <set name="category">Troll Blood</set>
+            <set name="weight">0 lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Legendary</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+<!-- Troll Blood Mutations and Instant Death -->
+    <element name="Troll Blood Mutations and Instant Death" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_TROLL_BLOOD_MUTATIONS_AND_INSTANT_DEATH">
+        <description>
+            <p><i><b>Instant Death.</b></i> If the potion’s remaining regeneration would equal or exceed twice your hit point maximum, you die. For example, a cleric with a maximum of 12 hit points currently has 6 hit points. If the cleric regenerates 30 hit points over the duration of the potion without taking further damage, the cleric is restored to their maximum hit points, but 24 healing remains. Because the remaining healing equals twice the cleric’s hit point maximum, the cleric dies.</p>
+            <p class="indent"><i><b>Mutations.</b></i> If the potion restores hit points beyond your hit point maximum, you must immediately succeed on a Constitution saving throw (DC equals 10 + the number of hit points over your hit point maximum) or develop a mutation. Each potency lists the type of mutation it causes—minor or major—and the maximum number of mutations it can cause with each dose. When you suffer a mutation, the GM rolls a d100 and consults the appropriate mutation table. A mutation lasts for 1d4 + 1 hours.</p>
+        </description>
+        <setters>
+            <set name="category">Troll Blood</set>
+            <set name="type">Additional Information</set>
+        </setters>
+    </element>
+
+<!-- Minor Mutation Table -->
+    <element name="Minor Mutation Table" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_MINOR_MUTATION_TABLE">
+        <description>
+            <table>
+                <thead>
+                    <tr><td>d100</td><td>Minor Mutation</td></tr>
+                </thead>
+                
+                <tr><td>01-20</td><td>Your skin grows thick and gnarly, and you gain a +1 bonus to AC. However, you become vulnerable to acid damage and fire damage, and when a creature scores a critical hit against you, it rolls damage dice three times, instead of twice. </td></tr>
+                
+                <tr><td>21-30</td><td>Changes in your olfactory system give you a keen sense of smell. You have advantage on Wisdom (Perception) checks that rely on smell. However, you take 2d6 psychic damage whenever you fail a Wisdom saving throw. </td></tr>
+                
+                <tr><td>31-40</td><td>Your eyes develop to accommodate the dark, and you gain darkvision out to 60 feet. However, you take a −4 penalty on Dexterity saving throws. </td></tr>
+                
+                <tr><td>41-50</td><td>Claws burst from the ends of your fingers. Your claws are natural melee weapons, which you can use to make unarmed strikes. When you hit with your claw, it deals slashing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike. However, your clawed hands make your normal actions more challenging, and you take a −4 penalty on attack rolls with weapons other than your claws. </td></tr>
+                
+                <tr><td>51-60</td><td>Your jaw extends, and your teeth grow constantly and haphazardly, only to fall out as new ones take their place. You are proficient with this bite, which deals 1d8 + your Strength modifier piercing damage on a hit. When you make a melee attack, you can use a bonus action to attack that same target with your bite. However, you can no longer verbally communicate, and you can’t cast spells with verbal components. </td></tr>
+                
+                <tr><td>61-70</td><td>Your arms, shoulders, legs, and back bulge slightly as muscle and sinew double in mass. You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift. However, your speed is reduced by 10 feet. </td></tr>
+                
+                <tr><td>71-80</td><td>Your mind clouds over, enraged and feverish. You have advantage on Strength checks and Strength saving throws, and you deal an extra 2 damage of the weapon’s type when you hit with a melee weapon attack using Strength. However, when you make a melee attack, you have a 50 percent chance of hitting another creature within 5 feet of your target, which can include your allies. </td></tr>
+                
+                <tr><td>81-90</td><td>Your blood becomes overly thick, and any damage you take is reduced by 1. However, the thickened blood also hinders your body’s natural defenses, and you take a −4 penalty on Constitution saving throws.</td></tr>
+                
+                <tr><td>91-00</td><td>You develop an eye-watering reek. When a humanoid or beast starts its turn in a space within 5 feet of you, it must succeed on a DC 13 Wisdom saving saving throw or use its reaction to move 5 feet away from you. In addition, you have disadvantage on Dexterity (Stealth) checks.</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="category">Troll Blood</set>
+            <set name="type">Table</set>
+        </setters>
+    </element>
+
+<!-- Major Mutation Table-->
+    <element name="Major Mutation Table" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_MAJOR_MUTATION_TABLE">
+        <description>
+            <table>
+                <thead>
+                    <tr><td>d100</td><td>Major Mutation</td></tr>
+                </thead>
+                
+                <tr><td>01-20</td><td>Your form roils and changes constantly and subtly. You have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks. However, this constant changing makes you more susceptible to magic, and you have disadvantage on saving throws against spells.</td></tr>
+                
+                <tr><td>21-30</td><td>An extra arm sprouts from somewhere on your body. The arm can’t wield weapons or hold items heavier than 5 pounds, but it can provide you some aid, granting you advantage on Strength checks and saving throws. However, the new limb throws off your coordination and sense of balance, imposing disadvantage on Dexterity checks and saving throws you make. </td></tr>
+                
+                <tr><td>31-40</td><td>You start hemorrhaging excessively when hit, spraying magic-infused blood around you. When a creature hits you with a melee attack while within 5 feet of you, it must succeed on a DC 15 Dexterity saving throw or take 1d6 necrotic damage. However, any damage you take is increased by 1 as your blood flows more freely.</td></tr>
+                
+                <tr><td>41-50</td><td>Subtle changes in your scent and presence attracts humanoids and irritates beasts around you. When interacting socially with humanoids, you have advantage on Charisma checks. However, beasts with an Intelligence of 4 or lower are immediately hostile toward you. </td></tr>
+                
+                <tr><td>51-60</td><td>You grow a second, vestigial head. You have advantage on Wisdom (Perception) checks and on saving throws against being blinded, harmed, deafened, frightened, stunned, and knocked unconscious, and you can’t be surprised while conscious. However, the mental input from the secondary head distracts you as it attempts to aid your attack rolls. Whenever you miss an attack roll, you take half the damage you would have dealt to the target. </td></tr>
+                
+                <tr><td>61-70</td><td>Your nerves become hyperactive, leading you to jerk, fidget, and move randomly and involuntarily. You gain a +2 bonus to AC as your enemies have a hard time determining your exact location. However, the involuntary movement makes it difficult for you to move and act deliberately. On your turn, you can use either an action or bonus action, not both. </td></tr>
+                
+                <tr><td>71-80</td><td>Your body twists, elongates, and forms extra skin or callouses as it adapts itself to a different mode of travel. You gain a burrowing or swimming speed (GM’s choice) equal to your base walking speed. However, you speed is halved while walking on land. </td></tr>
+                
+                <tr><td>81-90</td><td>Your blood becomes toxic, and you become poisoned. However, while poisoned in this way, you are immune to disease, poison damage, and necrotic damage.</td></tr>
+                
+                <tr><td>91-00</td><td>Your metabolism slows imperceptibly, causing you to continue regenerating, albeit slowly. You regain 3 hit points every 10 minutes for the duration of this mutation. This regeneration can trigger instant death, as detailed in the Instant Death and Mutations section, if you aren’t mindful of your regeneration.</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="category">Troll Blood</set>
+            <set name="type">Table</set>
+        </setters>
+    </element>
+
+</elements>
