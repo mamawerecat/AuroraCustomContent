@@ -3,7 +3,7 @@
     <info>
         <name>Specialty Food</name>
         <update version="0.0.1">
-            <file name="fantastical-foods-and-beverages.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/Untitled-1" />
+            <file name="fantastical-foods-and-beverages.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Vault%20of%20Magic/fantastical-foods-and-beverages.xml" />
         </update>
     </info>    
     
@@ -414,6 +414,15 @@
         </setters>
     </element>
 
-
-    
 </elements>
+
+
+
+
+
+
+<!--Fantastical foods and beverages are unique types of consumable magic items. They look, feel, smell, and taste like nonmagical food or beverages, but fantastical food and beverages never spoil.
+To gain the benefits from a fantastical food or beverage, you must spend at least 1 minute consuming it. If you eat a fantastical food or beverage as part of a short rest and you expend one or more Hit Dice to regain hit points, you double the number of hit points each Hit Die restores. Each type of fantastical food or beverage also grants benefits, which you gain after consuming the food or beverage or at the end of the short rest where the food or beverage was consumed (your choice). You can gain the benefits from only one type of fantastical food or beverage at a time.
+
+Cooking Fantastical Foods and Beverages.
+Fantastical foods and beverages provide temporary benefits and work much like potions or spell scrolls—in fact, the fantastical foods and beverages listed here are categorized as potions because of this. To cook up a fantastical food or beverage during downtime, the character needs the recipe. Otherwise, treat cooking a fantastical food or beverage no differently than brewing a potion or scribing a spell scroll.-->
