@@ -4,7 +4,7 @@
 		<name>Vault of Magic</name>
 		<description>Inside Vault of Magic, you’ll find a vast treasure trove of enchanted items of every imaginable use—more than 900 in all!</description>
 		<author url="https://koboldpress.com/kpstore/product/vault-of-magic-for-5th-edition/">Kobold Press</author>
-		<update version="0.0.7">
+		<update version="0.0.8">
 			<file name="vault-of-magic.index" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/vault-of-magic.index" />
 		</update>
 	</info>
