@@ -89,7 +89,7 @@
             <element name="Deathwalker's Ward (Dormant)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_DEATHWALKERS_WARD_DORMANT">
 		        <description>
 		        	<p>This beautiful black leather armor is covered in intricate scrollwork, and has a mantle bearing the black feathers of the Matron of Ravens. Legends say that it has been worn by a number of that deity’s champions over the centuries—most recently, Vax’ildan of Vox Machina.</p>
-                    <p class="indent">When the Deathwalker’s Ward is in a dormant state, you gain a +1 bonus to AC and you have advantage on death saving throws while wearing the armor.</p>
+                    		<p class="indent">When the Deathwalker’s Ward is in a dormant state, you gain a +1 bonus to AC and you have advantage on death saving throws while wearing the armor.</p>
 		        </description>
 		        <setters>
 		        	<set name="keywords">studded, leather</set>
@@ -111,11 +111,11 @@
             <element name="Deathwalker's Ward (Awakened)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_DEATHWALKERS_WARD_AWAKENED">
 		        <description>
 		        	<p>This beautiful black leather armor is covered in intricate scrollwork, and has a mantle bearing the black feathers of the Matron of Ravens. Legends say that it has been worn by a number of that deity’s champions over the centuries—most recently, Vax’ildan of Vox Machina.</p>
-                    <p class="indent">When the Deathwalker’s Ward reaches an awakened state, you gain the following benefits:</p>
-                    <ul>
-                        <li> The AC bonus of the armor increases to +3.</li>
-                        <li>While wearing the armor, you have resistance to one of the following damage types of your choice: acid, cold, fire, lightning, necrotic, or poison. You can change the damage type when you finish a short rest.</li>
-                    </ul>
+                    		<p class="indent">When the Deathwalker’s Ward reaches an awakened state, you gain the following benefits:</p>
+                    	<ul>
+                        	<li> The AC bonus of the armor increases to +3.</li>
+                        	<li>While wearing the armor, you have resistance to one of the following damage types of your choice: acid, cold, fire, lightning, necrotic, or poison. You can change the damage type when you finish a short rest.</li>
+                    	</ul>
 		        </description>
 		        <setters>
 		        	<set name="keywords">studded, leather</set>
@@ -137,12 +137,12 @@
             <element name="Deathwalker's Ward (Exalted)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_DEATHWALKERS_WARD_EXALTED">
 		        <description>
 		        	<p>This beautiful black leather armor is covered in intricate scrollwork, and has a mantle bearing the black feathers of the Matron of Ravens. Legends say that it has been worn by a number of that deity’s champions over the centuries—most recently, Vax’ildan of Vox Machina.</p>
-                    <p class="indent">When the Deathwalker’s Ward reaches an awakened state, you gain the following benefits:</p>
-                    <ul>
-                        <li>The AC bonus of the armor increases to +2.</li>
-                        <li>While wearing the armor, you have resistance to one of the following damage types of your choice: acid, cold, fire, lightning, necrotic, or poison. You can change the damage type when you finish a short rest.</li>
-                        <li>As a bonus action, you grow large black raven wings that grant you a flying speed of 60 feet and last for 1 hour. Once this property is used, it can’t be used again until you finish a long rest.</li>
-                    </ul>
+                    		<p class="indent">When the Deathwalker’s Ward reaches an awakened state, you gain the following benefits:</p>
+                    	<ul>
+                        	<li>The AC bonus of the armor increases to +2.</li>
+                        	<li>While wearing the armor, you have resistance to one of the following damage types of your choice: acid, cold, fire, lightning, necrotic, or poison. You can change the damage type when you finish a short rest.</li>
+                        	<li>As a bonus action, you grow large black raven wings that grant you a flying speed of 60 feet and last for 1 hour. Once this property is used, it can’t be used again until you finish a long rest.</li>
+                    	</ul>
 		        </description>
 		        <setters>
 		        	<set name="keywords">studded, leather</set>
@@ -168,7 +168,7 @@
 		        <description>
 		        	<p>This massive silvered shield bears the crest of the Platinum Dragon and never tarnishes. Its metal is always warm to the touch.</p>
                     
-                    <p class="indent">You also can’t be knocked prone while bearing this shield.</p>
+                    		<p class="indent">You also can’t be knocked prone while bearing this shield.</p>
 		        </description>
 		        <setters>
 		        	<set name="keywords">shield</set>
@@ -178,7 +178,7 @@
 		        	<set name="rarity">Legendary</set>
 		        	<set name="enhancement">1</set>
 		        	<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
-                    <set name="attunement" addition="by a creature of non-evil alignment">true</set>
+                    		<set name="attunement" addition="by a creature of non-evil alignment">true</set>
 		        </setters>
 		        <rules>
 		        	<stat name="ac:shield" value="1" bonus="enhancement" />
@@ -206,7 +206,7 @@
 		        	<set name="rarity">Legendary</set>
 		        	<set name="enhancement">2</set>
 		        	<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
-                    <set name="attunement" addition="by a creature of non-evil alignment">true</set>
+                    		<set name="attunement" addition="by a creature of non-evil alignment">true</set>
 		        </setters>
 		        <rules>
 		        	<stat name="ac:shield" value="2" bonus="enhancement" />
@@ -236,7 +236,7 @@
 		        	<set name="rarity">Legendary</set>
 		        	<set name="enhancement">3</set>
 		        	<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
-                    <set name="attunement" addition="by a creature of non-evil alignment">true</set>
+                    		<set name="attunement" addition="by a creature of non-evil alignment">true</set>
 		        </setters>
 		        <rules>
 		        	<stat name="ac:shield" value="3" bonus="enhancement" />
@@ -263,9 +263,9 @@
 		        	<set name="attunement">true</set>
 		        	<set name="rarity">Legendary</set>
 		        	<set name="armor">Plate</set>
-                    <set name="enhancement">1</set>
+                    		<set name="enhancement">1</set>
 		        </setters>
-                <rules>
+                	<rules>
 		        	<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
 		        </rules>
 	        </element>
@@ -293,11 +293,11 @@
 		        	<set name="attunement">true</set>
 		        	<set name="rarity">Legendary</set>
 		        	<set name="armor">Plate</set>
-                    <set name="enhancement">2</set>
+                    		<set name="enhancement">2</set>
 		        </setters>
-                <rules>
+                	<rules>
 		        	<stat name="ac:armored:enhancement" value="2" bonus="enhancement" />
-                    <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+                    		<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
 		        </rules>
 	        </element>
 
@@ -307,13 +307,13 @@
 		        <description>
 		        	<p>Beautiful silver scrollwork and priceless cut rubies adorn this set of brass-and-gold armor. Legend holds that it was worn by Duana, High Priest of the Dawnfather, when she was martyred in the Battle of Ghor Dranas in the final days of the Calamity. In more recent times, it was worn by Pike Trickfoot, a legendary cleric of the Everlight, while fighting against the Chroma Conclave and the Whispered One.</p>
 		        	<p class="indent">When the Plate of the Dawnmartyr reaches an exalted state, you gain the following benefits:</p>
-                    <ul>
-                        <li>The armor’s bonus to AC increases to +3.</li>
-                        <li>You are immune to the frightened condition.</li>
-                        <li>You have resistance to fire damage.</li>
-                        <li>When a creature within 5 feet of you hits you with a melee attack, you can use your reaction to rebuke that creature, dealing it 2d6 fire or radiant damage (your choice).</li>
-                        <li>When you are reduced to 0 hit points, you can choose to have a blast of healing flame surround you. You regain 1 hit point and are lifted to your feet. Each enemy within 10 feet of you takes 2d6 fire damage or radiant damage (your choice). This property of the armor can’t be used again until you finish a long rest.</li>
-                    </ul>
+                    	<ul>
+                        	<li>The armor’s bonus to AC increases to +3.</li>
+                        	<li>You are immune to the frightened condition.</li>
+                        	<li>You have resistance to fire damage.</li>
+                        	<li>When a creature within 5 feet of you hits you with a melee attack, you can use your reaction to rebuke that creature, dealing it 2d6 fire or radiant damage (your choice).</li>
+                        	<li>When you are reduced to 0 hit points, you can choose to have a blast of healing flame surround you. You regain 1 hit point and are lifted to your feet. Each enemy within 10 feet of you takes 2d6 fire damage or radiant damage (your choice). This property of the armor can’t be used again until you finish a long rest.</li>
+                    	</ul>
 		        </description>
 		        <setters>
 		        	<set name="keywords">plate</set>
@@ -324,11 +324,11 @@
 		        	<set name="attunement">true</set>
 		        	<set name="rarity">Legendary</set>
 		        	<set name="armor">Plate</set>
-                    <set name="enhancement">3</set>
+                    		<set name="enhancement">3</set>
 		        </setters>
-                <rules>
+                	<rules>
 		        	<stat name="ac:armored:enhancement" value="3" bonus="enhancement" />
-                    <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+                    		<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
 		        </rules>
 	        </element>
 
