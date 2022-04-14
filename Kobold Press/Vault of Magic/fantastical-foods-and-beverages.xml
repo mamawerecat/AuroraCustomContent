@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Specialty Food</name>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="fantastical-foods-and-beverages.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Vault%20of%20Magic/fantastical-foods-and-beverages.xml" />
         </update>
     </info>    
@@ -423,7 +423,7 @@
             <p class="indent"><i><b>For more information on Spirit Honey, see page 66 in Vault of Magic.</b></i></p>
         </description>
         <setters>
-            <set name="category">Food &amp; Beverages</set>
+            <set name="category">Foods &amp; Beverages</set>
             <set name="weight">0 lb.</set>
             <set name="type">Spirit Honey</set>
             <set name="rarity">Rare</set>
