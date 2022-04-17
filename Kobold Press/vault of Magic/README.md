@@ -1,3 +1,5 @@
+<h1>Fabled Magic Items Stories</h1>
+
 <h2>Assasin's Chain</h2>
 This fine chain shirt is fashioned from thousands of tiny, interlocking rings of a mysterious black metal. The chain makes virtually no noise when worn. 
 Gildreth was a killer. He killed for money; he killed for pleasure. In the end, he killed only for revenge.Gildreth had earned many enemies in his long career; chief among them were the Black Cabal. On a moonless night, while Gildreth was away, members of the Cabal infiltrated his home and murdered his family. When Gildreth returned and discovered his slain family, he vowed he would not rest until every last member of the Cabal was dead by his own hand.One by one, Gildreth tracked down and assassinated the Cabal. He was relentless and single-minded, allowing nothing to stand in his way. 
