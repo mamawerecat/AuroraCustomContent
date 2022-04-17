@@ -3,8 +3,8 @@
 	<info>
 		<name>Bloodblessed Race</name>
 		<description>Bloodblessed Race</description>
-		<author>Bohemian Trash Collective</author>
-		<update version="0.0.1">
+		<author>Carson Berger, with edits from Bohemian Trash Collective</author>
+		<update version="0.0.2">
 				 <file name="race-bloodblessed.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Red%20Masque%20Campaign/race-bloodblessed.xml" />
 		</update>
 	</info>
@@ -34,10 +34,10 @@
             <stat name="charisma" value="1" />
             <stat name="innate speed" value="30" bonus="base" />
 
-			<grant type="Size" id="ID_SIZE_MEDIUM" />
-			<grant type="Vision" id="ID_VISION_DARKVISION" />
+	    <grant type="Size" id="ID_SIZE_MEDIUM" />
+	    <grant type="Vision" id="ID_VISION_DARKVISION" />
 
-			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_UA20171113_SUB_RACE_GRUGACH" />
+	    <grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_UA20171113_SUB_RACE_GRUGACH" />
             <grant type="Language" id="ID_BTC_RMC_LANGUAGE_WALPURGIAN" />
             
             <grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_BLOOD_DRAIN" />
@@ -67,23 +67,21 @@
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Anastasoi Subrace ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
+<element name="Anastasoi" type="Sub Race" source="Red Masque Campaign" id="ID_BTC_RMC_SUB_RACE_ANASTASOI">
+	<supports>Bloodblessed</supports>
+	<description>
+		<p><em>Among the children of Walpurgis-Skuld, there are none more fervent and honest in their devotion to the Saints then the winged children of Saint Anastasia, blessed Lady of Light and Shadows.</em></p>
+		<p class="indent"><strong><em>Ability Score Increase:</em></strong> Your Wisdom increases by 2 and your Intelligence score increases by 1.</p>
+                <p class="indent"><strong><em>Alignment.</em></strong> As the clan considered closest to the divine Martyrs, the Anastasoi can run the whole gamut of alignments.</p>
+		<p class="indent"><strong><em>Shadow and Light.</em></strong> Without the shadow, the light could not illuminate, and without the light, the shadow could not give succor. You have resistance to radiant and necrotic damage.</p>
+                <p class="indent"><strong><em>Blessing of Anastasia and the Martyrs.</em></strong> You bear the blessings of the Martyr of Devotion herself; two large wings.  You have a flying speed of 30 feet.</p>
+                <p class="indent"><strong><em>Blood of the Devoted.</em></strong> You have access to two cantrips and gain a first level spell at level 3 and an additional first level spell at level 5. The spells must be from either the druid, sorcerer or warlock spell lists.  Wisdom is your spellcasting ability.  You are also proficient in religion, and you have advantage in wisdom checks.</p>
+                <p class="indent"><strong><em>Additional Languages.</em></strong> Anastasoi, Celestial, Infernal.</p>
+	</description>
 
-    <element name="Anastasoi" type="Sub Race" source="Red Masque Campaign" id="ID_BTC_RMC_SUB_RACE_ANASTASOI">
-        <supports>Bloodblessed</supports>
-			<description>
-				<p><em>Among the children of Walpurgis-Skuld, there are none more fervent and honest in their devotion to the Saints then the winged children of Saint Anastasia, blessed Lady of Light and Shadows.</em></p>
-                <p class="indent"></p>
-					<p class="indent"><strong><em>Ability Score Increase:</em></strong> Your Wisdom increases by 2 and your Intelligence score increases by 1.</p>
-                    <p class="indent"><strong><em>Alignment.</em></strong> As the clan considered closest to the divine Martyrs, the Anastasoi can run the whole gamut of alignments.</p>
-					<p class="indent"><strong><em>Shadow and Light.</em></strong> Without the shadow, the light could not illuminate, and without the light, the shadow could not give succor. You have resistance to radiant and necrotic damage.</p>
-                    <p class="indent"><strong><em>Blessing of Anastasia and the Martyrs.</em></strong> You bear the blessings of the Martyr of Devotion herself; two large wings.  You have a flying speed of 30 feet.</p>
-                    <p class="indent"><strong><em>Blood of the Devoted.</em></strong> You have access to two cantrips and gain a first level spell at level 3 and an additional first level spell at level 5. The spells must be from either the druid, sorcerer or warlock spell lists.  Wisdom is your spellcasting ability.  You are also proficient in religion, and you have advantage in wisdom checks.</p>
-                    <p class="indent"><strong><em>Additional Languages.</em></strong> Anastasoi, Celestial, Infernal.</p>
-			</description>
+	<sheet display="false" />
 
-			<sheet display="false" />
-
-			<rules>
+	<rules>
                 <stat name="wisdom" value="2" />
                 <stat name="intelligence" value="1" />
 
@@ -91,11 +89,11 @@
                 <grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
                 <grant type="Language" id="ID_LANGUAGE_INFERNAL" />
 
-				<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_SHADOW_AND_LIGHT" />
+		<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_SHADOW_AND_LIGHT" />
                 <grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_BLESSING_OF_ANASTASIA_AND_THE_MARTYRS" />
                 <grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_BLOOD_OF_THE_DEVOTED" />
-			</rules>
-    </element>
+	</rules>
+</element>
 
     <element name="Shadow and Light" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_SHADOW_AND_LIGHT">
         <description>
@@ -141,35 +139,34 @@
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ KANDAONI SUBRACE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
+<element name="Kandaoni" type="Sub Race" source="Red Masque Campaign" id="ID_BTC_RMC_SUB_RACE_KANDAONI">
+	<supports>Bloodblessed</supports>
+	<description>
+		<p><em>Born and bred for battle, the metal-skinned kandaoni are the most martial of the bloodblessed, holding within their veins the magics and might of the War Martyr himself.</em></p>
+		<p class="indent"><strong><em>Ability Score Increase:</em></strong> Your Strength increase by 2 and your Constitution score increases by 1.</p>
+                <p class="indent"><strong><em>Alignment.</em></strong> As befitting the regimented lifestyle resultant from being the descendent from the War Martyr himself, kandaoni tend to skewer towards lawful alignments.</p>
+		<p class="indent"><strong><em>Blade of Kandaon.</em></strong> From birth, the kandanoi are trained in the weapons that Saint Kandaon himself used during his mortal lifetime.  Your proficiency with the bastard sword, greatsword, longsword, and shortsword.</p>
+                <p class="indent"><strong><em>Weapon's Bond.</em></strong> As befitting the bloodline of the War Martyr, one must never be without a weapon in hand.  With ten minutes of concentrating, you can establish a bond with one weapon of your choice. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand.</p>
+                <p class="indent"><strong><em>Steelskin</em></strong> Your skin, as per the blessing of the Kandoni bloodline, is resistant to weapons and attack granting you a +1 to AC. </p>
+                <p class="indent"><strong><em>Blood of the War Martyr:</em></strong> You have access to two cantrips from either the Sorcerer or Paladin spell lists. On 3rd level you gain one first level spell from either the Sorcerer or Paladin spell lists. Charisma is your spellcasting ability.You are also proficient in athletics, and you have advantage in strength checks. </p>
+                <p class="indent"><strong><em>Additional Languages.</em></strong> Kandaoni and one of your choice.</p>
+	</description>
 
-    <element name="Kandaoni" type="Sub Race" source="Red Masque Campaign" id="ID_BTC_RMC_SUB_RACE_KANDAONI">
-		<supports>Bloodblessed</supports>
-			<description>
-				<p><em>Born and bred for battle, the metal-skinned kandaoni are the most martial of the bloodblessed, holding within their veins the magics and might of the War Martyr himself.</em></p>
-					<p class="indent"><strong><em>Ability Score Increase:</em></strong> Your Strength increase by 2 and your Constitution score increases by 1.</p>
-                    <p class="indent"><strong><em>Alignment.</em></strong> As befitting the regimented lifestyle resultant from being the descendent from the War Martyr himself, kandaoni tend to skewer towards lawful alignments.</p>
-					<p class="indent"><strong><em>Blade of Kandaon.</em></strong> From birth, the kandanoi are trained in the weapons that Saint Kandaon himself used during his mortal lifetime.  Your proficiency with the bastard sword, greatsword, longsword, and shortsword.</p>
-                    <p class="indent"><strong><em>Weapon's Bond.</em></strong> As befitting the bloodline of the War Martyr, one must never be without a weapon in hand.  With ten minutes of concentrating, you can establish a bond with one weapon of your choice. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand.</p>
-                    <p class="indent"><strong><em>Steelskin</em></strong> Your skin, as per the blessing of the Kandoni bloodline, is resistant to weapons and attack granting you a +1 to AC. </p>
-                    <p class="indent"><strong><em>Blood of the War Martyr:</em></strong> You have access to two cantrips from either the Sorcerer or Paladin spell lists. On 3rd level you gain one first level spell from either the Sorcerer or Paladin spell lists. Charisma is your spellcasting ability.You are also proficient in athletics, and you have advantage in strength checks. </p>
-                    <p class="indent"><strong><em>Additional Languages.</em></strong> Kandaoni and one of your choice.</p>
-			</description>
+	<sheet display="false" />
 
-			<sheet display="false" />
-
-			<rules>
+	<rules>
                 <stat name="strength" value="2" />
-				<stat name="constitution" value="1" />
+		<stat name="constitution" value="1" />
 
                 <grant type="Language" id="ID_BTC_RMC_LANGUAGE_KANDAONI" />
                 <select type="Language" name="Language, (Kandaoni)" supports="Standard||Exotic" />
 
-				<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_BLADE_OF_KANDAON" />
+		<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_BLADE_OF_KANDAON" />
                 <grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_WEAPONS_BOND" />
                 <grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_STEELSKIN" />
                 <grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_BLOOD_OF_THE_WAR_MARTYR" />
-			</rules>
-	</element>
+	</rules>
+</element>
 
     <element name="Blade of Kandaon" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_BLADE_OF_KANDAON">
         <description>
@@ -213,12 +210,12 @@
             <p>You have access to two cantrips from either the Sorcerer or Paladin spell lists. On 3rd level you gain one first level spell from either the Sorcerer or Paladin spell lists. Charisma is your spellcasting ability.You are also proficient in athletics, and you have advantage in strength checks.</p>
         </description>
         <sheet>
-            <description>You have access to two cantrips from either the Sorcerer or Paladin spell lists. You are also proficient in athletics, and you have advantage in strength checks.</description>
-            <description level="3">You have access to two cantrips from either the Sorcerer or Paladin spell lists. You gain one first level spell from either the Sorcerer or Paladin spell lists. Charisma is your spellcasting ability. You are also proficient in athletics, and you have advantage in strength checks.</description>
+            <description>You have access to two cantrips from either the Sorcerer or Cleric spell lists. You are also proficient in athletics, and you have advantage in strength checks.</description>
+            <description level="3">You have access to two cantrips from either the Sorcerer or Cleric spell lists. You gain one first level spell from either the Sorcerer or Paladin spell lists. Charisma is your spellcasting ability. You are also proficient in athletics, and you have advantage in strength checks.</description>
         </sheet>
         <rules>
-            <select type="Spell" name="Cantrip (Kandaoni)" supports="0,(Paladin||Sorcerer)" number="2" />
-            <select type="Spell" name="First level (Kandaoni)" supports="1,(Paladin||Sorcerer)" level="3" />
+            <select type="Spell" name="Cantrip (Kandaoni)" supports="0,(Cleric||Sorcerer)" number="2" />
+            <select type="Spell" name="First level (Kandaoni)" supports="1,(Cleric||Sorcerer)" level="3" />
             <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
         </rules>
     </element>
@@ -228,30 +225,29 @@
 
 
     <element name="Sycoraxi" type="Sub Race" source="Red Masque Campaign" id="ID_BTC_RMC_SUB_RACE_SYCORAXI">
-        <supports>Bloodblessed</supports>
-			<description>
-				<p><em>Children of the shadowy caves and protective earth, the sycoraxi are more at home beneath the surface then most bloodblessed, for they are the children of Saint Caliban.</em></p>
-                <p class="indent"></p>
-					<p class="indent"><strong><em>Ability Score Increase:</em></strong> Your Charisma, Wisdom, and Intelligence scores all increase by 1.</p>
-                    <p class="indent"><strong><em>Alignment.</em></strong> Dwelling deep below the grounds, and being more in touch with the wilder magicks than their hated prosperoi rivals, the sycoraxi skew more towards chaos and neutrality.</p>
-					<p class="indent"><strong><em>Blessing of Caliban.</em></strong> You never get lost when under the ground.  Once per long rest, you can spend five minutes concentrating, and then instinctively know how to proceed.  Also, when making a Wisdom or perception check, you can use your highest modifier.</p>
-                    <p class="indent"><strong><em>Blood of the Deep Magiks.</em></strong> You have access to two cantrips and gain a first level spell at level 3 and an additional first level spell at level 5. The spells must be from either the druid, sorcerer or warlock spell lists.  Wisdom is your spellcasting ability.  You are also proficient in athletics, and you have advantage in strength checks.</p>
-                    <p class="indent"><strong><em>Additional Languages.</em></strong> Sycoraxi and Deep Speech.</p>
-			</description>
+    	<supports>Bloodblessed</supports>
+		<description>
+			<p><em>Children of the shadowy caves and protective earth, the sycoraxi are more at home beneath the surface then most bloodblessed, for they are the children of Saint Caliban.</em></p>
+			<p class="indent"><strong><em>Ability Score Increase:</em></strong> Your Charisma, Wisdom, and Intelligence scores all increase by 1.</p>
+                    	<p class="indent"><strong><em>Alignment.</em></strong> Dwelling deep below the grounds, and being more in touch with the wilder magicks than their hated prosperoi rivals, the sycoraxi skew more towards chaos and neutrality.</p>
+			<p class="indent"><strong><em>Blessing of Caliban.</em></strong> You never get lost when under the ground.  Once per long rest, you can spend five minutes concentrating, and then instinctively know how to proceed.  Also, when making a Wisdom or perception check, you can use your highest modifier.</p>
+                    	<p class="indent"><strong><em>Blood of the Deep Magiks.</em></strong> You have access to two cantrips and gain a first level spell at level 3 and an additional first level spell at level 5. The spells must be from either the druid, sorcerer or warlock spell lists.  Wisdom is your spellcasting ability.  You are also proficient in athletics, and you have advantage in strength checks.</p>
+                    	<p class="indent"><strong><em>Additional Languages.</em></strong> Sycoraxi and Deep Speech.</p>
+		</description>
 
-			<sheet display="false" />
+		<sheet display="false" />
 
-			<rules>
-                <stat name="charisma" value="1" />
-                <stat name="wisdom" value="1" />
-                <stat name="intelligence" value="1" />
+		<rules>
+                	<stat name="charisma" value="1" />
+                	<stat name="wisdom" value="1" />
+                	<stat name="intelligence" value="1" />
 
-                <grant type="Language" id="ID_BTC_RMC_LANGUAGE_SYCORAXI" />
-                <grant type="Language" id="ID_LANGUAGE_DEEP_SPEECH" />
+                	<grant type="Language" id="ID_BTC_RMC_LANGUAGE_SYCORAXI" />
+                	<grant type="Language" id="ID_LANGUAGE_DEEP_SPEECH" />
 
-				<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_BLESSING_OF_CALIBAN" />
-                <grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_BLOOD_OF_THE_DEEEP_MAGIKS" />
-			</rules>
+			<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_BLESSING_OF_CALIBAN" />
+                	<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_BLOOD_OF_THE_DEEEP_MAGIKS" />
+		</rules>
     </element>
 
     <element name="Blessing of Caliban" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_BLESSING_OF_CALIBAN">
@@ -280,5 +276,5 @@
     </element>
 
 
-</elements> <!-- Main element wrap tag -->
+</elements>
 
