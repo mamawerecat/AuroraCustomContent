@@ -93,3 +93,42 @@ I then inserted the key to my winter lodgings, concentrated, and opened the door
 
 When I returned to the merchant to demand both an ethical and economic accounting, he had the audacity to imply it was my own fault, and refused to admit his obvious charlatanry or refund the twenty gold I had spent. While I regularly spend much greater sums in the course of my research, I nevertheless engaged the constabulary to bring the fellow into custody, as behavior such as this does nothing but defraud the simple-minded and tarnish the reputation of those engaging in legitimate arcane pursuits….
 Excerpt from Lord Garrison Braithwhite’s monograph-Gold Among the Dross: On the Arcane Origins of Peasant Superstition.
+
+<h2>GAUNTLETS OF THE ARCANE FIST</h2>
+These golden gauntlets are covered with arcane, spiral symbols of pure silver. 
+
+Riggslet (‘Riggs’, for short) was a halfling wizard who traveled with the legendary Gax the Great for a time. The thing Riggs most hated about himself was his stature. Despite his considerable skill with magic, the little halfling’s most profound wish was that he had been born big, strong, and physically powerful. Gax always told his friend that true strength comes from within, but Riggs continued to lament his physical weakness and size. Finally, when he could bear his friend’s complaints no longer, Gax gave Riggs a wonderful gift—a pair of magnificent, enchanted gauntlets. When wearing the gauntlets, Riggs gained great strength and found his magic enhanced in wondrous ways. In time, Gax and Riggs came to a small village near a high mountain pass. The people there welcomed the strangers, who happily remained in the village for many weeks. 
+
+Then, the giants attacked. Gax and Riggs battled the giants and did everything they could to defend the village. Riggs used the power of his gauntlets to great effect, but in the end, he found it was his bravery and willingness to give his life to protect the villagers that truly won the day. Gax had been right—Riggs’s true strength had indeed been inside him all along.
+
+From then on, Riggs was known as Riggslet Giantsbane. Many years later, the brave halfling returned to the mountain village and retired, content to live out his days among the people he had protected years earlier. Riggs never had children, but he did take on an apprentice, a small girl with a gift for magic. It is believed that Riggs bestowed his magical gauntlets to his student on his deathbed, though the girl remained silent on the subject. She left the village a few days after her mentor’s death to make her mark on the world. If she had Riggs’s gauntlets of the arcane fist with her when she left, none can say.
+
+<h2>GOLDEN GRIFFON SHIELD</h2>
+This kite shield has the image of a bronze griffon etched and embossed on its surface. The griffon glows with a soft, amber light. 
+
+Bronwyn was a ranger renowned for his pure heart, generous nature, and courageous defense of the natural world. His closest companion was his mount, a highly intelligent and fiercely loyal griffon with golden feathers. 
+
+One fateful autumn day, wyverns attacked Bronwyn and his griffon while the pair flew high above a barren plain. During the battle, Bronwyn’s griffon suffered several poisonous stings. Weakened, the animal was unable to remain aloft. Bronwyn and the griffon plummeted to the rocky ground far below.In a final, heroic act, the griffon twisted in midair so its body took the brunt of the impact. Although badly injured, Bronwyn survived the fall. His brave griffon did not. Wracked with grief and guilt, the ranger plucked a single golden feather from the dead griffon then buried his loyal mount there among the rocks where it died.
+
+Bronwyn carried that golden feather with him for many months. Eventually, he had a magical shield crafted to honor his fallen friend. Bronwyn watched as the expert craftsman’s hammer fell repeatedly on the new shield, giving it shape and form. Just as the last hammer blow fell, Brownwyn tossed the feather onto the shield. The plumage vanished as the craftsman’s hammer struck, as if the golden feather had somehow fused with the metal. At that moment, the sleek image of a griffon appeared on the shield’s surface, glowing with a soft, amber light.Bronwyn named the shield Golden Griffon. It was this shield he bore when he hunted and killed the wyverns that had slain his companion. Unfortunately, the fate of the shield is not known today.
+
+<h2>GRINNING SKULL</h2>
+This strange white skull is carved from a single piece of alabaster and is as large as a human head. Strange sigils and magical symbols are etched into the skull’s forehead. One of the first white necromancers, Althaghast, espoused true necromancy—the enlightened understanding of the mysterious connection between life, death, and unlife. His deep and profound understanding of life’s eternal cycle—the necromantic triad—made him a potent healer as well as a powerful spellcaster.
+
+Althaghast dwelled in a hilltop tower within a mist-shrouded realm suddenly infested with undead. The people lived in fear, for the undead ranks were inexplicably growing unchecked.
+
+At last, Althaghast knew he had to restore the balance. He carved a gleaming skull from solid alabaster, and for many weeks worked his most powerful magic upon it.
+The white necromancer used his strange skull to great effect, rooting out nests of vampires, eventually dragging the screaming vampire lord into the purifying light of the sun. He defeated a powerful spectre haunting a lonely road, and he even put a terrible lich to rest.
+
+When the balance between life, death, and unlife had at last been restored, Althaghast returned to the solitude of his tower. One evening, just after sunset, a beautiful woman came to speak with him. She asked about his magical alabaster skull, which he admitted was secured elsewhere in the tower.
+
+It was then that he noticed, for the first time, her deathly pale complexion. And her fangs.Althaghast no longer protects the land. Rumors persist that his grinning skull lies in some forgotten crypt, a trophy for the vampire queen who ended the foolish white necromancer’s life.
+
+<h2>HEALER’S HAND AMULET</h2>
+This simple amulet has the raised image of an open hand within a circle upon it. The hand glows ever so slightly with a soft, golden light. 
+
+Jhana the healer was a study in contrast. She had the gift of powerful divine healing and unmatched abilities in natural healing. Jhana was also a warrior, skilled with weapons and trained in the art of war. While there are many tales of Jhana efficiently dispatching enemies, even more tell of her tireless efforts to heal those that were in need, all in the name of the deity of life and healing.
+
+On the eve of what was to be a terrible battle, Jhana was visited in dream by the voice of her deity. In the dream, she was told to heal as many of the wounded as possible in the coming battle, regardless of their allegiance. Jhana awoke instantly, her body bathed in sweat. Around her neck was a strange, yet wonderous amulet. Jhana recognized it at once as the divine hand of her deity!
+
+The ensuing battle was one of the most brutal in history. When it was over, Jhana stood amid the sea of bodies and listened to the cries of the wounded. The magnitude of death was overwhelming. Bloodied and exhausted, Jhana moved among the bodies, healing every soul she could. As she went about her divinely appointed task, the hand upon her amulet glowed brightly. Jhana could feel her deity within her as the healing magic flowed through her hands.From that day forward, Jhana dedicated herself entirely to her deity. Although she continued to carry weapons, she used them only as a last resort. She spent the remainder of her days helping others and spreading messages of life and healing.Jhana’s amulet is thought to be buried with her, though none know the location of her marble tomb.
