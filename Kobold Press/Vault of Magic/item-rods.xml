@@ -3,7 +3,7 @@
     <info>
         <name>Rods</name>
         <update version="0.0.1">
-            <file name="rods.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/rods.xml" />
+            <file name="item-rods.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/rods.xml" />
         </update>
     </info>
     
