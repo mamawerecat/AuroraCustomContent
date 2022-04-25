@@ -4,7 +4,7 @@
 		<name>Vault of Magic</name>
 		<description>Inside Vault of Magic, you’ll find a vast treasure trove of enchanted items of every imaginable use—more than 900 in all!</description>
 		<author url="https://koboldpress.com/kpstore/product/vault-of-magic-for-5th-edition/">Kobold Press</author>
-		<update version="0.0.9">
+		<update version="0.1.0">
 			<file name="vault-of-magic.index" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/vault-of-magic.index" />
 		</update>
 	</info>
@@ -19,6 +19,7 @@
 		<file name="fantastical-foods-and-beverages.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Vault%20of%20Magic/fantastical-foods-and-beverages.xml" />
 		<file name="troll-blood.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Vault%20of%20Magic/troll-blood.xml" />
 		<file name="rings.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Vault%20of%20Magic/rings.xml" />
+		<file name="item-rods.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Vault%20of%20Magic/item-rods.xml" />
 		
 	</files>
 </index>
