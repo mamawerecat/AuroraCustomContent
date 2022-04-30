@@ -17,3 +17,21 @@ Go to the Additional Content tab in Aurora, enter the URL of the index file, and
 <h2>Current project(s)</h2>
 <ul>
   <li>Vault of Magic - Kobold Press</li>
+  <li>Deep Magic - Kobold Press</li>
+</ul>
+  
+<h2>Upcomping Projects</h2>
+<ul>
+  <li>Vault of Magic II (Sign of the Dragon)</li>
+  <li>Vault of Magic (Sign of the Dragon)</li>
+  <li>5th Edition Horror</li>
+  <li>Bard Subclass - College of Absurdity</li>
+  <li>New Druidic Circles</li>
+  <li>Fey Magic Sorcerer</li>
+  <li>Frozen Heart Sorcerer</li>
+  <li>Mother Night Warlock Subclass</li>
+  <li>Oath of the Seelie Court</li>
+  <li>The Feyweaver</li>
+  <li>XP to Level 3</li>
+  <li>Deep Magic for 5e</li>
+</ul>
