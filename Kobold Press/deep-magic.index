@@ -4,11 +4,16 @@
 		<name>Deep Magic for 5e</name>
 		<description>Our kobold minions have traveled the planes, seeking the secrets of magic: unearthing ancient tomes of forgotten civilizations, bargaining with demons and creatures of the void, and scaling the towers of shadow fey mages. Now they pass along their hard-won knowledge to you in DEEP MAGIC, an arcane series for 5th edition! Here you’ll find new schools of magic, arcane traditions, new and variant spells, magical feats, spell-slinging NPCs, and more.</description>
 		<author url="https://koboldpress.com/kpstore/product/vault-of-magic-for-5th-edition/">Kobold Press</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="deep-magic.index" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/deep-magic.index" />
 		</update>
 	</info>
 	<files>	
 		<file name="source.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/source.xml" />
+		
+		<!-- archetypes -->
+		<file name="bard-greenleaf.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/bard-greenleaf.xml" />
+		<file name="bard-wyrdsingers.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/bard-wyrdsingers.xml" />
+		
 	</files>
 </index>
