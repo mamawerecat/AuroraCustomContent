@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>College of Wyrdsingers</name>
+        <update version="0.0.1">
+            <file name="bard-wyrdsingers.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/wyrdsingers.xml" />
+        </update>
+    </info> 
+
+<element name="College of Wyrdsingers" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_COLLEGE_OF_WYRDSINGERS">
+    <supports>Bard College</supports>
+    <description>
+        <p>Bards of the College of Wyrdsingers subscribe to the wyrd, a philosophy that centers around the phenomenon of the same name. The wyrd is that which will be, inexorably tied to such concepts as destiny and fate. Though some might consider the idea of a fixed destiny fatalistic, the bards of this college are inspired by this viewpoint. One may not choose the manner of one’s death, but one can choose how to meet it, and that idea is at the heart of this college. An insect might be caught in a spider’s web. Whether it lives or dies, its struggles ultimately shake the web in its entirety, and it might free itself through such effort. The struggle affects all things, however remotely connected they might be, whereas the insect that merely accepts its death leaves not even a ripple behind. To confront fate, to embrace the wyrd and whatever it brings, is to have the power to shake the world and make it take notice. </p>
+        <div element="ID_KBP_DM5E_WYRDSINGERS_ARCHETYPE_FEATURE_BRAGGART" />
+        <div element="ID_KBP_DM5E_WYRDSINGERS_ARCHETYPE_FEATURE_INSPIRE_GREATNESS" />
+        <div element="ID_KBP_DM5E_WYRDSINGERS_ARCHETYPE_FEATURE_NOT_THIS_DAY" />
+        <div element="ID_KBP_DM5E_WYRDSINGERS_ARCHETYPE_FEATURE_MAKE_YOUR_OWN_FATE" />
+    </description>
+    <sheet display="false">
+        <description></description>
+    </sheet>
+    <rules>
+        <grant type="Archetype Feature" id="ID_KBP_DM5E_WYRDSINGERS_ARCHETYPE_FEATURE_BRAGGART" level="3" />
+        <grant type="Archetype Feature" id="ID_KBP_DM5E_WYRDSINGERS_ARCHETYPE_FEATURE_INSPIRE_GREATNESS" level="3" />
+        <grant type="Archetype Feature" id="ID_KBP_DM5E_WYRDSINGERS_ARCHETYPE_FEATURE_NOT_THIS_DAY" level="6" />
+        <grant type="Archetype Feature" id="ID_KBP_DM5E_WYRDSINGERS_ARCHETYPE_FEATURE_MAKE_YOUR_OWN_FATE" level="14" />
+    </rules>
+</element> 
+
+<!-- BRAGGART -->
+    <element name="Braggart" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_WYRDSINGERS_ARCHETYPE_FEATURE_BRAGGART">
+        <description>
+            <p>When you join the College of Wyrdsingers at 3rd level, you are already a master of the art of bragging about your deeds. The fact that you exaggerate is of little importance; what matters is that boasting of your deeds makes people listen to you. Your proficiency bonus is doubled when you make a Charisma (Intimidation) or Charisma (Persuasion) check.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="persuasion:proficiency" value="proficiency" bonus="double" requirements="ID_PROFICIENCY_SKILL_PERSUASION"/>
+            <stat name="intimidation:proficiency" value="proficiency" bonus="double" requirements="ID_PROFICIENCY_SKILL_INTIMIDATION"/>
+        </rules>
+    </element>
+
+<!-- INSPIRE GREATNESS -->
+    <element name="Inspire Greatness" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_WYRDSINGERS_ARCHETYPE_FEATURE_INSPIRE_GREATNESS">
+        <description>
+            <p>Also beginning at 3rd level, you can use a bonus action to instill a sense of worth in a single ally within 60 feet who can hear you. Your ally gains a bonus equal to your Charisma modifier on attack rolls, damage rolls, ability checks, and saving throws for a number of rounds equal to your bard level. That ally cannot benefit from your Bardic Inspiration until the duration of this feature has run its course. You can use this feature once at 3rd level, twice at 8th level, and three times at 15th level. You regain all expended uses when you finish a long rest. </p>
+            <p class="indent">Additionally, you can use a bonus action to cast any abjuration spell you know that normally takes 1 action to cast (for example, laugh in the face of fear or lesser restoration). Once you use this feature, you must finish a long rest before you can use it again.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_WYRDSINGERS_ARCHETYPE_FEATURE_INSPIRE_GREATNESS_ALLY" level="3" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_WYRDSINGERS_ARCHETYPE_FEATURE_INSPIRE_GREATNESS_SPELL" level="3" />
+        </rules>
+    </element>
+
+    <element name="Inspire Greatness" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_WYRDSINGERS_ARCHETYPE_FEATURE_INSPIRE_GREATNESS_ALLY">
+        <description>
+            <p>Also beginning at 3rd level, you can use a bonus action to instill a sense of worth in a single ally within 60 feet who can hear you. Your ally gains a bonus equal to your Charisma modifier on attack rolls, damage rolls, ability checks, and saving throws for a number of rounds equal to your bard level. That ally cannot benefit from your Bardic Inspiration until the duration of this feature has run its course. You can use this feature once at 3rd level, twice at 8th level, and three times at 15th level. You regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet alt="Inspire Greatness" action="Bonus Action">
+            <description usage="1/Long Rest" level="3">You can use a bonus action to instill a sense of worth in a single ally within 60 feet who can hear you. Your ally gains + {{charisma:modifier}} on attack rolls, damage rolls, ability checks, and saving throws for {{level:bard}} rounds. That ally cannot benefit from your Bardic Inspiration until the duration of this feature has run its course.</description>
+            <description usage="2/Long Rest" level="8">You can use a bonus action to instill a sense of worth in a single ally within 60 feet who can hear you. Your ally gains + {{charisma:modifier}} on attack rolls, damage rolls, ability checks, and saving throws for {{level:bard}} rounds. That ally cannot benefit from your Bardic Inspiration until the duration of this feature has run its course.</description>
+            <description usage="3/Long Rest" level="15">You can use a bonus action to instill a sense of worth in a single ally within 60 feet who can hear you. Your ally gains + {{charisma:modifier}} on attack rolls, damage rolls, ability checks, and saving throws for {{level:bard}} rounds. That ally cannot benefit from your Bardic Inspiration until the duration of this feature has run its course.</description>
+        </sheet>
+    </element>
+
+    <element name="Inspire Greatness" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_WYRDSINGERS_ARCHETYPE_FEATURE_INSPIRE_GREATNESS_SPELL">
+        <description>
+            <p>Additionally, you can use a bonus action to cast any abjuration spell you know that normally takes 1 action to cast (for example, laugh in the face of fear, described in this book, or lesser restoration). Once you use this feature, you must finish a long rest before you can use it again.</p>
+        </description>
+        <sheet alt="Inspire Greatness, Spell" action="Bonus Action" usage="1/Long Rest">
+            <description>Additionally, you can use a bonus action to cast any abjuration spell you know that normally takes 1 action to cast (for example <i>laugh in the face of fear</i> or <i>lesser restoration</i>). Once you use this feature, you must finish a long rest before you can use it again.</description>
+        </sheet>
+    </element>
+
+<!-- NOT THIS DAY -->
+    <element name="Not this Day" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_WYRDSINGERS_ARCHETYPE_FEATURE_NOT_THIS_DAY">
+        <description>
+            <p>Starting at 6th level, if an ally of yours drops to 0 hit points, you can use a reaction to expend one of your uses of Bardic Inspiration. Your ally gains a number of temporary hit points equal to the die roll and remains conscious. If the attack that reduced the ally to 0 hit points would have been fatal, the ally will die if they lose all temporary hit points they currently possess, unless their hit point total is raised to 1 or higher before that happens.</p>
+        </description>
+        <sheet alt="Not This Day" action="Reaction" usage="Bardic Inspiration">
+            <description>If an ally of yours drops to 0 hit points, you can use a reaction to expend one of your uses of Bardic Inspiration. Your ally gains a number of temporary hit points equal to the die roll and remains conscious. If the attack that reduced the ally to 0 hit points would have been fatal, the ally will die if they lose all temporary hit points they currently possess, unless their hit point total is raised to 1 or higher before that happens.</description>
+        </sheet>
+    </element>
+
+<!-- MAKE YOUR OWN FATE -->
+    <element name="Make Your Own Fate" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_WYRDSINGERS_ARCHETYPE_FEATURE_MAKE_YOUR_OWN_FATE">
+        <description>
+            <p>At 14th level and higher, you can use an action to sing a song of valor that enables you to remain courageous and fight fiercely in the face of the gravest danger. For 1 minute thereafter, you gain immunity to the frightened condition. Any ally you affect with your Bardic Inspiration feature also gains this immunity until they expend the Bardic Inspiration die or the duration expires. In addition, while this feature is in effect, you add your Charisma modifier to your weapon damage and to the damage of any spell you cast.</p>
+        </description>
+        <sheet>
+            <description>At 14th level and higher, you can use an action to sing a song of valor that enables you to remain courageous and fight fiercely in the face of the gravest danger. For 1 minute thereafter, you gain immunity to the frightened condition. Any ally you affect with your Bardic Inspiration feature also gains this immunity until they expend the Bardic Inspiration die or the duration expires. In addition, while this feature is in effect, you add {{charisma:modifier}} to your weapon damage and to the damage of any spell you cast.</description>
+        </sheet>
+    </element>
+
+</elements>
