@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>GREENLEAF COLLEGE</name>
+        <update version="0.0.1">
+            <file name="bard-greenleaf.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/greenleaf.xml" />
+        </update>
+    </info>
+
+<element name="Greenleaf College" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_GREENLEAF_COLLEGE">
+    <supports>Bard College</supports>
+    <description>
+        <p>The Greenleaf College was founded by half-elves who sought to celebrate their varied heritage. Drawing from elven lore for inspiration and power, Greenleaf bards strengthen their connection to nature. Through their magic and their tales, they convey the rejuvenating strength of the forests and rivers to their allies.</p>
+        <div element="ID_KBP_DM5E_GREENLEAF_COLLEGE_ARCHETYPE_FEATURE_BONUS_PROFICIENCIES" />
+        <div element="ID_KBP_DM5E_GREENLEAF_COLLEGE_ARCHETYPE_FEATURE_REJUVENATING_INSPIRATION" />
+        <div element="ID_KBP_DM5E_GREENLEAF_COLLEGE_ARCHETYPE_FEATURE_LANDS_STRIDE" />
+        <div element="ID_KBP_DM5E_GREENLEAF_COLLEGE_ARCHETYPE_FEATURE_VITAL_SURGE" />
+    </description>
+    <sheet display="false">
+        <description></description>
+    </sheet>
+    <rules>
+        <grant type="Archetype Feature" id="ID_KBP_DM5E_GREENLEAF_COLLEGE_ARCHETYPE_FEATURE_BONUS_PROFICIENCIES" level="3" />
+        <grant type="Archetype Feature" id="ID_KBP_DM5E_GREENLEAF_COLLEGE_ARCHETYPE_FEATURE_REJUVENATING_INSPIRATION" level="3" />
+        <grant type="Archetype Feature" id="ID_KBP_DM5E_GREENLEAF_COLLEGE_ARCHETYPE_FEATURE_LANDS_STRIDE" level="6" />
+        <grant type="Archetype Feature" id="ID_KBP_DM5E_GREENLEAF_COLLEGE_ARCHETYPE_FEATURE_VITAL_SURGE" level="14" />
+    </rules>
+</element>
+    
+<!-- BONUS PROFICIENCIES -->
+    <element name="Bonus Proficiencies" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_GREENLEAF_COLLEGE_ARCHETYPE_FEATURE_BONUS_PROFICIENCIES">
+        <description>
+            <p>When you join the Greenleaf College at 3rd level, you gain proficiency in Nature and two other skills of your choice.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+            <select type="Proficiency" name="Skill Proficiency, Greenleaf College" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_RELIGION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL" />
+        </rules>
+    </element>
+
+<!-- REJUVENATING INSPIRATION -->
+    <element name="Rejuvenating Inspiration" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_GREENLEAF_COLLEGE_ARCHETYPE_FEATURE_REJUVENATING_INSPIRATION">
+        <description>
+            <p>At 3rd level, you learn to infuse your Bardic Inspiration with a magical seed of healing energy. When a creature uses a Bardic Inspiration die from you to increase the result of one ability check, attack roll, or saving throw, it also gains temporary hit points equal to the number rolled on the Bardic Inspiration die plus your Charisma modifier.</p>
+        </description>
+        <sheet alt="Rejuvenating Inspiration">
+            <description>At 3rd level, you learn to infuse your Bardic Inspiration with a magical seed of healing energy. When a creature uses a Bardic Inspiration die from you to increase the result of one ability check, attack roll, or saving throw, it also gains temporary hit points equal to the number rolled on the Bardic Inspiration die + {{charisma:modifier}} .</description>
+        </sheet>
+    </element>
+
+<!-- LAND'S STRIDE -->
+    <element name="Land's Stride" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_GREENLEAF_COLLEGE_ARCHETYPE_FEATURE_LANDS_STRIDE">
+        <description>
+            <p>Beginning at 6th level, moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar feature. In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such as those created by the entangle spell.</p>
+        </description>
+        <sheet alt="Land's Stride">
+            <description>Moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar feature. In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such as those created by the entangle spell.</description>
+        </sheet>
+    </element>
+
+<!-- VITAL SURGE -->
+    <element name="Vital Surge" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_GREENLEAF_COLLEGE_ARCHETYPE_FEATURE_VITAL_SURGE">
+        <description>
+            <p>Starting at 14th level, you can expend one use of Bardic Inspiration as an action to magically remove one disease or detrimental condition affecting a creature you can see within 60 feet. The condition can be blinded, charmed, deafened, frightened, paralyzed, or poisoned.</p>
+        </description>
+        <sheet alt="Vital Surge" action="action" usage="Bardic Inspiration">
+            <description>You can expend one use of Bardic Inspiration as an action to magically remove one disease or detrimental condition affecting a creature you can see within 60 feet. The condition can be blinded, charmed, deafened, frightened, paralyzed, or poisoned.</description>
+        </sheet>
+    </element>
+
+</elements>
