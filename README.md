@@ -11,6 +11,7 @@ Go to the Additional Content tab in Aurora, enter the URL of the index file, and
   <li>https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/redmasque.index</li>
   <li>https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/taldorei-reborn.index</li>
   <li>https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Miscellaneous/misc.index</li>
+  <li>https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/kobold-press.index</li>
 </ul>
 
 <h2>Current project(s)</h2>
