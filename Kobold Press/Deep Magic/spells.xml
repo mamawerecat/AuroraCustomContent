@@ -3,7 +3,7 @@
     <info>
         <name>Deep Magic - Spells</name>
         <update version="0.0.1">
-            <file name="spells.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/spells.xml" />
+            <file name="spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells.xml" />
         </update>
     </info>
     
