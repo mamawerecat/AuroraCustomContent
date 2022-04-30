@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Deep Magic - Spells</name>
+        <update version="0.0.1">
+            <file name="spells.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/spells.xml" />
+        </update>
+    </info>
+    
+<!-- ABHORRENCE -->
+	<element name="Abhorrence" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ABHORRENCE">
+		<supports>Bard,Cleric,Druid,Sorcerer,Wizard</supports>
+		<description>
+			<p>You temporarily make a creature within range less appealing to others. The target makes a Wisdom saving throw against your spell. On a successful save, the spell is ineffective. On a failed save, the next time the creature makes a Charisma check before the spell ends, roll a d6 and subtract the result from the roll. The spell then ends.</p>
+		</description>
+		<setters>
+			<set name="keywords">Charisma</set>
+			<set name="level">0</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+ 
+<!-- ABHORRENT APPARITION --> 
+	<element name="Abhorrent Apparition" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ABHORRENT_APPARITION ">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>You imbue a terrifying visage onto a gourd and toss it ahead of you to a spot of your choosing within range. Each creature within 15 feet of that spot takes 6d8 psychic damage and becomes frightened of you for 1 minute; a successful Wisdom saving throw halves the damage and negates the fright. A creature frightened in this way repeats the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> If you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords">psychic</set>
+			<set name="level">4</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a gourd with a face carved on it</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- ABSORBING FIELD --> 
+	<element name="Absorbing Field" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ABSORBING_FIELD">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>You cloak yourself in a protective field that absorbs incoming magic, rejuvenating your spell slots. When you are the target of a spell (including spells that affect multiple targets, but not area spells such as fireball), make an ability check using your spellcasting ability. The DC equals 10 + the spell’s level. On a successful check, the spell has no effect on you and is absorbed by the field. You regain a spell slot of the same level as the spell that was cast against you. If you have no expended spell slots of that level, you don’t regain a spell slot, but this spell remains in effect.</p>
+			<p class="indent">Even if the spell manages to bypass the field, you gain advantage on your saving throw.</p>
+		</description>
+		<setters>
+			<set name="keywords">spell slots,saving throw</set>
+			<set name="level">6</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- ACCELERATE --> 
+	<element name="Accelerate" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ACCELERATE">
+		<supports>Bard,Cleric,Druid,Sorcerer,Wizard</supports>
+		<description>
+			<p>Choose up to three willing creatures within range, which can include you. For the duration of the spell, each target’s walking speed is doubled. Each target can also use a bonus action on each of its turns to take the Dash action, and it has advantage on Dexterity saving throws. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, you can affect one additional creature for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">3</set>
+			<set name="school" addition="temporal">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a toy top</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- ACID GATE --> 	
+	<element name="Acid Gate" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ACID_GATE">
+		<supports>Wizard</supports>
+		<description>
+			<p>You create a portal of swirling, acidic green vapor in an unoccupied space you can see. This portal connects with a target destination within 100 miles that you are personally familiar with and have seen with your own eyes, such as your wizard’s tower or an inn you have stayed at. You and up to three creatures of your choice can enter the portal and pass through it, arriving at the target destination (or within 10 feet of it, if it is currently occupied). If the target destination doesn’t exist or is inaccessible, the spell automatically fails and the gate doesn’t form. </p>
+			<p class="indent">Any creature that tries to move through the gate, other than those selected by you when the spell was cast, takes 10d6 acid damage and is teleported 1d100 × 10 feet in a random, horizontal direction. If the creature makes a successful Intelligence saving throw, it can’t be teleported by this portal, but it still takes acid damage when it enters the acid-filled portal and every time it ends its turn in contact with it. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 8th level or higher, you can allow one additional creature to use the gate for each slot level above 7th.</p>
+		</description>
+		<setters>
+			<set name="keywords">alkemancy,acid</set>
+			<set name="level">7</set>
+			<set name="school" addition="alkemancy">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a vial of acid and a polished silver mirror worth 125 gp</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- ACID RAIN --> 
+	<element name="Acid Rain" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ACID_RAIN">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You unleash a storm of swirling acid in a cylinder 20 feet wide and 30 feet high, centered on a point you can see. The area is heavily obscured by the driving acidfall. A creature that starts its turn in the area or that enters the area for the first time on its turn takes 6d6 acid damage, or half as much damage if it makes a successful Dexterity saving throw. A creature takes half as much damage from the acid (as if it had made a successful saving throw) at the start of its first turn after leaving the affected area. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d6 for each slot level above 5th.</p>
+		</description>
+		<setters>
+			<set name="keywords">alkemancy</set>
+			<set name="level">5</set>
+			<set name="school" addition="alkemancy">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">150 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a drop of acid</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- ALTER TIME FLOW --> 
+	<element name="Alter Time Flow" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ALTER_TIME_FLOW">
+		<supports>Bard,Cleric,Wizard</supports>
+		<description>
+			<p>You control the currents of time, affecting all creatures within 30 feet of yourself. You can choose to deliver either a haste or slow effect (as the spell) to each creature in the area. An unwilling creature makes a Constitution saving throw, avoiding the effect on a success. Each unwilling creature must make a new saving throw if it remains in the affected area at the end of its turn. Any affected creature returns to normal if it exits the area, but if a creature reenters the area while the spell is still active, it is subject to the effect of the spell (and receives another saving throw, if unwilling).</p>
+		</description>
+		<setters>
+			<set name="keywords">time magic</set>
+			<set name="level">7</set>
+			<set name="school" addition="temporal">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (30-foot radius)</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an hourglass</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- ANTICIPATE ARCANA  -->
+	<element name="Anticipate Arcana" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ANTICIPATE_ARCANA">
+		<supports>Cleric,Paladin,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>Your foresight gives you an instant to ready your defenses against a magical attack. When you cast anticipate arcana, you have advantage on saving throws against spells and other magical effects until the start of your next turn. </p>
+		</description>
+		<setters>
+			<set name="keywords">temporal,time magic,reaction</set>
+			<set name="level">3</set>
+			<set name="school" addition="temporal">Divination</set>
+			<set name="time">1 reaction, which you take when an enemy you can see casts a spell</set>
+			<set name="range">Self</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- ANTICIPATE ATTACK  -->	
+	<element name="Anticipate Attack" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ANTICIPATE_ATTACK">
+		<supports>Bard,Cleric,Druid,Paladin,Ranger,Sorcerer,Wizard</supports>
+		<description>
+			<p>In a flash of foreknowledge, you spot an oncoming attack with enough time to avoid it. Upon casting this spell, you can move up to half your speed without provoking opportunity attacks. The oncoming attack still occurs but misses automatically if you are no longer within the attack’s range, are in a space that's impossible for the attack to hit, or can’t be targeted by that attack in your new position. If none of those circumstances apply but the situation has changed—you have moved into a position where you have cover, for example—then the attack is made after taking the new situation into account.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporal,reaction,time magic</set>
+			<set name="level">2</set>
+			<set name="school" addition="temporal">Divination</set>
+			<set name="time">1 reaction, which you take when you are attacked but before the attack roll is made</set>
+			<set name="range">Self</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- ANTICIPATE WEAKNESS --> 	
+	<element name="Anticipate Weakness" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ANTICIPATE_WEAKNESS">
+		<supports>Bard,Cleric,Druid,Ranger,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>With a quick glance into the future, you pinpoint where a gap is about to open in your foe’s defense, and then you strike. After casting anticipate weakness, you have advantage on attack rolls until the end of your turn. </p>
+		</description>
+		<setters>
+			<set name="keywords">temporal,bonus action</set>
+			<set name="level">1</set>
+			<set name="school" addition="temporal">Divination</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Self</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- AUSPICIOUS WARNING  -->
+	<element name="Auspicious Warning" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_AUSPICIOUS_WARNING">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>Just in time, you call out a fortunate warning to a creature within range. The target rolls a d4 and adds the number rolled to an attack roll, ability check, or saving throw that it has just made and uses the new result for determining success or failure.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporal,time magic,reaction</set>
+			<set name="level">1</set>
+			<set name="school" addition="temporal">Enchantment</set>
+			<set name="time">1 reaction, which you take when an ally makes an attack roll, ability check, or saving throw</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- CHRONAL LANCE --> 	
+	<element name="Chronal Lance" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CHRONAL_LANCE">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>You inflict the ravages of aging on up to three creatures within range, temporarily discomfiting them and making them appear elderly for a time. Each target must make a successful Wisdom saving throw, or its walking speed is halved (round up to the nearest 5-foot increment) and it has disadvantage on Dexterity checks (but not saving throws). An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporal,clockwork</set>
+			<set name="level">1</set>
+			<set name="school" addition="temporal,clockwork">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- DECELERATE -->
+	<element name="Decelerate" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_DECELERATE">
+		<supports>Druid,Paladin,Ranger,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You slow the flow of time around a creature within range that you can see. The creature must make a successful Wisdom saving throw, or its walking speed is halved (round up to the nearest 5-foot increment). The creature can repeat the saving throw at the end of each of its turns, ending the effect on a success. Until the spell ends, on a failed save the target’s speed is halved again at the start of each of your turns. For example, if a creature with a speed of 30 feet fails its initial saving throw, its speed drops to 15 feet. At the start of your next turn, the creature’s speed drops to 10 feet on a failed save, then to 5 feet on the  following round on another failed save. Decelerate can’t reduce a creature’s speed to less than 5 feet. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, you can affect an additional creature for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporal,time magic</set>
+			<set name="level">2</set>
+			<set name="school" addition="temporal">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a toy top</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- FLICKERING FATE --> 	
+	<element name="Flickering Fate" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_FLICKERING_FATE">
+		<supports>Wizard</supports>
+		<description>
+			<p>You or a creature that you touch can see a few seconds into the future. When the spell is cast, each other creature within 30 feet of the target must make a Wisdom saving throw. Those that fail must declare, in initiative order, what their next action will be. The target of the spell declares his or her action last, after hearing what all other creatures will do. Each creature that declared an action must follow its declaration as closely as possible when its turn comes. For the duration of the spell, the target has advantage on attack rolls, ability checks, and saving throws, and creatures that declared their actions have disadvantage on attack rolls against the target.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporal,time magic</set>
+			<set name="level">4</set>
+			<set name="school" addition="temporal">Divination</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">1 round</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+ 
+<!-- FORETELL DISTRACTION --> 	
+	<element name="Foretell Distraction" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_FORETELL_DISTRACTION">
+		<supports>Bard,Cleric,Ranger,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>Thanks to your foreknowledge, you know exactly when your foe will take his or her eyes off you. Casting this spell has the same effect as making a successful Dexterity (Stealth) check, provided cover or concealment is available within 10 feet of you. It doesn’t matter whether enemies can see you when you cast the spell; they glance away at just the right moment. You can move up to 10 feet as part of casting the spell, provided you’re able to move (not restrained or grappled or reduced to a speed of less than 10 feet for any other reason). This move doesn’t count as part of your normal movement. After the spell is cast, you must be in a position where you can remain hidden: a lightly obscured space, for example, or a space where you have total cover. Otherwise, enemies see you again immediately and you’re not hidden.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporal,bonus action</set>
+			<set name="level">1</set>
+			<set name="school" addition="temporal">Divination</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Self</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- QUICKEN --> 	
+	<element name="Quicken" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_QUICKEN_">
+		<supports>Bard,Cleric,Sorcerer,Wizard</supports>
+		<description>
+			<p>You touch one willing creature. Once before the duration of the spell expires, the target can roll a d4 and add the number rolled to an initiative roll or Dexterity saving throw it has just made. The spell then ends.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporal</set>
+			<set name="level">0</set>
+			<set name="school" addition="temporal">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- QUICK TIME --> 	
+	<element name="Quick Time" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_QUICK_TIME">
+		<supports>Druid</supports>
+		<description>
+			<p>You make one living creature or plant within range move rapidly in time compared to you. The target becomes one year older. For example, you could cast this spell on a seedling, which causes the plant to sprout from the soil, or you could cast this spell on a newly hatched duckling, causing it to become a full-grown duck. If the target is a creature with an Intelligence of 3 or higher, it must succeed on a Constitution saving throw to resist the aging. It can choose to fail the saving throw. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, you increase the target’s age by one additional year for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporal</set>
+			<set name="level">4</set>
+			<set name="school" addition="temporal">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">any seed</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- RAVAGES OF TIME --> 
+	<element name="Ravages of Time" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_RAVAGES_OF_TIME">
+		<supports>Cleric,Sorcerer,Wizard</supports>
+		<description>
+			<p>You accelerate the aging of one creature within range, causing it to take on the state of a decrepit version of its type. The target suffers three levels of exhaustion that cannot be removed by normal means. A greater restoration spell partially reverses the effect of this spell, removing one level of exhaustion. Constructs and undead are unaffected by this spell, and creatures who live to great age without negative effects, such as dragons, are also unaffected.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporal</set>
+			<set name="level">7</set>
+			<set name="school" addition="temporal">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">24 hours</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a wilted flower</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- ALCHEMICAL FORM --> 
+	<element name="Alchemical Form" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ALCHEMICAL_FORM">
+		<supports>Wizard</supports>
+		<description>
+			<p>You transform into an amoebic form composed of highly acidic and poisonous alchemical jelly. While in this form: </p>
+			<p class="indent">-you are immune to acid and poison damage and to the poisoned and stunned conditions; </p>
+			<p class="indent">-you have resistance to nonmagical fire, piercing, and slashing damage; </p>
+			<p class="indent">-you can’t speak, cast spells, use items or weapons, or manipulate objects; </p>
+			<p class="indent">-your gear melds into your body and reappears when the spell ends; </p>
+			<p class="indent">-you don't need to breathe; </p>
+			<p class="indent">-your speed is 20 feet; </p>
+			<p class="indent">-your size doesn’t change, but you can move through and between obstructions as if you were two size categories smaller; and </p>
+			<p class="indent">-you gain the following action: Melee Weapon Attack: spellcasting ability modifier + proficiency bonus to hit, range 5 ft., one target; Hit: 4d6 acid or poison damage (your choice), and the target must make a successful Constitution saving throw or be poisoned until the start of your next turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">alkemancy</set>
+			<set name="level">6</set>
+			<set name="school" addition="alkemancy">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a vial of acid, poison, or alchemist's fire</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+</elements>
