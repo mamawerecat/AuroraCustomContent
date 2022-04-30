@@ -10,7 +10,7 @@
 	</info>
 	<files>	
 		<file name="deep-magic.index" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/deep-magic.index" />
-    <file name="vault-of-magic.index" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/vault-of-magic.index" />
+    		<file name="vault-of-magic.index" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/vault-of-magic.index" />
     
 	</files>
 </index>
