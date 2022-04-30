@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.6">
+		<update version="0.0.7">
 			<file name="source.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Vault%20of%20Magic/source.xml" />
 		</update>
 	</info>
 	<element name="Vault of Magic" type="Source" source="Core" id="ID_KBP_SOURCE_VAULT_OF_MAGIC">
 		<description>
-			<![CDATA[<p><strong>Inside Vault of Magic, you’ll find a vast treasure trove of enchanted items of every imaginable use—more than 900 in all! There are plenty of armors, weapons, potions, rings, and wands, but that’s just for starters. From mirrors to masks, edibles to earrings, and lanterns to lockets, it’s all here, ready for you to use in your 5th Edition game. This 256-page volume includes more than 30 unique items developed by special guests, including Patrick Rothfuss, Gail Simone, Deborah Ann Woll, and Luke Gygax, as well as fabled items that grow in power as characters rise in levels. You’ll find new item themes, such as monster-inspired, clockwork, and apprentice wizards, all with hundreds of full-color illustrations. This book includes complete treasure-generation tables sorted by rarity, which include items from the core D&D books so you don’t have to choose which table to use when generating random treasure!Amaze and delight your players and spice up your 5th Edition campaign with fresh, new enchanted items from Vault of Magic. It’ll turn that next treasure hoard into something . . . wondrous!</strong></p>]]>
-		</description>
-		<setters>
-			<set name="abbreviation">KBP</set>
+      			<![CDATA[<p><strong>Inside Vault of Magic, you’ll find a vast treasure trove of enchanted items of every imaginable use—more than 900 in all! There are plenty of armors, weapons, potions, rings, and wands, but that’s just for starters. From mirrors to masks, edibles to earrings, and lanterns to lockets, it’s all here, ready for you to use in your 5th Edition game.</strong></p>]]>
+    		</description>
+    		<setters>
+      			<set name="abbreviation">KBP</set>
 			<set name="url">https://koboldpress.com/kpstore/product/vault-of-magic-for-5th-edition/</set>
 			<set name="image">https://koboldpress.com/kpstore/wp-content/uploads/Vault-of-Magic-5E-COVER.jpg</set>
 			<set name="author" abbreviation="KBP" url="https://koboldpress.com/">Kobold Press</set>
