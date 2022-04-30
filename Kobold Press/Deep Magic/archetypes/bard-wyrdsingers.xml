@@ -3,7 +3,7 @@
     <info>
         <name>College of Wyrdsingers</name>
         <update version="0.0.1">
-            <file name="bard-wyrdsingers.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/wyrdsingers.xml" />
+            <file name="bard-wyrdsingers.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/bard-wyrdsingers.xml" />
         </update>
     </info> 
 
