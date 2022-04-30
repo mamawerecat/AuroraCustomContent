@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Deep Magic for 5e</name>
+		<description>Welcome to the small tunnels and the dangerous life of the small-but-fierce kobold! We’re always tinkering here, and there’s quite a few projects underway at any given time!</description>
+		<author url="https://koboldpress.com/">Kobold Press</author>
+		<update version="0.0.1">
+			<file name="kobold-press.index" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/deep-magic.index" />
+		</update>
+	</info>
+	<files>	
+		<file name="deep-magic.index" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/deep-magic.index" />
+    <file name="vault-of-magic.index" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/vault-of-magic.index" />
+    
+	</files>
+</index>
