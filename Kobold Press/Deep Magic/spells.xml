@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic - Spells</name>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells.xml" />
         </update>
     </info>
@@ -172,7 +172,6 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-</elements>
 
 <!-- ALTER TIME FLOW --> 
 	<element name="Alter Time Flow" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ALTER_TIME_FLOW">
