@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic - Spells</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells.xml" />
         </update>
     </info>
@@ -143,6 +143,37 @@
 		</setters>
 	</element>
 
+<!-- ALCHEMICAL FORM --> 
+	<element name="Alchemical Form" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ALCHEMICAL_FORM">
+		<supports>Wizard</supports>
+		<description>
+			<p>You transform into an amoebic form composed of highly acidic and poisonous alchemical jelly. While in this form: </p>
+			<p class="indent">-you are immune to acid and poison damage and to the poisoned and stunned conditions; </p>
+			<p class="indent">-you have resistance to nonmagical fire, piercing, and slashing damage; </p>
+			<p class="indent">-you can’t speak, cast spells, use items or weapons, or manipulate objects; </p>
+			<p class="indent">-your gear melds into your body and reappears when the spell ends; </p>
+			<p class="indent">-you don't need to breathe; </p>
+			<p class="indent">-your speed is 20 feet; </p>
+			<p class="indent">-your size doesn’t change, but you can move through and between obstructions as if you were two size categories smaller; and </p>
+			<p class="indent">-you gain the following action: Melee Weapon Attack: spellcasting ability modifier + proficiency bonus to hit, range 5 ft., one target; Hit: 4d6 acid or poison damage (your choice), and the target must make a successful Constitution saving throw or be poisoned until the start of your next turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">alkemancy</set>
+			<set name="level">6</set>
+			<set name="school" addition="alkemancy">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a vial of acid, poison, or alchemist's fire</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+</elements>
+
 <!-- ALTER TIME FLOW --> 
 	<element name="Alter Time Flow" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ALTER_TIME_FLOW">
 		<supports>Bard,Cleric,Wizard</supports>
@@ -249,6 +280,146 @@
 		</setters>
 	</element>
 
+<!-- BLOOD TO ACID --> 	
+	<element name="Blood to Acid" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLOOD_TO_ACID">
+		<supports>Wizard</supports>
+		<description>
+			<p>When you cast this spell, you designate a creature within range and convert its blood into virulent acid. The target must make a Constitution saving throw. On a failed save, it takes 10d12 acid damage and is stunned by the pain for 1d4 rounds. On a successful save, it takes half the damage and isn’t stunned. </p>
+			<p class="indent">Creatures without blood, such as constructs and plants, are not affected by this spell. If blood to acid is cast on a creature composed mainly of blood, such as a blood elemental or a blood zombie (Creature Codex, p. 393), the creature is slain by the spell if its saving throw fails.</p>
+		</description>
+		<setters>
+			<set name="keywords">alkemancy</set>
+			<set name="level">9</set>
+			<set name="school" addition="alkemancy">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+ 
+<!-- BOILING OIL --> 
+	<element name="Boiling Oil" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BOILING_OIL">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>You conjure a shallow, 15-foot-radius pool of boiling oil centered on a point within range. The pool is difficult terrain, and any creature that enters the pool or starts its turn there must make a Dexterity saving throw. On a failed save, the creature takes 3d8 fire damage and falls prone. On a successful save, a creature takes half as much damage and doesn’t fall prone. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">alkemancy</set>
+			<set name="level">2</set>
+			<set name="school" addition="alkemancy">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a vial of oil</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- BOTTLED ARCANA --> 
+	<element name="Bottled Arcana" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BOTTLED_ARCANA">
+		<supports>Wizard</supports>
+		<description>
+			<p>By touching an empty, stoppered glass container such as a vial or flask, you magically enable it to hold a single spell. To be captured, the spell must be cast within 1 round of casting bottled arcana and it must be intentionally cast into the container. The container can hold one spell of 3rd level or lower. The spell can be held in the container for as much as 24 hours, after which the container reverts to a mundane vessel and any magic inside it dissipates harmlessly. </p>
+			<p class="indent">As an action, any creature can unstop the container, thereby releasing the spell. If the spell has a range of self, the creature opening the container is affected; otherwise, the creature opening the container designates the target according to the captured spell’s description. If a creature opens the container unwittingly (not knowing that the container holds a spell), the spell targets the creature opening the container or is centered on its space instead (whichever is more appropriate). Dispel magic cast on the container targets bottled arcana, not the spell inside. If bottled arcana is dispelled, the container becomes mundane and the spell inside dissipates harmlessly. </p>
+			<p class="indent">Until the spell in the container is released, its caster can’t regain the spell slot used to cast that spell. Once the spell is released, its caster regains the use of that slot normally. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th level or higher, the level of the spell the container can hold increases by one for every slot level above 5th. </p>
+		</description>
+		<setters>
+			<set name="keywords">alkemancy</set>
+			<set name="level">5</set>
+			<set name="school" addition="alkemancy">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">up to 24 hours</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an empty glass container</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- BOTTOMLESS STOMACH --> 
+	<element name="Bottomless Stomach" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BOTTOMLESS_STOMACH">
+		<supports>Artificer,Wizard</supports>
+		<description>
+			<p>When you cast this spell, you gain the ability to consume dangerous substances and contain them in an extradimensional reservoir in your stomach. The spell allows you to swallow most liquids, such as acids, alcohol, poison, and even quicksilver, and hold them safely in your stomach. You are unaffected by swallowing the substance, but the spell doesn’t give you resistance or immunity to the substance in general; for example, you could safely drink a bucket of a black dragon’s acidic spittle, but you’d still be burned if you were caught in the dragon’s breath attack or if that bucket of acid were dumped over your head. </p>
+			<p class="indent">The spell allows you to store up to 10 gallons of liquid at one time. The liquid doesn’t need to all be of the same type, and different types don’t mix while in your stomach. Any liquid in excess of 10 gallons has its normal effect when you try to swallow it. </p>
+			<p class="indent">At any time before you stop concentrating on the spell, you can regurgitate up to 1 gallon of liquid stored in your stomach as a bonus action. The liquid is vomited into an adjacent 5-foot square. A target in that square must succeed on a DC 15 Dexterity saving throw or be affected by the liquid. The GM determines the exact effect based on the type of liquid regurgitated, using 1d6 damage of the appropriate type as the baseline. </p>
+			<p class="indent">When you stop concentrating on the spell, its duration expires, or it’s dispelled, the extradimensional reservoir and the liquid it contains cease to exist. </p>
+		</description>
+		<setters>
+			<set name="keywords">alkemancy</set>
+			<set name="level">1</set>
+			<set name="school" addition="alkemancy">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- BRIMSTONE INFUSION --> 
+	<element name="Brimstone Infusion" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BRIMSTONE_INFUSION">
+		<supports>Artificer,Wizard</supports>
+		<description>
+			<p>You infuse an ordinary flask of alchemist’s fire with magical brimstone. While so enchanted, the alchemist’s fire can be thrown 40 feet instead of 20, and it does 2d6 fire damage instead of 1d4. The Dexterity saving throw to extinguish the flames uses your spell save DC instead of DC 10. Infused alchemist’s fire returns to its normal properties after 24 hours.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">24 hours</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a flask of alchemist's fire and 5 gp worth of brimstone</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- CAUSTIC TORRENT --> 	
+	<element name="Caustic Torrent" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CAUSTIC_TORRENT">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>A swirling jet of acid sprays from you in a direction you choose. The acid fills a line 60 feet long and 5 feet wide. Each creature in the line takes 14d6 acid damage, or half as much damage if it makes a successful Dexterity saving throw. A creature reduced to 0 hit points by this spell is killed, and its body is liquefied. In addition, each creature other than you that’s in the line or within 5 feet of it is poisoned for 1 minute by toxic fumes. Creatures that don’t breathe or that are immune to acid damage aren’t poisoned. A poisoned creature can repeat the Constitution saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+		</description>
+		<setters>
+			<set name="keywords">alkemancy</set>
+			<set name="level">8</set>
+			<set name="school" addition="alkemancy">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (60 ft line)</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a chip of bone pitted by acid</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>	
+	
 <!-- CHRONAL LANCE --> 	
 	<element name="Chronal Lance" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CHRONAL_LANCE">
 		<supports>Sorcerer,Wizard</supports>
@@ -295,6 +466,29 @@
 		</setters>
 	</element>
 
+<!-- DELAY POTION --> 	
+	<element name="Delay Potion" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_DELAY_POTION">
+		<supports>Artificer,Wizard</supports>
+		<description>
+			<p>Upon casting this spell, you delay the next potion you consume from taking effect for up to 1 hour. You must consume the potion within 1 round of casting delay potion; otherwise the spell has no effect. At any point during delay potion’s duration, you can use a bonus action to cause the potion to go into effect. When the potion is activated, it works as if you had just drunk it. While the potion is delayed, it has no effect at all and you can consume and benefit from other potions normally. </p>
+			<p class="indent">You can delay only one potion at a time. If you try to delay the effect of a second potion, the spell fails, the first potion has no effect, and the second potion has its normal effect when you drink it.</p>
+		</description>
+		<setters>
+			<set name="keywords">alkemancy</set>
+			<set name="level">2</set>
+			<set name="school" addition="alkemancy">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>	
+	
 <!-- FLICKERING FATE --> 	
 	<element name="Flickering Fate" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_FLICKERING_FATE">
 		<supports>Wizard</supports>
@@ -338,7 +532,99 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
+	
+<!-- GLUEY GLOBULE  -->	
+	<element name="Gluey Globule" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_GLUEY_GLOBULE">
+		<supports>Artificer,Wizard</supports>
+		<description>
+			<p>You make a ranged spell attack to hurl a large globule of sticky, magical glue at a creature within 120 feet. If the attack hits, the target creature is restrained. A restrained creature can break free by using an action to make a successful Strength saving throw. When the creature breaks free, it takes 2d6 slashing damage from the glue tearing its skin. If your ranged spell attack roll was a critical hit or exceeded the target’s AC by 5 or more, the Strength saving throw is made with disadvantage. The target can also be freed by an application of universal solvent or by taking 20 acid damage. The glue dissolves when the creature breaks free or at the end of 1 minute. </p>
+			<p class="indent">Alternatively, gluey globule can also be used to glue an object to a solid surface or to another object. In this case, the spell works like a single application of sovereign glue and lasts for 1 hour.</p>
+		</description>
+		<setters>
+			<set name="keywords">alkemancy</set>
+			<set name="level">3</set>
+			<set name="school" addition="alkemancy">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">120 ft.</set>
+			<set name="duration">1 minute or 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a drop of glue</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
+<!-- LIFE HACK --> 
+	<element name="Life Hack" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_LIFE_HACK">
+		<supports>Wizard</supports>
+		<description>
+			<p>Choose up to five creatures that you can see within range. Each of the creatures gains access to a pool of temporary hit points that it can draw upon over the spell’s duration or until the pool is used up. The pool contains 120 temporary hit points. The number of temporary hit points each individual creature can draw is determined by dividing 120 by the number of creatures with access to the pool. Hit points are drawn as a bonus action by the creature gaining the temporary hit points. Any number can be drawn at once, up to the maximum allowed. </p>
+			<p class="indent">A creature can’t draw temporary hit points from the pool while it has temporary hit points from any source, including a previous casting of this spell. </p>
+		</description>
+		<setters>
+			<set name="keywords">alkemancy</set>
+			<set name="level">8</set>
+			<set name="school" addition="alkemancy">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a ruby worth 500 gp, which is consumed during the casting</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- MEPHITIC CROAK --> 	
+	<element name="Mephitic Croak" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_MEPHITIC_CROAK">
+		<supports>Wizard</supports>
+		<description>
+			<p>You release an intensely loud burp of acidic gas in a 15-foot cone. Creatures in the area take 2d6 acid damage plus 2d6 thunder damage, or half as much damage with a successful Dexterity saving throw. A creature whose Dexterity saving throw fails must also make a successful Constitution saving throw or be stunned and poisoned until the start of your next turn. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, both acid and thunder damage increase by 1d6 for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">alkemancy</set>
+			<set name="level">2</set>
+			<set name="school" addition="alkemancy">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (15-ft cone)</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a dead toad and a dram of arsenic worth 10 gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+<!-- QUICK TIME --> 	
+	<element name="Quick Time" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_QUICK_TIME">
+		<supports>Druid</supports>
+		<description>
+			<p>You make one living creature or plant within range move rapidly in time compared to you. The target becomes one year older. For example, you could cast this spell on a seedling, which causes the plant to sprout from the soil, or you could cast this spell on a newly hatched duckling, causing it to become a full-grown duck. If the target is a creature with an Intelligence of 3 or higher, it must succeed on a Constitution saving throw to resist the aging. It can choose to fail the saving throw. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, you increase the target’s age by one additional year for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporal</set>
+			<set name="level">4</set>
+			<set name="school" addition="temporal">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">any seed</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
 <!-- QUICKEN --> 	
 	<element name="Quicken" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_QUICKEN_">
 		<supports>Bard,Cleric,Sorcerer,Wizard</supports>
@@ -361,24 +647,23 @@
 		</setters>
 	</element>
 
-<!-- QUICK TIME --> 	
-	<element name="Quick Time" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_QUICK_TIME">
-		<supports>Druid</supports>
+<!-- QUICKSILVER MANTLE -->	
+	<element name="Quicksilver Mantle" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_QUICKSILVER_MANTLE">
+		<supports>Artificer,Wizard</supports>
 		<description>
-			<p>You make one living creature or plant within range move rapidly in time compared to you. The target becomes one year older. For example, you could cast this spell on a seedling, which causes the plant to sprout from the soil, or you could cast this spell on a newly hatched duckling, causing it to become a full-grown duck. If the target is a creature with an Intelligence of 3 or higher, it must succeed on a Constitution saving throw to resist the aging. It can choose to fail the saving throw. </p>
-			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, you increase the target’s age by one additional year for each slot level above 4th.</p>
+			<p>You transform an ordinary cloak into a highly reflective, silvery garment. This mantle increases your AC by 2 and grants advantage on saving throws against gaze attacks. In addition, whenever you are struck by a ray such as a ray of enfeeblement, scorching ray, or even disintegrate, roll 1d4. On a result of 4, the cloak deflects the ray, which instead strikes a randomly selected target within 10 feet of you. The cloak deflects only the first ray that strikes it each round; rays after the first affect you as normal.</p>
 		</description>
 		<setters>
-			<set name="keywords">temporal</set>
+			<set name="keywords">alkemancy</set>
 			<set name="level">4</set>
-			<set name="school" addition="temporal">Conjuration</set>
+			<set name="school" addition="alkemancy">Transmutation</set>
 			<set name="time">1 action</set>
-			<set name="range">30 ft</set>
-			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="duration">1 hour</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">true</set>
-			<set name="materialComponent">any seed</set>
+			<set name="materialComponent">a nonmagical cloak and a dram of quicksilver worth 10 gp</set>
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
@@ -405,34 +690,50 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-
-<!-- ALCHEMICAL FORM --> 
-	<element name="Alchemical Form" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ALCHEMICAL_FORM">
+	
+<!-- RAY OF ALCHEMICAL NEGATION -->	
+	<element name="Ray of Alchemical Negation" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_RAY_OF_ALCHEMICAL_NEGATION">
 		<supports>Wizard</supports>
 		<description>
-			<p>You transform into an amoebic form composed of highly acidic and poisonous alchemical jelly. While in this form: </p>
-			<p class="indent">-you are immune to acid and poison damage and to the poisoned and stunned conditions; </p>
-			<p class="indent">-you have resistance to nonmagical fire, piercing, and slashing damage; </p>
-			<p class="indent">-you can’t speak, cast spells, use items or weapons, or manipulate objects; </p>
-			<p class="indent">-your gear melds into your body and reappears when the spell ends; </p>
-			<p class="indent">-you don't need to breathe; </p>
-			<p class="indent">-your speed is 20 feet; </p>
-			<p class="indent">-your size doesn’t change, but you can move through and between obstructions as if you were two size categories smaller; and </p>
-			<p class="indent">-you gain the following action: Melee Weapon Attack: spellcasting ability modifier + proficiency bonus to hit, range 5 ft., one target; Hit: 4d6 acid or poison damage (your choice), and the target must make a successful Constitution saving throw or be poisoned until the start of your next turn.</p>
+			<p>You launch a ray of blazing, polychromatic energy from your fingertips. Make a ranged spell attack against an alchemical item or a trap that uses alchemy to achieve its ends, such as a trap that sprays acid, releases poisonous gas, or triggers an explosion of alchemist’s fire. A hit destroys the alchemical reagents, rendering them harmless. The attack is made against the most suitable object Armor Class. </p>
+			<p class="indent">This spell can also be used against a creature within range that is wholly or partially composed of acidic, poisonous, or alchemical components, such as an alchemical golem or an ochre jelly. In that case, a hit deals 6d6 force damage, and the target must make a successful Constitution saving throw or it deals only half as much damage with its acidic, poisonous, or alchemical attacks for 1 minute. A creature whose damage is halved can repeat the saving throw at the end of each of its turns, ending the effect on a success.</p>
 		</description>
 		<setters>
 			<set name="keywords">alkemancy</set>
-			<set name="level">6</set>
+			<set name="level">4</set>
 			<set name="school" addition="alkemancy">Transmutation</set>
 			<set name="time">1 action</set>
-			<set name="range">Self</set>
-			<set name="duration">1 minute</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Instantaneous</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
-			<set name="hasMaterialComponent">true</set>
-			<set name="materialComponent">a vial of acid, poison, or alchemist's fire</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-</elements>
+	
+<!-- SALT LASH  -->	
+	<element name="Salt Lash" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SALT_LASH">
+		<supports>Wizard</supports>
+		<description>
+			<p>You create a long, thin blade of razor-sharp salt crystals. You can wield it as a longsword, using your spellcasting ability to modify your weapon attack rolls. The sword deals 2d8 slashing damage on a hit, and any creature struck by the blade must make a successful Constitution saving throw or be stunned by searing pain until the start of your next turn. Constructs and undead are immune to the blade’s secondary (stun) effect; plants and creatures composed mostly of water, such as water elementals, also take an additional 2d8 necrotic damage if they fail the saving throw. </p>
+			<p class="indent">The spell lasts until you stop concentrating on it, the duration expires, or you let go of the blade for any reason.</p>
+		</description>
+		<setters>
+			<set name="keywords">alkemancy</set>
+			<set name="level">3</set>
+			<set name="school" addition="alkemancy">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pinch of salt worth 1 sp, which is consumed during the casting</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
