@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic - Spells</name>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells.xml" />
         </update>
     </info>
@@ -195,6 +195,29 @@
 		</setters>
 	</element>
 
+<!-- ANGELIC GUARDIAN --> 
+	<element name="Angelic Guardian" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ANGELIC_GUARDIAN">
+		<supports>Cleric,Paladin,Wizard</supports>
+		<description>
+			<p>You conjure a minor celestial manifestation to protect a creature you can see within range. A faintly glowing image resembling a human head and shoulders hovers within 5 feet of the target for the duration. The manifestation moves to interpose itself between the target and any incoming attacks, granting the target a +2 bonus to AC. </p>
+			<p class="indent">Also, the first time the target gets a failure on a Dexterity saving throw while the spell is active, it can use its reaction to reroll the save. The spell then ends.</p>
+		</description>
+		<setters>
+			<set name="keywords">angelic</set>
+			<set name="level">1</set>
+			<set name="school" addition="angelic">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+		
 <!-- ANTICIPATE ARCANA  -->
 	<element name="Anticipate Arcana" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ANTICIPATE_ARCANA">
 		<supports>Cleric,Paladin,Sorcerer,Warlock,Wizard</supports>
@@ -279,6 +302,102 @@
 		</setters>
 	</element>
 
+<!-- BENEDICTION --> 
+	<element name="Benediction" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BENEDICTION">
+		<supports>Wizard</supports>
+		<description>
+			<p>You call down a blessing in the name of an angel of protection. A creature you can see within range shimmers with a faint white light. The next time the creature takes damage, it rolls a d4 and reduces the damage by the result. The spell then ends.</p>
+		</description>
+		<setters>
+			<set name="keywords">angelic</set>
+			<set name="level">0</set>
+			<set name="school" addition="angelic">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>	
+
+<!-- BLADE OF WRATH --> 	
+	<element name="Blade of Wrath" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLADE_OF_WRATH">
+		<supports>Cleric,Paladin,Wizard</supports>
+		<description>
+			<p>You create a sword of pure white fire in your free hand. The blade is similar in size and shape to a longsword, and it lasts for the duration. The blade disappears if you let go of it, but you can call it forth again as a bonus action. </p>
+			<p class="indent">You can use your action to make a melee spell attack with the blade. On a hit, the target takes 2d8 fire damage and 2d8 radiant damage. An aberration, fey, fiend, or undead creature damaged by the blade must succeed on a Wisdom saving throw or be frightened until the start of your next turn. </p>
+			<p class="indent">The blade sheds bright light in a 20-foot radius and dim light for an additional 20 feet. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, either the fire damage or the radiant damage (your choice) increases by 1d8 for each slot level above 3rd. </p>
+		</description>
+		<setters>
+			<set name="keywords">angelic</set>
+			<set name="level">3</set>
+			<set name="school" addition="angelic">Evocation</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a rebuke of evil, written in Celestial</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+<!-- BLAZING CHARIOT  -->
+	<element name="Blazing Chariot" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLAZING_CHARIOT">
+		<supports>Cleric,Paladin,Wizard</supports>
+		<description>
+			<p>Calling upon the might of the angels, you conjure a flaming chariot made of gold and mithral in an unoccupied 10-foot square space you can see within range. Two horses made of fire and light pull the chariot. You and up to three other Medium or smaller creatures you designate can board the chariot (at the cost of 5 feet of movement) and are unharmed by the flames. Any other creature that touches the chariot or hits it (or a creature riding in it) with a melee attack while within 5 feet of the chariot takes 3d6 fire damage and 3d6 radiant damage. The chariot has AC 18 and 50 hit points, is immune to fire, poison, psychic, and radiant damage, and has resistance to all other nonmagical damage. The horses are not separate creatures but are part of the chariot. The chariot vanishes if it is reduced to 0 hit points, and any creature riding it falls out. The chariot has a speed of 50 feet and a flying speed of 40 feet. </p>
+			<p class="indent">On your turn, you can guide the chariot in place of your own movement. You can use a bonus action to direct it to take the Dash, Disengage, or Dodge action. As an action, you can use the chariot to overrun creatures in its path. On this turn, the chariot can enter a hostile creature’s space. The creature takes damage as if it had touched the chariot, is shunted to the nearest unoccupied space that it can occupy, and must make a successful Strength saving throw or fall prone in that space. </p>
+		</description>
+		<setters>
+			<set name="keywords">angelic</set>
+			<set name="level">5</set>
+			<set name="school" additon="angelic">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft</set>
+			<set name="duration">1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a small golden wheel worth 250 gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>	
+
+<!-- BLESSED HALO  -->
+	<element name="Blessed Halo" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLESSED_HALO">
+		<supports>Cleric,Paladin,Wizard</supports>
+		<description>
+			<p>A nimbus of golden light surrounds your head for the duration. The halo sheds bright light in a 20-foot radius and dim light for an additional 20 feet. </p>
+			<p class="indent">This spell grants you a pool of 10 points of healing. When you cast the spell and as an action on subsequent turns during the spell’s duration, you can expend points from this pool to restore an equal number of hit points to one creature within 20 feet that you can see. </p>
+			<p class="indent">Additionally, you have advantage on Charisma checks made against good creatures within 20 feet. </p>
+			<p class="indent">If any of the light created by this spell overlaps an area of magical darkness created by a spell of 2nd level or lower, the spell that created the darkness is dispelled. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the spell’s pool of healing points increases by 5 for each spell slot above 2nd, and the spell dispels magical darkness created by a spell of a level equal to the slot used to cast this spell.</p>
+		</description>
+		<setters>
+			<set name="keywords">angelic</set>
+			<set name="level">2</set>
+			<set name="school" addition="angelic">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>	
+	
 <!-- BLOOD TO ACID --> 	
 	<element name="Blood to Acid" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLOOD_TO_ACID">
 		<supports>Wizard</supports>
@@ -417,7 +536,31 @@
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
-	</element>	
+	</element>
+	
+<!-- CELESTIAL FANFARE --> 	
+	<element name="Celestial Fanfare" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CELESTIAL_FANFARE">
+		<supports>Cleric,Wizard</supports>
+		<description>
+			<p>A great blaring of trumpets from on high blasts down upon an area you designate. All evil creatures in a 30-foot radius take 4d6 thunder damage and 4d6 radiant damage and are blinded and deafened for 2d4 rounds. A successful Constitution saving throw reduces the damage and the duration of the blinded and deafened conditions by half. </p>
+			<p class="indent">Neutral or unaligned creatures within the area take half as much damage and are blinded and deafened for 1d4 rounds. A successful save reduces the damage to one quarter and negates the blinding and deafening effects. </p>
+			<p class="indent">Good-aligned creatures are not harmed by this spell.</p>
+		</description>
+		<setters>
+			<set name="keywords">angelic</set>
+			<set name="level">6</set>
+			<set name="school" addition="angelic">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">100 ft</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">miniature trumpet worth 100 gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 	
 <!-- CHRONAL LANCE --> 	
 	<element name="Chronal Lance" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CHRONAL_LANCE">
@@ -485,6 +628,29 @@
 			<set name="materialComponent">component</set>
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
+		</setters>
+	</element>	
+
+<!-- DEVA’S WINGS --> 	
+	<element name="Deva's Wings" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_DEVAS_WINGS">
+		<supports>Cleric,Paladin,Wizard</supports>
+		<description>
+			<p>You touch a willing creature. The target grows feathery wings of pure white that grant it a flying speed of 60 feet and the ability to hover. When the target takes the Attack action, it can use a bonus action to make a melee weapon attack with the wings, with a reach of 10 feet. If the wing attack hits, the target takes bludgeoning damage equal to 1d6 + your spellcasting ability modifier and must make a successful Strength saving throw or fall prone. When the spell ends, the wings disappear, and the target falls if it was aloft. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, you can target one additional target for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords">angelic</set>
+			<set name="level">4</set>
+			<set name="school" addition="angelic">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a wing feather from any bird</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">true</set>
 		</setters>
 	</element>	
 	
@@ -555,6 +721,31 @@
 		</setters>
 	</element>
 
+<!-- GREATER SEAL OF SANCTUARY --> 
+	<element name="Greater Seal of Sanctuary" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_GREATER_SEAL_OF_SANCTUARY">
+		<supports>Cleric,Wizard</supports>
+		<description>
+			<p>You inscribe an angelic seal on the ground, the floor, or other solid surface of a structure. The seal creates a spherical sanctuary with a radius of 100 feet, centered on the seal. For the duration, aberrations, elementals, fey, fiends, and undead that approach to within 5 feet of the boundary know they are about to come into contact with a deadly barrier. If such a creature moves so as to touch the boundary, or tries to cross the boundary by any means, including teleportation and extradimensional travel, it must make a Charisma saving throw. On a failed save, it takes 15d8 radiant damage, is repelled to 5 feet outside the boundary, and can’t target anything inside the boundary with attacks, spells, or abilities until the spell ends. On a successful save, the creature takes half as much radiant damage and can cross the boundary. If the creature is a fiend that isn’t on its home plane, it is immediately destroyed (no saving throw) instead of taking damage. </p>
+			<p class="indent">Aberrations, elementals, fey, and undead that are within 100 feet of the seal (inside the boundary) have disadvantage on ability checks, attack rolls, and saving throws, and each such creature takes 4d8 radiant damage at the start of its turn. </p>
+			<p class="indent">Creatures other than aberrations, elementals, fey, fiends, and undead can’t be charmed or frightened while within 100 feet of the seal.</p>
+			<p class="indent">The seal has AC 18, 75 hit points, resistance to bludgeoning, piercing, and slashing damage, and immunity to psychic and poison damage. Ranged attacks against the seal are made with disadvantage. If it is scribed on the surface of an object that is later destroyed (such as a wooden door), the seal is not damaged and remains in place, perhaps suspended in midair. The spell ends only if the seal itself is reduced to 0 hit points.</p>
+		</description>
+		<setters>
+			<set name="keywords">angelic,ritual</set>
+			<set name="level">9</set>
+			<set name="school" addition="angelic">Abjuration</set>
+			<set name="time">1 minute</set>
+			<set name="range">Touch</set>
+			<set name="duration">24 hours</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">incense and special inks worth 500 gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>	
+	
 <!-- LIFE HACK --> 
 	<element name="Life Hack" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_LIFE_HACK">
 		<supports>Wizard</supports>
@@ -668,6 +859,29 @@
 		</setters>
 	</element>
 
+<!-- QUINTESSENCE -->	
+	<element name="Quintessence" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_QUINTESSENCE">
+		<supports>Cleric,Wizard</supports>
+		<description>
+			<p>By calling upon an archangel, you become infused with celestial essence and take on angelic features such as golden skin, glowing eyes, and ethereal wings. For the duration of the spell, your Armor Class can’t be lower than 20, you can’t be frightened, and you are immune to necrotic damage. </p>
+			<p class="indent">In addition, each hostile creature that starts its turn within 120 feet of you or enters that area for the first time on a turn must succeed on a Wisdom saving throw or be frightened for 1 minute. A creature frightened in this way is restrained. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or if the effect ends for it, the creature is immune to the frightening effect of the spell until you cast quintessence again.</p>
+		</description>
+		<setters>
+			<set name="keywords">angelic</set>
+			<set name="level">8</set>
+			<set name="school" addition="angelic">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (120 ft. radius)</set>
+			<set name="duration"> Concentration up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>	
+	
 <!-- RAVAGES OF TIME --> 
 	<element name="Ravages of Time" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_RAVAGES_OF_TIME">
 		<supports>Cleric,Sorcerer,Wizard</supports>
@@ -736,4 +950,29 @@
 		</setters>
 	</element>
 
+<!-- SEAL OF SANCTUARY --> 
+	<element name="Seal of Sanctuary" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SEAL_OF_SANCTUARY">
+		<supports>Cleric,Wizard</supports>
+		<description>
+			<p>You inscribe an angelic seal on the ground, the floor, or other solid surface of a structure. The seal creates a spherical sanctuary with a radius of 50 feet, centered on the seal. For the duration, aberrations, elementals, fey, fiends, and undead that approach to within 5 feet of the boundary know they are about to come into contact with a deadly barrier. If such a creature moves so as to touch the boundary, or tries to cross the boundary by any means, including teleportation and extradimensional travel, it must make a Charisma saving throw. On a failed save, it takes 10d8 radiant damage, is repelled to 5 feet outside the boundary, and can’t target anything inside the boundary with attacks, spells, or abilities until the spell ends. On a successful save, the creature takes half as much radiant damage and can cross the boundary. If the creature is a fiend that isn’t on its home plane, it is immediately destroyed (no saving throw) instead of taking damage. </p>
+			<p class="indent">Aberrations, elementals, fey, and undead that are within 50 feet of the seal (inside the boundary) have disadvantage on ability checks, attack rolls, and saving throws, and each such creature takes 2d8 radiant damage at the start of its turn. </p>
+			<p class="indent">Creatures other than aberrations, elementals, fey, fiends, and undead can’t be charmed or frightened while within 50 feet of the seal. </p>
+			<p class="indent">The seal has AC 18, 50 hit points, resistance to bludgeoning, piercing, and slashing damage, and immunity to psychic and poison damage. Ranged attacks against the seal are made with disadvantage. If it is scribed on the surface of an object that is later destroyed (such as a wooden door), the seal is not damaged and remains in place, perhaps suspended in midair. The spell ends only if the seal is reduced to 0 hit points.</p>
+		</description>
+		<setters>
+			<set name="keywords">angelic,ritual</set>
+			<set name="level">7</set>
+			<set name="school" addition="angelic">Abjuration</set>
+			<set name="time">1 minute</set>
+			<set name="range">Touch</set>
+			<set name="duration">24 hrs</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">incense and special inks worth 250 gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>	
+	
 </elements>
