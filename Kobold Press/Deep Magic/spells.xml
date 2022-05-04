@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic - Spells</name>
-        <update version="0.0.4">
+        <update version="0.0.5">
             <file name="spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells.xml" />
         </update>
     </info>
@@ -927,6 +927,51 @@
 		</setters>
 	</element>
 	
+<!-- RESET --> 
+	<element name="Reset" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_RESET">
+		<supports>Bard,Cleric,Druid,Paladin,Wizard</supports>
+		<description>
+			<p>Choose up to four creatures within range. If a target is your ally, it can reroll initiative, keeping whichever of the two results it prefers. If a target is your enemy, it must make a successful Wisdom saving throw or reroll initiative, keeping whichever of the two results you prefer. Changes to the initiative order go into effect at the start of the next round. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, you can affect one additional creature for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporal,clockwork</set>
+			<set name="level">4</set>
+			<set name="school" addition="temporal, clockwork">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- RIGHT THE STARS  -->
+	<element name="Right the Stars" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_RIGHT_THE_STARS">
+		<supports>Wizard</supports>
+		<description>
+			<p>You subtly warp the flow of space and time to enhance your conjurations with cosmic potency. Until the spell ends, the maximum duration of any conjuration spell you cast that requires concentration is doubled, any creature that you summon or create with a conjuration spell has 30 temporary hit points, and you have advantage on Charisma checks and Charisma saving throws.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporal,ritual</set>
+			<set name="level">7</set>
+			<set name="school" addition="temporal">Divination</set>
+			<set name="time">10 minutes</set>
+			<set name="range">Self</set>
+			<set name="duration">1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">seven black candles and a circle of powdered charred bone or basalt</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>	
+	
 <!-- SALT LASH  -->	
 	<element name="Salt Lash" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SALT_LASH">
 		<supports>Wizard</supports>
@@ -950,6 +995,29 @@
 		</setters>
 	</element>
 
+<!-- SCRY AMBUSH  -->
+	<element name="Scry Ambush" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SCRY_AMBUSH">
+		<supports>Bard,Cleric,Druid,Ranger,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You foresee your foe’s strike a split second before it occurs. When you cast this spell successfully, you also designate a number of your allies that can see or hear you equal to your spellcasting ability modifier + your proficiency bonus. Those allies are also not surprised by the attack and can act normally in the first round of combat. </p>
+			<p class="indent">If you would be surprised, you must make a check using your spellcasting ability at the moment your reaction would be triggered. The check DC is equal to the current initiative count. On a failed check, you are surprised and can’t use your reaction to cast this spell until after your next turn. On a successful check, you can use your reaction to cast this spell immediately.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporal</set>
+			<set name="level">4</set>
+			<set name="school" addition="temporal">Divination</set>
+			<set name="time">1 reaction, which you take when an enemy tries to make a surprise attack against you</set>
+			<set name="range">Self</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>	
+	
 <!-- SEAL OF SANCTUARY --> 
 	<element name="Seal of Sanctuary" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SEAL_OF_SANCTUARY">
 		<supports>Cleric,Wizard</supports>
@@ -972,6 +1040,224 @@
 			<set name="materialComponent">incense and special inks worth 250 gp, which the spell consumes</set>
 			<set name="isConcentration">false</set>
 			<set name="isRitual">true</set>
+		</setters>
+	</element>	
+
+<!-- SEER’S REACTION  -->
+	<element name="Seer's Reaction" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SEERS_REACTION">
+		<supports>Bard,Cleric,Druid,Ranger,Sorcerer,Wizard</supports>
+		<description>
+			<p>Your foreknowledge allows you to act before others, because you knew what was going to happen. When you cast this spell, make a new initiative roll with a +5 bonus. If the result is higher than your current initiative, your place in the initiative order changes accordingly. If the result is also higher than the current place in the initiative order, you take your next turn immediately and then use the higher number starting in the next round.</p>
+			<p class="indent">Your foreknowledge allows you to act before others, because you knew what was going to happen. When you cast this spell, make a new initiative roll with a +5 bonus. If the result is higher than your current initiative, your place in the initiative order changes accordingly. If the result is also higher than the current place in the initiative order, you take your next turn immediately and then use the higher number starting in the next round.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporal</set>
+			<set name="level">1</set>
+			<set name="school" addition="temporal">Divination</set>
+			<set name="time">1 reaction, which you take at the start of another creature's turn</set>
+			<set name="range">Self</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- TIME IN A BOTTLE  -->
+	<element name="Time in a Bottle" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_TIME_IN_A_BOTTLE">
+		<supports>Bard,Cleric,Sorcerer,Wizard</supports>
+		<description>
+			<p>You designate a spot within your sight. Time comes under your control in a 20-foot radius centered on that spot. You can freeze it, reverse it, or move it forward by as much as 1 minute as long as you maintain concentration. Nothing and no one, yourself included, can enter the field or affect what happens inside it. You can choose to end the effect at any moment as an action on your turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporal,clockwork</set>
+			<set name="level">9</set>
+			<set name="school" addition="temporal, clockwork">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Sight</set>
+			<set name="duration">Concentration up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- TIME JAUNT  -->		
+	<element name="Time Jaunt" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_TIME_JAUNT">
+		<supports>Bard,Cleric</supports>
+		<description>
+			<p>When you cast this spell, you step outside the normal time stream, seeming to vanish as 1 round of time passes. You can make minor alterations to the scene being played out, becoming visible for an instant each time you make an adjustment that aids an ally or hinders foes. To everyone else, you disappear when the spell is cast, then flicker into and out of view during the next round, before reappearing for good in the space you vanished from 1 round later, whereupon the spell ends. You cannot be attacked by any means while under the effect of this spell.</p>
+			<p class="indent">As the round progresses, you can choose to bestow a single effect on each creature involved in the combat, choosing from the list below. You cannot take any other actions during the round. </p>
+			<p class="indent">-Give a creature advantage or disadvantage on a saving throw it is about to make. </p>
+			<p class="indent">-Give a creature advantage or disadvantage on an attack roll it is about to make. </p>
+			<p class="indent">-Alter the location of a mobile object to provide or remove cover for a creature. </p>
+			<p class="indent">-Shift objects into the path of a creature; the first 10 feet of terrain it must travel becomes difficult terrain. </p>
+			<p class="indent">-After an attack roll is determined to be successful, adjust the angle of the strike or the positioning of the target, either causing the strike to deal half as much damage or providing a bonus to damage equal to half your level.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporal</set>
+			<set name="level">7</set>
+			<set name="school" addition="temporal">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Special</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- TIME JUMP  -->
+	<element name="Time Jump" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_TIME_JUMP">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>You touch a construct and throw it forward in time if it fails a Constitution saving throw. The construct disappears for 1d4 + 1 rounds, during which time it cannot act or be acted upon in any way. When the construct returns, it is unaware that any time has passed.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporal, clockwork</set>
+			<set name="level">8</set>
+			<set name="school" addition="temporal, clockwork">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- TIME LOOP  -->
+	<element name="Time Loop" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_TIME_LOOP">
+		<supports>Bard,Cleric,Druid,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You capture a creature within range in a loop of time. The target is teleported to the space where it began its most recent turn. The target then makes a Wisdom saving throw. On a successful save, the spell ends. On a failed save, the creature must repeat the activities it undertook on its previous turn, following the sequence of moves and actions to the best of its ability. It doesn’t need to move along the same path or attack the same target, but if it moved and then attacked on its previous turn, its only option is to move and then attack on this turn. If the space where the target began its previous turn is occupied or if it’s impossible for the target to take the same action (if it cast a spell but is now unable to do so, for example), the target becomes incapacitated. </p>
+			<p class="indent">An affected target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. For as long as the spell lasts, the target teleports back to its starting point at the start of each of its turns, and it must repeat the same sequence of moves and actions.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporal</set>
+			<set name="level">6</set>
+			<set name="school" addition="temporal">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft</set>
+			<set name="duration">Concentration up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a metal loop</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- TIME SLIPPAGE --> 
+	<element name="Time Slippage" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_TIME_SLIPPAGE">
+		<supports>Warlock,Wizard</supports>
+		<description>
+			<p>You ensnare a creature within range in an insidious trap, causing different parts of its body to function at different speeds. The creature must make an Intelligence saving throw. On a failed save, it is stunned until the end of its next turn. On a success, the creature’s speed is halved and it has disadvantage on attack rolls and saving throws until the end of its next turn. The creature repeats the saving throw at the end of each of its turns, with the same effects for success and failure. In addition, the creature has disadvantage on Strength or Dexterity saving throws but advantage on Constitution or Charisma saving throws for the spell’s duration (a side effect of the chronal anomaly suffusing its body). The spell ends if the creature makes three successful saves in a row.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporal,clockwork</set>
+			<set name="level">8</set>
+			<set name="school" addition="temporal, clockwork">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft</set>
+			<set name="duration">Concentration up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">the heart of a chaotic creature CR5 or higher, worth 500 gp</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- TIME STEP  -->
+	<element name="Time Step" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_TIME_STEP">
+		<supports>Bard,Cleric,Ranger,Warlock,Wizard</supports>
+		<description>
+			<p>You briefly step forward in time. You disappear from your location and reappear at the start of your next turn in a location of your choice that you can see within 30 feet of the space you disappeared from. You can’t be affected by anything that happens during the time you’re missing, and you aren’t aware of anything that happens during that time.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporal</set>
+			<set name="level">2</set>
+			<set name="school" addition="temporal">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- TIME VORTEX  -->
+	<element name="Time Vortex" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_TIME_VORTEX">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>This spell destabilizes the flow of time, enabling you to create a vortex of temporal fluctuations that are visible as a spherical distortion with a 10-foot radius, centered on a point within range. Each creature in the area when you cast the spell must succeed on a Wisdom saving throw or be affected by the time vortex. While the spell lasts, a creature that enters the sphere or starts its turn inside the sphere must also succeed on a Wisdom saving throw or be affected. On a succesful save, it becomes immune to this casting of the spell. </p>
+			<p class="indent">An affected creature can’t take reactions and rolls a d10 at the start of its turn to determine its behavior for that turn.</p>
+			<p class="indent">You can move the temporal vortex 10 feet each round as a bonus action. An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, the radius of the sphere increases by 5 feet for each slot level above 4th.</p>
+			<table>
+				<thead>
+					<tr><td>d10</td><td>Effect</td></tr>
+				</thead>
+				<tr><td>1-2</td><td>The creature is affected as if by a slow spell until the start of its next turn. </td></tr>
+				<tr><td>3-5</td><td>The creature is stunned until the start of its next turn. </td></tr>
+				<tr><td>6-8</td><td>The creature’s current initiative result is reduced by 5. The creature begins using this new initiative result in the next round. Multiple occurrences of this effect for the same creature are cumulative. </td></tr>
+				<tr><td>9-10</td><td>The creature’s speed is halved (round up to the nearest 5-foot increment) until the start of its next turn. </td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">temporal</set>
+			<set name="level">4</set>
+			<set name="school" addition="temporal">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">90 ft.</set>
+			<set name="duration">Concentration up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- WALL OF TIME  -->
+	<element name="Wall of Time" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_WALL_OF_TIME">
+		<supports>Cleric,Sorcerer,Wizard</supports>
+		<description>
+			<p>You create a wall of shimmering, transparent blocks on a solid surface within range. You can make a straight wall up to 60 feet long, 20 feet high, and 1 foot thick, or a cylindrical wall up to 20 feet high, 1 foot thick, and 20 feet in diameter. Nonmagical ranged attacks that cross the wall vanish into the time stream with no other effect. Ranged spell attacks and ranged weapon attacks made with magic weapons that pass through the wall are made with disadvantage. A creature that intentionally enters or passes through the wall is affected as if it had just failed its initial saving throw against a slow spell.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporal,clockwork</set>
+			<set name="level">5</set>
+			<set name="school" addition="temporal, clockwork">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="range"> 120 ft</set>
+			<set name="duration">Concentration up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an hourglass</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
 		</setters>
 	</element>	
 	
