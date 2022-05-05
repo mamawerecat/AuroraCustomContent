@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic - Spells</name>
-        <update version="0.0.6">
+        <update version="0.0.7">
             <file name="spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells.xml" />
         </update>
     </info>
@@ -292,6 +292,51 @@
 			<set name="school" addition="temporal">Enchantment</set>
 			<set name="time">1 reaction, which you take when an ally makes an attack roll, ability check, or saving throw</set>
 			<set name="range">30 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- BABBLE  -->
+	<element name="Babble" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BABBLE">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>This spell causes the speech of affected creatures to sound like nonsense. Each creature in a 30-foot-radius sphere centered on a point you choose within range must succeed on an Intelligence saving throw when you cast this spell or be affected by it. </p>
+			<p class="indent">An affected creature cannot communicate in any spoken language that it knows. When it speaks, the words come out as gibberish. Spells with verbal components cannot be cast. The spell does not affect telepathic communication, nonverbal communication, or sounds emitted by any creature that does not have a spoken language. As an action, a creature under the effect of this spell can attempt another Intelligence saving throw against the effect. On a successful save, the spell ends.</p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">5</set>
+			<set name="school" addition="chaos">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- BAD TIMING  -->
+	<element name="Bad Timing" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BAD_TIMING">
+		<supports></supports>
+		<description>
+			<p>You point toward a creature that you can see and twist strands of chaotic energy around its fate. If the target gets a failure on a Charisma saving throw, the next attack roll or ability check the creature attempts within 10 minutes is made with disadvantage.</p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">2</set>
+			<set name="school" addition="chaos">Divination</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
 			<set name="duration">Instantaneous</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">false</set>
@@ -632,6 +677,29 @@
 		</setters>
 	</element> 
 
+<!-- CALM OF THE STORM  -->
+	<element name="Calm of the Storm" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CALM_OF_THE_STORM">
+		<supports>Bard,Wizard</supports>
+		<description>
+			<p>While visualizing the world as you wish it was, you lay your hands upon a creature other than yourself and undo the effect of a chaos magic surge that affected the creature within the last minute. Reality reshapes itself as if the surge never happened, but only for that creature. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, the time since the chaos magic surge can be 1 minute longer for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">3</set>
+			<set name="school" addition="chaos">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an amethyst worth 250 gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
 <!-- CAUSTIC TORRENT --> 	
 	<element name="Caustic Torrent" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CAUSTIC_TORRENT">
 		<supports>Sorcerer,Warlock,Wizard</supports>
@@ -678,6 +746,87 @@
 		</setters>
 	</element>
 	
+<!-- CHAOTIC FORM  -->
+	<element name="Chaotic Form" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CHAOTIC_FORM">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>You cause the form of a willing creature to become malleable, dripping and flowing according to the target’s will as if the creature were a vaguely humanoid-shaped ooze. The creature is not affected by difficult terrain, it has advantage on Dexterity (Acrobatics) checks made to escape a grapple, and it suffers no penalties when squeezing through spaces one size smaller than itself. The target’s movement is halved while it is affected by chaotic form. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, the duration increases by 10 minutes for each slot level above 4th. </p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">4</set>
+			<set name="school" addition="chaos">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- CHAOTIC VITALITY  -->		
+	<element name="Chaotic Vitality" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CHAOTIC_VITALITY">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>Make a melee spell attack against a creature that has a number of Hit Dice no greater than your level and has at least 1 hit point. On a hit, you conjure pulsating waves of chaotic energy within the creature and yourself. After a brief moment that seems to last forever, your hit point total changes, as does the creature’s. Roll a d100 and increase or decrease the number rolled by any number up to your spellcasting level, then find the result on the Hit Point Flux table. Apply that result both to yourself and the target creature. Any hit points gained beyond a creature’s normal maximum are temporary hit points that last for 1 round per caster level. </p>
+			<p class="indent">For example, a 3rd-level spellcaster who currently has 17 of her maximum 30 hit points casts chaotic vitality on a creature with 54 hit points and rolls a 75 on the Hit Point Flux table. The two creatures have a combined total of 71 hit points. A result of 75 indicates that both creatures get 50 percent of the total, so the spellcaster and the target end up with 35 hit points each. In the spellcaster’s case, 5 of those hit points are temporary and will last for 3 rounds. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the maximum Hit Dice of the affected creature increases by 2 for each slot level above 2nd.</p>
+			<table>
+				<thead>
+					<tr><td>d100</td><td>HP</td></tr>
+				</thead>
+				<tr><td>01–09</td><td>0</td></tr>
+				<tr><td>10–39</td><td>1</td></tr>
+				<tr><td>40–69</td><td>25 percent of total</td></tr>
+				<tr><td>70–84</td><td>50 percent of total</td></tr>
+				<tr><td>85–94</td><td>75 percent of total</td></tr>
+				<tr><td>95–99</td><td>100 percent of total</td></tr>
+				<tr><td>100</td><td>200 percent of total, and both creatures gain the effect of a haste spell that lasts for 1 round per caster level</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">2</set>
+			<set name="school" addition="chaos">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- CHAOTIC WORLD  -->
+	<element name="Chaotic World" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CHAOTIC_WORLD">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>You throw a handful of colored cloth into the air while screaming a litany of disjointed phrases. A moment later, a 30-foot cube centered on a point within range fills with multicolored light, cacophonous sound, overpowering scents, and other confusing sensory information. The effect is dizzying and overwhelming. Each enemy within the cube must make a successful Intelligence saving throw or become blinded and deafened, and fall prone. An affected enemy cannot stand up or recover from the blindness or deafness while within the area, but all three conditions end immediately for a creature that leaves the spell’s area. </p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">6</set>
+			<set name="school" addition="chaos">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">seven irregular pieces of colored cloth that you throw into the air</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 <!-- CHRONAL LANCE --> 	
 	<element name="Chronal Lance" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CHRONAL_LANCE">
 		<supports>Sorcerer,Wizard</supports>
@@ -888,6 +1037,28 @@
 		</setters>
 	</element>	
 
+<!-- ELEMENTAL TWIST  -->
+	<element name="Elemental Twist" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ELEMENTAL _TWIST">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>During this spell’s duration, reality shifts around you whenever you cast a spell that deals acid, cold, fire, lightning, poison, or thunder damage. Assign each damage type a number and roll a d6 to determine the type of damage this casting of the spell deals. In addition, the spell’s damage increases by 1d6. All other properties or effects of the spell are unchanged. </p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">2</set>
+			<set name="school" addition="chaos">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a thin piece of copper twisted around itself</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 <!-- ENTOMB IN ICE  -->
 	<element name="Entomb in Ice" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ENTOMB_IN_ICE">
 		<supports>Sorcerer,Warlock,Wizard</supports>
@@ -910,6 +1081,28 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element> 
+
+<!-- ENTROPIC DAMAGE FIELD  -->
+	<element name="Entropic Damage Field" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ENTROPIC_DAMAGE_FIELD">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>By twisting a length of silver wire around your finger, you tie your fate to those around you. When you take damage, that damage is divided equally between you and all creatures in range who get a failure on a Charisma saving throw. Any leftover damage that can’t be divided equally is taken by you. Creatures that approach to within 60 feet of you after the spell was cast are also affected. A creature is allowed a new saving throw against this spell each time you take damage, and a successful save ends the spell’s effect on that creature.</p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">3</set>
+			<set name="school" addition="chaos">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a silver wire</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 <!-- EVERCOLD  -->
 	<element name="Evercold" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_EVERCOLD">
@@ -955,7 +1148,43 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
- 
+
+<!-- FLUCTUATING ALIGNMENT --> 		
+	<element name="Fluctating Alignment" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_FLUCTUATING_ALIGNMENT">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>You channel the force of chaos to taint your target’s mind. A target that gets a failure on a Wisdom saving throw must roll 1d20 and consult the Alignment Fluctuation table to find its new alignment, and it must roll again after every minute of the spell’s duration. The target’s alignment stops fluctuating and returns to normal when the spell ends. These changes do not make the affected creature friendly or hostile toward the caster, but they can cause creatures to behave in unpredictable ways.</p>
+			<table>
+				<thead>
+					<tr><td>d20</td><td>Alignment</td></tr>
+				</thead>
+				<tr><td>1–2</td><td>Chaotic good</td></tr>
+				<tr><td>3–4</td><td>Chaotic neutral</td></tr>
+				<tr><td>5–7</td><td>Chaotic evil</td></tr>
+				<tr><td>8–9</td><td>Neutral evil</td></tr>
+				<tr><td>10–11</td><td>Lawful evil</td></tr>
+				<tr><td>12–14</td><td>Lawful good</td></tr>
+				<tr><td>15–16</td><td>Lawful neutral</td></tr>
+				<tr><td>17–18</td><td>Neutral good</td></tr>
+				<tr><td>19–20</td><td>Neutral</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">4</set>
+			<set name="school" addition="chaos">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">120 ft.</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 <!-- FLURRY  -->
 	<element name="Flurry" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_FLURRY">
 		<supports>Cleric,Druid,Ranger,Warlock</supports>
@@ -1045,6 +1274,44 @@
 		</setters>
 	</element>
 	
+<!-- FRENZIED BOLT  -->
+	<element name="Frenzied Bolt" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_FRENZIED_BOLT">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>You direct a bolt of rainbow colors toward a creature of your choice within range. If the bolt hits, the target takes 3d8 damage, of a type determined by rolling on the Random Damage Type table. If your attack roll (not the adjusted result) was odd, the bolt leaps to a new target of your choice within range that has not already been targeted by frenzied bolt, requiring a new spell attack roll to hit. The bolt continues leaping to new targets until you roll an even number on your spell attack roll, miss a target, or run out of potential targets. You and your allies are legal targets for this spell, if you are particularly lucky—or unlucky. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, you create an additional bolt for each slot level above 2nd. Each potential target can be hit only once by each casting of the spell, not once per bolt. </p>
+			<table>
+				<thead>
+					<tr><td>d10</td><td>Damage Type</td></tr>
+				</thead>
+				<tr><td>1</td><td>Acid</td></tr>
+				<tr><td>2</td><td>Cold</td></tr>
+				<tr><td>3</td><td>Fire</td></tr>
+				<tr><td>4</td><td>Force</td></tr>
+				<tr><td>5</td><td>Lightning</td></tr>
+				<tr><td>6</td><td>Necrotic</td></tr>
+				<tr><td>7</td><td>Poison</td></tr>
+				<tr><td>8</td><td>Psychic</td></tr>
+				<tr><td>9</td><td>Radiant</td></tr>
+				<tr><td>10</td><td>Thunder</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">2</set>
+			<set name="school" addition="chaos">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">120 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 <!-- FROSTBITE  -->
 	<element name="Frostbite" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_FROSTBITE">
 		<supports>Sorcerer,Warlock,Wizard</supports>
@@ -1308,6 +1575,28 @@
 		</setters>
 	</element> 
 
+<!-- ILL-FATED WORD  -->
+	<element name="Ill-Fated Word" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ILL_FATED_WORD">
+		<supports>Bard,Sorcerer,Word</supports>
+		<description>
+			<p>You call out a distracting epithet to a creature, worsening its chance to succeed at whatever it’s doing. Roll a d4 and subtract the number rolled from an attack roll, ability check, or saving throw that the target has just made; the target uses the lowered result to determine the outcome of its roll. </p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">1</set>
+			<set name="school" addition="chaos">Divination</set>
+			<set name="time">1 reaction, which you take when an enemy makes an attack roll, ability check, or saving throw</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 <!-- LIFE HACK --> 
 	<element name="Life Hack" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_LIFE_HACK">
 		<supports>Wizard</supports>
@@ -1331,6 +1620,29 @@
 		</setters>
 	</element>
 
+<!-- MASS SURGE DAMPENER  -->
+	<element name="Mass Surge Dampener" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_MASS_SURGE_DAMPENER">
+		<supports>Bard,Wizard</supports>
+		<description>
+			<p>Using your strength of will, you protect up to three creatures other than yourself from the effect of a chaos magic surge. A protected creature can make a DC 13 Charisma saving throw to negate the effect of a chaos magic surge that does not normally allow a saving throw, or it gains advantage on a saving throw that is normally allowed. Once a protected creature makes a successful saving throw allowed by mass surge dampener, the spell’s effect ends for that creature.</p>
+			<p class="indent">Using your strength of will, you protect up to three creatures other than yourself from the effect of a chaos magic surge. A protected creature can make a DC 13 Charisma saving throw to negate the effect of a chaos magic surge that does not normally allow a saving throw, or it gains advantage on a saving throw that is normally allowed. Once a protected creature makes a successful saving throw allowed by mass surge dampener, the spell’s effect ends for that creature.</p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">5</set>
+			<set name="school" addition="chaos">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">1 minute, or until expended</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
 <!-- MEPHITIC CROAK --> 	
 	<element name="Mephitic Croak" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_MEPHITIC_CROAK">
 		<supports>Wizard</supports>
@@ -1350,6 +1662,76 @@
 			<set name="hasMaterialComponent">true</set>
 			<set name="materialComponent">a dead toad and a dram of arsenic worth 10 gp</set>
 			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- MISFORTUNE --> 
+	<element name="Misfortune" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_MISFORTUNE">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>You cast a pall of bad luck over all creatures in a 15-foot radius centered on a point within range. Each creature in that area must succeed on a Wisdom saving throw or be cursed with bad luck for the duration of the spell. A creature under the effect of this spell has disadvantage on all ability checks, saving throws, and attack rolls. A remove curse spell ends this effect. </p>
+			<p class="indent"><b><i>Special.</i></b> If a targeted creature is carrying a stone of good luck, the creature is unaffected by the spell, but the item ceases to function for 24 hours. Likewise, if a targeted creature is carrying a luck blade, the creature is unaffected by the spell, but the sword’s Luck ability and saving throw bonuses cease to function for 24 hours.</p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">6</set>
+			<set name="school" addition="chaos">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a broken mirror</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- MIST OF WONDERS  -->
+	<element name="Mist of Wonders" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_MIST_OF_WONDERS">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>A colorful mist surrounds you out to a radius of 30 feet. Creatures inside the mist see odd shapes in it and hear random sounds that don’t make sense. The very concepts of order and logic don’t seem to exist inside the mist. </p>
+			<p class="indent">Any 1st-level spell that’s cast in the mist by another caster or that travels through the mist is affected by its strange nature. The caster must make a Constitution saving throw when casting the spell. On a failed save, the spell transforms into another 1st-level spell the caster knows (chosen by the GM from those available), even if that spell is not currently prepared. The altered spell’s slot level or its original target or targeted area can’t be changed. Cantrips are unaffected. If (in the GM’s judgment) none of the caster’s spells known of that level can be transformed, the spell being cast simply fails. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, it affects any spell cast using a spell slot of any lower level. For instance, using a 6th-level slot enables you to transform a spell of 5th level or lower into another spell of the same level. </p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">2</set>
+			<set name="school" addition="chaos">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (30 ft. radius)</set>
+			<set name="duration">1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- PARAGON OF CHAOS  -->
+	<element name="Paragon of Chaos" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_PARAGON_OF_CHAOS">
+		<supports>Bard,Wizard</supports>
+		<description>
+			<p>You become a humanoid-shaped swirling mass of color and sound. You gain resistance to bludgeoning, piercing, and slashing damage, and immunity to poison and psychic damage. You are also immune to the following conditions: exhaustion, paralyzed, petrified, poisoned, and unconscious. Finally, you gain truesight to 30 feet and can teleport 30 feet as a move. </p>
+			<p class="indent">Each round, as a bonus action, you can cause an automatic chaos magic surge, choosing either yourself or another creature you can see within 60 feet as the caster for the purpose of resolving the effect. You must choose the target before rolling percentile dice to determine the nature of the surge. The DC of any required saving throw is calculated as if you were the caster. </p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">8</set>
+			<set name="school" addition="chaos">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
@@ -1558,7 +1940,65 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>	
+
+<!-- ROAMING PAIN  -->
+	<element name="Roaming Pain" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ROAMING_PAIN">
+		<supports>Wizard</supports>
+		<description>
+			<p>You afflict a single humanoid within range with severe pain in a random part of its body. Roll a d6 and consult the table to determine the spell’s initial effect. </p>
+			<p class="indent">The target must make a Constitution saving throw. On a successful save, it is able to function despite the pain and ignore the effects. At the start of the target’s turn each round for the duration of the spell, roll again on the table to see where the pain affects the target in that round.</p>
+			<table>
+				<thead>
+					<tr><td>d6</td><td>Body Part</td><td>Effect</td></tr>
+				</thead>
+				<tr><td>1</td><td>Head</td><td>Incapacitated </td></tr>
+				<tr><td>2</td><td>Throat</td><td>Unable to speak coherently or cast spells with verbal components</td></tr>
+				<tr><td>3</td><td>Chest</td><td>Cannot take reactions or bonus actions</td></tr>
+				<tr><td>4</td><td>Abdomen</td><td>Disadvantage on Constitution saving throws</td></tr>
+				<tr><td>5</td><td>Arm</td><td>Disadvantage on attack rolls, Strength and Dexterity skill checks</td></tr>
+				<tr><td>6</td><td>Leg</td><td>Movement halved</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">1</set>
+			<set name="school" addition="chaos">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 	
+<!-- ROARING WINDS OF LIMBO  -->
+	<element name="Roaring Winds of Limbo" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ROARING_WINDS_OF_LIMBO">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>You tear open a breach to the planes of chaos, and the act of doing so fills an area with a dangerous windstorm. The area consists of twelve 10-foot cubes, which you can arrange as you wish. Each cube must have at least one face in common with a face of another cube. Each creature in the area is deafened, and any sound it makes cannot be heard outside the area. The wind disperses all gases and vapors and extinguishes all unprotected flames in the area, and has a 75 percent chance of extinguishing protected flames, such as lanterns. All Wisdom (Perception) checks that rely on sight made by a creature in the area have disadvantage due to the dust, grit, and debris being cast about. </p>
+			<p class="indent">Each creature in the area must make a Strength saving throw at the start of its turn. On a failed save, the creature is pushed 15 feet in a random direction. (Roll a d8, designating 1 as north, 2 as northeast, 3 as east, and so on around the points of the compass.) The wind also hampers movement; a creature in the area must spend 2 feet of movement for every 1 foot it moves. </p>
+			<p class="indent">As a bonus action on each of your turns, you can bombard up to twelve creatures in the area with flying debris, dealing 2d10 bludgeoning, 2d10 piercing, and 2d10 slashing damage. A creature that makes a successful Dexterity saving throw takes half the damage. </p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">8</set>
+			<set name="school" addition="chaos">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">150 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 <!-- SALT LASH  -->	
 	<element name="Salt Lash" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SALT_LASH">
 		<supports>Wizard</supports>
@@ -1699,6 +2139,28 @@
 		</setters>
 	</element>
 
+<!-- SHIFTING THE ODDS  -->		
+	<element name="Shifting the Odds" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SHIFTING_THE_ODDS">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>By wrapping yourself in strands of chaotic energy, you gain advantage on the next attack roll or ability check that you make. Fate is a cruel mistress, however, and her scales must always be balanced. The second attack roll or ability check (whichever occurs first) that you make after casting shifting the odds is made with disadvantage.</p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">2</set>
+			<set name="school" addition="chaos">Divination</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Self</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
 <!-- SHIVER --> 
 	<element name="Shiver" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SHIVER">
 		<supports>Cleric,Druid,Sorcerer,Wizard</supports>
@@ -1821,6 +2283,28 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element> 
+
+<!-- SURGE DAMPENER  -->
+	<element name="Surge Dampener" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SURGE_DAMPENER">
+		<supports>Bard,Wizard</supports>
+		<description>
+			<p>Using your strength of will, you cause one creature other than yourself that you touch to become so firmly entrenched within reality that it is protected from the effects of a chaos magic surge. The protected creature can make a DC 13 Charisma saving throw to negate the effect of a chaos magic surge that does not normally allow a saving throw, or it gains advantage on a saving throw that is normally allowed. Once the protected creature makes a successful saving throw allowed by surge dampener, the spell ends. </p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">3</set>
+			<set name="school" addition="chaos">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">1 minute, until expended</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
 
 <!-- TIME IN A BOTTLE  -->
 	<element name="Time in a Bottle" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_TIME_IN_A_BOTTLE">
@@ -1995,6 +2479,37 @@
 		</setters>
 	</element>
 
+<!-- TIMELY DISTRACTION  -->
+	<element name="Timely Distraction" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_TIMELY_DISTRACTION">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>You call forth a swirling, crackling wave of constantly shifting pops, flashes, and swept-up debris. This chaos can confound one creature. If the target gets a failure on a Wisdom saving throw, roll a d4 and consult the following table to determine the result. An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Otherwise, the spell ends when its duration expires.</p>
+			<table>
+				<thead>
+					<tr><td>d4</td><td>Mutation</td></tr>
+				</thead>
+				<tr><td>1</td><td>Blinded</td></tr>
+				<tr><td>2</td><td>Stunned</td></tr>
+				<tr><td>3</td><td>Deafened</td></tr>
+				<tr><td>4</td><td>Prone</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">2</set>
+			<set name="school" addition="chaos">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">25 ft.</set>
+			<set name="duration">3 rounds</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a handful of sand or dirt thrown in the air</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 	
+
 <!-- TRIUMPH OF ICE --> 
 	<element name="Triumph of Ice" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_TRIUMP_OF_ICE">
 		<supports>Druid,Sorcerer,Wizard</supports>
@@ -2021,6 +2536,115 @@
 		</setters>
 	</element>
 
+<!-- UNCONTROLLABLE TRANSFORMATION  -->
+	<element name="Uncontrollable Transformation" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_UNCONTROLLABLE_TRANSFORMATION">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>You infuse your body with raw chaos and will it to adopt a helpful mutation. Roll a d10 and consult the Uncontrollable Transformation table below to determine what mutation occurs. You can try to control the shifting of your body to gain a mutation you prefer, but doing so is taxing; you can roll a d10 twice and choose the result you prefer, but you gain one level of exhaustion. At the end of the spell, your body returns to its normal form. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 8th level or higher, you gain an additional mutation for each slot level above 7th. You gain one level of exhaustion for each mutation you try to control.</p>
+			<table>
+				<thead>
+					<tr><td>d10</td><td>Mutation</td></tr>
+				</thead>
+				<tr><td>1</td><td>A spindly third arm sprouts from your shoulder. As a bonus action, you can use it to attack with a light weapon. You have advantage on Dexterity (Sleight of Hand) checks and any checks that require the manipulation of tools. </td></tr>
+				<tr><td>2</td><td>Your skin is covered by rough scales that increase your AC by 1 and give you resistance to a random damage type (roll on the Damage Type table in the frenzied bolt spell description). </td></tr>
+				<tr><td>3</td><td>A puckered orifice grows on your back. You can forcefully expel air from it, granting you a flying speed of 30 feet. You must land at the end of your turn. In addition, as a bonus action, you can try to push a creature away with a blast of air. The target is pushed 5 feet away from you if it fails a Strength saving throw with a DC equal to 10 + your Constitution modifier. </td></tr>
+				<tr><td>4</td><td>A second face appears on the back of your head. You gain darkvision out to a range of 120 feet and advantage on sight based and scent-based Wisdom (Perception) checks. You become adept at carrying on conversations with yourself. </td></tr>
+				<tr><td>5</td><td>You grow gills that not only allow you to breathe underwater but also filter poison out of the air. You gain immunity to inhaled poisons. </td></tr>
+				<tr><td>6</td><td>Your hindquarters elongate, and you grow a second set of legs. Your base walking speed increases by 10 feet, and your carrying capacity becomes your Strength score multiplied by 20. </td></tr>
+				<tr><td>7</td><td>You become incorporeal and can move through other creatures and objects as if they were difficult terrain. You take 1d10 force damage if you end your turn inside an object. You can’t pick up or interact with physical objects that you weren’t carrying when you became incorporeal. </td></tr>
+				<tr><td>8</td><td>Your limbs elongate and flatten into prehensile paddles. You gain a swimming speed equal to your base walking speed and have advantage on Strength (Athletics) checks made to climb or swim. In addition, your unarmed strikes deal 1d6 bludgeoning damage. </td></tr>
+				<tr><td>9</td><td>Your head fills with a light gas and swells to four times its normal size, causing your hair to fall out. You have advantage on Intelligence and Wisdom ability checks and can levitate up to 5 feet above the ground. </td></tr>
+				<tr><td>10</td><td>You grow three sets of feathered wings that give you a flying speed equal to your walking speed and the ability to hover. </td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">7</set>
+			<set name="school" addition="chaos">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">the bill of platypus</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	
+<!-- UNDERMINE ARMOR  --> 
+	<element name="Undermine Armor" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_UNDERMINE_ARMOR">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>You unravel the bonds of reality that hold a suit of armor together. A target wearing armor must succeed on a Constitution saving throw or its armor softens to the consistency of candle wax, decreasing the target’s AC by 2. </p>
+			<p class="indent">Undermine armor has no effect on creatures that aren’t wearing armor. </p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">1</set>
+			<set name="school" addition="chaos">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- UNRULY ITEM  --> 
+	<element name="Unruly Item" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_UNRULY_ITEM">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>You animate an object in the possession of a creature within range, giving the object limited movement and a compulsion to thwart its possessor. The effect of the spell varies depending on the kind of object you affect. </p>
+			<p class="indent"><b><i>Weapon:</i></b> A weapon being wielded by a creature fights and twists, trying to free itself from the creature’s grasp. The creature must make a Dexterity saving throw. On a failed save, the creature has disadvantage on any attacks it makes in that round with the weapon. On a save that fails by 5 or more, the creature drops the weapon. </p>
+			<p class="indent"><b><i>Armor:</i></b> The creature’s armor shifts and moves, becoming noisy and uncomfortable. If the armor does not normally impart disadvantage on Dexterity (Stealth) checks, it does so while this spell is in effect. The creature wearing it must succeed on a Dexterity saving throw or take a 10-foot penalty to its speed and be unable to use the Dash action. </p>
+			<p class="indent"><b><i>Other Items:</i></b> The effects on other carried items can vary at the GM’s discretion. A potion might behave as a weapon, trying not to be drunk, falling to the ground and becoming ruined if the Dexterity save is failed by 5 or more. A backpack might try to empty itself, disgorging a random item each round on a failed save.</p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">1</set>
+			<set name="school" addition="chaos">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- UNSHACKLED MAGIC  -->
+	<element name="Unshackled Magic" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_UNSHACKLED_MAGIC">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>You designate a creature within range that has the Spellcasting or Innate Spellcasting special trait and imbue it with wild magic, causing it to lose control of its magical ability. If the target gets a failure on a Charisma saving throw, then on its next turn, it rolls randomly to select one of its available spells. The target then spontaneously casts that spell as an action. If the spell can be cast using a spell slot higher than its level, roll randomly to determine what slot is used to cast the spell. The target still determines factors such as the location of the spell’s area or which creatures it affects, as normal, but it is compelled to cast that particular spell at that particular time. </p>
+			<p class="indent">Each round while this spell remains in effect, the target makes another Charisma saving throw. On a successful save, it can act normally in that round, but the unshackled magic spell does not end.</p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">9</set>
+			<set name="school" addition="chaos">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">120 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 <!-- WALL OF TIME  -->
 	<element name="Wall of Time" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_WALL_OF_TIME">
 		<supports>Cleric,Sorcerer,Wizard</supports>
@@ -2042,6 +2666,53 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>	
+
+<!-- WILD SHIELD  --> 
+	<element name="Wild Shield" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_WILD_SHIELD">
+		<supports>Bard,Wizard</supports>
+		<description>
+			<p>You surround yourself with the forces of chaos. Wild lights and strange sounds engulf you, making stealth impossible. While wild shield is active, you can use a reaction to repel a spell of 4th level or lower that targets you or whose area you are within. A repelled spell has no effect on you, but doing this causes the chance of a chaos magic surge as if you had cast a spell, with you considered the caster for any effect of the surge. </p>
+			<p class="indent">Wild shield ends when the duration expires or when it absorbs 4 levels of spells. If you try to repel a spell whose level exceeds the number of levels remaining, make an ability check using your spellcasting ability. The DC equals 10 + the spell’s level – the number of levels wild shield can still repel. If the check succeeds, the spell is repelled; if the check fails, the spell has its full effect. The chance of a chaos magic surge exists regardless of whether the spell is repelled. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, you can repel one additional spell level for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">4</set>
+			<set name="school" addition="chaos">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- WILD TRAJECTORY  -->
+	<element name="Wild Trajectory" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_WILD_TRAJECTORY">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>You create a 30-foot cube of magical instability that causes spell effects passing through it to diverge wildly from their original paths. When a spell with a visible or tangible manifestation (such as fireball, lightning bolt, or a ray or projectile such as magic missile or ray of frost) passes through the area, roll a d8. On a 1, the spell continues on its original path or toward its original target; on a 2, it diverts 45 degrees to the right; on a 3, it diverts 90 degrees to the right; on a 4, it diverts 135 degrees to the right; on a 5, it turns 180 degrees, back the way it came (striking the caster if it is a targeted spell); on a 6, the spell diverts 45 degrees to the left; on a 7, it diverts 90 degrees to the left; on an 8, it diverts 135 degrees to the left. </p>
+			<p class="indent">A spell that affects anything in its path, such as lightning bolt, continues to do so along its new trajectory, up to the limit of its range. A fireball spell will travel in the new direction up to the limit of its range before detonating. A targeted spell will strike the first viable target it encounters along its new trajectory.</p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">7</set>
+			<set name="school" addition="chaos">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">100 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 <!-- WINTERDARK  -->
 	<element name="Winterdark" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_WINDERDARK">
