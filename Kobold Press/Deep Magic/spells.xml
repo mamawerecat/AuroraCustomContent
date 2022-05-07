@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic - Spells</name>
-        <update version="0.0.8">
+        <update version="0.0.9">
             <file name="spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells.xml" />
         </update>
     </info>
@@ -191,6 +191,28 @@
 			<set name="hasMaterialComponent">true</set>
 			<set name="materialComponent">an hourglass</set>
 			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- AMPLIFY LIGHT -->
+	<element name="Amplify Light" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_AMPLIFY_LIGHT">
+		<supports>Wizard</supports>
+		<description>
+			<p>You touch a nonmagical light source and increase its brightness. While the spell is in effect, the radius of the bright light around the source is doubled, and dim light extends for the same distance beyond that area. The light source’s duration is halved, however, so that a torch affected by amplify light would burn out in half an hour, or a hooded lantern would burn through its fuel in 3 hours. Adding new fuel to a light source while it is under the effect of amplify light will end the spell and return it to its normal brightness.</p>
+		</description>
+		<setters>
+			<set name="keywords">illumination</set>
+			<set name="level">1</set>
+			<set name="school" addition="illumination">Transmutation</set>
+			<set name="time">1 1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Special</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a nonmagical light source</set>
+			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
@@ -701,6 +723,29 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element> 
+
+<!-- BURNING RADIANCE  -->
+	<element name="Burning Radiance" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BURNING_RADIANCE">
+		<supports>Cleric,Wizard</supports>
+		<description>
+			<p>A line of light 60 feet long and 5 feet wide emanates from you in a direction of your choice. Each creature in the line must make a Dexterity saving throw. On a failed save, a creature takes 10d8 radiant damage and catches fire; until someone takes an action to douse the fire, the creature takes 1d10 fire damage at the start of each of its turns. A successful saving throw halves the damage and prevents a creature from catching fire. </p>
+			<p class="indent">The burning radiance ignites flammable objects in the area that aren’t being worn or carried.</p>
+		</description>
+		<setters>
+			<set name="keywords">illumination</set>
+			<set name="level">6</set>
+			<set name="school" addition="illumination">Evocation</set>
+			<set name="time">1 1 action</set>
+			<set name="range">Self (60 ft. line)</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 <!-- CALM OF THE STORM  -->
 	<element name="Calm of the Storm" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CALM_OF_THE_STORM">
@@ -1833,6 +1878,28 @@
 		</setters>
 	</element>
 
+<!-- GREATER PROTECTIVE NIMBUS --> 
+	<element name="Greater Protective Nimbus" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_GREATER_PROTECTIVE_NIMBUS">
+		<supports>Wizard</supports>
+		<description>
+			<p>You wrap yourself in a powerful corona that sheds bright light in a 30-foot radius and dim light for an additional 30 feet. Until the spell ends, you have resistance to necrotic damage and radiant damage. You can end the spell early by using an action to dismiss it, which creates a blast of light in a 30-foot radius. The blast deals 4d8 radiant damage to each creature in the area while simultaneously healing yourself of an equal amount of damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">illumination</set>
+			<set name="level">5</set>
+			<set name="school" addition="illumination">Abjuration</set>
+			<set name="time">1 1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a transparent gemstone worth at least 50 gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
 <!-- GREATER SEAL OF SANCTUARY --> 
 	<element name="Greater Seal of Sanctuary" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_GREATER_SEAL_OF_SANCTUARY">
 		<supports>Cleric,Wizard</supports>
@@ -1858,6 +1925,27 @@
 		</setters>
 	</element>	
 
+<!-- GUIDING STAR -->
+	<element name="Guiding Star" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_GUIDING_STAR">
+		<supports>Wizard</supports>
+		<description>
+			<p>By observing the stars or the position of the sun, you are able to determine the cardinal directions, as well as the direction and distance to a stated destination. You can’t become directionally disoriented or lose track of the destination. The spell doesn’t, however, reveal the best route to your destination or warn you about deep gorges, flooded rivers, or other impassable or treacherous terrain.</p>
+		</description>
+		<setters>
+			<set name="keywords">illumination</set>
+			<set name="level">1</set>
+			<set name="school" addition="illumination">Divination</set>
+			<set name="time">10 minutes</set>
+			<set name="range">Self</set>
+			<set name="duration">8 hours</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element> 
 
 <!-- ICE BURN  -->
 	<element name="Ice Burn" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ICE_BURN">
@@ -2023,6 +2111,29 @@
 		</setters>
 	</element>
 
+<!-- LAST RAYS OF THE DYING SUN  -->
+	<element name="Last Rays of the Dying Sun" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_LAST_RAYS_OF_THE_DYING_SUN">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>A burst of searing heat explodes from you, dealing 6d6 fire damage to all enemies within range. Immediately afterward, a wave of frigid cold rolls across the same area, dealing 6d6 cold damage to enemies. A creature that makes a successful Dexterity saving throw takes half the damage. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 8th or 9th level, the damage from both waves increases by 1d6 for each slot level above 7th. </p>
+		</description>
+		<setters>
+			<set name="keywords">illumination</set>
+			<set name="level">7</set>
+			<set name="school" addition="illumination">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">40 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 <!-- LEGEND KILLER  -->
 	<element name="Legend Killer" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_LEGEND_KILLER">
 		<supports>Sorcerer,Wizard</supports>
@@ -2183,6 +2294,29 @@
 		</setters>
 	</element>
 
+<!-- ORB OF LIGHT  -->
+	<element name="Orb of Light" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ORB_OF_LIGHT">
+		<supports>Warlock,Wizard</supports>
+		<description>
+			<p>An orb of light the size of your hand shoots from your fingertips toward a creature within range, which takes 3d8 radiant damage and is blinded for 1 round. A target that makes a successful Dexterity saving throw takes half the damage and is not blinded. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">illumination</set>
+			<set name="level">2</set>
+			<set name="school" addition="illumination">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">1 round</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 <!-- OVERWHELMING GREED -->
 	<element name="Overwhelming Greed" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_OVERWHELMING_GREED">
 		<supports>Sorcerer,Warlock,Wizard</supports>
@@ -2254,6 +2388,29 @@
 		</setters>
 	</element>
 
+<!-- PHANTOM LIGHT -->
+	<element name="Phantom Light" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_PHANTOM_LIGHT">
+		<supports>Druid,Wizard</supports>
+		<description>
+			<p>You touch one object that measures less than 10 feet in every dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. At the time of the casting, you designate up to six creatures. Only those creatures are able to see and gain benefit from the phantom light. </p>
+			<p class="indent">The object can be covered with something opaque to block the light. You can use an action to dismiss this spell.</p>
+		</description>
+		<setters>
+			<set name="keywords">illumination</set>
+			<set name="level">2</set>
+			<set name="school" addition="illumination">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a small sketch of a candle</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
 <!-- PROTECTIVE ICE  -->
 	<element name="Protective Ice" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_PROTECTIVE_ICE">
 		<supports>Cleric</supports>
@@ -2275,6 +2432,28 @@
 			<set name="hasMaterialComponent">true</set>
 			<set name="materialComponent">a seed encased in ice or glass</set>
 			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- PROTECTIVE NIMBUS --> 
+	<element name="Protective Nimbus" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_PROTECTIVE_NIMBUS">
+		<supports>Wizard</supports>
+		<description>
+			<p>You wrap yourself in a corona that sheds bright light in a 20-foot radius and dim light for an additional 20 feet. Until the spell ends, you have resistance to necrotic damage. You can end the spell early by using an action to dismiss it.</p>
+		</description>
+		<setters>
+			<set name="keywords">illumination</set>
+			<set name="level">3</set>
+			<set name="school" addition="illumination">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a crystal or glass bead</set>
+			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
 	</element> 
@@ -2707,6 +2886,28 @@
 		</setters>
 	</element>	
 
+<!-- SEARING SUN  -->
+	<element name="Searing Sun" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SEARING_SUN">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>This spell intensifies the light and heat of the sun, so that it burns exposed flesh. You must be able to see the sun when you cast the spell. The searing sunlight affects a cylindrical area 50 feet in radius and 200 feet high, centered on the a point within range. Each creature that starts its turn in that area takes 5d8 fire damage, or half the damage with a successful Constitution saving throw. A creature that’s shaded by a solid object —such as an awning, a building, or an overhanging boulder— has advantage on the saving throw. On your turn, you can use an action to move the center of the cylinder up to 20 feet along the ground in any direction.</p>
+		</description>
+		<setters>
+			<set name="keywords">illumination</set>
+			<set name="level">4</set>
+			<set name="school" addition="illumination">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">200 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a magnifying lens</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
 <!-- SEER’S REACTION  -->
 	<element name="Seer's Reaction" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SEERS_REACTION">
 		<supports>Bard,Cleric,Druid,Ranger,Sorcerer,Wizard</supports>
@@ -2770,6 +2971,28 @@
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">true</set>
 			<set name="materialComponent">a water within a glass globe</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- SHIELD OF STARLIGHT -->
+	<element name="Shield of Starlight" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SHIELD_OF_STARLIGHT">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>You wrap yourself in a protective shroud of the night sky made from swirling shadows and punctuated by twinkling motes of light. The shroud grants you resistance against either radiant or necrotic damage (your choice when the spell is cast). You also shed dim light in a 10-foot radius. You can end the spell early by using an action to dismiss it.</p>
+		</description>
+		<setters>
+			<set name="keywords">illumination</set>
+			<set name="level">3</set>
+			<set name="school" addition="illumination">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a star chart</set>
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
@@ -2897,6 +3120,97 @@
 		</setters>
 	</element> 
 
+<!-- SOOTHING INCANDESCENCE -->
+	<element name="Soothing Incandescence" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SOOTHING_INCANDESCENCE">
+		<supports>Cleric,Wizard</supports>
+		<description>
+			<p>A soft, white radiance spreads out from a point just above your head, creating bright light in a 30-foot radius around your present location. If you move from your present location, the area of light remains fixed. A creature in the area other than a fiend or an undead regains 1 hit point at the start of each of its turns while within the bright light. Each fiend or undead in the area takes 2d4 radiant damage at the start of each of its turns.</p>
+		</description>
+		<setters>
+			<set name="keywords">illumination</set>
+			<set name="level">7</set>
+			<set name="school" addition="illumination">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (30 ft. radius)</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- STARBURST  -->
+	<element name="Starburst" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_STARBURST">
+		<supports>Druid,Warlock,Wizard</supports>
+		<description>
+			<p>You cause a mote of starlight to appear and explode in a 5-foot cube you can see within range. If a creature is in the cube, it must succeed on a Charisma saving throw or take 1d8 radiant damage. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> This spell’s damage increases to 2d8 when you reach 5th level, 3d8 when you reach 11th level, and 4d8 when you reach 17th level.</p>
+		</description>
+		<setters>
+			<set name="keywords">illumination</set>
+			<set name="level">0</set>
+			<set name="school" addition="illumination">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- STARFALL  -->
+	<element name="Starfall" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_STARFALL">
+		<supports>Druid,Sorcerer,Wizard</supports>
+		<description>
+			<p>You cause bolts of shimmering starlight to fall from the heavens, striking up to five creatures that you can see within range. Each bolt strikes one target, dealing 6d6 radiant damage, knocking the target prone, and blinding it until the start of your next turn. A creature that makes a successful Dexterity saving throw takes half the damage, is not knocked prone, and is not blinded. If you name fewer than five targets, excess bolts strike the ground harmlessly.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th level or higher, you can create one additional bolt for each slot level above 5th.</p>
+		</description>
+		<setters>
+			<set name="keywords">illumination</set>
+			<set name="level">5</set>
+			<set name="school" addition="illumination">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- STAR’S HEART --> 
+	<element name="Star's Heart" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_STARS_HEART">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>This spell increases gravity tenfold in a 50-foot radius centered on you. Each creature in the area other than you drops whatever it’s holding, falls prone, becomes incapacitated, and can’t move. If a solid object (such as the ground) is encountered when a flying or levitating creature falls, the creature takes three times the normal falling damage. Any creature except you that enters the area or starts its turn there must make a successful Strength saving throw or fall prone and become incapacitated and unable to move. A creature that starts its turn prone and incapacitated makes a Strength saving throw. On a failed save, the creature takes 8d6 bludgeoning damage; on a successful save, it takes 4d6 bludgeoning damage, it’s no longer incapacitated, and it can move at half speed. </p>
+			<p class="indent">All ranged weapon attacks inside the area have a normal range of 5 feet and a maximum range of 10 feet. The same applies to spells that create missiles that have mass, such as flaming sphere. A creature under the influence of a freedom of movement spell or comparable magic has advantage on the Strength saving throws required by this spell, and its speed isn’t reduced once it recovers from being incapacitated. </p>
+		</description>
+		<setters>
+			<set name="keywords">illumination</set>
+			<set name="level">9</set>
+			<set name="school" addition="illumination">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">50 ft.</set>
+			<set name="duration">1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an ioun stone</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 <!-- STEAL WARMTH  -->
 	<element name="Steal Warmth" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_STEAL_WARMTH">
 		<supports>Sorcerer,Warlock,Wizard</supports>
@@ -2919,6 +3233,28 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element> 
+
+<!-- SUMMON STAR  -->
+	<element name="Summon Star" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SUMMON_STAR">
+		<supports>Wizard</supports>
+		<description>
+			<p>You summon a friendly star from the heavens to do your bidding. It appears in an unoccupied space you can see within range and takes the form of a glowing humanoid with long white hair. All creatures other than you who view the star must make a successful Wisdom saving throw or be charmed for the duration of the spell. A creature charmed in this way can repeat the Wisdom saving throw at the end of each of its turns. On a success, the creature is no longer charmed and is immune to the effect of this casting of the spell. In all other ways, the star is equivalent to a deva. It understands and obeys verbal commands you give it. If you do not give the star a command, it defends itself and attacks the last creature that attacked it. The star disappears when it drops to 0 hit points or when the spell ends.</p>
+		</description>
+		<setters>
+			<set name="keywords">illumination</set>
+			<set name="level">8</set>
+			<set name="school" addition="illumination">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">90 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 <!-- SURGE DAMPENER  -->
 	<element name="Surge Dampener" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SURGE_DAMPENER">
@@ -3208,6 +3544,29 @@
 			<set name="hasMaterialComponent">true</set>
 			<set name="materialComponent">a piece of obsidian</set>
 			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- TRACKING BEACON -->
+	<element name="Tracking Beacon" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_TRACKING_BEACON">
+		<supports>Wizard</supports>
+		<description>
+			<p>You choose a creature within range to mark with a glowing orb of light, which floats 120 feet above the creature’s head. The target must make a Wisdom saving throw. On a successful save, the spell ends. On a failed save, the light hovers above the target’s location, moving as the target moves, which enables you to track the creature’s direction and distance by staying within sight of the beacon. The beacon continues to function even when you cannot see it, as long as the target remains on the same plane as you. If either you or the target travels to another plane, the spell ends. </p>
+			<p class="indent">You can use a bonus action on your turn to adjust the height of the beacon, ranging from its starting point of 120 feet to as low as 5 feet above the head of the target.</p>
+		</description>
+		<setters>
+			<set name="keywords">illumination</set>
+			<set name="level">3</set>
+			<set name="school" addition="illumination">Divination</set>
+			<set name="time">1 action</set>
+			<set name="range">120 ft.</set>
+			<set name="duration">Concentration, up to 8 hours</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
 			<set name="isRitual">false</set>
 		</setters>
 	</element> 
