@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic - Spells</name>
-        <update version="0.0.9">
+        <update version="0.1.0">
             <file name="spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells.xml" />
         </update>
     </info>
@@ -140,6 +140,29 @@
 			<set name="materialComponent">a drop of acid</set>
 			<set name="isConcentration">true</set>
 			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- AFFLICT LINE  -->
+	<element name="Alffict Line" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_AFFLICT_LINE">
+		<supports>Cleric, Wizard</supports>
+		<description>
+			<p>You invoke the darkest curses upon your victim and his or her descendants. This spell does not require that you have a clear path to your target, only that your target is within range. The target must make a successful Wisdom saving throw or be cursed until the magic is dispelled. While cursed, the victim has disadvantage on ability checks and saving throws made with the ability score that you used when you cast the spell. In addition, the target’s firstborn offspring is also targeted by the curse. That individual is allowed a saving throw of its own if it is currently alive, or it makes one upon its birth if it is not yet born when the spell is cast. If the target’s firstborn has already died, the curse passes to the target’s next oldest offspring. </p>
+			<p class="indent"><b><i>Ritual Focus.</i></b> If you expend your ritual focus, the curse becomes hereditary, passing from firstborn to firstborn for the entire length of the family’s lineage until one of them successfully saves against the curse and throws off your dark magic. Also, once you've expended your ritual focus this mental energy has been expended, a caster’s ritual focus can’t be used again until he or she finishes a short or long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">ritual</set>
+			<set name="level">9</set>
+			<set name="school" addition="ritual only">Necromancy</set>
+			<set name="time">1 hour</set>
+			<set name="range">1 mile</set>
+			<set name="duration">Permanent; one generation</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a statuette carved in the likeness of the victim worth 1250 gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
 		</setters>
 	</element>
 
@@ -558,7 +581,36 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
- 
+
+<!-- BLOOM  -->
+	<element name="Bloom" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLOOM">
+		<supports>Cleric,Druid,Wizard</supports>
+		<description>
+			<p>You plant a silver acorn in solid ground and spend an hour chanting a litany of praises to the natural world, after which the land within 1 mile of the acorn becomes extremely fertile, regardless of its previous state. Any seeds planted in the area grow at twice the natural rate. Food harvested regrows within a week. After one year, the land slowly reverts to its normal fertility, unable to stave off the march of nature. </p>
+			<p class="indent">Choose one of the following effects, which appears and grows immediately: </p>
+			<p class="indent">	  A field planted with vegetables of your choice, ready for harvest. </p>
+			<p class="indent">	  A thick forest of stout trees and ample undergrowth. </p>
+			<p class="indent">	  A grassland with wildflowers and fodder for grazing. </p>
+			<p class="indent">	  An orchard of fruit trees of your choice, growing in orderly rows and ready for harvest. </p>
+			<p class="indent">Living creatures that take a short rest within the area of a bloom spell receive the maximum hit points for Hit Dice expended. Bloom counters the effects of a desolation spell. </p>
+			<p class="indent"><b><i>Ritual Focus.</i></b> If you expend your ritual focus, the duration becomes permanent. Also, once you've expended your ritual focus this mental energy has been expended, a caster’s ritual focus can’t be used again until he or she finishes a short or long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">ritual</set>
+			<set name="level">8</set>
+			<set name="school" addition="ritual only">Conjuration</set>
+			<set name="time">1 hour</set>
+			<set name="range">1 mile</set>
+			<set name="duration">1 year</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a silver acorn worth 500 gp, which is consumed in the casting</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
 <!-- BOILING OIL --> 
 	<element name="Boiling Oil" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BOILING_OIL">
 		<supports>Sorcerer,Wizard</supports>
@@ -838,6 +890,31 @@
 		</setters>
 	</element> 
 
+<!-- CELEBRATION  -->
+	<element name="Celebration" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CELEBRATION">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>You create a 30-foot-radius area around a point that you choose within range. An intelligent creature that enters the area or starts its turn there must make a Wisdom saving throw. On a failed save, the creature starts to engage in celebratory revelry: drinking, singing, laughing, and dancing. Affected creatures are reluctant to leave the area until the spell ends, preferring to continue the festivities. They forsake appointments, cease caring about their woes, and generally behave in a cordial (if not hedonistic) manner. This preoccupation with merrymaking occurs regardless of an affected creature’s agenda or alignment. Assassins procrastinate, servants join in the celebration rather than working, and guards abandon their posts. </p>
+			<p class="indent">The effect ends on a creature when it is attacked, takes damage, or is forced to leave the area. A creature that makes a successful saving throw can enter or leave the area without danger of being enchanted. A creature that fails the saving throw and is forcibly removed from the area must repeat the saving throw if it returns to the area. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 8th level or higher, the spell lasts for an additional hour for each slot level above 7th. </p>
+			<p class="indent"><b><i>Ritual Focus.</i></b> If you expend your ritual focus, an unaffected intelligent creature must make a new saving throw every time it starts its turn in the area, even if it has previously succeeded on a save against the spell. Also, once you've expended your ritual focus this mental energy has been expended, a caster’s ritual focus can’t be used again until he or she finishes a short or long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">ritual</set>
+			<set name="level">7</set>
+			<set name="school" addition="ritual only">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">90 ft.</set>
+			<set name="duration">1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a small party favor</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
 <!-- CELESTIAL FANFARE --> 	
 	<element name="Celestial Fanfare" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CELESTIAL_FANFARE">
 		<supports>Cleric,Wizard</supports>
@@ -1038,6 +1115,30 @@
 		</setters>
 	</element> 
 
+<!-- CLEARING THE FIELD -->
+	<element name="Clearing the Field" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CLEARING_THE_FIELD">
+		<supports>Druid,Ranger,Wizard</supports>
+		<description>
+			<p>With a harsh word and a vicious chopping motion, you cause every tree, shrub, and stump within 40 feet of you to sink into the ground, leaving the vacated area clear of plant life that might otherwise hamper movement or obscure sight. Overgrown areas that counted as difficult terrain become clear ground and no longer hamper movement. The original plant life instantly rises from the ground again when the spell ends or is dispelled. Plant creatures are not affected by clearing the field.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the spell lasts for an additional hour for each slot level above 2nd. </p>
+			<p class="indent"><b><i>Ritual Focus.</i></b> If you expend your ritual focus, plant creatures in the area must make a successful Constitution saving throw or be affected as though by a reduce spell. Also, once you've expended your ritual focus this mental energy has been expended, a caster’s ritual focus can’t be used again until he or she finishes a short or long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">ritual</set>
+			<set name="level">2</set>
+			<set name="school" addition="ritual only">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">40 ft.</set>
+			<set name="duration">1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
 <!-- CONTROL ICE  -->
 	<element name="Control Ice" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CONTROL_ICE">
 		<supports>Druid,Sorcerer,Wizard</supports>
@@ -1223,6 +1324,31 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>	
+
+<!-- DESOLATION  -->
+	<element name="Desolation" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_DESOLATION">
+		<supports>Cleric,Druid,Wizard</supports>
+		<description>
+			<p>You plant an obsidian acorn in solid ground and spend an hour chanting a litany of curses to the natural world, after which the land within 1 mile of the acorn becomes infertile, regardless of its previous state. Nothing will grow there, and all plant life in the area dies over the course of a day. Plant creatures are not affected. Spells that summon plants, such as entangle, require an ability check using the caster’s spellcasting ability against your spell save DC. On a successful check, the spell functions normally; if the check fails, the spell is countered by desolation.</p>
+			<p class="indent">After one year, the land slowly reverts to its normal fertility, unable to stave off the march of nature. </p>
+			<p class="indent">A living creature that finishes a short rest within the area of a desolation spell halves the result of any Hit Dice it expends. Desolation counters the effects of a bloom spell. </p>
+			<p class="indent"><b><i>Ritual Focus.</i></b> If you expend your ritual focus, the duration becomes permanent. Also, once you've expended your ritual focus this mental energy has been expended, a caster’s ritual focus can’t be used again until he or she finishes a short or long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">ritual</set>
+			<set name="level">8</set>
+			<set name="school" addition="ritual only">Necromancy</set>
+			<set name="time">1 hour</set>
+			<set name="range">Self</set>
+			<set name="duration">1 year</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an obsidian acorn worth 500 gp, which is consumed in the casting</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
 
 <!-- DETECT DRAGONS --> 
 	<element name="Detect Dragons" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_DETECT_DRAGONS">
@@ -1438,6 +1564,31 @@
 		</setters>
 	</element>
 
+<!-- ENCROACHING SHADOWS  -->
+	<element name="Encroaching Shadows" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ENCROACHING_SHADOWS">
+		<supports>Cleric,Sorcerer,Wizard</supports>
+		<description>
+			<p>You cause menacing shadows to invade an area 200 feet on a side and 50 feet high, centered on a point within range. Illumination in the area drops one step (from bright light to dim, or from dim light to darkness). Any spell that creates light in the area that is cast using a lower-level spell slot than was used to cast encroaching shadows is dispelled, and a spell that creates light doesn’t function in the area if that spell is cast using a spell slot of 5th level or lower. Nonmagical effects can’t increase the level of illumination in the affected area. </p>
+			<p class="indent">A spell that creates darkness or shadow takes effect in the area as if the spell slot expended was one level higher than the spell slot actually used. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 7th level or higher, the effect lasts for an additional 12 hours for each slot level above 6th. </p>
+			<p class="indent"><b><i>Ritual Focus.</i></b> If you expend your ritual focus, the spell’s duration increases by 12 hours, and it cannot be dispelled by a spell that creates light, even if that spell is cast using a higher-level spell slot. Also, once you've expended your ritual focus this mental energy has been expended, a caster’s ritual focus can’t be used again until he or she finishes a short or long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">ritual</set>
+			<set name="level">6</set>
+			<set name="school" addition="ritual only">Illusion</set>
+			<set name="time">1 hour</set>
+			<set name="range">150 ft.</set>
+			<set name="duration">12 hours</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a drop of blood smeared on a silver rod worth 100 gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
 <!-- ENHANCE GREED  -->
 	<element name="Enhance Greed" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ENHANCE_GREED">
 		<supports>Bard,Cleric,Sorcerer,Warlock,Wizard</supports>
@@ -1529,6 +1680,31 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element> 
+
+<!-- EXTRACT ESSENCE -->
+	<element name="Extract Essence" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_EXTRACT_ESSENCE">
+		<supports>Bard,Druid,Warlock,Wizard</supports>
+		<description>
+			<p>You extract the goodness from food, pulling all the nutritional value out of three days’ worth of meals and concentrating it into a tablespoon of bland, flourlike powder. The flour can be mixed with liquid and drunk or baked into bread. When consumed, it still imparts all the nutritional value of the original food. </p>
+			<p class="indent">The original food appears unchanged, and though it’s still filling, it has no nutritional value. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, an additional three meals’ worth of food can be extracted for each slot level above 1st. </p>
+			<p class="indent"><b><i>Ritual Focus.</i></b> If you expend your ritual focus, you can choose to have each day’s worth of meals take the form of a single slice of bread. Also, once you've expended your ritual focus this mental energy has been expended, a caster’s ritual focus can’t be used again until he or she finishes a short or long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">ritual</set>
+			<set name="level">1</set>
+			<set name="school" addition="ritual only">Transmutation</set>
+			<set name="time">10 minutes</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Permanent</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a wooden bowl</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
 
 <!-- FIRE DRAGON’S FURY --> 
 	<element name="Fire Dragon'S Fury" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_FIRE_DRAGONS_FURY">
@@ -1924,6 +2100,30 @@
 			<set name="isRitual">true</set>
 		</setters>
 	</element>	
+
+<!-- GUEST OF HONOR  -->
+	<element name="Guest of Honor" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_GUEST_OF_HONOR">
+		<supports>Bard,Wizard</supports>
+		<description>
+			<p>You whisper words of encouragement, and a creature that you touch gains confidence along with approval from strangers. For the spell’s duration, the target puts its best foot forward and strangers associate the creature with positive feelings. The target adds 1d4 to all Charisma (Persuasion) checks made to influence the attitudes of others. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the effect lasts for an additional 10 minutes for each slot level above 1st. </p>
+			<p class="indent"><b><i>Ritual Focus.</i></b> If you expend your ritual focus, the effect lasts for 24 hours. Also, once you've expended your ritual focus this mental energy has been expended, a caster’s ritual focus can’t be used again until he or she finishes a short or long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">ritual</set>
+			<set name="level">1</set>
+			<set name="school" addition="ritual only">Enchantment</set>
+			<set name="time">10 minutes</set>
+			<set name="range">Touch</set>
+			<set name="duration">10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a signet ring worth 25gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
 
 <!-- GUIDING STAR -->
 	<element name="Guiding Star" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_GUIDING_STAR">
@@ -2954,6 +3154,56 @@
 		</setters>
 	</element> 
 
+<!-- SHADOWS BROUGHT TO LIGHT  -->
+	<element name="Shadows Brought to Light" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SHADOWS_BROUGHT_TO_LIGHT">
+		<supports>Bard,Cleric,Paladin,Warlock,Wizard</supports>
+		<description>
+			<p>If a creature you designate within range fails a Charisma saving throw, you cause the target’s shadow to come to life and reveal one of the creature’s most scandalous secrets: some fact that the target would not want widely known (GM’s choice). When casting the spell, you choose whether everyone present will hear the secret, in which case the shadow speaks loudly in a twisted version of the target’s voice, or if the secret is whispered only to you. The shadow speaks in the target’s native language. </p>
+			<p class="indent">If the target does not have a scandalous secret or does not have a spoken language, the spell fails as if the creature’s saving throw had succeeded. </p>
+			<p class="indent">If the secret was spoken aloud, the target takes a −2 penalty to Charisma checks involving anyone who was present when it was revealed. This penalty lasts until you finish a long rest. </p>
+			<p class="indent"><b><i>Ritual Focus.</i></b> If you expend your ritual focus, the target has disadvantage on Charisma checks instead of taking the −2 penalty. Also, once you've expended your ritual focus this mental energy has been expended, a caster’s ritual focus can’t be used again until he or she finishes a short or long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">ritual</set>
+			<set name="level">2</set>
+			<set name="school" addition="ritual only">Divination</set>
+			<set name="time">10 minutes</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
+<!-- SHADOWY RETRIBUTION  -->
+	<element name="Shadowy Retribution" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SHADOWY_RETRIBUTION">
+		<supports>Cleric,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You fill a small silver cup with your own blood (taking 1d4 piercing damage) while chanting vile curses in the dark. Once the chant is completed, you consume the blood and swear an oath of vengeance against any who harm you. </p>
+			<p class="indent">If you are reduced to 0 hit points, your oath is invoked; a shadow materializes within 5 feet of you. The shadow attacks the creature that reduced you to 0 hit points, ignoring all other targets, until it or the target is slain, at which point the shadow dissipates into nothing. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, an additional shadow is conjured for each slot level above 4th. </p>
+			<p class="indent"><b><i>Ritual Focus.</i></b> If you expend your ritual focus, the spell summons a banshee instead of a shadow. If you also use a higher-level spell slot, additional undead are still shadows. Also, once you've expended your ritual focus this mental energy has been expended, a caster’s ritual focus can’t be used again until he or she finishes a short or long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">ritual</set>
+			<set name="level">4</set>
+			<set name="school" addition="ritual only">Necromancy</set>
+			<set name="time">10 minutes</set>
+			<set name="range">Self</set>
+			<set name="duration">12 hours</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a small silver cup filled with the caster's blood</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
 <!-- SHEEN OF ICE  -->
 	<element name="Sheen of Ice" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SHEEN_OF_ICE">
 		<supports>Sorcerer,Warlock,Wizard</supports>
@@ -3119,6 +3369,30 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element> 
+
+<!-- SONG OF THE FOREST  -->
+	<element name="Song of the Forest" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SONG_OF_THE_FOREST">
+		<supports>Druid,Ranger,Wizard</supports>
+		<description>
+			<p>You attune your senses to the natural world, so that you detect every sound that occurs within 60 feet: wind blowing through branches, falling leaves, grazing deer, trickling streams, and more. You can clearly picture the source of each sound in your mind. The spell gives you tremorsense out to a range of 10 feet. In addition, you have advantage on Wisdom (Perception) checks that rely on hearing. Creatures that make no noise or that are magically silent cannot be detected by this spell’s effect. </p>
+			<p class="indent">Song of the forest functions only in natural environments; it fails if cast underground, in a city, or in a building that isolates the caster from nature (GM’s discretion). </p>
+			<p class="indent"><b><i>Ritual Focus.</i></b> If you expend your ritual focus, the spell also gives you blindsight out to a range of 30 feet. Also, once you've expended your ritual focus this mental energy has been expended, a caster’s ritual focus can’t be used again until he or she finishes a short or long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">ritual</set>
+			<set name="level">3</set>
+			<set name="school" addition="ritual only">Transmutation</set>
+			<set name="time">10 minutes</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a dried leaf, crumpled and released</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
 
 <!-- SOOTHING INCANDESCENCE -->
 	<element name="Soothing Incandescence" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SOOTHING_INCANDESCENCE">
@@ -3727,6 +4001,31 @@
 			<set name="materialComponent">component</set>
 			<set name="isConcentration">true</set>
 			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- VINE TRESTLE  -->
+	<element name="Vine Trestle" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_VINE_TRESTLE">
+		<supports>Druid,Ranger,Wizard</supports>
+		<description>
+			<p>You cause a vine to sprout from the ground and crawl across a surface or rise into the air in a direction chosen by you. The vine must sprout from a solid surface (such as the ground or a wall), and it is strong enough to support 600 pounds of weight along its entire length. The vine collapses immediately if that 600-pound limit is exceeded. A vine that collapses from weight or damage instantly disintegrates. </p>
+			<p class="indent">The vine has many small shoots, so it can be climbed with a successful DC 5 Strength (Athletics) check. It has AC 8, hit points equal to 5 × your spellcasting level, and a damage threshold of 5. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the vine can support an additional 30 pounds, and its damage threshold increases by 1 for each slot level above 2nd. </p>
+			<p class="indent"><b><i>Ritual Focus.</i></b> If you expend your ritual focus, the vine is permanent until destroyed or dispelled. Also, once you've expended your ritual focus this mental energy has been expended, a caster’s ritual focus can’t be used again until he or she finishes a short or long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">ritual</set>
+			<set name="level">2</set>
+			<set name="school" addition="ritual only">Conjuration</set>
+			<set name="time">10 minutes</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a 1-inch piece of green vine that is consumed in the casting</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
 		</setters>
 	</element>
 
