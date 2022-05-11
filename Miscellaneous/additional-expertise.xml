@@ -4,7 +4,7 @@
 	<info>
         <name>Additional Expertise</name>
         <update version="0.0.1">
-            <file name="additional-expertise.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells.xml" />
+            <file name="additional-expertise.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Miscellaneous/additional-expertise.xml" />
         </update>
     </info>
 
