@@ -3,12 +3,13 @@
 	<info>
 		<name>Miscellaneous</name>
 		<description>Miscellaneous spells, subclasses, etc from around the internet.</description>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="misc.index" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Miscellaneous/misc.index" />
 		</update>
 	</info>
 	<files>			
 		<file name="misc-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Miscellaneous/misc-spells.xml" />
+		<file name="additional-expertise.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Miscellaneous/additional-expertise.xml" />
 		
 		<!-- Archetypes -->
 		<file name="paladin-storm.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Miscellaneous/archetypes/paladin-storm.xml" />
