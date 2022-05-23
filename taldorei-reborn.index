@@ -9,36 +9,37 @@
 		</update>
 	</info>
 	<files>
-		<file name="source.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%3A%20Tal'Dorei%20Campaign%20Setting%20Reborn/source.xml" />
+		<file name="source.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%20Tal'Dorei%20Campaign%20Setting%20Reborn/source.xml" />
 																	   
   		<!-- Archetypes -->
-		<file name="barbarian-juggernaut.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%3A%20Tal'Dorei%20Campaign%20Setting%20Reborn/archetypes/barbarian-juggernaut.xml" />
-		<file name="bard-tragedy.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%3A%20Tal'Dorei%20Campaign%20Setting%20Reborn/archetypes/bard-tragedy.xml" />
- 		<file name="cleric-blooddomain.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%3A%20Tal'Dorei%20Campaign%20Setting%20Reborn/archetypes/cleric-blooddomain.xml" />
-		<file name="cleric-moondomain.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%3A%20Tal'Dorei%20Campaign%20Setting%20Reborn/archetypes/cleric-moondomain.xml" />
-		<file name="druid-blighted.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%3A%20Tal'Dorei%20Campaign%20Setting%20Reborn/archetypes/druid-blighted.xml" />
-		<file name="monk-cobaltsoul.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%3A%20Tal'Dorei%20Campaign%20Setting%20Reborn/archetypes/monk-cobaltsoul.xml" />
-		<file name="paladin-opensea.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%3A%20Tal'Dorei%20Campaign%20Setting%20Reborn/archetypes/paladin-opensea.xml" />
-		<file name="sorcerer-runechild.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%3A%20Tal'Dorei%20Campaign%20Setting%20Reborn/archetypes/sorcerer-runechild.xml" />
-		<file name="wizard-bloodmagic.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%3A%20Tal'Dorei%20Campaign%20Setting%20Reborn/archetypes/wizard-bloodmagic.xml" />
+		<file name="barbarian-juggernaut.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%20Tal'Dorei%20Campaign%20Setting%20Reborn/archetypes/barbarian-juggernaut.xml" />
+        </update>
+		<file name="bard-tragedy.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%20Tal'Dorei%20Campaign%20Setting%20Reborn/archetypes/bard-tragedy.xml" />
+ 		<file name="cleric-blooddomain.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%20Tal'Dorei%20Campaign%20Setting%20Reborn/archetypes/cleric-blooddomain.xml" />
+		<file name="cleric-moondomain.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%20Tal'Dorei%20Campaign%20Setting%20Reborn/archetypes/cleric-moondomain.xml" />
+		<file name="druid-blighted.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%20Tal'Dorei%20Campaign%20Setting%20Reborn/archetypes/druid-blighted.xml" />
+		<file name="monk-cobaltsoul.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%20Tal'Dorei%20Campaign%20Setting%20Reborn/archetypes/monk-cobaltsoul.xml" />
+		<file name="paladin-opensea.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%20Tal'Dorei%20Campaign%20Setting%20Reborn/archetypes/paladin-opensea.xml" />
+		<file name="sorcerer-runechild.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%20Tal'Dorei%20Campaign%20Setting%20Reborn/archetypes/sorcerer-runechild.xml" />
+		<file name="wizard-bloodmagic.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%20Tal'Dorei%20Campaign%20Setting%20Reborn/archetypes/wizard-bloodmagic.xml" />
 		
 		
 		<!--Backgrounds-->
-		<file name="ashari.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%3A%20Tal'Dorei%20Campaign%20Setting%20Reborn/backgrounds/ashari.xml" />
-		<file name="clasp-member.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%3A%20Tal'Dorei%20Campaign%20Setting%20Reborn/backgrounds/clasp-member.xml" />
-		<file name="lyceum-scholar.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%3A%20Tal'Dorei%20Campaign%20Setting%20Reborn/backgrounds/lyceum-scholar.xml" />
-		<file name="reformed-cultist.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%3A%20Tal'Dorei%20Campaign%20Setting%20Reborn/backgrounds/reformed-cultist.xml" />
-		<file name="whitestone-rifle-corps.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%3A%20Tal'Dorei%20Campaign%20Setting%20Reborn/backgrounds/whitestone-rifle-corps.xml" />
+		<file name="ashari.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%20Tal'Dorei%20Campaign%20Setting%20Reborn/backgrounds/ashari.xml" />
+		<file name="clasp-member.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%20Tal'Dorei%20Campaign%20Setting%20Reborn/backgrounds/clasp-member.xml" />
+		<file name="lyceum-scholar.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%20Tal'Dorei%20Campaign%20Setting%20Reborn/backgrounds/lyceum-scholar.xml" />
+		<file name="reformed-cultist.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%20Tal'Dorei%20Campaign%20Setting%20Reborn/backgrounds/reformed-cultist.xml" />
+		<file name="whitestone-rifle-corps.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%20Tal'Dorei%20Campaign%20Setting%20Reborn/backgrounds/whitestone-rifle-corps.xml" />
 		
 		<!--Spells-->
-		<file name="taldorei-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%3A%20Tal'Dorei%20Campaign%20Setting%20Reborn/taldorei-spells.xml" />
+		<file name="taldorei-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%20Tal'Dorei%20Campaign%20Setting%20Reborn/taldorei-spells.xml" />
 		
 		<!--Feats-->
-		<file name="feats.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%3A%20Tal'Dorei%20Campaign%20Setting%20Reborn/feats.xml" />
+		<file name="feats.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%20Tal'Dorei%20Campaign%20Setting%20Reborn/feats.xml" />
 	
 		<!--Magic Items-->
-		<file name="items-armor.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%3A%20Tal'Dorei%20Campaign%20Setting%20Reborn/items-armor.xml" />
-		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%3A%20Tal'Dorei%20Campaign%20Setting%20Reborn/items-weapons.xml" />
-		<file name="items-wonderous.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%3A%20Tal'Dorei%20Campaign%20Setting%20Reborn/items-wonderous.xml" />
+		<file name="items-armor.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%20Tal'Dorei%20Campaign%20Setting%20Reborn/items-armor.xml" />
+		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%20Tal'Dorei%20Campaign%20Setting%20Reborn/items-weapons.xml" />
+		<file name="items-wonderous.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%20Tal'Dorei%20Campaign%20Setting%20Reborn/items-wonderous.xml" />
 	</files>
 </index>
