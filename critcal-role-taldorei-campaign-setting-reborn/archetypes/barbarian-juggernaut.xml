@@ -3,7 +3,7 @@
     <info>
         <name>Barbarian: Path of the Juggernaut</name>
         <author url="https://darringtonpress.com/taldorei-campaign-setting-reborn/">Darrington Press, Critical Role</author>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="barbarian-juggernaut.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/test/critcal-role-taldorei-campaign-setting-reborn/archetypes/barbarian-juggernaut.xml" />
         </update>
     </info>
