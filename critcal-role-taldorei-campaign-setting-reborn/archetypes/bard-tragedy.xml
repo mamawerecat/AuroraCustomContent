@@ -2,8 +2,8 @@
 <elements>
     <info>
         <name>Bard- College of Tragedy</name>
-        <update version="0.0.1">
-            <file name="bard-tragedy.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%20Tal'Dorei%20Campaign%20Setting%20Reborn/archetypes/bard-tragedy.xml" />
+        <update version="0.0.2">
+            <file name="bard-tragedy.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/critcal-role-taldorei-campaign-setting-reborn/archetypes/bard-tragedy.xml" />
         </update>
     </info>
     
