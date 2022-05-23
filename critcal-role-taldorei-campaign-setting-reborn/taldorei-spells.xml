@@ -2,8 +2,8 @@
 <elements>
     <info>
         <name>Tal'Dorei Campaign Setting Reborn - Spells</name>
-        <update version="0.0.1">
-            <file name="taldorei-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%20Tal'Dorei%20Campaign%20Setting%20Reborn/taldorei-spells.xml" />
+        <update version="0.0.2">
+            <file name="taldorei-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/critcal-role-taldorei-campaign-setting-reborn/taldorei-spells.xml" />
         </update>
     </info>
     
