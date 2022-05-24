@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Whitestone Rifle Corps Background</name>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="whitestone-rifle-corps.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/critcal-role-taldorei-campaign-setting-reborn/backgrounds/whitestone-rifle-corps.xml" />
         </update>
     </info>
