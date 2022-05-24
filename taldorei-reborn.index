@@ -4,7 +4,7 @@
 		<name>Critical Role: Tal'Dorei Campaign Setting Reborn</name>
 		<description>The Tal’Dorei Campaign Setting Reborn is a sourcebook from Darrington Press. It expands on the Critical Role: Tal'Dorei Campaign Setting sourcebook.</description>
 		<author url="https://darringtonpress.com/taldorei-campaign-setting-reborn/">Critical Role, Darrington Press</author>
-		<update version="0.1.2">
+		<update version="0.1.3">
 			<file name="taldorei-reborn.index" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/taldorei-reborn.index" />
 		</update>
 	</info>
@@ -16,7 +16,7 @@
 		<file name="bard-tragedy.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/critcal-role-taldorei-campaign-setting-reborn/archetypes/bard-tragedy.xml" />
  		<file name="cleric-blooddomain.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/critcal-role-taldorei-campaign-setting-reborn/archetypes/cleric-blooddomain.xml" />
 		<file name="cleric-moondomain.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/critcal-role-taldorei-campaign-setting-reborn/archetypes/cleric-moondomain.xml" />
-		<file name="druid-blighted.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/critcal-role-taldorei-campaign-setting-reborn/archetypes/druid-blighted.xml" />
+		<!--<file name="druid-blighted.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/critcal-role-taldorei-campaign-setting-reborn/archetypes/druid-blighted.xml" /> -->
 		<file name="monk-cobaltsoul.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/critcal-role-taldorei-campaign-setting-reborn/archetypes/monk-cobaltsoul.xml" />
 		<file name="paladin-opensea.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/critcal-role-taldorei-campaign-setting-reborn/archetypes/paladin-opensea.xml" />
 		<file name="sorcerer-runechild.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/critcal-role-taldorei-campaign-setting-reborn/archetypes/sorcerer-runechild.xml" />
