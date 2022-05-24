@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+
+    <info>
+        <name>Tal'Dorei Items - Gear</name>
+        <update version="0.0.2">
+            <file name="items-wonderous.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/critcal-role-taldorei-campaign-setting-reborn/items-wonderous.xml" />
+        </update>
+    </info>  
+
+<!-- Boots of Haste -->
+    <element name="Boots of Haste" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_BOOTS_OF_HASTE">
+        <description>
+            <p>While you wear these boots, you can click your heels together to cast the haste spell on yourself as a bonus action. You don’t suffer from lethargy when the spell ends when cast using these boots.</p>
+            <p class="indent">Once this property is used, it can’t be used again until next dawn.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Very Rare</set>
+            <set name="attunement">true</set>
+            <set name="slot">feet</set>
+        </setters>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_HASTE" />
+        </rules>
+    </element>
+
+<!-- Boots of the Vigilant -->
+    <element name="Boots of the Vigilant" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_BOOTS_OF_THE_VIGILANT">
+        <description>
+            <p>While you wear these boots, you can sense impending danger. After you roll initiative, you can choose to roll a d8 and add it to your initiative roll.</p>
+            <p class="indent">Once  this property is used, it can’t be used again until the next dawn.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="slot">feet</set>
+        </setters>
+    </element>
+
+<!-- Coat of the Crest -->
+    <element name="Coat of the Crest" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_COAT_OF_THE_CREST">
+        <description>
+            <p>This exquisite brocade coat is cut in a long, highcollared style popular among nobles of the Clovis Concord—a nation on the west coast of Wildemount whose stylish fashion is often mimicked in Tal’Dorei. Its shimmering lining hints at its magical properties.</p>
+            <p class="indent">You gain a +1 bonus to AC while wearing this coat, which can be worn over light armor.</p>
+            <p class="indent">Additionally, the coat has 3 charges and regains 1d3 expended charges daily at dawn. When you are the target of an attack while wearing this coat, you can spend 1 charge as a reaction to gain resistance to one type of damage from the triggering attack. This resistance is effective against the triggering attack and lasts until the start of your next turn.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="ac:misc" value="1" />
+        </rules>
+    </element>
+
+<!-- Doublet of Dramatic Demise -->
+    <element name="Doublet of Dramatic Demise" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_DOUBLET_OF_DRAMATIC_DEMISE">
+        <description>
+            <p>This striking satin jacket allows you to make the most of your dying moments.</p>
+            <p class="indent">When you drop to 0 hit points while wearing this doublet, you do not fall unconscious. Instead, you are incapacitated and your speed becomes 0, but you can speak and communicate. You make death saving throws as normal, but if you roll a 1 on the d20, you swoon with a loud gasp and die instantly.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Common</set>
+        </setters>
+    </element>
+
+<!-- Echo Stone -->
+    <element name="Echo Stone" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_ECHO_STONE">
+        <description>
+            <p>This dull-blue river stone is soft to the touch, and makes remarkably little sound if dropped.</p>
+            <p class="indent">When an echo stone is squeezed as an action, it glows faintly for 1 minute. The stone records all sound made within 15 feet of it while glowing, then repeats that recorded sound at an equal volume once every 5 minutes. This cycle of repetition continues until the stone is squeezed again as an action, which silences it. Squeezing the stone twice in quick succession as an action causes it to play the sounds it has most recently recorded, rather than recording new sounds.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+        </setters>
+    </element>
+
+<!-- Mirror of Infinite Transpondence -->
+
+    <element name="Mirror of Infinite Transpondence" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_MIRROR_OF_INFINITE_TRANSPONDENCE">
+        <description>
+            <p>These silver hand mirrors always come in pairs. When activated as an action, a mirror establishes a visual link with its paired mirror for 10 minutes, with the two mirrors acting as opposite sides of the same open window. The mirrors create this connection even if both are on different planes. When a single mirror of infinite transpondence is found, the GM decides where its paired mirror is and who possesses it. A random possessor and location can be determined by rolling on the table below.</p>
+            <p class="indent">Once the connection between the two mirrors has been activated three times from either end, it can’t be activated again until the next dawn.</p>
+        <table>
+        <thead>
+            <tr><td>d8</td><td>Location</td><td>Possessor</td></tr>
+        </thead>
+            <tr><td>1</td><td>Emon</td><td>Seeker Odessa Tal’Dorei</td></tr>
+            <tr><td>2</td><td>Whitestone</td><td>None; the mirror is in an empty dungeon</td></tr>
+            <tr><td>3</td><td>Kymal</td><td>Sylker “The Millionaire” Uttolot</td></tr>
+            <tr><td>4</td><td>Westruun</td><td>Realmseer Eskil Ryndarien</td></tr>
+            <tr><td>5</td><td>Syngorn</td><td>Ouestra, the Voice of Memory</td></tr>
+            <tr><td>6</td><td>The Elemental Plane of Water</td><td>Khedive Xundi, Lord of Silver Silt</td></tr>
+            <tr><td>7</td><td>The Plane of Shadow</td><td>A Remnant chosen (see page 251)</td></tr>
+            <tr><td>8</td><td>An untraceable location</td><td>The Wonderworker</td></tr>
+        </table>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Very Rare</set>
+        </setters>
+    </element>
+
+<!-- Raven’s Slumber -->
+    <element name="Raven's Slumber" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_RAVENS_SLUMBER">
+        <description>
+            <p>This black crystal pendant is a magical gateway to a small pocket dimension. You can use the pendant as an improvised weapon to make a melee or ranged weapon attack against a Large or smaller creature. On a hit, the target must succeed on a DC 10 Wisdom saving throw or be trapped within the crystal. A creature that wants to be trapped can intentionally fail this saving throw.</p>
+            <p class="indent">Only one creature at a time can be held in a raven’s slumber. That creature is aware of the passage of time and can see the world outside of this talisman as if through a window. You can release a held creature to an unoccupied space within 5 feet of you as a bonus action.</p>
+            <p class="indent">If a companion creature granted to you by a class feature, or a beast that you’ve tamed as a companion, is reduced to 0 hit points while within 100 feet of you, it is immediately drawn into the pendant and stabilized. If the pendant already holds a creature, this effect fails.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Very Rare</set>
+        </setters>
+    </element>
+
+<!-- Rod of Mercurial Form -->
+    <element name="Rod of Mercurial Form" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_ROD_OF_MERCURIAL_FORM">
+        <description>
+            <p>This humble steel rod is engraved with tiny symbols representing different weapons, as well as the monogram “T.D.”</p>
+            <p class="indent">A creature holding this rod can speak the name of any simple or martial weapon aloud as a bonus action, causing the rod to transform into an ordinary weapon of that type. When in the form of a ranged weapon, this rod magically creates its own ammunition, which disappears after a ranged attack hits or misses.</p>
+        </description>
+        <setters>
+            <set name="category">Rods</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="slot">onehand</set>
+        </setters>
+    </element>
+
+<!-- Stormrider Boots -->
+
+    <element name="Stormrider Boots" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_STORMRIDER_BOOTS">
+        <description>
+            <p>These dark leather boots look to be of common make, but a subtle pattern of swirling storm clouds upon their soles suggests the potency of their enchantment. You can activate these boots as part of your movement, gaining the following benefits until the end of your turn:</p>
+            <p class="indent">You have a flying speed of 90 feet.</p>
+            <p class="indent">Opportunity attacks against you are made with disadvantage.</p>
+            <p class="indent">Whenever you move within 5 feet of a hostile creature, it must succeed on a DC 15 Dexterity saving throw or take 3d8 lightning damage. A creature can’t be damaged in this way more than once per turn.</p>
+            <p class="indent">Once  this property is used, it can’t be used again until the next dawn.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="slot">feet</set>
+        </setters>
+    </element>
+
+<!-- Earthboard --> 
+    <element name="Earthboard" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_EARTHBOARD">
+        <description>
+            <p>An earthboard is a slab of granite about three inches thick, nine feet long, and two feet wide, with smooth, tapered ends. However, its mundane appearance belies its unique elemental power, which reduces its weight to 40 pounds while a creature is attuned to it. The Earth Ashari of Terrah can often be seen with these stone boards upon their backs as they trek into the crags of the Cliffkeep Mountains.</p>
+            <p class="indent">While standing on an earthboard, you gain the following benefits:</p>
+            <p class="indent">Your speed increases to 60 feet as the board skims across solid ground (but not liquid surfaces).</p>
+            <p class="indent">If you ramp off a surface of solid earth, you can long jump up to 60 feet. When you end this jump, you can choose to slam into the ground, creating a shockwave. Each creature standing on the ground within 20 feet of you must succeed on a DC 14 Strength saving throw or fall prone.</p>
+            <p class="indent">You have a burrowing speed of 20 feet that allows you to tunnel through earth or solid rock, leaving a 5-foot-diameter tunnel in your wake. As an action, you can increase this burrowing speed to 60 feet until the start of your next turn.</p>
+            <p class="indent">The earthboard always moves with you until you decide to dismount it (no action required).</p>
+            <p>These benefits last until you end your turn not standing on the earthboard.</p>
+            <p class="indent">Ashari Tool</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+<!-- Titanstone Knuckles (Dormant) -->
+    <element name="Titanstone Knuckles (Dormant)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_TITANSTONE_KNUCKLES_DORMANT">
+        <description>
+            <p>Carved from the heartstone of a slain earth primordial, these gauntlets bestow immeasurable might to their wearer. In recent times, they were wielded by the legendary barbarian Grog Strongjaw, who continues to use them as he seeks worthy challengers across Tal’Dorei and Exandria.</p>
+            <p class="indent">While the Titanstone Knuckles are in a dormant state, your Strength score becomes 22 while you wear these gauntlets.</p>
+            <p class="indent">Additionally, your weapon attacks deal double damage to objects and structures.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Legendary</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="strength:score:set" value="22" bonus="base" />
+        </rules>
+    </element>
+
+<!-- Titanstone Knuckles (Awakened) -->
+    <element name="Titanstone Knuckles (Awakened)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_TITANSTONE_KNUCKLES_AWAKENED">
+        <description>
+            <p>Carved from the heartstone of a slain earth primordial, these gauntlets bestow immeasurable might to their wearer. In recent times, they were wielded by the legendary barbarian Grog Strongjaw, who continues to use them as he seeks worthy challengers across Tal’Dorei and Exandria.</p>
+            <p class="indent">While the Titanstone Knuckles are in an awakened state, your Strength score becomes 24 while you wear these gauntlets.</p>
+            <p class="indent">Additionally, your weapon attacks deal double damage to objects and structures.</p>
+            <p class="indent">You can use an action to cast the enlarge/reduce spell from the gauntlets on yourself (enlarge only), with a duration of 10 minutes. This property of the gauntlets can’t be used again until you finish a long rest.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Legendary</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="strength:score:set" value="24" bonus="base" />
+            <grant type="Spell" id="ID_PHB_SPELL_ENLARGE_REDUCE" />
+        </rules>
+    </element>
+
+<!-- Titanstone Knuckles (Exalted) -->
+    <element name="Titanstone Knuckles (Exalted)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_TITANSTONE_KNUCKLES_EXALTED">
+        <description>
+            <p>Carved from the heartstone of a slain earth primordial, these gauntlets bestow immeasurable might to their wearer. In recent times, they were wielded by the legendary barbarian Grog Strongjaw, who continues to use them as he seeks worthy challengers across Tal’Dorei and Exandria.</p>
+            <p class="indent">While the Titanstone Knuckles are in an exalted state, your Strength score becomes 26 while you wear these gauntlets.</p>
+            <p class="indent">Additionally, your weapon attacks deal double damage to objects and structures.</p>
+            <p class="indent">You can use an action to cast the enlarge/reduce spell from the gauntlets on yourself (enlarge only), with a duration of 10 minutes. While you are under the effect of the enlarge/ reduce spell cast by the gauntlets, you have resistance to cold, fire, lightning, and thunder damage. This property of the gauntlets can’t be used again until you finish a long rest.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Legendary</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="strength:score:set" value="26" bonus="base" />
+            <grant type="Spell" id="ID_PHB_SPELL_ENLARGE_REDUCE" />
+        </rules>
+    </element>
+
+<!-- Wraps of Dyamak (Dormant) -->
+    <element name="Wraps of Dyamak (Dormant)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_WRAPS_OF_DYAMAK_DORMANT">
+        <description>
+            <p>Created and wielded by the ancient warrior-monk Dyamak, these thick strips of enchanted cloth are stained to appear dark crimson with blood of unknown origin. The current resting place of the wraps is unknown.</p>
+            <p class="indent">When the Wraps of Dyamak are in a dormant state, you gain a +1 bonus to attack and damage rolls made with your unarmed strike while wearing them. In addition, when you finish a short or long rest, you gain a number of temporary hit points equal to your total number of ki points.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Legendary</set>
+            <set name="attunement" addition="by a monk">true</set>
+        </setters>
+    </element>
+
+<!-- Wraps of Dyamak (Awakened) -->
+    <element name="Wraps of Dyamak (Awakened)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_WRAPS_OF_DYAMAK_AWAKENED">
+        <description>
+            <p>Created and wielded by the ancient warrior-monk Dyamak, these thick strips of enchanted cloth are stained to appear dark crimson with blood of unknown origin. The current resting place of the wraps is unknown.</p>
+            <p class="indent">When the Wraps of Dyamak are in an awakened state, you gain a +2 bonus to attack and damage rolls made with your unarmed strike while wearing them. In addition, when you finish a short or long rest, you gain a number of temporary hit points equal to your total number of ki points.</p>
+            <p class="indent">You can cast the misty step spell from the wraps as a bonus action, vanishing in a cloud of crimson mist. This property of the wraps can’t be used again until you finish a short or long rest, or until you score a critical hit with an unarmed strike against a hostile creature.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Legendary</set>
+            <set name="attunement" addition="by a monk">true</set>
+        </setters>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" />
+        </rules>
+    </element>
+
+<!-- Wraps of Dyamak (Exalted) -->
+    <element name="Wraps of Dyamak (Exalted)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_WRAPS_OF_DYAMAK_EXALTEDED">
+        <description>
+            <p>Created and wielded by the ancient warrior-monk Dyamak, these thick strips of enchanted cloth are stained to appear dark crimson with blood of unknown origin. The current resting place of the wraps is unknown.</p>
+            <p class="indent">When the Wraps of Dyamak are in an exalted state, you gain a +3 bonus to attack and damage rolls made with your unarmed strike while wearing them. In addition, when you finish a short or long rest, you gain a number of temporary hit points equal to your total number of ki points.</p>
+            <p class="indent">You can cast the misty step spell from the wraps as a bonus action, vanishing in a cloud of crimson mist. This property of the wraps can’t be used again until you finish a short or long rest, or until you score a critical hit with an unarmed strike against a hostile creature.</p>
+            <p class="indent">When you hit with an unarmed strike, you can choose to make the attack a ravenous strike. The target takes an extra 6d6 necrotic damage, and you regain hit points equal to the amount of necrotic damage dealt. This property of the wraps can’t be used again until you finish a long rest, or until you score a critical hit with an unarmed strike against a hostile creature.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Legendary</set>
+            <set name="attunement" addition="by a monk">true</set>
+        </setters>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" />
+        </rules>
+    </element>
+
+<!-- Flamefriend Lantern --> 
+    <element name="Flamefriend Lantern" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_FLAMEFRIEND_LANTERN">
+        <description>
+            <p>This wrought-iron lantern holds a small fire elemental spirit. To attune to this item, you must also succeed on a DC 10 Charisma check to bond with the spirit inside the lantern.</p>
+            <p class="indent"><i><b>Light and Flame.</b></i> While attuned to the lantern, you can verbally ask the elemental to glow (no action required), causing the lantern to cast bright light in a radius of your choice up to 60 feet and dim light for the same distance beyond that. You can also cast the produce flame cantrip from the lantern at will. Wisdom is your spellcasting ability for this spell.</p>
+            <p class="indent"><i><b>Elemental Essence.</b></i> The fire elemental spirit in the lantern can grant you a small fragment of its power.  Once the elemental has shared its power with you in this way, it can’t do so again until the next dawn. As an action, you gain one of the following benefits of your choice for 1 hour:</p>
+            <ul>
+                <li>You have resistance to fire damage.</li>
+                <li>Whenever a creature hits you with a melee attack, that creature takes fire damage equal to your proficiency bonus.</li>
+                <li>You can cast the burning hands spell (spell save DC 15) from the lantern at 3rd level. Once you cast the spell, you can’t do so again until the next time you use this property of the lantern.</li>
+            </ul>
+            <p class="indent"><i><b>Willful Attunement.</b></i> Your attunement to the lantern lasts until you choose to end it, or until you anger the elemental (by dousing the lantern in water, attacking another nonhostile elemental being, and so forth). You can attempt to attune to the lantern again and repeat the check to bond with the elemental during a short or long rest, but you make this check with disadvantage until you have made amends to the spirit, as the GM determines.</p>
+            <p><b><i>Ashari Tool</i></b></p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_PRODUCE_FLAME" />
+            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" />
+        </rules>
+    </element>
+
+<!-- Skysail --> 
+    <element name="Skysail" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_SKYSAIL">
+        <description>
+            <p>These bat-like wings were first used by the Air Ashari to soar through the sky. They are constructed of either leather and bone, or cloth and wood, and are set onto a sturdy wooden pole that helps their user remain stable during flight.</p>
+            <p class="indent">While these wings are open and you are riding the skysail, you can glide through the air. You have a flying speed of 60 feet, but you must descend at least 10 feet by the end of each of your turns and you can’t gain altitude.</p>
+            <p class="indent">Additionally, while in contact with the skysail, you can use an action to cast the fly spell on yourself, with a duration of 1 minute and requiring no concentration. The spell ends if you lose physical contact with the skysail. Once this property is used, it can’t be used again until the next dawn, or unless the skysail is immersed in powerful magic of elemental air. (This includes magic such as that found at the top of the Summit Peaks near the rift of air in Zephrah, or on the Elemental Plane of Air).</p>
+            <p class="indent">When the skysail is not in use, its wings can be retracted, and its pole can be used as a quarterstaff.</p>
+            <p><b><i>Ashari Tool</i></b></p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+<!-- Cabal's Ruin (Dormant) -->
+    <element name="Cabal's Ruin (Dormant)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_CABALS_RUIN_DORMANT">
+        <description>
+            <p>This cloak is made of heavy dark cloth trimmed with golden patterns, and occasionally shimmers with sparks of arcane energy. It was once worn by the famed gunslinger Percival Fredrickstein von Musel Klossowski de Rolo III of Whitestone.</p>
+            <p class="indent">While Cabal’s Ruin is in a dormant state, the cloak has 4 charges and it regains 1d4 expended charges daily at dawn. When you hit with an attack, you can expend any number of charges from the cloak, with the attack dealing an extra 1d6 lightning damage per charge expended. If your attack strikes multiple targets, you choose one target that takes this extra damage.</p>
+            <p class="indent"> When you are targeted by an enemy’s spell, you can use your reaction to absorb a portion of the spell’s energy into the cloak. The spell affects you normally, but the cloak regains a number of charges equal to the level of the spell. This property can’t be used again until you finish a short or long rest.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Legendary</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+<!-- Cabal's Ruin (Awakened) -->
+    <element name="Cabal's Ruin (Awakened)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_CABALS_RUIN_AWAKENED">
+        <description>
+            <p>This cloak is made of heavy dark cloth trimmed with golden patterns, and occasionally shimmers with sparks of arcane energy. It was once worn by the famed gunslinger Percival Fredrickstein von Musel Klossowski de Rolo III of Whitestone.</p>
+            <p class="indent">While Cabal’s Ruin is in an awakened state, the cloak has 6 charges and it regains 1d4 + 2 expended charges daily at dawn. When you hit with an attack, you can expend any number of charges from the cloak, with the attack dealing an extra 1d6 lightning damage per charge expended. If your attack strikes multiple targets, you choose one target that takes this extra damage.</p>
+            <p class="indent"> When you are targeted by an enemy’s spell, you can use your reaction to absorb a portion of the spell’s energy into the cloak. The spell affects you normally, but the cloak regains a number of charges equal to the level of the spell. When you use the cloak to absorb a spell, you gain resistance to one type of damage dealt by the spell (your choice). This resistance then lasts until the end of your next turn. This property can’t be used again until you finish a short or long rest.</p>
+            <p class="indent">You have advantage on saving throws against spells and other magical effects while wearing this cloak.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Legendary</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+<!-- Cabal's Ruin (Exalted) -->
+    <element name="Cabal's Ruin (Exalted)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_CABALS_RUIN_EXALTED">
+        <description>
+            <p>This cloak is made of heavy dark cloth trimmed with golden patterns, and occasionally shimmers with sparks of arcane energy. It was once worn by the famed gunslinger Percival Fredrickstein von Musel Klossowski de Rolo III of Whitestone.</p>
+            <p class="indent">While Cabal’s Ruin is in an exalted state, the cloak has 10 charges and it regains 1d6 + 4 expended charges daily at dawn. When you hit with an attack, you can expend any number of charges from the cloak, with the attack dealing an extra 1d6 lightning damage per charge expended. If your attack strikes multiple targets, you choose one target that takes this extra damage.</p>
+            <p class="indent"> When you are targeted by an enemy’s spell, you can use your reaction to absorb a portion of the spell’s energy into the cloak. The spell affects you normally, but the cloak regains a number of charges equal to the level of the spell. When you use the cloak to absorb a spell, you gain resistance to one type of damage dealt by the spell (your choice). This resistance then lasts until the end of your next turn. This property can’t be used again until you finish a short or long rest.</p>
+            <p class="indent">You have advantage on saving throws against spells and other magical effects while wearing this cloak.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Legendary</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+
+<!-- Circlet of Barbed Vision (Dormant) -->
+    <element name="Circlet of Barbed Vision (Dormant)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_CIRCLET_OF_BARBED_VISION_DORMANT">
+        <description>
+            <p>When you don this circlet of gnarled onyx, black barbs dig into your head, imparting power to you as the circlet twists your appearance to amuse the Spider Queen. The current resting place of the Circlet of Barbed Vision is unknown, but rumor has it that a spectral assassin known as the Inevitable End seeks this relic.</p>
+            <p class="indent">While the Circlet of Barbed Vision is in a dormant state, you have advantage on initiative rolls while you wear it, but your Charisma score decreases by 2. Your Charisma score returns to normal if you remove the circlet, but you take 4d6 psychic damage when you do so.</p>
+            <p class="indent">Additionally, when you make an attack roll, you can use your reaction to gain a +5 bonus to the roll. You make this choice after you see the roll, but before the GM says whether the attack hits or misses. You can’t use this property again until you finish a short or long rest.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Legendary</set>
+            <set name="slot">head</set>
+            <set name="attunement" addition="by a creature of non-good alignment">true</set>
+        </setters>
+        <rules>
+            <stat name="charisma" value="-2" alt="Circlet of Barbed Vision" />
+        </rules>
+    </element>
+
+<!-- Circlet of Barbed Vision (Awakened) -->
+    <element name="Circlet of Barbed Vision (Awakened)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_CIRCLET_OF_BARBED_VISION_AWAKENED">
+        <description>
+            <p>When you don this circlet of gnarled onyx, black barbs dig into your head, imparting power to you as the circlet twists your appearance to amuse the Spider Queen. The current resting place of the Circlet of Barbed Vision is unknown, but rumor has it that a spectral assassin known as the Inevitable End seeks this relic.</p>
+            <p class="indent">While the Circlet of Barbed Vision is in an awakened state, you have advantage on initiative rolls while you wear it, but your Charisma score decreases by 2. Your Charisma score returns to normal if you remove the circlet, but you take 4d6 psychic damage when you do so.</p>
+            <p class="indent">Additionally, when you make an attack roll, you can use your reaction to gain a +5 bonus to the roll. You make this choice after you see the roll, but before the GM says whether the attack hits or misses. Your ability to gain a bonus to an attack roll can be used twice between rests (long or short).</p>
+            <p class="indent">You have resistance to poison damage, and you are immune to the poisoned condition.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Legendary</set>
+            <set name="slot">head</set>
+            <set name="attunement" addition="by a creature of non-good alignment">true</set>
+        </setters>
+        <rules>
+            <stat name="charisma" value="-2" alt="Circlet of Barbed Vision" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+        </rules>
+    </element>
+
+<!-- Circlet of Barbed Vision (Exalted) -->
+    <element name="Circlet of Barbed Vision (Exalted)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_CIRCLET_OF_BARBED_VISION_EXALTED">
+        <description>
+            <p>When you don this circlet of gnarled onyx, black barbs dig into your head, imparting power to you as the circlet twists your appearance to amuse the Spider Queen. The current resting place of the Circlet of Barbed Vision is unknown, but rumor has it that a spectral assassin known as the Inevitable End seeks this relic.</p>
+            <p class="indent">While the Circlet of Barbed Vision is in an exalted state, you have advantage on initiative rolls while you wear it, but your Charisma score decreases by 2. Your Charisma score returns to normal if you remove the circlet, but you take 4d6 psychic damage when you do so.</p>
+            <p class="indent">Additionally, when you make an attack roll, you can use your reaction to gain a +5 bonus to the roll. You make this choice after you see the roll, but before the GM says whether the attack hits or misses. Your ability to gain a bonus to an attack roll can be used three times between rests (long or short).</p>
+            <p class="indent">You are immune to poison damage.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Legendary</set>
+            <set name="slot">head</set>
+            <set name="attunement" addition="by a creature of non-good alignment">true</set>
+        </setters>
+        <rules>
+            <stat name="charisma" value="-2" alt="Circlet of Barbed Vision" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
+            <grant type="Vision" id="ID_VISION_TRUESIGHT" />
+
+            <stat name="truesight:range" value="60" bonus="base" />
+        </rules>
+    </element>
+
+<!-- Kiss of the Changebringer (Dormant) -->
+    <element name="Kiss of the Changebringer (Dormant)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_KISS_OF_THE_CHANGEBRINGER_DORMANT">
+        <description>
+            <p>A beautiful, glittering emerald is set within this silver chain, humming with power and possibility. It is said that this amulet was stolen from the neck of the Changebringer herself by the Lord of the Hells, and locked within the vaults of Bazzoxan in Wildemount. It was later claimed there by a group of Aurora Watch soldiers during an expedition into that grim fortress’s abandoned temples.</p>
+            <p class="indent">While the Kiss of the Changebringer is in a dormant state, you have a +1 bonus to saving throws and are immune to the grappled condition while wearing it.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Legendary</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="intelligence:save:misc" value="1" />
+            <stat name="strength:save:misc" value="1" />
+            <stat name="dexterity:save:misc" value="1" />
+            <stat name="constitution:save:misc" value="1" />
+            <stat name="wisdom:save:misc" value="1" />
+            <stat name="charisma:save:misc" value="1" />
+        </rules>
+    </element>
+
+<!-- Kiss of the Changebringer (Awakened) -->
+    <element name="Kiss of the Changebringer (Awakened)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_KISS_OF_THE_CHANGEBRINGER_AWAKENED">
+        <description>
+            <p>A beautiful, glittering emerald is set within this silver chain, humming with power and possibility. It is said that this amulet was stolen from the neck of the Changebringer herself by the Lord of the Hells, and locked within the vaults of Bazzoxan in Wildemount. It was later claimed there by a group of Aurora Watch soldiers during an expedition into that grim fortress’s abandoned temples.</p>
+            <p class="indent">While the Kiss of the Changebringer is in an awakened state, you have a +2 bonus to saving throws while wearing it.</p>
+            <p class="indent">You are immune to the restrained and grappled conditions.</p>
+            <p class="indent">You can use an action to cast the blink spell on yourself. This property of the amulet can’t be used again until you finish a long rest.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Legendary</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="intelligence:save:misc" value="2" />
+            <stat name="strength:save:misc" value="2" />
+            <stat name="dexterity:save:misc" value="2" />
+            <stat name="constitution:save:misc" value="2" />
+            <stat name="wisdom:save:misc" value="2" />
+            <stat name="charisma:save:misc" value="2" />
+            <grant type="Spell" id="ID_PHB_SPELL_BLINK" />
+        </rules>
+    </element>
+
+<!-- Kiss of the Changebringer (Exalted) -->
+    <element name="Kiss of the Changebringer (Exalted)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_KISS_OF_THE_CHANGEBRINGER_EXALTED">
+        <description>
+            <p>A beautiful, glittering emerald is set within this silver chain, humming with power and possibility. It is said that this amulet was stolen from the neck of the Changebringer herself by the Lord of the Hells, and locked within the vaults of Bazzoxan in Wildemount. It was later claimed there by a group of Aurora Watch soldiers during an expedition into that grim fortress’s abandoned temples.</p>
+            <p class="indent">While the Kiss of the Changebringer is in an exalted state, you have a +3 bonus to saving throws while wearing it.</p>
+            <p class="indent">You are immune to the restrained, grappled, paralyzed, and petrified conditions.</p>
+            <p class="indent">You can use an action to cast the blink spell on yourself. This property of the amulet can’t be used again until you finish a long rest.</p>
+            <p class="indent">When you make an attack roll, ability check, or saving throw, you can roll an additional d20. You can choose to do so after you make the attack roll, ability check, or saving throw, but before the outcome is determined. You choose which of the d20s to use for your roll. This property of the amulet can’t be used again until you finish a short or long rest.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Legendary</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="intelligence:save:misc" value="3" />
+            <stat name="strength:save:misc" value="3" />
+            <stat name="dexterity:save:misc" value="3" />
+            <stat name="constitution:save:misc" value="3" />
+            <stat name="wisdom:save:misc" value="3" />
+            <stat name="charisma:save:misc" value="3" />
+
+            <grant type="Spell" id="ID_PHB_SPELL_BLINK" />
+        </rules>
+    </element>
+
+<!-- Spire of Conflux (Dormant) -->
+    <element name="Spire of Conflux (Dormant)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_SPIRE_OF_CONFLUX_DORMANT">
+        <description>
+            <p>A powerful relic passed down from generation to generation of Ashari leaders, the Spire of Conflux was lost over three centuries ago when Joran the Sea-Speaker, a respected leader of the Water Ashari, was devoured by a demon of the Abyss. It was rediscovered by the legendary druid Keyleth of Zephrah, Voice of the Tempest. However, rumors swirl that she is seeking another hero to wield it—one who can travel the land and do good in small ways as she once did.</p>
+            <p class="indent">While the Spire of Conflux is in a dormant state, the staff has 8 charges and regains 1d4 + 2 expended charges daily at dawn. While holding the staff, you can expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC: burning hands (1 charge) or fireball (3 charges). Additionally, while holding this staff, you have a +1 bonus to spell attack rolls and your spell save DC increases by 1.</p>
+        </description>
+        <setters>
+            <set name="category">Staffs</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="4">4 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="weapon">Quarterstaff</set>
+            <set name="type">Staff</set>
+            <set name="attunement" addition="by a spellcaster">true</set>
+            <set name="rarity">Legendary</set>
+        </setters>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" />
+            <grant type="Spell" id="ID_PHB_SPELL_FIREBALL" />
+
+            <stat name="spellcasting:attack" value="1" bonus="Spire of Conflux" />
+            <stat name="spellcasting:dc" value="1" bonus="Spire of Conflux" />
+        </rules>
+    </element>
+
+<!-- Spire of Conflux (Awakened) -->
+    <element name="Spire of Conflux (Awakened)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_SPIRE_OF_CONFLUX_AWAKENED">
+        <description>
+            <p>A powerful relic passed down from generation to generation of Ashari leaders, the Spire of Conflux was lost over three centuries ago when Joran the Sea-Speaker, a respected leader of the Water Ashari, was devoured by a demon of the Abyss. It was rediscovered by the legendary druid Keyleth of Zephrah, Voice of the Tempest. However, rumors swirl that she is seeking another hero to wield it—one who can travel the land and do good in small ways as she once did.</p>
+            <p class="indent">While the Spire of Conflux is in an awakened state, the staff has 12 charges and regains 1d6 + 2 expended charges daily at dawn. While holding the staff, you can expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC: burning hands (1 charge), fireball (3 charges), conjure elemental (5 charges), or ice storm (4 charges). Additionally, while holding this staff, you have a +1 bonus to spell attack rolls and your spell save DC increases by 1.</p>
+            <p class="indent">When you cast a spell that deals bludgeoning, cold, fire, lightning, or thunder damage and you roll a 1 on a damage die, you can reroll the die and must use the new roll.</p>
+        </description>
+        <setters>
+            <set name="category">Staffs</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="4">4 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="weapon">Quarterstaff</set>
+            <set name="type">Staff</set>
+            <set name="attunement" addition="by a spellcaster">true</set>
+            <set name="rarity">Legendary</set>
+        </setters>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" />
+            <grant type="Spell" id="ID_PHB_SPELL_FIREBALL" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONJURE_ELEMENTAL" />
+            <grant type="Spell" id="ID_PHB_SPELL_ICE_STORM" />
+
+            <stat name="spellcasting:attack" value="1" bonus="Spire of Conflux" />
+            <stat name="spellcasting:dc" value="1" bonus="Spire of Conflux" />
+        </rules>
+    </element>
+
+<!-- Spire of Conflux (Exalted) -->
+    <element name="Spire of Conflux (Exalted)" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_SPIRE_OF_CONFLUX_EXALTED">
+        <description>
+            <p>A powerful relic passed down from generation to generation of Ashari leaders, the Spire of Conflux was lost over three centuries ago when Joran the Sea-Speaker, a respected leader of the Water Ashari, was devoured by a demon of the Abyss. It was rediscovered by the legendary druid Keyleth of Zephrah, Voice of the Tempest. However, rumors swirl that she is seeking another hero to wield it—one who can travel the land and do good in small ways as she once did.</p>
+            <p class="indent">While the Spire of Conflux is in an exalted state, the staff has 20 charges and regains 1d6 + 4 expended charges daily at dawn. While holding the staff, you can expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC: burning hands (1 charge), fireball (3 charges), conjure elemental (5 charges), ice storm (4 charges), chain lightning (6 charges), or fire storm (7 charges). Additionally, while holding this staff, you have a +1 bonus to spell attack rolls and your spell save DC increases by 2.</p>
+            <p class="indent">When you cast a spell that deals bludgeoning, cold, fire, lightning, or thunder damage and you roll a 1 on a damage die, you can reroll the die and must use the new roll.</p>
+        </description>
+        <setters>
+            <set name="category">Staffs</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="4">4 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="weapon">Quarterstaff</set>
+            <set name="type">Staff</set>
+            <set name="attunement" addition="by a spellcaster">true</set>
+            <set name="rarity">Legendary</set>
+        </setters>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" />
+            <grant type="Spell" id="ID_PHB_SPELL_FIREBALL" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONJURE_ELEMENTAL" />
+            <grant type="Spell" id="ID_PHB_SPELL_ICE_STORM" />
+            <grant type="Spell" id="ID_PHB_SPELL_CHAIN_LIGHTNING" />
+            <grant type="Spell" id="ID_PHB_SPELL_FIRE_STORM" />
+
+            <stat name="spellcasting:attack" value="2" bonus="Spire of Conflux" />
+            <stat name="spellcasting:dc" value="2" bonus="Spire of Conflux" />
+        </rules>
+    </element>
+
+</elements>
