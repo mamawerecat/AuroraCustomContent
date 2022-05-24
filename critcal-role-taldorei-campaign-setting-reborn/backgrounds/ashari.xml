@@ -3,7 +3,7 @@
     <info>
         <name>Ashari Background</name>
         <author url="https://darringtonpress.com/taldorei-campaign-setting-reborn/">Darrington Press, Critical Role</author>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="ashari.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/critcal-role-taldorei-campaign-setting-reborn/backgrounds/ashari.xml" />
         </update>
     </info>
@@ -29,7 +29,7 @@
             <p>The Ashari hold themselves removed from the rest of Tal’Dorei by their own choice. This makes many Ashari naive to the ways of the world beyond their homes—but it can also make them determined, steadfast, and tightly focused on their goals. Ever since Keyleth, Voice of the Tempest and leader of the Zephrah, became a world-renowned hero, the Air Ashari at least have become more familiar to Tal’Dorei’s other peoples. They are known to welcome outsiders to their mountaintop enclave, and to take on quests that force them to leave their isolated home. (To learn more about your character’s Ashari order, see “The Ashari” on page 48.)</p>
         </description>
         <setters>
-            set name="short">Nature, Arcana/Survival, Primordial (Aquan/Auran/Ignan/Terran), Herbalism Kit</set>
+            <set name="short">Nature, Arcana/Survival, Primordial (Aquan/Auran/Ignan/Terran), Herbalism Kit</set>
         </setters>
         <rules>
             <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
