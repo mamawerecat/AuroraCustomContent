@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Monk Way of the Cobalt Soul</name>
+        <update version="0.0.2">
+            <file name="monk-cobaltsoul.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/critcal-role-taldorei-campaign-setting-reborn/archetypes/monk-cobaltsoul.xml" />
+        </update>
+    </info>
+
+<!-- Monk - Way of the Cobalt Soul -->
+    <element name="Way of the Cobalt Soul" type="Archetype" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_ARCHETYPE_WAY_OF_THE_COBALT_SOUL">
+        <supports>Monastic Tradition</supports>
+        <description>
+            <p>Driven by the pursuit of knowledge and its scholars’ worship of the Knowing Mentor, the Library of the Cobalt Soul is one of the best-respected and most heavily guarded repositories of tomes, history, and information in all Exandria. People from all lands come to the library to seek knowledge, and those particularly dedicated to the virtues of truth often pledge their minds and bodies to the Cobalt Soul’s cause. To become a member of the Cobalt Soul is to give oneself over to a quest dedicated to unveiling life’s mysteries, bringing light to the secrets of concealed evil, and guarding the most powerful and dangerous of truths from those whose unwholesome thirst for knowledge might bring death and suffering to others.</p>
+            <p class="indent">The monks of the Cobalt Soul are the embodiment of the maxim: “Know your enemy.” Through tireless research, they steel themselves against the unrelenting tides of evil. Through rigorous training, they learn to break through their foes’ mental and physical defenses. Then, once the fight is done, they record their findings for future generations of monks to study.</p>
+
+            <div element="ID_TALDOREI_CR_ARCHETYPE_FEATURE_WAY_OF_THE_COBALT_SOUL_EXTRACT_ASPECTS" />
+            <div element="ID_TALDOREI_CR_ARCHETYPE_FEATURE_WAY_OF_THE_COBALT_SOUL_EXTORT_TRUTH" />
+            <div element="ID_TALDOREI_CR_ARCHETYPE_FEATURE_WAY_OF_THE_COBALT_SOUL_MYSTICAL_ERUDITION" />
+            <div element="ID_TALDOREI_CR_ARCHETYPE_FEATURE_WAY_OF_THE_COBALT_SOUL_MIND_OF_MERCURY" />
+            <div element="ID_TALDOREI_CR_ARCHETYPE_FEATURE_WAY_OF_THE_COBALT_SOUL_DEBILITATING_BARRAGE" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_TALDOREI_CR_ARCHETYPE_FEATURE_WAY_OF_THE_COBALT_SOUL_EXTRACT_ASPECTS" level="3" />
+            <grant type="Archetype Feature" id="ID_TALDOREI_CR_ARCHETYPE_FEATURE_WAY_OF_THE_COBALT_SOUL_EXTORT_TRUTH" level="6" />
+            <grant type="Archetype Feature" id="ID_TALDOREI_CR_ARCHETYPE_FEATURE_WAY_OF_THE_COBALT_SOUL_MYSTICAL_ERUDITION" level="6" />
+            <grant type="Archetype Feature" id="ID_TALDOREI_CR_ARCHETYPE_FEATURE_WAY_OF_THE_COBALT_SOUL_MIND_OF_MERCURY" level="11" />
+            <grant type="Archetype Feature" id="ID_TALDOREI_CR_ARCHETYPE_FEATURE_WAY_OF_THE_COBALT_SOUL_DEBILITATING_BARRAGE" level="17" />
+        </rules>
+    </element>
+
+<!-- Way of the Cobalt Soul Archetype Feature Extract Aspects -->
+    <element name="Extract Aspects" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_ARCHETYPE_FEATURE_WAY_OF_THE_COBALT_SOUL_EXTRACT_ASPECTS">
+        <description>
+            <p><em>3rd-level Way of the Cobalt Soul feature</em></p>
+            <p>You can strike pressure points to intuit crucial information about a foe. When you hit a creature with one of the attacks granted by your Flurry of Blows, you can analyze it. Whenever an analyzed creature misses you with an attack, you can immediately use your reaction to make an unarmed strike against that creature if it’s within your reach. This benefit lasts until you finish a short or long rest.</p>
+            <p class="indent">Additionally, when you analyze a creature, you learn all of its damage vulnerabilities, damage resistances, damage immunities, and condition immunities.</p>
+        </description>
+        <sheet alt="Extract Aspects" action="Reaction" usage="1/Short Rest">
+            <description>You can strike pressure points to intuit crucial information about a foe. When you hit a creature with one of the attacks granted by your Flurry of Blows, you can analyze it. Whenever an analyzed creature misses you with an attack, you can immediately use your reaction to make an unarmed strike against that creature if it’s within your reach. Additionally, when you analyze a creature, you learn all of its damage vulnerabilities, damage resistances, damage immunities, and condition immunities.</description>
+        </sheet>
+    </element>
+
+<!-- Way of the Cobalt Soul Archetype Feature Extort Truth -->
+    <element name="Extort Truth" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_ARCHETYPE_FEATURE_WAY_OF_THE_COBALT_SOUL_EXTORT_TRUTH">
+        <description>
+            <p><em>6th-level Way of the Cobalt Soul feature</em></p>
+            <p>You can precisely strike a hidden cluster of nerves on a creature, temporarily preventing it from masking its true thoughts and intent. When you hit a creature with an unarmed strike, you can spend 1 ki point to force it to make a Charisma saving throw. On a failed save, the creature is unable to speak a deliberate lie, and all Charisma checks directed at the creature are made with advantage for up to 10 minutes. You know if it succeeded or failed on its saving throw.</p>
+            <p class="indent">An affected creature is aware of the effect and can thus avoid answering questions to which it would normally respond with a lie. Such a creature can be evasive in its answers as long as the effect lasts.</p>
+            <p class="indent">If you wish to impose this effect on a creature without injuring it, you can attack the creature to simply touch it, dealing no damage on a hit.</p>
+        </description>
+        <sheet>
+            <description>You can precisely strike a hidden cluster of nerves on a creature, temporarily preventing it from masking its true thoughts and intent. When you hit a creature with an unarmed strike, you can spend 1 ki point to force it to make a Charisma saving throw (DC {{ki:dc}}). On a failed save, the creature is unable to speak a deliberate lie, and all Charisma checks directed at the creature are made with advantage for up to 10 minutes. You know if it succeeded or failed on its saving throw. An affected creature is aware of the effect and can thus avoid answering questions to which it would normally respond with a lie. Such a creature can be evasive in its answers as long as the effect lasts.If you wish to impose this effect on a creature without injuring it, you can attack the creature to simply touch it, dealing no damage on a hit.</description>
+        </sheet>
+    </element>
+
+<!-- Way of the Cobalt Soul Archetype Feature Mystical Erudition -->
+    <element name="Mystical Erudition" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_ARCHETYPE_FEATURE_WAY_OF_THE_COBALT_SOUL_MYSTICAL_ERUDITION">
+        <description>
+            <p><em>6th-level Way of the Cobalt Soul feature</em></p>
+            <p>Also by 6th level, you have extensively studied the history and lore within the archives of the Cobalt Soul. You learn one language of your choice, and you gain proficiency with one of the following skills of your choice: Arcana, History, Investigation, Nature, or Religion. If you already have proficiency in one of the listed skills, you can instead choose to double your proficiency bonus for any ability check you make that uses the chosen proficiency.</p>
+            <p class="indent">You gain an additional language and an additional skill proficiency from the above list (or you can double the bonus of an existing proficiency from the list) at 11th and 17th level.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Language" name="Language, Mystical Erudition" supports="Standard||Exotic" level="6" />
+            <select type="Language" name="Language, Mystical Erudition" supports="Standard||Exotic" level="11" />
+            <select type="Language" name="Language, Mystical Erudition" supports="Standard||Exotic" level="17" />
+
+            <select type="Proficiency" name="Skill Proficiency, Mysical Erudition" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_RELIGION" level="6" />
+            <select type="Proficiency" name="Skill Proficiency, Mysical Erudition" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_RELIGION" level="11" />
+            <select type="Proficiency" name="Skill Proficiency, Mysical Erudition" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_RELIGION" level="17" />
+        </rules>
+    </element>
+
+
+<!-- Way of the Cobalt Soul Archetype Feature Mind of Mercury -->
+    <element name="Mind of Mercury" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_ARCHETYPE_FEATURE_WAY_OF_THE_COBALT_SOUL_MIND_OF_MERCURY">
+        <description>
+            <p><em>11th-level Way of the Cobalt Soul feature</em></p>
+            <p>You’ve honed your awareness and reflexes through mental aptitude and pattern recognition. Once per turn, if you’ve already taken your reaction, you may spend 1 ki point to take an additional reaction. You can use only one reaction per triggering effect.</p>
+        </description>
+        <sheet alt="Mind of Mercury" action="Reaction" usage="1 Ki Point">
+            <description>You’ve honed your awareness and reflexes through mental aptitude and pattern recognition. Once per turn, if you’ve already taken your reaction, you may spend 1 ki point to take an additional reaction. You can use only one reaction per triggering effect.</description>
+        </sheet>
+    </element>
+
+<!-- Way of the Cobalt Soul Archetype Feature Debilitating Barrage  -->
+    <element name="Debilitating Barrage" type="Archetype Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_ARCHETYPE_FEATURE_WAY_OF_THE_COBALT_SOUL_DEBILITATING_BARRAGE">
+        <description>
+            <p><em>17th-level Way of the Cobalt Soul feature</em></p>
+            <p>You’ve gained the knowledge to manipulate a creature’s ki to undermine their fortitude. When you hit a creature with an unarmed strike, you can spend 3 ki points to cause the creature to gain vulnerability to one damage type of your choice for 1 minute, or until the end of a turn in which it has taken damage of that type.</p>
+            <p class="indent">If a creature has resistance to the damage type you choose, this resistance is suppressed for 1 minute, rather than gaining vulnerability. A creature that is immune to the damage type you choose is unaffected. A creature who is affected by this feature cannot be affected by it again for 24 hours.</p>
+        </description>
+        <sheet alt="Debilitating Barrage" usage="3 Ki Points">
+            <description>When you hit a creature with an unarmed strike, you can spend 3 ki points to cause the creature to gain vulnerability to one damage type of your choice for 1 minute, or until the end of a turn in which it has taken damage of that type. If a creature has resistance to the damage type you choose, this resistance is suppressed for 1 minute, rather than gaining vulnerability. A creature that is immune to the damage type you choose is unaffected. A creature who is affected by this feature cannot be affected by it again for 24 hours.</description>
+        </sheet>
+    </element>
+    
+</elements>
