@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
     <info>
-        <name>Clasp Member Background</name>
-        <update version="0.0.1">
-            <file name="clasp-member.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Critcal%20Role%3A%20Tal'Dorei%20Campaign%20Setting%20Reborn/backgrounds/clasp-member.xml" />
+    <name>Clasp Member Background</name>
+        <update version="0.0.2">
+            <file name="clasp-member.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/critcal-role-taldorei-campaign-setting-reborn/backgrounds/clasp-member.xml" />
         </update>
     </info>
 
-    
+
     <element name="Clasp Member" type="Background" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_BACKGROUND_CLASP_MEMEBER">
         <description>
             <p>Whether you grew up in the mean streets of Kymal bamboozling foolish gamblers, or spent your youth pilfering loose coin from the pockets of Emon’s many tourists, your lifestyle of deceiving-to-survive eventually drew the attention of the Clasp: a storied crime syndicate that has hideouts in every city in Tal’Dorei. In exchange for protection, a modicum of kinship, and a number of useful resources to further develop your craft as a criminal, you agreed to receive the brand of the Clasp and join their ranks.</p>
@@ -19,7 +19,9 @@
                 <li><strong>Languages:</strong> Thieves’ Cant</li>
                 <li><strong>Equipment:</strong> A set of inconspicuous common clothes, a set of tools with which you’re proficient, and a belt pouch containing 10 gp </li>
             </ul>
+            
             <div element="ID_BACKGROUND_FEATURE_A_FAVOR_IN_TURN" />
+            
             <h5>SUGGESTED CHARACTERISTICS</h5>
             <p>The Clasp enjoys a strange status in Tal’Dorei. The syndicate is a feared group of thieves and killers, whose name is often invoked only in whispers. But at the same time, the organization has a reputation for guerilla heroism, in response to its members having saved countless lives when the Chroma Conclave attacked Emon. And so like every Clasp member, your own reputation often swings between these two poles.</p>
             <p class="indent">Your bond is likely associated with your fellow Clasp members or the individual who introduced you to the syndicate. Your ideal probably involves establishing your importance and indispensability to the Clasp.</p>
@@ -31,15 +33,11 @@
             <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
             <select type="Proficiency" name="Skill Proficiency, Clasp Memeber" supports="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH" />
             <select type="Proficiency" name="Tool Proficiency, Clasp Member" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
-            <grant type="Language" id="ID_WOTC_PHB_LANGUAGE_THIEVES_CANT" />
-
-    <!-- Background grants -->        
-            
+            <grant type="Language" id="ID_WOTC_PHB_LANGUAGE_THIEVES_CANT" />    
+<!-- Background grants -->        
             <grant type="Background Feature" id="ID_BACKGROUND_FEATURE_A_FAVOR_IN_TURN" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
             <select type="Background Variant" name="Variant Clasp Member" supports="Background Variant, Clasp Member" optional="true" />
-            
-    <!-- Personality Traits -->        
-            
+<!-- Personality Traits -->        
             <select type="List" name="Personality Trait" number="2">
                 <item id="1">What’s life without risk? I’m always willing to take a risk if the reward seems worth it.</item>
                 <item id="2">I only show my emotions around people I really trust.</item>
@@ -49,8 +47,8 @@
                 <item id="6">I used to have one rule—don’t get involved in other people’s problems. Why are things so complicated now?</item>
                 <item id="7">Crime is a game, and I play to win. I have no sympathy for players who don’t get that.</item>
                 <item id="8">This organization has a lot of folks who cling to ugly, brutal practices. I’m not like that. I’m a professional, and professionals have standards.</item>
-            </select>           
-    <!-- Ideal -->        
+            </select>     
+<!-- Ideal -->        
             <select type="List" name="Ideal">
                 <item id="1">By Any Means. I complete jobs. Collateral damage isn’t my problem. (Chaotic)</item>
                 <item id="2">Ambition. I will climb to the top of the ladder. Everything I do is a stepping-stone to a Spireling’s position. (Neutral)</item>
@@ -59,7 +57,7 @@
                 <item id="5">Family. The Clasp is family. Anything that’s good for the family is good for me. (Lawful)</item>
                 <item id="6">Self-Interest. There are too many bleeding hearts in the Clasp these days. Doing the right thing means doing the thing that makes my life better. (Evil)</item>
             </select>
-    <!-- Bond -->        
+<!-- Bond -->        
             <select type="List" name="Bond">
                 <item id="1">I’d do anything—anything—to protect my comrades.</item>
                 <item id="2">I’ll always be grateful to the Spireling who took me in when I was an orphaned kid.</item>
@@ -68,7 +66,7 @@
                 <item id="5">I’ve got family back in the old town who are counting on me for money. They don’t know how I get it, but they don’t need to know.</item>
                 <item id="6">I joined the Clasp to become rich, powerful, and beloved. That’s all there is to it.</item>
             </select>
-            
+<!-- Flaw -->
             <select type="List" name="Flaw">
                 <item id="1">I’m hopeless at organizing my belongings, and I’m always losing things.</item>
                 <item id="2">I get bored whenever a plan is going too smoothly. A win is always more fun when it’s by the skin of my teeth!</item>
@@ -80,39 +78,26 @@
         </rules>
     </element>
 
+<!-- Background Feature A Favor in turn -->
+    <element name="Feature: A Favor in Turn" type="Background Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_BACKGROUND_FEATURE_A_FAVOR_IN_TURN">
+        <description>
+            <p>You have gained enough clout in the Clasp that you can call in a favor from your contacts whenever you’re close enough to a center of syndicate activity. A request for a favor can be no longer than 20 words, and is passed up the chain to an undisclosed Spireling for approval. This favor can take on any form subject to the approval of the GM, who decides how it is fulfilled. If muscle is requested, an NPC member of the Clasp (using statistics found in chapter 6) can temporarily aid your party. If money is needed, a small loan can be provided. If you’ve been imprisoned, Clasp operatives can look into breaking you out or paying off the jailer.</p>
+            <p class="indent">At some point, the favor will be called in for repayment, often without warning. Refusing the call will result in your termination—literally. You might be  called on to commit a specific burglary, or to pressure an Emonian dignitary to reveal a secret at an upcoming ball. The Clasp might even demand that you assassinate a specific person, with no questions asked or answered. It’s the GM’s prerogative to ensure that the syndicate’s request is proportionate to the favor they bestowed—or that they compensate you in other ways for a service that goes beyond the scope of repaying the initial favor.</p>
+        </description>
+        <sheet alt="A Favor in Turn">
+            <description>You have gained enough clout in the Clasp that you can call in a favor from your contacts whenever you’re close enough to a center of syndicate activity. A request for a favor can be no longer than 20 words, and is passed up the chain to an undisclosed Spireling for approval. This favor can take on any form subject to the approval of the GM, who decides how it is fulfilled. If muscle is requested, an NPC member of the Clasp (using statistics found in chapter 6) can temporarily aid your party. If money is needed, a small loan can be provided. If you’ve been imprisoned, Clasp operatives can look into breaking you out or paying off the jailer.
+            At some point, the favor will be called in for repayment, often without warning. Refusing the call will result in your termination—literally. You might be  called on to commit a specific burglary, or to pressure an Emonian dignitary to reveal a secret at an upcoming ball. The Clasp might even demand that you assassinate a specific person, with no questions asked or answered. It’s the GM’s prerogative to ensure that the syndicate’s request is proportionate to the favor they bestowed—or that they compensate you in other ways for a service that goes beyond the scope of repaying the initial favor.</description>
+        </sheet>
+    </element>
 
-    <!-- Background Feature A Favor in turn -->
-        <element name="Feature: A Favor in Turn" type="Background Feature" source="Tal'Dorei Campaign Setting Reborn" id="ID_BACKGROUND_FEATURE_A_FAVOR_IN_TURN">
-            <description>
-                <p>You have gained enough clout in the Clasp that you can call in a favor from your contacts whenever you’re close enough to a center of syndicate activity. A request for a favor can be no longer than 20 words, and is passed up the chain to an undisclosed Spireling for approval. This favor can take on any form subject to the approval of the GM, who decides how it is fulfilled. If muscle is requested, an NPC member of the Clasp (using statistics found in chapter 6) can temporarily aid your party. If money is needed, a small loan can be provided. If you’ve been imprisoned, Clasp operatives can look into breaking you out or paying off the jailer.</p>
-                <p class="indent">At some point, the favor will be called in for repayment, often without warning. Refusing the call will result in your termination—literally. You might be  called on to commit a specific burglary, or to pressure an Emonian dignitary to reveal a secret at an upcoming ball. The Clasp might even demand that you assassinate a specific person, with no questions asked or answered. It’s the GM’s prerogative to ensure that the syndicate’s request is proportionate to the favor they bestowed—or that they compensate you in other ways for a service that goes beyond the scope of repaying the initial favor.</p>
-            </description>
-            <sheet alt="A Favor in Turn">
-                <description>You have gained enough clout in the Clasp that you can call in a favor from your contacts whenever you’re close enough to a center of syndicate activity. A request for a favor can be no longer than 20 words, and is passed up the chain to an undisclosed Spireling for approval. This favor can take on any form subject to the approval of the GM, who decides how it is fulfilled. If muscle is requested, an NPC member of the Clasp (using statistics found in chapter 6) can temporarily aid your party. If money is needed, a small loan can be provided. If you’ve been imprisoned, Clasp operatives can look into breaking you out or paying off the jailer.
-                At some point, the favor will be called in for repayment, often without warning. Refusing the call will result in your termination—literally. You might be  called on to commit a specific burglary, or to pressure an Emonian dignitary to reveal a secret at an upcoming ball. The Clasp might even demand that you assassinate a specific person, with no questions asked or answered. It’s the GM’s prerogative to ensure that the syndicate’s request is proportionate to the favor they bestowed—or that they compensate you in other ways for a service that goes beyond the scope of repaying the initial favor.</description>
-            </sheet>
-        </element>
+<!-- Background Feature Variant Myriad Operative -->   
+    <element name="Variant Clasp Member: Myriad Operative" type="Background Variant" source="Tal'Dorei Campaign Setting Reborn" id="ID_WOTC_PHB_BACKGROUND_VARIANT_SAILOR_PIRATE">
+        <supports>Background Variant, Clasp Member</supports>
+        <description>
+            <p> Your skill set might be similar to that of many members of the Clasp, but you work for a criminal organization that is far more sophisticated—and even less scrupulous. As a Myriad operative in Tal’Dorei, you might have been given a specific task that furthers that syndicate’s hunger to expand beyond Wildemount, or which gives them an edge in their rivalry with the Clasp. </p>
+            <p class="indent">Moreover, you understand the wisdom of keeping your activities secret from fellow criminals as well as law enforcement, since the agents of the Clasp will show you no mercy if your true identity is ever revealed.</p>
+        </description>
+        <sheet alt="Myriad Operative" />
+    </element>
 
-    <!-- Background Feature Variant Myriad Operative -->   
-        
-        <element name="Variant Clasp Member: Myriad Operative" type="Background Variant" source="Tal'Dorei Campaign Setting Reborn" id="ID_WOTC_PHB_BACKGROUND_VARIANT_SAILOR_PIRATE">
-		    <supports>Background Variant, Clasp Member</supports>
-		    <description>
-		    	<p> Your skill set might be similar to that of many members of the Clasp, but you work for a criminal organization that is far more sophisticated—and even less scrupulous. As a Myriad operative in Tal’Dorei, you might have been given a specific task that furthers that syndicate’s hunger to expand beyond Wildemount, or which gives them an edge in their rivalry with the Clasp. </p>
-		    	<p class="indent">Moreover, you understand the wisdom of keeping your activities secret from fellow criminals as well as law enforcement, since the agents of the Clasp will show you no mercy if your true identity is ever revealed.</p>
-		    </description>
-		    <sheet alt="Myriad Operative" />
-	    </element>
-
-       
-        
-    
-        
-
-        
-
-        
-
-        -->
-    
 </elements>
