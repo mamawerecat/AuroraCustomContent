@@ -397,7 +397,7 @@
 
 <!-- BAD TIMING  -->
 	<element name="Bad Timing" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BAD_TIMING">
-		<supports></supports>
+		<supports>Bard,Sorcerer,Wizard</supports>
 		<description>
 			<p>You point toward a creature that you can see and twist strands of chaotic energy around its fate. If the target gets a failure on a Charisma saving throw, the next attack roll or ability check the creature attempts within 10 minutes is made with disadvantage.</p>
 		</description>
@@ -413,6 +413,29 @@
 			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent">component</set>
 			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- BECOME NIGHTWING -->
+	<element name="Become Nightwing" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BECOME_NIGHTWING">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>This spell imbues you with wings of shadow. For the duration of the spell, you gain a flying speed of 60 feet and a new attack action: Nightwing Breath. </p>
+			<p class="indent"><b><i>Nightwing Breath (Recharge 4–6).</i></b> You exhale shadow substance in a 30-foot cone. Each creature in the area takes 5d6 necrotic damage, or half the damage with a successful Dexterity saving throw.</p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">6</set>
+			<set name="school" addition="shadow">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a crow's eye</set>
+			<set name="isConcentration">true</set>
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
@@ -462,6 +485,73 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element> 
+
+<!-- BLACK HAND  -->
+	<element name="Black Hand" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLACK_HAND">
+		<supports>Warlock,Wizard</supports>
+		<description>
+			<p>You gather the powers of darkness into your fist and fling dark, paralyzing flame at a target within 30 feet. If you make a successful ranged spell attack, this spell siphons vitality from the target into you. For the duration, the target has disadvantage (and you have advantage) on attack rolls, ability checks, and saving throws made with Strength, Dexterity, or Constitution. An affected target makes a Constitution saving throw (with disadvantage) at the end of its turn, ending the effect on a success.</p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">4</set>
+			<set name="school" addition="shadow">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- BLACK RIBBONS  -->
+	<element name="Black Ribbons" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLACK_RIBBONS">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You pull pieces of the plane of shadow into your own reality, causing a 20-foot cube to fill with inky ribbons that turn the area into difficult terrain and wrap around nearby creatures. Any creature that ends its turn in the area becomes restrained by the ribbons until the end of its next turn, unless it makes a successful Dexterity saving throw. Once a creature succeeds on this saving throw, it can’t be restrained again by the ribbons, but it’s still affected by the difficult terrain. </p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">1</set>
+			<set name="school" addition="shadow">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">40 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a piece of ribbon</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- BLACK WELL  -->
+	<element name="Black Well" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLACK_WELL">
+		<supports>Wizard</supports>
+		<description>
+			<p>You summon a seething sphere of dark energy 5 feet in diameter at a point within range. The sphere pulls creatures toward it and devours the life force of those it envelops. Every creature other than you that starts its turn within 90 feet of the black well must make a successful Strength saving throw or be pulled 50 feet toward the well. A creature pulled into the well takes 6d8 necrotic damage and is stunned; a successful Constitution saving throw halves the damage and causes the creature to become incapacitated. A creature that starts its turn inside the well also makes a Constitution saving throw; the creature is stunned on a failed save or incapacitated on a success. An incapacitated creature that leaves the well recovers immediately and can take actions and reactions on that turn. A creature takes damage only upon entering the well—it takes no additional damage for remaining there—but if it leaves the well and is pulled back in again, it takes damage again. A total of nine Medium creatures, three Large creatures, or one Huge creature can be inside the well’s otherdimensional space at one time. When the spell’s duration ends, all creatures inside it tumble out in a heap, landing prone. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 7th level or higher, the damage dealt by the well increases by 1d8—and the well pulls creatures an additional 5 feet—for each slot level above 6th. </p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">6</set>
+			<set name="school" addition="shadow">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">300 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 <!-- BLADE OF WRATH --> 	
 	<element name="Blade of Wrath" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLADE_OF_WRATH">
@@ -799,6 +889,31 @@
 		</setters>
 	</element>
 
+<!-- CALL SHADOW MASTIFF  -->
+	<element name="Call Shadow Mastiff" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CALL_SHADOW_MASTIFF">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You conjure a shadow mastiff from the plane of shadow. This creature obeys your verbal commands to aid you in battle or to seek out a specific creature. It has the body of a large dog with a smooth black coat, 2 feet high at the shoulder and weighing 200 pounds. </p>
+			<p class="indent">The mastiff is friendly to you and your companions. Roll initiative for the mastiff; it acts on its own turn. It obeys simple, verbal commands from you, within its ability to act. Giving a command takes no action on your part.</p>
+			<p class="indent">The mastiff disappears when it drops to 0 hit points or when the spell ends.</p>
+			<p class="indent"><i><b>Stats can be found for Shadow Mastiff in page 247 of Deep Magic</b></i></p>
+		</description>
+		<setters>
+			<set name="keywords">shadow,summon,monstrosity</set>
+			<set name="level">3</set>
+			<set name="school" addition="shadow">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a dog's tooth</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 <!-- CALM OF THE STORM  -->
 	<element name="Calm of the Storm" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CALM_OF_THE_STORM">
 		<supports>Bard,Wizard</supports>
@@ -1092,6 +1207,28 @@
 		</setters>
 	</element> 
 
+<!-- CLAWS OF DARKNESS  -->
+	<element name="Claws of Darkness" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CLAWS_OF_DARKNESS">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You shape shadows into claws that grow from your fingers and drip inky blackness. The claws have a reach of 10 feet. While the spell lasts, you can make a melee spell attack with them that deals 1d10 cold damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">0</set>
+			<set name="school" addition="shadow">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 <!-- CLAWS OF THE EARTH DRAGON  -->
 	<element name="Claws of the Earth Dragon" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CLAWS_OF_THE_EARTH_DRAGON">
 		<supports>Bard,Cleric,Sorcerer,Wizard</supports>
@@ -1136,6 +1273,52 @@
 			<set name="materialComponent">component</set>
 			<set name="isConcentration">false</set>
 			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
+<!-- CLOAK OF SHADOW  -->
+	<element name="Cloak of Shadow" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CLOAK_OF_SHADOW">
+		<supports>Wizard</supports>
+		<description>
+			<p>You cloak yourself in shadow, giving you advantage on Dexterity (Stealth) checks against creatures that rely on sight.</p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">1</set>
+			<set name="school" addition="shadow">Illusion</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- CONJURE SHADOW TITAN  -->
+	<element name="Conjure Shadow Titan" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CONJURE_SHADOW_TITAN">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You summon a shadow titan, which appears in an unoccupied space that you can see within range. The shadow titan’s statistics are identical to a stone giant’s, with two differences: its camouflage ability works in dim light instead of rocky terrain, and the “rocks” it hurls are composed of shadow-stuff and cause cold damage. </p>
+			<p class="indent">The shadow titan is friendly to you and your companions. Roll initiative for the shadow titan; it acts on its own turn. It obeys verbal or telepathic commands that you issue to it (giving a command takes no action on your part). If you don’t issue any commands to the shadow titan, it defends itself from hostile creatures but otherwise takes no actions. </p>
+			<p class="indent">The shadow titan disappears when it drops to 0 hit points or when the spell ends.</p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">7</set>
+			<set name="school" addition="shadow">Conjuration</set>
+			<set name="time">1 minute</set>
+			<set name="range">90 ft.</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
 		</setters>
 	</element>
 
@@ -1187,6 +1370,31 @@
 		</setters>
 	</element> 
 
+<!-- CREEPING DARKNESS  -->
+	<element name="Creeping Darkness" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CREEPING_DARKNESS">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You create a great, writhing mass of shadows that move slowly in a direction you choose. The grasping, shadowy tendrils occupy up to three 10-foot cubes within range. The mass has a speed of 20 feet, and it moves each round at the end of your turn, ignoring difficult terrain. The shadows can also move vertically or across a ceiling, as long as they can travel along a surface on which to cling. </p>
+			<p class="indent">All light in this area is reduced to dim light. The surface covered by the darkness is considered difficult terrain. </p>
+			<p class="indent">If the darkness moves into the space occupied by a living creature, that creature takes 6d6 necrotic damage and is restrained. The creature must make a Constitution saving throw. On a successful save, the creature takes half the damage and is not restrained. Any creature in the area of the spell at the start of its turn must make another Constitution saving throw, taking damage in each round that it remains in the area. Restrained creatures move with the darkness, dragged along by the shadowy tendrils. A creature can take an action on its turn to make a Strength check against your spell save DC to free itself from the tendrils. </p>
+			<p class="indent">Bright light can destroy portions of the spell. One 5-foot cube is destroyed if it takes 12 radiant damage. As long as at least one 5-foot cube occupies all or part of a creature’s space, the creature remains restrained.</p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">8</set>
+			<set name="school" addition="shadow">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 <!-- CREEPING ICE  -->
 	<element name="Creeping Ice" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CREEPING_ICE">
 		<supports>Druid,Ranger,Sorcerer,Warlock,Wizard</supports>
@@ -1232,6 +1440,50 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element> 
+
+<!-- DARK DEMENTING -->
+	<element name="Dark Dementing" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_DARK_DEMENTING">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>A dark shadow creeps across the target’s mind and leaves a small bit of shadow essence behind, triggering a profound fear of the dark. A creature you designate within range must make a Charisma saving throw. If it fails, the target becomes frightened of you for the duration. A frightened creature can repeat the saving throw each time it takes damage, ending the effect on a success. While frightened in this way, the creature will not willingly enter or attack into a space that isn’t brightly lit. If it’s in dim light or darkness, the creature must either move toward bright light or create its own (by lighting a lantern, casting a light spell, or the like).</p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">5</set>
+			<set name="school" addition="shadow">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="range">120 ft.</set>
+			<set name="duration">10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a moonstone</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- DARK PATH  -->
+	<element name="Dark Path" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_DARK_PATH">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You conjure a shadowy road between two points within range to create a bridge or path. This effect can bridge a chasm or create a smooth path through difficult terrain. The dark path is 10 feet wide and up to 50 feet long. It can support up to 500 pounds of weight at one time. A creature that adds more weight than the path can support sinks through the path as if it didn’t exist.</p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">2</set>
+			<set name="school" addition="shadow">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a lodestone</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 <!-- DEADLY STING --> 
 	<element name="Deadly Sting" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_DEADLY_STING">
