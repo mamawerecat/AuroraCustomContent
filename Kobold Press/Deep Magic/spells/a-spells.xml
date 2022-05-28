@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Deep Magic Spells - A</name>
+        <update version="0.0.1">
+            <file name="a-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/a-spells" />
+        </update>
+    </info>
+    
+<!-- ABHORRENCE -->
+	<element name="Abhorrence" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ABHORRENCE">
+		<supports>Bard,Cleric,Druid,Sorcerer,Wizard</supports>
+		<description>
+			<p>You temporarily make a creature within range less appealing to others. The target makes a Wisdom saving throw against your spell. On a successful save, the spell is ineffective. On a failed save, the next time the creature makes a Charisma check before the spell ends, roll a d6 and subtract the result from the roll. The spell then ends.</p>
+		</description>
+		<setters>
+			<set name="keywords">Charisma</set>
+			<set name="level">0</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+ 
+<!-- ABHORRENT APPARITION --> 
+	<element name="Abhorrent Apparition" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ABHORRENT_APPARITION ">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>You imbue a terrifying visage onto a gourd and toss it ahead of you to a spot of your choosing within range. Each creature within 15 feet of that spot takes 6d8 psychic damage and becomes frightened of you for 1 minute; a successful Wisdom saving throw halves the damage and negates the fright. A creature frightened in this way repeats the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> If you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords">psychic</set>
+			<set name="level">4</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a gourd with a face carved on it</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- ABSORBING FIELD --> 
+	<element name="Absorbing Field" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ABSORBING_FIELD">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>You cloak yourself in a protective field that absorbs incoming magic, rejuvenating your spell slots. When you are the target of a spell (including spells that affect multiple targets, but not area spells such as fireball), make an ability check using your spellcasting ability. The DC equals 10 + the spell’s level. On a successful check, the spell has no effect on you and is absorbed by the field. You regain a spell slot of the same level as the spell that was cast against you. If you have no expended spell slots of that level, you don’t regain a spell slot, but this spell remains in effect.</p>
+			<p class="indent">Even if the spell manages to bypass the field, you gain advantage on your saving throw.</p>
+		</description>
+		<setters>
+			<set name="keywords">spell slots,saving throw</set>
+			<set name="level">6</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- ACCELERATE --> 
+	<element name="Accelerate" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ACCELERATE">
+		<supports>Bard,Cleric,Druid,Sorcerer,Wizard</supports>
+		<description>
+			<p>Choose up to three willing creatures within range, which can include you. For the duration of the spell, each target’s walking speed is doubled. Each target can also use a bonus action on each of its turns to take the Dash action, and it has advantage on Dexterity saving throws. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, you can affect one additional creature for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">3</set>
+			<set name="school" addition="temporal">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a toy top</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- ACID GATE --> 	
+	<element name="Acid Gate" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ACID_GATE">
+		<supports>Wizard</supports>
+		<description>
+			<p>You create a portal of swirling, acidic green vapor in an unoccupied space you can see. This portal connects with a target destination within 100 miles that you are personally familiar with and have seen with your own eyes, such as your wizard’s tower or an inn you have stayed at. You and up to three creatures of your choice can enter the portal and pass through it, arriving at the target destination (or within 10 feet of it, if it is currently occupied). If the target destination doesn’t exist or is inaccessible, the spell automatically fails and the gate doesn’t form. </p>
+			<p class="indent">Any creature that tries to move through the gate, other than those selected by you when the spell was cast, takes 10d6 acid damage and is teleported 1d100 × 10 feet in a random, horizontal direction. If the creature makes a successful Intelligence saving throw, it can’t be teleported by this portal, but it still takes acid damage when it enters the acid-filled portal and every time it ends its turn in contact with it. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 8th level or higher, you can allow one additional creature to use the gate for each slot level above 7th.</p>
+		</description>
+		<setters>
+			<set name="keywords">alkemancy,acid</set>
+			<set name="level">7</set>
+			<set name="school" addition="alkemancy">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a vial of acid and a polished silver mirror worth 125 gp</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- ACID RAIN --> 
+	<element name="Acid Rain" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ACID_RAIN">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You unleash a storm of swirling acid in a cylinder 20 feet wide and 30 feet high, centered on a point you can see. The area is heavily obscured by the driving acidfall. A creature that starts its turn in the area or that enters the area for the first time on its turn takes 6d6 acid damage, or half as much damage if it makes a successful Dexterity saving throw. A creature takes half as much damage from the acid (as if it had made a successful saving throw) at the start of its first turn after leaving the affected area. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d6 for each slot level above 5th.</p>
+		</description>
+		<setters>
+			<set name="keywords">alkemancy</set>
+			<set name="level">5</set>
+			<set name="school" addition="alkemancy">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">150 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a drop of acid</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- ACUMEN -->
+    <element name="Acumen" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ACUMEN">
+		<supports>Bard,Cleric,Druid,Sorcerer,Wizard</supports>
+		<description>
+			<p>You touch a willing creature. Once before the spell ends, the target can roll a d6 and add the result to one Wisdom check of its choice. It can roll the die before or after making the check. The spell then ends.</p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">0</set>
+			<set name="school" addition="shadow">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- ADJUST POSITION  -->
+    1st-level transmutation 
+    Casting Time: 1 bonus action 
+    Range: 30 feet 
+    Components: V 
+    Duration: Instantaneous 
+    You adjust the location of an ally to a better tactical position. You move one willing creature within range 5 feet. This movement does not provoke opportunity attacks. The creature moves bodily through the intervening space (as opposed to teleporting), so there can be no physical obstacle (such as a wall or a door) in the path. 
+    <b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, you can target an additional willing creature for each slot level above 1st. 
+
+<!-- AFFLICT LINE  -->
+	<element name="Alffict Line" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_AFFLICT_LINE">
+		<supports>Cleric, Wizard</supports>
+		<description>
+			<p>You invoke the darkest curses upon your victim and his or her descendants. This spell does not require that you have a clear path to your target, only that your target is within range. The target must make a successful Wisdom saving throw or be cursed until the magic is dispelled. While cursed, the victim has disadvantage on ability checks and saving throws made with the ability score that you used when you cast the spell. In addition, the target’s firstborn offspring is also targeted by the curse. That individual is allowed a saving throw of its own if it is currently alive, or it makes one upon its birth if it is not yet born when the spell is cast. If the target’s firstborn has already died, the curse passes to the target’s next oldest offspring. </p>
+			<p class="indent"><b><i>Ritual Focus.</i></b> If you expend your ritual focus, the curse becomes hereditary, passing from firstborn to firstborn for the entire length of the family’s lineage until one of them successfully saves against the curse and throws off your dark magic. Also, once you've expended your ritual focus this mental energy has been expended, a caster’s ritual focus can’t be used again until he or she finishes a short or long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">ritual</set>
+			<set name="level">9</set>
+			<set name="school" addition="ritual only">Necromancy</set>
+			<set name="time">1 hour</set>
+			<set name="range">1 mile</set>
+			<set name="duration">Permanent; one generation</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a statuette carved in the likeness of the victim worth 1250 gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
+<!-- AGONIZING MARK --> 
+    1st-level evocation 
+    Casting Time: 1 action 
+    Range: 90 feet 
+    Components: S 
+    Duration: Concentration, up to 1 minute 
+    You choose a creature you can see within range to mark as your prey, and a ray of black energy issues forth from you. Until the spell ends, each time you deal damage to the target it must make a Charisma saving throw. On a failed save, it falls prone as its body is filled with torturous agony. 
+
+<!-- ALCHEMICAL FORM --> 
+	<element name="Alchemical Form" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ALCHEMICAL_FORM">
+		<supports>Wizard</supports>
+		<description>
+			<p>You transform into an amoebic form composed of highly acidic and poisonous alchemical jelly. While in this form: </p>
+			<p class="indent">-you are immune to acid and poison damage and to the poisoned and stunned conditions; </p>
+			<p class="indent">-you have resistance to nonmagical fire, piercing, and slashing damage; </p>
+			<p class="indent">-you can’t speak, cast spells, use items or weapons, or manipulate objects; </p>
+			<p class="indent">-your gear melds into your body and reappears when the spell ends; </p>
+			<p class="indent">-you don't need to breathe; </p>
+			<p class="indent">-your speed is 20 feet; </p>
+			<p class="indent">-your size doesn’t change, but you can move through and between obstructions as if you were two size categories smaller; and </p>
+			<p class="indent">-you gain the following action: Melee Weapon Attack: spellcasting ability modifier + proficiency bonus to hit, range 5 ft., one target; Hit: 4d6 acid or poison damage (your choice), and the target must make a successful Constitution saving throw or be poisoned until the start of your next turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">alkemancy</set>
+			<set name="level">6</set>
+			<set name="school" addition="alkemancy">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a vial of acid, poison, or alchemist's fire</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- ALE-DRITCH BLAST  -->
+    Conjuration cantrip 
+    Casting Time: 1 action 
+    Range: 60 feet 
+    Components: V, S 
+    Duration: Instantaneous 
+    A stream of ice-cold ale blasts from your outstretched hands toward a creature or object within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage and it must make a successful Constitution saving throw or be poisoned until the end of its next turn. A targeted creature has disadvantage on the saving throw if it has drunk any alcohol within the last hour. 
+    The damage increases when you reach higher levels: 2d8 at 5th level, 3d8 at 11th level, and 4d8 at 17th level. 
+
+<!-- ALLURE  -->
+    Transmutation cantrip 
+    Casting Time: 1 action 
+    Range: Touch 
+    Components: V, S 
+    Duration: Concentration, up to 1 minute 
+    You touch a willing creature. Once before the spell ends, the target can roll a d6 and add the result to one Charisma check of its choice. It can roll the die before or after making the check. The spell then ends. 
+
+<!-- ALLY AEGIS  -->
+    6th-level abjuration 
+    Casting Time: 1 reaction, which you take when your ally is hit by an attack or is targeted by a spell that deals damage other than psychic damage 
+    Range: 60 feet 
+    Components: V, S 
+    Duration: 1 round 
+    When you see an ally within range in imminent danger, you can use your reaction to protect that creature with a 
+    shield of magical force. Until the start of your next turn, your ally has a +5 bonus to AC and is immune to force damage. In addition, if your ally must make a saving throw against an enemy’s spell that deals damage, the ally takes half as much damage on a failed saving throw and no damage on a successful save. Ally aegis offers no protection, however, against psychic damage from any source. 
+    <b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 7th level or higher, you can target one additional ally for each slot level above 6th. 
+
+<!-- ALONE  -->
+    3rd-level enchantment 
+    Casting Time: 1 action 
+    Range: 30 feet 
+    Components: V, S 
+    Duration: Concentration, up to 1 minute 
+    You cause a creature within range to believe its allies have been banished to a different realm. The target must succeed on a Wisdom saving throw, or it treats its allies as if they were invisible and silenced. The affected creature cannot target, perceive, or otherwise interact with its allies for the duration of the spell. If one of its allies hits it with a melee attack, the affected creature can make another Wisdom saving throw. On a successful save, the spell ends. 
+
+<!-- ALTER ARROW’S FORTUNE --> 
+    1st-level divination 
+    Casting Time: 1 reaction, which you take when an enemy makes a ranged attack that hits 
+    Range: 100 feet 
+    Components: S 
+    Duration: Instantaneous 
+    You clap your hands, setting off a chain of tiny events that culminate in throwing off an enemy’s aim. When an enemy makes a ranged attack with a weapon or a spell that hits one of your allies, this spell causes the enemy to reroll the attack roll unless the enemy makes a successful Charisma saving throw. The attack is resolved using the lower of the two rolls (effectively giving the enemy disadvantage on the attack). 
+
+<!-- ALTER TIME FLOW --> 
+	<element name="Alter Time Flow" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ALTER_TIME_FLOW">
+		<supports>Bard,Cleric,Wizard</supports>
+		<description>
+			<p>You control the currents of time, affecting all creatures within 30 feet of yourself. You can choose to deliver either a haste or slow effect (as the spell) to each creature in the area. An unwilling creature makes a Constitution saving throw, avoiding the effect on a success. Each unwilling creature must make a new saving throw if it remains in the affected area at the end of its turn. Any affected creature returns to normal if it exits the area, but if a creature reenters the area while the spell is still active, it is subject to the effect of the spell (and receives another saving throw, if unwilling).</p>
+		</description>
+		<setters>
+			<set name="keywords">time magic</set>
+			<set name="level">7</set>
+			<set name="school" addition="temporal">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (30-foot radius)</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an hourglass</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- ALTHEA'S TRAVEL TENT  -->
+    2nd-level conjuration (ritual) 
+    Casting Time: 5 minutes 
+    Range: Touch 
+    Components: V, S, M (a canvas tent) 
+    Duration: 8 hours 
+    You touch an ordinary, properly pitched canvas tent to create a space where you and a companion can sleep in comfort. From the outside, the tent appears normal, but inside it has a small foyer and a larger bedchamber. The foyer contains a writing desk with a chair; the bedchamber holds a soft bed large enough to sleep two, a small nightstand with a candle, and a small clothes rack. The floor of both rooms is a clean, dry, hard-packed version of the local ground. When the spell ends, the tent and the ground return to normal, and any creatures inside the tent are expelled to the nearest unoccupied spaces. 
+    <b><i>At Higher Levels.</i></b> When the spell is cast using a 3rd-level slot, the foyer becomes a dining area with seats for six and enough floor space for six people to sleep, if they bring their own bedding. The sleeping room is unchanged. With a 4th-level slot, the temperature inside the tent is comfortable regardless of the outside temperature, and the dining area includes a small kitchen. With a 5th-level slot, an unseen servant is conjured to prepare and serve food (from your supplies). With a 6th-level slot, a third room is added that has three two-person beds. With a slot of 7th level or higher, the dining area and second sleeping area can each accommodate eight persons. 
+
+<!-- AMPLIFY GRAVITY  -->
+    7th-level transmutation 
+    Casting Time: 1 action 
+    Range: 100 feet 
+    Components: V, S, M (a piece of lead) 
+    Duration: Concentration, up to 1 minute 
+    This spell intensifies gravity in a 50-foot-radius area within range. Inside the area, damage from falling is quadrupled (2d6 per 5 feet fallen) and maximum damage from falling is 40d6. Any creature on the ground in the area when the spell is cast must make a successful Strength saving throw or be knocked prone; the same applies to a creature that enters the area or ends its turn in the area. A prone creature in the area must make a successful Strength saving throw to stand up. A creature on the ground in the area moves at half speed and has disadvantage on Dexterity checks and ranged attack rolls. 
+
+<!-- AMPLIFY LIGHT -->
+	<element name="Amplify Light" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_AMPLIFY_LIGHT">
+		<supports>Wizard</supports>
+		<description>
+			<p>You touch a nonmagical light source and increase its brightness. While the spell is in effect, the radius of the bright light around the source is doubled, and dim light extends for the same distance beyond that area. The light source’s duration is halved, however, so that a torch affected by amplify light would burn out in half an hour, or a hooded lantern would burn through its fuel in 3 hours. Adding new fuel to a light source while it is under the effect of amplify light will end the spell and return it to its normal brightness.</p>
+		</description>
+		<setters>
+			<set name="keywords">illumination</set>
+			<set name="level">1</set>
+			<set name="school" addition="illumination">Transmutation</set>
+			<set name="time">1 1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Special</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a nonmagical light source</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- ANALYZE DEVICE  -->
+    1st-level divination (clockwork) 
+    Casting Time: 1 hour 
+    Range: Touch 
+    Components: V, S, M (a set of clockworker's tools) 
+    Duration: Instantaneous 
+    You discover all mechanical properties, mechanisms, and functions of a single construct or clockwork device, including how to activate or deactivate those functions, if appropriate.
+
+<!-- ANCESTOR'S STRENGTH  -->
+    1st-level transmutation 
+    Casting Time: 1 action 
+    Range: Touch 
+    Components: V, S 
+    Duration: Concentration, up to 8 hours 
+    Choose a willing creature you can see and touch. Its muscles bulge and become invigorated. For the duration, the target is considered one size category larger for determining its carrying capacity, the maximum weight it can lift, push, or pull, and its ability to break objects. It also has advantage on Strength checks. 
+
+<!-- ANCHORING ROPE  -->
+    1st-level evocation 
+    Casting Time: 1 action, or 1 reaction that you take while falling 
+    Range: 30 feet 
+    Components: V, S 
+    Duration: 5 minutes 
+    You create a spectral lanyard. One end is tied around your waist, and the other end is magically anchored in the air at a point you select within range. You can choose to make the rope from 5 to 30 feet long, and it can support up to 800 pounds. The point where the end of the rope is anchored in midair can’t be moved after the spell is cast. If this spell is cast as a reaction while you are falling, you stop at a point of your choosing in midair and take no falling damage. You can dismiss the rope as a bonus action. 
+    <b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, you can create one additional rope for every two slot levels above 1st. Each rope must be attached to a different creature.
+
+<!-- ANCIENT SHADE  -->
+    5th-level necromancy 
+    Casting Time: 1 action 
+    Range: 10 feet 
+    Components: V, S, M (burning candles of planar origin worth 500 gp) 
+    Duration: 10 minutes 
+    You grant the semblance of life and intelligence to a pile of bones (or even bone dust) of your choice within range, allowing the ancient spirit to answer the questions you pose. These remains can be the remnants of undead, including animated but unintelligent undead, such as skeletons and zombies. (Intelligent undead are not affected.) Though it can have died centuries ago, the older the spirit called, the less it remembers of its mortal life. 
+    Until the spell ends, you can ask the ancient spirit up to five questions if it died within the past year, four questions if it died within ten years, three within one hundred years, two within one thousand years, and but a single question for spirits more than one thousand years dead. The ancient shade knows only what it knew in life, including languages. Answers are usually brief, cryptic, or repetitive, and the corpse is under no compulsion to offer a truthful answer if you are hostile to it or it recognizes you as an enemy. This spell doesn’t return the creature’s soul to its body, only its animating spirit. Thus, the corpse can’t learn new information, doesn’t comprehend anything that has happened since it died, and can’t speculate about future events. 
+
+<!-- ANGELIC GUARDIAN --> 
+	<element name="Angelic Guardian" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ANGELIC_GUARDIAN">
+		<supports>Cleric,Paladin,Wizard</supports>
+		<description>
+			<p>You conjure a minor celestial manifestation to protect a creature you can see within range. A faintly glowing image resembling a human head and shoulders hovers within 5 feet of the target for the duration. The manifestation moves to interpose itself between the target and any incoming attacks, granting the target a +2 bonus to AC. </p>
+			<p class="indent">Also, the first time the target gets a failure on a Dexterity saving throw while the spell is active, it can use its reaction to reroll the save. The spell then ends.</p>
+		</description>
+		<setters>
+			<set name="keywords">angelic</set>
+			<set name="level">1</set>
+			<set name="school" addition="angelic">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- ANIMAL SPY  -->
+    2nd-level divination 
+    Casting Time: 1 action 
+    Range: 30 feet 
+    Components: V, S 
+    Duration: 1 hour 
+    You create a mental link between you and a beast within range. Until the spell ends, you can use a bonus action to transfer your awareness to the beast—using its vision, hearing, smell, taste, and touch—and another bonus action on any subsequent turn to return your awareness to your body. You can use an action to dismiss the spell entirely. 
+    This spell affects normal beasts, including giant versions of animals, but not conjured animals or familiars. The spell does not allow you to control the beast or make it friendly to you. While you experience the world through the beast’s senses, your body is motionless, unaware of the outside world and effectively unconscious. 
+    The spell ends if the distance between you and the beast is ever greater than 1 mile, or if the beast is killed. If you are using the beast’s senses when it is killed, you must succeed on a DC 14 Wisdom saving throw or be stunned for 1d4 rounds from the shock of experiencing its death. 
+
+<!-- ANIMATE GHOUL  -->
+    2nd-level necromancy 
+    Casting Time: 1 action 
+    Range: Touch 
+    Components: V, S, M (piece of rotting flesh and an onyx gemstone worth 100 gp) 
+    Duration: Instantaneous 
+    You raise one Medium or Small humanoid corpse as a ghoul under your control. Any class levels or abilities the creature had in life are gone, replaced by the standard ghoul stat block. 
+    <b><i>At Higher Levels.</i></b> When you cast this spell using a 3rd-level spell slot, it can be used on the corpse of a Large humanoid to create a Large ghoul. When you cast this spell using a spell slot of 4th level or higher, this spell creates a ghast, but the material component changes to an onyx gemstone worth at least 200 gp. 
+
+<!-- ANIMATE GREATER UNDEAD  -->
+    6th-level necromancy 
+    Casting Time: 1 hour 
+    Range: 15 feet 
+    Components: V, S, M (a pint of blood, a pound of flesh, and an ounce of bone dust, all of which the spell consumes) 
+    Duration: Instantaneous 
+    Animate greater undead creates an undead servant from a pile of bones or from the corpse of a Large or Huge humanoid within range. The spell imbues the target with a foul mimicry of life, raising it as an undead skeleton or zombie. A skeleton uses the stat block of a minotaur skeleton, or a zombie uses the stat block of an ogre zombie, unless a more appropriate stat block is available. 
+    The creature is under your control for 24 hours, after which it stops obeying your commands. To maintain control of the creature for another 24 hours, you must cast this spell on it again while you have it controlled. Casting the spell for this purpose reasserts your control over up to four creatures you have previously animated rather than animating a new one. 
+    <b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 7th level or higher, you can reanimate one additional creature for each slot level above 6th. 
+
+<!-- ANIMATED OBJECT SWARM  -->
+    5th-level conjuration 
+    Casting Time: 1 action 
+    Range: 120 feet 
+    Components: V, S 
+    Duration: Concentration, up to 1 minute 
+    Myriad Tiny objects animate at your command, forming a swarm. The objects’ abilities conform to the rules stated in the animate objects spell, except that you animate only Tiny objects, which gather together into a Medium swarm. The area of the swarm is considered difficult terrain, and creatures in it are lightly obscured. The swarm has the following statistics: 
+    Armor Class 18 
+    Hit Points 20 
+    Str 4; Dex 18 
+    Damage Resistances bludgeoning, piercing, slashing 
+    Condition Immunities charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned 
+    Melee Weapon Attack +8 to hit, reach 0 ft., one target in the swarm’s space. Hit: 6 (1d4 + 4) damage.
+
+<!-- ANIMATED SCROLL  -->
+    Transmutation cantrip 
+    Casting Time: 1 action 
+    Range: Touch 
+    Components: V, S, M (intricately folded paper or parchment) 
+    Duration: 24 hours 
+    The paper or parchment must be folded into the shape of an animal before casting the spell. It then becomes an animated paper animal of the kind the folded paper most closely resembles. The creature uses the stat block of any beast that has a challenge rating of 0. It is made of paper, not flesh and bone, but it can do anything the real creature can do: a paper owl can fly and attack with its talons, a paper frog can swim without disintegrating in water, and so forth. It follows your commands to the best of its ability, including carrying messages to a recipient whose location you know. 
+    The duration increases by 24 hours at 5th level (48 hours), 11th level (72 hours), and 17th level (96 hours). 
+
+<!-- ANTICIPATE ARCANA  -->
+	<element name="Anticipate Arcana" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ANTICIPATE_ARCANA">
+		<supports>Cleric,Paladin,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>Your foresight gives you an instant to ready your defenses against a magical attack. When you cast anticipate arcana, you have advantage on saving throws against spells and other magical effects until the start of your next turn. </p>
+		</description>
+		<setters>
+			<set name="keywords">temporal,time magic,reaction</set>
+			<set name="level">3</set>
+			<set name="school" addition="temporal">Divination</set>
+			<set name="time">1 reaction, which you take when an enemy you can see casts a spell</set>
+			<set name="range">Self</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- ANTICIPATE ATTACK  -->	
+	<element name="Anticipate Attack" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ANTICIPATE_ATTACK">
+		<supports>Bard,Cleric,Druid,Paladin,Ranger,Sorcerer,Wizard</supports>
+		<description>
+			<p>In a flash of foreknowledge, you spot an oncoming attack with enough time to avoid it. Upon casting this spell, you can move up to half your speed without provoking opportunity attacks. The oncoming attack still occurs but misses automatically if you are no longer within the attack’s range, are in a space that's impossible for the attack to hit, or can’t be targeted by that attack in your new position. If none of those circumstances apply but the situation has changed—you have moved into a position where you have cover, for example—then the attack is made after taking the new situation into account.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporal,reaction,time magic</set>
+			<set name="level">2</set>
+			<set name="school" addition="temporal">Divination</set>
+			<set name="time">1 reaction, which you take when you are attacked but before the attack roll is made</set>
+			<set name="range">Self</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- ANTICIPATE WEAKNESS --> 	
+	<element name="Anticipate Weakness" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ANTICIPATE_WEAKNESS">
+		<supports>Bard,Cleric,Druid,Ranger,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>With a quick glance into the future, you pinpoint where a gap is about to open in your foe’s defense, and then you strike. After casting anticipate weakness, you have advantage on attack rolls until the end of your turn. </p>
+		</description>
+		<setters>
+			<set name="keywords">temporal,bonus action</set>
+			<set name="level">1</set>
+			<set name="school" addition="temporal">Divination</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Self</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- ARCANE PARASITE  -->
+    7th-level transmutation (ritual) 
+    Casting Time: 1 action 
+    Range: Self 
+    Components: V, S 
+    Duration: 2 hours 
+    This spell creates a link between you and a nearby source of arcane power, allowing you to draw on its strength to bolster your spellcasting ability. When you cast a spell, you can use a bonus action to draw on the link. Doing so means you expend no spell slots to cast the spell, the energy instead comes from the external power. 
+    The more you draw on the link, the harder it is to maintain. Each spell you cast in this manner decreases the duration of the arcane parasite spell by 10 minutes per level of the spell you cast using the link. For example, if you cast a fireball spell using the link, you would not expend a spell slot in the casting, but the duration of this spell would decrease by 30 minutes. If you cast a spell using the link and your remaining duration is equal to or less than the spell’s level × 10 minutes, then this spell ends as soon as that spell is cast. 
+
+<!-- ARCANE SIGHT  -->
+    8th-level divination 
+    Casting Time: 1 action 
+    Range: Touch 
+    Components: V, S, M (a piece of clear quartz) 
+    Duration: Concentration, up to 1 hour 
+    The recipient of this spell gains the benefits of both true seeing and detect magic until the spell ends, and also knows the name and effect of every spell he or she witnesses during the spell’s duration. 
+
+<!-- AS YOU WERE --> 
+    2nd-level necromancy 
+    Casting Time: 1 minute 
+    Range: Touch 
+    Components: V, S, M (a piece of flesh from a creature of the target’s race) 
+    Duration: Instantaneous 
+    When cast on a dead or undead body, as you were returns that creature to the appearance it had in life while it was healthy and uninjured. The target must have a physical body; the spell fails if the target is normally noncorporeal. 
+    If as you were is cast on a corpse, its effect is identical to that of gentle repose, except that the corpse’s appearance is restored to that of a healthy, uninjured (albeit dead) person. 
+    If the target is an undead creature, it also is restored to the appearance it had in life, even if it died from disease or from severe wounds, or centuries ago. The target looks, smells, and sounds (if it can speak) as it did in life. Friends and family can tell something is wrong only with a successful Wisdom (Insight) check against your spell save DC, and only if they have reason to be suspicious. (Knowing that the person should be dead is sufficient reason.) Spells and abilities that detect undead are also fooled, but the creature remains susceptible to Turn Undead as normal. 
+    This spell doesn’t confer the ability to speak on undead that normally can’t speak. The creature eats, drinks, and breathes as a living creature does; it can mimic sleep, but it has no more need for it than it had before. 
+    The effect lasts for a number of hours equal to your caster level. You can use an action to end the spell early. Any amount of radiant or necrotic damage dealt to the creature, or any effect that reduces its Constitution, also ends the spell. 
+    If this spell is cast on an undead creature that isn’t your ally or under your control, it makes a Charisma saving throw to resist the effect.
+    
+<!-- ASHEN MEMORIES  -->
+    2nd-level divination (ritual) 
+    Casting Time: 1 minute 
+    Range: Touch 
+    Components: V, S 
+    Duration: Instantaneous 
+    You touch the ashes, embers, or soot left behind by a fire and receive a vision of one significant event that occurred in the area while the fire was burning. For example, if you were to touch the cold embers of a campfire, you might witness a snippet of a conversation that occurred around the fire. Similarly, touching the ashes of a burned letter might grant you a vision of the person who destroyed the letter or the contents of the letter. You have no control over what information the spell reveals, but your vision usually is tied to the most meaningful event related to the fire. The GM determines the details of what is revealed. 
+
+<!-- ASPECT OF THE APE --> 
+    2nd-level transmutation 
+    Casting Time: 1 action 
+    Range: Touch 
+    Components: V, S 
+    Duration: Concentration, up to 1 hour 
+    You alter the appearance of a creature you touch, giving it a more simian form. While this spell is in effect, the subject gains a climbing speed equal to its normal walking speed, and gains advantage on Strength (Athletics) checks made when jumping or climbing. When up in a tree’s branches (or in a similar area, at the GM’s discretion) the target can move up to its climbing speed as a bonus action, using brachiation to reach a nearby tree if the branches are close enough together. This bonus action can be taken only if the subject has at least two hands free, or one hand free if the subject is barefoot. 
+
+<!-- ASPECT OF THE DRAGON --> 
+	<element name="Aspect of the Dragon" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ASPECT_OF_THE_DRAGON">
+		<supports>Sorcerer</supports>
+		<description>
+			<p>This spell draws out the ancient nature within your blood, allowing you to assume the form of any dragon-type creature of challenge 10 or less. </p>
+			<p class="indent">You assume the hit points and Hit Dice of the new form. When you revert to your normal form, you return to the number of hit points you had before you transformed. If you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. As long as the excess damage doesn’t reduce your normal form to 0 hit points, you aren’t knocked unconscious. </p>
+			<p class="indent">You retain the benefits of any features from your class, race, or other source and can use them, provided that your new form is physically capable of doing so. You can speak only if the dragon can normally speak. </p>
+			<p class="indent">When you transform, you choose whether your equipment falls to the ground, merges into the new form, or is worn by it. Worn equipment functions normally, but equipment doesn’t change shape or size to match the new form. Any equipment that the new form can’t wear must either fall to the ground or merge into the new form. The GM has final say on whether the new form can wear or use a particular piece of equipment. Equipment that merges has no effect in that state.</p>
+		</description>
+		<setters>
+			<set name="keywords">dragon</set>
+			<set name="level">7</set>
+			<set name="school" addition="dragon">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a dragon scale</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- ASPECT OF THE FIREBIRD  -->
+    6th-level transmutation 
+    Casting Time: 1 action 
+    Range: Self 
+    Components: V, S, M (a lit candle and the tail feather of a bird) 
+    Duration: Concentration, up to 8 hours 
+    You take on the aspect of a firebird (Tome of Beasts, p. 201), including some physical attributes. A fiery mantle descends upon you, resembling feathery wings and an expansive tail. You gain immunity to fire and a flying speed of 60 feet. Any creatures within 5 feet of you gain immunity to natural, environmental cold. 
+    As an action, you can emit a blast of light 5 feet wide and 50 feet long. All creatures in its path take 6d6 fire damage and are blinded for 1d4 rounds. A successful Dexterity saving throw reduces the damage by half and negates the blindness. Each time you use this feature of the spell, its duration is reduced by 1 hour. When you expend the last hour of the duration, the spell ends at the start of your next turn. 
+
+<!-- ASPECT OF THE RAM  -->
+    2nd-level transmutation 
+    Casting Time: 1 action 
+    Range: Self 
+    Components: V, S 
+    Duration: Concentration, up to 10 minutes 
+    You take on the aspect of a ram, including some physical attributes. Your body hair grows thick and woolly, and a curling pair of horns sprouts from your head. You can make a ram attack with these horns as an action, and you are proficient with this attack. You deal 1d6 bludgeoning damage on a hit. 
+    If you move at least 20 feet straight toward a target and hit with a ram attack on the same turn, the target takes an 
+    extra 1d6 bludgeoning damage. If the target is a creature, it must succeed on a Strength check against your spell save DC or be knocked prone. 
+    You ignore difficult terrain caused by rubble, ice sheets, scree, or steep slopes. You also gain advantage on Strength (Athletics) checks made while climbing or jumping, and Dexterity (Acrobatics) checks made for balance or to stay on your feet. 
+
+<!-- ASPECT OF THE SERPENT  -->
+    3rd-level transmutation 
+    Casting Time: 1 action 
+    Range: Touch 
+    Components: V, S, M (a dried snakeskin) 
+    Duration: Concentration, up to 1 minute 
+    A creature you touch takes on snakelike aspects for the duration of the spell. Its tongue becomes long and forked, its canine teeth become fangs with venom sacs, and its pupils become sharply vertical. The target gains darkvision with a range of 60 feet and blindsight with a range of 30 feet. As a bonus action when you cast the spell, the target can make a ranged weapon attack with a normal range of 60 feet that deals 2d6 poison damage on a hit. 
+    As an action, the target can make a bite attack using either Strength or Dexterity (Melee Weapon Attack: range 5 ft., one creature; Hit: 2d6 piercing damage), and the creature must make a successful DC 14 Constitution saving throw or be paralyzed for 1 minute. A creature paralyzed in this way repeats the saving throw at the end of each of its turns, ending the effect on itself on a success). 
+    <b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, both the ranged attack and bite attack damage increase by 1d6 for each slot level above 3rd. 
+
+<!-- AURA OF LISTLESSNESS  -->
+    3rd-level enchantment 
+    Casting Time: 1 action 
+    Range: Self (20-foot radius) 
+    Components: V, S, M (a lump of clay or a piece of wet paper) 
+    Duration: Concentration, up to 1 minute 
+    You create an aura of power around you that saps the will and determination from creatures, making them unable to act. Any creature within 20 feet of you must succeed on a Wisdom saving throw or be unable to take actions, reactions, or bonus actions on its turn, except for the Disengage action. Affected creatures can move, but only to distance themselves from harmful conditions, such as attacks by other creatures or hazardous effects that damage or cause ill effects. A creature that moves out of the area can act normally in the following round. Any creature that remains in the area must make another successful saving throw on its turn or continue to be affected by the spell. 
+
+<!-- AURA OF PROTECTION OR DESTRUCTION  -->
+    3rd-level abjuration 
+    Casting Time: 1 action 
+    Range: Self (30-foot radius) 
+    Components: V, S 
+    Duration: Instantaneous 
+    When you cast this spell, you radiate an otherworldly energy that warps the fate of all creatures within 30 feet of you. Decide whether to call upon either a celestial or a fiend for aid. Choosing a celestial charges a 30-foot-radius around you with an aura of nonviolence; until the start of your next turn, every attack roll made by or against a creature inside the aura is treated as a natural 1. Choosing a fiend charges the area with an aura of violence; until the start of your next turn, every attack roll made by or against a creature inside the aura, including you, is treated as a natural 20. 
+    <b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, you can extend the duration by 1 round for each slot level above 3rd.
+
+<!-- AUSPICIOUS WARNING  -->
+	<element name="Auspicious Warning" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_AUSPICIOUS_WARNING">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>Just in time, you call out a fortunate warning to a creature within range. The target rolls a d4 and adds the number rolled to an attack roll, ability check, or saving throw that it has just made and uses the new result for determining success or failure.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporal,time magic,reaction</set>
+			<set name="level">1</set>
+			<set name="school" addition="temporal">Enchantment</set>
+			<set name="time">1 reaction, which you take when an ally makes an attack roll, ability check, or saving throw</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>    
+
+<!-- AVOID GRIEVOUS INJURY --> 
+    1st-level divination 
+    Casting Time: 1 reaction, which you take when you are struck by a critical hit 
+    Range: Self 
+    Components: V, S 
+    Duration: Instantaneous 
+    You cast this spell when a foe strikes you with a critical hit but before damage dice are rolled. The critical hit against you becomes a normal hit. 
+    AVRONIN’S ASTRAL ASSEMBLY 
+    6th-level necromancy (ritual) 
+    Casting Time: 10 minutes 
+    Range: Unlimited 
+    Components: V, M (a spool of fine copper wire and a gem worth at least 100 gp for each target) 
+    Duration: Concentration, up to 1 hour 
+    You alert a number of creatures that you are familiar with, up to your spellcasting ability modifier (minimum of 1), of your intent to communicate with them through spiritual projection. The invitation can extend any distance and even cross to other planes of existence. Once notified, the creatures can choose to accept this communication at any time during the duration of the spell.
+    When a creature accepts, its spirit is projected into one of the gems used in casting the spell. The material body it leaves behind falls unconscious and doesn't need food or air. The creature's consciousness is present in the room with you, and its normal form appears as an astral projection within 5 feet of the gem its spirit occupies. You can see and hear all the creatures who have joined in the assembly, and they can see and hear you and each other as if they were present (which they are, astrally). They can't interact with anything physically. 
+    A creature can end the spell's effect on itself voluntarily at any time, as can you. When the effect ends or the duration expires, a creature's spirit returns to its body and it regains consciousness. A creature that withdraws voluntarily from the assembly can't rejoin it even if the spell is still active. If a gem is broken while occupied by a creature's astral self, the spirit in the gem returns to its body and the creature suffers two levels of exhaustion. 
+
+<!-- AWAKEN OBJECT  -->
+    8th-level transmutation 
+    Casting Time: 8 hours 
+    Range: Touch 
+    Components: V, S, M (a ruby worth at least 1,000 gp, which the spell consumes) 
+    Duration: Permanent 
+    After spending the casting time enchanting a ruby along with a Large or smaller nonmagical object in humanoid form, you touch the ruby to the object. The ruby dissolves into the object, which becomes a living construct imbued with sentience. If the object has no face, a humanoid face appears on it in an appropriate location. The awakened object's statistics are determined by its size, as shown on the table below. An awakened object can use an action to make a melee weapon attack against a target within 5 feet of it. It has free will, acts independently, and speaks one language you know. It is initially friendly to anyone who assisted in its creation. 
+    An awakened object's speed is 30 feet. If it has no apparent legs or other means of moving, it gains a flying speed of 30 feet and it can hover. Its sight and hearing are equivalent to a typical human's senses. Intelligence, Wisdom, and Charisma can be adjusted up or down by the GM to fit unusual circumstances. A beautiful statue might awaken with increased Charisma, for example, or the bust of a great philosopher could have surprisingly high Wisdom. 
+    An awakened object needs no air, food, water, or sleep. Damage to an awakened object can be healed or mechanically repaired. 
+
+    Size 	HP 	AC 	Attack 	Str 	Dex 	Con 	Int 	Wis 	Cha 
+    T 	20 	18 	+8 to hit, 1d4 + 4 damage 	4 	18 	10 	2d6 	2d6 	2d6 
+    S 	25 	16 	+6 to hit, 1d8 + 2 damage 	6 	14 	10 	3d6 	2d6 	2d6 
+    M 	40 	13 	+5 to hit, 2d6 + 1 damage 	10 	12 	10 	3d6 	3d6 	2d6 
+    L 	50 	10 	+6 to hit, 2d10 + 2 damage 	14 	10 	10 	3d6 	3d6 	2d6 + 2   
+
+</elements>

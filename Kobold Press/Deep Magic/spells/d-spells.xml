@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Deep Magic Spells - D</name>
+        <update version="0.0.1">
+            <file name="d-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/d-spells.xml" />
+        </update>
+    </info>
+    
+<!-- DARKBOLT  -->
+	<element name="Darkbolt" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_DARKBOLT">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You utter a quick invocation to create a black nimbus around your hand, then hurl three rays of darkness at one or more targets in range. The rays can be divided between targets however you like. Make a ranged spell attack for each target (not each ray); each ray that hits deals 1d10 cold damage. A target that was hit by one or more rays must make a successful Constitution saving throw or be unable to use reactions until the start of its next turn. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, you create one additional ray for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">2</set>
+			<set name="school" addition="shadow">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- DARK DEMENTING -->
+	<element name="Dark Dementing" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_DARK_DEMENTING">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>A dark shadow creeps across the target’s mind and leaves a small bit of shadow essence behind, triggering a profound fear of the dark. A creature you designate within range must make a Charisma saving throw. If it fails, the target becomes frightened of you for the duration. A frightened creature can repeat the saving throw each time it takes damage, ending the effect on a success. While frightened in this way, the creature will not willingly enter or attack into a space that isn’t brightly lit. If it’s in dim light or darkness, the creature must either move toward bright light or create its own (by lighting a lantern, casting a light spell, or the like).</p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">5</set>
+			<set name="school" addition="shadow">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="range">120 ft.</set>
+			<set name="duration">10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a moonstone</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- DARK PATH  -->
+	<element name="Dark Path" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_DARK_PATH">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You conjure a shadowy road between two points within range to create a bridge or path. This effect can bridge a chasm or create a smooth path through difficult terrain. The dark path is 10 feet wide and up to 50 feet long. It can support up to 500 pounds of weight at one time. A creature that adds more weight than the path can support sinks through the path as if it didn’t exist.</p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">2</set>
+			<set name="school" addition="shadow">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a lodestone</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- DEADLY STING --> 
+	<element name="Deadly Sting" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_DEADLY_STING">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>You grow a 10-foot-long tail as supple as a whip, tipped with a horrible stinger. During the spell’s duration, you can use the stinger to make a melee spell attack with a reach of 10 feet. On a hit, the target takes 1d4 piercing damage plus 4d10 poison damage, and a creature must make a successful Constitution saving throw or become vulnerable to poison damage for the duration of the spell.</p>
+		</description>
+		<setters>
+			<set name="keywords">dragon</set>
+			<set name="level">8</set>
+			<set name="school" addition="dragon">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a thorn</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- DECELERATE -->
+	<element name="Decelerate" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_DECELERATE">
+		<supports>Druid,Paladin,Ranger,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You slow the flow of time around a creature within range that you can see. The creature must make a successful Wisdom saving throw, or its walking speed is halved (round up to the nearest 5-foot increment). The creature can repeat the saving throw at the end of each of its turns, ending the effect on a success. Until the spell ends, on a failed save the target’s speed is halved again at the start of each of your turns. For example, if a creature with a speed of 30 feet fails its initial saving throw, its speed drops to 15 feet. At the start of your next turn, the creature’s speed drops to 10 feet on a failed save, then to 5 feet on the  following round on another failed save. Decelerate can’t reduce a creature’s speed to less than 5 feet. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, you can affect an additional creature for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporal,time magic</set>
+			<set name="level">2</set>
+			<set name="school" addition="temporal">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a toy top</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- DEEP FREEZE  -->
+	<element name="Deep Freeze" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_DEEP_FREEZE">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>You send a blast of deep cold at a creature, dealing 4d8 cold damage to it and encasing it in ice. An encased creature is grappled and takes an extra 2d8 cold damage at the start of its turn every round it remains encased. If the target of this spell makes a successful Dexterity saving throw, it takes half the damage and none of the extra damage and is not encased in ice, but the ice that clings to its body reduces its speed by 15 feet (to a minimum speed of 5 feet) until it takes an action to remove the ice. </p>
+			<p class="indent">A grappled target can take an action to make a Strength check against your spell save DC, breaking free of the ice on a success. Alternatively, another creature within 5 feet of the target can make a Strength check on its turn, freeing the creature on a success. The ice can also be attacked. It has AC 12, 10 hit points, and vulnerability to fire damage. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords">winter</set>
+			<set name="level">4</set>
+			<set name="school" addition="winter">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a piece of ice or quartz</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- DELAY POTION --> 	
+	<element name="Delay Potion" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_DELAY_POTION">
+		<supports>Artificer,Wizard</supports>
+		<description>
+			<p>Upon casting this spell, you delay the next potion you consume from taking effect for up to 1 hour. You must consume the potion within 1 round of casting delay potion; otherwise the spell has no effect. At any point during delay potion’s duration, you can use a bonus action to cause the potion to go into effect. When the potion is activated, it works as if you had just drunk it. While the potion is delayed, it has no effect at all and you can consume and benefit from other potions normally. </p>
+			<p class="indent">You can delay only one potion at a time. If you try to delay the effect of a second potion, the spell fails, the first potion has no effect, and the second potion has its normal effect when you drink it.</p>
+		</description>
+		<setters>
+			<set name="keywords">alkemancy</set>
+			<set name="level">2</set>
+			<set name="school" addition="alkemancy">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>	
+
+<!-- DESOLATION  -->
+	<element name="Desolation" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_DESOLATION">
+		<supports>Cleric,Druid,Wizard</supports>
+		<description>
+			<p>You plant an obsidian acorn in solid ground and spend an hour chanting a litany of curses to the natural world, after which the land within 1 mile of the acorn becomes infertile, regardless of its previous state. Nothing will grow there, and all plant life in the area dies over the course of a day. Plant creatures are not affected. Spells that summon plants, such as entangle, require an ability check using the caster’s spellcasting ability against your spell save DC. On a successful check, the spell functions normally; if the check fails, the spell is countered by desolation.</p>
+			<p class="indent">After one year, the land slowly reverts to its normal fertility, unable to stave off the march of nature. </p>
+			<p class="indent">A living creature that finishes a short rest within the area of a desolation spell halves the result of any Hit Dice it expends. Desolation counters the effects of a bloom spell. </p>
+			<p class="indent"><b><i>Ritual Focus.</i></b> If you expend your ritual focus, the duration becomes permanent. Also, once you've expended your ritual focus this mental energy has been expended, a caster’s ritual focus can’t be used again until he or she finishes a short or long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">ritual</set>
+			<set name="level">8</set>
+			<set name="school" addition="ritual only">Necromancy</set>
+			<set name="time">1 hour</set>
+			<set name="range">Self</set>
+			<set name="duration">1 year</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an obsidian acorn worth 500 gp, which is consumed in the casting</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
+<!-- DETECT DRAGONS --> 
+	<element name="Detect Dragons" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_DETECT_DRAGONS">
+		<supports>Bard,Druid,Sorcerer,Wizard</supports>
+		<description>
+			<p>You can detect the presence of dragons and other draconic creatures within your line of sight and 120 feet, regardless of disguises, illusions, and alteration magic such as polymorph. The information you uncover depends on the number of consecutive rounds you spend an action studying a subject or area. On the first round of examination, you detect whether any draconic creatures are present, but not their number, location, identity, or type. On the second round, you learn the number of such creatures as well as the general condition of the most powerful one. On the third and subsequent rounds, you make a DC 15 Intelligence (Arcana) check; if it succeeds, you learn the age, type, and location of one draconic creature. Note that the spell provides no information on the turn in which it is cast, unless you have the means to take a second action that turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">dragon</set>
+			<set name="level">2</set>
+			<set name="school" addition="dragon">Divination</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- DEVA’S WINGS --> 	
+	<element name="Deva's Wings" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_DEVAS_WINGS">
+		<supports>Cleric,Paladin,Wizard</supports>
+		<description>
+			<p>You touch a willing creature. The target grows feathery wings of pure white that grant it a flying speed of 60 feet and the ability to hover. When the target takes the Attack action, it can use a bonus action to make a melee weapon attack with the wings, with a reach of 10 feet. If the wing attack hits, the target takes bludgeoning damage equal to 1d6 + your spellcasting ability modifier and must make a successful Strength saving throw or fall prone. When the spell ends, the wings disappear, and the target falls if it was aloft. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, you can target one additional target for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords">angelic</set>
+			<set name="level">4</set>
+			<set name="school" addition="angelic">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a wing feather from any bird</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>	
+
+<!-- DOUSE LIGHT  -->
+	<element name="Douse Light" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_DOUSE_LIGHT">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>With a simple gesture, you can put out a single small source of light within range. This spell extinguishes a torch, a candle, a lantern, or a light or dancing lights cantrip.</p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">0</set>
+			<set name="school" addition="shadow">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- DRACONIC MAJESTY  -->
+	<element name="Draconic Majesty" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_DRACONIC_MAJESTY">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>You exude the powerful presence of a dragon, frightening your enemies. For the duration of the spell, all creatures who are aware of your presence and within 30 feet of you must succeed on a Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, the radius increases by 30 feet for each slot level above 3rd, to a maximum of 120 feet for a slot of 6th level or higher.</p>
+		</description>
+		<setters>
+			<set name="keywords">dragon</set>
+			<set name="level">3</set>
+			<set name="school" addition="dragon">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (30ft. radius)</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- DRACONIC SENSES --> 
+	<element name="Draconic Senses" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_DRACONIC_SENSES">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>You enhance your senses, granting yourself the keen perception of a dragon. For the duration of the spell, you gain darkvision out to a range of 60 feet. If you already have darkvision, its range increases by 60 feet. You also gain blindsight out to a range of 60 feet.</p>
+		</description>
+		<setters>
+			<set name="keywords">dragon</set>
+			<set name="level">4</set>
+			<set name="school" addition="dragon">Divination</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">8 hrs</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- DRACONIC SMITE  -->
+	<element name="Draconic Smite" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_DRACONIC_SMITE">
+		<supports>Druid,Paladin</supports>
+		<description>
+			<p>The next time you hit a creature with a melee weapon attack during the spell’s duration, your weapon takes on the form of a silver dragon’s head. Your attack deals an extra 1d6 cold damage, and up to four other creatures of your choosing within 30 feet of the attack’s target must each make a successful Constitution saving throw or take 1d6 cold damage. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the extra cold damage and the cold damage dealt to the secondary creatures increases by 1d6 for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords">dragon</set>
+			<set name="level">1</set>
+			<set name="school" addition="dragon">Evocation</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- DRAGON BREATH  -->
+	<element name="Dragon Breath" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_DRAGON_BREATH">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You summon draconic power to gain a breath weapon. When you cast dragon breath, you can immediately exhale a cone or line of elemental energy, depending on the type of dragon you select. While the spell remains active, roll a d6 at the start of your turn. On a roll of 5 or 6, you can take a bonus action that turn to use the breath weapon again. </p>
+			<p class="indent">When you cast the spell, choose one of the dragon types listed below. Your choice determines the affected area and the damage of the breath attack for the spell’s duration.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th level or higher, the damage increases by 2d6 for each slot level above 5th.</p>
+			<table>
+				<thead>
+					<tr><td>Dragon Type</td><td>Area</td><td>Damage</td></tr>
+				</thead>
+				<tr><td>Black</td><td>30-foot line, 5 feet wide</td><td>6d6 acid damage </td></tr>
+				<tr><td>Blue </td><td>30-foot line, 5 feet wide</td><td>6d6 lightning damage </td></tr>
+				<tr><td>Green</td><td>15-foot cone</td><td>	6d6 poison damage </td></tr>
+				<tr><td>Red</td><td>15-foot cone</td><td>6d6 fire damage </td></tr>
+				<tr><td>White</td><td>15-foot cone</td><td>	6d6 cold damage</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">dragon</set>
+			<set name="level">5</set>
+			<set name="school" addition="dragon">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (15 ft. cone or 30 ft. line)</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a piece of a dragon's tooth</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- DRAGON ROAR --> 
+	<element name="Dragon Roar" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_DRAGON_ROAR">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>Your voice is amplified to assault the mind of one creature. The target must make a Charisma saving throw. If it fails, the target takes 1d4 psychic damage and is frightened until the start of your next turn. A target can be affected by your dragon roar only once per 24 hours. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> This spell’s damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).</p>
+		</description>
+		<setters>
+			<set name="keywords">dragon</set>
+			<set name="level">0</set>
+			<set name="school" addition="dragon">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- DRAGON’S PRIDE -->
+	<element name="Dragon's Pride" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_DRAGONS_PRIDE">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>Your sense of self grows to draconic proportions. Until the spell ends, you gain advantage on all Charisma checks and on all saving throws against being charmed or frightened.</p>
+		</description>
+		<setters>
+			<set name="keywords">dragon</set>
+			<set name="level">3</set>
+			<set name="school" addition="dragon">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- DYING OF THE LIGHT  -->
+	<element name="Dying of the Light" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_DYING_OF_THE_LIGHT">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>A wave of withering darkness erupts from you, filling a 120-foot-radius sphere and extinguishing any nonmagical light sources in the area. Any light produced by spells of 6th level or lower is dispelled. Magic items (but not artifacts) that give off light have that property suppressed while in the spell’s area. Any light sources brought into the area during the spell’s duration are likewise extinguished. Light-producing spells of 7th level or higher function within the area. </p>
+			<p class="indent">Nonmagical light sources removed from the area can be reignited. Magic items regain their ability to give off light 1 round after leaving the area. This magical darkness foils darkvision, except for creatures that can see in magical darkness, such as devils. You can see within the area of the spell as if it were brightly lit. </p>
+			<p class="indent">Each creature you choose to be affected that ends its turn in the darkness takes 4d8 necrotic damage and gains one level of exhaustion. A successful Constitution saving throw halves the damage and negates the exhaustion.</p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">7</set>
+			<set name="school" addition="shadow">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">120 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a black pearl worth 250 gp</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>    
+    
+</elements>

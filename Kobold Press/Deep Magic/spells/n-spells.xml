@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Deep Magic Spells - N</name>
+        <update version="0.0.1">
+            <file name="n-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/n-spells.xml" />
+        </update>
+    </info>
+
+<!-- NEGATIVE IMAGE  -->
+	<element name="Negative Image" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_NEGATIVE_IMAGE">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You create a shadow-tunnel between your location and one other creature you can see within range. You and that creature instantly swap positions. If the target creature is unwilling to exchange places with you, it can resist the effect by making a Charisma saving throw. On a successful save, the spell has no effect.</p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">2</set>
+			<set name="school" addition="shadow">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">120 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a piece of reflective obsidian</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>   
+    
+</elements>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Deep Magic Spells - M</name>
+        <update version="0.0.1">
+            <file name="m-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/m-spells.xml" />
+        </update>
+    </info>
+
+<!-- MASS SURGE DAMPENER  -->
+	<element name="Mass Surge Dampener" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_MASS_SURGE_DAMPENER">
+		<supports>Bard,Wizard</supports>
+		<description>
+			<p>Using your strength of will, you protect up to three creatures other than yourself from the effect of a chaos magic surge. A protected creature can make a DC 13 Charisma saving throw to negate the effect of a chaos magic surge that does not normally allow a saving throw, or it gains advantage on a saving throw that is normally allowed. Once a protected creature makes a successful saving throw allowed by mass surge dampener, the spell’s effect ends for that creature.</p>
+			<p class="indent">Using your strength of will, you protect up to three creatures other than yourself from the effect of a chaos magic surge. A protected creature can make a DC 13 Charisma saving throw to negate the effect of a chaos magic surge that does not normally allow a saving throw, or it gains advantage on a saving throw that is normally allowed. Once a protected creature makes a successful saving throw allowed by mass surge dampener, the spell’s effect ends for that creature.</p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">5</set>
+			<set name="school" addition="chaos">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">1 minute, or until expended</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
+<!-- MEPHITIC CROAK --> 	
+	<element name="Mephitic Croak" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_MEPHITIC_CROAK">
+		<supports>Wizard</supports>
+		<description>
+			<p>You release an intensely loud burp of acidic gas in a 15-foot cone. Creatures in the area take 2d6 acid damage plus 2d6 thunder damage, or half as much damage with a successful Dexterity saving throw. A creature whose Dexterity saving throw fails must also make a successful Constitution saving throw or be stunned and poisoned until the start of your next turn. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, both acid and thunder damage increase by 1d6 for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">alkemancy</set>
+			<set name="level">2</set>
+			<set name="school" addition="alkemancy">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (15-ft cone)</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a dead toad and a dram of arsenic worth 10 gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- MISFORTUNE --> 
+	<element name="Misfortune" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_MISFORTUNE">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>You cast a pall of bad luck over all creatures in a 15-foot radius centered on a point within range. Each creature in that area must succeed on a Wisdom saving throw or be cursed with bad luck for the duration of the spell. A creature under the effect of this spell has disadvantage on all ability checks, saving throws, and attack rolls. A remove curse spell ends this effect. </p>
+			<p class="indent"><b><i>Special.</i></b> If a targeted creature is carrying a stone of good luck, the creature is unaffected by the spell, but the item ceases to function for 24 hours. Likewise, if a targeted creature is carrying a luck blade, the creature is unaffected by the spell, but the sword’s Luck ability and saving throw bonuses cease to function for 24 hours.</p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">6</set>
+			<set name="school" addition="chaos">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a broken mirror</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- MIST OF WONDERS  -->
+	<element name="Mist of Wonders" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_MIST_OF_WONDERS">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>A colorful mist surrounds you out to a radius of 30 feet. Creatures inside the mist see odd shapes in it and hear random sounds that don’t make sense. The very concepts of order and logic don’t seem to exist inside the mist. </p>
+			<p class="indent">Any 1st-level spell that’s cast in the mist by another caster or that travels through the mist is affected by its strange nature. The caster must make a Constitution saving throw when casting the spell. On a failed save, the spell transforms into another 1st-level spell the caster knows (chosen by the GM from those available), even if that spell is not currently prepared. The altered spell’s slot level or its original target or targeted area can’t be changed. Cantrips are unaffected. If (in the GM’s judgment) none of the caster’s spells known of that level can be transformed, the spell being cast simply fails. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, it affects any spell cast using a spell slot of any lower level. For instance, using a 6th-level slot enables you to transform a spell of 5th level or lower into another spell of the same level. </p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">2</set>
+			<set name="school" addition="chaos">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (30 ft. radius)</set>
+			<set name="duration">1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- MITHRAL DRAGON’S MIGHT  --> 
+	<element name="Mithral Dragon's Might" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_MITHRAL_DRAGONS_MIGHT">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>You take on some of the physical characteristics and abilities of the mithral dragon, growing protective scales, wings, and claws. Until the spell ends, your AC can’t be lower than 16, regardless of what armor you are wearing. You can take two actions on your turn to attack with your claws, dealing 1d6 slashing damage on a hit. You have resistance to to acid and thunder damage. Up to three times while the spell is active, as an action, you can breathe a 20-foot cone of metal shards, dealing 6d8 slashing damage to all creatures in the cone. A creature that succeeds on a Dexterity saving throw takes half as much damage from your breath weapon. Finally, the wings grant you a flying speed of 40 feet.</p>
+		</description>
+		<setters>
+			<set name="keywords">dragon</set>
+			<set name="level">6</set>
+			<set name="school" addition="dragon">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+    
+    
+</elements>

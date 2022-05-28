@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Deep Magic Spells - E</name>
+        <update version="0.0.1">
+            <file name="e-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/e-spells.xml" />
+        </update>
+    </info>
+    
+<!-- ELEMENTAL TWIST  -->
+	<element name="Elemental Twist" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ELEMENTAL _TWIST">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>During this spell’s duration, reality shifts around you whenever you cast a spell that deals acid, cold, fire, lightning, poison, or thunder damage. Assign each damage type a number and roll a d6 to determine the type of damage this casting of the spell deals. In addition, the spell’s damage increases by 1d6. All other properties or effects of the spell are unchanged. </p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">2</set>
+			<set name="school" addition="chaos">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a thin piece of copper twisted around itself</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- ENCHANT RING -->
+	<element name="Enchant Ring" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ENCHANT_RING">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>You enchant a ring you touch that isn’t being worn or carried. The next creature that willingly wears the ring becomes charmed by you for 1 week or until it is harmed by you or one of your allies. If the creature dons the ring while directly threatened by you or one of your allies, the spell fails. </p>
+			<p class="indent">The charmed creature regards you as a friend. When the spell ends, it doesn’t know it was charmed by you, but it does realize that its attitude toward you has changed (possibly greatly) in a short time. How the creature reacts to you and regards you in the future is up to the GM.</p>
+		</description>
+		<setters>
+			<set name="keywords">ring</set>
+			<set name="level">6</set>
+			<set name="school" addition="ring">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Permanent until discharged</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">500 gp worth of diamond dust, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- ENCROACHING SHADOWS  -->
+	<element name="Encroaching Shadows" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ENCROACHING_SHADOWS">
+		<supports>Cleric,Sorcerer,Wizard</supports>
+		<description>
+			<p>You cause menacing shadows to invade an area 200 feet on a side and 50 feet high, centered on a point within range. Illumination in the area drops one step (from bright light to dim, or from dim light to darkness). Any spell that creates light in the area that is cast using a lower-level spell slot than was used to cast encroaching shadows is dispelled, and a spell that creates light doesn’t function in the area if that spell is cast using a spell slot of 5th level or lower. Nonmagical effects can’t increase the level of illumination in the affected area. </p>
+			<p class="indent">A spell that creates darkness or shadow takes effect in the area as if the spell slot expended was one level higher than the spell slot actually used. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 7th level or higher, the effect lasts for an additional 12 hours for each slot level above 6th. </p>
+			<p class="indent"><b><i>Ritual Focus.</i></b> If you expend your ritual focus, the spell’s duration increases by 12 hours, and it cannot be dispelled by a spell that creates light, even if that spell is cast using a higher-level spell slot. Also, once you've expended your ritual focus this mental energy has been expended, a caster’s ritual focus can’t be used again until he or she finishes a short or long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">ritual</set>
+			<set name="level">6</set>
+			<set name="school" addition="ritual only">Illusion</set>
+			<set name="time">1 hour</set>
+			<set name="range">150 ft.</set>
+			<set name="duration">12 hours</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a drop of blood smeared on a silver rod worth 100 gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
+<!-- ENHANCE GREED  -->
+	<element name="Enhance Greed" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ENHANCE_GREED">
+		<supports>Bard,Cleric,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You detect precious metals, gems, and jewelry within 60 feet. You do not discern their exact location, only their presence and direction. Their exact location is revealed if you are within 10 feet of the spot. </p>
+			<p class="indent">Enhance greed penetrates barriers but is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of dirt or wood. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the duration of the spell increases by 1 minute, and another 10 feet can be added to its range, for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">dragon</set>
+			<set name="level">2</set>
+			<set name="school" addition="dragon">Divination</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- ENTOMB IN ICE  -->
+	<element name="Entomb in Ice" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ENTOMB_IN_ICE">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You trap a creature in a thick coating of ice. The target must succeed on a Dexterity saving throw or be restrained for the duration. At the beginning of the trapped creature’s turn, it takes 2d4 cold damage. On its turn, an entombed creature (or an ally) can take an action to make a Strength check against your spell save DC. On a success, the entombed creature is freed. The icy tomb is also susceptible to damage and vulnerable to fire. Damage equal to your spell save DC will destroy the tomb and free the target.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd. The creatures must be within 30 feet of each other when you target them.</p>
+		</description>
+		<setters>
+			<set name="keywords">winter</set>
+			<set name="level">2</set>
+			<set name="school" addition="winter">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- ENTROPIC DAMAGE FIELD  -->
+	<element name="Entropic Damage Field" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ENTROPIC_DAMAGE_FIELD">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>By twisting a length of silver wire around your finger, you tie your fate to those around you. When you take damage, that damage is divided equally between you and all creatures in range who get a failure on a Charisma saving throw. Any leftover damage that can’t be divided equally is taken by you. Creatures that approach to within 60 feet of you after the spell was cast are also affected. A creature is allowed a new saving throw against this spell each time you take damage, and a successful save ends the spell’s effect on that creature.</p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">3</set>
+			<set name="school" addition="chaos">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a silver wire</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- EVERCOLD  -->
+	<element name="Evercold" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_EVERCOLD">
+		<supports>Cleric,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You target a creature within the spell’s range, and that creature must make a successful Wisdom saving throw or take 1d6 cold damage. In addition, the target is cursed to feel as if it’s exposed to extreme cold. For the duration of evercold, the target must make a successful DC 10 Constitution saving throw at the end of each hour or gain one level of exhaustion. The target has advantage on the hourly saving throws if wearing suitable cold-weather clothing, but it has disadvantage on saving throws against other spells and magic that deal cold damage (regardless of its clothing) for the spell’s duration. </p>
+			<p class="indent">The spell can be ended by its caster or by dispel magic or remove curse.</p>
+		</description>
+		<setters>
+			<set name="keywords">winter</set>
+			<set name="level">4</set>
+			<set name="school" addition="winter">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Until dispelled</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an insect that froze to death</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- EXSANGUINATE -->
+	<element name="Exsanguinate" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_EXSANGUINATE">
+		<supports>Cleric,Warlock,Wizard</supports>
+		<description>
+			<p>You cause the body of a creature within range to become engorged with blood or ichor. The target must make a Constitution saving throw. On a successful save, it takes 2d6 bludgeoning damage. On a failed save, it takes 4d6 bludgeoning damage each round, it is incapacitated, and it cannot speak, as it vomits up torrents of blood or ichor. In addition, its hit point maximum is reduced by an amount equal to the damage taken. The target dies if this effect reduces its hit point maximum to 0. </p>
+			<p class="indent">At the end of each of its turns, a creature can make a Constitution saving throw, ending the effect on a success— except for the reduction of its hit point maximum, which lasts until the creature finishes a long rest. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b>When you cast this spell using a spell slot of 6th level or higher, you can target one additional creature for each slot level above 5th.</p>
+		</description>
+		<setters>
+			<set name="keywords">blood</set>
+			<set name="level">5</set>
+			<set name="school" addition="blood">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a desiccated horse heart</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- EXSANGUINATING CLOUD  -->
+	<element name="Exsanguinating Cloud" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_EXSANGUINATING_CLOUD">
+		<supports>Cleric,Sorcerer,Wizard</supports>
+		<description>
+			<p>When you cast this spell, a rose-colored mist billows up in a 20-foot radius, centered on a point you indicate within range, making the area heavily obscured and draining blood from living creatures in the cloud. The cloud spreads around corners. It lasts for the duration or until strong wind disperses it, ending the spell.</p>
+			<p class="indent">This cloud leaches the blood or similar fluid from creatures in the area. It doesn’t affect undead or constructs. Any creature in the cloud when it’s created or at the start of your turn takes 6d6 necrotic damage and gains one level of exhaustion; a successful Constitution saving throw halves the damage and prevents the exhaustion.</p>
+		</description>
+		<setters>
+			<set name="keywords">blood</set>
+			<set name="level">5</set>
+			<set name="school" addition="blood">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">100 ft.</set>
+			<set name="duration">Concentration, up to 5 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- EXTRACT ESSENCE -->
+	<element name="Extract Essence" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_EXTRACT_ESSENCE">
+		<supports>Bard,Druid,Warlock,Wizard</supports>
+		<description>
+			<p>You extract the goodness from food, pulling all the nutritional value out of three days’ worth of meals and concentrating it into a tablespoon of bland, flourlike powder. The flour can be mixed with liquid and drunk or baked into bread. When consumed, it still imparts all the nutritional value of the original food. </p>
+			<p class="indent">The original food appears unchanged, and though it’s still filling, it has no nutritional value. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, an additional three meals’ worth of food can be extracted for each slot level above 1st. </p>
+			<p class="indent"><b><i>Ritual Focus.</i></b> If you expend your ritual focus, you can choose to have each day’s worth of meals take the form of a single slice of bread. Also, once you've expended your ritual focus this mental energy has been expended, a caster’s ritual focus can’t be used again until he or she finishes a short or long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">ritual</set>
+			<set name="level">1</set>
+			<set name="school" addition="ritual only">Transmutation</set>
+			<set name="time">10 minutes</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Permanent</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a wooden bowl</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>   
+    
+</elements>

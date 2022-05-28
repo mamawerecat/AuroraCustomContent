@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Deep Magic Spells - C</name>
+        <update version="0.0.1">
+            <file name="c-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/c-spells.xml" />
+        </update>
+    </info>
+    
+<!-- CALL SHADOW MASTIFF  -->
+	<element name="Call Shadow Mastiff" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CALL_SHADOW_MASTIFF">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You conjure a shadow mastiff from the plane of shadow. This creature obeys your verbal commands to aid you in battle or to seek out a specific creature. It has the body of a large dog with a smooth black coat, 2 feet high at the shoulder and weighing 200 pounds. </p>
+			<p class="indent">The mastiff is friendly to you and your companions. Roll initiative for the mastiff; it acts on its own turn. It obeys simple, verbal commands from you, within its ability to act. Giving a command takes no action on your part.</p>
+			<p class="indent">The mastiff disappears when it drops to 0 hit points or when the spell ends.</p>
+			<p class="indent"><i><b>Stats can be found for Shadow Mastiff in page 247 of Deep Magic</b></i></p>
+		</description>
+		<setters>
+			<set name="keywords">shadow,summon,monstrosity</set>
+			<set name="level">3</set>
+			<set name="school" addition="shadow">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a dog's tooth</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- CALM OF THE STORM  -->
+	<element name="Calm of the Storm" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CALM_OF_THE_STORM">
+		<supports>Bard,Wizard</supports>
+		<description>
+			<p>While visualizing the world as you wish it was, you lay your hands upon a creature other than yourself and undo the effect of a chaos magic surge that affected the creature within the last minute. Reality reshapes itself as if the surge never happened, but only for that creature. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, the time since the chaos magic surge can be 1 minute longer for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">3</set>
+			<set name="school" addition="chaos">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an amethyst worth 250 gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- CATCH THE BREATH -->
+	<element name="Catch the Breath" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CATCH_THE_BREATH">
+		<supports>Bard,Cleric,Warlock,Wizard</supports>
+		<description>
+			<p>You can cast this spell as a reaction when you’re targeted by a breath weapon. Doing so gives you advantage on your saving throw against the breath weapon. If your saving throw succeeds, you take no damage from the attack even if a successful save normally only halves the damage. </p>
+			<p class="indent">Whether your saving throw succeeded or failed, you absorb and store energy from the attack. On your next turn, you can make a ranged spell attack against a target within 60 feet. On a hit, the target takes 3d10 force damage. If you opt not to make this attack, the stored energy dissipates harmlessly. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, the damage done by your attack increases by 1d10 for each slot level above 3rd. </p>
+		</description>
+		<setters>
+			<set name="keywords">dragon</set>
+			<set name="level">3</set>
+			<set name="school" addition="dragon">Transmutation</set>
+			<set name="time">1 reaction, which you take when you make a saving throw against a breath weapon attack</set>
+			<set name="range">Self</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- CAUSTIC BLOOD  -->
+	<element name="Caustic Blood" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CAUSTIC_BLOOD">
+		<supports>Druid,Ranger,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>Your blood becomes caustic when exposed to the air. When you take piercing or slashing damage, you can use your reaction to select up to three creatures within 30 feet of you. Each target takes 1d10 acid damage unless it makes a successful Dexterity saving throw.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b>When you cast this spell using a spell slot of 3rd level or higher, the number of targets increases by one for each slot level above 2nd, to a maximum of six targets.</p>
+		</description>
+		<setters>
+			<set name="keywords">blood</set>
+			<set name="level">2</set>
+			<set name="school" addition="blood">Transmutation</set>
+			<set name="time">1 reaction, which you take when an enemy's attack deals piercing or slashing damage to you</set>
+			<set name="range">Self (30 ft cone)</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- CAUSTIC TORRENT --> 	
+	<element name="Caustic Torrent" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CAUSTIC_TORRENT">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>A swirling jet of acid sprays from you in a direction you choose. The acid fills a line 60 feet long and 5 feet wide. Each creature in the line takes 14d6 acid damage, or half as much damage if it makes a successful Dexterity saving throw. A creature reduced to 0 hit points by this spell is killed, and its body is liquefied. In addition, each creature other than you that’s in the line or within 5 feet of it is poisoned for 1 minute by toxic fumes. Creatures that don’t breathe or that are immune to acid damage aren’t poisoned. A poisoned creature can repeat the Constitution saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+		</description>
+		<setters>
+			<set name="keywords">alkemancy</set>
+			<set name="level">8</set>
+			<set name="school" addition="alkemancy">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (60 ft line)</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a chip of bone pitted by acid</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+<!-- CAVE DRAGON’S DOMINANCE  -->
+	<element name="Cave Dragon's Dominanace" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CAVE_DRAGONS_DOMINANCE">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>You take on some of the physical characteristics and abilities of the cave dragon, growing protective scales and claws. Until the spell ends, your AC can’t be lower than 16, regardless of what kind of armor you are wearing. You gain blindsight out to a range of 60 feet. You can take two actions on your turn to attack with your claws, dealing 1d6 slashing damage on a hit. You have resistance to poison damage. Up to three times while the spell is active, as an action, you can breathe a 20-foot cone of poison gas, dealing 6d8 poison damage to each creature in the cone and making it poisoned until it finishes a long or short rest. A creature that succeeds on a Constitution saving throw takes half as much damage from your breath weapon and is not poisoned. Finally, you gain a climbing speed of 40 feet.</p>
+		</description>
+		<setters>
+			<set name="keywords">dragon</set>
+			<set name="level">6</set>
+			<set name="school" addition="dragon">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- CELEBRATION  -->
+	<element name="Celebration" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CELEBRATION">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>You create a 30-foot-radius area around a point that you choose within range. An intelligent creature that enters the area or starts its turn there must make a Wisdom saving throw. On a failed save, the creature starts to engage in celebratory revelry: drinking, singing, laughing, and dancing. Affected creatures are reluctant to leave the area until the spell ends, preferring to continue the festivities. They forsake appointments, cease caring about their woes, and generally behave in a cordial (if not hedonistic) manner. This preoccupation with merrymaking occurs regardless of an affected creature’s agenda or alignment. Assassins procrastinate, servants join in the celebration rather than working, and guards abandon their posts. </p>
+			<p class="indent">The effect ends on a creature when it is attacked, takes damage, or is forced to leave the area. A creature that makes a successful saving throw can enter or leave the area without danger of being enchanted. A creature that fails the saving throw and is forcibly removed from the area must repeat the saving throw if it returns to the area. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 8th level or higher, the spell lasts for an additional hour for each slot level above 7th. </p>
+			<p class="indent"><b><i>Ritual Focus.</i></b> If you expend your ritual focus, an unaffected intelligent creature must make a new saving throw every time it starts its turn in the area, even if it has previously succeeded on a save against the spell. Also, once you've expended your ritual focus this mental energy has been expended, a caster’s ritual focus can’t be used again until he or she finishes a short or long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">ritual</set>
+			<set name="level">7</set>
+			<set name="school" addition="ritual only">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">90 ft.</set>
+			<set name="duration">1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a small party favor</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
+<!-- CELESTIAL FANFARE --> 	
+	<element name="Celestial Fanfare" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CELESTIAL_FANFARE">
+		<supports>Cleric,Wizard</supports>
+		<description>
+			<p>A great blaring of trumpets from on high blasts down upon an area you designate. All evil creatures in a 30-foot radius take 4d6 thunder damage and 4d6 radiant damage and are blinded and deafened for 2d4 rounds. A successful Constitution saving throw reduces the damage and the duration of the blinded and deafened conditions by half. </p>
+			<p class="indent">Neutral or unaligned creatures within the area take half as much damage and are blinded and deafened for 1d4 rounds. A successful save reduces the damage to one quarter and negates the blinding and deafening effects. </p>
+			<p class="indent">Good-aligned creatures are not harmed by this spell.</p>
+		</description>
+		<setters>
+			<set name="keywords">angelic</set>
+			<set name="level">6</set>
+			<set name="school" addition="angelic">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">100 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">miniature trumpet worth 100 gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+<!-- CHAOTIC FORM  -->
+	<element name="Chaotic Form" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CHAOTIC_FORM">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>You cause the form of a willing creature to become malleable, dripping and flowing according to the target’s will as if the creature were a vaguely humanoid-shaped ooze. The creature is not affected by difficult terrain, it has advantage on Dexterity (Acrobatics) checks made to escape a grapple, and it suffers no penalties when squeezing through spaces one size smaller than itself. The target’s movement is halved while it is affected by chaotic form. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, the duration increases by 10 minutes for each slot level above 4th. </p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">4</set>
+			<set name="school" addition="chaos">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- CHAOTIC VITALITY  -->		
+	<element name="Chaotic Vitality" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CHAOTIC_VITALITY">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>Make a melee spell attack against a creature that has a number of Hit Dice no greater than your level and has at least 1 hit point. On a hit, you conjure pulsating waves of chaotic energy within the creature and yourself. After a brief moment that seems to last forever, your hit point total changes, as does the creature’s. Roll a d100 and increase or decrease the number rolled by any number up to your spellcasting level, then find the result on the Hit Point Flux table. Apply that result both to yourself and the target creature. Any hit points gained beyond a creature’s normal maximum are temporary hit points that last for 1 round per caster level. </p>
+			<p class="indent">For example, a 3rd-level spellcaster who currently has 17 of her maximum 30 hit points casts chaotic vitality on a creature with 54 hit points and rolls a 75 on the Hit Point Flux table. The two creatures have a combined total of 71 hit points. A result of 75 indicates that both creatures get 50 percent of the total, so the spellcaster and the target end up with 35 hit points each. In the spellcaster’s case, 5 of those hit points are temporary and will last for 3 rounds. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the maximum Hit Dice of the affected creature increases by 2 for each slot level above 2nd.</p>
+			<table>
+				<thead>
+					<tr><td>d100</td><td>HP</td></tr>
+				</thead>
+				<tr><td>01–09</td><td>0</td></tr>
+				<tr><td>10–39</td><td>1</td></tr>
+				<tr><td>40–69</td><td>25 percent of total</td></tr>
+				<tr><td>70–84</td><td>50 percent of total</td></tr>
+				<tr><td>85–94</td><td>75 percent of total</td></tr>
+				<tr><td>95–99</td><td>100 percent of total</td></tr>
+				<tr><td>100</td><td>200 percent of total, and both creatures gain the effect of a haste spell that lasts for 1 round per caster level</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">2</set>
+			<set name="school" addition="chaos">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- CHAOTIC WORLD  -->
+	<element name="Chaotic World" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CHAOTIC_WORLD">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>You throw a handful of colored cloth into the air while screaming a litany of disjointed phrases. A moment later, a 30-foot cube centered on a point within range fills with multicolored light, cacophonous sound, overpowering scents, and other confusing sensory information. The effect is dizzying and overwhelming. Each enemy within the cube must make a successful Intelligence saving throw or become blinded and deafened, and fall prone. An affected enemy cannot stand up or recover from the blindness or deafness while within the area, but all three conditions end immediately for a creature that leaves the spell’s area. </p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">6</set>
+			<set name="school" addition="chaos">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">seven irregular pieces of colored cloth that you throw into the air</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- CHRONAL LANCE --> 	
+	<element name="Chronal Lance" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CHRONAL_LANCE">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>You inflict the ravages of aging on up to three creatures within range, temporarily discomfiting them and making them appear elderly for a time. Each target must make a successful Wisdom saving throw, or its walking speed is halved (round up to the nearest 5-foot increment) and it has disadvantage on Dexterity checks (but not saving throws). An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporal,clockwork</set>
+			<set name="level">1</set>
+			<set name="school" addition="temporal,clockwork">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- CIRCLE OF DEVASTATION  -->
+	<element name="Circle of Devastation" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CIRCLE_OF_DEVASTATION">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You create a 10-foot-tall, 20-foot-radius cylinder of destructive energy around a point you can see within range. The area is difficult terrain. When you cast the spell and as a bonus action on each of your turns, you can choose one of the following damage types: cold, fire, lightning, necrotic, or radiant. Each creature or object that is inside the cylinder when it’s created or ends its turn inside the cylinder takes 6d6 damage of the chosen type, or half the damage with a successful Constitution saving throw. A creature or object dropped to 0 hit points by the spell is reduced to fine ash. </p>
+			<p class="indent">The cylinder’s radius expands by 20 feet at the start of each of your turns after the spell is cast. Any creatures or objects enveloped in the enlarged area are subject to its effects immediately.</p>
+		</description>
+		<setters>
+			<set name="keywords">ring</set>
+			<set name="level">9</set>
+			<set name="school" addition="ring">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">1 mile</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a metal ring</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- CIRCLE OF WIND -->
+	<element name="Circle of Wind" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CIRCLE_OF_WIND">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>Light wind encircles you, leaving you in the center of a mild vortex. For the duration, you gain a +2 bonus to your AC against ranged attacks. You also have advantage on saving throws against extreme environmental heat and against harmful gases, vapors, and inhaled poisons.</p>
+		</description>
+		<setters>
+			<set name="keywords">ring</set>
+			<set name="level">1</set>
+			<set name="school" addition="ring">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">8 hours</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a crystal ring</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- CLAIM LAIR --> 
+	<element name="Claim Lair" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CLAIM_LAIR">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>By placing your personal wealth within an area and invoking the dragon’s territorial nature, you claim the area as your lair, imbuing you with extra power within its confines. You can claim an area of up to 2,500 square feet (a space 50 feet square, or one hundred 5-foot squares, or twenty-five 10-foot squares). The claimed area can be up to 20 feet tall and shaped as you desire. While within these confines, you can take one of the following lair actions once per round on initiative count 20: </p>
+			<p class="indent">• Magical darkness spreads from a point you choose within 30 feet, filling a 15-foot-radius sphere until you dismiss it as an action, use this lair action again, or die. The darkness spreads around corners. A creature with darkvision can’t see through this darkness, and nonmagical light can’t illuminate it, but you can see in the area as if it were brightly lit. If any of the effect’s area overlaps with an area of light created by a spell of 2nd level or lower, the spell that created the light is dispelled. </p>
+			<p class="indent">• Part of the ceiling collapses above one creature you can see within 60 feet of you. The creature must succeed on a Dexterity saving throw against your spell save DC or take 3d6 bludgeoning damage and be knocked prone and buried. A buried target is restrained and unable to breathe or stand up. A creature can take an action to make a DC 10 Strength check, ending the buried state with a success. </p>
+			<p class="indent">• A tremor shakes the lair in a 30-foot radius around you. Each creature on the ground in that area other than you must succeed on a Dexterity saving throw against your spell save DC or be knocked prone. </p>
+			<p class="indent">You can take an action to dismiss this spell.</p>
+		</description>
+		<setters>
+			<set name="keywords">dragon</set>
+			<set name="level">6</set>
+			<set name="school" addition="dragon">Abjuration</set>
+			<set name="time">10 minutes</set>
+			<set name="range">Touch</set>
+			<set name="duration">24 hrs</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">material goods and wealth worth at least 2,000 gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- CLASH OF GLACIERS  -->
+	<element name="Clash of Glacieers" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CLASH_OF_GLACIERS">
+		<supports>Druid,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You conjure up icy boulders that crush creatures in a line 100 feet long. Each creature in the area takes 5d6 bludgeoning damage plus 5d6 cold damage, or half the damage with a successful Dexterity saving throw. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d6 for each slot level above 5th. You decide whether each extra die deals bludgeoning or cold damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">winter</set>
+			<set name="level">5</set>
+			<set name="school" addition="winter">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (100 ft line)</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a piece of cracked glass</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element> 
+
+<!-- CLAWS OF DARKNESS  -->
+	<element name="Claws of Darkness" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CLAWS_OF_DARKNESS">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You shape shadows into claws that grow from your fingers and drip inky blackness. The claws have a reach of 10 feet. While the spell lasts, you can make a melee spell attack with them that deals 1d10 cold damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">0</set>
+			<set name="school" addition="shadow">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- CLAWS OF THE EARTH DRAGON  -->
+	<element name="Claws of the Earth Dragon" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CLAWS_OF_THE_EARTH_DRAGON">
+		<supports>Bard,Cleric,Sorcerer,Wizard</supports>
+		<description>
+			<p>You summon the power of the earth dragon and shoot a ray at one target within 60 feet. The target falls prone and takes 6d8 bludgeoning damage from being slammed to the ground. If the target was flying or levitating, it takes an additional 1d6 bludgeoning damage per 10 feet it falls. If the target makes a successful Strength saving throw, damage is halved, it doesn’t fall, and it isn’t knocked prone. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th level or higher, the damage done by the attack increases by 1d8 and the range increases by 10 feet for each slot level above 5th.</p>
+		</description>
+		<setters>
+			<set name="keywords">dragon</set>
+			<set name="level">5</set>
+			<set name="school" addition="dragon">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- CLEARING THE FIELD -->
+	<element name="Clearing the Field" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CLEARING_THE_FIELD">
+		<supports>Druid,Ranger,Wizard</supports>
+		<description>
+			<p>With a harsh word and a vicious chopping motion, you cause every tree, shrub, and stump within 40 feet of you to sink into the ground, leaving the vacated area clear of plant life that might otherwise hamper movement or obscure sight. Overgrown areas that counted as difficult terrain become clear ground and no longer hamper movement. The original plant life instantly rises from the ground again when the spell ends or is dispelled. Plant creatures are not affected by clearing the field.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the spell lasts for an additional hour for each slot level above 2nd. </p>
+			<p class="indent"><b><i>Ritual Focus.</i></b> If you expend your ritual focus, plant creatures in the area must make a successful Constitution saving throw or be affected as though by a reduce spell. Also, once you've expended your ritual focus this mental energy has been expended, a caster’s ritual focus can’t be used again until he or she finishes a short or long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">ritual</set>
+			<set name="level">2</set>
+			<set name="school" addition="ritual only">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">40 ft.</set>
+			<set name="duration">1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
+<!-- CLOAK OF SHADOW  -->
+	<element name="Cloak of Shadow" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CLOAK_OF_SHADOW">
+		<supports>Wizard</supports>
+		<description>
+			<p>You cloak yourself in shadow, giving you advantage on Dexterity (Stealth) checks against creatures that rely on sight.</p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">1</set>
+			<set name="school" addition="shadow">Illusion</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- CONJURE SHADOW TITAN  -->
+	<element name="Conjure Shadow Titan" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CONJURE_SHADOW_TITAN">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You summon a shadow titan, which appears in an unoccupied space that you can see within range. The shadow titan’s statistics are identical to a stone giant’s, with two differences: its camouflage ability works in dim light instead of rocky terrain, and the “rocks” it hurls are composed of shadow-stuff and cause cold damage. </p>
+			<p class="indent">The shadow titan is friendly to you and your companions. Roll initiative for the shadow titan; it acts on its own turn. It obeys verbal or telepathic commands that you issue to it (giving a command takes no action on your part). If you don’t issue any commands to the shadow titan, it defends itself from hostile creatures but otherwise takes no actions. </p>
+			<p class="indent">The shadow titan disappears when it drops to 0 hit points or when the spell ends.</p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">7</set>
+			<set name="school" addition="shadow">Conjuration</set>
+			<set name="time">1 minute</set>
+			<set name="range">90 ft.</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- CONTROL ICE  -->
+	<element name="Control Ice" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CONTROL_ICE">
+		<supports>Druid,Sorcerer,Wizard</supports>
+		<description>
+			<p>Until the spell ends, you control any ice inside an area you choose within range that can be as large as a cube 100 feet on a side. You choose one of the following three effects when you cast this spell. As an action on each of your turns thereafter, you can use the same effect or choose a different one. Any alterations made to the ice remain after the spell ends, but can be altered by other effects (temperature, seismic action, or another application of this spell, for example). </p>
+			<p class="indent"><b><i>Crack</i></b>. You cause ice in the area to crack and splinter. On level terrain, this effect turns the ice into difficult terrain, possibly producing other hazards, depending on the terrain and the nature of the ice—ice over a deep chasm might open onto a pit, while ice over water can break into individual floes, for example. Using this effect on cliffs, walls, or ceilings made of ice can cause collapse, dealing 4d10 bludgeoning damage to creatures in the area below the collapse, or half the damage with a successful Dexterity saving throw. After such a collapse, the area where the fallen ice collects becomes difficult terrain. </p>
+			<p class="indent"><b><i>Reshape.</i></b> You cause ice in a portion of the area to rapidly melt, move, and re-form into whatever shape you command. You can block holes, open tunnels, form bridges, remove difficult terrain, or otherwise alter the form of the ice in the area. You can cause ice to become slippery, making it difficult terrain, or dry to remove difficult terrain. You can fill a hole up to a 20-foot cube, or create 20 feet (up to 20 feet wide) of a bridge across a chasm, or raise a 20-foot-tall pillar of ice (up to 20 feet square). You can continue this action on consecutive rounds to increase the size of the affected area while you maintain concentration on the spell. </p>
+			<p class="indent"><b><i>Thicken/Thin.</i></b> You cause existing ice to increase or decrease in thickness, up to 1 inch per round over some or all of the total area, either making the surface stronger or creating thin ice that is hazardous to walk on. </p>
+		</description>
+		<setters>
+			<set name="keywords">winter</set>
+			<set name="level">5</set>
+			<set name="school" addition="winter">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">300 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a cube of white wax</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- CONVERSE WITH DRAGON  -->
+	<element name="Converse with Dragon" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CONVERSE_WITH_DRAGON">
+		<supports>Bard,Cleric,Ranger,Sorcerer,Wizard</supports>
+		<description>
+			<p>You gain limited telepathy, allowing you to communicate with any creature within 120 feet of you that has the dragon type, regardless of the creature’s languages. A dragon can choose to make a Charisma saving throw to prevent telepathic contact with itself. </p>
+			<p class="indent">This spell doesn’t change a dragon’s disposition toward you or your allies, it only opens a channel of communication. In some cases, unwanted telepathic contact can worsen the dragon’s attitude toward you.</p>
+		</description>
+		<setters>
+			<set name="keywords">dragon</set>
+			<set name="level">1</set>
+			<set name="school" addition="dragon">Divination</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- CREATE RING SERVANT -->
+	<element name="Create Ring Servant" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CREATE_RING_SERVANT">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>You touch two metal rings and infuse them with life, creating a short-lived but sentient construct known as a ring servant (Creature Codex, p. 318). The ring servant appears adjacent to you. It reverts form, changing back into the rings used to cast the spell, when it drops to 0 hit points or when the spell ends.</p>
+			<p class="indent">The ring servant is friendly to you and your companions for the duration. Roll initiative for the ring servant, which acts on its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don’t issue any commands to the ring servant, it defends itself and you from hostile creatures but otherwise takes no actions.</p>
+		</description>
+		<setters>
+			<set name="keywords">ring</set>
+			<set name="level">8</set>
+			<set name="school" addition="ring">Transmutation</set>
+			<set name="time">1 minute</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">two metal rings</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- CREEPING DARKNESS  -->
+	<element name="Creeping Darkness" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CREEPING_DARKNESS">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You create a great, writhing mass of shadows that move slowly in a direction you choose. The grasping, shadowy tendrils occupy up to three 10-foot cubes within range. The mass has a speed of 20 feet, and it moves each round at the end of your turn, ignoring difficult terrain. The shadows can also move vertically or across a ceiling, as long as they can travel along a surface on which to cling. </p>
+			<p class="indent">All light in this area is reduced to dim light. The surface covered by the darkness is considered difficult terrain. </p>
+			<p class="indent">If the darkness moves into the space occupied by a living creature, that creature takes 6d6 necrotic damage and is restrained. The creature must make a Constitution saving throw. On a successful save, the creature takes half the damage and is not restrained. Any creature in the area of the spell at the start of its turn must make another Constitution saving throw, taking damage in each round that it remains in the area. Restrained creatures move with the darkness, dragged along by the shadowy tendrils. A creature can take an action on its turn to make a Strength check against your spell save DC to free itself from the tendrils. </p>
+			<p class="indent">Bright light can destroy portions of the spell. One 5-foot cube is destroyed if it takes 12 radiant damage. As long as at least one 5-foot cube occupies all or part of a creature’s space, the creature remains restrained.</p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">8</set>
+			<set name="school" addition="shadow">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- CREEPING ICE  -->
+	<element name="Creeping Ice" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CREEPING_ICE">
+		<supports>Druid,Ranger,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You create a sheet of ice that covers a 5-foot square within range and lasts for the spell’s duration. The iced area is difficult terrain. </p>
+			<p class="indent">A creature in the area where you cast the spell must make a successful Strength saving throw or be restrained by ice that rapidly encases it. A creature restrained by the ice takes 2d6 cold damage at the start of its turn. A restrained creature can use an action to make a Strength check against your spell save DC, freeing itself on a success, but it has disadvantage on this check. The creature can also be freed (and the spell ended) by dealing at least 20 damage to the ice. The restrained creature takes half the damage from any attacks against the ice. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th to 6th level, the area increases to a 10-foot square, the ice deals 4d6 cold damage, and 40 damage is needed to melt each 5-foot square. When you cast this spell using a spell slot of 7th level or higher, the area increases to a 20-foot square, the ice deals 6d6 cold damage, and 60 damage is needed to melt each 5-foot square.</p>
+		</description>
+		<setters>
+			<set name="keywords">winter</set>
+			<set name="level">2</set>
+			<set name="school" addition="winter">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- CRUOR OF VISIONS -->
+	<element name="Cruor of Visions" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CRUOR_OF_VISIONS">
+		<supports>Cleric,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You prick your finger with a bone needle as you cast this spell, taking 1 necrotic damage. This drop of blood must be caught in a container, such as a platter or a bowl, where it grows into a pool 1 foot in diameter. This pool acts as a crystal ball for the purpose of scrying. </p>
+			<p class="indent">If you place a drop (or dried flakes) of another creature’s blood in the container, the creature has disadvantage on any Wisdom saving throw to resist scrying. Additionally, you can treat the pool of blood as a crystal ball of telepathy. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b>When you cast this spell using a spell slot of 7th level or higher, the pool of blood acts as either a crystal ball of mind reading or a crystal ball of true seeing (your choice when the spell is cast).</p>
+		</description>
+		<setters>
+			<set name="keywords">blood</set>
+			<set name="level">5</set>
+			<set name="school" addition="blood">Divination</set>
+			<set name="time">1 minute</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 5 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a bone needle and a catch basin</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- CURSE OF BOREAS  -->
+	<element name="Curse of Boreas" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CURSE_OF_BOREAS">
+		<supports>Cleric,Sorcerer,Wizard</supports>
+		<description>
+			<p>You designate a creature within range that you can see. If the target fails a Charisma saving throw, it and its equipment are frozen solid, becoming an inert statue of ice. The creature is effectively paralyzed, but mental activity does not cease, and signs of life are detectable; the creature still breathes and its heart continues to beat, though both acts are almost imperceptible. If the ice statue is broken or damaged while frozen, the creature will have matching damage or injury when returned to its original state. Dispel magic can’t end this spell, but it can allow the target to speak (but not move or cast spells) for a number of rounds equal to the spell slot used. Greater restoration or more potent magic is needed to free a creature from the ice.</p>
+		</description>
+		<setters>
+			<set name="keywords">winter</set>
+			<set name="level">6</set>
+			<set name="school" addition="winter">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">100 ft.</set>
+			<set name="duration">Permanent</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>     
+
+<!-- CURSE RING  -->
+	<element name="Curse Ring" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CURSE_RING">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You lay a curse upon a ring you touch that isn’t being worn or carried. When you cast this spell, select one of the possible effects of bestow curse. The next creature that willingly wears the ring suffers the chosen effect with no saving throw. The curse transfers from the ring to the wearer once the ring is put on; the ring becomes a mundane ring that can be taken off, but the curse remains on the creature that wore the ring until the curse is removed or dispelled. An identify spell cast on the cursed ring reveals the fact that it is cursed.</p>
+		</description>
+		<setters>
+			<set name="keywords">ring</set>
+			<set name="level">5</set>
+			<set name="school" addition="ring">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Permanent until discharged</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">250 gp worth of diamond dust, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+</elements>

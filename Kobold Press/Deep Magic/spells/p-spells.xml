@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Deep Magic Spells - P</name>
+        <update version="0.0.1">
+            <file name="p-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/p-spells.xml" />
+        </update>
+    </info>
+    
+<!-- PARAGON OF CHAOS  -->
+	<element name="Paragon of Chaos" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_PARAGON_OF_CHAOS">
+		<supports>Bard,Wizard</supports>
+		<description>
+			<p>You become a humanoid-shaped swirling mass of color and sound. You gain resistance to bludgeoning, piercing, and slashing damage, and immunity to poison and psychic damage. You are also immune to the following conditions: exhaustion, paralyzed, petrified, poisoned, and unconscious. Finally, you gain truesight to 30 feet and can teleport 30 feet as a move. </p>
+			<p class="indent">Each round, as a bonus action, you can cause an automatic chaos magic surge, choosing either yourself or another creature you can see within 60 feet as the caster for the purpose of resolving the effect. You must choose the target before rolling percentile dice to determine the nature of the surge. The DC of any required saving throw is calculated as if you were the caster. </p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">8</set>
+			<set name="school" addition="chaos">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- PHANTOM DRAGON -->
+	<element name="Phantom Dragon" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_PHANTOM_DRAGON">
+		<supports>Druid,Sorcerer,Wizard</supports>
+		<description>
+			<p>You tap your dragon magic to make an ally appear as a draconic beast. The target of the spell appears to be a dragon of size Large or smaller. When seeing this illusion, observers make a Wisdom saving throw to see through it. </p>
+			<p class="indent">You can use an action to make the illusory dragon seem ferocious. Choose one creature within 30 feet of the illusory dragon to make a Wisdom saving throw. If it fails, the creature is frightened. The creature remains frightened until it uses an action to make a successful Wisdom saving throw or the spell’s duration expires. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, increase the number of targets the illusion can affect by one for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords">dragon</set>
+			<set name="level">3</set>
+			<set name="school" addition="dragon">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a piece of dragon egg shell</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- PHANTOM LIGHT -->
+	<element name="Phantom Light" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_PHANTOM_LIGHT">
+		<supports>Druid,Wizard</supports>
+		<description>
+			<p>You touch one object that measures less than 10 feet in every dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. At the time of the casting, you designate up to six creatures. Only those creatures are able to see and gain benefit from the phantom light. </p>
+			<p class="indent">The object can be covered with something opaque to block the light. You can use an action to dismiss this spell.</p>
+		</description>
+		<setters>
+			<set name="keywords">illumination</set>
+			<set name="level">2</set>
+			<set name="school" addition="illumination">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a small sketch of a candle</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- PROTECTIVE ICE  -->
+	<element name="Protective Ice" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_PROTECTIVE_ICE">
+		<supports>Cleric</supports>
+		<description>
+			<p>When you cast protective ice, you encase a willing target in icy, medium armor equivalent to a breastplate (AC 14). A creature without the appropriate armor proficiency has the usual penalties. If the target is already wearing armor, it only uses the better of the two armor classes. </p>
+			<p class="indent">A creature striking a target encased in protective ice with a melee attack while within 5 feet of it takes 1d6 cold damage. </p>
+			<p class="indent">If the armor’s wearer takes fire damage, an equal amount of damage is done to the armor, which has 30 hit points and is damaged only when its wearer takes fire damage. Damaged ice can be repaired by casting a spell that deals cold damage on it, on a point-for-point basis, but the armor can’t have more than 30 points repaired. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a 4th-level spell slot, it creates splint armor (AC 17, 40 hit points). If you cast this spell using a 5th-level spell slot, it creates plate armor (AC 18, 50 hit points). The armor’s hit points increase by 10 for each spell slot above 5th, but the AC remains 18. Additionally, if you cast this spell using a spell slot of 4th level or higher, the armor deals an extra +2 cold damage for each spell slot above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords">winter</set>
+			<set name="level">3</set>
+			<set name="school" addition="winter">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a seed encased in ice or glass</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- PROTECTIVE NIMBUS --> 
+	<element name="Protective Nimbus" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_PROTECTIVE_NIMBUS">
+		<supports>Wizard</supports>
+		<description>
+			<p>You wrap yourself in a corona that sheds bright light in a 20-foot radius and dim light for an additional 20 feet. Until the spell ends, you have resistance to necrotic damage. You can end the spell early by using an action to dismiss it.</p>
+		</description>
+		<setters>
+			<set name="keywords">illumination</set>
+			<set name="level">3</set>
+			<set name="school" addition="illumination">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a crystal or glass bead</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- PUFF OF SMOKE -->
+	<element name="Puff of Smoke" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_PUFF_OF_SMOKE">
+		<supports>Sorcerer</supports>
+		<description>
+			<p>By harnessing the elemental power of fire, you warp nearby air into obscuring smoke. One creature you can see within range must make a Dexterity saving throw. If it fails, the creature is blinded until the start of your next turn. Puff of smoke has no effect on creatures that have tremorsense or blindsight.</p>
+		</description>
+		<setters>
+			<set name="keywords">dragon</set>
+			<set name="level">0</set>
+			<set name="school" addition="dragon">Evocation</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+</elements>
