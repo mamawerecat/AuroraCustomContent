@@ -2,8 +2,8 @@
 <elements>
     <info>
         <name>Deep Magic Spells - A</name>
-        <update version="0.0.2">
-            <file name="a-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/a-spells" />
+        <update version="0.0.3">
+            <file name="a-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/a-spells.xml />
         </update>
     </info>
     
