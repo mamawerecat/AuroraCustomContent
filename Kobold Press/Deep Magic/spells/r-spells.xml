@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Deep Magic Spells - R</name>
+        <update version="0.0.1">
+            <file name="r-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/r-spells.xml" />
+        </update>
+    </info>
+ 
+<!-- RAID THE LAIR -->
+	<element name="Raid the Lair" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_RAID_THE_LAIR">
+		<supports>Bard,Ranger,Wizard</supports>
+		<description>
+			<p>You create an invisible circle of protective energy centered on yourself with a radius of 10 feet. This field moves with you. The caster and all allies within the energy field are protected against dragons’ lair actions. </p>
+			<p class="indent">- Attack rolls resulting directly from lair actions are made with disadvantage. </p>
+			<p class="indent">- Saving throws resulting directly from lair actions are made with advantage, and damage done by these lair actions is halved. </p>
+			<p class="indent">- Lair actions occur on an initiative count 10 lower than normal. </p>
+			<p class="indent">- The caster has advantage on Constitution saving throws to maintain concentration on this spell.</p>
+		</description>
+		<setters>
+			<set name="keywords">dragon</set>
+			<set name="level">4</set>
+			<set name="school" addition="dragon">Abjuration</set>
+			<set name="time">10 minutes</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a piece of the dragon whose lair you are raiding</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- RAVAGES OF TIME --> 
+	<element name="Ravages of Time" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_RAVAGES_OF_TIME">
+		<supports>Cleric,Sorcerer,Wizard</supports>
+		<description>
+			<p>You accelerate the aging of one creature within range, causing it to take on the state of a decrepit version of its type. The target suffers three levels of exhaustion that cannot be removed by normal means. A greater restoration spell partially reverses the effect of this spell, removing one level of exhaustion. Constructs and undead are unaffected by this spell, and creatures who live to great age without negative effects, such as dragons, are also unaffected.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporal</set>
+			<set name="level">7</set>
+			<set name="school" addition="temporal">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">24 hours</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a wilted flower</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+<!-- RAY OF ALCHEMICAL NEGATION -->	
+	<element name="Ray of Alchemical Negation" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_RAY_OF_ALCHEMICAL_NEGATION">
+		<supports>Wizard</supports>
+		<description>
+			<p>You launch a ray of blazing, polychromatic energy from your fingertips. Make a ranged spell attack against an alchemical item or a trap that uses alchemy to achieve its ends, such as a trap that sprays acid, releases poisonous gas, or triggers an explosion of alchemist’s fire. A hit destroys the alchemical reagents, rendering them harmless. The attack is made against the most suitable object Armor Class. </p>
+			<p class="indent">This spell can also be used against a creature within range that is wholly or partially composed of acidic, poisonous, or alchemical components, such as an alchemical golem or an ochre jelly. In that case, a hit deals 6d6 force damage, and the target must make a successful Constitution saving throw or it deals only half as much damage with its acidic, poisonous, or alchemical attacks for 1 minute. A creature whose damage is halved can repeat the saving throw at the end of each of its turns, ending the effect on a success.</p>
+		</description>
+		<setters>
+			<set name="keywords">alkemancy</set>
+			<set name="level">4</set>
+			<set name="school" addition="alkemancy">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+<!-- RESET --> 
+	<element name="Reset" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_RESET">
+		<supports>Bard,Cleric,Druid,Paladin,Wizard</supports>
+		<description>
+			<p>Choose up to four creatures within range. If a target is your ally, it can reroll initiative, keeping whichever of the two results it prefers. If a target is your enemy, it must make a successful Wisdom saving throw or reroll initiative, keeping whichever of the two results you prefer. Changes to the initiative order go into effect at the start of the next round. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, you can affect one additional creature for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporal,clockwork</set>
+			<set name="level">4</set>
+			<set name="school" addition="temporal, clockwork">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- REVERBERATE  -->
+	<element name="Reverberate" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_REVERBERATE">
+		<supports></supports>
+		<description>
+			<p>You touch the ground at your feet with the metal ring, creating an impact that shakes the earth ahead of you. Creatures and unattended objects touching the ground in a 15-foot cone emanating from you take 4d6 thunder damage, and creatures fall prone; a creature that makes a successful Dexterity saving throw takes half the damage and does not fall prone. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">ring</set>
+			<set name="level">2</set>
+			<set name="school" addition="ring">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (15-ft. cone)</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a metal ring</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- RIGHT THE STARS  -->
+	<element name="Right the Stars" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_RIGHT_THE_STARS">
+		<supports>Wizard</supports>
+		<description>
+			<p>You subtly warp the flow of space and time to enhance your conjurations with cosmic potency. Until the spell ends, the maximum duration of any conjuration spell you cast that requires concentration is doubled, any creature that you summon or create with a conjuration spell has 30 temporary hit points, and you have advantage on Charisma checks and Charisma saving throws.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporal,ritual</set>
+			<set name="level">7</set>
+			<set name="school" addition="temporal">Divination</set>
+			<set name="time">10 minutes</set>
+			<set name="range">Self</set>
+			<set name="duration">1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">seven black candles and a circle of powdered charred bone or basalt</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>	
+
+<!-- RING STRIKE  -->
+	<element name="Ring Strike" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_RING_STRIKE">
+		<supports></supports>
+		<description>
+			<p>You infuse two metal rings with magic, causing them to revolve in a slow orbit around your head or hand. For the duration, when you hit a target within 60 feet of you with an attack, you can launch one of the rings to strike the target as well. The target takes 1d10 bludgeoning damage and must succeed on a Strength saving throw or be pushed 5 feet directly away from you. The ring is destroyed when it strikes. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, you can affect up to two additional rings for each spell slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords">ring</set>
+			<set name="level">1</set>
+			<set name="school" addition="ring">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">two metal rings</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- RING WARD  -->
+	<element name="Ring Ward" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_RING_WARD">
+		<supports></supports>
+		<description>
+			<p>The iron ring you use to cast the spell becomes a faintly shimmering circlet of energy that spins slowly around you at a radius of 15 feet. For the duration, you and your allies inside the protected area have advantage on saving throws against spells, and all affected creatures gain resistance to one type of damage of your choice.</p>
+		</description>
+		<setters>
+			<set name="keywords">ring</set>
+			<set name="level">7</set>
+			<set name="school" addition="ring">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an iron ring worth 200 gp, which the spell consumes</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+
+<!-- ROAMING PAIN  -->
+	<element name="Roaming Pain" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ROAMING_PAIN">
+		<supports>Wizard</supports>
+		<description>
+			<p>You afflict a single humanoid within range with severe pain in a random part of its body. Roll a d6 and consult the table to determine the spell’s initial effect. </p>
+			<p class="indent">The target must make a Constitution saving throw. On a successful save, it is able to function despite the pain and ignore the effects. At the start of the target’s turn each round for the duration of the spell, roll again on the table to see where the pain affects the target in that round.</p>
+			<table>
+				<thead>
+					<tr><td>d6</td><td>Body Part</td><td>Effect</td></tr>
+				</thead>
+				<tr><td>1</td><td>Head</td><td>Incapacitated </td></tr>
+				<tr><td>2</td><td>Throat</td><td>Unable to speak coherently or cast spells with verbal components</td></tr>
+				<tr><td>3</td><td>Chest</td><td>Cannot take reactions or bonus actions</td></tr>
+				<tr><td>4</td><td>Abdomen</td><td>Disadvantage on Constitution saving throws</td></tr>
+				<tr><td>5</td><td>Arm</td><td>Disadvantage on attack rolls, Strength and Dexterity skill checks</td></tr>
+				<tr><td>6</td><td>Leg</td><td>Movement halved</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">1</set>
+			<set name="school" addition="chaos">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+<!-- ROARING WINDS OF LIMBO  -->
+	<element name="Roaring Winds of Limbo" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ROARING_WINDS_OF_LIMBO">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>You tear open a breach to the planes of chaos, and the act of doing so fills an area with a dangerous windstorm. The area consists of twelve 10-foot cubes, which you can arrange as you wish. Each cube must have at least one face in common with a face of another cube. Each creature in the area is deafened, and any sound it makes cannot be heard outside the area. The wind disperses all gases and vapors and extinguishes all unprotected flames in the area, and has a 75 percent chance of extinguishing protected flames, such as lanterns. All Wisdom (Perception) checks that rely on sight made by a creature in the area have disadvantage due to the dust, grit, and debris being cast about. </p>
+			<p class="indent">Each creature in the area must make a Strength saving throw at the start of its turn. On a failed save, the creature is pushed 15 feet in a random direction. (Roll a d8, designating 1 as north, 2 as northeast, 3 as east, and so on around the points of the compass.) The wind also hampers movement; a creature in the area must spend 2 feet of movement for every 1 foot it moves. </p>
+			<p class="indent">As a bonus action on each of your turns, you can bombard up to twelve creatures in the area with flying debris, dealing 2d10 bludgeoning, 2d10 piercing, and 2d10 slashing damage. A creature that makes a successful Dexterity saving throw takes half the damage. </p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">8</set>
+			<set name="school" addition="chaos">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">150 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+</elements>

@@ -1,0 +1,982 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Deep Magic Spells - S</name>
+        <update version="0.0.1">
+            <file name="s-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/s-spells.xml" />
+        </update>
+    </info>
+ 
+<!-- SALT LASH  -->	
+	<element name="Salt Lash" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SALT_LASH">
+		<supports>Wizard</supports>
+		<description>
+			<p>You create a long, thin blade of razor-sharp salt crystals. You can wield it as a longsword, using your spellcasting ability to modify your weapon attack rolls. The sword deals 2d8 slashing damage on a hit, and any creature struck by the blade must make a successful Constitution saving throw or be stunned by searing pain until the start of your next turn. Constructs and undead are immune to the blade’s secondary (stun) effect; plants and creatures composed mostly of water, such as water elementals, also take an additional 2d8 necrotic damage if they fail the saving throw. </p>
+			<p class="indent">The spell lasts until you stop concentrating on it, the duration expires, or you let go of the blade for any reason.</p>
+		</description>
+		<setters>
+			<set name="keywords">alkemancy</set>
+			<set name="level">3</set>
+			<set name="school" addition="alkemancy">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pinch of salt worth 1 sp, which is consumed during the casting</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- SANGUINE HORROR  -->
+	<element name="Sanguine Horror" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SANGUINE_HORROR">
+		<supports>Cleric,Sorecerer,Warlock,Wizard</supports>
+		<description>
+			<p>When you cast this spell, you prick yourself with the material component, taking 1 piercing damage. The spell fails if this damage is prevented or negated in any way. From the drop of blood, you conjure a blood elemental (Creature Codex, p. 138). The blood elemental is friendly to you and your companions for the duration. It disappears when it’s reduced to 0 hit points or when the spell ends.</p>
+			<p class="indent">Roll initiative for the elemental, which has its own turns. It obeys verbal commands from you (no action required by you). If you don’t issue any commands to the blood elemental, it defends itself but otherwise takes no actions. If your concentration is broken, the blood elemental doesn’t disappear, but you lose control of it and it becomes hostile to you and your companions. An uncontrolled blood elemental cannot be dismissed by you, and it disappears 1 hour after you summoned it.</p>
+		</description>
+		<setters>
+			<set name="keywords">blood</set>
+			<set name="level">5</set>
+			<set name="school" addition="blood">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">5 ft.</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a miniature dagger</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- SCALE ROT --> 
+	<element name="Scale Rot" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SCALE_ROT">
+		<supports>Bard,Cleric,Ranger,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You summon death and decay to plague your enemies. For dragons, this act often takes the form of attacking a foe’s armor and scales, as a way of weakening an enemy dragon and leaving it plagued by self-doubt and fear. (This enchantment is useful against any armored creature, not just dragons.) </p>
+			<p class="indent">One creature of your choice within range that has natural armor must make a Constitution saving throw. If it fails, attacks against that creature’s Armor Class are made with advantage, and the creature can’t regain hit points through any means while the spell remains in effect. An affected creature can end the spell by making a successful Constitution saving throw, which also makes the creature immune to further castings of scale rot for 24 hours. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, the number of affected targets increases by one for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords">dragon</set>
+			<set name="level">4</set>
+			<set name="school" addition="dragon">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a piece of rotten meat</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+
+<!-- SCALY HIDE -->
+	<element name="Scaly Hide" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SCALY_HIDE">
+		<supports>Sorcerer</supports>
+		<description>
+			<p>A creature you touch grows a protective layer of scales that resembles that of a dragon. Until the spell ends, the target’s AC can’t be lower than 16, regardless of the type of armor it is wearing. Additionally, the target gains resistance to either acid, cold, fire, lightning, or poison damage for the duration of the spell.</p>
+		</description>
+		<setters>
+			<set name="keywords">dragon</set>
+			<set name="level">4</set>
+			<set name="school" addition="dragon">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a dragon scale of the appropriate color</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- SCRY AMBUSH  -->
+	<element name="Scry Ambush" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SCRY_AMBUSH">
+		<supports>Bard,Cleric,Druid,Ranger,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You foresee your foe’s strike a split second before it occurs. When you cast this spell successfully, you also designate a number of your allies that can see or hear you equal to your spellcasting ability modifier + your proficiency bonus. Those allies are also not surprised by the attack and can act normally in the first round of combat. </p>
+			<p class="indent">If you would be surprised, you must make a check using your spellcasting ability at the moment your reaction would be triggered. The check DC is equal to the current initiative count. On a failed check, you are surprised and can’t use your reaction to cast this spell until after your next turn. On a successful check, you can use your reaction to cast this spell immediately.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporal</set>
+			<set name="level">4</set>
+			<set name="school" addition="temporal">Divination</set>
+			<set name="time">1 reaction, which you take when an enemy tries to make a surprise attack against you</set>
+			<set name="range">Self</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>	
+
+<!-- SCULPT SNOW  -->
+	<element name="Sculpt Snow" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SCULPT_SNOW">
+		<supports>Druid,Sorcerer,Wizard</supports>
+		<description>
+			<p>When you cast sculpt snow in an area filled with snow, you can create one Large object, two Medium objects, or four smaller objects from snow. With a casting time of 1 action, your sculptings bear only a crude resemblance to generic creatures or objects. If you increase the casting time to 1 minute, your creations take on a more realistic appearance and can even vaguely resemble specific creatures; the resemblance isn’t strong enough to fool anyone, but the creature can be recognized. The sculptures are as durable as a typical snowman. </p>
+			<p class="indent">Sculptures created by this spell can be animated with animate objects or comparable magic. Animated sculptures gain the AC, hit points, and other attributes provided by that spell. When they attack, they deal normal damage plus a similar amount of cold damage; an animated Medium sculpture, for example, deals 2d6 + 1 bludgeoning damage plus 2d6 + 1 cold damage. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, you can sculpt one additional Large object for each slot level above 2nd. Two Large objects can be replaced with one Huge object.</p>
+		</description>
+		<setters>
+			<set name="keywords">winter</set>
+			<set name="level">2</set>
+			<set name="school" addition="winter">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- SEAL OF SANCTUARY --> 
+	<element name="Seal of Sanctuary" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SEAL_OF_SANCTUARY">
+		<supports>Cleric,Wizard</supports>
+		<description>
+			<p>You inscribe an angelic seal on the ground, the floor, or other solid surface of a structure. The seal creates a spherical sanctuary with a radius of 50 feet, centered on the seal. For the duration, aberrations, elementals, fey, fiends, and undead that approach to within 5 feet of the boundary know they are about to come into contact with a deadly barrier. If such a creature moves so as to touch the boundary, or tries to cross the boundary by any means, including teleportation and extradimensional travel, it must make a Charisma saving throw. On a failed save, it takes 10d8 radiant damage, is repelled to 5 feet outside the boundary, and can’t target anything inside the boundary with attacks, spells, or abilities until the spell ends. On a successful save, the creature takes half as much radiant damage and can cross the boundary. If the creature is a fiend that isn’t on its home plane, it is immediately destroyed (no saving throw) instead of taking damage. </p>
+			<p class="indent">Aberrations, elementals, fey, and undead that are within 50 feet of the seal (inside the boundary) have disadvantage on ability checks, attack rolls, and saving throws, and each such creature takes 2d8 radiant damage at the start of its turn. </p>
+			<p class="indent">Creatures other than aberrations, elementals, fey, fiends, and undead can’t be charmed or frightened while within 50 feet of the seal. </p>
+			<p class="indent">The seal has AC 18, 50 hit points, resistance to bludgeoning, piercing, and slashing damage, and immunity to psychic and poison damage. Ranged attacks against the seal are made with disadvantage. If it is scribed on the surface of an object that is later destroyed (such as a wooden door), the seal is not damaged and remains in place, perhaps suspended in midair. The spell ends only if the seal is reduced to 0 hit points.</p>
+		</description>
+		<setters>
+			<set name="keywords">angelic,ritual</set>
+			<set name="level">7</set>
+			<set name="school" addition="angelic">Abjuration</set>
+			<set name="time">1 minute</set>
+			<set name="range">Touch</set>
+			<set name="duration">24 hrs</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">incense and special inks worth 250 gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>	
+
+<!-- SEARING SUN  -->
+	<element name="Searing Sun" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SEARING_SUN">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>This spell intensifies the light and heat of the sun, so that it burns exposed flesh. You must be able to see the sun when you cast the spell. The searing sunlight affects a cylindrical area 50 feet in radius and 200 feet high, centered on the a point within range. Each creature that starts its turn in that area takes 5d8 fire damage, or half the damage with a successful Constitution saving throw. A creature that’s shaded by a solid object —such as an awning, a building, or an overhanging boulder— has advantage on the saving throw. On your turn, you can use an action to move the center of the cylinder up to 20 feet along the ground in any direction.</p>
+		</description>
+		<setters>
+			<set name="keywords">illumination</set>
+			<set name="level">4</set>
+			<set name="school" addition="illumination">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">200 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a magnifying lens</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- SEER’S REACTION  -->
+	<element name="Seer's Reaction" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SEERS_REACTION">
+		<supports>Bard,Cleric,Druid,Ranger,Sorcerer,Wizard</supports>
+		<description>
+			<p>Your foreknowledge allows you to act before others, because you knew what was going to happen. When you cast this spell, make a new initiative roll with a +5 bonus. If the result is higher than your current initiative, your place in the initiative order changes accordingly. If the result is also higher than the current place in the initiative order, you take your next turn immediately and then use the higher number starting in the next round.</p>
+			<p class="indent">Your foreknowledge allows you to act before others, because you knew what was going to happen. When you cast this spell, make a new initiative roll with a +5 bonus. If the result is higher than your current initiative, your place in the initiative order changes accordingly. If the result is also higher than the current place in the initiative order, you take your next turn immediately and then use the higher number starting in the next round.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporal</set>
+			<set name="level">1</set>
+			<set name="school" addition="temporal">Divination</set>
+			<set name="time">1 reaction, which you take at the start of another creature's turn</set>
+			<set name="range">Self</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- SHADE -->
+	<element name="Shade" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SHADE">
+		<supports>Bard,Cleric,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You create a magical screen across your eyes. While the screen remains, you are immune to blindness caused by visible effects, such as color spray. The spell doesn’t alleviate blindness that’s already been inflicted on you. If you normally suffer penalties on attacks or ability checks while in sunlight, those penalties don’t apply while you’re under the effect of this spell. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the duration of the spell increases by 10 minutes for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">dragon</set>
+			<set name="level">2</set>
+			<set name="school" addition="dragon">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- SHADOW ARMOR  -->
+	<element name="Shadow Armor" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SHADOW_ARMOR">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You can siphon energy from the plane of shadow to protect yourself from an immediate threat. As a reaction, you pull shadows around yourself to distort reality. The attack against you is made with disadvantage, and you have resistance to radiant damage until the start of your next turn. </p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">1</set>
+			<set name="school" addition="shadow">Abjuration</set>
+			<set name="time">1 reaction, which you take when you are targeted by an attack but before the roll is made</set>
+			<set name="range">Self</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- SHADOW BITE  -->
+	<element name="Shadow Bite" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SHADOW_BITE">
+		<supports>Wizard</supports>
+		<description>
+			<p>You create a momentary needle of cold, sharp pain in a creature within range. The target must make a successful Constitution saving throw or take 1d6 necrotic damage immediately and have its speed halved until the start of your next turn.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> This spell’s damage increases to 2d6 when you reach 5th level, 3d6 when you reach 11th level, and 4d6 when you reach 17th level.</p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">0</set>
+			<set name="school" addition="shadow">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- SHADOW BLINDNESS  -->
+	<element name="Shadow Blindness" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SHADOW_BLINDNESS">
+		<supports>Warlock,Wizard</supports>
+		<description>
+			<p>You make a melee spell attack against a creature you touch that has darkvision as an innate ability; on a hit, the target’s darkvision is negated until the spell ends. This spell has no effect against darkvision that derives from a spell or a magic item. The target retains all of its other senses.</p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">0</set>
+			<set name="school" addition="shadow">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">1 round</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- SHADOW GATEWAY  -->
+	<element name="Shadow Gateway" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SHADOW_GATEWAY">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>By drawing a circle of black chalk up to 15 feet in diameter and chanting for one minute during the casting time, you open a portal directly into the Plane of Shadow. The portal fills the chalk circle and appears as a vortex of inky blackness; nothing can be seen through it. Any object or creature that passes through the portal instantly arrives safely at the destination. The portal remains open for 1 minute or until you stop concentrating on the spell, and it can be used to travel between the Plane of Shadow and the chalk circle, in both directions, as many times as desired during the spell’s duration.</p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">5</set>
+			<set name="school" addition="shadow">Conjuration</set>
+			<set name="time">10 minutes</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a piece of black chalk</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- SHADOW HANDS  -->
+	<element name="Shadow Hands" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SHADOW_HANDS">
+		<supports>Warlock,Wizard</supports>
+		<description>
+			<p>A freezing blast of shadow explodes out from you in a 10-foot cone. Any creature caught in the shadow takes 2d4 necrotic damage and is frightened; a successful Wisdom saving throw halves the damage and negates the frightened condition. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the damage dealt by the attack increases by 2d4 for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">1</set>
+			<set name="school" addition="shadow">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (10 ft. cone)</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- SHADOW METAMORPHOSIS  -->
+	<element name="Shadow Metamorphosis" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SHADOW_METAMORPHOSIS">
+		<supports>Warlock,Wizard</supports>
+		<description>
+			<p>You touch a creature of Huge size or smaller, or a single object no more than 20 feet in any dimension, and transform it into malleable shadow-stuff. Objects under the effect of the spell are not immaterial, but are easy to shape or compress. One could not walk through a door that is affected by the spell, but the door could be pulled aside like a curtain and bypassed, or pulled up like the bottom edge of a tent flap and crawled under, even if the door was locked.</p>
+			<p class="indent">An unwilling creature can make a Constitution saving throw, avoiding the effect on a success. A creature under the effect of the spell is amorphous and can move through a space as narrow as 1 inch wide without squeezing. In dim light or darkness, the creature has advantage on Dexterity (Stealth) checks. A creature under the effect of this spell cannot make attacks or cast spells and has vulnerability to radiant damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">6</set>
+			<set name="school" addition="shadow">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- SHADOW MONSTERS  -->
+	<element name="Shadow Monsters" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SHADOW_MONSTERS">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You choose up to two creatures within range. Each creature must make a Wisdom saving throw. On a failed save, the creature perceives its allies as hostile, shadowy monsters, and it must attack its nearest ally. An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">4</set>
+			<set name="school" addition="shadow">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="range">120 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a doll</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- SHADOW PUPPETS  -->
+	<element name="Shadow Puppets" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SHADOW_PUPPETS">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You animate the shadow of a creature within range, causing it to attack that creature. As a bonus action when you cast the spell, or as an action on subsequent rounds while you maintain concentration, make a melee spell attack against the creature. If it hits, the target takes 2d8 psychic damage and must make a successful Intelligence saving throw or be incapacitated until the start of your next turn.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">2</set>
+			<set name="school" addition="shadow">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pinch of powdered lead</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- SHADOW STEP --> 
+	<element name="Shadow Step" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SHADOW_STEP">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You can open a temporary portal between two darkened areas, allowing you to move from one such area to another without crossing the intervening space. If you start your turn in an area of dim light or darkness, you can open a portal to another area of dim light or darkness within range and transport yourself to that spot. Doing this uses up your movement for the turn, regardless of the distance traveled. You can use shadow step while prone. Moving in this manner does not draw opportunity attacks.</p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">4</set>
+			<set name="school" addition="shadow">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- SHADOW TENDRILS  -->
+	<element name="Shadow Tendrils" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SHADOW_TENDRILS">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>Writhing ribbons of quasi-real darkness extend from your hand. As an action, you can make a melee spell attack with the tendrils against any creature within range. On a hit, the target takes 2d8 cold damage and must succeed at a Dexterity saving throw or be restrained. </p>
+			<p class="indent">A creature that starts its turn restrained by the shadow tendrils takes the cold damage again. It can take an action to make a Dexterity check against your spell save DC to free itself. On your turn, as a bonus action, you can drag a creature restrained by the shadow tendrils up to 15 feet closer to you. </p>
+			<p class="indent">The tendrils have AC 13 and 12 hit points. They are immune to bludgeoning damage and to piercing and slashing damage from nonmagical weapons. They are vulnerable to radiant damage. If the tendrils are destroyed by damage but the spell is still in effect, you can re-form them on your turn as a bonus action. </p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">3</set>
+			<set name="school" addition="shadow">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- SHADOW TROVE  -->
+	<element name="Shadow Trove" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SHADOW_TROVE">
+		<supports>Wizard</supports>
+		<description>
+			<p>You paint a small door approximately 2 feet square on a hard surface to create a portal into the void of space. The portal “peels off ” the surface you painted it on and follows you when you move, always floating in the air within 5 feet of you. An icy chill flows out from the portal. You can place up to 750 pounds of nonliving matter in the portal, where it stays suspended in the frigid void until you withdraw it. Items that are still inside the shadow trove when the duration ends spill out onto the ground. You can designate a number of creatures up to your Intelligence modifier who have access to the shadow trove; only you and those creatures can move objects into the portal.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, the duration increases by 2 hours for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">3</set>
+			<set name="school" addition="shadow">Transmutation</set>
+			<set name="time">1 minute</set>
+			<set name="range">5 ft.</set>
+			<set name="duration">1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">ink made from the blood of a raven</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element> 
+
+<!-- SHADOWS BROUGHT TO LIGHT  -->
+	<element name="Shadows Brought to Light" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SHADOWS_BROUGHT_TO_LIGHT">
+		<supports>Bard,Cleric,Paladin,Warlock,Wizard</supports>
+		<description>
+			<p>If a creature you designate within range fails a Charisma saving throw, you cause the target’s shadow to come to life and reveal one of the creature’s most scandalous secrets: some fact that the target would not want widely known (GM’s choice). When casting the spell, you choose whether everyone present will hear the secret, in which case the shadow speaks loudly in a twisted version of the target’s voice, or if the secret is whispered only to you. The shadow speaks in the target’s native language. </p>
+			<p class="indent">If the target does not have a scandalous secret or does not have a spoken language, the spell fails as if the creature’s saving throw had succeeded. </p>
+			<p class="indent">If the secret was spoken aloud, the target takes a −2 penalty to Charisma checks involving anyone who was present when it was revealed. This penalty lasts until you finish a long rest. </p>
+			<p class="indent"><b><i>Ritual Focus.</i></b> If you expend your ritual focus, the target has disadvantage on Charisma checks instead of taking the −2 penalty. Also, once you've expended your ritual focus this mental energy has been expended, a caster’s ritual focus can’t be used again until he or she finishes a short or long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">ritual</set>
+			<set name="level">2</set>
+			<set name="school" addition="ritual only">Divination</set>
+			<set name="time">10 minutes</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
+<!-- SHADOWY RETRIBUTION  -->
+	<element name="Shadowy Retribution" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SHADOWY_RETRIBUTION">
+		<supports>Cleric,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You fill a small silver cup with your own blood (taking 1d4 piercing damage) while chanting vile curses in the dark. Once the chant is completed, you consume the blood and swear an oath of vengeance against any who harm you. </p>
+			<p class="indent">If you are reduced to 0 hit points, your oath is invoked; a shadow materializes within 5 feet of you. The shadow attacks the creature that reduced you to 0 hit points, ignoring all other targets, until it or the target is slain, at which point the shadow dissipates into nothing. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, an additional shadow is conjured for each slot level above 4th. </p>
+			<p class="indent"><b><i>Ritual Focus.</i></b> If you expend your ritual focus, the spell summons a banshee instead of a shadow. If you also use a higher-level spell slot, additional undead are still shadows. Also, once you've expended your ritual focus this mental energy has been expended, a caster’s ritual focus can’t be used again until he or she finishes a short or long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">ritual</set>
+			<set name="level">4</set>
+			<set name="school" addition="ritual only">Necromancy</set>
+			<set name="time">10 minutes</set>
+			<set name="range">Self</set>
+			<set name="duration">12 hours</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a small silver cup filled with the caster's blood</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
+<!-- SHEEN OF ICE  -->
+	<element name="Sheen of Ice" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SHEEN_OF_ICE">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>A small icy globe shoots from your finger to a point within range and then explodes in a spray of ice. Each creature within 20 feet of that point must make a successful Dexterity saving throw or become coated in ice for 1 minute. Ice-coated creatures move at half speed. An invisible creature becomes outlined by the ice so that it loses the benefits of invisibility while the ice remains. The spell ends for a specific creature if that creature takes 5 or more fire damage. </p>
+		</description>
+		<setters>
+			<set name="keywords">winter</set>
+			<set name="level">2</set>
+			<set name="school" addition="winter">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a water within a glass globe</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- SHIELD OF STARLIGHT -->
+	<element name="Shield of Starlight" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SHIELD_OF_STARLIGHT">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>You wrap yourself in a protective shroud of the night sky made from swirling shadows and punctuated by twinkling motes of light. The shroud grants you resistance against either radiant or necrotic damage (your choice when the spell is cast). You also shed dim light in a 10-foot radius. You can end the spell early by using an action to dismiss it.</p>
+		</description>
+		<setters>
+			<set name="keywords">illumination</set>
+			<set name="level">3</set>
+			<set name="school" addition="illumination">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a star chart</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- SHIFTING THE ODDS  -->		
+	<element name="Shifting the Odds" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SHIFTING_THE_ODDS">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>By wrapping yourself in strands of chaotic energy, you gain advantage on the next attack roll or ability check that you make. Fate is a cruel mistress, however, and her scales must always be balanced. The second attack roll or ability check (whichever occurs first) that you make after casting shifting the odds is made with disadvantage.</p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">2</set>
+			<set name="school" addition="chaos">Divination</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Self</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- SHIVER --> 
+	<element name="Shiver" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SHIVER">
+		<supports>Cleric,Druid,Sorcerer,Wizard</supports>
+		<description>
+			<p>You fill a humanoid creature with such cold that its teeth begin to chatter and its body shakes uncontrollably. Roll 5d8; the total is the maximum hit points of a creature this spell can affect. The affected creature must succeed on a Constitution saving throw, or it cannot cast a spell or load a missile weapon until the end of your next turn. Once a creature has been affected by this spell, it is immune to further castings of this spell for 24 hours. </p>
+			<p class="indent"><i><b>At Higher Levels</b></i> The maximum hit points you can affect increases by 4d8 when you reach 5th level (9d8), 11th level (13d8), and 17th level (17d8).</p>
+		</description>
+		<setters>
+			<set name="keywords">winter</set>
+			<set name="level">0</set>
+			<set name="school" addition="winter">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">1 round</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a humanoid tooth</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- SILHOUETTE  -->
+	<element name="Silhouette" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SILHOUETTE">
+		<supports></supports>
+		<description>
+			<p>You create a shadow play against a screen or wall. The surface can encompass up to 100 square feet. The number of creatures that can see the shadow play equals your Intelligence score. The shadowy figures make no sound but they can dance, run, move, kiss, fight, and so forth. Most of the figures are generic types—a rabbit, a dwarf— but a number of them equal to your Intelligence modifier can be recognizable as specific individuals.</p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">0</set>
+			<set name="school" addition="shadow">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- SLITHER  -->
+	<element name="Slither" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SLITHER">
+		<supports>Wizard</supports>
+		<description>
+			<p>You momentarily become a shadow (a humanoid-shaped absence of light, not the undead creature of that name). You can slide under a door, through a keyhole, or through any other tiny opening. All of your equipment is transformed with you, and you can move up to your full speed during the spell’s duration. While in this form, you have advantage on Dexterity (Stealth) checks made in darkness or dim light and you are immune to nonmagical bludgeoning, piercing, and slashing damage. You can dismiss this spell by using an action to do so. </p>
+			<p class="indent">If you return to your normal form while in a space too small for you (such as a mouse hole, sewer pipe, or the like), you take 4d6 force damage and are pushed to the nearest space within 50 feet big enough to hold you. If the distance is greater than 50 feet, you take an extra 1d6 force damage for every additional 10 feet traveled. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, you can target an additional willing creature that you touch for each slot level above 2nd. </p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">2</set>
+			<set name="school" addition="shadow">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">ashes from a wooden statue of you, made into ink and used to draw your portrait, worth 50 gp</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- SNOW BOULDER  -->
+	<element name="Snow Boulder" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SNOW_BOULDER">
+		<supports>Druid,Ranger</supports>
+		<description>
+			<p>A ball of snow forms 5 feet away from you and rolls in the direction you point at a speed of 30 feet, growing larger as it moves. To roll the boulder into a creature, you must make a successful ranged spell attack. If the boulder hits, the creature must make a successful Dexterity saving throw or be knocked prone and take the damage indicated below. Hitting a creature doesn’t stop the snow boulder’s movement or impede its growth, as long as you continue to maintain concentration on the effect. When the spell ends, the boulder stops moving.</p>
+			<table>
+				<thead>
+					<tr><td>Round</td><td>Size</td><td>Damage</td></tr>
+				</thead>
+				<tr><td>1</td><td>Small</td><td>1d6 bludgeoning</td></tr>
+				<tr><td>2</td><td>Medium</td><td>2d6 bludgeoning</td></tr>
+				<tr><td>3</td><td>Large</td><td>4d6 bludgeoning</td></tr>
+				<tr><td>4</td><td>Huge</td><td>6d6 bludgeoning</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">winter</set>
+			<set name="level">4</set>
+			<set name="school" addition="winter">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">90 ft.</set>
+			<set name="duration">Concentration, up to 4 rounds</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a handful of snow</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- SNOW FORT  -->
+	<element name="Snow Fort" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SNOW_FORT">
+		<supports>Cleric,Sorcerer,Wizard</supports>
+		<description>
+			<p>This spell creates a simple “fort” from packed snow. The snow fort springs from the ground in an unoccupied space within range. It encircles a 10-foot area with sloping walls 4 feet high. The fort provides half cover (+2 AC) against ranged and melee attacks coming from outside the fort. The walls have AC 12, 30 hit points per side, are immune to cold, necrotic, poison, and psychic damage, and are vulnerable to fire damage. A damaged wall can be repaired by casting a spell that deals cold damage on it, on a point-for-point basis, up to a maximum of 30 points. </p>
+			<p class="indent">The spell also creates a dozen snowballs that can be thrown (range 20/60) and that deal 1d4 bludgeoning damage plus 1d4 cold damage on a hit.</p>
+		</description>
+		<setters>
+			<set name="keywords">winter</set>
+			<set name="level">2</set>
+			<set name="school" addition="winter">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">120 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a ring carved from chalk or white stone</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- SNOWY COAT  -->
+	<element name="Snowy Coat" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SNOWY_COAT">
+		<supports>Druid,Ranger</supports>
+		<description>
+			<p>This spell makes a slight alteration to a target creature’s appearance that gives it advantage on Dexterity (Stealth) checks to hide in snowy terrain. In addition, the target can use a bonus action to make itself invisible in snowy terrain for 1 minute. The spell ends at the end of the minute or when the creature attacks or casts a spell. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords">winter</set>
+			<set name="level">1</set>
+			<set name="school" addition="winter">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- SONG OF THE FOREST  -->
+	<element name="Song of the Forest" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SONG_OF_THE_FOREST">
+		<supports>Druid,Ranger,Wizard</supports>
+		<description>
+			<p>You attune your senses to the natural world, so that you detect every sound that occurs within 60 feet: wind blowing through branches, falling leaves, grazing deer, trickling streams, and more. You can clearly picture the source of each sound in your mind. The spell gives you tremorsense out to a range of 10 feet. In addition, you have advantage on Wisdom (Perception) checks that rely on hearing. Creatures that make no noise or that are magically silent cannot be detected by this spell’s effect. </p>
+			<p class="indent">Song of the forest functions only in natural environments; it fails if cast underground, in a city, or in a building that isolates the caster from nature (GM’s discretion). </p>
+			<p class="indent"><b><i>Ritual Focus.</i></b> If you expend your ritual focus, the spell also gives you blindsight out to a range of 30 feet. Also, once you've expended your ritual focus this mental energy has been expended, a caster’s ritual focus can’t be used again until he or she finishes a short or long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">ritual</set>
+			<set name="level">3</set>
+			<set name="school" addition="ritual only">Transmutation</set>
+			<set name="time">10 minutes</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a dried leaf, crumpled and released</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
+<!-- SOOTHING INCANDESCENCE -->
+	<element name="Soothing Incandescence" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SOOTHING_INCANDESCENCE">
+		<supports>Cleric,Wizard</supports>
+		<description>
+			<p>A soft, white radiance spreads out from a point just above your head, creating bright light in a 30-foot radius around your present location. If you move from your present location, the area of light remains fixed. A creature in the area other than a fiend or an undead regains 1 hit point at the start of each of its turns while within the bright light. Each fiend or undead in the area takes 2d4 radiant damage at the start of each of its turns.</p>
+		</description>
+		<setters>
+			<set name="keywords">illumination</set>
+			<set name="level">7</set>
+			<set name="school" addition="illumination">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (30 ft. radius)</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- STANCH  -->
+	<element name="Stanch" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_STANCH">
+		<supports>Cleric,Druid,Ranger,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>The target’s blood coagulates rapidly, so that a dying target stabilizes and any ongoing bleeding or wounding effect on the target ends. The target can’t be the source of blood for any spell or effect that requires even a drop of blood.</p>
+		</description>
+		<setters>
+			<set name="keywords">blood</set>
+			<set name="level">1</set>
+			<set name="school" addition="blood">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- SPINNING AXES  -->
+	<element name="Spinning Axes" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SPINNING_AXES">
+		<supports></supports>
+		<description>
+			<p>Spinning axes made of luminous force burst out from you to strike all creatures within 10 feet of you. Each of those creatures takes 5d8 force damage, or half the damage with a successful Dexterity saving throw. Creatures damaged by this spell that aren’t undead or constructs begin bleeding. A bleeding creature takes 2d6 necrotic damage at the end of each of its turns for 1 minute. A creature can stop the bleeding for itself or another creature by using an action to make a successful Wisdom (Medicine) check against your spell save DC or by applying any amount of magical healing. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords">ring</set>
+			<set name="level">4</set>
+			<set name="school" addition="ring">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an iron ring</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- STARBURST  -->
+	<element name="Starburst" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_STARBURST">
+		<supports>Druid,Warlock,Wizard</supports>
+		<description>
+			<p>You cause a mote of starlight to appear and explode in a 5-foot cube you can see within range. If a creature is in the cube, it must succeed on a Charisma saving throw or take 1d8 radiant damage. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> This spell’s damage increases to 2d8 when you reach 5th level, 3d8 when you reach 11th level, and 4d8 when you reach 17th level.</p>
+		</description>
+		<setters>
+			<set name="keywords">illumination</set>
+			<set name="level">0</set>
+			<set name="school" addition="illumination">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- STARFALL  -->
+	<element name="Starfall" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_STARFALL">
+		<supports>Druid,Sorcerer,Wizard</supports>
+		<description>
+			<p>You cause bolts of shimmering starlight to fall from the heavens, striking up to five creatures that you can see within range. Each bolt strikes one target, dealing 6d6 radiant damage, knocking the target prone, and blinding it until the start of your next turn. A creature that makes a successful Dexterity saving throw takes half the damage, is not knocked prone, and is not blinded. If you name fewer than five targets, excess bolts strike the ground harmlessly.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th level or higher, you can create one additional bolt for each slot level above 5th.</p>
+		</description>
+		<setters>
+			<set name="keywords">illumination</set>
+			<set name="level">5</set>
+			<set name="school" addition="illumination">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- STAR’S HEART --> 
+	<element name="Star's Heart" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_STARS_HEART">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>This spell increases gravity tenfold in a 50-foot radius centered on you. Each creature in the area other than you drops whatever it’s holding, falls prone, becomes incapacitated, and can’t move. If a solid object (such as the ground) is encountered when a flying or levitating creature falls, the creature takes three times the normal falling damage. Any creature except you that enters the area or starts its turn there must make a successful Strength saving throw or fall prone and become incapacitated and unable to move. A creature that starts its turn prone and incapacitated makes a Strength saving throw. On a failed save, the creature takes 8d6 bludgeoning damage; on a successful save, it takes 4d6 bludgeoning damage, it’s no longer incapacitated, and it can move at half speed. </p>
+			<p class="indent">All ranged weapon attacks inside the area have a normal range of 5 feet and a maximum range of 10 feet. The same applies to spells that create missiles that have mass, such as flaming sphere. A creature under the influence of a freedom of movement spell or comparable magic has advantage on the Strength saving throws required by this spell, and its speed isn’t reduced once it recovers from being incapacitated. </p>
+		</description>
+		<setters>
+			<set name="keywords">illumination</set>
+			<set name="level">9</set>
+			<set name="school" addition="illumination">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">50 ft.</set>
+			<set name="duration">1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an ioun stone</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- STEAL WARMTH  -->
+	<element name="Steal Warmth" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_STEAL_WARMTH">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>When you cast steal warmth after taking cold damage, you select a living creature within 5 feet of you. That creature takes the cold damage instead, or half the damage with a successful Constitution saving throw. You regain hit points equal to the amount of cold damage taken by the target. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, the distance to the target you can affect with this spell increases by 5 feet for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords">winter</set>
+			<set name="level">3</set>
+			<set name="school" addition="winter">Necromancy</set>
+			<set name="time">1 reaction, which you take when you take cold damage from magic</set>
+			<set name="range">Self</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- SUMMON STAR  -->
+	<element name="Summon Star" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SUMMON_STAR">
+		<supports>Wizard</supports>
+		<description>
+			<p>You summon a friendly star from the heavens to do your bidding. It appears in an unoccupied space you can see within range and takes the form of a glowing humanoid with long white hair. All creatures other than you who view the star must make a successful Wisdom saving throw or be charmed for the duration of the spell. A creature charmed in this way can repeat the Wisdom saving throw at the end of each of its turns. On a success, the creature is no longer charmed and is immune to the effect of this casting of the spell. In all other ways, the star is equivalent to a deva. It understands and obeys verbal commands you give it. If you do not give the star a command, it defends itself and attacks the last creature that attacked it. The star disappears when it drops to 0 hit points or when the spell ends.</p>
+		</description>
+		<setters>
+			<set name="keywords">illumination</set>
+			<set name="level">8</set>
+			<set name="school" addition="illumination">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">90 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- SURGE DAMPENER  -->
+	<element name="Surge Dampener" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SURGE_DAMPENER">
+		<supports>Bard,Wizard</supports>
+		<description>
+			<p>Using your strength of will, you cause one creature other than yourself that you touch to become so firmly entrenched within reality that it is protected from the effects of a chaos magic surge. The protected creature can make a DC 13 Charisma saving throw to negate the effect of a chaos magic surge that does not normally allow a saving throw, or it gains advantage on a saving throw that is normally allowed. Once the protected creature makes a successful saving throw allowed by surge dampener, the spell ends. </p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">3</set>
+			<set name="school" addition="chaos">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">1 minute, until expended</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
+</elements>

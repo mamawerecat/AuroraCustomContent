@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Deep Magic Spells - B</name>
+        <update version="0.0.1">
+            <file name="b-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/b-spells" />
+        </update>
+    </info>
+
+<!-- BABBLE  -->
+	<element name="Babble" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BABBLE">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>This spell causes the speech of affected creatures to sound like nonsense. Each creature in a 30-foot-radius sphere centered on a point you choose within range must succeed on an Intelligence saving throw when you cast this spell or be affected by it. </p>
+			<p class="indent">An affected creature cannot communicate in any spoken language that it knows. When it speaks, the words come out as gibberish. Spells with verbal components cannot be cast. The spell does not affect telepathic communication, nonverbal communication, or sounds emitted by any creature that does not have a spoken language. As an action, a creature under the effect of this spell can attempt another Intelligence saving throw against the effect. On a successful save, the spell ends.</p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">5</set>
+			<set name="school" addition="chaos">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- BAD TIMING  -->
+	<element name="Bad Timing" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BAD_TIMING">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>You point toward a creature that you can see and twist strands of chaotic energy around its fate. If the target gets a failure on a Charisma saving throw, the next attack roll or ability check the creature attempts within 10 minutes is made with disadvantage.</p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">2</set>
+			<set name="school" addition="chaos">Divination</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- BECOME NIGHTWING -->
+	<element name="Become Nightwing" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BECOME_NIGHTWING">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>This spell imbues you with wings of shadow. For the duration of the spell, you gain a flying speed of 60 feet and a new attack action: Nightwing Breath. </p>
+			<p class="indent"><b><i>Nightwing Breath (Recharge 4–6).</i></b> You exhale shadow substance in a 30-foot cone. Each creature in the area takes 5d6 necrotic damage, or half the damage with a successful Dexterity saving throw.</p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">6</set>
+			<set name="school" addition="shadow">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a crow's eye</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- BENEDICTION --> 
+	<element name="Benediction" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BENEDICTION">
+		<supports>Wizard</supports>
+		<description>
+			<p>You call down a blessing in the name of an angel of protection. A creature you can see within range shimmers with a faint white light. The next time the creature takes damage, it rolls a d4 and reduces the damage by the result. The spell then ends.</p>
+		</description>
+		<setters>
+			<set name="keywords">angelic</set>
+			<set name="level">0</set>
+			<set name="school" addition="angelic">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>	
+
+<!-- BITING ARROW  -->
+	<element name="Biting Arrow" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BITING_ARROW">
+		<supports>Druid,Sorcerer,Wizard</supports>
+		<description>
+			<p>As part of the action used to cast this spell, you make a ranged weapon attack with a bow, a crossbow, or a thrown weapon. The effect is limited to a range of 120 feet despite the weapon’s range, and the attack is made with disadvantage if the target is in the weapon’s long range. </p>
+			<p class="indent">If the weapon attack hits, it deals damage as usual. In addition, the target becomes coated in thin frost until the start of your next turn. If the target uses its reaction before the start of your next turn, it immediately takes 1d6 cold damage and the spell ends. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b>The spell’s damage, for both the ranged attack and the cold damage, increases by 1d6 when you reach 5th level (+1d6 and 2d6), 11th level (+2d6 and 3d6), and 17th level (+3d6 and 4d6).</p>
+		</description>
+		<setters>
+			<set name="keywords">winter</set>
+			<set name="level">0</set>
+			<set name="school" addition="winter">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">1 round</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an arrow or a thrown weapon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- BITTER CHAINS  -->
+	<element name="Bitter Chains" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BITTER_CHAINS">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>The spiked ring in your hand expands into a long, barbed chain to ensnare a creature you touch. Make a melee spell attack against the target. On a hit, the target is bound in metal chains for the duration. While bound, the target can move only at half speed and has disadvantage on attack rolls, saving throws, and Dexterity checks. If it moves more than 5 feet during a turn, it takes 3d6 piercing damage from the barbs.</p>
+			<p class="indent">The creature can escape from the chains by using an action and making a successful Strength or Dexterity check against your spell save DC, or if the chains are destroyed. The chains have AC 18 and 20 hit points.</p>
+		</description>
+		<setters>
+			<set name="keywords">ring</set>
+			<set name="level">2</set>
+			<set name="school" addition="ring">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a spike metal ring</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- BLACK HAND  -->
+	<element name="Black Hand" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLACK_HAND">
+		<supports>Warlock,Wizard</supports>
+		<description>
+			<p>You gather the powers of darkness into your fist and fling dark, paralyzing flame at a target within 30 feet. If you make a successful ranged spell attack, this spell siphons vitality from the target into you. For the duration, the target has disadvantage (and you have advantage) on attack rolls, ability checks, and saving throws made with Strength, Dexterity, or Constitution. An affected target makes a Constitution saving throw (with disadvantage) at the end of its turn, ending the effect on a success.</p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">4</set>
+			<set name="school" addition="shadow">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- BLACK RIBBONS  -->
+	<element name="Black Ribbons" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLACK_RIBBONS">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You pull pieces of the plane of shadow into your own reality, causing a 20-foot cube to fill with inky ribbons that turn the area into difficult terrain and wrap around nearby creatures. Any creature that ends its turn in the area becomes restrained by the ribbons until the end of its next turn, unless it makes a successful Dexterity saving throw. Once a creature succeeds on this saving throw, it can’t be restrained again by the ribbons, but it’s still affected by the difficult terrain. </p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">1</set>
+			<set name="school" addition="shadow">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">40 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a piece of ribbon</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- BLACK WELL  -->
+	<element name="Black Well" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLACK_WELL">
+		<supports>Wizard</supports>
+		<description>
+			<p>You summon a seething sphere of dark energy 5 feet in diameter at a point within range. The sphere pulls creatures toward it and devours the life force of those it envelops. Every creature other than you that starts its turn within 90 feet of the black well must make a successful Strength saving throw or be pulled 50 feet toward the well. A creature pulled into the well takes 6d8 necrotic damage and is stunned; a successful Constitution saving throw halves the damage and causes the creature to become incapacitated. A creature that starts its turn inside the well also makes a Constitution saving throw; the creature is stunned on a failed save or incapacitated on a success. An incapacitated creature that leaves the well recovers immediately and can take actions and reactions on that turn. A creature takes damage only upon entering the well—it takes no additional damage for remaining there—but if it leaves the well and is pulled back in again, it takes damage again. A total of nine Medium creatures, three Large creatures, or one Huge creature can be inside the well’s otherdimensional space at one time. When the spell’s duration ends, all creatures inside it tumble out in a heap, landing prone. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 7th level or higher, the damage dealt by the well increases by 1d8—and the well pulls creatures an additional 5 feet—for each slot level above 6th. </p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">6</set>
+			<set name="school" addition="shadow">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">300 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- BLADE OF WRATH --> 	
+	<element name="Blade of Wrath" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLADE_OF_WRATH">
+		<supports>Cleric,Paladin,Wizard</supports>
+		<description>
+			<p>You create a sword of pure white fire in your free hand. The blade is similar in size and shape to a longsword, and it lasts for the duration. The blade disappears if you let go of it, but you can call it forth again as a bonus action. </p>
+			<p class="indent">You can use your action to make a melee spell attack with the blade. On a hit, the target takes 2d8 fire damage and 2d8 radiant damage. An aberration, fey, fiend, or undead creature damaged by the blade must succeed on a Wisdom saving throw or be frightened until the start of your next turn. </p>
+			<p class="indent">The blade sheds bright light in a 20-foot radius and dim light for an additional 20 feet. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, either the fire damage or the radiant damage (your choice) increases by 1d8 for each slot level above 3rd. </p>
+		</description>
+		<setters>
+			<set name="keywords">angelic</set>
+			<set name="level">3</set>
+			<set name="school" addition="angelic">Evocation</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a rebuke of evil, written in Celestial</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+<!-- BLAZING CHARIOT  -->
+	<element name="Blazing Chariot" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLAZING_CHARIOT">
+		<supports>Cleric,Paladin,Wizard</supports>
+		<description>
+			<p>Calling upon the might of the angels, you conjure a flaming chariot made of gold and mithral in an unoccupied 10-foot square space you can see within range. Two horses made of fire and light pull the chariot. You and up to three other Medium or smaller creatures you designate can board the chariot (at the cost of 5 feet of movement) and are unharmed by the flames. Any other creature that touches the chariot or hits it (or a creature riding in it) with a melee attack while within 5 feet of the chariot takes 3d6 fire damage and 3d6 radiant damage. The chariot has AC 18 and 50 hit points, is immune to fire, poison, psychic, and radiant damage, and has resistance to all other nonmagical damage. The horses are not separate creatures but are part of the chariot. The chariot vanishes if it is reduced to 0 hit points, and any creature riding it falls out. The chariot has a speed of 50 feet and a flying speed of 40 feet. </p>
+			<p class="indent">On your turn, you can guide the chariot in place of your own movement. You can use a bonus action to direct it to take the Dash, Disengage, or Dodge action. As an action, you can use the chariot to overrun creatures in its path. On this turn, the chariot can enter a hostile creature’s space. The creature takes damage as if it had touched the chariot, is shunted to the nearest unoccupied space that it can occupy, and must make a successful Strength saving throw or fall prone in that space. </p>
+		</description>
+		<setters>
+			<set name="keywords">angelic</set>
+			<set name="level">5</set>
+			<set name="school" additon="angelic">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a small golden wheel worth 250 gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>	
+
+<!-- BLESSED HALO  -->
+	<element name="Blessed Halo" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLESSED_HALO">
+		<supports>Cleric,Paladin,Wizard</supports>
+		<description>
+			<p>A nimbus of golden light surrounds your head for the duration. The halo sheds bright light in a 20-foot radius and dim light for an additional 20 feet. </p>
+			<p class="indent">This spell grants you a pool of 10 points of healing. When you cast the spell and as an action on subsequent turns during the spell’s duration, you can expend points from this pool to restore an equal number of hit points to one creature within 20 feet that you can see. </p>
+			<p class="indent">Additionally, you have advantage on Charisma checks made against good creatures within 20 feet. </p>
+			<p class="indent">If any of the light created by this spell overlaps an area of magical darkness created by a spell of 2nd level or lower, the spell that created the darkness is dispelled. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the spell’s pool of healing points increases by 5 for each spell slot above 2nd, and the spell dispels magical darkness created by a spell of a level equal to the slot used to cast this spell.</p>
+		</description>
+		<setters>
+			<set name="keywords">angelic</set>
+			<set name="level">2</set>
+			<set name="school" addition="angelic">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>	
+
+<!-- BLIZZARD  -->
+	<element name="Blizzard" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLIZZARD">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>A howling storm of thick snow and ice crystals appears in a cylinder 40 feet high and 40 feet in diameter within range. The area is heavily obscured by the swirling snow. When the storm appears, each creature in the area takes 8d8 cold damage, or half as much damage with a successful Constitution saving throw. A creature also makes this saving throw and takes damage when it enters the area for the first time on a turn or ends its turn there. In addition, a creature that takes cold damage from this spell has disadvantage on Constitution saving throws to maintain concentration until the start of its next turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">winter</set>
+			<set name="level">7</set>
+			<set name="school" addition="winter">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">100 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>	
+
+<!-- BLOOD AND STEEL  -->
+	<element name="Blood and Steel" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLOOD_AND_STEEL">
+		<supports>Cleric,Wizard</supports>
+		<description>
+			<p>When you cast this spell, you cut your hand and take 1d4 slashing damage that can’t be healed until you take a long rest. You then touch a construct; it must make a successful Constitution saving throw or be charmed by you for the duration. If you or your allies are fighting the construct, it has advantage on the saving throw. Even constructs that are immune to charm effects can be affected by this spell. </p>
+			<p class="indent">While the construct is charmed, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as, “Attack the ghouls,” “Block the bridge,” or, “Fetch that bucket.” If the construct completes the order and doesn’t receive further direction from you, it defends itself. </p>
+			<p class="indent">You can use your action to take total and precise control of the target. Until the end of your next turn, the construct takes only the actions you specify and does nothing you haven’t ordered it to do. During this time, you can also cause the construct to use a reaction, but doing this requires you to use your own reaction as well. </p>
+			<p class="indent">Each time the construct takes damage, it makes a new Constitution saving throw against the spell. If the saving throw succeeds, the spell ends. </p>
+			<p class="indent">If the construct is already under your control when the spell is cast, it gains an Intelligence of 10 (unless its own Intelligence is higher, in which case it retains the higher score) for 4 hours. The construct is capable of acting independently, though it remains loyal to you for the spell’s duration. You can also grant the target a bonus equal to your Intelligence modifier on one skill in which you have proficiency. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b>When you cast this spell using a 5th level spell slot, the duration is concentration, up to 10 minutes. When you use a 6th-level spell slot, the duration is concentration, up to 1 hour. When you use a spell slot of 7th level or higher, the duration is concentration, up to 8 hours.</p>
+		</description>
+		<setters>
+			<set name="keywords">blood</set>
+			<set name="level">4</set>
+			<set name="school" addition="blood">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- BLOOD ARMOR  -->
+	<element name="Blood Armor" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLOOD_ARMOR">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>When you strike a foe with a melee weapon attack, you can immediately cast blood armor as a bonus action. The foe you struck must contain blood; if the target doesn’t bleed, the spell ends without effect. The blood flowing from your foe magically increases in volume and forms a suit of armor around you, granting you an Armor Class of 18 + your Dexterity modifier for the spell’s duration. This armor has no Strength requirement, doesn’t hinder spellcasting, and doesn’t incur disadvantage on Dexterity (Stealth) checks.</p>
+			<p class="indent">If the creature you struck was a celestial, blood armor also grants you advantage on Charisma saving throws for the duration of the spell.</p>
+		</description>
+		<setters>
+			<set name="keywords">blood</set>
+			<set name="level">3</set>
+			<set name="school" addition="blood">Necromancy</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Self</set>
+			<set name="duration">1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- BLOOD LURE --> 
+	<element name="Blood Lure" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLOOD_LURE">
+		<supports>Cleric,Sorcerer,Wizard</supports>
+		<description>
+			<p>You point at any location (a jar, a bowl, even a puddle) within range that contains at least a pint of blood. Each creature that feeds on blood and is within 60 feet of that location must make a Charisma saving throw. (This includes undead, such as vampires.) A creature that has Keen Smell or any similar scent-boosting ability has disadvantage on the saving throw, while undead have advantage on the saving throw. On a failed save, the creature is attracted to the blood and must move toward it unless impeded.</p>
+			<p class="indent">Once an affected creature reaches the blood, it tries to consume it, foregoing all other actions while the blood is present. A successful attack against an affected creature ends the effect, as does the consumption of the blood, which requires an action by an affected creature.</p>
+		</description>
+		<setters>
+			<set name="keywords">blood</set>
+			<set name="level">2</set>
+			<set name="school" addition="blood">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">10 ft.</set>
+			<set name="duration">1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a container or pool of blood</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- BLOOD PUPPET -->
+	<element name="Blood Puppet" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLOOD_PUPPET">
+		<supports>Cleric,Sorcerer,Wizard</supports>
+		<description>
+			<p>With a sample of its blood, you are able to magically control a creature’s actions, like a marionette on magical strings. Choose a creature you can see within range whose blood you hold. The target must succeed on a Constitution saving throw, or you gain control over its physical activity (as long as you interact with the blood material component each round). As a bonus action on your turn, you can direct the creature to perform various activities. You can specify a simple and general course of action, such as, “Attack that creature,” “Run over there,” or, “Fetch that object.” If the creature completes the order and doesn’t receive further direction from you, it defends and preserves itself to the best of its ability. The target is aware of being controlled. At the end of each of its turns, the target can make another Constitution saving throw. On a success, the spell ends.</p>
+		</description>
+		<setters>
+			<set name="keywords">blood</set>
+			<set name="level">4</set>
+			<set name="school" addition="blood">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">100 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a drop of blood from the target</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- BLOOD SCARAB  -->
+	<element name="Blood Scarab" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLOOD_SCARAB">
+		<supports>Cleric,Warlock</supports>
+		<description>
+			<p>Your blood is absorbed into the beetle’s exoskeleton to form a beautiful, rubylike scarab that flies toward a creature of your choice within range. The target must make a successful Constitution saving throw or take 1d6 necrotic damage. You gain temporary hit points equal to the necrotic damage dealt.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b>When you cast this spell using a spell slot of 2nd level or higher, the number of scarabs increases by one for each slot level above 1st. You can direct the scarabs at the same target or at different targets. Each target makes a single saving throw, regardless of the number of scarabs targeting it. </p>
+		</description>
+		<setters>
+			<set name="keywords">blood</set>
+			<set name="level">1</set>
+			<set name="school" addition="blood">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a dropp of the caster's blood, and the exoskeleton of a scarab bettle</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- BLOOD SPOOR  -->
+	<element name="Blood Spoor" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLOOOD_SPOOR">
+		<supports>Ranger</supports>
+		<description>
+			<p>By touching a drop of your quarry’s blood (spilled or drawn within the past hour), you can follow the creature’s trail unerringly across any surface or under water, no matter how fast you are moving. If your quarry takes flight, you can follow its trail along the ground—or through the air, if you have the means to fly. </p>
+			<p class="indent">If your quarry moves magically (such as by way of a dimension door or a teleport spell), you sense its trail as a straight path leading from where the magical movement started to where it ended. Such a route might lead through lethal or impassable barriers. This spell even reveals the route of a creature using pass without trace, but it fails to locate a creature protected by nondetection or by other effects that prevent scrying spells or cause divination spells to fail. If your quarry moves to another plane, its trail ends without trace, but blood spoor picks up the trail again if the caster moves to the same plane as the quarry before the spell’s duration expires.</p>
+		</description>
+		<setters>
+			<set name="keywords">blood</set>
+			<set name="level">4</set>
+			<set name="school" addition="blood">Divination</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a drop of the quarry's blood</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- BLOOD TIDE  -->
+	<element name="Blood Tide" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLOOD_TIDE">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>When you cast this spell, a creature you designate within range must succeed on a Constitution saving throw or bleed from its nose, eyes, ears, and mouth. This bleeding deals no damage but imposes a –2 penalty on the creature’s Intelligence, Charisma, and Wisdom checks. Blood tide has no effect on undead or constructs.</p>
+			<p class="indent">A bleeding creature might attract the attention of creatures such as stirges, sharks, or giant mosquitoes, depending on the circumstances. </p>
+			<p class="indent">A cure wounds spell stops the bleeding before the duration of blood tide expires, as does a successful DC 10 Wisdom (Medicine) check. </p>
+			<p class="indent">The spell’s duration increases to 2 minutes when you reach 5th level, to 10 minutes when you reach 11th level, and to 1 hour when you reach 17th level.</p>
+		</description>
+		<setters>
+			<set name="keywords">blood</set>
+			<set name="level">0</set>
+			<set name="school" addition="blood">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">25 ft.</set>
+			<set name="duration">4 rounds</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- BLOOD TO ACID --> 	
+	<element name="Blood to Acid" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLOOD_TO_ACID">
+		<supports>Wizard</supports>
+		<description>
+			<p>When you cast this spell, you designate a creature within range and convert its blood into virulent acid. The target must make a Constitution saving throw. On a failed save, it takes 10d12 acid damage and is stunned by the pain for 1d4 rounds. On a successful save, it takes half the damage and isn’t stunned. </p>
+			<p class="indent">Creatures without blood, such as constructs and plants, are not affected by this spell. If blood to acid is cast on a creature composed mainly of blood, such as a blood elemental or a blood zombie (Creature Codex, p. 393), the creature is slain by the spell if its saving throw fails.</p>
+		</description>
+		<setters>
+			<set name="keywords">alkemancy</set>
+			<set name="level">9</set>
+			<set name="school" addition="alkemancy">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- BLOODSHOT  -->
+	<element name="Bloodshot" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLOODSHOT">
+		<supports></supports>
+		<description>
+			<p>You launch a jet of boiling blood from your eyes at a creature within range. You take 1d6 necrotic damage and make a ranged spell attack against the target. If the attack hits, the target takes 2d10 fire damage plus 2d8 psychic damage.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b>When you cast this spell using a spell slot of 3rd level or higher, the fire damage increases by 1d10 for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">blood</set>
+			<set name="level">2</set>
+			<set name="school" addition="blood">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- BLOODY HANDS  -->
+	<element name="Bloody Hands" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLOODY_HANDS">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You cause the hands (or other appropriate body parts, such as claws or tentacles) of a creature within range to bleed profusely. The target must succeed on a Constitution saving throw or take 1 necrotic damage each round and suffer disadvantage on all melee and ranged attack rolls that require the use of its hands for the spell’s duration.</p>
+			<p class="indent">Casting any spell that has somatic or material components while under the influence of this spell requires a DC 10 Constitution saving throw. On a failed save, the spell is not cast but it is not lost; the casting can be attempted again in the next round.</p>
+		</description>
+		<setters>
+			<set name="keywords">blood</set>
+			<set name="level">1</set>
+			<set name="school" addition="blood">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- BLOODY SMITE  -->
+	<element name="Bloody Smite" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLOODY_SMITE">
+		<supports>Cleric,Druid,Ranger,Wizard</supports>
+		<description>
+			<p>The next time during the spell’s duration that you hit a creature with a melee weapon attack, your weapon pulses with a dull red light, and the attack deals an extra 1d6 necrotic damage to the target. Until the spell ends, the target must make a Constitution saving throw at the start of each of its turns. On a failed save, it takes 1d6 necrotic damage, it bleeds profusely from the mouth, and it can’t speak intelligibly or cast spells that have a verbal component. On a successful save, the spell ends. If the target or an ally within 5 feet of it uses an action to tend the wound and makes a successful Wisdom (Medicine) check against your spell save DC, or if the target receives magical healing, the spell ends.</p>
+		</description>
+		<setters>
+			<set name="keywords">blood</set>
+			<set name="level">1</set>
+			<set name="school" addition="blood">Necromancy</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- BLOOM  -->
+	<element name="Bloom" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLOOM">
+		<supports>Cleric,Druid,Wizard</supports>
+		<description>
+			<p>You plant a silver acorn in solid ground and spend an hour chanting a litany of praises to the natural world, after which the land within 1 mile of the acorn becomes extremely fertile, regardless of its previous state. Any seeds planted in the area grow at twice the natural rate. Food harvested regrows within a week. After one year, the land slowly reverts to its normal fertility, unable to stave off the march of nature. </p>
+			<p class="indent">Choose one of the following effects, which appears and grows immediately: </p>
+			<p class="indent">	  A field planted with vegetables of your choice, ready for harvest. </p>
+			<p class="indent">	  A thick forest of stout trees and ample undergrowth. </p>
+			<p class="indent">	  A grassland with wildflowers and fodder for grazing. </p>
+			<p class="indent">	  An orchard of fruit trees of your choice, growing in orderly rows and ready for harvest. </p>
+			<p class="indent">Living creatures that take a short rest within the area of a bloom spell receive the maximum hit points for Hit Dice expended. Bloom counters the effects of a desolation spell. </p>
+			<p class="indent"><b><i>Ritual Focus.</i></b> If you expend your ritual focus, the duration becomes permanent. Also, once you've expended your ritual focus this mental energy has been expended, a caster’s ritual focus can’t be used again until he or she finishes a short or long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">ritual</set>
+			<set name="level">8</set>
+			<set name="school" addition="ritual only">Conjuration</set>
+			<set name="time">1 hour</set>
+			<set name="range">1 mile</set>
+			<set name="duration">1 year</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a silver acorn worth 500 gp, which is consumed in the casting</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
+<!-- BOILING BLOOD -->
+	<element name="Boiling Blood" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BOILING_BLOOD">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You cause the blood within a creature’s body to boil with supernatural heat. Choose one creature that you can see within range that isn’t a construct or an undead. The target must make a Constitution saving throw. On a successful save, it takes 2d6 fire damage and the spell ends. On a failed save, the creature takes 4d6 fire damage and is blinded. At the end of each of its turns, the target can make another Constitution saving throw. On a success, the spell ends. On a failure, the creature takes an additional 2d6 fire damage and remains blinded.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b>When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th. The creatures must be within 30 feet of each other when you target them.</p>
+		</description>
+		<setters>
+			<set name="keywords">blood</set>
+			<set name="level">4</set>
+			<set name="school" addition="blood">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a vial of blood</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- BOILING OIL --> 
+	<element name="Boiling Oil" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BOILING_OIL">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>You conjure a shallow, 15-foot-radius pool of boiling oil centered on a point within range. The pool is difficult terrain, and any creature that enters the pool or starts its turn there must make a Dexterity saving throw. On a failed save, the creature takes 3d8 fire damage and falls prone. On a successful save, a creature takes half as much damage and doesn’t fall prone. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">alkemancy</set>
+			<set name="level">2</set>
+			<set name="school" addition="alkemancy">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a vial of oil</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- BOREAS’S BREATH  -->
+	<element name="Boreas' Breath" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BOREAS_BREATH">
+		<supports>Cleric,Druid,Ranger,Wizard</supports>
+		<description>
+			<p>You freeze standing water in a 20-foot cube or running water in a 10-foot cube centered on you. The water turns to solid ice. The surface becomes difficult terrain, and any creature that ends its turn on the ice must make a successful DC 10 Dexterity saving throw or fall prone. </p>
+			<p class="indent">Creatures that are partially submerged in the water when it freezes become restrained. While restrained in this way, a creature takes 1d6 cold damage at the end of its turn. It can break free by using an action to make a successful Strength check against your spell save DC. </p>
+			<p class="indent">Creatures that are fully submerged in the water when it freezes become incapacitated and cannot breathe. While incapacitated in this way, a creature takes 2d6 cold damage at the end of its turn. A trapped creature makes a DC 20 Strength saving throw after taking this damage at the end of its turn, breaking free from the ice on a success. </p>
+			<p class="indent">The ice has AC 10 and 15 hit points. It is vulnerable to fire damage, has resistance to nonmagical slashing and piercing damage, and is immune to cold, necrotic, poison, psychic, and thunder damage. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the size of the cube increases by 10 feet for each slot level above 2nd. </p>
+		</description>
+		<setters>
+			<set name="keywords">winter,ritual</set>
+			<set name="level">2</set>
+			<set name="school" addition="winter">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
+<!-- BOTTLED ARCANA --> 
+	<element name="Bottled Arcana" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BOTTLED_ARCANA">
+		<supports>Wizard</supports>
+		<description>
+			<p>By touching an empty, stoppered glass container such as a vial or flask, you magically enable it to hold a single spell. To be captured, the spell must be cast within 1 round of casting bottled arcana and it must be intentionally cast into the container. The container can hold one spell of 3rd level or lower. The spell can be held in the container for as much as 24 hours, after which the container reverts to a mundane vessel and any magic inside it dissipates harmlessly. </p>
+			<p class="indent">As an action, any creature can unstop the container, thereby releasing the spell. If the spell has a range of self, the creature opening the container is affected; otherwise, the creature opening the container designates the target according to the captured spell’s description. If a creature opens the container unwittingly (not knowing that the container holds a spell), the spell targets the creature opening the container or is centered on its space instead (whichever is more appropriate). Dispel magic cast on the container targets bottled arcana, not the spell inside. If bottled arcana is dispelled, the container becomes mundane and the spell inside dissipates harmlessly. </p>
+			<p class="indent">Until the spell in the container is released, its caster can’t regain the spell slot used to cast that spell. Once the spell is released, its caster regains the use of that slot normally. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th level or higher, the level of the spell the container can hold increases by one for every slot level above 5th. </p>
+		</description>
+		<setters>
+			<set name="keywords">alkemancy</set>
+			<set name="level">5</set>
+			<set name="school" addition="alkemancy">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">up to 24 hours</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an empty glass container</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- BOTTOMLESS STOMACH --> 
+	<element name="Bottomless Stomach" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BOTTOMLESS_STOMACH">
+		<supports>Artificer,Wizard</supports>
+		<description>
+			<p>When you cast this spell, you gain the ability to consume dangerous substances and contain them in an extradimensional reservoir in your stomach. The spell allows you to swallow most liquids, such as acids, alcohol, poison, and even quicksilver, and hold them safely in your stomach. You are unaffected by swallowing the substance, but the spell doesn’t give you resistance or immunity to the substance in general; for example, you could safely drink a bucket of a black dragon’s acidic spittle, but you’d still be burned if you were caught in the dragon’s breath attack or if that bucket of acid were dumped over your head. </p>
+			<p class="indent">The spell allows you to store up to 10 gallons of liquid at one time. The liquid doesn’t need to all be of the same type, and different types don’t mix while in your stomach. Any liquid in excess of 10 gallons has its normal effect when you try to swallow it. </p>
+			<p class="indent">At any time before you stop concentrating on the spell, you can regurgitate up to 1 gallon of liquid stored in your stomach as a bonus action. The liquid is vomited into an adjacent 5-foot square. A target in that square must succeed on a DC 15 Dexterity saving throw or be affected by the liquid. The GM determines the exact effect based on the type of liquid regurgitated, using 1d6 damage of the appropriate type as the baseline. </p>
+			<p class="indent">When you stop concentrating on the spell, its duration expires, or it’s dispelled, the extradimensional reservoir and the liquid it contains cease to exist. </p>
+		</description>
+		<setters>
+			<set name="keywords">alkemancy</set>
+			<set name="level">1</set>
+			<set name="school" addition="alkemancy">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- BREATHTAKING WIND  -->
+	<element name="Breathtaking Wind" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BREATHTAKING_WIND">
+		<supports>Druid,Ranger,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You target a creature with a blast of wintry air. That creature must make a successful Constitution saving throw or become unable to speak or cast spells with a vocal component for the duration of the spell.</p>
+		</description>
+		<setters>
+			<set name="keywords">winter</set>
+			<set name="level">1</set>
+			<set name="school" addition="winter">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- BRIMSTONE INFUSION --> 
+	<element name="Brimstone Infusion" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BRIMSTONE_INFUSION">
+		<supports>Artificer,Wizard</supports>
+		<description>
+			<p>You infuse an ordinary flask of alchemist’s fire with magical brimstone. While so enchanted, the alchemist’s fire can be thrown 40 feet instead of 20, and it does 2d6 fire damage instead of 1d4. The Dexterity saving throw to extinguish the flames uses your spell save DC instead of DC 10. Infused alchemist’s fire returns to its normal properties after 24 hours.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">24 hours</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a flask of alchemist's fire and 5 gp worth of brimstone</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- BRITTLING  -->
+	<element name="Brittling" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BRITTLING">
+		<supports>Cleric,Druid,Wizard</supports>
+		<description>
+			<p>This spell uses biting cold to make a metal or stone object you touch become brittle and more easily shattered. The object’s hit points are reduced by a number equal to your level as a spellcaster, and Strength checks to shatter or break the object are made with advantage if they occur within 1 minute of the spell’s casting. If the object isn’t shattered during this time, it reverts to the state it was in before the spell was cast.</p>
+		</description>
+		<setters>
+			<set name="keywords">winter</set>
+			<set name="level">4</set>
+			<set name="school" addition="winter">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an icicle</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- BURNING RADIANCE  -->
+	<element name="Burning Radiance" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BURNING_RADIANCE">
+		<supports>Cleric,Wizard</supports>
+		<description>
+			<p>A line of light 60 feet long and 5 feet wide emanates from you in a direction of your choice. Each creature in the line must make a Dexterity saving throw. On a failed save, a creature takes 10d8 radiant damage and catches fire; until someone takes an action to douse the fire, the creature takes 1d10 fire damage at the start of each of its turns. A successful saving throw halves the damage and prevents a creature from catching fire. </p>
+			<p class="indent">The burning radiance ignites flammable objects in the area that aren’t being worn or carried.</p>
+		</description>
+		<setters>
+			<set name="keywords">illumination</set>
+			<set name="level">6</set>
+			<set name="school" addition="illumination">Evocation</set>
+			<set name="time">1 1 action</set>
+			<set name="range">Self (60 ft. line)</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+</elements>

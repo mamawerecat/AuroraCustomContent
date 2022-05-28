@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Deep Magic Spells - H</name>
+        <update version="0.0.1">
+            <file name="h-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/h-spells.xml" />
+        </update>
+    </info>    
+
+
+<!-- HIDE IN ONE’S SHADOW  --> 
+	<element name="Hide in One's Shadow" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_HIDE_IN_ONES_SHADOW">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>When you touch a willing creature with a piece of charcoal while casting this spell, the target and everything it carries blends into and becomes part of the target’s shadow, which remains discernible, although its body seems to disappear. The shadow is incorporeal, has no weight, and is immune to all but psychic and radiant damage. The target remains aware of its surroundings and can move, but only as a shadow could move—flowing along surfaces as if the creature were moving normally. The creature can step out of the shadow at will, resuming its physical shape in the shadow’s space and ending the spell. </p>
+			<p class="indent">This spell cannot be cast in an area devoid of light, where a shadow would not normally appear. Even a faint light source, such as moonlight or starlight, is sufficient. If that light source is removed, or if the shadow is flooded with light in such a way that the physical creature wouldn’t cast a shadow, the spell ends and the creature reappears in the shadow’s space.</p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">4</set>
+			<set name="school" addition="shadow">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">3 hours</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">charcoal</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- HOARFROST  -->
+	<element name="Hoarfrost" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_HOARFROST">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>A melee weapon you are holding is imbued with cold. For the duration, a rime of frost covers the weapon and light vapor rises from it if the temperature is above freezing. The weapon becomes magical and deals an extra 1d4 cold damage on a successful hit. The spell ends after 1 minute, or earlier if you make a successful attack with the weapon or let go of it. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> The spell’s damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).</p>
+		</description>
+		<setters>
+			<set name="keywords">ring</set>
+			<set name="level">0</set>
+			<set name="school" addition="ring">Evocation</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Touch</set>
+			<set name="duration">1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a melee weapon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+</elements>

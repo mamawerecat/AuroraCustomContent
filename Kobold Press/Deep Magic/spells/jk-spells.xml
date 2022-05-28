@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Deep Magic Spells - J-K</name>
+        <update version="0.0.1">
+            <file name="jk-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/jk-spells.xml" />
+        </update>
+    </info>
+    
+    
+<!-- KOBOLD’S FURY --> 
+	<element name="Kobold's Fury" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_KOBOLDS_FURY">
+		<supports>Bard,Cleric,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>Your touch infuses the rage of a threatened kobold into the target. The target has advantage on melee weapon attacks until the end of its next turn. In addition, its next successful melee weapon attack against a creature larger than itself does an additional 2d8 damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">dragon</set>
+			<set name="level">1</set>
+			<set name="school" addition="dragon">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">1 round</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a kobold scale</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>  
+
+</elements>

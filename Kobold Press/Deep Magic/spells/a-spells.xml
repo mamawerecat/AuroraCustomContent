@@ -143,12 +143,27 @@
 		</setters>
 	</element>
 
-<!-- ACUMEN   (bard, cleric, druid, sorcerer, wizard) -->
-    Casting Time: 1 action 
-    Range: Touch 
-    Components: V, S 
-    Duration: Concentration, up to 1 minute 
-    You touch a willing creature. Once before the spell ends, the target can roll a d6 and add the result to one Wisdom check of its choice. It can roll the die before or after making the check. The spell then ends.
+<!-- ACUMEN -->
+    <element name="Acumen" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ACUMEN">
+		<supports>Bard,Cleric,Druid,Sorcerer,Wizard</supports>
+		<description>
+			<p>You touch a willing creature. Once before the spell ends, the target can roll a d6 and add the result to one Wisdom check of its choice. It can roll the die before or after making the check. The spell then ends.</p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">0</set>
+			<set name="school" addition="shadow">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 <!-- ADJUST POSITION  -->
     1st-level transmutation 

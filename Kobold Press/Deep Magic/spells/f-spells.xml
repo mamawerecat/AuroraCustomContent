@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Deep Magic Spells - F</name>
+        <update version="0.0.1">
+            <file name="f-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/f-spells.xml" />
+        </update>
+    </info>
+
+<!-- FIRE DRAGON’S FURY --> 
+	<element name="Fire Dragon'S Fury" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_FIRE_DRAGONS_FURY">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>You take on some of the physical characteristics and abilities of the fire dragon, growing protective scales, wings, and claws. Until the spell ends, your AC can’t be less than 16, regardless of what kind of armor you are wearing. You can take two actions on your turn to attack with your claws, dealing 1d6 slashing damage on a hit. You are resistant to fire. Up to three times while the spell is active, as an action, you can breathe a 20-foot cone of flames, dealing 6d8 fire damage to all creatures in the cone. A creature that succeeds on a Dexterity saving throw takes half as much damage from your breath weapon. Finally, the wings grant you a flying speed of 40 feet.</p>
+		</description>
+		<setters>
+			<set name="keywords">dragon</set>
+			<set name="level">6</set>
+			<set name="school" addition="dragon">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- FLICKERING FATE --> 	
+	<element name="Flickering Fate" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_FLICKERING_FATE">
+		<supports>Wizard</supports>
+		<description>
+			<p>You or a creature that you touch can see a few seconds into the future. When the spell is cast, each other creature within 30 feet of the target must make a Wisdom saving throw. Those that fail must declare, in initiative order, what their next action will be. The target of the spell declares his or her action last, after hearing what all other creatures will do. Each creature that declared an action must follow its declaration as closely as possible when its turn comes. For the duration of the spell, the target has advantage on attack rolls, ability checks, and saving throws, and creatures that declared their actions have disadvantage on attack rolls against the target.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporal,time magic</set>
+			<set name="level">4</set>
+			<set name="school" addition="temporal">Divination</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">1 round</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- FLUCTUATING ALIGNMENT --> 		
+	<element name="Fluctating Alignment" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_FLUCTUATING_ALIGNMENT">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>You channel the force of chaos to taint your target’s mind. A target that gets a failure on a Wisdom saving throw must roll 1d20 and consult the Alignment Fluctuation table to find its new alignment, and it must roll again after every minute of the spell’s duration. The target’s alignment stops fluctuating and returns to normal when the spell ends. These changes do not make the affected creature friendly or hostile toward the caster, but they can cause creatures to behave in unpredictable ways.</p>
+			<table>
+				<thead>
+					<tr><td>d20</td><td>Alignment</td></tr>
+				</thead>
+				<tr><td>1–2</td><td>Chaotic good</td></tr>
+				<tr><td>3–4</td><td>Chaotic neutral</td></tr>
+				<tr><td>5–7</td><td>Chaotic evil</td></tr>
+				<tr><td>8–9</td><td>Neutral evil</td></tr>
+				<tr><td>10–11</td><td>Lawful evil</td></tr>
+				<tr><td>12–14</td><td>Lawful good</td></tr>
+				<tr><td>15–16</td><td>Lawful neutral</td></tr>
+				<tr><td>17–18</td><td>Neutral good</td></tr>
+				<tr><td>19–20</td><td>Neutral</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">4</set>
+			<set name="school" addition="chaos">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">120 ft.</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- FLURRY  -->
+	<element name="Flurry" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_FLURRY">
+		<supports>Cleric,Druid,Ranger,Warlock</supports>
+		<description>
+			<p>A flurry of snow surrounds you and extends to a 5-foot radius around you. While it lasts, anyone trying to see into, out of, or through the affected area (including you) has disadvantage on Wisdom (Perception) checks and attack rolls.</p>
+		</description>
+		<setters>
+			<set name="keywords">winter</set>
+			<set name="level">1</set>
+			<set name="school" addition="winter">Transmutation</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Self</set>
+			<set name="duration">1 round</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a fleck of quartz</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- FORETELL DISTRACTION --> 	
+	<element name="Foretell Distraction" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_FORETELL_DISTRACTION">
+		<supports>Bard,Cleric,Ranger,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>Thanks to your foreknowledge, you know exactly when your foe will take his or her eyes off you. Casting this spell has the same effect as making a successful Dexterity (Stealth) check, provided cover or concealment is available within 10 feet of you. It doesn’t matter whether enemies can see you when you cast the spell; they glance away at just the right moment. You can move up to 10 feet as part of casting the spell, provided you’re able to move (not restrained or grappled or reduced to a speed of less than 10 feet for any other reason). This move doesn’t count as part of your normal movement. After the spell is cast, you must be in a position where you can remain hidden: a lightly obscured space, for example, or a space where you have total cover. Otherwise, enemies see you again immediately and you’re not hidden.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporal,bonus action</set>
+			<set name="level">1</set>
+			<set name="school" addition="temporal">Divination</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Self</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- FREEZE BLOOD  -->
+	<element name="Freeze Blood" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_FREEZE_BLOOD">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>When you cast freeze blood as a successful melee spell attack against a living creature with a circulatory system, the creature’s blood freezes. For the spell’s duration, the affected creature’s speed is halved and it takes 2d6 cold damage at the start of each of its turns. If the creature takes bludgeoning damage from a critical hit, the attack’s damage dice are rolled three times instead of twice. At the end of each of its turns, the creature can make a Constitution saving throw, ending the effect on a success.</p>
+		</description>
+		<setters>
+			<set name="keywords">winter</set>
+			<set name="level">3</set>
+			<set name="school" addition="winter">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- FREEZE POTION  -->
+	<element name="Freeze Potion" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_FREEZE_POTION">
+		<supports>Cleric,Druid,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>A blue spark flies from your hand and strikes a potion vial, drinking horn, waterskin, or similar container, instantly freezing the contents. The substance melts normally thereafter and is not otherwise harmed, but it can’t be consumed while it’s frozen. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the range increases by 5 feet for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords">winter</set>
+			<set name="level">1</set>
+			<set name="school" addition="winter">Transmutation</set>
+			<set name="time">1 reaction, which you take when you see a creature about to consume a liquid</set>
+			<set name="range">25 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+<!-- FRENZIED BOLT  -->
+	<element name="Frenzied Bolt" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_FRENZIED_BOLT">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>You direct a bolt of rainbow colors toward a creature of your choice within range. If the bolt hits, the target takes 3d8 damage, of a type determined by rolling on the Random Damage Type table. If your attack roll (not the adjusted result) was odd, the bolt leaps to a new target of your choice within range that has not already been targeted by frenzied bolt, requiring a new spell attack roll to hit. The bolt continues leaping to new targets until you roll an even number on your spell attack roll, miss a target, or run out of potential targets. You and your allies are legal targets for this spell, if you are particularly lucky—or unlucky. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, you create an additional bolt for each slot level above 2nd. Each potential target can be hit only once by each casting of the spell, not once per bolt. </p>
+			<table>
+				<thead>
+					<tr><td>d10</td><td>Damage Type</td></tr>
+				</thead>
+				<tr><td>1</td><td>Acid</td></tr>
+				<tr><td>2</td><td>Cold</td></tr>
+				<tr><td>3</td><td>Fire</td></tr>
+				<tr><td>4</td><td>Force</td></tr>
+				<tr><td>5</td><td>Lightning</td></tr>
+				<tr><td>6</td><td>Necrotic</td></tr>
+				<tr><td>7</td><td>Poison</td></tr>
+				<tr><td>8</td><td>Psychic</td></tr>
+				<tr><td>9</td><td>Radiant</td></tr>
+				<tr><td>10</td><td>Thunder</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">2</set>
+			<set name="school" addition="chaos">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">120 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- FROSTBITE  -->
+	<element name="Frostbite" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_FROSTBITE">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>Biting cold settles onto a creature you can see. The creature must make a Constitution saving throw. On a failed save, the creature takes 4d8 cold damage. In addition, for the duration of the spell, the creature’s speed is halved, it has disadvantage on attack rolls and ability checks, and it takes another 4d8 cold damage at the start of each of its turns. </p>
+			<p class="indent">An affected creature can repeat the saving throw at the start of each of its turns. The effect ends when the creature makes its third successful save. </p>
+			<p class="indent">Creatures that are immune to cold damage are unaffected by frostbite. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th level or higher, you can target two additional creatures for each slot level above 5th</p>
+		</description>
+		<setters>
+			<set name="keywords">winter</set>
+			<set name="level">5</set>
+			<set name="school" addition="winter">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">90 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a strip of dried flesh that has been frozen at least once</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- FROSTBITTEN FINGERS  -->
+	<element name="Frostbitten Fingers" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_FROSTBITTEN_FINGERS">
+		<supports>Druid,Ranger,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You fire a ray of intense cold that instantly induces frostbite. With a successful ranged spell attack, this spell causes one of the target’s hands to lose sensation. When the spell is cast, the target must make a successful Dexterity saving throw to maintain its grip on any object with the affected hand. The saving throw must be repeated every time the target tries to manipulate, wield, or pick up an item with the affected hand. Additionally, the target has disadvantage on Dexterity checks or Strength checks that require the use of both hands. </p>
+			<p class="indent">After every 10 minutes of being affected by frostbitten fingers, the target must make a successful Constitution saving throw, or take 1d6 cold damage and lose one of the fingers on the affected hand, beginning with the pinkie.</p>
+		</description>
+		<setters>
+			<set name="keywords">winter</set>
+			<set name="level">3</set>
+			<set name="school" addition="winter">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- FUSILLADE OF ICE  -->
+	<element name="Fusillade of Ice" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_FUSILLADE_OF_ICE">
+		<supports>Ranger,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You unleash a spray of razor-sharp ice shards. Each creature in the 30-foot cone takes 4d6 cold damage and 3d6 piercing damage, or half as much damage with a successful Dexterity saving throw. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, the damage increases by your choice of 1d6 cold damage or 1d6 piercing damage for each slot level above 4th. You can make a different choice (cold damage or piercing damage) for each slot level above 4th. Casting this spell with a spell slot of 6th level or higher increases the range to a 60-foot cone.</p>
+		</description>
+		<setters>
+			<set name="keywords">winter</set>
+			<set name="level">4</set>
+			<set name="school" addition="winter">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (30 ft. cone)</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a dagger shaped like an icicle</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>     
+    
+</elements>

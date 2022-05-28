@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Deep Magic Spells - U-W</name>
+        <update version="0.0.1">
+            <file name="uvw-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/uvw-spells.xml" />
+        </update>
+    </info>
+ 
+<!-- UMBRAL STORM  -->
+	<element name="Umbral Storm" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_UMBRAL_STORM">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You create a channel to a region of the Plane of Shadow that is inimical to life and order. A storm of dark, raging entropy fills a 20-foot-radius sphere centered on a point you can see within range. Any creature that starts its turn in the storm or enters it for the first time on its turn takes 6d8 necrotic damage and gains one level of exhaustion; a successful Constitution saving throw halves the damage and prevents the exhaustion.</p>
+			<p class="indent">You can use a bonus action on your turn to move the area of the storm 30 feet in any direction.</p>
+		</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">9</set>
+			<set name="school" addition="shadow">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">120 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- UNCONTROLLABLE TRANSFORMATION  -->
+	<element name="Uncontrollable Transformation" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_UNCONTROLLABLE_TRANSFORMATION">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>You infuse your body with raw chaos and will it to adopt a helpful mutation. Roll a d10 and consult the Uncontrollable Transformation table below to determine what mutation occurs. You can try to control the shifting of your body to gain a mutation you prefer, but doing so is taxing; you can roll a d10 twice and choose the result you prefer, but you gain one level of exhaustion. At the end of the spell, your body returns to its normal form. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 8th level or higher, you gain an additional mutation for each slot level above 7th. You gain one level of exhaustion for each mutation you try to control.</p>
+			<table>
+				<thead>
+					<tr><td>d10</td><td>Mutation</td></tr>
+				</thead>
+				<tr><td>1</td><td>A spindly third arm sprouts from your shoulder. As a bonus action, you can use it to attack with a light weapon. You have advantage on Dexterity (Sleight of Hand) checks and any checks that require the manipulation of tools. </td></tr>
+				<tr><td>2</td><td>Your skin is covered by rough scales that increase your AC by 1 and give you resistance to a random damage type (roll on the Damage Type table in the frenzied bolt spell description). </td></tr>
+				<tr><td>3</td><td>A puckered orifice grows on your back. You can forcefully expel air from it, granting you a flying speed of 30 feet. You must land at the end of your turn. In addition, as a bonus action, you can try to push a creature away with a blast of air. The target is pushed 5 feet away from you if it fails a Strength saving throw with a DC equal to 10 + your Constitution modifier. </td></tr>
+				<tr><td>4</td><td>A second face appears on the back of your head. You gain darkvision out to a range of 120 feet and advantage on sight based and scent-based Wisdom (Perception) checks. You become adept at carrying on conversations with yourself. </td></tr>
+				<tr><td>5</td><td>You grow gills that not only allow you to breathe underwater but also filter poison out of the air. You gain immunity to inhaled poisons. </td></tr>
+				<tr><td>6</td><td>Your hindquarters elongate, and you grow a second set of legs. Your base walking speed increases by 10 feet, and your carrying capacity becomes your Strength score multiplied by 20. </td></tr>
+				<tr><td>7</td><td>You become incorporeal and can move through other creatures and objects as if they were difficult terrain. You take 1d10 force damage if you end your turn inside an object. You can’t pick up or interact with physical objects that you weren’t carrying when you became incorporeal. </td></tr>
+				<tr><td>8</td><td>Your limbs elongate and flatten into prehensile paddles. You gain a swimming speed equal to your base walking speed and have advantage on Strength (Athletics) checks made to climb or swim. In addition, your unarmed strikes deal 1d6 bludgeoning damage. </td></tr>
+				<tr><td>9</td><td>Your head fills with a light gas and swells to four times its normal size, causing your hair to fall out. You have advantage on Intelligence and Wisdom ability checks and can levitate up to 5 feet above the ground. </td></tr>
+				<tr><td>10</td><td>You grow three sets of feathered wings that give you a flying speed equal to your walking speed and the ability to hover. </td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">7</set>
+			<set name="school" addition="chaos">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">the bill of platypus</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	
+<!-- UNDERMINE ARMOR  --> 
+	<element name="Undermine Armor" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_UNDERMINE_ARMOR">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>You unravel the bonds of reality that hold a suit of armor together. A target wearing armor must succeed on a Constitution saving throw or its armor softens to the consistency of candle wax, decreasing the target’s AC by 2. </p>
+			<p class="indent">Undermine armor has no effect on creatures that aren’t wearing armor. </p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">1</set>
+			<set name="school" addition="chaos">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- UNRULY ITEM  --> 
+	<element name="Unruly Item" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_UNRULY_ITEM">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>You animate an object in the possession of a creature within range, giving the object limited movement and a compulsion to thwart its possessor. The effect of the spell varies depending on the kind of object you affect. </p>
+			<p class="indent"><b><i>Weapon:</i></b> A weapon being wielded by a creature fights and twists, trying to free itself from the creature’s grasp. The creature must make a Dexterity saving throw. On a failed save, the creature has disadvantage on any attacks it makes in that round with the weapon. On a save that fails by 5 or more, the creature drops the weapon. </p>
+			<p class="indent"><b><i>Armor:</i></b> The creature’s armor shifts and moves, becoming noisy and uncomfortable. If the armor does not normally impart disadvantage on Dexterity (Stealth) checks, it does so while this spell is in effect. The creature wearing it must succeed on a Dexterity saving throw or take a 10-foot penalty to its speed and be unable to use the Dash action. </p>
+			<p class="indent"><b><i>Other Items:</i></b> The effects on other carried items can vary at the GM’s discretion. A potion might behave as a weapon, trying not to be drunk, falling to the ground and becoming ruined if the Dexterity save is failed by 5 or more. A backpack might try to empty itself, disgorging a random item each round on a failed save.</p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">1</set>
+			<set name="school" addition="chaos">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- UNSHACKLED MAGIC  -->
+	<element name="Unshackled Magic" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_UNSHACKLED_MAGIC">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>You designate a creature within range that has the Spellcasting or Innate Spellcasting special trait and imbue it with wild magic, causing it to lose control of its magical ability. If the target gets a failure on a Charisma saving throw, then on its next turn, it rolls randomly to select one of its available spells. The target then spontaneously casts that spell as an action. If the spell can be cast using a spell slot higher than its level, roll randomly to determine what slot is used to cast the spell. The target still determines factors such as the location of the spell’s area or which creatures it affects, as normal, but it is compelled to cast that particular spell at that particular time. </p>
+			<p class="indent">Each round while this spell remains in effect, the target makes another Charisma saving throw. On a successful save, it can act normally in that round, but the unshackled magic spell does not end.</p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">9</set>
+			<set name="school" addition="chaos">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">120 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- VINE TRESTLE  -->
+	<element name="Vine Trestle" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_VINE_TRESTLE">
+		<supports>Druid,Ranger,Wizard</supports>
+		<description>
+			<p>You cause a vine to sprout from the ground and crawl across a surface or rise into the air in a direction chosen by you. The vine must sprout from a solid surface (such as the ground or a wall), and it is strong enough to support 600 pounds of weight along its entire length. The vine collapses immediately if that 600-pound limit is exceeded. A vine that collapses from weight or damage instantly disintegrates. </p>
+			<p class="indent">The vine has many small shoots, so it can be climbed with a successful DC 5 Strength (Athletics) check. It has AC 8, hit points equal to 5 × your spellcasting level, and a damage threshold of 5. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the vine can support an additional 30 pounds, and its damage threshold increases by 1 for each slot level above 2nd. </p>
+			<p class="indent"><b><i>Ritual Focus.</i></b> If you expend your ritual focus, the vine is permanent until destroyed or dispelled. Also, once you've expended your ritual focus this mental energy has been expended, a caster’s ritual focus can’t be used again until he or she finishes a short or long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">ritual</set>
+			<set name="level">2</set>
+			<set name="school" addition="ritual only">Conjuration</set>
+			<set name="time">10 minutes</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a 1-inch piece of green vine that is consumed in the casting</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
+<!-- VITAL MARK  -->
+	<element name="Vital Mark" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_VITAL_MARK">
+		<supports>Cleric,Sorcerer,Wizard</supports>
+		<description>
+			<p>You mark an unattended magic item (including weapons and armor) with a clearly visible stain of your blood. The exact appearance of the bloodstain is up to you. The item’s magical abilities don’t function for anyone else as long as the bloodstain remains on it. For example, a +1 flaming longsword with a vital mark functions as a nonmagical longsword in the hands of anyone but the caster, but it still functions as a +1 flaming longsword for the caster who placed the bloodstain on it. A wand of magic missiles would be no more than a stick in the hands of anyone but the caster. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b>When you cast this spell using a spell slot of 4th level or higher on the same item for 28 consecutive days, the effect becomes permanent until dispelled.</p>
+		</description>
+		<setters>
+			<set name="keywords">blood</set>
+			<set name="level">3</set>
+			<set name="school" addition="blood">Transmutation</set>
+			<set name="time">10 minutes</set>
+			<set name="range">Touch</set>
+			<set name="duration">24 hrs</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
+<!-- WAFT  -->
+	<element name="Waft" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_WAFT">
+		<supports>Sorcerer</supports>
+		<description>
+			<p>This spell was first invented by dragon parents to assist their offspring when learning to fly. You gain a flying speed of 60 feet for 1 round. At the start of your next turn, you float rapidly down and land gently on a solid surface beneath you.</p>
+		</description>
+		<setters>
+			<set name="keywords">dragon</set>
+			<set name="level">1</set>
+			<set name="school" addition="dragon">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">1 round</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a topaz worth at least 10 gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- WALL OF TIME  -->
+	<element name="Wall of Time" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_WALL_OF_TIME">
+		<supports>Cleric,Sorcerer,Wizard</supports>
+		<description>
+			<p>You create a wall of shimmering, transparent blocks on a solid surface within range. You can make a straight wall up to 60 feet long, 20 feet high, and 1 foot thick, or a cylindrical wall up to 20 feet high, 1 foot thick, and 20 feet in diameter. Nonmagical ranged attacks that cross the wall vanish into the time stream with no other effect. Ranged spell attacks and ranged weapon attacks made with magic weapons that pass through the wall are made with disadvantage. A creature that intentionally enters or passes through the wall is affected as if it had just failed its initial saving throw against a slow spell.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporal,clockwork</set>
+			<set name="level">5</set>
+			<set name="school" addition="temporal, clockwork">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="range"> 120 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an hourglass</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>	
+
+<!-- WEAPON OF BLOOD  -->
+	<element name="Weapon of Blood" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_WEAPON_OF_BLOOD">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>When you cast this spell, you inflict 1d4 slashing damage on yourself that can’t be healed until after the blade created by this spell is destroyed or the spell ends. The trickling blood transforms into a dagger of red metal that functions as a +1 dagger.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b>When you cast this spell using a spell slot of 3rd to 5th level, the self-inflicted wound deals 3d4 slashing damage and the spell produces a +2 dagger. When you cast this spell using a spell slot of 6th to 8th level, the self-inflicted wound deals 6d4 slashing damage and the spell produces a +2 dagger of wounding. When you cast this spell using a 9th-level spell slot, the self-inflicted wound deals 9d4 slashing damage and the spell produces a +3 dagger of wounding.</p>
+		</description>
+		<setters>
+			<set name="keywords">blood</set>
+			<set name="level">1</set>
+			<set name="school" addition="blood">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pinch of iron shavings</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- WILD SHIELD  --> 
+	<element name="Wild Shield" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_WILD_SHIELD">
+		<supports>Bard,Wizard</supports>
+		<description>
+			<p>You surround yourself with the forces of chaos. Wild lights and strange sounds engulf you, making stealth impossible. While wild shield is active, you can use a reaction to repel a spell of 4th level or lower that targets you or whose area you are within. A repelled spell has no effect on you, but doing this causes the chance of a chaos magic surge as if you had cast a spell, with you considered the caster for any effect of the surge. </p>
+			<p class="indent">Wild shield ends when the duration expires or when it absorbs 4 levels of spells. If you try to repel a spell whose level exceeds the number of levels remaining, make an ability check using your spellcasting ability. The DC equals 10 + the spell’s level – the number of levels wild shield can still repel. If the check succeeds, the spell is repelled; if the check fails, the spell has its full effect. The chance of a chaos magic surge exists regardless of whether the spell is repelled. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, you can repel one additional spell level for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">4</set>
+			<set name="school" addition="chaos">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- WILD TRAJECTORY  -->
+	<element name="Wild Trajectory" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_WILD_TRAJECTORY">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>You create a 30-foot cube of magical instability that causes spell effects passing through it to diverge wildly from their original paths. When a spell with a visible or tangible manifestation (such as fireball, lightning bolt, or a ray or projectile such as magic missile or ray of frost) passes through the area, roll a d8. On a 1, the spell continues on its original path or toward its original target; on a 2, it diverts 45 degrees to the right; on a 3, it diverts 90 degrees to the right; on a 4, it diverts 135 degrees to the right; on a 5, it turns 180 degrees, back the way it came (striking the caster if it is a targeted spell); on a 6, the spell diverts 45 degrees to the left; on a 7, it diverts 90 degrees to the left; on an 8, it diverts 135 degrees to the left. </p>
+			<p class="indent">A spell that affects anything in its path, such as lightning bolt, continues to do so along its new trajectory, up to the limit of its range. A fireball spell will travel in the new direction up to the limit of its range before detonating. A targeted spell will strike the first viable target it encounters along its new trajectory.</p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">7</set>
+			<set name="school" addition="chaos">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">100 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- WINTERDARK  -->
+	<element name="Winterdark" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_WINDERDARK">
+		<supports>Druid,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>This spell invokes the deepest part of night on the winter solstice. You target a 40-foot-radius, 60-foot-high cylinder centered on a point within range, which is plunged into darkness and unbearable cold. Each creature in the area when you cast the spell and at the start of its turn must make a successful Constitution saving throw or take 1d6 cold damage and gain one level of exhaustion. Creatures immune to cold damage are also immune to the exhaustion effect, as are creatures wearing cold weather gear or otherwise adapted for a cold environment. </p>
+			<p class="indent">As a bonus action, you can move the center of the effect 20 feet.</p>
+		</description>
+		<setters>
+			<set name="keywords">winter</set>
+			<set name="level">6</set>
+			<set name="school" addition="winter">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">120 ft.</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- WINTER’S RADIANCE  -->
+	<element name="Winter's Radiance" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_WINTERS_RADIANCE">
+		<supports>Cleric,Druid,Sorcerer,Wizard</supports>
+		<description>
+			<p>When you cast this spell, the piercing rays of a day’s worth of sunlight reflecting off fresh snow blankets the area. A creature caught in the spell’s area must succeed on a Constitution saving throw or have disadvantage on ranged attacks and Wisdom (Perception) checks for the duration of the spell. In addition, an affected creature’s vision is hampered such that foes it targets are treated as having three-quarters cover.</p>
+		</description>
+		<setters>
+			<set name="keywords">winter</set>
+			<set name="level">6</set>
+			<set name="school" addition="winter">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">400 ft. (30 ft cube)</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a piece of polished glass</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- WINTRY GLIDE -->
+	<element name="Wintery Glide" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_WINTERY_GLIDE">
+		<supports>Druid,Ranger,Wizard</supports>
+		<description>
+			<p>Upon casting wintry glide, you can travel via ice or snow without crossing the intervening space. If you are adjacent to a mass of ice or snow, you can enter it by expending 5 feet of movement. By expending another 5 feet of movement, you can immediately exit from that mass at any point—within 500 feet—that’s part of the contiguous mass of ice or snow. When you enter the ice or snow, you instantly know the extent of the material within 500 feet. You must have at least 10 feet of movement available when you cast the spell, or it fails. </p>
+			<p class="indent">If the mass of ice or snow is destroyed while you are transiting it, you must make a successful Constitution saving throw against your spell save DC to avoid taking 4d6 bludgeoning damage and falling prone at the midpoint of a line between your entrance point and your intended exit point.</p>
+		</description>
+		<setters>
+			<set name="keywords">winter</set>
+			<set name="level">4</set>
+			<set name="school" addition="winter">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>  
+
+
+</elements>
