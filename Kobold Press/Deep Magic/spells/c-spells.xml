@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - C</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="c-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/c-spells.xml" />
         </update>
     </info>
@@ -123,7 +123,30 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	
+
+<!-- CAUSTIC WASTE -->
+	<element name="Caustic Waste" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CAUSTIC_WASTE">
+		<supports>Cleric,Druid,Sorcerer,Wizard</supports>
+		<description>
+			<p>You create either a rectangular pool of acid 50 feet long, 10 feet wide, and 5 feet deep, or a circular pool of acid 20 feet in diameter and 3 feet deep, in an open space you can see within range. Each creature in the spell’s area when the spell is cast takes 4d10 acid damage, or half as much damage with a successful Dexterity saving throw. A creature that enters the area on its turn or ends its turn in the area takes 4d10 acid damage, or half as much damage with a successful Dexterity saving throw. A creature can take this damage only once per turn.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d10 for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords">apocalypse</set>
+			<set name="level">4</set>
+			<set name="school" addition="apocalypse">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">120 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a vial of poison, acid, or other caustic substance</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 <!-- CAVE DRAGON’S DOMINANCE  -->
 	<element name="Cave Dragon's Dominanace" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CAVE_DRAGONS_DOMINANCE">
 		<supports>Sorcerer,Wizard</supports>

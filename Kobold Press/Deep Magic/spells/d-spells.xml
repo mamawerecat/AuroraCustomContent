@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - D</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="d-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/d-spells.xml" />
         </update>
     </info>
@@ -209,6 +209,29 @@
 			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent">component</set>
 			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- DETONATE CORPSES -->
+	<element name="Detonate Corpses" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_DETONATE_CORPSES">
+		<supports>Cleric,Warlock,Wizard</supports>
+		<description>
+			<p>You cause up to five Small or Medium corpses that you can see within range to explode in a hail of bone shards. Each creature within 20 feet of a detonated corpse takes 4d10 piercing damage, or half as much damage with a successful Dexterity saving throw.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d10 for each slot level above 5th.</p>
+		</description>
+		<setters>
+			<set name="keywords">apocalypse</set>
+			<set name="level">5</set>
+			<set name="school" addition="apocalypse">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">90 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a gilded bone or a fossil worth at least 100 gp</set>
+			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
 	</element>

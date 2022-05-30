@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - S</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="s-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/s-spells.xml" />
         </update>
     </info>
@@ -213,6 +213,38 @@
 			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent">component</set>
 			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- SERVANT OF DOOM  -->
+	<element name="Servant of Doom" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SERVANT_OF_DOOM">
+		<supports>Cleric,Druid,Sorcerer,Warlock</supports>
+		<description>
+			<p>A force of destruction gifts you a portion of its power. Each time you cast this spell, you choose whether to assume the form of the emissary or the form of the envoy for the duration.</p>
+			<p class="indent"><b><i>Emissary.</i></b> The blood in your veins shines through your skin, extra eyes open in your flesh, and you gain the following benefits:</p>
+			<p class="indent">	•You gain a flying speed equal to your walking speed and the ability to hover, though you must stay within 5 feet of the ground.</p>
+			<p class="indent">	•You gain truesight out to a range of 60 feet.</p>
+			<p class="indent">	•Creatures have disadvantage on Wisdom saving throws against your spells and abilities.</p>
+			<p class="indent">	•You have advantage on Intelligence- or Wisdom-based attack rolls.</p>
+			<p class="indent"><b><i>Envoy.</i></b> Your skin becomes stonelike, bony growths erupt across your body, and you gain the following benefits:</p>
+			<p class="indent">	•You ignore difficult terrain for movement purposes.</p>
+			<p class="indent">	•You can move through walls and other solid barriers if you succeed on a Strength check you make just before moving up to the barrier. The DC equals 10 + twice the barrier’s thickness in feet.</p>
+			<p class="indent">	•You have advantage on Strength- or Dexterity-based attack rolls.</p>
+			<p class="indent">	•Your melee weapon attacks deal an extra 1d6 slashing damage on a hit.</p>
+		</description>
+		<setters>
+			<set name="keywords">apocalypse</set>
+			<set name="level">4</set>
+			<set name="school" addition="apocalypse">Transmutation</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
@@ -797,6 +829,29 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
+
+<!-- SOULEATER  --> 
+	<element name="Souleater" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SOULEATER">
+		<supports>Cleric,Warlock,Wizard</supports>
+		<description>
+			<p>You instill a hunger for the life force of others into a weapon you touch. Until the spell ends, the weapon emits dim light in a 30-foot radius. In addition, weapon attacks made with it deal an extra 2d8 necrotic damage on a hit. If the weapon isn’t already a magic weapon, it becomes a magic weapon with a +1 bonus to attack and damage rolls.</p>
+			<p class="indent">As a bonus action, you can dismiss this spell and cause the weapon to emit a burst of radiance. Each creature of your choice that you can see within 30 feet of you must make a Constitution saving throw. On a failed save, the creature takes 2d8 necrotic damage and you heal half that many hit points. On a successful save, the creature takes half as much damage and you do not heal.</p>
+		</description>
+		<setters>
+			<set name="keywords">apocalypse</set>
+			<set name="level">5</set>
+			<set name="school" addition="apocalypse">Evocation</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
 
 <!-- STANCH  -->
 	<element name="Stanch" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_STANCH">

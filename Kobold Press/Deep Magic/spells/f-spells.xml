@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - F</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="f-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/f-spells.xml" />
         </update>
     </info>
@@ -109,6 +109,30 @@
 		</setters>
 	</element> 
 
+<!-- FORCEFUL REPURPOSING  -->
+	<element name="Forceful Repurposing" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_FORCEFUL_REPURPOSING">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You attempt to hijack a spell being cast and redirect it to serve your purpose. If the spell is being cast with a spell slot of 3rd level or lower, you choose the target or targets for the spell instead of its caster. If the spell is being cast with a spell slot of 4th level or higher, make an ability check using your spellcasting ability against a DC of 12 + the spell’s level. On a successful check, you choose the target or targets for the spell.</p>
+			<p class="indent">Your targets must be valid targets for the spell based on the caster’s ability and the range of the spell, but using your distinctions for friendly and hostile creatures. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, it works automatically (no check required) against a spell being cast that uses a spell slot of the same level or a lower one.</p>
+		</description>
+		<setters>
+			<set name="keywords">apocalypse</set>
+			<set name="level">3</set>
+			<set name="school" addition="apocalypse">Abjuration</set>
+			<set name="time">1 reaction, which you take when you see a creature within range casting a spell</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 <!-- FORETELL DISTRACTION --> 	
 	<element name="Foretell Distraction" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_FORETELL_DISTRACTION">
 		<supports>Bard,Cleric,Ranger,Sorcerer,Warlock,Wizard</supports>
@@ -126,6 +150,29 @@
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- FRAILFORM  -->
+	<element name="Frailform" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_FRAILFORM">
+		<supports>Bard,Druid,Warlock,Wizard</supports>
+		<description>
+			<p>You blast a creature within range with a beam of pure, entropic energy that ages it rapidly. The target takes 4d6 necrotic damage and must make a successful Constitution saving throw; on a failure, its Strength and Dexterity are both reduced to 1. While its Strength and Dexterity are reduced in this way, the creature can’t hold weapons weighing more than 3 pounds, its speed is halved, and it can’t take reactions. The creature’s Armor Class and attack rolls are modified to account for its reduced attributes. The creature can cast spells normally.</p>
+			<p class="indent">An affected creature can repeat the saving throw after it finishes a long rest, ending the effect on a success. The effect can also be ended by greater restoration, wish, or comparable magic.</p>
+		</description>
+		<setters>
+			<set name="keywords">apocalypse</set>
+			<set name="level">8</set>
+			<set name="school" addition="apocalypse">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">120 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a mummified heart encased in amber, worth at least 1,500 gp</set>
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>

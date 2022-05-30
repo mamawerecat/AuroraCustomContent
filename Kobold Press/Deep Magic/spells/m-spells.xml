@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - M</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="m-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/m-spells.xml" />
         </update>
     </info>
@@ -27,6 +27,30 @@
 			<set name="materialComponent">component</set>
 			<set name="isConcentration">false</set>
 			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
+<!-- MAGMA SPRAY --> 
+	<element name="Magma Spray" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_MAGMA_SPRAY">
+		<supports>Druid,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>A 5-foot-diameter, 5-foot-tall cylindrical fountain of magma erupts from the ground in a space of your choice within range. A creature in that space takes 3d8 fire damage, or half as much damage with a successful Dexterity saving throw. A creature that enters the area on its turn or ends its turn there also takes 3d8 fire damage, or half as much damage with a successful Dexterity saving throw. A creature can take this damage only once per turn.</p>
+			<p class="indent">A creature whose hit points are reduced to 0 by this damage is killed immediately, and its body burns to ash.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">apocalypse</set>
+			<set name="level">2</set>
+			<set name="school" addition="apocalypse">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">40 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pinch of sulfur or a piece of brimstone</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
 		</setters>
 	</element>
 

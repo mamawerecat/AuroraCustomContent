@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - P</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="p-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/p-spells.xml" />
         </update>
     </info>
@@ -77,6 +77,52 @@
 		</setters>
 	</element> 
 
+<!-- PRAYER OF RESOLVE  -->
+	<element name="Prayer of Resolve" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_PRAYER_OF_RESOLVE">
+		<supports>Cleric,Paladin</supports>
+		<description>
+			<p>You remind your allies of the perseverance that will be required of them. Each of up to six creatures you can see within range gains temporary hit points equal to 1d10 + your spellcasting ability modifier. This spell has no effect on undead or constructs. The temporary hit points last for 1 hour. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the temporary hit points gained by each creature increase by 1d10 for each slot level above 2nd. </p>
+		</description>
+		<setters>
+			<set name="keywords">apocalypse</set>
+			<set name="level">2</set>
+			<set name="school" addition="apocalypse">Evocation</set>
+			<set name="time">1 minute</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- PROSELYTIZE  --> 
+	<element name="Proselytize" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_PROSELYTIZE">
+		<supports>Cleric,Warlock</supports>
+		<description>
+			<p></p>
+			<p class="indent"></p>
+		</description>
+		<setters>
+			<set name="keywords">apocalypse</set>
+			<set name="level">1</set>
+			<set name="school" addition="apocalypse">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (10 ft. radius)</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a holy symbol or religious tome, text, or pamphlet</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
 <!-- PROTECTIVE ICE  -->
 	<element name="Protective Ice" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_PROTECTIVE_ICE">
 		<supports>Cleric</supports>

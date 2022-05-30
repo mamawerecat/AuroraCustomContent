@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - I</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="i-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/i-spells.xml" />
         </update>
     </info>
@@ -124,6 +124,31 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>    
+
+<!-- INVESTITURE OF BLIGHT  -->
+	<element name="Investiture of Blight" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_INVESTITURE_OF_BLIGHT">
+		<supports>Cleric,Druid,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>Ghostly spirits emerge from your body and whirl around you. Your body emits dim light in a 15-foot radius for the spell’s duration. Until the spell ends, you gain the following benefits: </p>
+			<p class="indent">	•You have immunity to necrotic damage and resistance to poison damage. </p>
+			<p class="indent">	•Creatures that miss on melee attacks against you become frightened of you until the end of their next turn. </p>
+			<p class="indent">	•You can use an action to direct the ghostly spirits to assail a creature you can see within 15 feet of you. The target must make a successful Constitution saving throw or take 2d10 necrotic damage and gain one level of exhaustion.</p>
+		</description>
+		<setters>
+			<set name="keywords">apocalypse</set>
+			<set name="level">6</set>
+			<set name="school" addition="apocalypse">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a vial of ectoplasm or ghostly essence</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 <!-- INNOCUOUS ASPECT -->
 	<element name="Innocuous Aspect" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_INNOCUOUS_ASPECT">

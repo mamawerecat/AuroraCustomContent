@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - B</name>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="b-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/b-spells.xml" />
         </update>
     </info>
@@ -165,6 +165,29 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element> 
+
+<!-- BLACK HOLE  -->
+	<element name="Black Hole" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLACK_HOLE">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>You create a tiny black hole at a point you can see within range. The black hole is a sphere with a 15-foot radius. All fires and flames within 40 feet of the black hole—magical or otherwise—are instantly extinguished. Each creature within 40 feet of the black hole when it appears must make a Strength saving throw. On a failed save, the creature takes 20d6 force damage and is pulled to within 5 feet of the black hole. On a successful save, the creature takes half as much damage and is knocked prone but isn’t pulled toward the black hole. </p>
+			<p class="indent">A creature that’s within 5 feet of the black hole at the start of its turn must make a successful Strength saving throw or take 8d6 force damage and have its speed reduced to 0 until the start of its next turn. A creature that’s within 40 feet of the black hole (but not within 5 feet of it) at the end of its turn takes 2d6 cold damage. A creature reduced to 0 hit points while within 5 feet of the black hole dies immediately.</p>
+		</description>
+		<setters>
+			<set name="keywords">apocalypse</set>
+			<set name="level">9</set>
+			<set name="school" addition="apocalypse">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">120 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 <!-- BLACK RIBBONS  -->
 	<element name="Black Ribbons" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLACK_RIBBONS">
@@ -736,6 +759,30 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element> 
+
+<!-- BRIMSTONE --> 
+	<element name="Brimstone" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BRIMSTONE">
+		<supports>Cleric,Sorecerer,Warlock,Wizard</supports>
+		<description>
+			<p>You conjure a hunk of sulfuric brimstone that materializes in the air, then falls to the ground at a point within range. Any creature occupying that space must make a successful Dexterity saving throw or take 2d8 bludgeoning damage. </p>
+			<p class="indent">The brimstone remains in the space where it fell while the spell persists. Each creature that starts its turn within 15 feet of the brimstone must make a successful Dexterity saving throw or take 1d8 fire damage. The brimstone can be destroyed; it has AC 8 and 12 hp. The brimstone explodes if it takes fire damage; the explosion ends the spell and deals 1d8 bludgeoning damage to all creatures within 15 feet, or half as much damage to a creature that makes a successful Dexterity saving throw. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, its fire damage increases by 1d8 for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords">apocalypse</set>
+			<set name="level">1</set>
+			<set name="school" addition="apocalypse">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 <!-- BRIMSTONE INFUSION --> 
 	<element name="Brimstone Infusion" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BRIMSTONE_INFUSION">

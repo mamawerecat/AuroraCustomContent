@@ -2,11 +2,57 @@
 <elements>
     <info>
         <name>Deep Magic Spells - H</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="h-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/h-spells.xml" />
         </update>
     </info>    
 
+<!-- HAND OF DOOM  -->
+	<element name="Hand of Doom" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_HAND_OF_DOOM">
+		<supports>Cleric,Warlock,Wizard</supports>
+		<description>
+			<p>Your outstretched hand glows with sinister power that hastens the demise of a creature you touch. Make a melee spell attack against the creature. On a hit, the target takes 1d4 necrotic damage and must make a successful Constitution saving throw or become poisoned until the end of your next turn. If the target was already poisoned when you hit it with hand of doom, it takes 1d12 poison damage instead of 1d4 necrotic damage on a failed save.</p>
+			<p class="indent">This spell’s damage increases by one die at 5th level (2d4 necrotic or 2d12 poison), 11th level (3d4 or 3d12), and 17th level (4d4 or 4d12).</p>
+		</description>
+		<setters>
+			<set name="keywords">apocalypse</set>
+			<set name="level">0</set>
+			<set name="school" addition="apocalypse">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- HELLFIRE BLITZ --> 
+	<element name="Hellfire Blitz" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_HELLFIRE_BLITZ">
+		<supports>Paladin,Sorcerer,Warlock</supports>
+		<description>
+			<p>Upon casting hellfire blitz, you assume a flaming spectral form until the end of your turn. You immediately move up to 40 feet in a straight line. You can move through spaces occupied by other creatures, but you must end your turn in an unoccupied space. This movement doesn’t provoke opportunity attacks. Each creature whose space you pass through takes 6d6 fire damage, or half as much damage with a successful Dexterity saving throw.</p>
+			<p class="indent">You leave a 5-foot-wide line of hellfire burning behind you in your path. This hellfire continues burning for a number of rounds equal to your spellcasting ability modifier. A creature that ends its turn in hellfire or passes through the line on its turn takes 1d6 fire damage, or half as much damage with a successful Dexterity saving throw. A creature can take this damage only once per turn. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords">apocalypse</set>
+			<set name="level">3</set>
+			<set name="school" addition="apocalypse">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 <!-- HIDE IN ONE’S SHADOW  --> 
 	<element name="Hide in One's Shadow" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_HIDE_IN_ONES_SHADOW">
