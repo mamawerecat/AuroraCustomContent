@@ -2,7 +2,7 @@
 <elements>
     <info>
     <name>Clasp Member Background</name>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="clasp-member.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/critcal-role-taldorei-campaign-setting-reborn/backgrounds/clasp-member.xml" />
         </update>
     </info>
@@ -91,7 +91,7 @@
     </element>
 
 <!-- Background Feature Variant Myriad Operative -->   
-    <element name="Variant Clasp Member: Myriad Operative" type="Background Variant" source="Tal'Dorei Campaign Setting Reborn" id="ID_WOTC_PHB_BACKGROUND_VARIANT_SAILOR_PIRATE">
+    <element name="Variant Clasp Member: Myriad Operative" type="Background Variant" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_BACKGROUND_BACKGROUND_VARIANT_MYRIAD_OPERATIVE">
         <supports>Background Variant, Clasp Member</supports>
         <description>
             <p> Your skill set might be similar to that of many members of the Clasp, but you work for a criminal organization that is far more sophisticated—and even less scrupulous. As a Myriad operative in Tal’Dorei, you might have been given a specific task that furthers that syndicate’s hunger to expand beyond Wildemount, or which gives them an edge in their rivalry with the Clasp. </p>
