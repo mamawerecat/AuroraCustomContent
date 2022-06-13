@@ -2,11 +2,33 @@
 <elements>
     <info>
         <name>Deep Magic Spells - F</name>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="f-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/f-spells.xml" />
         </update>
     </info>
 
+<!-- FIENDISH BRAND  -->
+	<element name="Fiendish Brand" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_FIENDISH_BRAND">
+		<supports>Cleric,Warlock,Wizard</supports>
+		<description>
+			<p>You infuse a branding iron (typically one bearing the mark of a demon lord or a lord of Hell) with the bone-chilling cold of the Lower Planes and a promise of damnation. To mark a creature with the brand, you make a melee spell attack. On a hit, you deal 2d8 cold damage to the target and cause it to become branded. The damage can be healed normally, but the brand remains until a remove curse spell is cast on the target, the duration expires, or you use an action to remove the brand. You can remove the brand from any distance, as long as the branded creature is on the same plane of existence as you.</p>
+			<p class="indent">While the creature wears the brand, it has disadvantage on any saving throws it makes against spells you cast on it. If you try to locate the creature with a scrying spell, it takes the –10 penalty to its saving throw as if you possessed a lock of its hair or other body part.</p>
+		</description>
+		<setters>
+			<set name="keywords">fiendish</set>
+			<set name="level">5</set>
+			<set name="school" addition="fiendish">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">7 days</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a branding iron</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
 <!-- FIRE DRAGON’S FURY --> 
 	<element name="Fire Dragon'S Fury" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_FIRE_DRAGONS_FURY">
 		<supports>Sorcerer,Wizard</supports>

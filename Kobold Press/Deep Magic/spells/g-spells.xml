@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - G</name>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="g-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/g-spells.xml" />
         </update>
     </info>
@@ -167,6 +167,31 @@
 			<set name="isRitual">true</set>
 		</setters>
 	</element>	
+
+<!-- GREEN DECAY  -->
+	<element name="Green Decay" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_GREEN_DECAY">
+		<supports>Wizard</supports>
+		<description>
+			<p>Your touch inflicts a nauseating, alien rot. Make a melee spell attack against a creature within your reach. On a hit, you afflict the creature with the supernatural disease green decay (see below), and creatures within 15 feet of the target who can see it must make a successful Constitution saving throw or become poisoned until the end of their next turn.</p>
+			<p class="indent">You lose concentration on this spell if you can’t see the target at the end of your turn.</p>
+			<p class="indent"><b><i>Green Decay.</i></b> The flesh of a creature that has this disease is slowly consumed by a virulent extraterrestrial fungus. While the disease persists, the creature has disadvantage on Charisma and Wisdom checks and on Wisdom saving throws, and it has vulnerability to acid, fire, and necrotic damage. An affected creature must make a Constitution saving throw at the end of each of its turns. On a failed save, the creature takes 1d6 necrotic damage, and its hit point maximum is reduced by an amount equal to the necrotic damage taken. If the creature gets three successes on these saving throws before it gets three failures, the disease ends immediately (but the damage and the hit point maximum reduction remain in effect). If the creature gets three failures on these saving throws before it gets three successes, the disease lasts for the duration of the spell, and no further saving throws are allowed.</p>
+			mythos
+		</description>
+		<setters>
+			<set name="keywords">mythos</set>
+			<set name="level">4</set>
+			<set name="school" addition="mythos">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
 
 <!-- GRIM SIPHON  -->
 	<element name="Grim Siphon" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_GRIM_SIPHON">

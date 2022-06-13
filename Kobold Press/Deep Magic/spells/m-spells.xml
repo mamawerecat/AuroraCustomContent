@@ -2,33 +2,10 @@
 <elements>
     <info>
         <name>Deep Magic Spells - M</name>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="m-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/m-spells.xml" />
         </update>
     </info>
-
-<!-- MASS SURGE DAMPENER  -->
-	<element name="Mass Surge Dampener" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_MASS_SURGE_DAMPENER">
-		<supports>Bard,Wizard</supports>
-		<description>
-			<p>Using your strength of will, you protect up to three creatures other than yourself from the effect of a chaos magic surge. A protected creature can make a DC 13 Charisma saving throw to negate the effect of a chaos magic surge that does not normally allow a saving throw, or it gains advantage on a saving throw that is normally allowed. Once a protected creature makes a successful saving throw allowed by mass surge dampener, the spell’s effect ends for that creature.</p>
-			<p class="indent">Using your strength of will, you protect up to three creatures other than yourself from the effect of a chaos magic surge. A protected creature can make a DC 13 Charisma saving throw to negate the effect of a chaos magic surge that does not normally allow a saving throw, or it gains advantage on a saving throw that is normally allowed. Once a protected creature makes a successful saving throw allowed by mass surge dampener, the spell’s effect ends for that creature.</p>
-		</description>
-		<setters>
-			<set name="keywords">chaos</set>
-			<set name="level">5</set>
-			<set name="school" addition="chaos">Abjuration</set>
-			<set name="time">1 action</set>
-			<set name="range">30 ft.</set>
-			<set name="duration">1 minute, or until expended</set>
-			<set name="hasVerbalComponent">true</set>
-			<set name="hasSomaticComponent">true</set>
-			<set name="hasMaterialComponent">false</set>
-			<set name="materialComponent">component</set>
-			<set name="isConcentration">false</set>
-			<set name="isRitual">true</set>
-		</setters>
-	</element>
 
 <!-- MAGMA SPRAY --> 
 	<element name="Magma Spray" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_MAGMA_SPRAY">
@@ -54,6 +31,50 @@
 		</setters>
 	</element>
 
+<!-- MAMMON’S AVARICE -->
+	<element name="Mammon's Avarice" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_MAMMONS_AVARICE">
+		<supports>Cleric,Warlock,Wizard</supports>
+		<description>
+			<p>By casting this spell, you tap into the power of greed that is Mammon’s sphere of influence, which manifests as a heightened olfactory sense. You can pinpoint, by smell, the location of any precious metals or gemstones within 30 feet of you. If you find anything, you can use an action to determine the exact types and amounts of any such materials. If materials of this sort are completely enclosed by, or separated from you by, more than 6 feet of earth or wood, 2 feet of stone, or 2 inches of common metal, you cannot detect them even if they are in range.</p>
+		</description>
+		<setters>
+			<set name="keywords">fiendish</set>
+			<set name="level">1</set>
+			<set name="school" addition="fiendish">Divination</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (30 ft. radius)</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+<!-- MASS SURGE DAMPENER  -->
+	<element name="Mass Surge Dampener" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_MASS_SURGE_DAMPENER">
+		<supports>Bard,Wizard</supports>
+		<description>
+			<p>Using your strength of will, you protect up to three creatures other than yourself from the effect of a chaos magic surge. A protected creature can make a DC 13 Charisma saving throw to negate the effect of a chaos magic surge that does not normally allow a saving throw, or it gains advantage on a saving throw that is normally allowed. Once a protected creature makes a successful saving throw allowed by mass surge dampener, the spell’s effect ends for that creature.</p>
+			<p class="indent">Using your strength of will, you protect up to three creatures other than yourself from the effect of a chaos magic surge. A protected creature can make a DC 13 Charisma saving throw to negate the effect of a chaos magic surge that does not normally allow a saving throw, or it gains advantage on a saving throw that is normally allowed. Once a protected creature makes a successful saving throw allowed by mass surge dampener, the spell’s effect ends for that creature.</p>
+		</description>
+		<setters>
+			<set name="keywords">chaos</set>
+			<set name="level">5</set>
+			<set name="school" addition="chaos">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">1 minute, or until expended</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
 <!-- MEPHITIC CROAK --> 	
 	<element name="Mephitic Croak" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_MEPHITIC_CROAK">
 		<supports>Wizard</supports>
@@ -74,6 +95,30 @@
 			<set name="materialComponent">a dead toad and a dram of arsenic worth 10 gp</set>
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- MIND EXCHANGE  -->
+	<element name="Mind Exchange" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_MIND_EXCHANGE">
+		<supports>Wizard</supports>
+		<description>
+			<p>One humanoid of your choice that you can see within range must make a Charisma saving throw. On a failed save, you project your mind into the body of the target. You use the target’s statistics but don’t gain access to its knowledge, class features, or proficiencies, retaining your own instead. Meanwhile, the target’s mind is shunted into your body, where it uses your statistics but likewise retains its own knowledge, class features, and proficiencies.</p>
+			<p class="indent">The exchange lasts until either of the the two bodies drops to 0 hit points, until you end it as a bonus action, or until you are forced out of the target body by an effect such as a dispel magic or dispel evil and good spell (the latter spell defeats mind exchange even though possession by a humanoid isn’t usually affected by that spell). When the effect of this spell ends, both switched minds return to their original bodies. The target of the spell is immune to mind exchange for 24 hours after succeeding on the saving throw or after the exchange ends.</p>
+			<p class="indent">The effects of the exchange can be made permanent with a wish spell or comparable magic.</p>
+		</description>
+		<setters>
+			<set name="keywords">mythos</set>
+			<set name="level">3</set>
+			<set name="school" addition="mythos">Transmutation</set>
+			<set name="time">1 minute</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a prism and silver coin</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">true</set>
 		</setters>
 	</element>
 

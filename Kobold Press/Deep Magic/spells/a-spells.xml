@@ -263,22 +263,50 @@
 		</setters>
 	</element>
 
-<!-- ALE-DRITCH BLAST  -->
-Conjuration cantrip 
-Casting Time: 1 action 
-Range: 60 feet 
-Components: V, S 
-Duration: Instantaneous 
-A stream of ice-cold ale blasts from your outstretched hands toward a creature or object within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage and it must make a successful Constitution saving throw or be poisoned until the end of its next turn. A targeted creature has disadvantage on the saving throw if it has drunk any alcohol within the last hour. 
-The damage increases when you reach higher levels: 2d8 at 5th level, 3d8 at 11th level, and 4d8 at 17th level. 
+<!-- ALE-DRITCH BLAST  --> 
+	<element name="Ale-dritch Blast" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ALDEDRITCH_BLAST">
+		<supports></supports>
+		<description>
+			<p>A stream of ice-cold ale blasts from your outstretched hands toward a creature or object within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage and it must make a successful Constitution saving throw or be poisoned until the end of its next turn. A targeted creature has disadvantage on the saving throw if it has drunk any alcohol within the last hour. </p>
+			<p class="indent"><i><b>At Higher Levels. </b></i> The damage increases when you reach higher levels: 2d8 at 5th level, 3d8 at 11th level, and 4d8 at 17th level.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 <!-- ALLURE  -->
-Transmutation cantrip 
-Casting Time: 1 action 
-Range: Touch 
-Components: V, S 
-Duration: Concentration, up to 1 minute 
-You touch a willing creature. Once before the spell ends, the target can roll a d6 and add the result to one Charisma check of its choice. It can roll the die before or after making the check. The spell then ends. 
+	<element name="Allure" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ALLURE">
+		<supports></supports>
+		<description>
+			<p>You touch a willing creature. Once before the spell ends, the target can roll a d6 and add the result to one Charisma check of its choice. It can roll the die before or after making the check. The spell then ends.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 <!-- ALLY AEGIS  -->
 6th-level abjuration 
@@ -657,8 +685,7 @@ As an action, the target can make a bite attack using either Strength or Dexteri
 	<element name="Aura of Entropy" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_AURA_OF_ENTROPY">
 		<supports>Paladin</supports>
 		<description>
-			<p></p>
-			<p class="indent"></p>
+			<p>Sickening energy radiates out from you in a sphere with a 30-foot radius. While the spell lasts, the sphere remains centered on you and moves with you. Each hostile creature in the sphere has disadvantage on saving throws against becoming frightened, paralyzed, poisoned, or stunned. Creatures in the sphere can’t gain temporary hit points, and any effect that restores hit points to a creature within the sphere has those hit points reduced by an amount equal to your spellcasting ability modifier (minimum of 1).</p>
 		</description>
 		<setters>
 			<set name="keywords">apocalypse</set>
@@ -669,6 +696,30 @@ As an action, the target can make a bite attack using either Strength or Dexteri
 			<set name="duration">Concentration, up to 10 minutes</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- AURA OF WRATH  -->
+	<element name="Aura of Wrath" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_AURA_OF_WRATH">
+		<supports>Warlock,Wizard</supports>
+		<description>
+			<p>You surround yourself with a psychic aura that drives creatures within 20 feet of you into a violent frenzy. A creature inside the aura or that enters the aura must succeed on a Wisdom saving throw or be overcome with rage. A creature overcome with rage must take its next action to attack the nearest possible target —if more than one target is available, choose randomly. The creature uses a melee weapon if it has one; otherwise, it attacks with any other offensive ability it possesses. If an affected creature leaves the aura, the aura’s effect persists for 1 round afterward. A creature affected by the aura makes a new saving throw at the start of each of its turns, ending the effect on itself on a success. Once a creature makes a successful save, that creature cannot be affected again by the same aura.</p>
+			<p class="indent">If a creature affected by your aura hits you with an attack that targets you, the creature takes 4d8 psychic damage.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 7th level or higher, creatures that leave the aura remain under the effect of the spell for 1 additional round for each slot level above 6th. Also, the damage an affected creature takes from striking you increases by 2d8 for each slot level above 6th.</p>
+		</description>
+		<setters>
+			<set name="keywords">fiendish</set>
+			<set name="level">6</set>
+			<set name="school" addition="fiendish">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (20-ft radius)</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent">component</set>
 			<set name="isConcentration">true</set>

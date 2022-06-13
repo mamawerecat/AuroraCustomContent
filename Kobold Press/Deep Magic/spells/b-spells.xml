@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - B</name>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="b-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/b-spells.xml" />
         </update>
     </info>
@@ -139,6 +139,28 @@
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">true</set>
 			<set name="materialComponent">a spike metal ring</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- BLACK GOAT’S BLESSING  -->
+	<element name="Black Goat's Blessing" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLACK_GOATS_BLESSING">
+		<supports>Warlock</supports>
+		<description>
+			<p>You raise your hand with fingers splayed and utter an incantation of the Black Goat with a Thousand Young. Your magic is blessed with the eldritch virility of the All Mother. The target has disadvantage on saving throws against spells you cast until the end of your next turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">mythos</set>
+			<set name="level">0</set>
+			<set name="school" addition="mythos">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">1 round</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>

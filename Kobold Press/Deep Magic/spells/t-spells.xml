@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - T</name>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="t-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/t-spells.xml" />
         </update>
     </info>
@@ -254,6 +254,34 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element> 	
+
+<!-- TOME CURSE  -->=
+	<element name="Tome Curse" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_TOME_CURSE">
+		<supports>Wizard</supports>
+		<description>
+			<p>You protect a book by writing a curse in it with ink made from the material components of this spell. The writing is typically a couplet or a quatrain that warns of the consequences of disturbing your property. The curse is triggered by an action or actions that you specify (which typically involves someone reading the book without permission, trying to damage the book, or trying to steal it). When the curse is triggered, the creature that did so must succeed on a Wisdom saving throw or suffer its effect. You can choose one of the effects described in the bestow curse spell, or you can affect the target in one of the following ways:</p>
+			<p class="indent"> •While the target is cursed, it is blinded.</p>
+			<p class="indent"> •Beasts are unusually hostile to the target while it is cursed; they gain advantage on attack rolls against the target.</p>
+			<p class="indent"> •While cursed, the target is an attractive mark to pickpockets and other thieves, and such individuals will try to steal the target’s valuables when the opportunity presents itself. (Even if in the target’s possession, the cursed book does not count as one of the target’s valuables.)</p>
+			<p class="indent"> •A cursed target that either receives magical healing or rolls Hit Dice to recover hit points after a long rest must roll twice and use the lower result.</p>
+			<p class="indent">A remove curse spell ends this effect. You can also stipulate other actions taken by the target that would nullify the curse (returning the book after it is stolen, for example).</p>
+		</description>
+		<setters>
+			<set name="keywords">fiendish</set>
+			<set name="level">4</set>
+			<set name="school" addition="fiendish">Necromancy</set>
+			<set name="time">10 minutes</set>
+			<set name="range">Touch</set>
+			<set name="duration">Until dispelled or triggered</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an ounce of blood, and powdered onyx worth at least 50 gp, both of which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 
 <!-- TORRENT OF FIRE -->
 	<element name="Torrent of Fire" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_TORRENT_OF_FIRE">

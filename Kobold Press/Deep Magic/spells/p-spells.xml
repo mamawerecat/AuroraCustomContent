@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - P</name>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="p-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/p-spells.xml" />
         </update>
     </info>
@@ -77,6 +77,30 @@
 		</setters>
 	</element> 
 
+<!-- PLAGUEBEARER --> 
+	<element name="Plaguebearer" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_PLAGUEBEARER">
+		<supports>Cleric,Warlock,Wizard</supports>
+		<description>
+			<p>The creature you touch when casting this spell becomes immune to disease for the duration. The creature can still contract and carry diseases; it simply does not suffer any effects of a disease. When exposed to a disease, the creature must make the saving throw required. If the saving throw fails, the creature becomes a carrier of the disease, and might expose others to it per the rules for the particular affliction. The creature under the effect of the spell is aware when it becomes infected. If the creature recovers from or is cured of all diseases it suffers while this spell is in effect, it continues to benefit from the spell until the spell ends.</p>
+			<p class="indent">When the duration expires, the target becomes susceptible to the effect of any disease it is still carrying, as if it had just now contracted it.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the duration increases by 24 hours for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">fiendish</set>
+			<set name="level">2</set>
+			<set name="school" addition="fiendish">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">48 hours</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 <!-- PRAYER OF RESOLVE  -->
 	<element name="Prayer of Resolve" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_PRAYER_OF_RESOLVE">
 		<supports>Cleric,Paladin</supports>
@@ -104,8 +128,8 @@
 	<element name="Proselytize" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_PROSELYTIZE">
 		<supports>Cleric,Warlock</supports>
 		<description>
-			<p></p>
-			<p class="indent"></p>
+			<p>You imbue your words with darkness and fear, bringing creatures around you to their knees. Every creature within 10 feet of you must make a Wisdom saving throw. On a failed save, a creature is knocked prone and can’t take reactions until the end of its next turn.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the radius of the effect increases by 10 feet for each slot level above 1st.</p>
 		</description>
 		<setters>
 			<set name="keywords">apocalypse</set>

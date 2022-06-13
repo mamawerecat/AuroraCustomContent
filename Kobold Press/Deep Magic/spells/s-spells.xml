@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - S</name>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="s-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/s-spells.xml" />
         </update>
     </info>
@@ -194,6 +194,32 @@
 		</setters>
 	</element> 
 
+<!-- SEED OF DESTRUCTION  -->
+	<element name="Seed of Destruction" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SEED_OF_DESTRUCTION">
+		<supports>Wizard</supports>
+		<description>
+			<p>This spell impregnates a living creature with a rapidly gestating hydra that consumes the target from within before emerging to wreak havoc on the world. Make a ranged spell attack against a living creature within range that you can see. On a hit, you implant a five headed embryonic growth into the creature. Roll 1d3 + 1 to determine how many rounds it takes the embryo to mature.</p>
+			<p class="indent">During the rounds when the embryo is gestating, the affected creature takes 5d4 slashing damage at the start of its turn, or half the damage with a successful Constitution saving throw.</p>
+			<p class="indent">When the gestation period has elapsed, a tiny hydra erupts from the target’s abdomen at the start of your turn. The hydra appears in an unoccupied space adjacent to the target and immediately grows into a full-size Huge aberration. Nearby creatures are pushed away to clear a sufficient space as the hydra grows. This creature is a standard hydra, but with the ability to cast bane as an action (spell save DC 11) requiring no spell components. Roll initiative for the hydra, which takes its own turns. It obeys verbal commands that you issue to it (no action required by you). If you don’t give it a command or it can’t follow your command, the hydra attacks the nearest living creature.</p>
+			<p class="indent">At the end of each of the hydra’s turns, you must make a DC 15 Charisma saving throw. On a successful save, the hydra remains under your control and friendly to you and your companions. On a failed save, your control ends, the hydra becomes hostile to all creatures, and it attacks the nearest creature to the best of its ability.</p>
+			<p class="indent">The hydra disappears at the end of the spell’s duration, or its existence can be cut short with a wish spell or comparable magic, but nothing less. The embryo can be destroyed before it reaches maturity by using a dispel magic spell under the normal rules for dispelling high-level magic.</p>
+		</description>
+		<setters>
+			<set name="keywords">mythos</set>
+			<set name="level">8</set>
+			<set name="school" addition="mythos">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">five teeth from a still-livng humanoid and a vial of the caster's blood</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element> 
+
 <!-- SEER’S REACTION  -->
 	<element name="Seer's Reaction" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SEERS_REACTION">
 		<supports>Bard,Cleric,Druid,Ranger,Sorcerer,Wizard</supports>
@@ -213,6 +239,29 @@
 			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent">component</set>
 			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- SEMBLANCE OF DREAD  -->
+	<element name="Semblance of Dread" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SEMBLANCE_OF_DREAD">
+		<supports>Wizard</supports>
+		<description>
+			<p>You adopt the visage of the faceless god Nyarlathotep. For the duration, any creature within 10 feet of you and able to see you can’t willingly move closer to you unless it makes a successful Wisdom saving throw at the start of its turn. Constructs and undead are immune to this effect.</p>
+			<p class="indent">For the duration of the spell, you also gain vulnerability to radiant damage and have advantage on saving throws against effects that cause the frightened condition.</p>
+		</description>
+		<setters>
+			<set name="keywords">mythos</set>
+			<set name="level">0</set>
+			<set name="school" addition="mythos">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (10 ft. cone)</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
@@ -661,6 +710,36 @@
 		</setters>
 	</element> 
 
+<!-- SIGN OF KOTH  -->
+	<element name="Sign of Koth" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SIGN_OF_KOTH">
+		<supports>Wizard</supports>
+		<description>
+			<p>You invoke the twilight citadels of Koth to create a field of magical energy in the shape of a 60-foot-radius, 60-foot tall cylinder centered on you. The only visible evidence of this field is a black rune that appears on every doorway, window, or other portal inside the area.</p>
+			<p class="indent">Choose one of the following creature types: aberration, beast, celestial, dragon, elemental, fey, fiend, giant, humanoid, monstrosity, ooze, plant, or undead. The sign affects creatures of the chosen type (including you, if applicable) in the following ways:</p>
+			<p class="indent">  •The creatures can’t willingly enter the cylinder’s area by nonmagical means; the cylinder acts as an invisible, impenetrable wall of force. If an affected creature tries to enter the cylinder’s area by using teleportation, a dimensional shortcut, or other magical means, it must make a successful Charisma saving throw or the attempt fails.</p>
+			<p class="indent">  •They cannot hear any sounds that originate inside the cylinder.</p>
+			<p class="indent">  •They have disadvantage on attack rolls against targets inside the cylinder.</p>
+			<p class="indent">  •They can’t charm, frighten, or possess creatures inside the cylinder.</p>
+			<p class="indent">Creatures that aren’t affected by the field and that take a short rest inside it regain twice the usual number of hit points for each Hit Die spent at the end of the rest.</p>
+			<p class="indent">When you cast this spell, you can choose to reverse its magic; doing this will prevent affected creatures from leaving the area instead of from entering it, make them unable to hear sounds that originate outside the cylinder, and so forth. In this case, the field provides no benefit for taking a short rest.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 8th level or higher, the radius increases by 30 feet for each slot level above 7th.</p>
+		</description>
+		<setters>
+			<set name="keywords">mythos</set>
+			<set name="level">7</set>
+			<set name="school" addition="mythos">Abjuration</set>
+			<set name="time">1 round</set>
+			<set name="range">Self (60 ft. radius)</set>
+			<set name="duration">Until dispelled</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a platinum dagger and a powdered black pearl worth 500 gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 <!-- SILHOUETTE  -->
 	<element name="Silhouette" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SILHOUETTE">
 		<supports></supports>
@@ -680,6 +759,29 @@
 			<set name="materialComponent">component</set>
 			<set name="isConcentration">true</set>
 			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- SLEEP OF THE DEEP  -->
+	<element name="Sleep of the Deep" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SLEEP_OF_THE_DEEP">
+		<supports>Wizard</supports>
+		<description>
+			<p>Your magic haunts the dreams of others. Choose a sleeping creature that you are aware of within range. Creatures that don’t sleep, such as elves, can’t be targeted. The creature must succeed on a Wisdom saving throw or it garners no benefit from the rest, and when it awakens, it gains one level of exhaustion and is afflicted with short term madness.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, you can affect one additional creature for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords">mythos</set>
+			<set name="level">3</set>
+			<set name="school" addition="mythos">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">8 hours</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pinch of black sand, a tallow candle, and a drop of cephalopod ink</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
 		</setters>
 	</element> 
 
@@ -989,6 +1091,65 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element> 
+
+<!-- SUMMON AVATAR  -->
+	<element name="Summon Avatar" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SUMMON_AVATAR">
+		<supports>Wizard</supports>
+		<description>
+			<p>You summon a worldly incarnation of a Great Old One, which appears in an unoccupied space you can see within range. This avatar manifests as an emanation of elder darkness, augmented by boons from the Void. Choose one of the following options for the type of avatar that appears. (Other options might be available if the GM allows.) An asterisk indicates a spell described in this section.</p>
+			<p class="indent">  •<b><i>Avatar of Cthulhu.</i></b> The incarnation is a deep one (Tome of Beasts, p. 73) that can innately cast command and sleep of the deep* at will.</p>
+			<p class="indent">  •<b><i>Avatar of Nyarlathotep.</i></b></p>
+			<p class="indent">  •<b><i>Avatar of Shub-Niggurath.</i></b> The incarnation is a goat-man (Tome of Beasts, p. 231) that can innately cast Black Goat’s blessing* and unseen strangler* at will.</p>
+			<p class="indent">  •<b><i>Avatar of Yog-Sothoth.</i></b> The incarnation is a human with 1d4 + 1 flesh warps that can innately cast gift of resilience* (see page 71) and thunderwave at will.</p>
+			<p class="indent">When the avatar appears, you must make a Charisma saving throw. On a success, the avatar is friendly to you one and attacks the nearest creature, pursuing and fighting for as long as possible.</p>
+			<p class="indent">Roll initiative for the avatar, which takes its own turns. If it is friendly to you, it obeys verbal commands you issue to it (no action required by you). If the avatar has no command, it attacks the nearest creature.</p>
+			<p class="indent">Each round when you maintain concentration on the spell, you must make a successful DC 15 Wisdom saving throw at the end of your turn or take 1d6 psychic damage. If the total of this damage exceeds your Wisdom score, you gain 1 point of Void taint and you are afflicted with a form of short-term madness. The same penalty recurs when the damage exceeds twice your Wisdom score, three times your Wisdom score, and so forth, if you maintain concentration for that long.</p>
+			<p class="indent">The avatar disappears when it drops to 0 hit points or when the spell ends. If you stop concentrating before 1 hour has elapsed, the avatar becomes uncontrolled and hostile until it disappears 1d6 rounds later or until it is killed.</p>=
+		</description>
+		<setters>
+			<set name="keywords">mythos</set>
+			<set name="level">9</set>
+			<set name="school" addition="mythos">Conjuration</set>
+			<set name="time">1 minute</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a vial of the caster’s blood, a dried opium poppy, and a silver dagger</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
+<!-- SUMMON ELDRITCH SERVITOR  -->
+	<element name="Summon Eldritch Servitor" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SUMMON_ELDRITCH_SERVITOR_">
+		<supports>Wizard</supports>
+		<description>
+			<p>You summon eldritch aberrations that appear in unoccupied spaces you can see within range. Choose one of the following options for what appears:</p>
+			<p class="indent">	•Two ghasts of Leng (Creature Codex, p. 168)</p>
+			<p class="indent">	•One shantak (Creature Codex, p. 328)</p>
+			<p class="indent">When the summoned creatures appear, you must make a Charisma saving throw. On a success, the creatures are friendly to you and your allies. On a failure, the creatures are friendly to no one and attack the nearest creatures, pursuing and fighting for as long as possible.</p>
+			<p class="indent">Roll initiative for the summoned creatures, which take their own turns as a group. If friendly to you, they obey your verbal commands (no action required by you to issue a command), or they attack the nearest living creature if they are not commanded otherwise.</p>
+			<p class="indent">Each round when you maintain concentration on the spell, you must make a successful DC 15 Wisdom saving throw at the end of your turn or take 1d4 psychic damage. If the total of this damage exceeds your Wisdom score, you gain 1 point of Void taint and you are afflicted with a form of short-term madness. The same penalty applies when the damage exceeds twice your Wisdom score, three times your Wisdom score, and so forth, if you maintain concentration for that long.</p>
+			<p class="indent">A summoned creature disappears when it drops to 0 hit points or when the spell ends. If you stop concentrating on the spell before 1 hour has elapsed, the creatures become uncontrolled and hostile until they disappear 1d6 rounds later or until they are killed.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a 7th- or 8th-level spell slot, you can summon four ghasts of Leng or a hound of Tindalos (Creature Codex, p. 221). When you cast it with a 9th-level spell slot, you can summon five ghasts of Leng or a nightgaunt (Creature Codex, p. 277).</p>
+		</description>
+		<setters>
+			<set name="keywords">mythos</set>
+			<set name="level">5</set>
+			<set name="school" addition="mythos">Conjuration</set>
+			<set name="time">1 minute</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a vial of the caster's blood and a silver dagger</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
 
 <!-- SUMMON STAR  -->
 	<element name="Summon Star" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SUMMON_STAR">

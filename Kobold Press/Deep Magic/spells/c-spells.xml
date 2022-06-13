@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - C</name>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="c-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/c-spells.xml" />
         </update>
     </info>
@@ -218,6 +218,63 @@
 		</setters>
 	</element>
 	
+<!-- CHAINS OF PERDITION  -->
+	<element name="Chains of Perdition" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CHAINS_OF_PERDITION">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>Lengths of iron chain appear near a creature you choose within range, possibly ensnaring the target and causing it physical and mental suffering. The targeted creature must succeed on a Dexterity saving throw or be restrained by the chains and take 2d8 bludgeoning damage and 2d8 psychic damage. The creature takes this damage on your turn every round that it remains restrained by the chains. On its turn, a restrained creature can make a Strength or Dexterity check (its choice) against your spell save DC. On a success, it frees itself. </p>
+			<p class="indent">The chains remain until the spell ends. If they are not restraining a creature, you can use a bonus action to direct the chains to target the same creature or another one, moving the chains up to 20 feet (within the range of the spell) if necessary to do so. If the chains move beyond the maximum range, the spell ends. The chains can be destroyed; treat them as an object with AC 18, 15 hit points, resistance to piercing damage, and immunity to poison damage and psychic damage. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, the spell deals an extra 1d8 bludgeoning damage and 1d8 psychic damage for every two slot levels above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords">fiendish</set>
+			<set name="level">3</set>
+			<set name="school" addition="fiendish">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a few links of iron chain</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- CHANNEL FIENDISH POWER  -->
+	<element name="Channel Fiendish Power" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CHANNEL_FIENDISH_POWER">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p></p>
+			<p>You infuse yourself with dark power from the Lower Planes, which grants you magical gifts for a short time. While this spell is in effect, your body takes on minor fiendish characteristics: scales, a reddish or greenish hue to your skin, small horns protruding from your forehead, or other such features. While the spell is in effect, you gain two of the following abilities:</p>
+			<p class="indent">  •Darkvision with a range of 120 feet, unimpeded by magical darkness.</p>
+			<p class="indent">  •Immunity to fire damage.</p>
+			<p class="indent">  •Immunity to poison damage and the poisoned condition.</p>
+			<p class="indent">  •Advantage on saving throws against spells and other magical effects.</p>
+			<p class="indent">  •Resistance to one of the following damage types: cold, fire, or lightning.</p>
+			<p class="indent">  •Resistance to bludgeoning, piercing, and slashing damage from weapons that aren’t silvered.</p>
+			<p class="indent">  •Resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons.</p>
+			<p class="indent">  •Claws that grant you a melee weapon attack that deals 1d8 slashing damage.</p>
+			<p class="indent">  •Wings that grant you a flying speed of 60 feet</p>
+			<b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th level or higher, you can choose one additional benefit to be granted by the spell for each slot level above 5th.
+		</description>
+		<setters>
+			<set name="keywords">fiendish</set>
+			<set name="level">5</set>
+			<set name="school" addition="fiendish">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an amulet inscribed with a demonic or diabolic symbol</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 <!-- CHAOTIC FORM  -->
 	<element name="Chaotic Form" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CHAOTIC_FORM">
 		<supports>Bard,Sorcerer,Wizard</supports>
@@ -485,6 +542,29 @@
 		</setters>
 	</element>
 
+<!-- CLOAK OF FIENDISH MENACE  -->
+	<element name="Cloak of Fiendish Menace" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CLOAK_OF_FIENDISH_MENACE">
+		<supports>Cleric,Sorcerer,Wizard</supports>
+		<description>
+			<p>You wrap yourself in an aura of fiendish power, intimidating those that face you. When a creature is within 5 feet of you, it must make a Wisdom saving throw. On a failed save, the creature becomes frightened. A frightened creature can make another saving throw at the start of each of its turns. On a successful saving throw, the creature is no longer frightened and cannot again be affected by this particular casting of the spell.</p>
+			<p class="indent">If you deal damage to a creature that is frightened by this spell, it must take the Dash action and move away from you by the safest available route on its next turn, unless there is nowhere to move. The creature is unable to move toward you again while the spell is in effect, unless it makes a successful saving throw against the spell.</p>
+		</description>
+		<setters>
+			<set name="keywords">fiendish</set>
+			<set name="level">2</set>
+			<set name="school" addition="fiendish">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 <!-- CLOAK OF SHADOW  -->
 	<element name="Cloak of Shadow" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CLOAK_OF_SHADOW">
 		<supports>Wizard</supports>
@@ -506,6 +586,59 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element> 
+
+<!-- CONJURE FIENDS  -->
+	<element name="Conjure Fiend" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CONJURE_FIENDS">
+		<supports>Warlock,Wizard</supports>
+		<description>
+			<p>You summon fiends that appear in unoccupied spaces that you can see within range. You choose one of the following options for what appears:</p>
+			<p class="indent">•One fiend of challenge rating 2 or lower</p>
+			<p class="indent">•Two fiends of challenge rating 1 or lower</p>
+			<p class="indent">•Four fiends of challenge rating 1/2 or lower</p>
+			<p class="indent">•Eight fiends of challenge rating 1/4 or lower</p>
+			<p class="indent">A fiend summoned by this spell disappears when it drops to 0 hit points or when the spell ends.</p>
+			<p class="indent">The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you don’t issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.</p>
+			<p class="indent">The GM has the creatures’ statistics.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 6th-level spell slot and three times as many with an 8th-level spell slot.</p>
+		</description>
+		<setters>
+			<set name="keywords">fiendish</set>
+			<set name="level">4</set>
+			<set name="school" addition="fiendish">Conjuration</set>
+			<set name="time">1 minute</set>
+			<set name="range">90 ft.</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- CONJURE NIGHTMARE --> 
+	<element name="Conjure Nightmare" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CONJURE_NIGHTMARE">
+		<supports>Warlock,Wizard</supports>
+		<description>
+			<p>You call forth a nightmare to serve you. The creature appears in an unoccupied space you choose within range. The nightmare will serve you as a mount, in combat and out. The nightmare is friendly to you and your companions for the duration, and follows any commands you issue to it. If your concentration is broken, the nightmare is no longer bound by the spell. It might leave immediately, especially if it has been wounded or threatened, but it is just as likely to attack you or an ally, or otherwise gain retribution for being summoned and bound to your service. If you provide the nightmare with a sacrifice it can devour when it is first summoned, it will be appeased enough to simply return home once the spell ends, without causing harm to you or your companions.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th level or higher, the duration increases by 1 hour for each slot level above 5th.</p>
+		</description>
+		<setters>
+			<set name="keywords">fiendish</set>
+			<set name="level">5</set>
+			<set name="school" addition="fiendish">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">brimstone and a torch</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 <!-- CONJURE SHADOW TITAN  -->
 	<element name="Conjure Shadow Titan" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CONJURE_SHADOW_TITAN">
@@ -696,6 +829,30 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>     
+
+<!-- CURSE OF YIG  -->
+	<element name="Curse of Yig" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CURSE_OF_YIG">
+		<supports>Wizard</supports>
+		<description>
+			<p>This spell transforms a Small, Medium, or Large creature that you can see within range into a servant of Yig (Creature Codex, p. 325). An unwilling creature can attempt a Wisdom saving throw, negating the effect with a success. A willing creature is automatically affected and remains so for as long as you maintain concentration on the spell.</p>
+			<p class="indent">The transformation lasts for the duration or until the target drops to 0 hit points or dies. The target’s statistics, including mental ability scores, are replaced by the statistics of a servant of Yig. The transformed creature’s alignment becomes neutral evil, and it is both friendly to you and reverent toward the Father of Serpents. Its equipment is unchanged. If the transformed creature was unwilling, it makes a Wisdom saving throw at the end of each of its turns. On a successful save, the spell ends, the creature’s alignment and personality return to normal, and it regains its former attitude toward you and toward Yig.</p>
+			<p class="indent">When it reverts to its normal form, the creature has the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form.</p>
+		</description>
+		<setters>
+			<set name="keywords">mythos</set>
+			<set name="level">5</set>
+			<set name="school" addition="mythos">Transmutation</set>
+			<set name="time">1 minute</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a drop of snake venom</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
 
 <!-- CURSE RING  -->
 	<element name="Curse Ring" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CURSE_RING">
