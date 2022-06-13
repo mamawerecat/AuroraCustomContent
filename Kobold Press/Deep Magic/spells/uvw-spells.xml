@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - U-W</name>
-        <update version="0.0.1">
+        <update version="0.0.3">
             <file name="uvw-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/uvw-spells.xml" />
         </update>
     </info>
@@ -116,6 +116,30 @@
 		</setters>
 	</element> 
 
+<!-- UNSEEN STRANGLER --> 
+	<element name="Unseen Strangler" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_UNSEEN_STRANGLER">
+		<supports>Wizard</supports>
+		<description>
+			<p>You conjure an immaterial, tentacled aberration in an unoccupied space you can see within range, and you specify a password that the phantom recognizes. The entity remains where you conjured it until the spell ends, until you dismiss it as an action, or until you move more than 80 feet from it.</p>
+			<p class="indent">The strangler is invisible to all creatures except you, and it can’t be harmed. When a Small or larger creature approaches within 30 feet of it without speaking the password that you specified, the strangler starts whispering your name. This whispering is always audible to you, regardless of other sounds in the area, as long as you’re conscious. The strangler sees invisible creatures and can see into the Ethereal Plane. It ignores illusions.</p>
+			<p class="indent">If any creatures hostile to you are within 5 feet of the strangler at the start of your turn, the strangler attacks one of them with a tentacle. It makes a melee weapon attack with a bonus equal to your spellcasting ability modifier + your proficiency bonus. On a hit, it deals 3d6 bludgeoning damage, and a Large or smaller creature is grappled (escape DC = your spellcasting ability modifier + your proficiency bonus). Until this grapple ends, the target is restrained, and the strangler can’t attack another target. If the strangler scores a critical hit, the target begins to suffocate and can’t speak until the grapple ends.</p>
+		</description>
+		<setters>
+			<set name="keywords">mythos</set>
+			<set name="level">3</set>
+			<set name="school" addition="mythos">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">8 hours</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pinch of sulfur and a live rodent</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
 <!-- UNSHACKLED MAGIC  -->
 	<element name="Unshackled Magic" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_UNSHACKLED_MAGIC">
 		<supports>Sorcerer,Wizard</supports>
@@ -187,6 +211,29 @@
 		</setters>
 	</element>
 
+<!-- VOORISH SIGN  --> 
+	<element name="Voorish Sign" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_VOORISH_SIGN">
+		<supports>Wizard</supports>
+		<description>
+			<p>For the duration, invisible creatures and objects within 20 feet of you become visible to you, and you have advantage on saving throws against effects that cause the frightened condition. The effect moves with you, remaining centered on you until the duration expires.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the radius increases by 5 feet for every two slot levels above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords">mythos</set>
+			<set name="level">1</set>
+			<set name="school" addition="mythos">Divination</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (20 ft. radius)</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 <!-- WAFT  -->
 	<element name="Waft" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_WAFT">
 		<supports>Sorcerer</supports>
@@ -209,6 +256,28 @@
 		</setters>
 	</element>
 
+<!-- WARP MIND AND MATTER  -->
+	<element name="Warp Mind and Matter" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_WARP_MIND_AND_MATTER">
+		<supports>Wizard</supports>
+		<description>
+			<p>A creature you can see within range undergoes a baleful transmogrification. The target must make a successful Wisdom saving throw or suffer a flesh warp and be afflicted with a form of indefinite madness.</p>
+		</description>
+		<setters>
+			<set name="keywords">mythos</set>
+			<set name="level">6</set>
+			<set name="school" addition="mythos">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Until dispelled or cured</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">root of deadly nightshade and a drop of the caster's blood</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element> 
+
 <!-- WALL OF TIME  -->
 	<element name="Wall of Time" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_WALL_OF_TIME">
 		<supports>Cleric,Sorcerer,Wizard</supports>
@@ -230,6 +299,29 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>	
+
+<!-- WAVE OF CORRUPTION --> 
+	<element name="Wave of Corruption" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_WAVE_OF_CORRUPTION">
+		<supports>Cleric,Wizard</supports>
+		<description>
+			<p>When you cast this spell, necromantic energy spreads out in a 30-foot radius around you, corrupting what it comes into contact with. Each unattended, nonmagical object within range takes 3d8 necrotic damage. All food and drink in the area, other than what is being carried, is fouled and made unpalatable. Magic consumables, such as potions, have a 50 percent chance of being ruined, but any such item in the possession of a creature gets a Constitution saving throw using the owner’s save bonus to avoid this outcome.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, the necrotic damage increases by 1d8 for every two slot levels above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords">fiendish</set>
+			<set name="level">3</set>
+			<set name="school" addition="fiendish">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a scrap of rotten meant or plant matter</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 <!-- WEAPON OF BLOOD  -->
 	<element name="Weapon of Blood" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_WEAPON_OF_BLOOD">
@@ -369,5 +461,51 @@
 		</setters>
 	</element>  
 
+<!-- WITHERING SMITE --> 
+	<element name="Withering Smite" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_WITHERING_SMITE">
+		<supports>Cleric,Paladin</supports>
+		<description>
+			<p>Your weapon radiates terrible energy that empowers the next strike you make with it. The next time you hit with a melee weapon attack during this spell’s duration, your attack deals an extra 1d6 necrotic damage.</p>
+			<p class="indent">If the target of that attack was a creature, it must make a successful Constitution saving throw or take 1d6 necrotic damage at the start of each of its turns for 1 minute, its flesh rotting around the wound. An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on a success. The rotting effect also ends if the affected creature receives magical healing.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the extra damage dealt by the weapon’s hit increases by 1d6 for each slot level above 1st. Subsequent necrotic damage doesn’t increase.</p>
+		</description>
+		<setters>
+			<set name="keywords">apocalypse</set>
+			<set name="level">1</set>
+			<set name="school" addition="apocalypse">Necromancy</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- YELLOW SIGN  -->
+	<element name="Yellow Sign" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_YELLOW_SIGN">
+		<supports>Wizard</supports>
+		<description>
+			<p>You attempt to afflict a humanoid you can see within range with memories of distant, alien realms and their peculiar inhabitants. The target must make a successful Wisdom saving throw or be afflicted with a form of long-term madness and be charmed by you for the duration of the spell or until you or one of your allies harms it in any way. While charmed in this way, the creature regards you as a sacred monarch. If you or an ally of yours is fighting the creature, it has advantage on its saving throw.</p>
+			<p class="indent">A successful remove curse spell ends both effects.</p>
+		</description>
+		<setters>
+			<set name="keywords">mythos</set>
+			<set name="level">4</set>
+			<set name="school" addition="mythos">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">1d10 hours</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 </elements>

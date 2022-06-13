@@ -2,11 +2,56 @@
 <elements>
     <info>
         <name>Deep Magic Spells - M</name>
-        <update version="0.0.1">
+        <update version="0.0.3">
             <file name="m-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/m-spells.xml" />
         </update>
     </info>
 
+<!-- MAGMA SPRAY --> 
+	<element name="Magma Spray" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_MAGMA_SPRAY">
+		<supports>Druid,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>A 5-foot-diameter, 5-foot-tall cylindrical fountain of magma erupts from the ground in a space of your choice within range. A creature in that space takes 3d8 fire damage, or half as much damage with a successful Dexterity saving throw. A creature that enters the area on its turn or ends its turn there also takes 3d8 fire damage, or half as much damage with a successful Dexterity saving throw. A creature can take this damage only once per turn.</p>
+			<p class="indent">A creature whose hit points are reduced to 0 by this damage is killed immediately, and its body burns to ash.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">apocalypse</set>
+			<set name="level">2</set>
+			<set name="school" addition="apocalypse">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">40 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pinch of sulfur or a piece of brimstone</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- MAMMON’S AVARICE -->
+	<element name="Mammon's Avarice" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_MAMMONS_AVARICE">
+		<supports>Cleric,Warlock,Wizard</supports>
+		<description>
+			<p>By casting this spell, you tap into the power of greed that is Mammon’s sphere of influence, which manifests as a heightened olfactory sense. You can pinpoint, by smell, the location of any precious metals or gemstones within 30 feet of you. If you find anything, you can use an action to determine the exact types and amounts of any such materials. If materials of this sort are completely enclosed by, or separated from you by, more than 6 feet of earth or wood, 2 feet of stone, or 2 inches of common metal, you cannot detect them even if they are in range.</p>
+		</description>
+		<setters>
+			<set name="keywords">fiendish</set>
+			<set name="level">1</set>
+			<set name="school" addition="fiendish">Divination</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (30 ft. radius)</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 <!-- MASS SURGE DAMPENER  -->
 	<element name="Mass Surge Dampener" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_MASS_SURGE_DAMPENER">
 		<supports>Bard,Wizard</supports>
@@ -50,6 +95,30 @@
 			<set name="materialComponent">a dead toad and a dram of arsenic worth 10 gp</set>
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- MIND EXCHANGE  -->
+	<element name="Mind Exchange" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_MIND_EXCHANGE">
+		<supports>Wizard</supports>
+		<description>
+			<p>One humanoid of your choice that you can see within range must make a Charisma saving throw. On a failed save, you project your mind into the body of the target. You use the target’s statistics but don’t gain access to its knowledge, class features, or proficiencies, retaining your own instead. Meanwhile, the target’s mind is shunted into your body, where it uses your statistics but likewise retains its own knowledge, class features, and proficiencies.</p>
+			<p class="indent">The exchange lasts until either of the the two bodies drops to 0 hit points, until you end it as a bonus action, or until you are forced out of the target body by an effect such as a dispel magic or dispel evil and good spell (the latter spell defeats mind exchange even though possession by a humanoid isn’t usually affected by that spell). When the effect of this spell ends, both switched minds return to their original bodies. The target of the spell is immune to mind exchange for 24 hours after succeeding on the saving throw or after the exchange ends.</p>
+			<p class="indent">The effects of the exchange can be made permanent with a wish spell or comparable magic.</p>
+		</description>
+		<setters>
+			<set name="keywords">mythos</set>
+			<set name="level">3</set>
+			<set name="school" addition="mythos">Transmutation</set>
+			<set name="time">1 minute</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a prism and silver coin</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">true</set>
 		</setters>
 	</element>
 

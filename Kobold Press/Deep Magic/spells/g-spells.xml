@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - G</name>
-        <update version="0.0.1">
+        <update version="0.0.3">
             <file name="g-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/g-spells.xml" />
         </update>
     </info>
@@ -54,6 +54,28 @@
 		</setters>
 	</element> 
 
+<!-- GLIMPSE THE END --> 
+	<element name="Glimpse the End" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_GLIMPSE_THE_END">
+		<supports>Bard,Cleric,Druid,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You examine the life force in a creature you touch and sense when it will expire. You and the creature share a vision of the most likely way in which the creature will die. You both sense approximately how far into the future the event occurs. The vision is not a prophecy or a definite fate; life can take unexpected twists and turns. It is, however, the most likely outcome at the current time unless the creature alters the course of its life. The vision can seem to last as little as a few moments or as long as 30 minutes to you and the spell’s target, but in the objective world, the knowledge is received instantaneously.</p>
+		</description>
+		<setters>
+			<set name="keywords">apocalypse</set>
+			<set name="level">3</set>
+			<set name="school" addition="apocalypse">Divination</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pinch of grave dust or a piece from a tombstone</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 <!-- GLUEY GLOBULE  -->	
 	<element name="Gluey Globule" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_GLUEY_GLOBULE">
 		<supports>Artificer,Wizard</supports>
@@ -73,6 +95,28 @@
 			<set name="hasMaterialComponent">true</set>
 			<set name="materialComponent">a drop of glue</set>
 			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- GRAVE SENSE  -->
+	<element name="Grave Sense" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_GRAVE_SENSE">
+		<supports>Bard,Cleric,Wizard</supports>
+		<description>
+			<p>You touch a willing undead creature or one that’s under your control. For the duration of the spell, you can use an action to see what the undead creature sees (including through darkvision, blindsight, tremorsense, or truesight), and to hear what it hears, until the start of your next turn. You use your own ability scores and skill proficiencies to spot things and to interpret the sensations you’re receiving.</p>
+		</description>
+		<setters>
+			<set name="keywords">apocalypse</set>
+			<set name="level">2</set>
+			<set name="school" addition="apocalypse">Divination</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
@@ -123,6 +167,54 @@
 			<set name="isRitual">true</set>
 		</setters>
 	</element>	
+
+<!-- GREEN DECAY  -->
+	<element name="Green Decay" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_GREEN_DECAY">
+		<supports>Wizard</supports>
+		<description>
+			<p>Your touch inflicts a nauseating, alien rot. Make a melee spell attack against a creature within your reach. On a hit, you afflict the creature with the supernatural disease green decay (see below), and creatures within 15 feet of the target who can see it must make a successful Constitution saving throw or become poisoned until the end of their next turn.</p>
+			<p class="indent">You lose concentration on this spell if you can’t see the target at the end of your turn.</p>
+			<p class="indent"><b><i>Green Decay.</i></b> The flesh of a creature that has this disease is slowly consumed by a virulent extraterrestrial fungus. While the disease persists, the creature has disadvantage on Charisma and Wisdom checks and on Wisdom saving throws, and it has vulnerability to acid, fire, and necrotic damage. An affected creature must make a Constitution saving throw at the end of each of its turns. On a failed save, the creature takes 1d6 necrotic damage, and its hit point maximum is reduced by an amount equal to the necrotic damage taken. If the creature gets three successes on these saving throws before it gets three failures, the disease ends immediately (but the damage and the hit point maximum reduction remain in effect). If the creature gets three failures on these saving throws before it gets three successes, the disease lasts for the duration of the spell, and no further saving throws are allowed.</p>
+			mythos
+		</description>
+		<setters>
+			<set name="keywords">mythos</set>
+			<set name="level">4</set>
+			<set name="school" addition="mythos">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
+<!-- GRIM SIPHON  -->
+	<element name="Grim Siphon" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_GRIM_SIPHON">
+		<supports>Cleric,Druid,Sorcerer,Warlock</supports>
+		<description>
+			<p>You twist the forces of entropy around two creatures, bringing distress to one while staving off the demise of the other. A creature you can see within range must make a successful Constitution saving throw or take poison damage equal to 1d4 + your spellcasting ability modifier. Another creature you choose that is within 5 feet of the target regains hit points equal to half the amount of poison damage dealt.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the poison damage increases by 1d4 for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords">apocalypse</set>
+			<set name="level">1</set>
+			<set name="school" addition="apocalypse">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">the skull of a Tiny mammal or bird</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 <!-- GUEST OF HONOR  -->
 	<element name="Guest of Honor" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_GUEST_OF_HONOR">

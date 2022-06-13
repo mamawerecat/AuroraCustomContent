@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - N</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="n-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/n-spells.xml" />
         </update>
     </info>
@@ -29,4 +29,30 @@
 		</setters>
 	</element>   
     
+<!-- NEST OF INFERNAL VIPERS  -->
+	<element name="Nest of Infernal Vipers" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_NEST_OF_INFERNAL_VIPER">
+		<supports>Cleric,Wizard</supports>
+		<description>
+			<p>	You summon evil spirits that take the form of a swarm of poisonous snakes and appear in an unoccupied space you can see within range. The swarm of snakes is considered a fiend as well as a beast. It has resistance to fire damage, and lasts until it drops to 0 hit points or the spell ends.</p>
+			<p class="indent">The summoned swarm is friendly to you and your companions. Roll initiative for the swarm, which takes its own turns. It obeys any verbal commands you issue to it (no action required by you). If you don’t issue any commands to the swarm, it moves to attack the nearest creature that is not your ally.</p>
+			<p class="indent">The GM has the creature’s statistics.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using certain higher-level spell slots, you can summon additional swarms. You summon two swarms with a 5th-level spell slot, three swarms with a 7th-level spell slot, or four swarms with a 9th-level spell slot.</p>
+		</description>
+		<setters>
+			<set name="keywords">fiendish</set>
+			<set name="level">3</set>
+			<set name="school" addition="fiendish">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+
 </elements>

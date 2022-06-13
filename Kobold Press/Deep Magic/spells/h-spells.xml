@@ -2,11 +2,57 @@
 <elements>
     <info>
         <name>Deep Magic Spells - H</name>
-        <update version="0.0.1">
+        <update version="0.0.3">
             <file name="h-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/h-spells.xml" />
         </update>
     </info>    
 
+<!-- HAND OF DOOM  -->
+	<element name="Hand of Doom" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_HAND_OF_DOOM">
+		<supports>Cleric,Warlock,Wizard</supports>
+		<description>
+			<p>Your outstretched hand glows with sinister power that hastens the demise of a creature you touch. Make a melee spell attack against the creature. On a hit, the target takes 1d4 necrotic damage and must make a successful Constitution saving throw or become poisoned until the end of your next turn. If the target was already poisoned when you hit it with hand of doom, it takes 1d12 poison damage instead of 1d4 necrotic damage on a failed save.</p>
+			<p class="indent">This spell’s damage increases by one die at 5th level (2d4 necrotic or 2d12 poison), 11th level (3d4 or 3d12), and 17th level (4d4 or 4d12).</p>
+		</description>
+		<setters>
+			<set name="keywords">apocalypse</set>
+			<set name="level">0</set>
+			<set name="school" addition="apocalypse">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- HELLFIRE BLITZ --> 
+	<element name="Hellfire Blitz" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_HELLFIRE_BLITZ">
+		<supports>Paladin,Sorcerer,Warlock</supports>
+		<description>
+			<p>Upon casting hellfire blitz, you assume a flaming spectral form until the end of your turn. You immediately move up to 40 feet in a straight line. You can move through spaces occupied by other creatures, but you must end your turn in an unoccupied space. This movement doesn’t provoke opportunity attacks. Each creature whose space you pass through takes 6d6 fire damage, or half as much damage with a successful Dexterity saving throw.</p>
+			<p class="indent">You leave a 5-foot-wide line of hellfire burning behind you in your path. This hellfire continues burning for a number of rounds equal to your spellcasting ability modifier. A creature that ends its turn in hellfire or passes through the line on its turn takes 1d6 fire damage, or half as much damage with a successful Dexterity saving throw. A creature can take this damage only once per turn. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords">apocalypse</set>
+			<set name="level">3</set>
+			<set name="school" addition="apocalypse">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 <!-- HIDE IN ONE’S SHADOW  --> 
 	<element name="Hide in One's Shadow" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_HIDE_IN_ONES_SHADOW">
@@ -53,5 +99,29 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element> 
+
+<!-- HUNGER OF LENG  -->
+	<element name="Hunger of Leng" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_HUNGER_OF_LENG">
+		<supports>Wizard</supports>
+		<description>
+			<p>You curse a creature that you can see in range with an insatiable, ghoulish appetite. If it has a digestive system, the creature must make a successful Wisdom saving throw or be compelled to consume the flesh of living creatures for the duration.</p>
+			<p class="indent">The target gains a bite attack and moves to and attacks the closest creature that isn’t an undead or a construct. The target is proficient with the bite, and it adds its Strength modifier to the attack and damage rolls. The damage is piercing and the damage die is a d4. If the target is larger than Medium, its damage die increases by 1d4 for each size category it is above Medium. In addition, the target has advantage on melee attack rolls against any creature that doesn’t have all of its hit points.</p>
+			<p class="indent">If there isn’t a viable creature within range for the target to attack, it deals piercing damage to itself equal to 2d4 + its Strength modifier. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success. If the target has two consecutive failures, hunger of Leng lasts its full duration with no further saving throws allowed.</p>
+		</description>
+		<setters>
+			<set name="keywords">mythos</set>
+			<set name="level">4</set>
+			<set name="school" addition="mythos">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">90 ft.</set>
+			<set name="duration">1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pinch of salt and a drop of the caster's blood</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 </elements>
