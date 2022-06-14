@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - D</name>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="d-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/d-spells.xml" />
         </update>
     </info>
@@ -237,6 +237,29 @@
 		</setters>
 	</element>
 
+<!-- DESTRUCTIVE RESONANCE -->
+	<element name="Destructive Resonanace" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_DESTRUCTIVE_RESONANACE">
+		<supports>Wizard</supports>
+		<description>
+			<p>You shout a scathing string of Void Speech that assaults the minds of those before you. Each creature in a 15-foot cone that can hear you takes 4d6 psychic damage, or half that damage with a successful Wisdom saving throw. A creature damaged by this spell can’t take reactions until the start of its next turn.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">void</set>
+			<set name="level">2</set>
+			<set name="school" addition="void">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (15 ft. cone)</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 <!-- DETECT DRAGONS --> 
 	<element name="Detect Dragons" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_DETECT_DRAGONS">
 		<supports>Bard,Druid,Sorcerer,Wizard</supports>
@@ -304,6 +327,29 @@
 			<set name="isRitual">true</set>
 		</setters>
 	</element>	
+
+<!-- DIMENSIONAL SHOVE -->
+	<element name="Dimensional Shove" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_DIMENSIONAL_SHOVE">
+		<supports>Bard,Warlock,Wizard</supports>
+		<description>
+			<p>This spell pushes a creature you touch through a dimensional portal, causing it to disappear and then reappear a short distance away. If the target fails a Wisdom saving throw, it disappears from its current location and reappears 30 feet away from you in a direction of your choice. This travel can take it through walls, creatures, or other solid surfaces, but the target can’t reappear inside a solid object or not on solid ground; instead, it reappears in the nearest safe, unoccupied space along the path of travel.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, the target is shoved an additional 30 feet for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords">labyrinth</set>
+			<set name="level">3</set>
+			<set name="school" addition="labyrinth">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 <!-- DOUSE LIGHT  -->
 	<element name="Douse Light" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_DOUSE_LIGHT">

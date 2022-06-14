@@ -2,11 +2,33 @@
 <elements>
     <info>
         <name>Deep Magic Spells - T</name>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="t-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/t-spells.xml" />
         </update>
     </info>
  
+<!-- THOUSAND DARTS  -->
+	<element name="Thousand Darts" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_THOUSAND_DARTS">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You launch thousands of needlelike darts in a 5-foot wide line that is 120 feet long. Each creature in the line takes 6d6 piercing damage, or half as much damage if it makes a successful Dexterity saving throw. The first creature struck by the darts makes the saving throw with disadvantage.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b>  When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords">clockwork</set>
+			<set name="level">3</set>
+			<set name="school" addition="clockwork">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (120-foot line)</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a set of mithral darts worth 25 gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 <!-- THUNDER BOLT  -->
 	<element name="Thunder Bolt" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_THUNDER_BOLT">
 		<supports>Sorcerer</supports>
@@ -28,6 +50,52 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element> 
+
+<!-- THUNDEROUS CHARGE  -->
+	<element name="Thunderous Charge" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_THUNDEROUS_CHARGE">
+		<supports>Ranger,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>With a thunderous battle cry, you move up to 10 feet in a straight line and make a melee weapon attack. If it hits, you can choose to either gain a +5 bonus on the attack’s damage or shove the target 10 feet.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the distance you can move increases by 10 feet, and the attack deals an additional 1d6 thunder damage, for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords">labyrinth</set>
+			<set name="level">1</set>
+			<set name="school" addition="labyrinth">Transmutation</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Self</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+	
+<!-- THUNDEROUS STAMPEDE  -->
+	<element name="Thunderous Stampede" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_THUNDEROUS_STAMPEDE">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>This spell acts as thunderous charge, but affecting up to three targets within range, including yourself. A target other than you must use its reaction to move and attack under the effect of thunderous stampede.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the distance your targets can move increases by 10 feet, and the attack deals an additional 1d6 thunder damage, for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">labyrinth</set>
+			<set name="level">2</set>
+			<set name="school" addition="labyrinth">Transmutation</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Self (30 ft. radius)</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 <!-- THUNDERSTORM -->
 	<element name="Thunderstorm" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_THUNDERSTORM">
@@ -254,6 +322,28 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element> 	
+
+<!-- TIRELESS  -->
+	<element name="Tireless" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_TIRELESS">
+		<supports>Bard,Sorcerer,Wizard</supports>
+		<description>
+			<p>You grant machinelike stamina to a creature you touch for the duration of the spell. The target requires no food or drink or rest. It can move at three times its normal speed overland and perform three times the usual amount of labor. The target is not protected from fatigue or exhaustion caused by a magical effect.</p>
+		</description>
+		<setters>
+			<set name="keywords">clockwork</set>
+			<set name="level">1</set>
+			<set name="school" addition="clockwork">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">24 hrs</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an ever-wound spring worth 50 gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 <!-- TOME CURSE  -->=
 	<element name="Tome Curse" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_TOME_CURSE">

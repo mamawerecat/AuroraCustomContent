@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - E</name>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="e-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/e-spells.xml" />
         </update>
     </info>
@@ -54,6 +54,30 @@
 			<set name="materialComponent">a corvid entrails, a dried opium poppy, and a glass dagger</set>
 			<set name="isConcentration">false</set>
 			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
+<!-- ELEMENTAL HORNS --> 
+	<element name="Elemental Horns" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ELEMENTAL_HORNS">
+		<supports>Druid,Ranger,Sorcerer,Wizard</supports>
+		<description>
+			<p>The target of ths spell must be a creature that has horns, or the spell fails. Elemental horns causes the touched creature’s horns to crackle with elemental energy. Select one of the following energy types when casting this spell: acid, cold, fire, lightning, or radiant. The creature’s gore attack deals 3d6 damage of the chosen type in addition to any other damage the attack normally deals.</p>
+			<p class="indent">Although commonly seen among tieflings and minotaurs, this spell is rarely employed by other races. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 2d6 for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">labyrinth</set>
+			<set name="level">2</set>
+			<set name="school" addition="labyrinth">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a brass wand</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
 		</setters>
 	</element>
 

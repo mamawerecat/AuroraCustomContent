@@ -2,10 +2,58 @@
 <elements>
     <info>
         <name>Deep Magic Spells - L</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="l-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/l-spells.xml" />
         </update>
     </info>
+
+<!-- LABYRINTH MASTERY  --> 
+	<element name="Labyrinth Mastery" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_LABYRINTH_MASTERY">
+		<supports>Bard,Ranger,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>Upon casting this spell, you immediately gain a sense of your surroundings. If you are in a physical maze or any similar structure with multiple paths and dead ends, this spell guides you to the nearest exit, although not necessarily along the fastest or shortest route.</p>
+			<p class="indent">In addition, while the spell is guiding you out of such a structure, you have advantage on ability checks to avoid being surprised and on initiative rolls.</p>
+			<p class="indent">You gain a perfect memory of all portions of the structure you move through during the spell’s duration. If you revisit such a portion, you recognize that you’ve been there before and automatically notice any changes to the environment.</p>
+			<p class="indent">Also, while under the effect of this spell, you can exit any maze spell (and its lesser and greater varieties) as an action without needing to make an Intelligence check.</p>
+		</description>
+		<setters>
+			<set name="keywords">labyrinth</set>
+			<set name="level">4</set>
+			<set name="school" addition="labyrinth">Divination</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a piece of blank parchment</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+	
+<!-- LABYRINTHINE HOWL  -->
+	<element name="Labyrinthine Howl" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_LABYRINTHINE_HOWL">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>You let loose the howl of a ravenous beast, causing each enemy within range that can hear you to make a Wisdom saving throw. On a failed save, a creature believes it has been transported into a labyrinth and is under attack by savage beasts. An affected creature must choose either to face the beasts or to curl into a ball for protection. A creature that faces the beasts takes 7d8 psychic damage, and then the spell ends on it. A creature that curls into a ball falls prone and is stunned until the end of your next turn.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th level or higher, the damage increases by 2d8 for each slot level above 5th.</p>
+		</description>
+		<setters>
+			<set name="keywords">labyrinth</set>
+			<set name="level">5</set>
+			<set name="school" addition="labyrinth">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">1 round</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a dead mouse</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 <!-- LAIR SENSE  --> 
 	<element name="Lair Sense" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_LAIR_SENSE">
@@ -98,6 +146,51 @@
 		</setters>
 	</element> 
 
+<!-- LESSER MAZE  -->
+	<element name="Lesser Maze" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_LESSER_MAZE">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>This spell functions as maze, but the target can resist being sent to the extradimensional prison with a successful Intelligence saving throw. In addition, the maze is easier to navigate, requiring only a DC 12 Intelligence check to escape.</p>
+		</description>
+		<setters>
+			<set name="keywords">labyrinth</set>
+			<set name="level">3</set>
+			<set name="school" addition="labyrinth">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- LIFE DRAIN  --> 
+	<element name="Life Drain" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_LIFE_DRAIN">
+		<supports>Wizard</supports>
+		<description>
+			<p>With a snarled word of Void Speech, you create a swirling vortex of purple energy. Choose a point you can see within range. Creatures within 15 feet of the point take 10d6 necrotic damage, or half that damage with a successful Constitution saving throw. For each creature damaged by the spell, you can choose one other creature within range, including yourself, that is not a construct or undead. The secondary targets regain hit points equal to half the necrotic damage you dealt.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 7th level or higher, the vortex’s damage increases by 1d6 for each slot level above 6th.</p>
+		</description>
+		<setters>
+			<set name="keywords">void</set>
+			<set name="level">6</set>
+			<set name="school" addition="void">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">90 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 <!-- LIFE HACK --> 
 	<element name="Life Hack" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_LIFE_HACK">
 		<supports>Wizard</supports>
@@ -120,6 +213,51 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>    
-    
-    
+
+<!-- LIVING SHADOWS  -->
+	<element name="Living Shadows" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_LIVING_SHADOWS">
+		<supports>Wizard</supports>
+		<description>
+			<p>You whisper sibilant words of Void Speech that cause shadows to writhe with unholy life. Choose a point you can see within range. Writhing shadows spread out in a 15-foot-radius sphere centered on that point, grasping at creatures in the area. A creature that starts its turn in the area or that enters the area for the first time on its turn must make a successful Strength saving throw or be restrained by the shadows. A creature that starts its turn restrained by the shadows must make a successful Constitution saving throw or gain one level of exhaustion.</p>
+			<p class="indent">A restrained creature can use its action to make a Strength or Dexterity check (its choice) against your spell save DC. On a success, it frees itself.</p>
+		</description>
+		<setters>
+			<set name="keywords">void</set>
+			<set name="level">5</set>
+			<set name="school" addition="void">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">120 ft.</set>
+			<set name="duration">1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>    
+
+ <!-- LOCK ARMOR  -->
+	<element name="Lock Armor" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_LOCK_ARMOR">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You target a piece of metal equipment or a metal construct. If the target is a creature wearing metal armor or is a construct, it makes a Wisdom saving throw to negate the effect. On a failed save, the spell causes metal to cling to metal, making it impossible to move pieces against each other. This effectively paralyzes a creature that is made of metal or that is wearing metal armor with moving pieces; for example, scale mail would lock up because the scales must slide across each other, but a breastplate would be unaffected. Limited movement might still be possible, depending on how extensive the armor is, and speech is usually not affected. Metal constructs are paralyzed. An affected creature or construct can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. A grease spell dispels lock armor on everything in its area.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b>  When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">clockwork</set>
+			<set name="level">2</set>
+			<set name="school" addition="clockwork">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pinch of rust and metal shavings</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 </elements>
