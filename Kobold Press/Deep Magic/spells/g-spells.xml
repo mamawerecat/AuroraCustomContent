@@ -2,10 +2,59 @@
 <elements>
     <info>
         <name>Deep Magic Spells - G</name>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="g-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/g-spells.xml" />
         </update>
     </info>
+
+<!-- GEAR BARRAGE --> 
+	<element name="Gear Barrage" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_GEAR_BARRAGE">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You create a burst of magically propelled gears. Each creature within a 60-foot cone takes 3d8 slashing damage, or half as much damage with a successful Dexterity saving throw. Constructs have disadvantage on the saving throw. </p>
+		</description>
+		<setters>
+			<set name="keywords">clockwork</set>
+			<set name="level">2</set>
+			<set name="school" addition="clockwork">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (60 ft. cone)</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a handful of gears and sprockets worth 5 gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- GHOUL KING’S CLOAK  -->
+	<element name="Ghoul King's Cloak" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_GHOUL_KINGS_CLOAK">
+		<supports>Cleric,Warlock</supports>
+		<description>
+			<p>You touch a creature, giving it some of the power of a ghoul king. The target gains the following benefits for the duration:</p>
+			<p class="indent">	•Its Armor Class increases by 2, to a maximum of 20.</p>
+			<p class="indent">	•When it uses the Attack action to make a melee weapon attack or a ranged weapon attack, it can make one additional attack of the same kind.</p>
+			<p class="indent">	•It is immune to necrotic damage and radiant damage.</p>
+			<p class="indent">	•It can’t be reduced to less than 1 hit point.</p>
+			<p><b><i>At Higher Levels.</i></b> When you cast this spell using a 9th-level spell slot, the spell lasts for 10 minutes and doesn’t require concentration.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">8</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
 
 <!-- GLACIAL CASCADE  -->
 	<element name="Glacial Cascade" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_GLACIAL_CASCADE">
@@ -76,6 +125,28 @@
 		</setters>
 	</element>
 
+<!-- GLIMPSE OF THE VOID --> 
+	<element name="Glimpse of the Void" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_GLIMPSE_OF_THE_VOID">
+		<supports>Wizard</supports>
+		<description>
+			<p>Muttering Void Speech, you force images of terror and nonexistence upon your foes. Each creature in a 30-foot cube centered on a point within range must make an Intelligence saving throw. On a failed save, the creature goes insane for the duration. While insane, a creature takes no actions other than to shriek, wail, gibber, and babble unintelligibly. The GM controls the creature’s movement, which is erratic.</p>
+		</description>
+		<setters>
+			<set name="keywords">void</set>
+			<set name="level">8</set>
+			<set name="school" addition="void">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">120 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a scrap of parchment with Void glyph scrawlings</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 <!-- GLUEY GLOBULE  -->	
 	<element name="Gluey Globule" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_GLUEY_GLOBULE">
 		<supports>Artificer,Wizard</supports>
@@ -113,6 +184,51 @@
 			<set name="range">Touch</set>
 			<set name="duration">Concentration, up to 1 hour</set>
 			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- GREATER ANALYZE DEVICE  -->
+	<element name="Greater Analyze Device" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_GREATER_ANALYZE_DEVICE">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>You discover all mechanical properties, mechanisms, and functions of a single construct, clockwork device, mechanical trap, or magic item, including how to activate or deactivate those functions, if appropriate.</p>
+		</description>
+		<setters>
+			<set name="keywords">clockwork</set>
+			<set name="level">2</set>
+			<set name="school" addition="clockwork">Divination</set>
+			<set name="time">1 hour</set>
+			<set name="range">Touch</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a set of clockworker's tools</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- GREATER MAZE  -->
+	<element name="Greater Maze" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_GREAT_MAZE">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>This spell functions as maze, but the target must make a Dexterity saving throw each time it starts its turn in the maze. The target takes 4d6 psychic damage on a failed save, or half as much damage on a success.</p>
+			<p class="indent">Escaping this maze is especially difficult. To do so, the target must use an action to make a DC 20 Intelligence check. It escapes when it makes its second successful check</p>
+		</description>
+		<setters>
+			<set name="keywords">labyrinth</set>
+			<set name="level">9</set>
+			<set name="school" addition="labyrinth">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent">component</set>

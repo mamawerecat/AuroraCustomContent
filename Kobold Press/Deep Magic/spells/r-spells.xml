@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - R</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="r-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/r-spells.xml" />
         </update>
     </info>
@@ -103,7 +103,7 @@
 
 <!-- REVERBERATE  -->
 	<element name="Reverberate" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_REVERBERATE">
-		<supports></supports>
+		<supports>Sorcerer,Warlock,Wizard</supports>
 		<description>
 			<p>You touch the ground at your feet with the metal ring, creating an impact that shakes the earth ahead of you. Creatures and unattended objects touching the ground in a 15-foot cone emanating from you take 4d6 thunder damage, and creatures fall prone; a creature that makes a successful Dexterity saving throw takes half the damage and does not fall prone. </p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.</p>
@@ -148,7 +148,7 @@
 
 <!-- RING STRIKE  -->
 	<element name="Ring Strike" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_RING_STRIKE">
-		<supports></supports>
+		<supports>Sorcerer,Warlock,Wizard</supports>
 		<description>
 			<p>You infuse two metal rings with magic, causing them to revolve in a slow orbit around your head or hand. For the duration, when you hit a target within 60 feet of you with an attack, you can launch one of the rings to strike the target as well. The target takes 1d10 bludgeoning damage and must succeed on a Strength saving throw or be pushed 5 feet directly away from you. The ring is destroyed when it strikes. </p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, you can affect up to two additional rings for each spell slot level above 1st.</p>
@@ -171,7 +171,7 @@
 
 <!-- RING WARD  -->
 	<element name="Ring Ward" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_RING_WARD">
-		<supports></supports>
+		<supports>Sorcerer,Wizard</supports>
 		<description>
 			<p>The iron ring you use to cast the spell becomes a faintly shimmering circlet of energy that spins slowly around you at a radius of 15 feet. For the duration, you and your allies inside the protected area have advantage on saving throws against spells, and all affected creatures gain resistance to one type of damage of your choice.</p>
 		</description>

@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - I</name>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="i-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/i-spells.xml" />
         </update>
     </info>
@@ -103,6 +103,28 @@
 		</setters>
 	</element> 
 
+<!-- ICY GRASP OF THE VOID -->
+	<element name="Icy Grasp of the Void" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ICY_GRASP_OF_THE_VOID">
+		<supports>Wizard</supports>
+		<description>
+			<p>You summon the cold, inky darkness of the Void into being around a creature that you can see. The target takes 10d10 cold damage and is restrained for the duration; a successful Constitution saving throw halves the damage and negates the restrained condition. A restrained creature gains one level of exhaustion at the start of each of its turns. Creatures immune to cold and that do not breathe do not gain exhaustion. A creature restrained in this way can repeat the saving throw at the end of each of its turns, ending the spell on a success.</p>
+		</description>
+		<setters>
+			<set name="keywords">void</set>
+			<set name="level">7</set>
+			<set name="school" addition="void">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">120 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 <!-- ILL-FATED WORD  -->
 	<element name="Ill-Fated Word" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ILL_FATED_WORD">
 		<supports>Bard,Sorcerer,Word</supports>
@@ -152,7 +174,7 @@
 
 <!-- INNOCUOUS ASPECT -->
 	<element name="Innocuous Aspect" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_INNOCUOUS_ASPECT">
-		<supports></supports>
+		<supports>Sorcerer,Warlock,Wizard</supports>
 		<description>
 			<p>An area of false vision encompasses all creatures within 20 feet of you. You and each creature in the area that you choose to affect take on the appearance of a harmless creature or object, chosen by you. Each image is identical, and only appearance is affected. Sound, movement, or physical inspection can reveal the ruse. </p>
 			<p class="indent">A creature that uses its action to study the image visually can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, that creature sees through the image.</p>

@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - B</name>
-        <update version="0.0.4">
+        <update version="0.0.5">
             <file name="b-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/b-spells.xml" />
         </update>
     </info>
@@ -543,7 +543,7 @@
 
 <!-- BLOODSHOT  -->
 	<element name="Bloodshot" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLOODSHOT">
-		<supports></supports>
+		<supports>Sorcerer,Warlock,Wizard</supports>
 		<description>
 			<p>You launch a jet of boiling blood from your eyes at a creature within range. You take 1d6 necrotic damage and make a ranged spell attack against the target. If the attack hits, the target takes 2d10 fire damage plus 2d8 psychic damage.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b>When you cast this spell using a spell slot of 3rd level or higher, the fire damage increases by 1d10 for each slot level above 2nd.</p>
@@ -850,6 +850,29 @@
 		</setters>
 	</element> 
 
+<!-- BROKEN CHARGE -->
+	<element name="Broken Charge" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BROKEN_CHARGE">
+		<supports>Bard,Warlock,Wizard</supports>
+		<description>
+			<p>When an enemy that you can see moves to within 5 feet of you, you utter a perplexing word that alters the foe’s course. The enemy must make a successful Wisdom saving throw or take 2d4 psychic damage and use the remainder of its speed to move in a direction of your choosing.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the target takes an additional 2d4 psychic damage for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords">labyrinth</set>
+			<set name="level">1</set>
+			<set name="school" addition="labyrinth">Enchantment</set>
+			<set name="time">1 reaction, which you take when an enemy approaches to within 5 feet of you</set>
+			<set name="range">120 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 <!-- BURNING RADIANCE  -->
 	<element name="Burning Radiance" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BURNING_RADIANCE">
 		<supports>Cleric,Wizard</supports>
@@ -869,6 +892,28 @@
 			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent">component</set>
 			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- BY THE LIGHT OF THE MOON -->
+	<element name="By the Light of the Moon" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BY_THE_LIGHT_OF_THE_MOON">
+		<supports>Cleric,Druid,Ranger,Wizard</supports>
+		<description>
+			<p>The area within 30 feet of you becomes bathed in magical moonlight. In addition to providing dim light, it highlights objects and locations that are hidden or that hold a useful clue. Until the spell ends, all Wisdom (Perception) and Intelligence (Investigation) checks made in the area are made with advantage.</p>
+		</description>
+		<setters>
+			<set name="keywords">labyrinth</set>
+			<set name="level">2</set>
+			<set name="school" addition="labyrinth">Divination</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (30 ft. radius)</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
 			<set name="isRitual">false</set>
 		</setters>
 	</element>

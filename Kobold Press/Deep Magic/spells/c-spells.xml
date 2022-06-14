@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - C</name>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="c-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/c-spells.xml" />
         </update>
     </info>
@@ -54,6 +54,29 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element> 
+
+<!-- CATAPULT --> 
+	<element name="Catapult" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CATAPULT">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You magically hurl an object or creature weighing 500 pounds or less 40 feet through the air in a direction of your choosing (including straight up). Objects hurled at specific targets require a spell attack roll to hit. A thrown creature takes 6d10 bludgeoning damage from the force of the throw, plus any appropriate falling damage, and lands prone. If the target of the spell is thrown against another creature, the total damage is divided evenly between them and both creatures are knocked prone.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b>  When you cast this spell using a spell slot of 7th level or higher, the damage increases by 1d10, the distance thrown increases by 10 feet, and the weight thrown increases by 100 pounds for each slot level above 6th.</p>
+		</description>
+		<setters>
+			<set name="keywords">clockwork</set>
+			<set name="level">6</set>
+			<set name="school" addition="clockwork">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">400 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a small platinum lever and fulcrum worth 400 gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 <!-- CATCH THE BREATH -->
 	<element name="Catch the Breath" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CATCH_THE_BREATH">
@@ -241,6 +264,28 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
+
+<!-- CHAINS OF THE GODDESS  -->
+	<element name="Chains of the Goddess" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CHAINS_OF_THE_GODDESS">
+		<supports>Cleric</supports>
+		<description>
+			<p>Choose a creature you can see within 90 feet. The target must make a successful Wisdom saving throw or be restrained by chains of psychic force and take 6d8 bludgeoning damage. A restrained creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a successful save. While restrained in this way, the creature also takes 6d8 bludgeoning damage at the start of each of your turns.</p>
+		</description>
+		<setters>
+			<set name="keywords">clockwork</set>
+			<set name="level">5</set>
+			<set name="school" addition="clockwork">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">90 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">1 foot of iron chain</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
 
 <!-- CHANNEL FIENDISH POWER  -->
 	<element name="Channel Fiendish Power" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CHANNEL_FIENDISH_POWER">
@@ -587,6 +632,80 @@
 		</setters>
 	</element> 
 
+<!-- CLOCKWORK BODYGUARD  -->
+	<element name="Clockwork Bodyguard" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CLOCKWORK_BODYGUARD">
+		<supports>Cleric,Sorcerer,Wizard</supports>
+		<description>
+			<p>You summon clockwork minions to fight for you. Choose one of the following options for what appears (refer to Tome of Beasts, p. 62-65, for statistics):</p>
+			<p class="indent">	•One clockwork huntsman</p>
+			<p class="indent">	•Two clockwork hounds</p>
+			<p class="indent">	•Four clockwork watchmen</p>
+			<p>The clockwork creatures are friendly to you and your companions for the duration. Roll initiative for the creatures, which have their own turns. They obey any verbal commands you issue to them (no action required by you). If you don’t issue commands, the clockwork creatures defend themselves or you from hostile creatures but otherwise take no actions. The clockwork creatures disappear when they drop to 0 hit points or when the spell ends.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using certain higher-level spell slots, more creatures of your choice appear: twice as many with a 6th-level slot, three times as many with a 7th-level slot, and four times as many with an 8th-level slot.</p>
+		</description>
+		<setters>
+			<set name="keywords">clockwork</set>
+			<set name="level">5</set>
+			<set name="school" addition="clockwork">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+	
+<!-- CLOCKWORK BOLT  -->
+	<element name="Clockwork Bolt" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CLOCKWORK_BOLT">
+		<supports>Bard,Cleric,Wizard</supports>
+		<description>
+			<p>You imbue an arrow or crossbow bolt with clockwork magic just as you fire it at your target; spinning blades materialize on the missile after it strikes to further mutilate your enemy.</p>
+			<p class="indent">As part of the action used to cast this spell, you make a ranged weapon attack with a bow or a crossbow against one creature within range. If the attack hits, the missile embeds in the target. Unless the target (or an ally of it within 5 feet) uses an action to remove the projectile (which deals no additional damage), the target takes an additional 1d8 slashing damage at the end of its next turn from spinning blades that briefly sprout from the missile’s shaft. Afterward, the projectile reverts to normal.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> This spell deals more damage when you reach higher levels. At 5th level, the ranged attack deals an extra 1d8 slashing damage to the target, and the target takes an additional 1d8 slashing damage (2d8 total) if the embedded ammunition isn’t removed. Both damage amounts increase by 1d8 again at 11th level and at 17th level.</p>	
+		</description>
+		<setters>
+			<set name="keywords">clockwork</set>
+			<set name="level">0</set>
+			<set name="school" addition="clockwork">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">1 round</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an arrow or crossbow bolt</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- CONFOUND SENSES  -->
+	<element name="Confound Senses" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CONFOUND_SENSES">
+		<supports>Cleric,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>This spell befuddles the minds of up to six creatures that you can see within range, causing the creatures to see images of shifting terrain. Each target that fails an Intelligence saving throw is reduced to half speed until the spell ends because of confusion over its surroundings, and it makes ranged attack rolls with disadvantage.</p>
+			<p class="indent">Affected creatures also find it impossible to keep track of their location. They automatically fail Wisdom (Survival) checks to avoid getting lost. Whenever an affected creature must choose between one or more paths, it chooses at random and immediately forgets which direction it came from.</p>
+		</description>
+		<setters>
+			<set name="keywords">labyrinth</set>
+			<set name="level">3</set>
+			<set name="school" addition="labyrinth">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a broken compass</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
 <!-- CONJURE FIENDS  -->
 	<element name="Conjure Fiend" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CONJURE_FIENDS">
 		<supports>Warlock,Wizard</supports>
@@ -605,6 +724,36 @@
 			<set name="keywords">fiendish</set>
 			<set name="level">4</set>
 			<set name="school" addition="fiendish">Conjuration</set>
+			<set name="time">1 minute</set>
+			<set name="range">90 ft.</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- CONJURE MINOR VOIDBORN  -->
+	<element name="Conjure Minor Voidborn" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CONJURE_MINOR_VOIDBURN">
+		<supports>Wizard</supports>
+		<description>
+			<p>You summon fiends or aberrations that appear in unoccupied spaces you can see within range. You choose one of the following options:</p>
+			<p class="indent"> •One creature of challenge rating 2 or lower</p>
+			<p class="indent"> •Two creatures of challenge rating 1 or lower</p>
+			<p class="indent"> •Four creatures of challenge rating 1/2 or lower</p>
+			<p class="indent"> •Eight creatures of challenge rating 1/4 or lower</p>
+			<p>Summoned creatures disappear when they drop to 0 hit points or when the spell ends.</p>
+			<p class="indent">The summoned creatures do not directly attack you or your companions. Roll initiative for the summoned creatures as a group; they take their own turns on their initiative result. They attack your enemies and try to stay within 90 feet of you, but they control their own actions. The summoned creatures despise being bound, so they might harm or impede you and your companions with secondary effects (but not direct attacks) if the opportunity arises. At the beginning of the creatures’ turn, you can use your reaction to verbally command them. They obey your commands on that turn, and you take 1d6 psychic damage at the end of the turn.</p>
+			<p class="indent">If your concentration is broken, the spell ends but the creatures don’t disappear. Instead, you can no longer command them, and they become hostile to you and your companions. They will attack you and your allies if they believe they have a chance to win the fight or to inflict meaningful harm, but they won’t fight if they fear it would mean their own death. You can’t dismiss the creatures, but they disappear 1 hour after being summoned.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a 7th or 9th-level spell slot, you choose one of the summoning options above, and more creatures appear—twice as many with a 7th-level spell slot and three times as many with a 9th-level spell slot</p>
+		</description>
+		<setters>
+			<set name="keywords">void</set>
+			<set name="level">5</set>
+			<set name="school" addition="void">Conjuration</set>
 			<set name="time">1 minute</set>
 			<set name="range">90 ft.</set>
 			<set name="duration">Concentration, up to 1 hour</set>
@@ -653,6 +802,31 @@
 			<set name="level">7</set>
 			<set name="school" addition="shadow">Conjuration</set>
 			<set name="time">1 minute</set>
+			<set name="range">90 ft.</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- CONJURE VOIDBORN  -->
+	<element name="Conjure Voidborn" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CONJURE_VOIDBORN">
+		<supports>Wizard</supports>
+		<description>
+			<p>You summon a fiend or aberration of challenge rating 6 or lower, which appears in an unoccupied space that you can see within range. The creature disappears when it drops to 0 hit points or when the spell ends.</p>
+			<p class="indent">Roll initiative for the creature, which takes its own turns. It attacks the nearest creature on its turn. At the start of the fiend’s turn, you can use your reaction to command the creature by speaking in Void Speech. It obeys your verbal command, and you take 2d6 psychic damage at the end of the creature’s turn.</p>
+			<p class="indent">If your concentration is broken, the spell ends but the creature doesn’t disappear. Instead, you can no longer issue commands to the fiend, and it becomes hostile to you and your companions. It will attack you and your allies if it believes it has a chance to win the fight or to inflict meaningful harm, but it won’t fight if it fears doing so would mean its own death. You can’t dismiss the creature, but it disappears 1 hour after you summoned it.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 8th level or higher, the challenge rating increases by 1 for each slot level above 7th.</p>
+		</description>
+		<setters>
+			<set name="keywords">void</set>
+			<set name="level">7</set>
+			<set name="school" addition="void">Conjuration</set>
+			<set name="time">1 action</set>
 			<set name="range">90 ft.</set>
 			<set name="duration">Concentration, up to 1 hour</set>
 			<set name="hasVerbalComponent">true</set>
@@ -804,6 +978,52 @@
 			<set name="hasMaterialComponent">true</set>
 			<set name="materialComponent">a bone needle and a catch basin</set>
 			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- CRUSHING CURSE  -->
+	<element name="Crushing Curse" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CRUSHING_CURSE">
+		<supports>Wizard</supports>
+		<description>
+			<p>You speak a word of Void Speech. Choose a creature you can see within range. If the target can hear you, it must succeed on a Wisdom saving throw or take 1d6 psychic damage and be deafened for 1 minute, except that it can still hear Void Speech. A creature deafened in this way can repeat the saving throw at the end of each of its turns, ending the effect on a success.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> This spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+		</description>
+		<setters>
+			<set name="keywords">void</set>
+			<set name="level">0</set>
+			<set name="school" addition="void">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- CRUSHING TRAMPLE  -->
+	<element name="Crushing Trample" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CRUSHING_TRAMPLE">
+		<supports>Cleric,Druid,Ranger,Sorcerer</supports>
+		<description>
+			<p>Upon casting this spell, you are filled with a desire to overrun your foes. You immediately move up to twice your speed in a straight line, trampling every foe in your path that is of your size category or smaller. If you try to move through the space of an enemy whose size is larger than yours, your movement (and the spell) ends. Each enemy whose space you move through must make a successful Strength saving throw or be knocked prone and take 4d6 bludgeoning damage. If you have hooves, add your Strength modifier (minimum of +1) to the damage.</p>
+			<p class="indent">You move through the spaces of foes whether or not they succeed on their Strength saving throws. You do not provoke opportunity attacks while moving under the effect of crushing trample.</p>
+		</description>
+		<setters>
+			<set name="keywords">labyrinth</set>
+			<set name="level">2</set>
+			<set name="school" addition="labyrinth">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">1 round</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
 	</element> 

@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - F</name>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="f-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/f-spells.xml" />
         </update>
     </info>
@@ -50,6 +50,28 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element> 
+
+<!-- FIST OF IRON --> 
+	<element name="Fist of Iron" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_FIST_OF_IRON">
+		<supports>Cleric,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You transform your naked hand into iron. Your unarmed attacks deal 1d6 bludgeoning damage and are considered magical.</p>
+		</description>
+		<setters>
+			<set name="keywords">clockwork</set>
+			<set name="level">0</set>
+			<set name="school" addition="clockwork">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 <!-- FLICKERING FATE --> 	
 	<element name="Flickering Fate" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_FLICKERING_FATE">
@@ -330,6 +352,28 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element> 
+
+<!-- FURIOUS HOOVES --> 
+	<element name="Furious Hooves" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_FURIOUS_HOOVES">
+		<supports>Cleric,Druid,Sorcerer,Wizard</supports>
+		<description>
+			<p>You enhance the feet or hooves of a creature you touch, imbuing it with power and swiftness. The target doubles its walking speed or increases it by 30 feet, whichever addition is smaller. In addition to any attacks the creature can normally make, this spell grants two hoof attacks, each of which deals bludgeoning damage equal to 1d6 + plus the target’s Strength modifier (or 1d8 if the target of the spell is Large). For the duration of the spell, the affected creature automatically deals this bludgeoning damage to the target of its successful shove attack.</p>
+		</description>
+		<setters>
+			<set name="keywords">labyrinth</set>
+			<set name="level">2</set>
+			<set name="school" addition="labyrinth">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a nail</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 <!-- FUSILLADE OF ICE  -->
 	<element name="Fusillade of Ice" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_FUSILLADE_OF_ICE">

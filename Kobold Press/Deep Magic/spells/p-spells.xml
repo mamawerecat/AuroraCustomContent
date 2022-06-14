@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - P</name>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="p-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/p-spells.xml" />
         </update>
     </info>
@@ -25,6 +25,28 @@
 			<set name="hasSomaticComponent">false</set>
 			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- PENDULUM -->
+	<element name="Pendulum" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_PENDULUM">
+		<supports>Bard,Cleric,Paladin,Sorcerer,Wizard</supports>
+		<description>
+			<p>You give the touched creature an aspect of regularity in its motions and fortunes. If the target gets a failure on a Wisdom saving throw, then for the duration of the spell it doesn’t make d20 rolls—to determine the results of attack rolls, ability checks, and saving throws it instead follows the sequence 20, 1, 19, 2, 18, 3, 17, 4, and so on.</p>
+		</description>
+		<setters>
+			<set name="keywords">clockwork</set>
+			<set name="level">1</set>
+			<set name="school" addition="clockwork">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a small pendulum or metronome made of brass and rosewood worth 10 gp</set>
 			<set name="isConcentration">true</set>
 			<set name="isRitual">false</set>
 		</setters>
@@ -147,6 +169,28 @@
 		</setters>
 	</element>
 	
+<!-- PROTECTION FROM THE VOID  -->
+	<element name="Protection From The Void" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_PROTECTION_FROM_THE_VOID">
+		<supports>Wizard</supports>
+		<description>
+			<p>Until the spell ends, one willing creature you touch has resistance to necrotic and psychic damage, and has advantage on saving throws against Void spells.</p>
+		</description>
+		<setters>
+			<set name="keywords">void</set>
+			<set name="level">1</set>
+			<set name="school" addition="void">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a small bar of silver worth 15 sp, which the spell consumes</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 <!-- PROTECTIVE ICE  -->
 	<element name="Protective Ice" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_PROTECTIVE_ICE">
 		<supports>Cleric</supports>

@@ -2,10 +2,32 @@
 <elements>
     <info>
         <name>Deep Magic Spells - M</name>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="m-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/m-spells.xml" />
         </update>
     </info>
+
+<!-- MADDENING WHISPERS --> 
+	<element name="Maddening Whispers" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_MADDENING_WHISPERS">
+		<supports>Wizard</supports>
+		<description>
+			<p>You whisper a string of Void Speech toward a target within range that can hear you. The target must succeed on a Charisma saving throw or be incapacitated. While incapacitated by this spell, the target’s speed is 0, and it can’t benefit from increases to its speed. To maintain the effect for the duration, you must use your action on subsequent turns to continue whispering; otherwise, the spell ends. The spell also ends if the target takes damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">void</set>
+			<set name="level">2</set>
+			<set name="school" addition="void">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 <!-- MAGMA SPRAY --> 
 	<element name="Magma Spray" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_MAGMA_SPRAY">
@@ -145,6 +167,28 @@
 		</setters>
 	</element> 
 
+<!-- MISSTEP  -->
+	<element name="Misstep" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_MISSTEP">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>You gesture to a creature within range that you can see. If the target fails a Wisdom saving throw, it uses its reaction to move 5 feet in a direction you dictate. This movement does not provoke opportunity attacks. The spell automatically fails if you direct the target into a dangerous area such as a pit trap, a bonfire, or off the edge of a cliff, or if the target has already used its reaction.</p>
+		</description>
+		<setters>
+			<set name="keywords">labyrinth</set>
+			<set name="level">0</set>
+			<set name="school" addition="labyrinth">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 <!-- MIST OF WONDERS  -->
 	<element name="Mist of Wonders" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_MIST_OF_WONDERS">
 		<supports>Sorcerer,Wizard</supports>
@@ -190,6 +234,29 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-    
-    
+
+<!-- MOON TRAP -->
+	<element name="Moon Trap" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_MOON_TRAP">
+		<supports>Cleric,Druid,Warlock,Wizard</supports>
+		<description>
+			<p>While casting this spell under the light of the moon, you inscribe a glyph that covers a 10-foot-square area on a flat, stationary surface such as a floor or a wall. Once the spell is complete, the glyph is invisible in moonlight but glows with a faint white light in darkness.</p>
+			<p class="indent">Any creature that touches the glyph, except those you designate during the casting of the spell, must make a successful Wisdom saving throw or be drawn into an inescapable maze until the sun rises.</p>
+			<p class="indent">The glyph lasts until the next sunrise, at which time it flares with bright light, and any creature trapped inside returns to the space it last occupied, unharmed. If that space has become occupied or dangerous, the creature appears in the nearest safe unoccupied space.</p>
+		</description>
+		<setters>
+			<set name="keywords">labyrinth</set>
+			<set name="level">4</set>
+			<set name="school" addition="labyrinth">Abjuration</set>
+			<set name="time">1 hour</set>
+			<set name="range">Self</set>
+			<set name="duration">up to 8 hours</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">powdered silver worth 250 gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 </elements>

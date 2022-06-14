@@ -2,7 +2,7 @@
 <elements>
 <info>
 	<name>Deep Magic Spells - A</name>
-	<update version="0.0.4">
+	<update version="0.0.5">
 		<file name="a-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/a-spells.xml" />
 	</update>
 </info>
@@ -265,7 +265,7 @@
 
 <!-- ALE-DRITCH BLAST  --> 
 	<element name="Ale-dritch Blast" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ALDEDRITCH_BLAST">
-		<supports></supports>
+		<supports>Bard,Cleric,Druid,Wizard</supports>
 		<description>
 			<p>A stream of ice-cold ale blasts from your outstretched hands toward a creature or object within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage and it must make a successful Constitution saving throw or be poisoned until the end of its next turn. A targeted creature has disadvantage on the saving throw if it has drunk any alcohol within the last hour. </p>
 			<p class="indent"><i><b>At Higher Levels. </b></i> The damage increases when you reach higher levels: 2d8 at 5th level, 3d8 at 11th level, and 4d8 at 17th level.</p>
@@ -288,7 +288,7 @@
 
 <!-- ALLURE  -->
 	<element name="Allure" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ALLURE">
-		<supports></supports>
+		<supports>Bard,Cleric,Druid,Sorcerer,Wizard</supports>
 		<description>
 			<p>You touch a willing creature. Once before the spell ends, the target can roll a d6 and add the result to one Charisma check of its choice. It can roll the die before or after making the check. The spell then ends.</p>
 		</description>
@@ -396,12 +396,26 @@ This spell intensifies gravity in a 50-foot-radius area within range. Inside the
 	</element>
 
 <!-- ANALYZE DEVICE  -->
-1st-level divination (clockwork) 
-Casting Time: 1 hour 
-Range: Touch 
-Components: V, S, M (a set of clockworker's tools) 
-Duration: Instantaneous 
-You discover all mechanical properties, mechanisms, and functions of a single construct or clockwork device, including how to activate or deactivate those functions, if appropriate.
+	<element name="Analyze Device" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ANALYZE_DEVICE">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>You discover all mechanical properties, mechanisms, and functions of a single construct or clockwork device, including how to activate or deactivate those functions, if appropriate.</p>
+		</description>
+		<setters>
+			<set name="keywords">clockwork</set>
+			<set name="level">1</set>
+			<set name="school" addition="clockwork">Divination</set>
+			<set name="time">1 hour</set>
+			<set name="range">Touch</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a set of clockworker's tools</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 <!-- ANCESTOR'S STRENGTH  -->
 1st-level transmutation 

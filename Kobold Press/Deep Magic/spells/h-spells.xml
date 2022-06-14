@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - H</name>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="h-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/h-spells.xml" />
         </update>
     </info>    
@@ -29,6 +29,28 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element> 
+
+<!-- HEARTSTOP  -->
+	<element name="Heartstop" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_HEARTSTOP">
+		<supports>Bard,Warlock,Wizard</supports>
+		<description>
+			<p>You slow the beating of a willing target’s heart to the rate of one beat per minute. The creature’s breathing almost stops. To a casual or brief observer, the subject appears dead. At the end of the spell, the creature returns to normal with no ill effects.</p>
+		</description>
+		<setters>
+			<set name="keywords">clockwork</set>
+			<set name="level">2</set>
+			<set name="school" addition="clockwork">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 <!-- HELLFIRE BLITZ --> 
 	<element name="Hellfire Blitz" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_HELLFIRE_BLITZ">

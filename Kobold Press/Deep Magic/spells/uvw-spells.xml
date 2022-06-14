@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
     <info>
-        <name>Deep Magic Spells - U-W</name>
-        <update version="0.0.3">
-            <file name="uvw-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/uvw-spells.xml" />
+        <name>Deep Magic Spells - U-Y</name>
+        <update version="0.0.4">
+            <file name="uvwy-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/uvwy-spells.xml" />
         </update>
     </info>
  
@@ -211,6 +211,52 @@
 		</setters>
 	</element>
 
+<!-- VOID RIFT  -->
+	<element name="Void Rift" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_VOID_RIFT">
+		<supports>Wizard</supports>
+		<description>
+			<p>You speak a hideous string of Void Speech that leaves your mouth bloodied, causing a rift into nothingness to tear open. The rift takes the form of a 10-foot-radius sphere, and it forms around a point you can see within range. The area within 40 feet of the sphere’s outer edge becomes difficult terrain as the Void tries to draw everything into itself. A creature that starts its turn within 40 feet of the sphere or that enters that area for the first time on its turn must succeed on a Strength saving throw or be pulled 15 feet toward the rift. A creature that starts its turn in the rift or that comes into contact with it for the first time on its turn takes 8d10 necrotic damage. Creatures inside the rift are blinded and deafened. Unattended objects within 40 feet of the rift are drawn 15 feet toward it at the start of your turn, and they take damage as creatures if they come into contact with it.</p>
+			<p class="indent">While concentrating on the spell, you take 2d6 necrotic damage at the end of each of your turns.</p>
+		</description>
+		<setters>
+			<set name="keywords">void</set>
+			<set name="level">9</set>
+			<set name="school" addition="void">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">300 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a black opal worth 500 gp, carved with a Void glyph</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+	
+<!-- VOID STRIKE -->
+	<element name="Void Strike" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_VOID_STRIKE">
+		<supports>Wizard</supports>
+		<description>
+			<p>With a short phrase of Void Speech, you gather writhing darkness around your hand. When you cast the spell, and as an action on subsequent turns while you maintain concentration, you can unleash a bolt of darkness at a creature within range. Make a ranged spell attack. If the target is in dim light or darkness, you have advantage on the roll. On a hit, the target takes 5d8 necrotic damage and is frightened of you until the start of your next turn. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast the spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords">void</set>
+			<set name="level">3</set>
+			<set name="school" addition="void">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">90 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 <!-- VOORISH SIGN  --> 
 	<element name="Voorish Sign" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_VOORISH_SIGN">
 		<supports>Wizard</supports>
@@ -299,6 +345,31 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>	
+
+<!-- WALK THE TWISTED PATH  -->
+	<element name="Walk the Twisted Path" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_WALK_THE_TWISTED_PATH">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>When you cast this spell, you and up to five creatures you can see within 20 feet of you enter a shifting landscape of endless walls and corridors that connect to many places throughout the world.</p>
+			<p class="indent">You can find your way to a destination within 100 miles, as long as you know for certain that your destination exists (though you don’t need to have seen or visited it before), and you must make a successful DC 20 Intelligence check. If you have the ability to retrace a path you have previously taken without making a check (as a minotaur or a goristro can), this check automatically succeeds. On a failed check, you don't find your path this round, and you and your companions each take 4d6 psychic damage as the madness of the shifting maze exacts its toll. You must repeat the check at the start of each of your turns until you find your way to your destination or until you die. In either event, the spell ends.</p>
+			<p class="indent">When the spell ends, you and those traveling with you appear in a safe location at your destination.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 7th level or higher, you can bring along two additional creatures or travel an additional 100 miles for each slot level above 6th.</p>
+		</description>
+		<setters>
+			<set name="keywords">labyrinth</set>
+			<set name="level">6</set>
+			<set name="school" addition="labyrinth">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (20 ft. radius)</set>
+			<set name="duration">Special</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a map</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 <!-- WAVE OF CORRUPTION --> 
 	<element name="Wave of Corruption" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_WAVE_OF_CORRUPTION">
@@ -478,6 +549,28 @@
 			<set name="duration">Concentration, up to 1 minute</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- WORD OF MISFORTUNE -->
+	<element name="Word of Misfortune" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_WORD_OF_MISFORTUNE">
+		<supports>Wizard</supports>
+		<description>
+			<p>You hiss a word of Void Speech. Choose one creature you can see within range. The next time the target makes a saving throw during the spell’s duration, it must roll a d4 and subtract the result from the total of the saving throw. The spell then ends.</p>
+		</description>
+		<setters>
+			<set name="keywords">void</set>
+			<set name="level">0</set>
+			<set name="school" addition="void">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent">component</set>
 			<set name="isConcentration">true</set>

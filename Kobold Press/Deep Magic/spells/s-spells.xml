@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - S</name>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="s-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/s-spells.xml" />
         </update>
     </info>
@@ -742,7 +742,7 @@
 
 <!-- SILHOUETTE  -->
 	<element name="Silhouette" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SILHOUETTE">
-		<supports></supports>
+		<supports>Wizard</supports>
 		<description>
 			<p>You create a shadow play against a screen or wall. The surface can encompass up to 100 square feet. The number of creatures that can see the shadow play equals your Intelligence score. The shadowy figures make no sound but they can dance, run, move, kiss, fight, and so forth. Most of the figures are generic types—a rabbit, a dwarf— but a number of them equal to your Intelligence modifier can be recognizable as specific individuals.</p>
 		</description>
@@ -977,9 +977,31 @@
 		</setters>
 	</element>
 
+<!-- SPIN  -->
+	<element name="Spin" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SPIN">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You designate a creature you can see within range and tell it to spin. The creature can resist this command with a successful Wisdom saving throw. On a failed save, the creature spins in place for the duration of the spell. A spinning creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. A creature that has spun for 1 round or longer becomes dizzy and has disadvantage on attack rolls and ability checks until 1 round after it stops spinning.</p>
+		</description>
+		<setters>
+			<set name="keywords">clockwork</set>
+			<set name="level">2</set>
+			<set name="school" addition="clockwork">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 <!-- SPINNING AXES  -->
 	<element name="Spinning Axes" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SPINNING_AXES">
-		<supports></supports>
+		<supports>Sorcerer,Warlock,Wizard</supports>
 		<description>
 			<p>Spinning axes made of luminous force burst out from you to strike all creatures within 10 feet of you. Each of those creatures takes 5d8 force damage, or half the damage with a successful Dexterity saving throw. Creatures damaged by this spell that aren’t undead or constructs begin bleeding. A bleeding creature takes 2d6 necrotic damage at the end of each of its turns for 1 minute. A creature can stop the bleeding for itself or another creature by using an action to make a successful Wisdom (Medicine) check against your spell save DC or by applying any amount of magical healing. </p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.</p>
@@ -1091,6 +1113,51 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element> 
+
+<!-- STEAM BLAST  -->
+	<element name="Steam Blast" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_STEAM_BLAST">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You unleash a burst of superheated steam in a 15-foot radius around you. All other creatures in the area take 5d8 fire damage, or half as much damage on a successful Dexterity saving throw. Nonmagical fires smaller than a bonfire are extinguished, and everything becomes wet.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b>  When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords">clockwork</set>
+			<set name="level">4</set>
+			<set name="school" addition="clockwork">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (15 ft. radius)</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a tiny copper kettle or boiler</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- STEAM WHISTLE  -->
+	<element name="Steam Whistle" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_STEAM_WHISTLE">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>You open your mouth and unleash a shattering scream. All other creatures in a 30-foot radius around you take 10d10 thunder damage and are deafened for 1d8 hours. A successful Constitution saving throw halves the damage and reduces the deafness to 1 round.</p>
+		</description>
+		<setters>
+			<set name="keywords">clockwork</set>
+			<set name="level">8</set>
+			<set name="school" addition="clockwork">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (30-foot radius)</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a small brass whistle</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 <!-- SUMMON AVATAR  -->
 	<element name="Summon Avatar" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SUMMON_AVATAR">
