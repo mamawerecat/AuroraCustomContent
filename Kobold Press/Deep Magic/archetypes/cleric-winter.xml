@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Beer Domain</name>
+        <update version="0.0.1">
+            <file name="cleric-winter.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-winter.xml" />
+        </update>
+    </info>
+    
+    
+<!-- 
+WINTER DOMAIN 
+Nearly every part of the world must deal with a change in temperature and the coming of winter. Nowhere is this more evident than in the extreme north and extreme south, where winter is a pervasive part of life. As civilization expands into inhospitable terrain and environments, its reliance increases on divine providence to ensure survivability. 
+Good-aligned clerics appeal to winter deities such as Boreas to spare their people the worst of bitter cold, storms that last for days, and other calamities caused by weather. They couch the onset of winter as necessary for strengthening their people and as a respite from toil, pointing to the peacefulness of the frozen, snow-draped landscape. Evil clerics embrace the storms and brutal conditions and even enhance them to advance their deities’ agendas and to spread fear through their enemies.
+WINTER DOMAIN SPELLS 
+CLERIC LEVEL 	SPELLS 
+1st 	breathtaking wind*, icicle daggers* 
+3rd 	creeping ice*, sheen of ice 
+5th 	sleet storm, steal warmth* 
+7th 	fusillade of ice*, ice storm 
+9th 	clash of glaciers*, cone of cold 
+* Described in this book 
+
+COLD WIND 
+At 1st level, you learn the ray of frost cantrip and you gain proficiency in Nature and Survival. 
+CHANNEL DIVINITY: SNOW WALKER 
+Starting at 2nd level, you can use your Channel Divinity to grant yourself the ability to walk on the surface of snow, ignoring any movement penalties that would normally apply. Ice supports your weight no matter how thin the ice is, and you can travel on it as if you’re wearing ice skates. You still leave tracks on snow and ice. 
+Additionally, in snowy environments, your vision is not impaired by snow and you have advantage on Dexterity (Stealth) checks to hide. 
+DEEP COLD 
+Beginning at 6th level, when you deal cold damage to a creature, it must make a successful Constitution saving throw against your spell save DC or become stunned until the end of its next turn. 
+DIVINE STRIKE 
+At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 cold damage to the target. When you reach 14th level, the extra damage increases to 2d8. 
+BRINGER OF WINTER’S WRATH 
+Starting at 17th level, you gain resistance to cold. 
+Additionally, you can use your action to surround yourself with swirling snow that fills a 20-foot radius. All other creatures have disadvantage on Wisdom (Perception) checks and attack rolls against you. Creatures other than you inside the snow-filled area have disadvantage on saving throws against magic that deals cold damage. The swirling snow lasts for 1 minute or until you dismiss it as a bonus action.
+ -->
+
+    
+</elements>

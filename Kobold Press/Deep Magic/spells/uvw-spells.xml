@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - U-Y</name>
-        <update version="0.0.4">
+        <update version="0.0.5">
             <file name="uvwy-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/uvwy-spells.xml" />
         </update>
     </info>
@@ -201,7 +201,7 @@
 			<set name="school" addition="blood">Transmutation</set>
 			<set name="time">10 minutes</set>
 			<set name="range">Touch</set>
-			<set name="duration">24 hrs</set>
+			<set name="duration">24 hours</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">false</set>

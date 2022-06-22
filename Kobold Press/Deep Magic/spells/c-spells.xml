@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - C</name>
-        <update version="0.0.4">
+        <update version="0.0.5">
             <file name="c-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/c-spells.xml" />
         </update>
     </info>
@@ -54,6 +54,52 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element> 
+
+<!-- CANDLE’S INSIGHT  -->
+	<element name="Candle's Insight" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CANDLES_INSIGHT">
+		<supports>Bard,Warlock,Wizard</supports>
+		<description>
+			<p>Candle’s insight is cast on its target as the component candle is lit. The candle burns for up to 10 minutes unless it’s extinguished normally or by the spell’s effect. While the candle burns, the caster can question the spell’s target, and the candle reveals whether the target speaks truthfully. An intentionally misleading or partial answer causes the flame to flicker and dim. An outright lie causes the flame to flare and then go out, ending the spell. The candle judges honesty, not absolute truth; the flame burns steadily through even an outrageously false statement, as long as the target believes it’s true.</p>
+			<p class="indent">Candle’s insight is used across society: by merchants while negotiating deals, by inquisitors investigating heresy, and by monarchs as they interview foreign diplomats. In some societies, casting candle’s insight without the consent of the spell’s target is considered a serious breach of hospitality.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="range">10 ft.</set>
+			<set name="duration">10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a blessed candle</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- CARMELLO-VOLTA'S IRKSOME PRESERVES  -->
+	<element name="Carmello-Volta's Irksome Preserves" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CARMELLOVOLTAS_IRKSOME_PRESERVES">
+		<supports>Druid</supports>
+		<description>
+			<p>At your command, delicious fruit jam oozes from a small mechanical device (such as a crossbow trigger, a lock, or a clockwork toy), rendering the device inoperable until the spell ends and the device is cleaned with a damp cloth. Cleaning away the jam takes an action, but doing so has no effect until the spell ends. One serving of the jam can be collected in a suitable container. If it's eaten (as a bonus action) within 24 hours, the jam restores 1d4 hit points. The jam's flavor is determined by the material component.</p>
+			<p class="indent">The spell can affect constructs, with two limitations. First, the target creature negates the effect with a successful Dexterity saving throw. Second, unless the construct is Tiny, only one component (an eye, a knee, an elbow, and so forth) can be disabled. The affected construct has disadvantage on attack rolls and ability checks that depend on the disabled component until the spell ends and the jam is removed.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a small berry or a piece of fruit</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 <!-- CATAPULT --> 
 	<element name="Catapult" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CATAPULT">
@@ -142,6 +188,29 @@
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">true</set>
 			<set name="materialComponent">a chip of bone pitted by acid</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- CAUSTIC TOUCH  -->
+	<element name="Caustic Touch" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CAUSTIC_TOUCH">
+		<supports>Cleric,Druid,Sorcerer,Wizard</supports>
+		<description>
+			<p>Your hand sweats profusely and becomes coated in a film of caustic slime. Make a melee spell attack against a creature you touch. On a hit, the target takes 1d8 acid damage. If the target was concentrating on a spell, it has disadvantage on its Constitution saving throw to maintain concentration.</p>
+			<p class="indent">This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
@@ -287,6 +356,53 @@
 		</setters>
 	</element> 
 
+<!-- CHAINS OF TORMENT -->
+	<element name="Chains of Torment" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CHAINS_OF_TORMENT">
+		<supports>Warlock,Wizard</supports>
+		<description>
+			<p>You are surrounded by an aura of dim light in a 10-foot radius as you conjure an iron chain that extends out to a creature you can see within 30 feet. The creature must make a successful Dexterity saving throw or be grappled (escape DC equal to your spell save DC). While grappled in this way, the creature is also restrained. A creature that’s restrained at the start of its turn takes 4d6 psychic damage. You can have only one creature restrained in this way at a time.</p>
+			<p class="indent">As an action, you can scan the mind of the creature that’s restrained by your chain. If the creature gets a failure on a Wisdom saving throw, you learn one discrete piece of information of your choosing known by the creature (such as a name, a password, or an important number). The effect is otherwise harmless.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, the psychic damage increases by 1d6 for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">4</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an iron chain link dipped in blood</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- CHAMPION’S WEAPON  -->
+	<element name="Champion's Weapon" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CHAMPIONS_WEAPON">
+		<supports>Paladin</supports>
+		<description>
+			<p>A spectral version of a melee weapon of your choice materializes in your hand. It has standard statistics for a weapon of its kind, but it deals force damage instead of its normal damage type and it sheds dim light in a 10-foot radius. You have proficiency with this weapon for the spell’s duration. The weapon can be wielded only by the caster; the spell ends if the weapon is held by a creature other than you or if you start your turn more than 10 feet from the weapon.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the weapon deals an extra 1d8 force damage for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 <!-- CHANNEL FIENDISH POWER  -->
 	<element name="Channel Fiendish Power" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CHANNEL_FIENDISH_POWER">
 		<supports>Sorcerer,Warlock,Wizard</supports>
@@ -401,6 +517,50 @@
 		</setters>
 	</element>
 
+<!-- CHARM OF GREAT FONDNESS  -->
+	<element name="Charm of Great Fondness" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CHARM_OF_GREAT_FONDNESS">
+		<supports>Bard,Druid,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You attempt to charm a humanoid you can see within range. It makes a Wisdom saving throw, with advantage if you or your companions are fighting it or if you are not the same species as the target. If the saving throw fails, the targeted humanoid becomes quite fond of you until the duration expires or until you or any of your companions do anything harmful to it. The charmed creature regards you as a potential romantic partner and seeks to attract you in whatever manner is most appropriate to it. It might tell you jokes or clown around, give you a (modest) gift, flirt gently, flex its muscles and demonstrate its athletic prowess, or compose a love poem to you. When the spell ends, the creature knows it was charmed by you.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd. The creatures must be within 30 feet of each other when you target them. If two or more creatures fail their saving throws, they fall to bickering between themselves over who is more worthy of your affection.</p>
+		</description>
+		<setters>
+			<set name="keywords">charm person,variant</set>
+			<set name="level">2</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- CHERUB’S BURNING BLADE  -->
+	4th-level evocation 
+	Casting Time: 1 action 
+	Range: Self 
+	Components: V, S 
+	Duration: Concentration, up to 10 minutes 
+	A sword made of holy fire blazes to life in your hand. The size and shape of the blade conforms to your will, but it is never larger than a one-handed weapon sized for a Medium creature. If you let go of the blade, it disappears, but if you maintain concentration on the spell, you can evoke the blade again as a bonus action. 
+	You can use your action to make a melee attack with the burning blade. On a hit, the target takes 2d6 fire and 2d6 radiant damage. On a critical hit, the target catches fire; until someone takes an action to douse the fire, the target takes 2d6 fire damage at the start of each of its turns. The burning blade sheds bright light in a 10-foot radius and dim light for an additional 10 feet. 
+	<b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th level or higher, both the fire damage and radiant damage increase by 1d6 for every two slot levels above 4th. 
+
+<!-- CHILLING WORDS  -->
+	3rd-level enchantment 
+	Casting Time: 1 action 
+	Range: 30 feet 
+	Components: V, S, M (a strip of paper with writing on it) 
+	Duration: Concentration, up to 1 hour 
+	You utter a short phrase and designate a creature within range to be affected by it. The target must make a Wisdom saving throw to avoid the spell. On a failed save, the target is susceptible to the phrase for the duration of the spell. At any later time while the spell is in effect, you and any of your allies within range when you cast the spell can use an action to utter the phrase, which causes the target to freeze in fear. Each of you can use the phrase against the target once only, and the target must be within 30 feet of the speaker for the phrase to be effective. 
+	When the target hears the phrase, it must make a successful Constitution saving throw or take 1d6 psychic damage and become restrained for 1 round. Whether this saving throw succeeds or fails, the target can’t be affected by the phrase for 1 minute afterward. 
+	You can end the spell early by making a final utterance of the phrase (even if you’ve used the phrase on this target previously). On hearing this final utterance, the target 
+	takes 4d6 psychic damage and is restrained for 1 minute or, with a successful Constitution saving throw, it takes half the damage and is restrained for 1 round. 
+
 <!-- CHRONAL LANCE --> 	
 	<element name="Chronal Lance" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CHRONAL_LANCE">
 		<supports>Sorcerer,Wizard</supports>
@@ -485,7 +645,7 @@
 			<set name="school" addition="dragon">Abjuration</set>
 			<set name="time">10 minutes</set>
 			<set name="range">Touch</set>
-			<set name="duration">24 hrs</set>
+			<set name="duration">24 hours</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">true</set>
@@ -632,6 +792,24 @@
 		</setters>
 	</element> 
 
+<!-- CLOAK OF SERPENTS  -->
+	4th-level abjuration 
+	Casting Time: 1 action 
+	Range: Self 
+	Components: V, S, M (a snake scale) 
+	Duration: 10 minutes 
+	A mass of writhing, translucent snakes drapes your body, protecting you from harm and fending off enemies. You can end the spell early by using an action to dismiss it. 
+	For the duration of the spell, you gain resistance to poison damage and immunity to the poisoned condition. In addition, whenever a creature within 5 feet hits you with a melee attack, that creature is struck by one of the serpents. The attacker takes 2d8 poison damage and must succeed on a Constitution saving throw or be poisoned for 1 minute. A successful saving throw halves the damage and negates the poisoned effect.
+
+<!-- CLOAK OF VERMIN  -->
+	3rd-level conjuration 
+	Casting Time: 1 action 
+	Range: Self 
+	Components: V, S, M (a handful of dead flies) 
+	Duration: Concentration, up to 10 minutes 
+	You conjure a writhing garment of living insects that protect you and harm your foes. While the spell is active, you gain a +1 bonus to AC. Whenever a creature within 5 feet of you hits you with a melee attack, the insects lash out, dealing 2d4 piercing damage to the attacker. 
+	As a bonus action, you can command your cloak to leave your body, becoming a swarm of insects, and enter the space of an adjacent foe. The swarm attacks that foe until you use a bonus action to command it to return to you, the foe moves more than 5 feet away from you, the spell ends, or the swarm dies. You lose the protective benefit of the cloak when using it in this fashion. 
+
 <!-- CLOCKWORK BODYGUARD  -->
 	<element name="Clockwork Bodyguard" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CLOCKWORK_BODYGUARD">
 		<supports>Cleric,Sorcerer,Wizard</supports>
@@ -665,7 +843,7 @@
 		<description>
 			<p>You imbue an arrow or crossbow bolt with clockwork magic just as you fire it at your target; spinning blades materialize on the missile after it strikes to further mutilate your enemy.</p>
 			<p class="indent">As part of the action used to cast this spell, you make a ranged weapon attack with a bow or a crossbow against one creature within range. If the attack hits, the missile embeds in the target. Unless the target (or an ally of it within 5 feet) uses an action to remove the projectile (which deals no additional damage), the target takes an additional 1d8 slashing damage at the end of its next turn from spinning blades that briefly sprout from the missile’s shaft. Afterward, the projectile reverts to normal.</p>
-			<p class="indent"><b><i>At Higher Levels.</i></b> This spell deals more damage when you reach higher levels. At 5th level, the ranged attack deals an extra 1d8 slashing damage to the target, and the target takes an additional 1d8 slashing damage (2d8 total) if the embedded ammunition isn’t removed. Both damage amounts increase by 1d8 again at 11th level and at 17th level.</p>	
+			<p class="indent">This spell deals more damage when you reach higher levels. At 5th level, the ranged attack deals an extra 1d8 slashing damage to the target, and the target takes an additional 1d8 slashing damage (2d8 total) if the embedded ammunition isn’t removed. Both damage amounts increase by 1d8 again at 11th level and at 17th level.</p>	
 		</description>
 		<setters>
 			<set name="keywords">clockwork</set>
@@ -682,6 +860,74 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
+
+<!-- CLOSING IN  -->
+	3rd-level illusion 
+	Casting Time: 1 action 
+	Range: 30 feet 
+	Components: V, S 
+	Duration: Concentration, up to 1 minute 
+	Choose a creature you can see within range. The target must succeed on a Wisdom saving throw, which it makes with disadvantage if it’s in an enclosed space. On a failed save, the creature believes the world around it is closing in and threatening to crush it. Even in open or clear terrain, the creature feels as though it is sinking into a pit, or that the land is rising around it. The creature has disadvantage on ability checks and attack rolls for the duration, and it takes 2d6 psychic damage at the end of each of its turns. An affected creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. 
+	<b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd.
+
+<!-- CLUMSINESS  -->
+	Necromancy cantrip 
+	Casting Time: 1 action 
+	Range: 30 feet 
+	Components: V, S 
+	Duration: 1 minute 
+	You temporarily make a creature within range less dexterous. If the target makes a successful Constitution saving throw, the spell is ineffective. On a failed save, the next time the creature makes a Dexterity check before the spell ends, roll a d6 and subtract the result from the roll. The spell then ends.
+
+<!-- COBRA FANGS  -->
+	1st-level transmutation 
+	Casting Time: 1 action 
+	Range: Touch 
+	Components: V, S, M (a drop of snake venom or a patch of snakeskin) 
+	Duration: 1 minute 
+	The spell causes the target to grow great, snake-like fangs. An unwilling creature must make a Wisdom saving throw to avoid the effect. The spell fails if the target already has a bite attack that deals poison damage. 
+	If the target doesn’t have a bite attack, it gains one. The target is proficient with the bite, and it adds its Strength modifier to the attack and damage rolls. The damage is piercing and the damage die is a d4. 
+	When the target hits a creature with its bite attack, the creature must make a Constitution saving throw, taking 3d6 poison damage on a failed save, or half as much damage on a successful one. 
+	<b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the target’s bite counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.
+
+<!-- COMMAND UNDEAD  -->
+	3rd-level necromancy 
+	Casting Time: 1 action 
+	Range: 60 feet 
+	Components: V 
+	Duration: Concentration 
+	You speak a one-word command to all undead creatures you can see within range. Any target must succeed on a Wisdom saving throw or follow the command on its next turn. The spell has no effect if the target is living, if it doesn't understand your language, or if your command is directly harmful to it.
+
+<!-- COMPELLED MOVEMENT  -->
+	3rd-level enchantment 
+	Casting Time: 1 action 
+	Range: 60 feet 
+	Components: V, S, M (the embalmed body of a millipede with its right legs removed, worth at least 50 gp) 
+	Duration: Concentration, up to 1 minute 
+	Choose two living creatures (not constructs or undead) you can see within range. Each must make a Charisma saving throw. On a failed save, a creature is compelled to use its movement to move toward the other creature. Its route must be as direct as possible, but it avoids dangerous terrain and enemies. If the creatures are within 5 feet of each other at the end of either one’s turn, their bodies fuse together. Fused creatures still take their own turns, but they can’t move, can’t use reactions, and have disadvantage on attack rolls, Dexterity saving throws, and Constitution checks to maintain concentration. 
+	A fused creature can use its action to make a Charisma saving throw. On a success, the creature breaks free and can move as it wants. It can become fused again, however, if it’s within 5 feet of a creature that’s still under the spell’s effect at the end of either creature’s turn. 
+	Compelled movement doesn’t affect a creature that can’t be charmed or that is incorporeal. 
+	<b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, the number of creatures you can affect increases by one for every two slot levels above 3rd. 
+	
+<!-- COMPELLING FATE  -->
+	3rd-level divination 
+	Casting Time: 1 action 
+	Range: 30 feet 
+	Components: V, M (a sprinkling of silver dust worth 20 gp) 
+	Duration: 1 round 
+	You view the actions of a single creature you can see through the influence of the stars, and you read what is written there. If the target fails a Charisma saving throw, you can predict that creature’s actions. This has the following effects: 
+		You have advantage on attack rolls against the target. 
+		For every 5 feet the target moves, you can move 5 feet (up to your normal movement) on the target’s turn when it has completed its movement. This is deducted from your next turn’s movement. 
+		As a reaction at the start of the target’s turn, you can warn yourself and allies that can hear you of the target’s offensive intentions; any creature targeted by the target’s next attack gains a +2 bonus to AC or to its saving throw against that attack. 
+		<b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, the duration is extended by 1 round for each slot level above 3rd.
+
+<!-- COMPREHEND WILD SHAPE  -->
+	2nd-level divination 
+	Casting Time: 1 action 
+	Range: Touch 
+	Components: V, S, M (two or more matching carved totems) 
+	Duration: 1 hour 
+	Give one of the carved totems to an ally while keeping the other yourself. For the duration of the spell, you and whoever holds the other totem can communicate while either of you is in a beast shape. This isn’t a telepathic link; you simply understand each other’s verbal communication, similar to the effect of a speak with animals spell. This effect doesn’t allow a druid in beast shape to cast spells. 
+	<b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, you can increase the number of target creatures by two for each slot level above 2nd. Each creature must receive a matching carved totem.
 
 <!-- CONFOUND SENSES  -->
 	<element name="Confound Senses" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CONFOUND_SENSES">
@@ -705,6 +951,16 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element> 
+
+<!-- CONJURE FEY HOUND  -->
+	5th-level conjuration 
+	Casting Time: 1 action 
+	Range: 60 feet 
+	Components: V, S, M (a wooden or metal whistle) 
+	Duration: Concentration, up to 1 hour 
+	You summon a fey hound to fight by your side. A hound of the night (Tome of Beasts, p. 251) appears in an unoccupied space that you can see within range. The hound disappears when it drops to 0 hit points or when the spell ends. 
+	The summoned hound is friendly to you and your companions. Roll initiative for the summoned hound, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don’t issue any commands to the hound, it stands by your side and attacks nearby creatures that are hostile to you but otherwise takes no actions. 
+	<b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 7th level or higher, you summon two hounds. When you cast this spell using a 9th-level spell slot, you summon three hounds. 
 
 <!-- CONJURE FIENDS  -->
 	<element name="Conjure Fiend" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CONJURE_FIENDS">
@@ -735,6 +991,70 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
+
+<!-- CONJURE FOREST DEFENDER  -->
+	6th-level conjuration 
+	Casting Time: 1 hour 
+	Range: 30 feet 
+	Components: V, S, M (one humanoid body, which the spell consumes) 
+	Duration: Until destroyed 
+	When you cast this spell in a forest, you fasten sticks and twigs around a body. The body comes to life as a forest defender (see below). The forest defender is friendly to you and your companions. Roll initiative for the forest defender, which has its own turns. It obeys any verbal or mental commands that you issue to it (no action required by you), as long as you remain within its line of sight. If you don’t issue any commands to the forest defender, if you are out of its line of sight, or if you are unconscious, it defends itself from hostile creatures but otherwise takes no actions. A body sacrificed to form the forest defender is permanently destroyed and can be restored to life only by means of a true resurrection or a wish spell. You can have only one forest defender under your control at a time. If you cast this spell again, the previous forest defender crumbles to dust. 
+	<b><i>At Higher Levels.</i></b> When you cast this spell using a 9th level spell slot, you summon two forest defenders instead of one, and you can control up to two forest defenders at a time.
+
+	FOREST DEFENDER 
+	Medium construct, neutral 
+	Armor Class 14 
+	Hit Points 67 (9d8 + 27) 
+	Speed 30 ft., climb 30 ft. 
+	STR DEX CON INT WIS CHA 
+	12 (+1) 18 (+4) 17 (+3) 6 (–2) 10 (+0) 5 (–3) 
+	Skills Perception +2, Stealth +6 
+	Damage Vulnerabilities slashing 
+	Damage Resistances bludgeoning and piercing from nonmagical attacks not made with adamantine weapons 
+	Damage Immunities poison 
+	Condition Immunities charmed, exhaustion, frightened, paralyzed, poisoned 
+	Senses darkvision 60 ft., passive Perception 12 
+	Languages understands the languages of its creator but can’t speak 
+	Challenge 3 (700 XP) 
+	Immutable Form. The forest defender is immune to any spell or effect that would alter its form. 
+	Magic Resistance. The forest defender has advantage on saving throws against spells and other magical effects. 
+	Plant Camouflage. The forest defender has advantage on Dexterity (Stealth) checks it makes in any terrain with ample obscuring plant life. 
+	ACTIONS 
+	Multiattack. The forest defender makes two thorned vine attacks. 
+	Thorned Vine. Melee Weapon Attack: +6 to hit, reach 15 ft., one creature. Hit: 8 (1d8 + 4) piercing damage, and the target must succeed on a DC 14 Strength saving throw or be pulled 10 feet toward the forest defender. 
+	Thorned Embrace. Melee Weapon Attack: +6 to hit, reach 5 ft., one Medium or smaller creature. Hit: 13 (2d8 + 4) piercing damage, and the target is grappled (escape DC 11). Until the grapple ends, the target is restrained, and the forest defender can’t embrace another target.
+
+<!-- CONJURE GREATER SPECTRAL DEAD  -->
+	7th-level conjuration 
+	Casting Time: 1 minute 
+	Range: 60 feet 
+	Components: V, S, M (a handful of bone dust, a crystal prism worth at least 100 gp, and a platinum coin) 
+	Duration: Concentration, up to 1 hour 
+	You summon an incorporeal undead creature that appears in an unoccupied space you can see within range. You choose one of the following options for what appears: 
+		One wraith 
+		One spectral guardian (Tome of Beasts, p. 358) 
+		One swarm of wolf spirits (Tome of Beasts, p. 377) 
+
+	Summoned creatures disappear when they drop to 0 hit points or when the spell ends. 
+	The summoned creature doesn’t attack you or your companions for the duration. Roll initiative for the summoned creature, which has its own turns. The creature attacks your enemies and tries to stay within 60 feet of you, but it otherwise controls its own actions. The summoned creature despises being bound and might harm or impede you and your companions by any means at its disposal other than direct attacks if the opportunity arises. At the beginning of the creature’s turn, you can use your reaction to verbally command it. The creature obeys your commands for that turn, and you take 1d6 psychic damage at the end of the turn. If your concentration is broken, the creature doesn’t disappear. Instead, you can no longer command it, it becomes hostile to you and your companions, and it attacks you and your allies if it believes it has a chance to win the fight or to inflict meaningful harm; otherwise it flees. You can’t dismiss the uncontrolled creature, but it disappears 1 hour after you summoned it. 
+	<b><i>At Higher Levels.</i></b> When you cast this spell using a 9th level spell slot, you summon a deathwisp (Tome of Beasts, p. 72) or two ghosts instead. 
+
+<!-- CONJURE MANTELET --> 
+	2nd-level abjuration 
+	Casting Time: 1 action 
+	Range: Self 
+	Components: V, S 
+	Duration: Concentration, up to 1 minute 
+	You summon a transparent, faintly luminous barrier with a single arrow slit. The magical mantelet provides you with three-quarters cover for the duration of the spell. If you move on your turn, the mantelet moves with you. 
+
+<!-- CONJURE MOCK ANIMALS --> 
+	1st-level conjuration 
+	Casting Time: 1 action 
+	Range: 30 feet 
+	Components: V, S 
+	Duration: Concentration, up to 10 minutes 
+	You summon fey spirits that take the outward appearance of animals, but merely to serve as a distraction and trap for the unwary. The spell functions as conjure animals, but each mock animal has only 1 hit point and deals only 1 damage on a hit regardless of its appearance. 
+	When a mock animal is dropped to 0 hit points, it explodes in a flash of light, dealing 2d4 radiant damage to all creatures within 5 feet of it. Each creature that takes damage must make a Dexterity saving throw. On a failed save, the creature is blinded for 1 round.
 
 <!-- CONJURE MINOR VOIDBORN  -->
 	<element name="Conjure Minor Voidborn" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CONJURE_MINOR_VOIDBURN">
@@ -789,6 +1109,24 @@
 		</setters>
 	</element>
 
+<!-- CONJURE SCARAB SWARM  -->
+	2nd-level conjuration 
+	Casting Time: 1 action 
+	Range: 60 feet 
+	Components: V, S, M (a beetle carapace) 
+	Duration: Concentration, up to 10 minutes 
+	You summon swarms of scarab beetles to attack your foes. Two swarms of insects (beetles) appear in unoccupied spaces that you can see within range. 
+	Each swarm disappears when it drops to 0 hit points or when the spell ends. The swarms are friendly to you and your allies. Make one initiative roll for both swarms, which have their own turns. They obey verbal commands that you issue to them (no action required by you). If you don’t issue any commands to them, they defend themselves from hostile creatures but otherwise take no actions.
+
+<!-- CONJURE SPECTRAL DEAD  -->
+	2nd-level conjuration 
+	Casting Time: 1 minute 
+	Range: 60 feet 
+	Components: V, S, M (a handful of bone dust, a crystal prism, and a silver coin) 
+	Duration: Concentration, up to 1 hour 
+	You summon a shroud (Tome of Beasts, p. 348) to do your bidding. The creature appears in an unoccupied space that you can see within range. The creature is friendly to you and your allies for the duration. Roll initiative for the creature, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands to the creature, it defends itself from hostile creatures but otherwise takes no actions. The creature disappears when it drops to 0 hit points or when the spell ends. 
+	<b><i>At Higher Levels.</i></b> When you cast this spell using a 3rd level spell slot, you can choose to summon two shrouds or one specter. When you cast this spell with a spell slot of 4th level or higher, you can choose to summon four shrouds or one will-o’-wisp.
+
 <!-- CONJURE SHADOW TITAN  -->
 	<element name="Conjure Shadow Titan" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CONJURE_SHADOW_TITAN">
 		<supports>Sorcerer,Warlock,Wizard</supports>
@@ -812,6 +1150,15 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
+
+<!-- CONJURE UNDEAD  -->
+	3rd-level conjuration 
+	Casting Time: 1 minute 
+	Range: 30 feet 
+	Components: V, S, M (a humanoid skull) 
+	Duration: Concentration, up to 1 hour 
+	You summon a shadow to do your bidding. The creature appears in an unoccupied space that you can see within range. The creature is friendly to you and your allies for the duration. Roll initiative for the shadow, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don’t issue any commands to the creature, it defends itself from hostile creatures but otherwise takes no actions. The shadow disappears when the spell ends. 
+	<b><i>At Higher Levels.</i></b> When you cast this spell using a 4th-level spell slot, you can choose to summon a wight or a shadow. When you cast this spell with a spell slot of 5th level or higher, you can choose to summon a ghost, a shadow, or a wight.
 
 <!-- CONJURE VOIDBORN  -->
 	<element name="Conjure Voidborn" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CONJURE_VOIDBORN">
@@ -837,6 +1184,16 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
+
+<!-- CONSULT THE STORM  -->
+	4th-level divination 
+	Casting Time: 1 action 
+	Range: 90 feet 
+	Components: V 
+	Duration: Instantaneous 
+	You ask a question of an entity connected to storms, such as an elemental, a deity, or a primal spirit, and the entity replies with destructive fury. 
+	As part of the casting of the spell, you must speak a question consisting of fifteen words or fewer. Choose a point within range. A short, truthful answer to your question booms from that point. It can be heard clearly by any creature within 600 feet. Each creature within 15 feet of the point takes 7d6 thunder damage, or half as much damage with a successful Constitution saving throw. 
+	<b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d6 for each slot level above 4th.
 
 <!-- CONTROL ICE  -->
 	<element name="Control Ice" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CONTROL_ICE">
@@ -886,6 +1243,25 @@
 		</setters>
 	</element> 
 
+<!-- CONVOLUTED DICTUM  -->
+	2nd-level enchantment 
+	Casting Time: 1 action 
+	Range: 60 feet 
+	Components: V, S, M (a long, twisted piece of red ribbon) 
+	Duration: Concentration, up to 1 minute 
+	You manipulate the thinking of a creature within range, compelling it to take longer, more elaborate means to complete actions. The target must succeed on a Wisdom saving throw or take only one action or bonus action on its turn until the spell ends. 
+	If the target tries to cast a spell with a casting time of 1 action, roll a d20. On an 11 or higher, the spell doesn’t take effect until the creature’s next turn, and the creature must use its action on that turn to complete the spell. If it can’t do so, the spell is wasted. If the target interacts with an object while taking its action, such as drawing a sword as part of an attack, it must also roll a d20. On an 11 or higher, it must make the interaction with the object its sole action on that round, taking the Use An Object action. In the example given, the target would take its action drawing the sword with an extensive amount of flourish or drama and be unable to attack with it until its next turn. 
+	At the end of each of its turns, the target can make another Wisdom saving throw. On a successful save, the spell ends.
+
+<!-- COSTLY VICTORY  -->
+	8th-level evocation 
+	Casting Time: 1 action 
+	Range: 90 feet 
+	Components: V, S 
+	Duration: 1 hour 
+	You select up to ten enemies you can see that are within range. Each target must make a Wisdom saving throw. On a failed save, that creature is cursed to burst into flame if it reduces one of your allies to 0 hit points before this spell’s duration expires. The affected creature takes 6d8 fire damage and 6d8 radiant damage when it bursts into flame. 
+	If the affected creature is wearing flammable material (or is made of flammable material, such as a plant creature), it catches on fire and continues burning; the creature takes fire damage equal to your spellcasting ability modifier at the end of each of its turns until the creature or one of its allies within 5 feet of it uses an action to extinguish the fire.
+
 <!-- CREATE RING SERVANT -->
 	<element name="Create Ring Servant" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CREATE_RING_SERVANT">
 		<supports>Sorcerer,Wizard</supports>
@@ -908,6 +1284,16 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
+
+<!-- CREATE THUNDERSTAFF  -->
+	7th-level transmutation 
+	Casting Time: 10 minutes 
+	Range: Touch 
+	Components: V, S, M (a quarterstaff) 
+	Duration: Instantaneous 
+	After you cast create thunderstaff on a normal quarterstaff, the staff must then be mounted in a noisy location, such as a busy marketplace, and left there for 60 days. During that time, the staff gradually absorbs ambient sound. 
+	After 60 days, the staff is fully charged and can’t absorb any more sound. At that point, it becomes a thunderstaff, a +1 quarterstaff that has 10 charges. When you hit on a melee attack with the staff and expend 1 charge, the target takes an extra 1d8 thunder damage. You can cast a thunderwave spell from the staff as a bonus action by expending 2 charges. The staff cannot be recharged. 
+	If the final charge is not expended within 60 days, the staff becomes nonmagical again. 
 
 <!-- CREEPING DARKNESS  -->
 	<element name="Creeping Darkness" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CREEPING_DARKNESS">
@@ -987,7 +1373,7 @@
 		<supports>Wizard</supports>
 		<description>
 			<p>You speak a word of Void Speech. Choose a creature you can see within range. If the target can hear you, it must succeed on a Wisdom saving throw or take 1d6 psychic damage and be deafened for 1 minute, except that it can still hear Void Speech. A creature deafened in this way can repeat the saving throw at the end of each of its turns, ending the effect on a success.</p>
-			<p class="indent"><b><i>At Higher Levels.</i></b> This spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+			<p class="indent">This spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
 		</description>
 		<setters>
 			<set name="keywords">void</set>
@@ -1028,6 +1414,15 @@
 		</setters>
 	</element> 
 
+<!-- CURE BEAST  -->
+	1st-level evocation 
+	Casting Time: 1 bonus action 
+	Range: 60 feet 
+	Components: V, S 
+	Duration: Instantaneous 
+	A beast of your choice that you can see within range regains a number of hit points equal to 1d6 + your spellcasting modifier. 
+	<b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d6 for each slot level above 1st. 
+
 <!-- CURSE OF BOREAS  -->
 	<element name="Curse of Boreas" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CURSE_OF_BOREAS">
 		<supports>Cleric,Sorcerer,Wizard</supports>
@@ -1049,6 +1444,53 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>     
+
+<!-- CURSE OF DUST  -->
+	7th-level necromancy 
+	Casting Time: 10 minutes 
+	Range: 500 feet 
+	Components: V, S, M (a piece of spoiled food) 
+	Duration: 5 days 
+	You cast a curse on a creature within range that you’re familiar with, causing it to be unsatiated by food no matter how much it eats. This effect isn’t merely an issue of perception; the target physically can’t draw sustenance from food. Within minutes after the spell is cast, the target feels constant hunger no matter how much food it consumes. The target must make a Constitution saving throw 24 hours after the spell is cast and every 24 hours thereafter. On a failed save, the target gains one level of exhaustion. The effect ends when the duration expires or when the target makes two consecutive successful saves. 
+
+<!-- CURSE OF HOSTILITY  -->
+	3rd-level necromancy 
+	Casting Time: 1 action 
+	Range: Touch 
+	Components: V, S 
+	Duration: Concentration, up to 1 minute 
+	You touch a creature, and that creature must succeed on a Wisdom saving throw or become cursed with the antipathy of a certain type of creature, chosen by you when you cast the spell. Choose from one of the following: aberrations, beasts, celestials, dragons, elementals, fey, fiends, giants, humanoids, monstrosities, plants, or undead. In situations involving creatures of the selected type, the following effects apply. 
+		In encounters with creatures of the selected type when the creatures are already hostile, they will attack the target of this spell in preference to other targets. 
+		A creature of the selected type gains advantage on any attack rolls made against the target if the target has attacked and hit that creature at least once during the encounter. 
+		The target has disadvantage on any Charisma-based checks made against creatures of the chosen type. 
+
+	A remove curse spell ends this effect. 
+	<b><i>At Higher Levels.</i></b> If you cast this spell using a spell slot of 4th level, the duration is concentration, up to 10 minutes. If you use a spell slot of 5th or 6th level, the duration is 8 hours. If you use a spell slot of 7th or 8th level, the duration is 24 hours. If you use a 9th-level spell slot, the spell lasts until dispelled. 
+
+<!-- CURSE OF INCOMPETENCE  -->
+	3rd-level necromancy 
+	Casting Time: 1 action 
+	Range: 60 feet 
+	Components: V, S 
+	Duration: Concentration, up to 1 minute 
+	By making mocking gestures toward one creature within range that can see you, you leave the creature incapable of performing at its best. If the target fails on an Intelligence saving throw, roll a d4 and refer to the following table to determine what the target does on its turn. An affected target repeats the saving throw at the end of each of its turns, ending the effect on itself on a success or applying the result of another roll on the table on a failure. 
+	D4 	RESULT 
+	1 	Target spends its turn shouting mocking words at caster and takes a -5 penalty to its initiative roll. 
+	2 	Target stands transfixed and blinking, takes no action. 
+	3 	Target flees or fights (50 percent chance of each). 
+	4 	Target charges directly at caster, enraged. 
+
+<!-- CURSE OF THE GRAVE --> 
+	7th-level necromancy 
+	Casting Time: 1 action 
+	Range: 120 feet 
+	Components: V, S, M (a pinch of dirt from a freshly dug grave) 
+	Duration: Until dispelled 
+	You tap your connection to death to curse a humanoid, making the grim pull of the grave stronger on that creature’s soul. 
+	Choose one humanoid you can see within range. The target must succeed on a Constitution saving throw or become cursed. A remove curse spell or similar magic ends this curse. While cursed in this way, the target suffers the following effects: 
+		The target fails death saving throws on any roll but a 20. 
+		If the target dies while cursed, it rises 1 round later as a vampire spawn under your control and is no longer cursed. 
+		The target, as a vampire spawn, seeks you out in an attempt to serve its new master. You can have only one vampire spawn under your control at a time through this spell. If you create another, the existing one turns to dust. If you or your companions do anything harmful to the target, it can make a Wisdom saving throw. On a success, it is no longer under your control. 
 
 <!-- CURSE OF YIG  -->
 	<element name="Curse of Yig" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CURSE_OF_YIG">
@@ -1095,5 +1537,24 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
+
+<!-- CURSED GIFT  -->
+	4th-level abjuration 
+	Casting Time: 1 action 
+	Range: Touch 
+	Components: V, S, M (an object worth at least 75 gp) 
+	Duration: 24 hours 
+	Cursed gift imbues an object with a harmful magical effect that you or another creature in physical contact with you is currently suffering from. If you give this object to a creature that freely accepts it during the duration of the spell, the recipient must make a Charisma saving throw. On a failed save, the harmful effect is transferred to the recipient for the duration of the spell (or until the effect ends).		
+	Returning the object to you, destroying it, or giving it to someone else has no effect. Remove curse and comparable magic can relieve the individual who received the item, but the harmful effect still returns to the previous victim when this spell ends if the effect’s duration has not expired. 
+	<b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, the duration increases by 24 hours for each slot level above 4th. 
+	
+<!-- CYNOPHOBIA  -->
+	3rd-level enchantment 
+	Casting Time: 1 action 
+	Range: 30 feet 
+	Components: V, S, M (a dog’s tooth) 
+	Duration: 8 hours 
+	Choose a creature that you can see within range. The target must succeed on a Wisdom saving throw or develop an overriding fear of canids, such as dogs, wolves, foxes, and worgs. For the duration, the first time the target sees a canid, the target must succeed on a Wisdom saving throw or become frightened of that canid until the end of its next turn. Each time the target sees a different canid, it must make the saving throw. In addition, the target has disadvantage on ability checks and attack rolls while a canid is within 10 feet of it. 
+	<b><i>At Higher Levels.</i></b> When you cast this spell using a 5th-level spell slot, the duration is 24 hours. When you use a 7th-level spell slot, the duration is 1 month. When you use a spell slot of 8th or 9th level, the spell lasts until it is dispelled. 
 
 </elements>

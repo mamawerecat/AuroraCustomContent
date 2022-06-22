@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Beer Domain</name>
+        <update version="0.0.1">
+            <file name="cleric-travel.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-travel.xml" />
+        </update>
+    </info>
+    
+    
+<!-- 
+TRAVEL DOMAIN 
+Voyages across oceans, over mountain ranges, through steaming jungles, and from one world to the next all have an aspect of the sacred to them. The wisdom, knowledge, and prosperity gained through furthering one’s experience of the world also venerates the gods who made such places and those who watch over such journeys. An agent of one of these deities might be in some demand as a charm to help ensure safe travel, though the wise know that the gods often consider an easy journey to be less beneficial to the traveler’s spirit. 
+TRAVEL DOMAIN SPELLS 
+CLERIC LEVEL 	SPELLS 
+1st 	comprehend languages, longstrider 
+3rd 	find steed, pass without trace 
+5th 	haste, water walk 
+7th 	dimension door, freedom of movement 
+9th 	passwall, teleportation circle 
+
+BORN TO THE ROAD 
+When you choose this domain at 1st level, you gain proficiency in one of the following skills of your choice: Insight, Nature, or Survival. In addition, you learn two standard languages of your choice and gain proficiency with cartographer’s tools. 
+CHANNEL DIVINITY: REINVIGORATE 
+Starting at 2nd level, you can use your Channel Divinity to remove one level of exhaustion from yourself or from someone else you touch. 
+TRAILBLAZER 
+Beginning at 6th level, if you are planning to travel any distance longer than 5 days’ travel and you have a map of the region to be traversed or firsthand knowledge of the area, you can find a shortcut. Using the alternate path can reduce your travel time by 50 percent. 
+DIVINE STRIKE 
+At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 lightning damage to the target. When you reach 14th level, the extra damage increases to 2d8. 
+WORLD TRAVELER 
+At 17th level, you ignore difficult terrain and you gain resistance to cold and fire damage.
+ -->
+
+    
+</elements>

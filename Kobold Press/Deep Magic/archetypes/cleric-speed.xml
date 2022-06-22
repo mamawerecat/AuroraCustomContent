@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Beer Domain</name>
+        <update version="0.0.1">
+            <file name="cleric-speed.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-speed.xml" />
+        </update>
+    </info>
+    
+    
+<!-- 
+SPEED DOMAIN 
+In speed and skill there is power, and you serve your faith by engaging in acts of incredible quickness and agility. Eventually you become able to control time itself. 
+SPEED DOMAIN SPELLS 
+CLERIC LEVEL 	SPELLS 
+1st 	expeditious retreat, feather fall 
+3rd 	blur, web 
+5th 	haste, slow 
+7th 	conjure minor elementals, dimension door 
+9th 	hold monster, teleportation circle 
+
+CELERITY IN THOUGHT AND ACTION 
+When you choose this domain at 1st level, your speed increases by 5 feet, and you gain proficiency in Acrobatics and Insight. 
+CHANNEL DIVINITY: BURST OF SPEED 
+Beginning at 2nd level, you can use your Channel Divinity to grant yourself or another creature greater speed. When you use an action to touch a creature, the target adds 10 feet to its walking speed. It also gains the benefit of a bless spell, but only on attacks and saving throws that rely on Dexterity. This effect lasts for a number of rounds equal to 3 + your Wisdom modifier. 
+QUICKNESS OF THE GODS 
+At 6th level, your speed increases by another 5 feet. Also, as a reaction or a bonus action, you can increase your Dexterity modifier by +5 until the end of your current turn. This benefit can be used for all purposes except attack rolls. Once you use this feature, you can’t use it again until you finish a long rest. 
+DIVINE STRIKE 
+At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to 2d8. 
+CHANNEL DIVINITY: TIME STOP 
+At 17th level, you can use your Channel Divinity to stop the flow of time. The effect is identical to the time stop spell; you can take three turns in a row when the effect is triggered. You must finish a long rest before using this ability again.
+ -->
+
+    
+</elements>

@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - L</name>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="l-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/l-spells.xml" />
         </update>
     </info>
@@ -69,7 +69,7 @@
 			<set name="school" addition="dragon">Divination</set>
 			<set name="time">1 minute</set>
 			<set name="range">120 ft.</set>
-			<set name="duration">24 hrs</set>
+			<set name="duration">24 hours</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">true</set>

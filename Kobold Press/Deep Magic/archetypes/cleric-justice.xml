@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Beer Domain</name>
+        <update version="0.0.1">
+            <file name="cleric-justice.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-justice.xml" />
+        </update>
+    </info>
+    
+    
+<!-- JUSTICE DOMAIN 
+All seek some form of justice when they have been wronged, and many live under the promise of its protection—whether or not the promise is ultimately kept—but few take on the holy burden of delivering the justice of the gods. The mercy of the divine, when in evidence at all, is not the mercy of mortals, and meting out divine justice makes for a lonely life. Yet someone must make the sacrifice. 
+JUSTICE DOMAIN SPELLS 
+CLERIC LEVEL 	SPELLS 
+1st 	fist of iron*, longstrider 
+3rd 	blade of wrath*, see invisibility 
+5th 	call lightning, fear 
+7th 	inspiring speech, faithful hound 
+9th 	dominate person, hold monster 
+* Described in this book 
+
+BONUS PROFICIENCY 
+When you choose this domain at 1st level, you gain proficiency with heavy armor and with martial weapons. 
+CHANNEL DIVINITY: NO HIDING PLACE 
+Starting at 2nd level, you can use your Channel Divinity to determine the general direction to the location of a creature that is guilty of an injustice or that is wanted for commission of a serious crime. At 7th level, you can determine the distance in miles to the creature as well as the direction. 
+HAND OF JUSTICE 
+At 6th level, you become immune to the frightened condition. 
+DIVINE STRIKE 
+At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 radiant damage to the target. When you reach 14th level, the extra damage increases to 2d8. 
+CHANNEL DIVINITY: HOLY DENUNCIATION 
+At 17th level, you can use your Channel Divinity to persuade others that you hold divine authority to mete out justice. You must present your holy symbol and invoke the name of your deity. As long as your deity is worshiped openly in the land where you are asserting this authority, you have advantage on Wisdom checks and Charisma checks involving justice, judgment, and the law. 
+-->
+
+    
+</elements>

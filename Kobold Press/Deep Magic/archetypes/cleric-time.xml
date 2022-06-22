@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Beer Domain</name>
+        <update version="0.0.1">
+            <file name="cleric-time.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-time.xml" />
+        </update>
+    </info>
+    
+    
+<!-- 
+TIME DOMAIN 
+The gods that deal with time are varied. Some see into the future and past; others deal with the cycles of life that mark the passage of time—birth and death, the seasons, or renewal and decay—or have some particular connection to the timeline, such as gods of creation or apocalypse do. The clerics of such gods are often granted powers that allow them to see through or manipulate time, emulating their deities and enabling them to alter events as their gods see fit. 
+TIME DOMAIN SPELLS 
+CLERIC LEVEL 	SPELLS 
+1st 	auspicious warning*, feather fall 
+3rd 	decelerate*, gentle repose 
+5th 	haste, slow 
+7th 	flickering fate*, reset* 
+9th 	modify memory, wall of time* 
+* Described in this book 
+
+PRESCIENT GLIMPSES 
+When you choose this domain at 1st level, you gain proficiency in Insight and Perception, and your proficiency bonus is doubled for any ability check you make that uses either of those skills.
+make a Wisdom saving throw against a DC equal to the highest result among the enemy’s initiative rolls. On a successful save, you are not surprised. 
+CHANNEL DIVINITY: TIME SHIFT 
+Starting at 2nd level, you can use your Channel Divinity to shift time and alter the order of initiative. As an action, you can move yourself in the initiative order to any point of your choosing. 
+CHANNEL DIVINITY: GROUP TIME SHIFT 
+Starting at 6th level, you can use your Channel Divinity to shift time for others as well as yourself. Choose up to three allies. When you use your Channel Divinity, you can also move them in the initiative order to any positions of your choosing. An allied creature can choose not to be affected. 
+PRESCIENT STRIKE 
+Beginning at 8th level, you intuitively know where your enemies will be in the immediate future and how they will attack. You gain advantage on one attack roll each turn when you take the Attack action. Alternatively, you can take a reaction when a creature attacks you to give that creature disadvantage on its attack roll against you. 
+MASTER OF TIME 
+At 17th level, you add foresight and time stop to your spell list. You are never surprised, and whenever you and your allies might be surprised, you can grant up to six allies the ability to make Wisdom saving throws to avoid being surprised, as if they had your Prescient Glimpses feature.
+  -->
+
+    
+</elements>

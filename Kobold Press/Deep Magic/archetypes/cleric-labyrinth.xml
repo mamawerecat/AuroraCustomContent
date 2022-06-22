@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Beer Domain</name>
+        <update version="0.0.1">
+            <file name="cleric-labyrinth.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-labyrinth.xml" />
+        </update>
+    </info>
+    
+    
+<!-- LABYRINTH DOMAIN 
+The savage and cunning god of the minotaurs has few followers, but those who heed the call gain the ability to smash and confound their foes. The Labyrinth domain grants powers associated with the mazes that minotaurs love and with misleading enemies. The maze is your holy temple, and its winding corridors and deadly traps are the hallmarks of your faith. 
+LABYRINTH DOMAIN SPELLS 
+
+CLERIC LEVEL 	SPELLS 
+1st 	alarm, expeditious retreat 
+3rd 	by the light of the moon*, pass without trace 
+5th 	confound senses*, nondetection 
+7th 	dimension door, moon trap* 
+9th 	mislead, passwall 
+* Described in this book 
+
+FIRST PASSAGE 
+When you choose this domain at 1st level, you gain proficiency in Survival. You also learn the Abyssal language.
+
+
+WISDOM OF THE WINDING WAY 
+At 2nd level, you can use your Channel Divinity to gain advantage on Wisdom (Survival) checks for the purpose of tracking for 1 hour. 
+BEFUDDLING TOUCH 
+Beginning at 6th level, you can make a melee attack that causes a creature to become confused for 1 round. If your attack hits, you deal no damage, but the creature is confused (as the confusion spell) until the start of your next turn. You expend one use of this ability whether the attack hits or misses. You can use this ability a number of times per day equal to 3 + your Wisdom modifier, and you regain all expended uses when you finish a long rest. This ability has no effect on minotaurs or on creatures that have a challenge rating higher than your cleric level. 
+DIVINE STRIKE 
+At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to 2d8. 
+BANISH TO THE MAZE 
+At 17th level, you gain the power to banish one creature you can see within 60 feet to an extradimensional labyrinth, similar to the effect of the maze spell. The duration is a number of rounds equal to half your cleric level, unless you end it early by using a bonus action. The target resists the effect with a successful Wisdom saving throw; on a failed save, it is transported into the labyrinth. 
+The target that was sent to the maze can search for the exit. On its turn, it uses its action to make a DC 20 Intelligence check; if the check succeeds, the creature escapes from the labyrinth and returns to its previous location. 
+Once you use this feature, you can't use it again until you finish a long rest. 
+
+-->
+
+    
+</elements>

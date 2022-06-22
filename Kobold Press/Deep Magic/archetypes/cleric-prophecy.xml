@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Beer Domain</name>
+        <update version="0.0.1">
+            <file name="cleric-prophecy.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-prophecy.xml" />
+        </update>
+    </info>
+    
+    
+<!-- 
+
+PROPHECY DOMAIN 
+You see the future, whether for good or ill. Eventually, you might become an oracle renowned across the region. 
+PROPHECY DOMAIN SPELLS 
+CLERIC LEVEL 	SPELLS 
+1st 	divine favor, insightful maneuver* 
+3rd 	mirror image, see invisibility 
+5th 	counterspell, slow 
+7th 	arcane eye, compulsion 
+9th 	contact other plane, modify memory 
+* Described in this book 
+
+A PATH FORETOLD 
+When you choose this domain at 1st level, you gain proficiency in History and Insight. You also learn one exotic language of your choice, subject to GM approval. 
+CHANNEL DIVINITY: ONE MOVE AHEAD 
+Beginning at 2nd level, you can use your Channel Divinity to add 20 feet to your walking speed for a number of rounds equal to your cleric level. 
+CHANNEL DIVINITY: FUTURE SIGHT 
+At 6th level, you can use your Channel Divinity to declare that an action or movement you just performed did not happen, allowing you to take a different action or make a different movement. You can do this after the result of your activity is known, so long as it didn’t result in your unconsciousness or death. Only a single action or movement can be nullified. The mixing of future and present is disorienting, so you gain one level of exhaustion after using this ability. 
+DIVINE STRIKE 
+At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to 2d8. 
+IT WAS FORETOLD 
+At 17th level, you gain advantage on Dexterity saving throws, Wisdom (Perception) checks, and Wisdom (Insight) checks. You also gain resistance to fire, poison, and psychic damage. 
+With the GM’s consent, you can issue a prophecy from your deity once per month. You might become a renowned (and controversial) prophet, attracting both loyal followers and terrible enemies. Consult with your GM to find out what news, if any, your deity wants foretold.
+
+ -->
+
+    
+</elements>

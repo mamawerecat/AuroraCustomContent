@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - B</name>
-        <update version="0.0.5">
+        <update version="0.0.6">
             <file name="b-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/b-spells.xml" />
         </update>
     </info>
@@ -52,6 +52,54 @@
 		</setters>
 	</element>
 
+<!-- BATSENSE  -->
+	<element name="Batsense" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BATSENSE">
+		<supports>Bard,Druid,Ranger,Sorcerer</supports>
+		<description>
+			<p>For the duration of the spell, a creature you touch can produce and interpret squeaking sounds used for echolocation, giving it blindsight out to a range of 60 feet. The target cannot use its blindsight while deafened, and its blindsight doesn't penetrate areas of magical silence. While using blindsight, the target has disadvantage on Dexterity (Stealth) checks that rely on being silent. Additionally, the target has advantage on Wisdom (Perception) checks that rely on hearing.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a bit of fur from a bat's ear</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- BATTLE MIND  -->
+	<element name="Battle Mind" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BATTLE_MIND">
+		<supports>Bard,Paladin,Sorcerer,Wizard</supports>
+		<description>
+			<p>You gain a preternatural sense of the surrounding area, allowing you insights you can share with comrades to provide them with an edge in combat. You gain advantage on Wisdom (Perception) checks made when determining surprise at the beginning of a combat encounter. If you are not surprised, then neither are your allies. When you are engaged in combat while the spell is active, you can use a bonus action on your turn to produce one of the following effects (allies must be able to see or hear you in order to benefit):</p>
+			<p class="indent">•One ally gains advantage on its next attack roll, saving throw, or ability check.</p>
+			<p class="indent">•An enemy has disadvantage on the next attack roll it makes against you or an ally.</p>
+			<p class="indent">•You divine the location of an invisible or hidden creature and impart that knowledge to any allies who can see or hear you. This knowledge does not negate any advantages the creature has, it only allows your allies to be aware of its location at the time. If the creature moves after being detected, its new location is not imparted to your allies.</p>
+			<p class="indent">•Three allies who can see and hear you on your turn are given the benefit of a bless, guidance, or resistance spell on their turns; you choose the benefit individually for each ally. An ally must use the benefit on its turn, or the benefit is lost.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">5</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a bit of spiderweb or a small crystal orb</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element> 
+
 <!-- BECOME NIGHTWING -->
 	<element name="Become Nightwing" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BECOME_NIGHTWING">
 		<supports>Sorcerer,Warlock,Wizard</supports>
@@ -71,6 +119,52 @@
 			<set name="hasMaterialComponent">true</set>
 			<set name="materialComponent">a crow's eye</set>
 			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- BEDAZZLING CHARM  -->
+	<element name="Bedazzling Charm" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BEDAZZLING_CHARM">
+		<supports>Bard,Druid,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You attempt to charm a humanoid you can see within range. It makes a Wisdom saving throw, with advantage if you or your companions are fighting it or threatening it. If the saving throw fails, the humanoid is charmed by a third humanoid you designate that both of you can see. The spell ends after 1 minute, when you or any of your companions do anything harmful to either of the spell’s targets, or when the third humanoid disappears from the charmed creature’s sight. The charmed creature regards the third creature as a friendly acquaintance and will follow it to keep it within sight. When the spell ends, the creature knows it was bedazzled by you to regard the third creature favorably.</p>
+		</description>
+		<setters>
+			<set name="keywords">charm person,variant</set>
+			<set name="level">2</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- BEGUILING BET  -->
+	<element name="Beguiling Bet" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BEGUILING_BET">
+		<supports>Bard</supports>
+		<description>
+			<p>You issue a challenge against one creature you can see within range, which must make a successful Wisdom saving throw or become charmed. On a failed save, you can make an ability check as a bonus action. For example, you could make a Strength (Athletics) check to climb a difficult surface or to jump as high as possible; you could make a Dexterity (Acrobatics) check to perform a backflip; or you could make a Charisma (Performance) check to sing a high note or to extemporize a clever rhyme. You can choose to use your spellcasting ability modifier in place of the usual ability modifier for this check, and you add your proficiency bonus if you're proficient in the skill being used.</p>
+			<p class="indent">The charmed creature must use its next action (which can be a legendary action) to make the same ability check in a contest against your check. Even if the creature can't perform the action—it may not be close enough to a wall to climb it, or it might not have appendages suitable for strumming a lute—it must still attempt the action to the best of its capability. If you win the contest, the spell (and the contest) continues, with you making a new ability check as a bonus action on your turn. The spell ends when it expires or when the creature wins the contest.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for every two slot levels above 2nd. Each creature must be within 30 feet of another creature when you cast the spell.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
@@ -97,13 +191,81 @@
 		</setters>
 	</element>	
 
+<!-- BESTIAL FURY  -->
+	<element name="Bestial Fury" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BESTIAL_FURY">
+		<supports>Ranger</supports>
+		<description>
+			<p>You instill primal fury into a creature you can see within range. The target must make a Charisma saving throw; a creature can choose to fail this saving throw. On a failure, the target must use its action to attack its nearest enemy it can see with unarmed strikes or natural weapons. For the duration, the target’s attacks deal an extra 1d6 damage of the same type dealt by its weapon, and the target can’t be charmed or frightened. If there are no enemies within reach, the target can use its action to repeat the saving throw, ending the effect on a success. This spell has no effect on undead or constructs.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- BEWILDERMENT  -->
+	<element name="Bewilderment" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BEWILDERMENT">
+		<supports>Bard,Cleric,Druid,Sorcerer,Wizard</supports>
+		<description>
+			<p>You temporarily inhibit the cognitive ability of a creature within range. If the target makes a successful Wisdom saving throw, the spell is ineffective. On a failed save, the next time the creature makes an Intelligence check before the spell ends, roll a d6 and subtract the result from the roll. The spell then ends.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- BINDING OATH -->
+	<element name="Binding Oath" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BINDING_OATH">
+		<supports>Bard,Cleric,Paladin</supports>
+		<description>
+			<p>You seal an agreement between two or more willing creatures with an oath in the name of the god of justice, using ceremonial blessings during which both the oath and the consequences of breaking it are set: if any of the sworn break this vow, they are struck by a curse. For each individual that does so, you choose one of the options given in the bestow curse spell. When the oath is broken, all participants are immediately aware that this has occurred, but they know no other details.</p>
+			<p class="indent">The curse effect of binding oath can’t be dismissed by dispel magic, but it can be removed with dispel evil and good, remove curse, or wish. Remove curse functions only if the spell slot used to cast it is equal to or higher than the spell slot used to cast binding oath. Depending on the nature of the oath, one creature’s breaking it may or may not invalidate the oath for the other targets. If the oath is completely broken, the spell ends for every affected creature, but curse effects already bestowed remain until dispelled.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">10 minutes</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Until dispelled</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 <!-- BITING ARROW  -->
 	<element name="Biting Arrow" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BITING_ARROW">
 		<supports>Druid,Sorcerer,Wizard</supports>
 		<description>
 			<p>As part of the action used to cast this spell, you make a ranged weapon attack with a bow, a crossbow, or a thrown weapon. The effect is limited to a range of 120 feet despite the weapon’s range, and the attack is made with disadvantage if the target is in the weapon’s long range. </p>
 			<p class="indent">If the weapon attack hits, it deals damage as usual. In addition, the target becomes coated in thin frost until the start of your next turn. If the target uses its reaction before the start of your next turn, it immediately takes 1d6 cold damage and the spell ends. </p>
-			<p class="indent"><b><i>At Higher Levels.</i></b>The spell’s damage, for both the ranged attack and the cold damage, increases by 1d6 when you reach 5th level (+1d6 and 2d6), 11th level (+2d6 and 3d6), and 17th level (+3d6 and 4d6).</p>
+			<p class="indent">The spell’s damage, for both the ranged attack and the cold damage, increases by 1d6 when you reach 5th level (+1d6 and 2d6), 11th level (+2d6 and 3d6), and 17th level (+3d6 and 4d6).</p>
 		</description>
 		<setters>
 			<set name="keywords">winter</set>
@@ -233,6 +395,52 @@
 		</setters>
 	</element>
 
+<!-- BLACK SUNSHINE  -->
+	<element name="Black Sunshine" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLACK_SUNSHINE">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>You hold up a flawed pearl and it disappears, leaving behind a magic orb in your hand that pulses with dim purple light. Allies that you designate become invisible if they're within 60 feet of you and if light from the orb can reach the space they occupy. An invisible creature still casts a faint, purple shadow.</p>
+			<p class="indent">The orb can be used as a thrown weapon to attack an enemy. On a hit, the orb explodes in a flash of light and the spell ends. The targeted enemy and each creature within 10 feet of it must make a successful Dexterity saving throw or be blinded for 1 minute. A creature blinded in this way repeats the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">8</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (60 ft radius)</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a discolored pearl, which the spell consumes</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- BLACK SWAN STORM  -->
+	<element name="Black Swan Storm" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLACK_SWAN_STORM">
+		<supports>Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You call forth a whirlwind of black feathers that fills a 5-foot cube within range. The feathers deal 2d8 force damage to creatures in the cube’s area and radiate darkness, causing the illumination level within 20 feet of the cube to drop by one step (from bright light to dim light, and from dim light to darkness). Creatures that make a successful Dexterity saving throw take half the damage and are still affected by the change in light.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the feathers deal an extra 1d8 force damage for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a feather from a black swan</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 <!-- BLACK WELL  -->
 	<element name="Black Well" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLACK_WELL">
 		<supports>Wizard</supports>
@@ -251,6 +459,29 @@
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- BLADE OF MY BROTHER  -->
+	<element name="Blade of My Brother" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLADE_OF_MY_BROTHER">
+		<supports>Cleric,Paladin</supports>
+		<description>
+			<p>You touch a melee weapon that was used by an ally who is now dead, and it leaps into the air and flies to another ally (chosen by you) within 15 feet of you. The weapon enters that ally’s space and moves when the ally moves. If the weapon or the ally is forced to move more than 5 feet from the other, the spell ends.</p>
+			<p class="indent">The weapon acts on your turn by making an attack if a target presents itself. Its attack modifier equals your spellcasting level + the weapon’s inherent magical bonus, if any; it receives only its own inherent magical bonus to damage. The weapon fights for up to 4 rounds or until your concentration is broken, after which the spell ends and it falls to the ground.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">4</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 4 rounds</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a melee weapon owned by a dead ally of the target</set>
 			<set name="isConcentration">true</set>
 			<set name="isRitual">false</set>
 		</setters>
@@ -304,6 +535,98 @@
 		</setters>
 	</element>	
 
+<!-- BLEATING CALL -->
+	<element name="Bleating Call" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLEATING_CALL">
+		<supports>Bard,Ranger,Sorcerer,Wizard</supports>
+		<description>
+			<p>You create a sound on a point within range. The sound’s volume can range from a whisper to a scream, and it can be any sound you choose. The sound continues unabated throughout the duration, or you can make discrete sounds at different times before the spell ends.</p>
+			<p class="indent">Each creature that starts its turn within 30 feet of the sound and can hear it must make a Wisdom saving throw. On a failed save, the target must take the Dash or Disengage action and move toward the sound by the safest available route on each of its turns. When it arrives to the source of the sound, the target must use its action to examine the sound. Once it has examined the sound, the target determines the sound is illusory and can no longer hear it, ending the spell’s effects on that target and preventing the target from being affected by the sound again for the duration of the spell. If a target takes damage from you or a creature friendly to you, it is no longer under the effects of this spell. Creatures that can’t be charmed are immune to this spell.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">90 ft.</set>
+			<set name="duration">1 minute</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a bit of fur or hair from a young beast or humanoid</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+<!-- BLEED  -->
+	<element name="Bleed" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLEED">
+		<supports>Ranger,Warlock</supports>
+		<description>
+			<p>Crackling energy coats the blade of one weapon you are carrying that deals slashing damage. Until the spell ends, when you hit a creature with the weapon, the weapon deals an extra 1d4 necrotic damage and the creature must make a Constitution saving throw. On a failed save, the creature suffers a bleeding wound. Each time you hit a creature with this weapon while it suffers from a bleeding wound, your weapon deals an extra 1 necrotic damage for each time you have previously hit the creature with this weapon (to a maximum of 10 necrotic damage).</p>
+			<p class="indent">Any creature can take an action to stanch the bleeding wound by succeeding on a Wisdom (Medicine) check against your spell save DC. The wound also closes if the target receives magical healing. This spell has no effect on undead or constructs.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a drop of blood</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+<!-- BLESS THE DEAD  -->
+	<element name="Bless the Dead" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLESS_THE_DEAD">
+		<supports>Cleric,Druid,Warlock</supports>
+		<description>
+			<p>You grant a blessing to one deceased creature, enabling it to cross over to the realm of the dead in peace. A creature that benefits from bless the dead can’t become undead. The spell has no effect on living creatures or the undead.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- BLESSED REST  -->
+	<element name="Blessed Rest" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLESSED_REST">
+		<supports>Cleric,Paladin</supports>
+		<description>
+			<p>You place a benediction upon a creature, ensuring it a healthy rest. If the target takes a short rest, it can reroll any Hit Die spent for regaining hit points and take the higher roll.</p>
+			<p class="indent">If the target takes a long rest, it regains up to two extra Hit Dice when resting, up to its maximum Hit Dice. For example, if the target has eight Hit Dice, it can regain six spent Hit Dice upon finishing a long rest.</p>
+			<p class="indent">Once the target has taken one rest (long or short), the spell ends.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, you can target one additional humanoid for every two slot levels above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">8 hours</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a sprinkling of holy water</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 <!-- BLESSED HALO  -->
 	<element name="Blessed Halo" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLESSED_HALO">
 		<supports>Cleric,Paladin,Wizard</supports>
@@ -329,6 +652,30 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>	
+
+
+<!-- BLINDING PAIN -->
+	<element name="Blinding Pain" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLINDING_PAIN">
+		<supports>Bard,Sorcerer,Warlock</supports>
+		<description>
+			<p>You cause a creature within range to suffer severe pain in its head. At the start of its turn, the target takes 1d4 psychic damage and is blinded for 1 round. On a successful Wisdom saving throw, the creature takes half as much damage and is not blinded. A cure wounds or healing word spell cast on the target ends this spell, in addition to its regular effects. </p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an ice pick</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 <!-- BLIZZARD  -->
 	<element name="Blizzard" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLIZZARD">
@@ -420,6 +767,28 @@
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">true</set>
 			<set name="materialComponent">a container or pool of blood</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- BLOOD OFFERING  -->
+	<element name="Blood Offering" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLOOD_OFFERNIG">
+		<supports>Druid,Ranger,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You touch the corpse of a creature that isn’t undead or a construct and consume its life force. You must have dealt damage to the creature before it died, and it must have been dead for no more than 1 hour. You regain a number of hit points equal to 1d4 × the creature's challenge rating (minimum of 1d4). The creature can be restored to life only by means of a true resurrection or a wish spell.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">3</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 minute</set>
+			<set name="range">Touch</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
@@ -540,6 +909,29 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
+
+<!-- BLOODHOUND  -->
+	<element name="Bloodhound" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLOODHOUND">
+		<supports>Druid,Ranger,Sorcerer,Wizard</supports>
+		<description>
+			<p>You touch a willing creature to grant it an enhanced sense of smell. For the duration, that creature has advantage on Wisdom (Perception) checks that rely on smell and on Wisdom (Survival) checks to follow tracks.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, you also grant the target blindsight out to a range of 30 feet for the duration.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">8 hours</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a drop of ammonia</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
 
 <!-- BLOODSHOT  -->
 	<element name="Bloodshot" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BLOODSHOT">
@@ -684,6 +1076,110 @@
 		</setters>
 	</element>
 
+<!-- BOLSTER UNDEAD -->
+	<element name="Bolster Undead" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BOLSTER_UNDEAD">
+		<supports>Cleric,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You suffuse an area with negative energy to increase the difficulty of harming or affecting undead creatures.</p>
+			<p class="indent">Choose up to three undead creatures within range. When a targeted creature makes a saving throw against being turned or against spells or effects that deal radiant damage, the target has advantage on the saving throw.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional undead creature for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a sprinkle of unholy water</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- BOLSTERING BREW  -->
+	<element name="Bolstering Brew" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BOLSTERING_BREW">
+		<supports>Cleric</supports>
+		<description>
+			<p>Calling upon the patron deity of brewers, you bring forth a vibrant brew of beer or ale. Up to six other creatures within range can partake of this drink with you and share in its magical benefits, each drawing a mug from the small keg of magical brew that appears. A creature that downs a mug of magical beer gains advantage on either all Strength checks or all Charisma checks (chosen when it drinks), is immune to being frightened, and makes all Constitution saving throws with advantage. These benefits last for 8 hours.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">3</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">30 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a silver tankard worth 100 gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
+<!-- BONES OF STONE  -->
+	<element name="Bones of Stone" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BONES_OF_STONE">
+		<supports>Cleric,Druid,Ranger</supports>
+		<description>
+			<p>The bones of a creature you touch gain the strength and density of stone. Until the spell ends, the target has resistance to slashing damage and bludgeoning damage, and it gains advantage on Strength checks against effects that would move the target against its will.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">3</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pebble and a sliver of bone</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
+<!-- BOOSTER SHOT  -->
+	<element name="Booster Shot" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BOOSTER_SHOT">
+		<supports>Ranger,Sorcerer,Warlock</supports>
+		<description>
+			<p>You imbue a two-handed ranged weapon (typically a shortbow, longbow, light crossbow, or heavy crossbow) that you touch with a random magical benefit. While the spell lasts, a projectile fired from the weapon has an effect that occurs on a hit in addition to its normal damage. Roll a d6 to determine the additional effect for each casting of this spell.</p>
+			<table>
+				<thead>
+					<tr><td>d6</td><td>Effect</td></tr>
+				</thead>
+				<tr><td>1</td><td>2d10 acid damage to all creatures within 10 feet of the target</td></tr>
+				<tr><td>2</td><td>2d10 lightning damage to the target and 1d10 lightning damage to all creatures in a 5-foot-wide line between the weapon and the target</td></tr>
+				<tr><td>3</td><td>2d10 necrotic damage to the target, and the target has disadvantage on its first attack roll before the start of the weapon user’s next turn</td></tr>
+				<tr><td>4</td><td>2d10 cold damage to the target and 1d10 cold damage to all other creatures in a 60-foot cone in front of the weapon</td></tr>
+				<tr><td>5</td><td>2d10 force damage to the target, and the target is pushed 20 feet</td></tr>
+				<tr><td>6</td><td>2d10 psychic damage to the target, and the target is stunned until the start of the weapon user’s next tur</td></tr>
+			</table>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, all damage increases by 1d10 for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">3</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	 
+
 <!-- BOREAS’S BREATH  -->
 	<element name="Boreas' Breath" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BOREAS_BREATH">
 		<supports>Cleric,Druid,Ranger,Wizard</supports>
@@ -760,6 +1256,77 @@
 		</setters>
 	</element>
 
+<!-- BOULDER TOSS -->
+	<element name="Boulder Toss" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BOULDER_TOSS">
+		<supports>Druid</supports>
+		<description>
+			<p>You draw the power of the mountains into you, gaining a surge of strength that allows you to take an action to hurl a rock (or similar object) as a giant does. Your Strength is considered to be 19 for the purpose of determining damage from objects that you hurl.</p>
+			<p class="indent">Your hurled rock has a range of 60/240 feet and deals 2d10 bludgeoning damage on a hit. If the target is a creature, it must succeed on a Strength check against your spell save DC or be knocked prone.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> If you cast this spell using a spell slot of 4th or 5th level, your Strength is considered to be 21, and the bludgeoning damage increases to 3d10. If you cast this spell using a spell slot of 6th level or higher, your Strength is considered to be 23, and the bludgeoning damage increases to 4d10.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- BOUNCING FIREBALL -->
+	<element name="Bouncing Fireball" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BOUNCING_FIREBALL">
+		<supports>Sorcerer,Wizard</supports>
+		<description>
+			<p>A bolt of flame streaks from your finger toward a point you choose within range, then explodes into an inferno of flame. Each creature within 20 feet of the explosion takes 7d6 fire damage, or half damage with a successful Dexterity saving throw.</p>
+			<p class="indent">Immediately afterward, a second bolt of flame streaks from that explosion to a second target point you can see exactly 40 feet from the first explosion. It explodes again at the second target point, causing another 7d6 fire damage (halved by a successful Dexterity saving throw). Then the flame jumps instantly again to a third target point, also within your line of sight and exactly 40 feet from the second explosion, where it detonates for the final time with identical results.</p>
+			<p class="indent">Note that for the second and third bursts, the flame jumps exactly 40 feet—never more, never less—and if any part of a burst area overlaps the area of a previous burst, the burst fails to happen and the spell ends immediately.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 7th level or higher, the damage increases by 1d6 for each slot level above 6th.</p>
+		</description>
+		<setters>
+			<set name="keywords">fireball,variant</set>
+			<set name="level">6</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">150 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a tiny ball of bat guano and sulfur, and three iron pins</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- BRAWN BOOST --> 
+	<element name="Brawn Boost" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BRAWN_BOOST">
+		<supports>Bard,Cleric,Druid,Sorcerer,Wizard</supports>
+		<description>
+			<p>You touch a willing creature. Once before the spell ends, the target can roll a d6 and add the result to one Strength check of its choice. It can roll the die before or after making the check. The spell then ends.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
 <!-- BREATHTAKING WIND  -->
 	<element name="Breathtaking Wind" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BREATHTAKING_WIND">
 		<supports>Druid,Ranger,Sorcerer,Warlock,Wizard</supports>
@@ -781,6 +1348,28 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element> 
+
+<!-- BREEZE COMPASS -->
+	<element name="Breeze Compass" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BREEZE_COMPASS">
+		<supports>Druid,Wizard</supports>
+		<description>
+			<p>When you cast breeze compass, you must clearly imagine or mentally describe a location. It doesn’t need to be a location you’ve been to as long as you know it exists on the Material Plane. Within moments, a gentle breeze arises and blows along the most efficient path toward that destination. Only you can sense this breeze, and whenever it brings you to a decision point (a fork in a passageway, for example), you must make a successful DC 8 Intelligence (Arcana) check to deduce which way the breeze indicates you should go. On a failed check, the spell ends. The breeze guides you around cliffs, lava pools, and other natural obstacles, but it doesn’t avoid enemies or hostile creatures.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">3</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a magnetized needle</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 <!-- BRIMSTONE --> 
 	<element name="Brimstone" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BRIMSTONE">
@@ -917,5 +1506,28 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
+
+<!-- BY THE LIGHT OF THE WATCHFUL MOON -->
+	<element name="By the Light of the Watchful Moon" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_BY_THE_LIGHT_OF_THE_WATCHFUL_MOON">
+		<supports>Cleric,Druid,Paladin,Ranger,Sorcerer,Wizard</supports>
+		<description>
+			<p>Regardless of the time of day or your location, you command the watchful gaze of the moon to illuminate threats to you and your allies. Shafts of bright moonlight, each 5 feet wide, shine down from the sky (or from the ceiling if you are indoors), illuminating all spaces within range that contain threats, whether they are enemies, traps, or hidden hazards. An enemy creature that makes a successful Charisma saving throw resists the effect and is not picked out by the moon’s glow.</p>
+			<p class="indent">The glow does not make invisible creatures visible, but it does indicate an invisible creature’s general location (somewhere within the 5-foot beam). The light continues to illuminate any target that moves, but a target that moves out of the spell’s area is no longer illuminated. A threat that enters the area after the spell is cast is not subject to the spell’s effect.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">4</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="range">90 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
 
 </elements>

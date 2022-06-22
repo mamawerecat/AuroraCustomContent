@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Darkness Domain</name>
+        <update version="0.0.1">
+            <file name="cleric-darkness.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-darkness.xml" />
+        </update>
+    </info>
+    
+    <element name="Darkness Domain" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_DARKNESS_DOMAIN">
+        <supports>Divine Domain</supports>
+        <description>
+            <p>Darkness enshrouds our private affairs and shelters our secrets. The shadows might protect the hunted from the hunter or conceal danger. Emissaries of the gods who claim dominion over the darkness provide protection for those in need or aid those who hunt in the night, if they are not themselves the hunters.</p>
+			<h5 class="caption">DARKNESS DOMAIN SPELLS </h5>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>shadow armor, sleep</em></td></tr>
+				<tr><td>3rd</td><td><em>darkness, dark path*</em></td></tr>
+				<tr><td>5th</td><td><em>legion, nondetection</em></td></tr>
+				<tr><td>7th</td><td><em>phantasmal killer, shadow monsters*</em></td></tr>
+				<tr><td>9th</td><td><em>dark dementing, mislead</em></td></tr>
+			</table>
+            <div element="ID_KBP_DM5E_DARKNESS_DOMAIN_ARCHETYPE_FEATURE_CREATURE_OF_DARKNESS" />
+            <div element="ID_KBP_DM5E_DARKNESS_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_SHADOWSIGHT" />
+            <div element="ID_KBP_DM5E_DARKNESS_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_SHADOW_MELD" />
+            <div element="ID_KBP_DM5E_DARKNESS_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" />
+            <div element="ID_KBP_DM5E_DARKNESS_DOMAIN_ARCHETYPE_FEATURE_SHADOW_SHIELD" />
+        </description>
+        <sheet display="false">
+        <rules>
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_DARKNESS_DOMAIN_ARCHETYPE_FEATURE_CREATURE_OF_DARKNESS" level="1" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_DARKNESS_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_SHADOWSIGHT" level="2" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_DARKNESS_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_SHADOW_MELD" level="6" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_DARKNESS_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" level="8" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_DARKNESS_DOMAIN_ARCHETYPE_FEATURE_SHADOW_SHIELD" level="17" />
+
+            <grant type="Spell" id="ID_KBP_DM5E_SPELL_SHADOW_ARMOR" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_KBP_DM5E_SPELL_SLEEP" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DARKNESS" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_KBP_DM5E_SPELL_DARK_PATH" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_KBP_DM5E_SPELL_LEGION" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_NONDETECTION" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PHANTASMAL_KILLER" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_KBP_DM5E_SPELL_SHADOW_MONSTERS" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_KBP_DM5E_SPELL_DARK_DEMENTING" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_KBP_DM5E_SPELL_MISLEAD" level="9" spellcasting="Cleric" prepared="true" />
+        </rules>
+    </element>
+
+<!-- CREATURE OF DARKNESS  -->
+    <element name="Creature of Darkness" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_DARKNESS_DOMAIN_ARCHETYPE_FEATURE_CREATURE_OF_DARKNESS">
+        <description>
+            <p>When you choose this domain at 1st level, you gain proficiency in either Deception or Stealth (your choice). While in dim light or darkness, you can take the Hide action as a bonus action.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>While in dim light or darkness, you can take the Hide action as a bonus action.</description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Skill Proficiency (Creature of Darkness)" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_STEALTH" />
+        </rules>
+    </element>
+ 
+<!-- CHANNEL DIVINITY: SHADOWSIGHT  -->
+    <element name="Shadowsight" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_DARKNESS_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_SHADOWSIGHT">
+        <description>
+            <p>Starting at 2nd level, you can use your Channel Divinity to gain darkvision out to a range of 60 feet for 1 hour. If you already have darkvision, using your Channel Divinity in this way allows you to see in magical darkness to a distance of 30 feet as if it were dim light.</p>
+        </description>
+        <sheet usage="Channel Divinity">
+            <description>You gain darkvision out to a range of 60 feet for 1 hour. If you already have darkvision, using your Channel Divinity in this way allows you to see in magical darkness to a distance of 30 feet as if it were dim light.</description>
+        </sheet>
+    </element>
+ 
+<!-- CHANNEL DIVINITY: SHADOW MELD  -->
+    <element name="Shadow Meld" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_DARKNESS_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_SHADOW_MELD">
+        <description>
+            <p>Beginning at 6th level, you can use your Channel Divinity to merge your current location with the version of it that exists on the plane of shadow. The affected area is a sphere with a 60-foot radius centered on you. Within that area, bright light becomes dim light, dim light becomes darkness, and darkness becomes equivalent to magical darkness. The temperature plummets; all creatures other than you in the darkened sphere at the end of their turns must make a successful Constitution saving throw or take 1d8 cold damage. The sphere lasts for 1 minute or until you dismiss it as a bonus action. There’s a chance, if the GM allows, that 2d4 shadows might step through into your world when the effect ends. Such creatures might or might not be hostile.</p>
+        </description>
+        <sheet usage="Channel Divinity">
+            <description>You merge your current location with the version of it that exists on the plane of shadow. The affected area is a sphere with a 60-foot radius centered on you. Within that area, bright light becomes dim light, dim light becomes darkness, and darkness becomes equivalent to magical darkness. The temperature plummets; all creatures other than you in the darkened sphere at the end of their turns must make a successful Constitution saving throw or take 1d8 cold damage. The sphere lasts for 1 minute or until you dismiss it as a bonus action. There’s a chance, if the GM allows, that 2d4 shadows might step through into your world when the effect ends. Such creatures might or might not be hostile.</description>
+        </sheet>
+    </element>
+
+<!-- DIVINE STRIKE  -->
+    <element name="Divine Strike" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_DARKNESS_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE">
+        <description>
+            <p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 necrotic damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+        </description>
+        <sheet>
+            <description level="8">Once on each of your turns, you can cause a weapon attack to deal an extra 1d8 necrotic damage to the target on a hit.</description>
+            <description level="14">Once on each of your turns, you can cause a weapon attack to deal an extra 2d8 necrotic damage to the target on a hit.</description>
+        </sheet>
+    </element>
+
+<!-- SHADOW SHIELD  -->
+    <element name="Shadow Shield" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_DARKNESS_DOMAIN_ARCHETYPE_FEATURE_SHADOW_SHIELD">
+        <description>
+            <p>At 17th level, your shadow becomes capable of defending you. Each time you are hit by a nonmagical attack or effect that causes damage, your shadow absorbs half of the damage. When your shadow has absorbed damage equal to one-fourth of your maximum hit points, it goes dormant until you finish a long rest.</p>
+        </description>
+        <sheet>
+            <description>Each time you are hit by a nonmagical attack or effect that causes damage, your shadow absorbs half of the damage. When your shadow has absorbed damage equal to one-fourth of your maximum hit points, it goes dormant until you finish a long rest.</description>
+        </sheet>
+    </element>
+
+</elements>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Beer Domain</name>
+        <update version="0.0.1">
+            <file name="cleric-mountain.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-mountain.xml" />
+        </update>
+    </info>
+    
+    
+<!-- 
+
+MOUNTAIN DOMAIN 
+Mountains signify strength, endurance, and hard-won wisdom. Many gods make their homes in the mountains, and so do many horrors. Those who would know themselves in full must embrace the ordeal of scaling the highest peaks, despite the thin, cold air, deprivation, and hardships that await. 
+MOUNTAIN DOMAIN SPELLS 
+CLERIC LEVEL 	SPELLS 
+1st 	feather fall, jump 
+3rd 	enhance ability, spider climb 
+5th 	meld into stone, sleet storm 
+7th 	stone shape, stoneskin 
+9th 	commune with nature, cone of cold 
+
+BONUS PROFICIENCY 
+When you choose this domain at 1st level, you gain proficiency in Athletics, Nature, or Survival (your choice). 
+TONGUES OF THE MOUNTAINS 
+Also at 1st level, you become fluent in Dwarvish or Giant (your choice). 
+CHANNEL DIVINITY: EVER UPWARD 
+Starting at 2nd level, you can use your Channel Divinity to grant yourself and up to five other creatures advantage on skill or ability checks made to climb, avoid falling, or avoid the prone condition. The effect lasts for 1 hour. 
+DARKVISION 
+Beginning at 6th level, you gain darkvision out to a range of 30 feet. If you already have darkvision, you can see in magical darkness out to a range of 30 feet as if it were dim light. 
+DIVINE STRIKE 
+At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 cold damage to the target. When you reach 14th level, the extra damage increases to 2d8. 
+AVALANCHE 
+At 17th level, you can create an avalanche that crushes and buries everything in its path. A 60-foot cone of ice, snow, and rubble erupts from a point of your choosing within 20 feet of you, in a direction you select. Each creature in the cone takes 15d8 bludgeoning damage, or half as much damage with a successful Strength saving throw. A creature that fails the saving throw is also restrained. A restrained creature can be freed by spending an action to make a successful Strength check, either by itself or by an ally within 5 feet of it. 
+You must be outdoors to create the avalanche. The direction of the cone must be downhill or level; the avalanche can’t flow upill. Walls and other permanent structures block the avalanche. After using this feature, you must finish a long rest before using it again.
+ -->
+
+    
+</elements>

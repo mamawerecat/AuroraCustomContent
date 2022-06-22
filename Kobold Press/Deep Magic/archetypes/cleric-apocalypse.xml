@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Apocalypse Domain</name>
+        <update version="0.0.1">
+            <file name="cleric-apocalypse.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-apocalypse.xml" />
+        </update>
+    </info>
+
+    <element name="Apocalypse Domain" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_APOCALYPSE_DOMAIN">
+        <supports>Divine Domain</supports>
+        <description>
+            <p>Gods with the Apocalypse domain in their portfolios promote fear, judgment, punishment, and the end of all things. Priesthoods of such gods consider themselves the messengers of that doom, and they work to spread word of the coming end. Their gloomy, often frightening message makes them unwelcome in many, but not all, civilized places.</p>
+			<h5 class="caption">APOCALYPSE DOMAIN SPELLS </h5>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>bane, grim siphon</em></td></tr>
+				<tr><td>3rd</td><td><em>blindness/deafness, enthrall</em></td></tr>
+				<tr><td>5th</td><td><em>bestow curse, fear</em></td></tr>
+				<tr><td>7th</td><td><em>blight, confusion</em></td></tr>
+				<tr><td>9th</td><td><em>contact other plane, souleater</em></td></tr>
+			</table>
+            <div element="ID_KBP_DM5E_APOCALYPSE_DOMAIN_ARCHETYPE_FEATURE_RANTING_RUIN" />
+            <div element="ID_KBP_DM5E_APOCALYPSE_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_DAMNATION" />
+            <div element="ID_KBP_DM5E_APOCALYPSE_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_WEIGHT_OF_GUILT" />
+            <div element="ID_KBP_DM5E_APOCALYPSE_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" />
+            <div element="ID_KBP_DM5E_APOCALYPSE_DOMAIN_ARCHETYPE_FEATURE_HERALD_OF_THE_APOCALYPSE" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_APOCALYPSE_DOMAIN_ARCHETYPE_FEATURE_RANTING_RUIN" level="1" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_APOCALYPSE_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_DAMNATION" level="2" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_APOCALYPSE_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_WEIGHT_OF_GUILT" level="6" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_APOCALYPSE_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" level="8" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_APOCALYPSE_DOMAIN_ARCHETYPE_FEATURE_HERALD_OF_THE_APOCALYPSE" level="17" />
+
+            <grant type="Spell" id="ID_PHB_SPELL_BANE" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_KBP_DM5E_SPELL_GRIM_SIPHON" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLINDNESS_DEAFNESS" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ENTHRALL" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BESTOW_CURSE" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FEAR" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLIGHT" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONFUSION" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONTACT_OTHER_PLANE" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_KBP_DM5E_SPELL_SOULEATER" level="9" spellcasting="Cleric" prepared="true" />
+        </rules>
+    </element>
+
+<!-- RANTING RUIN --> 
+    <element name="Ranting Ruin" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_APOCALYPSE_DOMAIN_ARCHETYPE_FEATURE_RANTING_RUIN">
+        <description>
+            <p>When you choose this domain at 1st level, you learn the vicious mockery cantrip. You also gain proficiency in either Arcana or Survival (your choice).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Proficiency" name="Skill Proficiency (Ranting Ruin)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_SURVIVAL" />
+            <grant type="Spell" id="ID_PHB_SPELL_VICIOUS_MOCKERY" level="1" spellcasting="Cleric" prepared="true" />
+        </rules>
+    </element>
+
+<!-- CHANNEL DIVINITY: DAMNATION  -->
+    <element name="Damnation" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_APOCALYPSE_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_DAMNATION">
+        <description>
+            <p>Starting at 2nd level, you can use your Channel Divinity to lash out at those who defy your deity’s messenger. As an action, you present your holy symbol while pronouncing doom to unbelievers. Each hostile creature that can see you and is within 30 feet of you takes necrotic damage equal to 3d6 + your cleric level, or half as much damage with a successful Wisdom saving throw. A creature that has total cover from you is not affected. </p>
+        </description>
+        <sheet usage="Channel Divinity" action="Action">
+            <description>As an action you present your holy symbol and each hostile creature that can see you and is within 30 feet of you takes 3d6 + {{level:cleric}} necrotic damage, or half as much damage with a successful Wisdom saving throw (DC {{cleric:spellcasting:dc}}). A creature that has total cover from you is not affected.</description>
+        </sheet>
+    </element>
+
+<!-- CHANNEL DIVINITY: WEIGHT OF GUILT   -->
+    <element name="Weight of Guilt" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_APOCALYPSE_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_WEIGHT_OF_GUILT">
+        <description>
+            <p>At 6th level, you can use your Channel Divinity to manipulate a creature’s thoughts. You can then use your access to the creature’s mind as an advantage when interrogating it. As an action, choose one creature that you can see within 60 feet of you. That creature must make a Wisdom saving throw. On a failed save, you automatically know for the next 10 minutes whether anything the target says is true, a lie, or in between. On a successful save, the target cannot be affected by this spell until you finish a long rest.</p>
+        </description>
+        <sheet usage="Channel Divinity" action="Action">
+            <description>As an action, choose one creature that you can see within 60 feet of you. That creature must make a Wisdom saving throw (DC {{cleric:spellcasting:dc}}). On a failed save, you automatically know for the next 10 minutes whether anything the target says is true, a lie, or in between. On a successful save, the target cannot be affected by this spell until you finish a long rest.</description>
+        </sheet>
+    </element>
+
+<!-- Divine Strike -->
+    <element name="Divine Strike" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_APOCALYPSE_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE">
+        <description>
+            <p>At 8th level, you gain the ability to infuse your weapon strikes with necrotic energy. Once on each of your turns, you can cause a weapon attack to deal an extra 1d8 necrotic damage to the target on a hit. When you reach 14th level, the extra damage increases to 2d8. </p>
+        </description>
+        <sheet>
+            <description level="8">Once on each of your turns, you can cause a weapon attack to deal an extra 1d8 necrotic damage to the target on a hit.</description>
+            <description level="14">Once on each of your turns, you can cause a weapon attack to deal an extra 2d8 necrotic damage to the target on a hit.</description>
+        </sheet>
+    </element>
+
+<!-- Hearld of the Apocalypse -->
+    <element name="Hearld of the Apocalypse" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_APOCALYPSE_DOMAIN_ARCHETYPE_FEATURE_HERALD_OF_THE_APOCALYPSE">
+        <description>
+            <p>At 17th level, you gain resistance to acid, fire, and poison damage.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+        </rules>
+    </element>
+
+</elements>
