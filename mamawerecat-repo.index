@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Mamawerecat Repo</name>
+		<description>All index files for my repo. Not including UA.</description>
+		<update version="0.0.1">
+			<file name="mamawerecat-repo.index" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/mamawerecat-repo.index" />
+		</update>
+	</info>
+	<files>
+
+        <file name="taldorei-reborn.index" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/taldorei-reborn.index" />
+        <file name="kobold-press.index" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/kobold-press.index" />
+        <file name="redmasque.index" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/redmasque.index" />
+        <file name="misc.index" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Miscellaneous/misc.index" />
+
+	</files>
+</index>

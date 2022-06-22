@@ -14,24 +14,7 @@ Go to the Additional Content tab in Aurora, enter the URL of the index file, and
   <li>https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/kobold-press.index</li>
 </ul>
 
-<h2>Current project(s)</h2>
-<ul>
-  <li>Vault of Magic - Kobold Press</li>
-  <li>Deep Magic - Kobold Press</li>
-</ul>
-  
-<h2>Upcomping Projects</h2>
-<ul>
-  <li>Vault of Magic II (Sign of the Dragon)</li>
-  <li>Vault of Magic (Sign of the Dragon)</li>
-  <li>5th Edition Horror</li>
-  <li>Bard Subclass - College of Absurdity</li>
-  <li>New Druidic Circles</li>
-  <li>Fey Magic Sorcerer</li>
-  <li>Frozen Heart Sorcerer</li>
-  <li>Mother Night Warlock Subclass</li>
-  <li>Oath of the Seelie Court</li>
-  <li>The Feyweaver</li>
-  <li>XP to Level 3</li>
-  <li>Deep Magic for 5e</li>
-</ul>
+<h3>To download the entire repo (minus UA content) please use <i>https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/mamawerecat-repo.index</i></h3>
+
+<h2>Disclaimer</h2>
+This repository is intended as a place for easily-accessible Aurora Builder content (xml) files of products you already own. Please ensure you only access content in accordance with your local laws. This is a fan project, and isn't affiliated with the Aurora Builder or Wizards of the Coast.

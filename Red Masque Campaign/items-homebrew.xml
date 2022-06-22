@@ -6,7 +6,7 @@
 		<name>Items</name>
 		<description>Red Masque Campaign Homebrew</description>
 		<author>Bohemian Trash Collective</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 				 <file name="items-homebrew.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Red%20Masque%20Campaign/items-homebrew.xml" />
 		</update>
 	</info>
@@ -20,7 +20,7 @@
 		</description>
 		<setters>
 			<set name="keywords">cloak, Ghoulhide, necrotic</set>
-			<set name="category">Red Masque</set>
+			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="slot">shoulders</set>
@@ -43,7 +43,7 @@
 		</description>
 		<setters>
 			<set name="keywords">armor, Ghoulhide, necrotic</set>
-			<set name="category">Red Masque</set>
+			<set name="category">Magic Armor</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type" addition="light, medium, or heavy">Armor</set>
@@ -70,7 +70,7 @@
 		</description>
 		<setters>
 			<set name="keywords">shield</set>
-			<set name="category">Red Masque</set>
+			<set name="category">Magic Armor</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="type" addition="shield">Armor</set>
 			<set name="rarity">Uncommon</set>
@@ -101,7 +101,7 @@
 		</description>
 		<setters>
 			<set name="keywords">plate,armor</set>
-			<set name="category">Red Masque</set>
+			<set name="category">Magic Armor</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="slot">body</set>
 			<set name="type" addition="plate">Armor</set>
@@ -132,7 +132,7 @@
 		</description>
 		<setters>
 			<set name="keywords">Magic Item</set>
-			<set name="category">Red Masque</set>
+			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="type">Magic item</set>
 			<set name="rarity">Uncommon</set>
@@ -149,7 +149,7 @@
 			<p><em><strong>This might look like a simple salt shaker, but the contents have been bewitched to turn a bright shade of pink if sprinkled over food or drink that contains poison. Also makes food delicious!</strong></em></p>
 		</description>
 		<setters>
-			<set name="category">Red Masque</set>
+			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
@@ -166,7 +166,7 @@
 			<p><em><strong>Creates 1d10 strips of bacon per day at dawn. Bacon does not stack, and uneaten bacon disappears at dawn the following day. Bacon is cooked exactly how you like it (chewy, crispy, burnt, or somewhere in between) and comes out at the perfect temperature. named for Sam Riegel (AKA Nott the Brave/Veth Bernato) on Critical role, the first to stuff bacon in a pocket </strong></em> </p>
 		</description>
 		<setters>
-			<set name="category">Red Masque</set>
+			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
@@ -180,10 +180,10 @@
 
 	<element name="Solina's Potion of Processing" type="Magic Item" source="Red Masque Campaign" id="ID_RMC_BTC_MAGIC_ITEM_SOLINA_POTION_OF_PROCESSING">
 		<description>
-			<p>Solina's Potion of Processing is a flask magically engraved with a tiefling drinking and falling down repeatedly. This flask is always full with the owner's alcohol and cannot be used to store anything other than alcohol. You can change the type of liquor stored after 1 hour of concentration.  </p>
+			<p>Solina's Potion of Processing is a flask magically engraved with a tiefling drinking and falling down repeatedly. This flask is always full with the owner's alcohol and cannot be used to store anything other than alcohol. You can change the type of liquor stored after 1 hour of concentration.</p>
 		</description>
 		<setters>
-			<set name="category">Red Masque</set>
+			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>

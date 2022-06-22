@@ -4,7 +4,7 @@
 		<name>Weapons</name>
 		<description>Red Masque Campaign Homebrew Weapons</description>
 		<author>Bohemian Trash Collective</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 				 <file name="items-homebrew-weapons.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Red%20Masque%20Campaign/items-homebrew-weapons.xml" />
 		</update>
 	</info>
@@ -12,86 +12,103 @@
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~BASTARDSWORD~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-    <element name="Bastardsword" type="Weapon" source="Red Masque Campaign" id="ID_BTC_RMC_WEAPON_BASTARDSWORD">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
-		<description>
-			<p></p>
-		</description>
-		<setters>
-			<set name="category">Weapons</set>
-			<set name="cost" currency="gp">15</set>
-			<set name="weight" lb="3">3 lb.</set>
-			<set name="slot">onehand</set>
-			<set name="damage" type="slashing">1d10</set>
-			<set name="versatile">1d12</set>
-			<set name="proficiency">ID_BTC_RMC_PROFICIENCY_WEAPON_PROFICIENCY_BASTARDSWORD</set>
-		</setters>
-    </element>    
+<element name="Bastardsword" type="Weapon" source="Red Masque Campaign" id="ID_BTC_RMC_WEAPON_BASTARDSWORD">
+	<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+	<description>
+		<p></p>
+	</description>
+	<setters>
+		<set name="category">Weapons</set>
+		<set name="cost" currency="gp">15</set>
+		<set name="weight" lb="3">3 lb.</set>
+		<set name="slot">onehand</set>
+		<set name="damage" type="slashing">1d10</set>
+		<set name="versatile">1d12</set>
+		<set name="proficiency">ID_BTC_RMC_PROFICIENCY_WEAPON_PROFICIENCY_BASTARDSWORD</set>
+	</setters>
+</element>    
 
-    <element name="Weapon Proficiency (Bastardsword)" type="Proficiency" source="Red Masque Campaign" id="ID_BTC_RMC_PROFICIENCY_WEAPON_PROFICIENCY_BASTARDSWORD">
-        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
-    </element>
-    <append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
-        <rules>
-            <grant type="Proficiency" id="ID_BTC_RMC_PROFICIENCY_WEAPON_PROFICIENCY_BASTARDSWORD" />
-        </rules>
-    </append>
+<element name="Weapon Proficiency (Bastardsword)" type="Proficiency" source="Red Masque Campaign" id="ID_BTC_RMC_PROFICIENCY_WEAPON_PROFICIENCY_BASTARDSWORD">
+	<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+</element>
+<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+	<rules>
+		<grant type="Proficiency" id="ID_BTC_RMC_PROFICIENCY_WEAPON_PROFICIENCY_BASTARDSWORD" />
+	</rules>
+</append>
 
 
 <!-- THREE-HEADED FLAIL -->
 
-	<element name="Three-Headed Flail" type="Magic Item" source="Red Masque Campaign" id="ID_BTC_RMC_MAGIC_ITEM_THREE_HEADED_FLAIL">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_GROUP_FLAILS</supports>
-		<description>
-			<p>The flail has three heads. One wrought like a grinning skull, one like a raven, and one like an hourglass, devoted to the gods of death, undeath, and, perhaps, a third... </p>
-			<p class="indent">Roll a d6 to determine how many heads hit. (see table below) Each head does 1d4 of damage. Add your proficiency bonus and strength modifier to the damage rolls. On a critical, all three heads automatically hit, plus an extra d4 of damage. The damage can be either radiant or necrotic damage, which can be changed after a long rest.</p>
-			<table>
-				<thead>
-					<tr><td>d6</td><td>How many Heads hit</td></tr>
-				</thead>
-				<tr><td>1</td><td>1 head</td></tr>
-				<tr><td>2</td><td>1 head</td></tr>
-				<tr><td>3</td><td>2 heads</td></tr>
-				<tr><td>4</td><td>2 heads</td></tr>
-				<tr><td>5</td><td>3 heads</td></tr>
-				<tr><td>6</td><td>3 heads</td></tr>
-			</table>			
-		</description>
-		<setters>
-			<set name="keywords">flail</set>
-			<set name="category">Red Masque</set>
-			<set name="type" addition="flail">Weapon</set>
-			<set name="weight" lb="2">2 lb.</set>
-			<set name="slot">onehand</set>
-			<set name="damage" type="bludgeoning">1d4</set>
-			<set name="attunement">false</set>
-			<set name="name-format">Three-Headed Flail</set>
-			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_THREE_HEADED_FLAIL</set>
-		</setters>
-		<rules>
-			<stat name="three-headed flail:damage" value="proficiency" />
-		</rules>
-	</element>
+<element name="Three-Headed Flail" type="Magic Item" source="Red Masque Campaign" id="ID_BTC_RMC_MAGIC_ITEM_THREE_HEADED_FLAIL">
+	<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_GROUP_FLAILS</supports>
+	<description>
+		<p>The flail has three heads. One wrought like a grinning skull, one like a raven, and one like an hourglass, devoted to the gods of death, undeath, and, perhaps, a third... </p>
+		<p class="indent">Roll a d6 to determine how many heads hit. (see table below) Each head does 1d4 of damage. Add your proficiency bonus and strength modifier to the damage rolls. On a critical, all three heads automatically hit, plus an extra d4 of damage. The damage can be either radiant or necrotic damage, which can be changed after a long rest.</p>
+		<table>
+			<thead>
+				<tr><td>d6</td><td>How many Heads hit</td></tr>
+			</thead>
+			<tr><td>1</td><td>1 head</td></tr>
+			<tr><td>2</td><td>1 head</td></tr>
+			<tr><td>3</td><td>2 heads</td></tr>
+			<tr><td>4</td><td>2 heads</td></tr>
+			<tr><td>5</td><td>3 heads</td></tr>
+			<tr><td>6</td><td>3 heads</td></tr>
+		</table>			
+	</description>
+	<setters>
+		<set name="keywords">flail</set>
+		<set name="category">Magic Weapons</set>
+		<set name="type" addition="flail">Weapon</set>
+		<set name="weight" lb="2">2 lb.</set>
+		<set name="slot">onehand</set>
+		<set name="damage" type="bludgeoning">1d4</set>
+		<set name="attunement">false</set>
+		<set name="name-format">Three-Headed Flail</set>
+		<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_THREE_HEADED_FLAIL</set>
+	</setters>
+	<rules>
+		<stat name="three-headed flail:damage" value="proficiency" />
+	</rules>
+</element>
 
 <!-- Ritual Daggers -->
 
-	<element name="Ritual Dagger" type="Magic Item" source="Red Masque Campaign" id="ID_BTC_RMC_MAGIC_ITEM_RITUAL_DAGGER">		
-		<description>
-			<p>This dagger have obsidian blades inscribed with small gold lettering.</p>
-			<p class="indent">You have a +1 to attack roles. On a critical hit, you regain 1d4+1 hp.</p>
-			<p class="indent">You have advantage on religion checks, rituals, and spells from the cleric list.</p>
-		</description>
-		<setters>
-			<set name="category">Red Masque</set>
-			<set name="cost" currency="gp">0</set>
-			<set name="type" addition="dagger">Weapon</set>
-			<set name="rarity">Rare</set>
-			<set name="weapon">Dagger</set>
-			<set name="attunement">false</set>
-		</setters>
-		<rules>
-			<stat name="dagger:attack" value="1" />
-		</rules>
-	</element> 
+<element name="Ritual Dagger" type="Magic Item" source="Red Masque Campaign" id="ID_BTC_RMC_MAGIC_ITEM_RITUAL_DAGGER">		
+	<description>
+		<p>This dagger have obsidian blades inscribed with small gold lettering.</p>
+		<p class="indent">You have a +1 to attack roles. On a critical hit, you regain 1d4+1 hp.</p>
+		<p class="indent">You have advantage on religion checks, rituals, and spells from the cleric list.</p>
+	</description>
+	<setters>
+		<set name="category">Magic Weapons</set>
+		<set name="cost" currency="gp">0</set>
+		<set name="type" addition="dagger">Weapon</set>
+		<set name="rarity">Rare</set>
+		<set name="weapon">Dagger</set>
+		<set name="attunement">false</set>
+	</setters>
+	<rules>
+		<stat name="dagger:attack" value="1" />
+	</rules>
+</element> 
+
+<!-- Death Tongue -->
+
+<element name="Death Tongue" type="Magic Item" source="Red Masque Campaign" id="ID_BTC_RMC_MAGIC_ITEM_DEATH_TONGUE">
+    <description>
+        <p>You can use a bonus action to speak this magic dagger's command word, causing shadows to envelope the blade. The shadows cause the dagger's damage type to convert to necrotic damage instead of piercing. While the dagger is enveloped, it deals an extra 2d6 necrotic damage to any target it hits. The shadows last until you use a bonus action to speak the command word again or until you drop or sheathe the dagger.</p>
+    </description>
+    <setters>
+        <set name="keywords">necrotic, damage</set>
+        <set name="category">Magic Weapons</set>
+        <set name="cost" currency="gp">0</set>
+        <set name="type" addition="dagger">Weapon</set>
+        <set name="attunement">true</set>
+        <set name="rarity">Very Rare</set>
+        <set name="weapon">Dagger</set>
+    </setters>
+</element>
 
 </elements>

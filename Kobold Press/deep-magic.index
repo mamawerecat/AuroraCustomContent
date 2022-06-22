@@ -11,7 +11,9 @@
 	<files>	
 		<file name="source.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/source.xml" />
 		
+
 	<!-- Spells -->
+
 		<file name="deep-magic-spells.index" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/deep-magic-spells.index" />
 
 
