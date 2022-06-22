@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Darkness Domain</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="cleric-darkness.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-darkness.xml" />
         </update>
     </info>
@@ -28,7 +28,7 @@
             <div element="ID_KBP_DM5E_DARKNESS_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" />
             <div element="ID_KBP_DM5E_DARKNESS_DOMAIN_ARCHETYPE_FEATURE_SHADOW_SHIELD" />
         </description>
-        <sheet display="false">
+        <sheet display="false" />
         <rules>
             <grant type="Archetype Feature" id="ID_KBP_DM5E_DARKNESS_DOMAIN_ARCHETYPE_FEATURE_CREATURE_OF_DARKNESS" level="1" />
             <grant type="Archetype Feature" id="ID_KBP_DM5E_DARKNESS_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_SHADOWSIGHT" level="2" />

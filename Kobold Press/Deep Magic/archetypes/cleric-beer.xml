@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Beer Domain</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="cleric-beer.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-beer.xml" />
         </update>
     </info>
@@ -29,9 +29,7 @@
             <div element="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" />
             <div element="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_FIRE_IN_THE_BELLY" />
         </description>
-        <sheet display="false">
-            <description></description>
-        </sheet>
+        <sheet display="false" />
         <rules>
             <grant type="Archetype Feature" id="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_DISCIPLE_OF_THE_DRAUGHT" level="1" />
             <grant type="Archetype Feature" id="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_BLESSED_BREW" level="2" />
