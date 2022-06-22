@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="ranger-vampire-slayer.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/ranger-vampire-slayer.xml" />
 		</update>
 	</info>
@@ -34,10 +34,9 @@
         <description>
             <p>If you choose this archetype at 3rd level, your favored enemy becomes undead if you did not select undead at 1st level. When you choose additional favored enemies at 6th and 14th level, you can choose freely from the standard list, and you can also select hags or lycanthropes as an alternative.</p>
         </description>
-        <sheet display="false" />
-        <rules>
-			<grant type="Class Feature" id="ID_WOTC_CLASSFEATURE_RANGER_FAVORED_ENEMY_UNDEAD" />
-        </rules>
+        <sheet>
+            <description>Your favored enemy becomes undead if you did not select undead at 1st level.</description>
+        </sheet>
     </element>
 
 	<!-- ENEMIES -->
