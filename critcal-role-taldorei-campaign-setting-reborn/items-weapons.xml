@@ -2,23 +2,10 @@
 <elements>
     <info>
         <name>Tal'Dorei Campaign Setting Reborn Items- Weapons</name>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="items-weapons.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/critcal-role-taldorei-campaign-setting-reborn/items-weapons.xml" />
         </update>
     </info>
-
-<!-- Appending ID for crossbows -->
-
-    <element name="Weapon Group (Heavy Crossbows)" type="Weapon Group" source="Internal" id="ID_INTERNAL_WEAPON_GROUP_HEAVY_CROSSBOWS" />
-        <append id="ID_WOTC_PHB_WEAPON_CROSSBOW_HEAVY">
-            <supports>ID_INTERNAL_WEAPON_GROUP_HEAVY_CROSSBOWS</supports>
-        </append>
-
-    <element name="Weapon Group (Hand Crossbows)" type="Weapon Group" source="Internal" id="ID_INTERNAL_WEAPON_GROUP_HAND_CROSSBOWS" />
-        <append id="ID_WOTC_PHB_WEAPON_CROSSBOW_HAND">
-            <supports>ID_INTERNAL_WEAPON_GROUP_HAND_CROSSBOWS</supports>
-        </append>
-
 
 <!-- Cataclysm Bolts -->
     <element name="Cataclysm Bolts" type="Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_ITEM_CATACLYSM_BOLTS">

@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - T</name>
-        <update version="0.0.4">
+        <update version="0.0.5">
             <file name="t-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/t-spells.xml" />
         </update>
     </info>
@@ -335,7 +335,7 @@
 			<set name="school" addition="clockwork">Transmutation</set>
 			<set name="time">1 action</set>
 			<set name="range">Touch</set>
-			<set name="duration">24 hrs</set>
+			<set name="duration">24 hours</set>
 			<set name="hasVerbalComponent">false</set>
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">true</set>

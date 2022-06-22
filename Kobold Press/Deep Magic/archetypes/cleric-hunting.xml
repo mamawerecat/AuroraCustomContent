@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Hunter Domain</name>
+        <update version="0.0.1">
+            <file name="cleric-hunting.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-hunting.xml" />
+        </update>
+    </info>
+    
+  <!--   
+HUNTING DOMAIN 
+You are master of the hunt. The bounty of the land is yours for the taking. 
+HUNTING DOMAIN SPELLS 
+CLERIC LEVEL 	SPELLS 
+1st 	hunter’s mark, strength of an ox* 
+3rd 	locate animals or plants, pass without trace 
+5th 	speak with plants, tracer* 
+7th 	heart-seeking arrow*, power word pain* 
+9th 	commune with nature, hold monster 
+* Described in this book 
+
+FOREST MASTER 
+When you choose this domain at 1st level, you gain proficiency with longbows and heavy crossbows. You also gain proficiency in Nature and Survival. 
+CHANNEL DIVINITY: UNDETECTED 
+At 2nd level, you can use your Channel Divinity to camouflage yourself in any environment, gaining advantage on Stealth checks made to move quietly or to hide. You also leave no scent. The effect lasts for a number of rounds equal to your cleric level + your Wisdom modifier.
+RESOLUTE HUNTER 
+At 6th level, you can select a favored enemy as if you were a ranger. You gain all the benefits of the ranger’s Favored Enemy feature with one exception: you choose additional favored enemies (and languages) at 10th level and 16th level instead of at 6th level and 14th level. 
+DIVINE STRIKE 
+At 8th level, you gain the ability to infuse your weapon strikes with divine energy. On your turn, you can cause one successful weapon attack against a creature to deal an extra 1d8 damage of the type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to 2d8. 
+DEADLY STALKER 
+At 17th level, you can use an action to describe or name a creature that is familiar to you or that you can see within 120 feet. For 24 hours or until the target is dead, whichever occurs first, you have advantage on Wisdom (Survival) checks to track your target and Wisdom (Perception) checks to detect your target. In addition, you have advantage on weapon attack rolls against the target. 
+You can’t use this feature again until you finish a short or long rest.
+ -->
+    
+</elements>

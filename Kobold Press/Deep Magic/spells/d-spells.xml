@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - D</name>
-        <update version="0.0.4">
+        <update version="0.0.5">
             <file name="d-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/d-spells.xml" />
         </update>
     </info>
@@ -408,7 +408,7 @@
 			<set name="school" addition="dragon">Divination</set>
 			<set name="time">1 action</set>
 			<set name="range">Self</set>
-			<set name="duration">8 hrs</set>
+			<set name="duration">8 hours</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">false</set>
@@ -480,7 +480,7 @@
 		<supports>Bard,Sorcerer,Wizard</supports>
 		<description>
 			<p>Your voice is amplified to assault the mind of one creature. The target must make a Charisma saving throw. If it fails, the target takes 1d4 psychic damage and is frightened until the start of your next turn. A target can be affected by your dragon roar only once per 24 hours. </p>
-			<p class="indent"><b><i>At Higher Levels.</i></b> This spell’s damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).</p>
+			<p class="indent">This spell’s damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).</p>
 		</description>
 		<setters>
 			<set name="keywords">dragon</set>

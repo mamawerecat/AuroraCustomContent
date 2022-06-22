@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - S</name>
-        <update version="0.0.4">
+        <update version="0.0.5">
             <file name="s-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/s-spells.xml" />
         </update>
     </info>
@@ -162,7 +162,7 @@
 			<set name="school" addition="angelic">Abjuration</set>
 			<set name="time">1 minute</set>
 			<set name="range">Touch</set>
-			<set name="duration">24 hrs</set>
+			<set name="duration">24 hours</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">true</set>
@@ -348,7 +348,7 @@
 		<supports>Wizard</supports>
 		<description>
 			<p>You create a momentary needle of cold, sharp pain in a creature within range. The target must make a successful Constitution saving throw or take 1d6 necrotic damage immediately and have its speed halved until the start of your next turn.</p>
-			<p class="indent"><b><i>At Higher Levels.</i></b> This spell’s damage increases to 2d6 when you reach 5th level, 3d6 when you reach 11th level, and 4d6 when you reach 17th level.</p>
+			<p class="indent">This spell’s damage increases to 2d6 when you reach 5th level, 3d6 when you reach 11th level, and 4d6 when you reach 17th level.</p>
 		</description>
 		<setters>
 			<set name="keywords">shadow</set>
@@ -692,7 +692,7 @@
 		<supports>Cleric,Druid,Sorcerer,Wizard</supports>
 		<description>
 			<p>You fill a humanoid creature with such cold that its teeth begin to chatter and its body shakes uncontrollably. Roll 5d8; the total is the maximum hit points of a creature this spell can affect. The affected creature must succeed on a Constitution saving throw, or it cannot cast a spell or load a missile weapon until the end of your next turn. Once a creature has been affected by this spell, it is immune to further castings of this spell for 24 hours. </p>
-			<p class="indent"><i><b>At Higher Levels</b></i> The maximum hit points you can affect increases by 4d8 when you reach 5th level (9d8), 11th level (13d8), and 17th level (17d8).</p>
+			<p class="indent">The maximum hit points you can affect increases by 4d8 when you reach 5th level (9d8), 11th level (13d8), and 17th level (17d8).</p>
 		</description>
 		<setters>
 			<set name="keywords">winter</set>
@@ -1027,7 +1027,7 @@
 		<supports>Druid,Warlock,Wizard</supports>
 		<description>
 			<p>You cause a mote of starlight to appear and explode in a 5-foot cube you can see within range. If a creature is in the cube, it must succeed on a Charisma saving throw or take 1d8 radiant damage. </p>
-			<p class="indent"><b><i>At Higher Levels.</i></b> This spell’s damage increases to 2d8 when you reach 5th level, 3d8 when you reach 11th level, and 4d8 when you reach 17th level.</p>
+			<p class="indent">This spell’s damage increases to 2d8 when you reach 5th level, 3d8 when you reach 11th level, and 4d8 when you reach 17th level.</p>
 		</description>
 		<setters>
 			<set name="keywords">illumination</set>

@@ -11,14 +11,26 @@
 	<files>	
 		<file name="source.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/source.xml" />
 		
-		<!-- Spells -->
-		
+
+	<!-- Spells -->
+
 		<file name="deep-magic-spells.index" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/deep-magic-spells.index" />
 
 
-		<!-- Archetypes -->
+	<!-- Archetypes -->
+		
+		<!-- Bard -->
 		<file name="bard-greenleaf.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/bard-greenleaf.xml" />
 		<file name="bard-wyrdsingers.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/bard-wyrdsingers.xml" />
 		
+		<!-- Cleric -->
+		<file name="cleric-apocalypse.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-apocalypse.xml" />
+		<file name="cleric-beer.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-beer.xml" />
+		<file name="cleric-cat.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-cat.xml" />
+		<file name="cleric-darkness.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-darkness.xml" />
+		
+		<!-- Ranger -->
+		<file name="ranger-vampire-slayer.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/ranger-vampire-slayer.xml" />
+		<file name="ranger-griffon-scout.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/ranger-griffon-scout.xml" />
 	</files>
 </index>

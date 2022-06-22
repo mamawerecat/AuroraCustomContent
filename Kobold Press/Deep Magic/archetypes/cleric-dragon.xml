@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Dragons Domain</name>
+        <update version="0.0.1">
+            <file name="cleric-dragon.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-dragon.xml" />
+        </update>
+    </info>
+    
+
+<!-- 
+DRAGON DOMAIN 
+Dragons are known for many marvelous qualities: mastery of the most unforgiving environments, sagacity, long life, and an eternal hunger for ever more wealth and power. Those who worship dragons or the gods of dragons might strive to emulate several, or perhaps all, of these qualities themselves. 
+DRAGON DOMAIN SPELLS 
+CLERIC LEVEL 	SPELLS 
+1st 	detect magic, thunderwave 
+3rd 	lair sense*, enthrall 
+5th 	catch the breath*, fear 
+7th 	blight, scale rot* 
+9th 	claws of the earth dragon*, legend lore 
+* Described in this book 
+
+BONUS PROFICIENCY 
+When you choose this domain at 1st level, you gain proficiency in Arcana, and your proficiency bonus is doubled for any ability check you make that uses this skill. You also gain advantage on saving throws against being frightened. 
+CHANNEL DIVINITY: CHARMER OF REPTILES 
+Starting at 2nd level, you can use your Channel Divinity to charm nonintelligent reptiles. As an action, you present your holy symbol and invoke the name of your deity. Each reptilian beast within 30 feet of you that can see you must make a successful Wisdom saving throw or be charmed by you for 1 minute or until it takes damage. While a reptile is charmed by you, it is friendly to you and to other creatures you designate. 
+CHANNEL DIVINITY: DRAGON’S RESISTANCE 
+Starting at 6th level, as a reaction when you fail a saving throw, you can use your Channel Divinity to succeed on that saving throw instead. 
+DIVINE STRIKE 
+At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to 2d8. 
+FRIGHTFUL PRESENCE 
+At 17th level, you gain a Frightful Presence action option similar to a dragon’s. After you use an action to invoke it, you must finish a short or long rest before using it again. 
+Frightful Presence. Each creature of your choice that is within 60 feet of you and aware of you must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A frightened creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to your Frightful Presence for the next 24 hours. -->
+
+</elements>

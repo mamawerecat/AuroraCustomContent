@@ -2,11 +2,11 @@
 <elements>
     <info>
         <name>Rings</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="rings.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Vault%20of%20Magic/rings.xml" />
         </update>
     </info>
-    
+
 <!-- Brazen Band -->
     <element name="Brazen Band" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BRAZEN_BANDs">
         <description>
@@ -611,12 +611,15 @@
             <set name="slot">ring</set>
             <set name="attunement">true</set>
         </setters>
+        <rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_DARKVISION_OR_INCREASE_60" />
+		</rules>
     </element>
 
 <!-- Umbral Band -->
     <element name="Umbral Band" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_UMBRAL_BAND">
         <description>
-            <p>his blackened steel ring is cold to the touch. While wearing this ring, you have darkvision out to a range of 30 feet, and you have advantage on Dexterity (Stealth) checks while in an area of dim light or darkness.</p>
+            <p>This blackened steel ring is cold to the touch. While wearing this ring, you have darkvision out to a range of 30 feet, and you have advantage on Dexterity (Stealth) checks while in an area of dim light or darkness.</p>
         </description>
         <setters>
             <set name="category">Rings</set>
@@ -627,8 +630,8 @@
             <set name="attunement">true</set>
         </setters>
         <rules>
-            <grant type="Vision" id="ID_VISION_DARKVISION" />
-        </rules>
+			<grant type="Vision" id="ID_VISION_DARKVISION_30" requirements="!ID_VISION_DARKVISION"/> 
+		</rules>
     </element>
 
 <!-- Voidwalker -->
@@ -694,5 +697,4 @@
             <set name="attunement">true</set>
         </setters>
     </element>
-
 </elements>

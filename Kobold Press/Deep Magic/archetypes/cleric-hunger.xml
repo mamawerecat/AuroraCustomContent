@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Hunger Domain</name>
+        <update version="0.0.1">
+            <file name="cleric-hunger.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-hunger.xml" />
+        </update>
+    </info>
+    
+
+
+<!-- HUNGER DOMAIN 
+You have dedicated your life to the satisfaction of your appetites, sometimes without regard for others’ needs. You realize you can never be truly sated, but you also know that remaining hungry is the key to amassing power. 
+HUNGER DOMAIN SPELLS 
+CLERIC LEVEL 	SPELLS 
+1st 	false life, goodberry 
+3rd 	locate animals or plants, suggestion 
+5th 	create food and water, vampiric touch 
+7th 	blight, desiccating breath* 
+9th 	cloudkill, cone of cold 
+* Described in this book 
+
+UNSATED 
+When you choose this domain at 1st level, you learn the poison spray cantrip. You also gain proficiency in Survival and proficiency with cooking tools. 
+BONUS PROFICIENCY 
+Also at 1st level, you gain proficiency with heavy armor. 
+CHANNEL DIVINITY: FEROCIOUS FEAST 
+At 2nd level, you can use your Channel Divinity to gain a bite attack for 1 minute. The bite deals piercing damage equal to 1d6 + your Strength modifier. On a critical hit, you can add your Wisdom modifier to the damage roll in addition to the normal benefits. 
+REVITALIZE 
+Beginning at 6th level, you can remove the effect of a disease, a poison or the poisoned condition, or one level of exhaustion from yourself as an action. You must finish a long rest before using this ability again.
+DIVINE STRIKE 
+At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 necrotic damage to the target. When you reach 14th level, the extra damage increases to 2d8. 
+RAVENING HORDE 
+At 17th level, you can sacrifice the vitality of those around you and inspire an insatiable and horrifying hunger in them. Each living creature within 60 feet of you that fails a Charisma saving throw takes 10d8 necrotic damage and then succumbs to a ravening hunger, dropping whatever it holds and attacking unaffected creatures with their hands and teeth, or with whatever natural weapons they possess, in an attempt to devour them. This effect lasts for a number of rounds equal to 3 + your Wisdom modifier. An affected creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. You can exclude up to ten creatures from the effect, but this doesn’t shield them against being attacked by those who do succumb. This ability doesn’t affect constructs or the undead. -->
+
+</elements>

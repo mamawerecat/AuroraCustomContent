@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Beer Domain</name>
+        <update version="0.0.1">
+            <file name="cleric-ocean.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-ocean.xml" />
+        </update>
+    </info>
+    
+    
+<!-- 
+
+OCEAN DOMAIN 
+You invoke the power of salt and sea—the fountain of life—in all its chaotic glory. You are an emissary between sea and shore. 
+OCEAN DOMAIN SPELLS 
+CLERIC LEVEL 	SPELLS 
+1st 	fog cloud, speak with animals 
+3rd 	locate animals or plants, misty step 
+5th 	gaseous form, water breathing 
+7th 	conjure minor elementals (excluding fire), black tentacles 
+9th 	awaken, conjure elemental (excluding fire) 
+
+ENVOY TO THE WAVES 
+When you choose this domain at 1st level, you learn the chill touch cantrip. You also learn the Aquan language, gain proficiency in the Survival skill, and gain proficiency with tridents and nets. 
+CHANNEL DIVINITY: SEA SPEAKER 
+Beginning at 2nd level, you can use your Channel Divinity to communicate telepathically with aquatic creatures within 100 feet of you. This ability lasts for 1 hour. 
+AT HOME IN THE WAVES 
+At 6th level, you gain a swimming speed of 30 feet and darkvision out to a range of 60 feet. If you already have darkvision, its range extends by 30 feet. 
+DIVINE STRIKE 
+At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 cold damage to the target. When you reach 14th level, the extra damage increases to 2d8. 
+SCALES OF THE SEA 
+At 17th level, you become able to breathe in water as easily as in air. You also gain the ability to transform your skin into fishlike scales at will. While covered in scales, you have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons, and you have advantage on Dexterity (Stealth) checks made in natural underwater environments. You must use an action to grow the scales or to transform back to your normal skin. The scales can be any color you choose. The scales need to be kept wet; you gain one level of exhaustion at the end of each hour when you have scales and they haven't been thoroughly wetted for that length of time.
+
+ -->
+
+    
+</elements>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Cat Domain</name>
+        <update version="0.0.1">
+            <file name="cleric-cat.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-cat.xml" />
+        </update>
+    </info>
+    
+    <element name="Cat Domain" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_CAT_DOMAIN">
+        <supports>Divine Domain</supports>
+        <description>
+            <p>You embody the grace, strength, and resilience of felines. Eventually, you gain the ability to take the form of a lion or a tiger.</p>
+            <h5 class="caption">CAT DOMAIN SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>find familiar (feline only), speak with animals</em></td></tr>
+				<tr><td>3rd</td><td><em>animal messenger, pass without trace</em></td></tr>
+				<tr><td>5th</td><td><em>bestow curse, nondetection</em></td></tr>
+				<tr><td>7th</td><td><em>dimension door, locate creature</em></td></tr>
+				<tr><td>9th</td><td><em>commune with nature, mislead</em></td></tr>
+			</table>
+            <div element="ID_KBP_DM5E_CAT_DOMAIN_ARCHETYPE_FEATURE_SILENT_CLAWS" />
+            <div element="ID_KBP_DM5E_CAT_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_FELINE_FINESSE" />
+            <div element="ID_KBP_DM5E_CAT_DOMAIN_ARCHETYPE_FEATURE_EYES_OF_THE_CAT" />
+            <div element="ID_KBP_DM5E_CAT_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" />
+            <div element="ID_KBP_DM5E_CAT_DOMAIN_ARCHETYPE_FEATURE_EMISSARY_OF_THE_CAT" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_CAT_DOMAIN_ARCHETYPE_FEATURE_SILENT_CLAWS" level="1" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_CAT_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_FELINE_FINESSE" level="2" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_CAT_DOMAIN_ARCHETYPE_FEATURE_EYES_OF_THE_CAT" level="6" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_CAT_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" level="8" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_CAT_DOMAIN_ARCHETYPE_FEATURE_EMISSARY_OF_THE_CAT" level="17" />
+
+            <grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_ANIMALS" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ANIMAL_MESSENGER" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PASS_WITHOUT_TRACE" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BESTOW_CURSE" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_NONDETECTION" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DIMENSION_DOOR" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_LOCATE_CREATURE" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_COMMUNE_WITH_NATURE" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MISLEAD" level="9" spellcasting="Cleric" prepared="true" />
+        </rules>
+    </element>
+ 
+<!-- SILENT CLAWS --> 
+    <element name="Silent Claws" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_CAT_DOMAIN_ARCHETYPE_FEATURE_SILENT_CLAWS">
+        <description>
+            <p>When you choose this domain at 1st level, you learn the true strike cantrip and you gain proficiency in Acrobatics and Stealth.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_TRUE_STRIKE" />
+
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+        </rules>
+    </element>
+
+<!-- CHANNEL DIVINITY: FELINE FINESSE  -->
+    <element name="Feline Finesse" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_CAT_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_FELINE_FINESSE">
+        <description>
+            <p>At 2nd level, you can use your Channel Divinity to add a +10 bonus to a single Dexterity ability check or Dexterity-based skill check made by you or someone you designate within 30 feet. Doing this takes no action on your turn or a reaction when it’s not your turn. You make this choice after you see the roll but before the GM says whether the check succeeds or fails.</p>
+        </description>
+        <sheet usage="Channel Divinity">
+            <description>You can use your Channel Divinity to add a +10 bonus to a single Dexterity ability check or Dexterity-based skill check made by you or someone you designate within 30 feet. Doing this takes no action on your turn or a reaction when it’s not your turn. You make this choice after you see the roll but before the GM says whether the check succeeds or fails.</description>
+        </sheet>
+    </element>
+
+<!-- EYES OF THE CAT  -->
+    <element name="Eyes of the Cat" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_CAT_DOMAIN_ARCHETYPE_FEATURE_EYES_OF_THE_CAT">
+        <description>
+            <p>Beginning at 6th level, you gain darkvision out to a range of 60 feet. If you already have darkvision, the range becomes 90 feet.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_DARKVISION_OR_INCREASE_30" />
+        </rules>
+    </element>
+    
+<!-- DIVINE STRIKE  -->
+    <element name="Divine Strike" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_CAT_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE">
+        <description>
+            <p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+        </description>
+        <sheet>
+            <description level="8">Once on each of your turns, you can cause a weapon attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target on a hit.</description>
+            <description level="14">Once on each of your turns, you can cause a weapon attack to deal an extra 2d8 damage of the same type dealt by the weapon to the target on a hit.</description>
+        </sheet>
+    </element>
+
+<!-- EMISSARY OF THE CAT  -->
+    <element name="Emissary of the Cat" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_CAT_DOMAIN_ARCHETYPE_FEATURE_EMISSARY_OF_THE_CAT">
+        <description>
+            <p>At 17th level, you become a natural lycanthrope. You use the statistics of a weretiger, though your form can be that of a werelion, werepanther, wereleopard, or other large cat, whichever is appropriate for your deity. Your alignment doesn’t change as a result of this lycanthopy, and you can’t spread the disease of lycanthropy.</p>
+        </description>
+        <sheet>
+            <description>You become a natural lycanthrope. Your form can be that of a werelion, werepanther, wereleopard, or other large cat, whichever is appropriate for your deity. Your alignment doesn’t change as a result of this lycanthopy, and you can’t spread the disease of lycanthropy.</description>
+        </sheet>
+        <rules>
+            <grant type="Racial Trait" id="ID_WOTC_MM_RACIAL_TRAIT_WERETIGER" />
+        </rules>
+    </element>
+
+
+
+</elements>
