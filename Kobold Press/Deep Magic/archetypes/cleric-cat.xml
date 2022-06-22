@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Cat Domain</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="cleric-cat.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-cat.xml" />
         </update>
     </info>
@@ -28,9 +28,7 @@
             <div element="ID_KBP_DM5E_CAT_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" />
             <div element="ID_KBP_DM5E_CAT_DOMAIN_ARCHETYPE_FEATURE_EMISSARY_OF_THE_CAT" />
         </description>
-        <sheet display="false">
-            <description></description>
-        </sheet>
+        <sheet display="false" />
         <rules>
             <grant type="Archetype Feature" id="ID_KBP_DM5E_CAT_DOMAIN_ARCHETYPE_FEATURE_SILENT_CLAWS" level="1" />
             <grant type="Archetype Feature" id="ID_KBP_DM5E_CAT_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_FELINE_FINESSE" level="2" />
@@ -109,7 +107,5 @@
             <grant type="Racial Trait" id="ID_WOTC_MM_RACIAL_TRAIT_WERETIGER" />
         </rules>
     </element>
-
-
 
 </elements>

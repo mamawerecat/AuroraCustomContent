@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Apocalypse Domain</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="cleric-apocalypse.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-apocalypse.xml" />
         </update>
     </info>
@@ -28,9 +28,7 @@
             <div element="ID_KBP_DM5E_APOCALYPSE_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" />
             <div element="ID_KBP_DM5E_APOCALYPSE_DOMAIN_ARCHETYPE_FEATURE_HERALD_OF_THE_APOCALYPSE" />
         </description>
-        <sheet display="false">
-            <description></description>
-        </sheet>
+        <sheet display="false" />
         <rules>
             <grant type="Archetype Feature" id="ID_KBP_DM5E_APOCALYPSE_DOMAIN_ARCHETYPE_FEATURE_RANTING_RUIN" level="1" />
             <grant type="Archetype Feature" id="ID_KBP_DM5E_APOCALYPSE_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_DAMNATION" level="2" />
