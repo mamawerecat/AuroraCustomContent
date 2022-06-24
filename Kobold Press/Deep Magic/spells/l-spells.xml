@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - L</name>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="l-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/l-spells.xml" />
         </update>
     </info>
@@ -59,8 +59,8 @@
 	<element name="Lair Sense" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_LAIR_SENSE">
 		<supports>Wizard</supports>
 		<description>
-			<p>You set up a magical boundary around your lair. The boundary can’t exceed the dimensions of a 100-foot cube, but within that maximum, you can shape it as you like— to follow the walls of a building or cave, for example. While the spell lasts, you instantly become aware of any Tiny or larger creature that enters the enclosed area. You know the creature’s type but nothing else about it. You are also aware when creatures leave the area. </p>
-			<p class="indent">This awareness is enough to wake you from sleep, and you receive the knowledge as long as you’re on the same plane of existence as your lair. </p>
+			<p>You set up a magical boundary around your lair. The boundary can’t exceed the dimensions of a 100-foot cube, but within that maximum, you can shape it as you like— to follow the walls of a building or cave, for example. While the spell lasts, you instantly become aware of any Tiny or larger creature that enters the enclosed area. You know the creature’s type but nothing else about it. You are also aware when creatures leave the area.</p>
+			<p class="indent">This awareness is enough to wake you from sleep, and you receive the knowledge as long as you’re on the same plane of existence as your lair.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, add 50 feet to the maximum dimensions of the cube and add 12 hours to the spell’s duration for each slot level above 2nd.</p>
 		</description>
 		<setters>
@@ -83,8 +83,8 @@
 	<element name="Last Rays of the Dying Sun" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_LAST_RAYS_OF_THE_DYING_SUN">
 		<supports>Sorcerer,Wizard</supports>
 		<description>
-			<p>A burst of searing heat explodes from you, dealing 6d6 fire damage to all enemies within range. Immediately afterward, a wave of frigid cold rolls across the same area, dealing 6d6 cold damage to enemies. A creature that makes a successful Dexterity saving throw takes half the damage. </p>
-			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 8th or 9th level, the damage from both waves increases by 1d6 for each slot level above 7th. </p>
+			<p>A burst of searing heat explodes from you, dealing 6d6 fire damage to all enemies within range. Immediately afterward, a wave of frigid cold rolls across the same area, dealing 6d6 cold damage to enemies. A creature that makes a successful Dexterity saving throw takes half the damage.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 8th or 9th level, the damage from both waves increases by 1d6 for each slot level above 7th.</p>
 		</description>
 		<setters>
 			<set name="keywords">illumination</set>
@@ -195,8 +195,8 @@
 	<element name="Life Hack" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_LIFE_HACK">
 		<supports>Wizard</supports>
 		<description>
-			<p>Choose up to five creatures that you can see within range. Each of the creatures gains access to a pool of temporary hit points that it can draw upon over the spell’s duration or until the pool is used up. The pool contains 120 temporary hit points. The number of temporary hit points each individual creature can draw is determined by dividing 120 by the number of creatures with access to the pool. Hit points are drawn as a bonus action by the creature gaining the temporary hit points. Any number can be drawn at once, up to the maximum allowed. </p>
-			<p class="indent">A creature can’t draw temporary hit points from the pool while it has temporary hit points from any source, including a previous casting of this spell. </p>
+			<p>Choose up to five creatures that you can see within range. Each of the creatures gains access to a pool of temporary hit points that it can draw upon over the spell’s duration or until the pool is used up. The pool contains 120 temporary hit points. The number of temporary hit points each individual creature can draw is determined by dividing 120 by the number of creatures with access to the pool. Hit points are drawn as a bonus action by the creature gaining the temporary hit points. Any number can be drawn at once, up to the maximum allowed.</p>
+			<p class="indent">A creature can’t draw temporary hit points from the pool while it has temporary hit points from any source, including a previous casting of this spell.</p>
 		</description>
 		<setters>
 			<set name="keywords">alkemancy</set>

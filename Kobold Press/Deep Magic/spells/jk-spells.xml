@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - J-K</name>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="jk-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/jk-spells.xml" />
         </update>
     </info>
@@ -11,9 +11,9 @@
 	<element name="Jerilyn's Cadaverous Uprising" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_JERILYNS_CADAVEROUS_UPRISING">
 		<supports>Cleric,Wizard</supports>
 		<description>
-			<p>Specify a 5-foot-square space of natural ground (not solid stone) that you can see within range, then choose any undead creature of challenge rating 1 or lower (such as a specter, ghoul, shadow, zombie, or skeleton). That creature claws its way up out of the ground and immediately tries to grapple or attack a creature within 5 feet. </p>
-			<p class="indent">The undead uses its standard stat block, but it has only 10 hit points and is prone until it stands up. It takes its turn immediately after yours. You can use a bonus action to issue a mental command to the undead when you cast the spell, and you can change the command by using a bonus action on your turn while the spell is active. Once given an order, the creature continues to follow it until its task is complete. If you issue no command, the creature defends itself and attacks the last enemy that attacked it. </p>
-			<p class="indent">The creature remains under your control for 1 hour, after which it crumbles to dust or disappears. </p>
+			<p>Specify a 5-foot-square space of natural ground (not solid stone) that you can see within range, then choose any undead creature of challenge rating 1 or lower (such as a specter, ghoul, shadow, zombie, or skeleton). That creature claws its way up out of the ground and immediately tries to grapple or attack a creature within 5 feet.</p>
+			<p class="indent">The undead uses its standard stat block, but it has only 10 hit points and is prone until it stands up. It takes its turn immediately after yours. You can use a bonus action to issue a mental command to the undead when you cast the spell, and you can change the command by using a bonus action on your turn while the spell is active. Once given an order, the creature continues to follow it until its task is complete. If you issue no command, the creature defends itself and attacks the last enemy that attacked it.</p>
+			<p class="indent">The creature remains under your control for 1 hour, after which it crumbles to dust or disappears.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> The number of undead you summon increases when you cast this spell with a higher-level spell slot: two when cast with a 5th-level slot, three with a 7th-level slot, and four with a 9th-level slot.</p>
 		</description>
 		<setters>

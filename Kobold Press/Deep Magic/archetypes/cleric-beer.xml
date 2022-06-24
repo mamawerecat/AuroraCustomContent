@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Beer Domain</name>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="cleric-beer.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-beer.xml" />
         </update>
     </info>
@@ -67,7 +67,7 @@
     </element>
 
 <!-- Channel Divinity: Blessed Brew -->
-    <element name="Blessed Brew" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_BLESSED_BREW">
+    <element name="Channel Divinity: Blessed Brew" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_BLESSED_BREW">
         <description>
             <p>Starting at 2nd level, you can use your Channel Divinity to transform a container of nonmagical liquid into blessed brew; the number of doses equals 3 + your Wisdom modifier. Any special properties the liquid previously had are negated. Anyone who imbibes one dose of this brew can choose one of the following benefits:</p>
             <p class="indent">• advantage on Charisma-based checks</p>
@@ -75,7 +75,7 @@
             <p class="indent">• a +1 increase to the DC of saving throws against their castings of enchantment spells</p>
             <p>The benefit lasts for 1 hour, leaving behind a warm buzz when it fades. A creature must finish a short or long rest before it can again benefit from a dose of blessed brew. Any blessed brew that is not consumed within an hour turns into ordinary beer.</p>
         </description>
-        <sheet usage="Channel Divinity">
+        <sheet alt="Blessed Brew" usage="Channel Divinity">
             <description>You transform a container of nonmagical liquid into blessed brew containing {{blessedbrew:dose}} doses. Any special properties the liquid previously had are negated. Anyone who imbibes one dose of this brew can choose one of the following benefits:
             &#13;• advantage on Charisma-based checks
             &#13;• +1 bonus to Armor Class
@@ -90,11 +90,11 @@
     </element>
 
 <!-- CHANNEL DIVINITY: BOOT AND RALLY -->
-    <element name="Boot and Rally" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_BOOT_AND_RALLY">
+    <element name="Channel Divinity: Boot and Rally" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_BOOT_AND_RALLY">
         <description>
             <p>Starting at 6th level, you can use your Channel Divinity to aid and rally your allies. All friendly creatures within 30 feet of you that are frightened, paralyzed, poisoned, or stunned gain an immediate saving throw with advantage to remove the condition. On a succesful save, a creature also regains 2d6 hit points.</p>
         </description>
-        <sheet usage="Channel Divinity">
+        <sheet alt="Boot and Rally" usage="Channel Divinity">
             <description>All friendly creatures within 30 feet of you that are frightened, paralyzed, poisoned, or stunned gain an immediate saving throw with advantage to remove the condition. On a succesful save, a creature also regains 2d6 hit points.</description>
         </sheet>
     </element>

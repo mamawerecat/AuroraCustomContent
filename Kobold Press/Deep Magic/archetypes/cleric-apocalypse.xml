@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Apocalypse Domain</name>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="cleric-apocalypse.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-apocalypse.xml" />
         </update>
     </info>
@@ -62,21 +62,21 @@
     </element>
 
 <!-- CHANNEL DIVINITY: DAMNATION  -->
-    <element name="Damnation" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_APOCALYPSE_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_DAMNATION">
+    <element name="Channel Divinity: Damnation" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_APOCALYPSE_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_DAMNATION">
         <description>
-            <p>Starting at 2nd level, you can use your Channel Divinity to lash out at those who defy your deity’s messenger. As an action, you present your holy symbol while pronouncing doom to unbelievers. Each hostile creature that can see you and is within 30 feet of you takes necrotic damage equal to 3d6 + your cleric level, or half as much damage with a successful Wisdom saving throw. A creature that has total cover from you is not affected. </p>
+            <p>Starting at 2nd level, you can use your Channel Divinity to lash out at those who defy your deity’s messenger. As an action, you present your holy symbol while pronouncing doom to unbelievers. Each hostile creature that can see you and is within 30 feet of you takes necrotic damage equal to 3d6 + your cleric level, or half as much damage with a successful Wisdom saving throw. A creature that has total cover from you is not affected.</p>
         </description>
-        <sheet usage="Channel Divinity" action="Action">
+        <sheet alt="Damnation" usage="Channel Divinity" action="Action">
             <description>As an action you present your holy symbol and each hostile creature that can see you and is within 30 feet of you takes 3d6 + {{level:cleric}} necrotic damage, or half as much damage with a successful Wisdom saving throw (DC {{cleric:spellcasting:dc}}). A creature that has total cover from you is not affected.</description>
         </sheet>
     </element>
 
 <!-- CHANNEL DIVINITY: WEIGHT OF GUILT   -->
-    <element name="Weight of Guilt" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_APOCALYPSE_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_WEIGHT_OF_GUILT">
+    <element name="Channel Divinity: Weight of Guilt" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_APOCALYPSE_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_WEIGHT_OF_GUILT">
         <description>
             <p>At 6th level, you can use your Channel Divinity to manipulate a creature’s thoughts. You can then use your access to the creature’s mind as an advantage when interrogating it. As an action, choose one creature that you can see within 60 feet of you. That creature must make a Wisdom saving throw. On a failed save, you automatically know for the next 10 minutes whether anything the target says is true, a lie, or in between. On a successful save, the target cannot be affected by this spell until you finish a long rest.</p>
         </description>
-        <sheet usage="Channel Divinity" action="Action">
+        <sheet alt="Weight of Guilt" usage="Channel Divinity" action="Action">
             <description>As an action, choose one creature that you can see within 60 feet of you. That creature must make a Wisdom saving throw (DC {{cleric:spellcasting:dc}}). On a failed save, you automatically know for the next 10 minutes whether anything the target says is true, a lie, or in between. On a successful save, the target cannot be affected by this spell until you finish a long rest.</description>
         </sheet>
     </element>
@@ -84,7 +84,7 @@
 <!-- Divine Strike -->
     <element name="Divine Strike" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_APOCALYPSE_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE">
         <description>
-            <p>At 8th level, you gain the ability to infuse your weapon strikes with necrotic energy. Once on each of your turns, you can cause a weapon attack to deal an extra 1d8 necrotic damage to the target on a hit. When you reach 14th level, the extra damage increases to 2d8. </p>
+            <p>At 8th level, you gain the ability to infuse your weapon strikes with necrotic energy. Once on each of your turns, you can cause a weapon attack to deal an extra 1d8 necrotic damage to the target on a hit. When you reach 14th level, the extra damage increases to 2d8.</p>
         </description>
         <sheet>
             <description level="8">Once on each of your turns, you can cause a weapon attack to deal an extra 1d8 necrotic damage to the target on a hit.</description>

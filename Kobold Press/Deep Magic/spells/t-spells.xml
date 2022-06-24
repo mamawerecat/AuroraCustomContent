@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - T</name>
-        <update version="0.0.5">
+        <update version="0.0.6">
             <file name="t-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/t-spells.xml" />
         </update>
     </info>
@@ -146,11 +146,11 @@
 		<supports>Bard,Cleric</supports>
 		<description>
 			<p>When you cast this spell, you step outside the normal time stream, seeming to vanish as 1 round of time passes. You can make minor alterations to the scene being played out, becoming visible for an instant each time you make an adjustment that aids an ally or hinders foes. To everyone else, you disappear when the spell is cast, then flicker into and out of view during the next round, before reappearing for good in the space you vanished from 1 round later, whereupon the spell ends. You cannot be attacked by any means while under the effect of this spell.</p>
-			<p class="indent">As the round progresses, you can choose to bestow a single effect on each creature involved in the combat, choosing from the list below. You cannot take any other actions during the round. </p>
-			<p class="indent">-Give a creature advantage or disadvantage on a saving throw it is about to make. </p>
-			<p class="indent">-Give a creature advantage or disadvantage on an attack roll it is about to make. </p>
-			<p class="indent">-Alter the location of a mobile object to provide or remove cover for a creature. </p>
-			<p class="indent">-Shift objects into the path of a creature; the first 10 feet of terrain it must travel becomes difficult terrain. </p>
+			<p class="indent">As the round progresses, you can choose to bestow a single effect on each creature involved in the combat, choosing from the list below. You cannot take any other actions during the round.</p>
+			<p class="indent">-Give a creature advantage or disadvantage on a saving throw it is about to make.</p>
+			<p class="indent">-Give a creature advantage or disadvantage on an attack roll it is about to make.</p>
+			<p class="indent">-Alter the location of a mobile object to provide or remove cover for a creature.</p>
+			<p class="indent">-Shift objects into the path of a creature; the first 10 feet of terrain it must travel becomes difficult terrain.</p>
 			<p class="indent">-After an attack roll is determined to be successful, adjust the angle of the strike or the positioning of the target, either causing the strike to deal half as much damage or providing a bonus to damage equal to half your level.</p>
 		</description>
 		<setters>
@@ -195,7 +195,7 @@
 	<element name="Time Loop" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_TIME_LOOP">
 		<supports>Bard,Cleric,Druid,Sorcerer,Warlock,Wizard</supports>
 		<description>
-			<p>You capture a creature within range in a loop of time. The target is teleported to the space where it began its most recent turn. The target then makes a Wisdom saving throw. On a successful save, the spell ends. On a failed save, the creature must repeat the activities it undertook on its previous turn, following the sequence of moves and actions to the best of its ability. It doesn’t need to move along the same path or attack the same target, but if it moved and then attacked on its previous turn, its only option is to move and then attack on this turn. If the space where the target began its previous turn is occupied or if it’s impossible for the target to take the same action (if it cast a spell but is now unable to do so, for example), the target becomes incapacitated. </p>
+			<p>You capture a creature within range in a loop of time. The target is teleported to the space where it began its most recent turn. The target then makes a Wisdom saving throw. On a successful save, the spell ends. On a failed save, the creature must repeat the activities it undertook on its previous turn, following the sequence of moves and actions to the best of its ability. It doesn’t need to move along the same path or attack the same target, but if it moved and then attacked on its previous turn, its only option is to move and then attack on this turn. If the space where the target began its previous turn is occupied or if it’s impossible for the target to take the same action (if it cast a spell but is now unable to do so, for example), the target becomes incapacitated.</p>
 			<p class="indent">An affected target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. For as long as the spell lasts, the target teleports back to its starting point at the start of each of its turns, and it must repeat the same sequence of moves and actions.</p>
 		</description>
 		<setters>
@@ -262,18 +262,18 @@
 	<element name="Time Vortex" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_TIME_VORTEX">
 		<supports>Sorcerer,Warlock,Wizard</supports>
 		<description>
-			<p>This spell destabilizes the flow of time, enabling you to create a vortex of temporal fluctuations that are visible as a spherical distortion with a 10-foot radius, centered on a point within range. Each creature in the area when you cast the spell must succeed on a Wisdom saving throw or be affected by the time vortex. While the spell lasts, a creature that enters the sphere or starts its turn inside the sphere must also succeed on a Wisdom saving throw or be affected. On a succesful save, it becomes immune to this casting of the spell. </p>
+			<p>This spell destabilizes the flow of time, enabling you to create a vortex of temporal fluctuations that are visible as a spherical distortion with a 10-foot radius, centered on a point within range. Each creature in the area when you cast the spell must succeed on a Wisdom saving throw or be affected by the time vortex. While the spell lasts, a creature that enters the sphere or starts its turn inside the sphere must also succeed on a Wisdom saving throw or be affected. On a succesful save, it becomes immune to this casting of the spell.</p>
 			<p class="indent">An affected creature can’t take reactions and rolls a d10 at the start of its turn to determine its behavior for that turn.</p>
-			<p class="indent">You can move the temporal vortex 10 feet each round as a bonus action. An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. </p>
+			<p class="indent">You can move the temporal vortex 10 feet each round as a bonus action. An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, the radius of the sphere increases by 5 feet for each slot level above 4th.</p>
 			<table>
 				<thead>
 					<tr><td>d10</td><td>Effect</td></tr>
 				</thead>
-				<tr><td>1-2</td><td>The creature is affected as if by a slow spell until the start of its next turn. </td></tr>
-				<tr><td>3-5</td><td>The creature is stunned until the start of its next turn. </td></tr>
-				<tr><td>6-8</td><td>The creature’s current initiative result is reduced by 5. The creature begins using this new initiative result in the next round. Multiple occurrences of this effect for the same creature are cumulative. </td></tr>
-				<tr><td>9-10</td><td>The creature’s speed is halved (round up to the nearest 5-foot increment) until the start of its next turn. </td></tr>
+				<tr><td>1-2</td><td>The creature is affected as if by a slow spell until the start of its next turn.</td></tr>
+				<tr><td>3-5</td><td>The creature is stunned until the start of its next turn.</td></tr>
+				<tr><td>6-8</td><td>The creature’s current initiative result is reduced by 5. The creature begins using this new initiative result in the next round. Multiple occurrences of this effect for the same creature are cumulative.</td></tr>
+				<tr><td>9-10</td><td>The creature’s speed is halved (round up to the nearest 5-foot increment) until the start of its next turn.</td></tr>
 			</table>
 		</description>
 		<setters>
@@ -395,11 +395,34 @@
 		</setters>
 	</element> 
 
+<!-- TRACER  -->
+	<element name="Tracer" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_TRACER">
+		<supports>Druid,Ranger</supports>
+		<description>
+			<p>When you cast this spell and as a bonus action on each of your turns until the spell ends, you can imbue a piece of ammunition you fire from a ranged weapon with a tiny, invisible beacon. If a ranged attack roll with an imbued piece of ammunition hits a target, the beacon is transferred to the target. The weapon that fired the ammunition is attuned to the beacon and becomes warm to the touch when it points in the direction of the target as long as the target is on the same plane of existence as you. You can have only one tracer target at a time. If you put a tracer on a different target, the effect on the previous target ends.</p>
+			<p class="indent">A creature must succeed on an Intelligence (Arcana) check against your spell save DC to notice the magical beacon.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">3</set>
+			<set name="school">Divination</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Self</set>
+			<set name="duration">8 hours</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a drop of brigh paint</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
 <!-- TRACKING BEACON -->
 	<element name="Tracking Beacon" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_TRACKING_BEACON">
 		<supports>Wizard</supports>
 		<description>
-			<p>You choose a creature within range to mark with a glowing orb of light, which floats 120 feet above the creature’s head. The target must make a Wisdom saving throw. On a successful save, the spell ends. On a failed save, the light hovers above the target’s location, moving as the target moves, which enables you to track the creature’s direction and distance by staying within sight of the beacon. The beacon continues to function even when you cannot see it, as long as the target remains on the same plane as you. If either you or the target travels to another plane, the spell ends. </p>
+			<p>You choose a creature within range to mark with a glowing orb of light, which floats 120 feet above the creature’s head. The target must make a Wisdom saving throw. On a successful save, the spell ends. On a failed save, the light hovers above the target’s location, moving as the target moves, which enables you to track the creature’s direction and distance by staying within sight of the beacon. The beacon continues to function even when you cannot see it, as long as the target remains on the same plane as you. If either you or the target travels to another plane, the spell ends.</p>
 			<p class="indent">You can use a bonus action on your turn to adjust the height of the beacon, ranging from its starting point of 120 feet to as low as 5 feet above the head of the target.</p>
 		</description>
 		<setters>
@@ -451,8 +474,8 @@
 	<element name="Treasure Chasm" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_TREASURE_CHASM">
 		<supports>Sorcerer</supports>
 		<description>
-			<p>You cause the glint of a golden coin to haze over the vision of one creature in range. The target creature must make a Wisdom saving throw. If it fails, it sees a gorge, trench, or other hole in the ground, at a spot within range chosen by you, which is filled with gold and treasure. On its next turn, the creature must move toward that spot. When it reaches the spot, it becomes incapacitated, as it devotes all its attention to scooping imaginary treasure into its pockets or a pouch. </p>
-			<p class="indent">An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. The effect also ends if the creature takes damage from you or one of your allies. </p>
+			<p>You cause the glint of a golden coin to haze over the vision of one creature in range. The target creature must make a Wisdom saving throw. If it fails, it sees a gorge, trench, or other hole in the ground, at a spot within range chosen by you, which is filled with gold and treasure. On its next turn, the creature must move toward that spot. When it reaches the spot, it becomes incapacitated, as it devotes all its attention to scooping imaginary treasure into its pockets or a pouch.</p>
+			<p class="indent">An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. The effect also ends if the creature takes damage from you or one of your allies.</p>
 			<p class="indent">Creatures with the dragon type have disadvantage on the initial saving throw but have advantage on saving throws against this spell made after reaching the designated spot.</p>
 		</description>
 		<setters>
@@ -475,11 +498,11 @@
 	<element name="Triumph of Ice" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_TRIUMP_OF_ICE">
 		<supports>Druid,Sorcerer,Wizard</supports>
 		<description>
-			<p>You transform one of the four elements—air, earth, fire, or water—into ice or snow. The affected area is a sphere with a radius of 100 feet, centered on you. The specific effect depends on the element you choose. </p>
-			<p class="indent"><b><i>Air.</i></b> Vapor condenses into snowfall. If the effect of a fog cloud spell, a stinking cloud, or similar magic is in the area, this spell negates it. A creature of elemental air within range takes 8d6 cold damage—and, if airborne, it must make a successful Constitution saving throw at the start of its turn to avoid being knocked prone (no falling damage). </p>
-			<p class="indent"><b><i>Earth.</i></b> Soil freezes into permafrost to a depth of 10 feet. A creature burrowing through the area has its speed halved until the area thaws, unless it can burrow through solid rock. A creature of elemental earth within range must make a successful Constitution saving throw or take 8d6 cold damage. </p>
-			<p class="indent"><b><i>Fire.</i></b> Flames or other sources of extreme heat (such as molten lava) on the ground within range transform into shards of ice, and the area they occupy becomes difficult terrain. Each creature in the previously burning area takes 2d6 slashing damage when the spell is cast and 1d6 slashing damage for every 5 feet it moves in the area (unless it is not hindered by icy terrain) until the spell ends; a successful Dexterity saving throw reduces the slashing damage by half. A creature of elemental fire within range must make a successful Constitution saving throw or take 8d6 cold damage and be stunned for 1d6 rounds. </p>
-			<p class="indent"><b><i>Water.</i></b> Open water (a pond, lake, or river) freezes to a depth of 4 feet. A creature on the surface of the water when it freezes must make a successful Dexterity saving throw to avoid being trapped in the ice. A trapped creature can free itself by using an action to make a successful Strength (Athletics) check. A creature of elemental water within range takes no damage from the spell but is paralyzed for 1d6 rounds unless it makes a successful Constitution saving throw, and it treats the affected area as difficult terrain. </p>
+			<p>You transform one of the four elements—air, earth, fire, or water—into ice or snow. The affected area is a sphere with a radius of 100 feet, centered on you. The specific effect depends on the element you choose.</p>
+			<p class="indent"><b><i>Air.</i></b> Vapor condenses into snowfall. If the effect of a fog cloud spell, a stinking cloud, or similar magic is in the area, this spell negates it. A creature of elemental air within range takes 8d6 cold damage—and, if airborne, it must make a successful Constitution saving throw at the start of its turn to avoid being knocked prone (no falling damage).</p>
+			<p class="indent"><b><i>Earth.</i></b> Soil freezes into permafrost to a depth of 10 feet. A creature burrowing through the area has its speed halved until the area thaws, unless it can burrow through solid rock. A creature of elemental earth within range must make a successful Constitution saving throw or take 8d6 cold damage.</p>
+			<p class="indent"><b><i>Fire.</i></b> Flames or other sources of extreme heat (such as molten lava) on the ground within range transform into shards of ice, and the area they occupy becomes difficult terrain. Each creature in the previously burning area takes 2d6 slashing damage when the spell is cast and 1d6 slashing damage for every 5 feet it moves in the area (unless it is not hindered by icy terrain) until the spell ends; a successful Dexterity saving throw reduces the slashing damage by half. A creature of elemental fire within range must make a successful Constitution saving throw or take 8d6 cold damage and be stunned for 1d6 rounds.</p>
+			<p class="indent"><b><i>Water.</i></b> Open water (a pond, lake, or river) freezes to a depth of 4 feet. A creature on the surface of the water when it freezes must make a successful Dexterity saving throw to avoid being trapped in the ice. A trapped creature can free itself by using an action to make a successful Strength (Athletics) check. A creature of elemental water within range takes no damage from the spell but is paralyzed for 1d6 rounds unless it makes a successful Constitution saving throw, and it treats the affected area as difficult terrain.</p>
 		</description>
 		<setters>
 			<set name="keywords">winter</set>

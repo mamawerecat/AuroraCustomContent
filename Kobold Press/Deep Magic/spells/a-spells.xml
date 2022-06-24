@@ -2,7 +2,7 @@
 <elements>
 <info>
 	<name>Deep Magic Spells - A</name>
-	<update version="0.0.6">
+	<update version="0.0.7">
 		<file name="a-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/a-spells.xml" />
 	</update>
 </info>
@@ -77,7 +77,7 @@
 	<element name="Accelerate" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ACCELERATE">
 		<supports>Bard,Cleric,Druid,Sorcerer,Wizard</supports>
 		<description>
-			<p>Choose up to three willing creatures within range, which can include you. For the duration of the spell, each target’s walking speed is doubled. Each target can also use a bonus action on each of its turns to take the Dash action, and it has advantage on Dexterity saving throws. </p>
+			<p>Choose up to three willing creatures within range, which can include you. For the duration of the spell, each target’s walking speed is doubled. Each target can also use a bonus action on each of its turns to take the Dash action, and it has advantage on Dexterity saving throws.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, you can affect one additional creature for each slot level above 3rd.</p>
 		</description>
 		<setters>
@@ -99,8 +99,8 @@
 	<element name="Acid Gate" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ACID_GATE">
 		<supports>Wizard</supports>
 		<description>
-			<p>You create a portal of swirling, acidic green vapor in an unoccupied space you can see. This portal connects with a target destination within 100 miles that you are personally familiar with and have seen with your own eyes, such as your wizard’s tower or an inn you have stayed at. You and up to three creatures of your choice can enter the portal and pass through it, arriving at the target destination (or within 10 feet of it, if it is currently occupied). If the target destination doesn’t exist or is inaccessible, the spell automatically fails and the gate doesn’t form. </p>
-			<p class="indent">Any creature that tries to move through the gate, other than those selected by you when the spell was cast, takes 10d6 acid damage and is teleported 1d100 × 10 feet in a random, horizontal direction. If the creature makes a successful Intelligence saving throw, it can’t be teleported by this portal, but it still takes acid damage when it enters the acid-filled portal and every time it ends its turn in contact with it. </p>
+			<p>You create a portal of swirling, acidic green vapor in an unoccupied space you can see. This portal connects with a target destination within 100 miles that you are personally familiar with and have seen with your own eyes, such as your wizard’s tower or an inn you have stayed at. You and up to three creatures of your choice can enter the portal and pass through it, arriving at the target destination (or within 10 feet of it, if it is currently occupied). If the target destination doesn’t exist or is inaccessible, the spell automatically fails and the gate doesn’t form.</p>
+			<p class="indent">Any creature that tries to move through the gate, other than those selected by you when the spell was cast, takes 10d6 acid damage and is teleported 1d100 × 10 feet in a random, horizontal direction. If the creature makes a successful Intelligence saving throw, it can’t be teleported by this portal, but it still takes acid damage when it enters the acid-filled portal and every time it ends its turn in contact with it.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 8th level or higher, you can allow one additional creature to use the gate for each slot level above 7th.</p>
 		</description>
 		<setters>
@@ -123,7 +123,7 @@
 	<element name="Acid Rain" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ACID_RAIN">
 		<supports>Sorcerer,Warlock,Wizard</supports>
 		<description>
-			<p>You unleash a storm of swirling acid in a cylinder 20 feet wide and 30 feet high, centered on a point you can see. The area is heavily obscured by the driving acidfall. A creature that starts its turn in the area or that enters the area for the first time on its turn takes 6d6 acid damage, or half as much damage if it makes a successful Dexterity saving throw. A creature takes half as much damage from the acid (as if it had made a successful saving throw) at the start of its first turn after leaving the affected area. </p>
+			<p>You unleash a storm of swirling acid in a cylinder 20 feet wide and 30 feet high, centered on a point you can see. The area is heavily obscured by the driving acidfall. A creature that starts its turn in the area or that enters the area for the first time on its turn takes 6d6 acid damage, or half as much damage if it makes a successful Dexterity saving throw. A creature takes half as much damage from the acid (as if it had made a successful saving throw) at the start of its first turn after leaving the affected area.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d6 for each slot level above 5th.</p>
 		</description>
 		<setters>
@@ -190,7 +190,7 @@
 	<element name="Alffict Line" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_AFFLICT_LINE">
 		<supports>Cleric, Wizard</supports>
 		<description>
-			<p>You invoke the darkest curses upon your victim and his or her descendants. This spell does not require that you have a clear path to your target, only that your target is within range. The target must make a successful Wisdom saving throw or be cursed until the magic is dispelled. While cursed, the victim has disadvantage on ability checks and saving throws made with the ability score that you used when you cast the spell. In addition, the target’s firstborn offspring is also targeted by the curse. That individual is allowed a saving throw of its own if it is currently alive, or it makes one upon its birth if it is not yet born when the spell is cast. If the target’s firstborn has already died, the curse passes to the target’s next oldest offspring. </p>
+			<p>You invoke the darkest curses upon your victim and his or her descendants. This spell does not require that you have a clear path to your target, only that your target is within range. The target must make a successful Wisdom saving throw or be cursed until the magic is dispelled. While cursed, the victim has disadvantage on ability checks and saving throws made with the ability score that you used when you cast the spell. In addition, the target’s firstborn offspring is also targeted by the curse. That individual is allowed a saving throw of its own if it is currently alive, or it makes one upon its birth if it is not yet born when the spell is cast. If the target’s firstborn has already died, the curse passes to the target’s next oldest offspring.</p>
 			<p class="indent"><b><i>Ritual Focus.</i></b> If you expend your ritual focus, the curse becomes hereditary, passing from firstborn to firstborn for the entire length of the family’s lineage until one of them successfully saves against the curse and throws off your dark magic. Also, once you've expended your ritual focus this mental energy has been expended, a caster’s ritual focus can’t be used again until he or she finishes a short or long rest.</p>
 		</description>
 		<setters>
@@ -213,7 +213,7 @@
 	<element name="Agonizing Mark" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_AGONIZING_MARK">
 		<supports>Bard,Cleric,Druid,Ranger,Sorcerer,Wizard</supports>
 		<description>
-			<p>You choose a creature you can see within range to mark as your prey, and a ray of black energy issues forth from you. Until the spell ends, each time you deal damage to the target it must make a Charisma saving throw. On a failed save, it falls prone as its body is filled with torturous agony. </p>
+			<p>You choose a creature you can see within range to mark as your prey, and a ray of black energy issues forth from you. Until the spell ends, each time you deal damage to the target it must make a Charisma saving throw. On a failed save, it falls prone as its body is filled with torturous agony.</p>
 		</description>
 		<setters>
 			<set name="level">1</set>
@@ -264,7 +264,7 @@
 	<element name="Ale-dritch Blast" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ALDEDRITCH_BLAST">
 		<supports>Bard,Cleric,Druid,Wizard</supports>
 		<description>
-			<p>A stream of ice-cold ale blasts from your outstretched hands toward a creature or object within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage and it must make a successful Constitution saving throw or be poisoned until the end of its next turn. A targeted creature has disadvantage on the saving throw if it has drunk any alcohol within the last hour. </p>
+			<p>A stream of ice-cold ale blasts from your outstretched hands toward a creature or object within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage and it must make a successful Constitution saving throw or be poisoned until the end of its next turn. A targeted creature has disadvantage on the saving throw if it has drunk any alcohol within the last hour.</p>
 			<p class="indent">The damage increases when you reach higher levels: 2d8 at 5th level, 3d8 at 11th level, and 4d8 at 17th level.</p>
 		</description>
 		<setters>
@@ -546,7 +546,7 @@
 	<element name="Angelic Guardian" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ANGELIC_GUARDIAN">
 		<supports>Cleric,Paladin,Wizard</supports>
 		<description>
-			<p>You conjure a minor celestial manifestation to protect a creature you can see within range. A faintly glowing image resembling a human head and shoulders hovers within 5 feet of the target for the duration. The manifestation moves to interpose itself between the target and any incoming attacks, granting the target a +2 bonus to AC. </p>
+			<p>You conjure a minor celestial manifestation to protect a creature you can see within range. A faintly glowing image resembling a human head and shoulders hovers within 5 feet of the target for the duration. The manifestation moves to interpose itself between the target and any incoming attacks, granting the target a +2 bonus to AC.</p>
 			<p class="indent">Also, the first time the target gets a failure on a Dexterity saving throw while the spell is active, it can use its reaction to reroll the save. The spell then ends.</p>
 		</description>
 		<setters>
@@ -687,7 +687,7 @@
 	<element name="Anticipate Arcana" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ANTICIPATE_ARCANA">
 		<supports>Cleric,Paladin,Sorcerer,Warlock,Wizard</supports>
 		<description>
-			<p>Your foresight gives you an instant to ready your defenses against a magical attack. When you cast anticipate arcana, you have advantage on saving throws against spells and other magical effects until the start of your next turn. </p>
+			<p>Your foresight gives you an instant to ready your defenses against a magical attack. When you cast anticipate arcana, you have advantage on saving throws against spells and other magical effects until the start of your next turn.</p>
 		</description>
 		<setters>
 			<set name="keywords">temporal,time magic,reaction</set>
@@ -728,7 +728,7 @@
 	<element name="Anticipate Weakness" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ANTICIPATE_WEAKNESS">
 		<supports>Bard,Cleric,Druid,Ranger,Sorcerer,Warlock,Wizard</supports>
 		<description>
-			<p>With a quick glance into the future, you pinpoint where a gap is about to open in your foe’s defense, and then you strike. After casting anticipate weakness, you have advantage on attack rolls until the end of your turn. </p>
+			<p>With a quick glance into the future, you pinpoint where a gap is about to open in your foe’s defense, and then you strike. After casting anticipate weakness, you have advantage on attack rolls until the end of your turn.</p>
 		</description>
 		<setters>
 			<set name="keywords">temporal,bonus action</set>
@@ -860,9 +860,9 @@
 	<element name="Aspect of the Dragon" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ASPECT_OF_THE_DRAGON">
 		<supports>Sorcerer</supports>
 		<description>
-			<p>This spell draws out the ancient nature within your blood, allowing you to assume the form of any dragon-type creature of challenge 10 or less. </p>
-			<p class="indent">You assume the hit points and Hit Dice of the new form. When you revert to your normal form, you return to the number of hit points you had before you transformed. If you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. As long as the excess damage doesn’t reduce your normal form to 0 hit points, you aren’t knocked unconscious. </p>
-			<p class="indent">You retain the benefits of any features from your class, race, or other source and can use them, provided that your new form is physically capable of doing so. You can speak only if the dragon can normally speak. </p>
+			<p>This spell draws out the ancient nature within your blood, allowing you to assume the form of any dragon-type creature of challenge 10 or less.</p>
+			<p class="indent">You assume the hit points and Hit Dice of the new form. When you revert to your normal form, you return to the number of hit points you had before you transformed. If you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. As long as the excess damage doesn’t reduce your normal form to 0 hit points, you aren’t knocked unconscious.</p>
+			<p class="indent">You retain the benefits of any features from your class, race, or other source and can use them, provided that your new form is physically capable of doing so. You can speak only if the dragon can normally speak.</p>
 			<p class="indent">When you transform, you choose whether your equipment falls to the ground, merges into the new form, or is worn by it. Worn equipment functions normally, but equipment doesn’t change shape or size to match the new form. Any equipment that the new form can’t wear must either fall to the ground or merge into the new form. The GM has final say on whether the new form can wear or use a particular piece of equipment. Equipment that merges has no effect in that state.</p>
 		</description>
 		<setters>
@@ -885,8 +885,8 @@
 	<element name="Aspect of the Firebird" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ASPECT_OF_THE_FIREBIRD">
 		<supports>Cleric,Sorcerer</supports>
 		<description>
-			<p>You take on the aspect of a firebird (Tome of Beasts, p. 201), including some physical attributes. A fiery mantle descends upon you, resembling feathery wings and an expansive tail. You gain immunity to fire and a flying speed of 60 feet. Any creatures within 5 feet of you gain immunity to natural, environmental cold. </p>
-			<p class="indent">As an action, you can emit a blast of light 5 feet wide and 50 feet long. All creatures in its path take 6d6 fire damage and are blinded for 1d4 rounds. A successful Dexterity saving throw reduces the damage by half and negates the blindness. Each time you use this feature of the spell, its duration is reduced by 1 hour. When you expend the last hour of the duration, the spell ends at the start of your next turn. </p>
+			<p>You take on the aspect of a firebird (Tome of Beasts, p. 201), including some physical attributes. A fiery mantle descends upon you, resembling feathery wings and an expansive tail. You gain immunity to fire and a flying speed of 60 feet. Any creatures within 5 feet of you gain immunity to natural, environmental cold.</p>
+			<p class="indent">As an action, you can emit a blast of light 5 feet wide and 50 feet long. All creatures in its path take 6d6 fire damage and are blinded for 1d4 rounds. A successful Dexterity saving throw reduces the damage by half and negates the blindness. Each time you use this feature of the spell, its duration is reduced by 1 hour. When you expend the last hour of the duration, the spell ends at the start of your next turn.</p>
 		</description>
 		<setters>
 			<set name="level">6</set>
@@ -1006,7 +1006,7 @@
 			<set name="level">3</set>
 			<set name="school">Enchantment</set>
 			<set name="time">1 action</set>
-			<set name="range">Self Self (20-foot radius)</set>
+			<set name="range">Self (20-foot radius)</set>
 			<set name="duration">Concentration, up to 1 minute</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
@@ -1109,8 +1109,8 @@
 	<element name="Awaken Object" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_AWAKEN_OBJECT">
 		<supports>Druid</supports>
 		<description>
-			<p>After spending the casting time enchanting a ruby along with a Large or smaller nonmagical object in humanoid form, you touch the ruby to the object. The ruby dissolves into the object, which becomes a living construct imbued with sentience. If the object has no face, a humanoid face appears on it in an appropriate location. The awakened object's statistics are determined by its size, as shown on the table below. An awakened object can use an action to make a melee weapon attack against a target within 5 feet of it. It has free will, acts independently, and speaks one language you know. It is initially friendly to anyone who assisted in its creation. </p>
-			<p class="indent">An awakened object's speed is 30 feet. If it has no apparent legs or other means of moving, it gains a flying speed of 30 feet and it can hover. Its sight and hearing are equivalent to a typical human's senses. Intelligence, Wisdom, and Charisma can be adjusted up or down by the GM to fit unusual circumstances. A beautiful statue might awaken with increased Charisma, for example, or the bust of a great philosopher could have surprisingly high Wisdom. </p>
+			<p>After spending the casting time enchanting a ruby along with a Large or smaller nonmagical object in humanoid form, you touch the ruby to the object. The ruby dissolves into the object, which becomes a living construct imbued with sentience. If the object has no face, a humanoid face appears on it in an appropriate location. The awakened object's statistics are determined by its size, as shown on the table below. An awakened object can use an action to make a melee weapon attack against a target within 5 feet of it. It has free will, acts independently, and speaks one language you know. It is initially friendly to anyone who assisted in its creation.</p>
+			<p class="indent">An awakened object's speed is 30 feet. If it has no apparent legs or other means of moving, it gains a flying speed of 30 feet and it can hover. Its sight and hearing are equivalent to a typical human's senses. Intelligence, Wisdom, and Charisma can be adjusted up or down by the GM to fit unusual circumstances. A beautiful statue might awaken with increased Charisma, for example, or the bust of a great philosopher could have surprisingly high Wisdom.</p>
 			<p class="indent">An awakened object needs no air, food, water, or sleep. Damage to an awakened object can be healed or mechanically repaired.</p>
 			<table>
 				<thead>

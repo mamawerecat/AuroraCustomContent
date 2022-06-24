@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Vision and Appends to keep from clogging up other files</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="appends-vision-etc.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Miscellaneous/appends-vision-etc.xml" />
         </update>
     </info>
@@ -27,7 +27,7 @@
 	</element>
 
 <!-- Darkvision 30ft Base -->
-    <element name="Darkvision 30 ft base" type="Vision" source="Player’s Handbook" id="ID_VISION_DARKVISION_30">
+    <element name="Darkvision" type="Vision" source="Player’s Handbook" id="ID_VISION_DARKVISION_30">
 		<description>
 			<p>Many creatures in the worlds of D&amp;D, especially those that dwell underground, have darkvision. Within a specified range, a creature with darkvision can see in darkness as if the darkness were dim light, so areas of darkness are only lightly obscured as far as that creature is concerned. However, the creature can’t discern color in darkness, only shades of gray.</p>
 		</description>

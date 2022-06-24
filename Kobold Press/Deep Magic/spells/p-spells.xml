@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - P</name>
-        <update version="0.0.4">
+        <update version="0.0.5">
             <file name="p-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/p-spells.xml" />
         </update>
     </info>
@@ -11,8 +11,8 @@
 	<element name="Paragon of Chaos" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_PARAGON_OF_CHAOS">
 		<supports>Bard,Wizard</supports>
 		<description>
-			<p>You become a humanoid-shaped swirling mass of color and sound. You gain resistance to bludgeoning, piercing, and slashing damage, and immunity to poison and psychic damage. You are also immune to the following conditions: exhaustion, paralyzed, petrified, poisoned, and unconscious. Finally, you gain truesight to 30 feet and can teleport 30 feet as a move. </p>
-			<p class="indent">Each round, as a bonus action, you can cause an automatic chaos magic surge, choosing either yourself or another creature you can see within 60 feet as the caster for the purpose of resolving the effect. You must choose the target before rolling percentile dice to determine the nature of the surge. The DC of any required saving throw is calculated as if you were the caster. </p>
+			<p>You become a humanoid-shaped swirling mass of color and sound. You gain resistance to bludgeoning, piercing, and slashing damage, and immunity to poison and psychic damage. You are also immune to the following conditions: exhaustion, paralyzed, petrified, poisoned, and unconscious. Finally, you gain truesight to 30 feet and can teleport 30 feet as a move.</p>
+			<p class="indent">Each round, as a bonus action, you can cause an automatic chaos magic surge, choosing either yourself or another creature you can see within 60 feet as the caster for the purpose of resolving the effect. You must choose the target before rolling percentile dice to determine the nature of the surge. The DC of any required saving throw is calculated as if you were the caster.</p>
 		</description>
 		<setters>
 			<set name="keywords">chaos</set>
@@ -56,8 +56,8 @@
 	<element name="Phantom Dragon" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_PHANTOM_DRAGON">
 		<supports>Druid,Sorcerer,Wizard</supports>
 		<description>
-			<p>You tap your dragon magic to make an ally appear as a draconic beast. The target of the spell appears to be a dragon of size Large or smaller. When seeing this illusion, observers make a Wisdom saving throw to see through it. </p>
-			<p class="indent">You can use an action to make the illusory dragon seem ferocious. Choose one creature within 30 feet of the illusory dragon to make a Wisdom saving throw. If it fails, the creature is frightened. The creature remains frightened until it uses an action to make a successful Wisdom saving throw or the spell’s duration expires. </p>
+			<p>You tap your dragon magic to make an ally appear as a draconic beast. The target of the spell appears to be a dragon of size Large or smaller. When seeing this illusion, observers make a Wisdom saving throw to see through it.</p>
+			<p class="indent">You can use an action to make the illusory dragon seem ferocious. Choose one creature within 30 feet of the illusory dragon to make a Wisdom saving throw. If it fails, the creature is frightened. The creature remains frightened until it uses an action to make a successful Wisdom saving throw or the spell’s duration expires.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, increase the number of targets the illusion can affect by one for each slot level above 3rd.</p>
 		</description>
 		<setters>
@@ -80,7 +80,7 @@
 	<element name="Phantom Light" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_PHANTOM_LIGHT">
 		<supports>Druid,Wizard</supports>
 		<description>
-			<p>You touch one object that measures less than 10 feet in every dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. At the time of the casting, you designate up to six creatures. Only those creatures are able to see and gain benefit from the phantom light. </p>
+			<p>You touch one object that measures less than 10 feet in every dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. At the time of the casting, you designate up to six creatures. Only those creatures are able to see and gain benefit from the phantom light.</p>
 			<p class="indent">The object can be covered with something opaque to block the light. You can use an action to dismiss this spell.</p>
 		</description>
 		<setters>
@@ -123,12 +123,34 @@
 		</setters>
 	</element>
 
+<!-- POWER WORD PAIN  -->
+	<element name="Power Word Pain" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_POWER_WORD_PAIN">
+		<supports>Cleric,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>When you utter this word of power, one creature within 60 feet of you takes 4d10 force damage. At the start of each of its turns, the creature must make a successful Constitution saving throw or take an extra 4d10 force damage. The effect ends on a successful save.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">4</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a quill jabbed into your own body</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
+
 <!-- PRAYER OF RESOLVE  -->
 	<element name="Prayer of Resolve" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_PRAYER_OF_RESOLVE">
 		<supports>Cleric,Paladin</supports>
 		<description>
-			<p>You remind your allies of the perseverance that will be required of them. Each of up to six creatures you can see within range gains temporary hit points equal to 1d10 + your spellcasting ability modifier. This spell has no effect on undead or constructs. The temporary hit points last for 1 hour. </p>
-			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the temporary hit points gained by each creature increase by 1d10 for each slot level above 2nd. </p>
+			<p>You remind your allies of the perseverance that will be required of them. Each of up to six creatures you can see within range gains temporary hit points equal to 1d10 + your spellcasting ability modifier. This spell has no effect on undead or constructs. The temporary hit points last for 1 hour.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the temporary hit points gained by each creature increase by 1d10 for each slot level above 2nd.</p>
 		</description>
 		<setters>
 			<set name="keywords">apocalypse</set>
@@ -195,9 +217,9 @@
 	<element name="Protective Ice" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_PROTECTIVE_ICE">
 		<supports>Cleric</supports>
 		<description>
-			<p>When you cast protective ice, you encase a willing target in icy, medium armor equivalent to a breastplate (AC 14). A creature without the appropriate armor proficiency has the usual penalties. If the target is already wearing armor, it only uses the better of the two armor classes. </p>
-			<p class="indent">A creature striking a target encased in protective ice with a melee attack while within 5 feet of it takes 1d6 cold damage. </p>
-			<p class="indent">If the armor’s wearer takes fire damage, an equal amount of damage is done to the armor, which has 30 hit points and is damaged only when its wearer takes fire damage. Damaged ice can be repaired by casting a spell that deals cold damage on it, on a point-for-point basis, but the armor can’t have more than 30 points repaired. </p>
+			<p>When you cast protective ice, you encase a willing target in icy, medium armor equivalent to a breastplate (AC 14). A creature without the appropriate armor proficiency has the usual penalties. If the target is already wearing armor, it only uses the better of the two armor classes.</p>
+			<p class="indent">A creature striking a target encased in protective ice with a melee attack while within 5 feet of it takes 1d6 cold damage.</p>
+			<p class="indent">If the armor’s wearer takes fire damage, an equal amount of damage is done to the armor, which has 30 hit points and is damaged only when its wearer takes fire damage. Damaged ice can be repaired by casting a spell that deals cold damage on it, on a point-for-point basis, but the armor can’t have more than 30 points repaired.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a 4th-level spell slot, it creates splint armor (AC 17, 40 hit points). If you cast this spell using a 5th-level spell slot, it creates plate armor (AC 18, 50 hit points). The armor’s hit points increase by 10 for each spell slot above 5th, but the AC remains 18. Additionally, if you cast this spell using a spell slot of 4th level or higher, the armor deals an extra +2 cold damage for each spell slot above 3rd.</p>
 		</description>
 		<setters>

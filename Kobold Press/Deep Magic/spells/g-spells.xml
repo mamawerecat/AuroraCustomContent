@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - G</name>
-        <update version="0.0.4">
+        <update version="0.0.5">
             <file name="g-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/g-spells.xml" />
         </update>
     </info>
@@ -11,7 +11,7 @@
 	<element name="Gear Barrage" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_GEAR_BARRAGE">
 		<supports>Sorcerer,Warlock,Wizard</supports>
 		<description>
-			<p>You create a burst of magically propelled gears. Each creature within a 60-foot cone takes 3d8 slashing damage, or half as much damage with a successful Dexterity saving throw. Constructs have disadvantage on the saving throw. </p>
+			<p>You create a burst of magically propelled gears. Each creature within a 60-foot cone takes 3d8 slashing damage, or half as much damage with a successful Dexterity saving throw. Constructs have disadvantage on the saving throw.</p>
 		</description>
 		<setters>
 			<set name="keywords">clockwork</set>
@@ -82,9 +82,9 @@
 	<element name="Glacial Fog" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_GLACIAL_FOG">
 		<supports>Cleric,Druid,Sorcerer,Wizard</supports>
 		<description>
-			<p>As you cast this spell, a 30-foot-radius sphere centered on a point within range becomes covered in a frigid fog. Each creature that is in the area at the start of its turn while the spell remains in effect must make a Constitution saving throw. On a failed save, a creature takes 12d6 cold damage and gains one level of exhaustion, and it has disadvantage on Perception checks until the start of its next turn. On a successful save, the creature takes half the damage and ignores the other effects. </p>
+			<p>As you cast this spell, a 30-foot-radius sphere centered on a point within range becomes covered in a frigid fog. Each creature that is in the area at the start of its turn while the spell remains in effect must make a Constitution saving throw. On a failed save, a creature takes 12d6 cold damage and gains one level of exhaustion, and it has disadvantage on Perception checks until the start of its next turn. On a successful save, the creature takes half the damage and ignores the other effects.</p>
 			<p class="indent">Stored devices and tools are all frozen by the fog: crossbow mechanisms become sluggish, weapons are stuck </p>
-			<p class="indent">in scabbards, potions turn to ice, bag cords freeze together, and so forth. Such items require the application of heat for 1 round or longer in order to become useful again. </p>
+			<p class="indent">in scabbards, potions turn to ice, bag cords freeze together, and so forth. Such items require the application of heat for 1 round or longer in order to become useful again.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 8th level or higher, the damage increases by 1d6 for each slot level above 7th.</p>
 		</description>
 		<setters>
@@ -151,7 +151,7 @@
 	<element name="Gluey Globule" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_GLUEY_GLOBULE">
 		<supports>Artificer,Wizard</supports>
 		<description>
-			<p>You make a ranged spell attack to hurl a large globule of sticky, magical glue at a creature within 120 feet. If the attack hits, the target creature is restrained. A restrained creature can break free by using an action to make a successful Strength saving throw. When the creature breaks free, it takes 2d6 slashing damage from the glue tearing its skin. If your ranged spell attack roll was a critical hit or exceeded the target’s AC by 5 or more, the Strength saving throw is made with disadvantage. The target can also be freed by an application of universal solvent or by taking 20 acid damage. The glue dissolves when the creature breaks free or at the end of 1 minute. </p>
+			<p>You make a ranged spell attack to hurl a large globule of sticky, magical glue at a creature within 120 feet. If the attack hits, the target creature is restrained. A restrained creature can break free by using an action to make a successful Strength saving throw. When the creature breaks free, it takes 2d6 slashing damage from the glue tearing its skin. If your ranged spell attack roll was a critical hit or exceeded the target’s AC by 5 or more, the Strength saving throw is made with disadvantage. The target can also be freed by an application of universal solvent or by taking 20 acid damage. The glue dissolves when the creature breaks free or at the end of 1 minute.</p>
 			<p class="indent">Alternatively, gluey globule can also be used to glue an object to a solid surface or to another object. In this case, the spell works like a single application of sovereign glue and lasts for 1 hour.</p>
 		</description>
 		<setters>
@@ -247,7 +247,7 @@
 			<set name="keywords">illumination</set>
 			<set name="level">5</set>
 			<set name="school" addition="illumination">Abjuration</set>
-			<set name="time">1 1 action</set>
+			<set name="time">1 action</set>
 			<set name="range">Self</set>
 			<set name="duration">10 minutes</set>
 			<set name="hasVerbalComponent">true</set>
@@ -263,8 +263,8 @@
 	<element name="Greater Seal of Sanctuary" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_GREATER_SEAL_OF_SANCTUARY">
 		<supports>Cleric,Wizard</supports>
 		<description>
-			<p>You inscribe an angelic seal on the ground, the floor, or other solid surface of a structure. The seal creates a spherical sanctuary with a radius of 100 feet, centered on the seal. For the duration, aberrations, elementals, fey, fiends, and undead that approach to within 5 feet of the boundary know they are about to come into contact with a deadly barrier. If such a creature moves so as to touch the boundary, or tries to cross the boundary by any means, including teleportation and extradimensional travel, it must make a Charisma saving throw. On a failed save, it takes 15d8 radiant damage, is repelled to 5 feet outside the boundary, and can’t target anything inside the boundary with attacks, spells, or abilities until the spell ends. On a successful save, the creature takes half as much radiant damage and can cross the boundary. If the creature is a fiend that isn’t on its home plane, it is immediately destroyed (no saving throw) instead of taking damage. </p>
-			<p class="indent">Aberrations, elementals, fey, and undead that are within 100 feet of the seal (inside the boundary) have disadvantage on ability checks, attack rolls, and saving throws, and each such creature takes 4d8 radiant damage at the start of its turn. </p>
+			<p>You inscribe an angelic seal on the ground, the floor, or other solid surface of a structure. The seal creates a spherical sanctuary with a radius of 100 feet, centered on the seal. For the duration, aberrations, elementals, fey, fiends, and undead that approach to within 5 feet of the boundary know they are about to come into contact with a deadly barrier. If such a creature moves so as to touch the boundary, or tries to cross the boundary by any means, including teleportation and extradimensional travel, it must make a Charisma saving throw. On a failed save, it takes 15d8 radiant damage, is repelled to 5 feet outside the boundary, and can’t target anything inside the boundary with attacks, spells, or abilities until the spell ends. On a successful save, the creature takes half as much radiant damage and can cross the boundary. If the creature is a fiend that isn’t on its home plane, it is immediately destroyed (no saving throw) instead of taking damage.</p>
+			<p class="indent">Aberrations, elementals, fey, and undead that are within 100 feet of the seal (inside the boundary) have disadvantage on ability checks, attack rolls, and saving throws, and each such creature takes 4d8 radiant damage at the start of its turn.</p>
 			<p class="indent">Creatures other than aberrations, elementals, fey, fiends, and undead can’t be charmed or frightened while within 100 feet of the seal.</p>
 			<p class="indent">The seal has AC 18, 75 hit points, resistance to bludgeoning, piercing, and slashing damage, and immunity to psychic and poison damage. Ranged attacks against the seal are made with disadvantage. If it is scribed on the surface of an object that is later destroyed (such as a wooden door), the seal is not damaged and remains in place, perhaps suspended in midair. The spell ends only if the seal itself is reduced to 0 hit points.</p>
 		</description>
@@ -336,8 +336,8 @@
 	<element name="Guest of Honor" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_GUEST_OF_HONOR">
 		<supports>Bard,Wizard</supports>
 		<description>
-			<p>You whisper words of encouragement, and a creature that you touch gains confidence along with approval from strangers. For the spell’s duration, the target puts its best foot forward and strangers associate the creature with positive feelings. The target adds 1d4 to all Charisma (Persuasion) checks made to influence the attitudes of others. </p>
-			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the effect lasts for an additional 10 minutes for each slot level above 1st. </p>
+			<p>You whisper words of encouragement, and a creature that you touch gains confidence along with approval from strangers. For the spell’s duration, the target puts its best foot forward and strangers associate the creature with positive feelings. The target adds 1d4 to all Charisma (Persuasion) checks made to influence the attitudes of others.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the effect lasts for an additional 10 minutes for each slot level above 1st.</p>
 			<p class="indent"><b><i>Ritual Focus.</i></b> If you expend your ritual focus, the effect lasts for 24 hours. Also, once you've expended your ritual focus this mental energy has been expended, a caster’s ritual focus can’t be used again until he or she finishes a short or long rest.</p>
 		</description>
 		<setters>

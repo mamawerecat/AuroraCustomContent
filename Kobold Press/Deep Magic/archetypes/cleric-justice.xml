@@ -1,35 +1,107 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
     <info>
-        <name>Beer Domain</name>
-        <update version="0.0.1">
+        <name>Justice Domain</name>
+        <update version="0.0.2">
             <file name="cleric-justice.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-justice.xml" />
         </update>
     </info>
     
-    
-<!-- JUSTICE DOMAIN 
-All seek some form of justice when they have been wronged, and many live under the promise of its protection—whether or not the promise is ultimately kept—but few take on the holy burden of delivering the justice of the gods. The mercy of the divine, when in evidence at all, is not the mercy of mortals, and meting out divine justice makes for a lonely life. Yet someone must make the sacrifice. 
-JUSTICE DOMAIN SPELLS 
-CLERIC LEVEL 	SPELLS 
-1st 	fist of iron*, longstrider 
-3rd 	blade of wrath*, see invisibility 
-5th 	call lightning, fear 
-7th 	inspiring speech, faithful hound 
-9th 	dominate person, hold monster 
-* Described in this book 
+    <element name="Justice Domain" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_JUSTICE_DOMAIN">
+        <supports>Divine Domain</supports>
+        <description>
+            <p>All seek some form of justice when they have been wronged, and many live under the promise of its protection—whether or not the promise is ultimately kept—but few take on the holy burden of delivering the justice of the gods. The mercy of the divine, when in evidence at all, is not the mercy of mortals, and meting out divine justice makes for a lonely life. Yet someone must make the sacrifice.</p>
+            <h5 class="caption">JUSTICE DOMAIN SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>fist of iron, longstrider</em></td></tr>
+				<tr><td>3rd</td><td><em>blade of wrath, see invisibility</em></td></tr>
+				<tr><td>5th</td><td><em>call lightning, fear</em></td></tr>
+				<tr><td>7th</td><td><em>inspiring speech, faithful hound</em></td></tr>
+				<tr><td>9th</td><td><em>dominate person, hold monster</em></td></tr>
+			</table>
+            <div element="ID_KBP_DM5E_JUSTICE_DOMAIN_ARCHETYPE_FEATURE_BONUS_PROFICIENCY" />
+            <div element="ID_KBP_DM5E_JUSTICE_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_NO_HIDING_PLACE" />
+            <div element="ID_KBP_DM5E_JUSTICE_DOMAIN_ARCHETYPE_FEATURE_HAND_OF_JUSTICE" />
+            <div element="ID_KBP_DM5E_JUSTICE_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" />
+            <div element="ID_KBP_DM5E_JUSTICE_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_HOLY_DENUNCIATION" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_JUSTICE_DOMAIN_ARCHETYPE_FEATURE_BONUS_PROFICIENCY" level="1" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_JUSTICE_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_NO_HIDING_PLACE" level="2" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_JUSTICE_DOMAIN_ARCHETYPE_FEATURE_HAND_OF_JUSTICE" level="6" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_JUSTICE_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" level="8" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_JUSTICE_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_HOLY_DENUNCIATION" level="17" />
 
-BONUS PROFICIENCY 
-When you choose this domain at 1st level, you gain proficiency with heavy armor and with martial weapons. 
-CHANNEL DIVINITY: NO HIDING PLACE 
-Starting at 2nd level, you can use your Channel Divinity to determine the general direction to the location of a creature that is guilty of an injustice or that is wanted for commission of a serious crime. At 7th level, you can determine the distance in miles to the creature as well as the direction. 
-HAND OF JUSTICE 
-At 6th level, you become immune to the frightened condition. 
-DIVINE STRIKE 
-At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 radiant damage to the target. When you reach 14th level, the extra damage increases to 2d8. 
-CHANNEL DIVINITY: HOLY DENUNCIATION 
-At 17th level, you can use your Channel Divinity to persuade others that you hold divine authority to mete out justice. You must present your holy symbol and invoke the name of your deity. As long as your deity is worshiped openly in the land where you are asserting this authority, you have advantage on Wisdom checks and Charisma checks involving justice, judgment, and the law. 
--->
+            <grant type="Spell" id="ID_KBP_DM5E_SPELL_FIST_OF_IRON" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_LONGSTRIDER" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_KBP_DM5E_SPELL_BLADE_OF_WRATH" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SEE_INVISIBILILTY" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CALL_LIGHTNING" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FEAR" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_INSPIRING_SPEECH" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FAITHFUL_HOUND" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_MONSTER" level="9" spellcasting="Cleric" prepared="true" />
+        </rules>
+    </element>
+    
+<!-- BONUS PROFICIENCY --> 
+    <element name="Bonus Proficiency" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_JUSTICE_DOMAIN_ARCHETYPE_FEATURE_BONUS_PROFICIENCY">
+        <description>
+            <p>When you choose this domain at 1st level, you gain proficiency with heavy armor and with martial weapons.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+        </rules>
+    </element>
+
+<!-- CHANNEL DIVINITY: NO HIDING PLACE --> 
+    <element name="Channel Divinity: No Hiding Place" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_JUSTICE_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_NO_HIDING_PLACE">
+        <description>
+            <p>Starting at 2nd level, you can use your Channel Divinity to determine the general direction to the location of a creature that is guilty of an injustice or that is wanted for commission of a serious crime. At 7th level, you can determine the distance in miles to the creature as well as the direction.</p>
+        </description>
+        <sheet alt="No Hiding Place" usage="Channel Divinity">
+            <description level="2">You can use your Channel Divinity to determine the general direction to the location of a creature that is guilty of an injustice or that is wanted for commission of a serious crime.</description>
+            <description level="7">You can use your Channel Divinity to determine the general direction &amp; distance in miles to the location of a creature that is guilty of an injustice or that is wanted for commission of a serious crime.</description>
+        </sheet>
+    </element>
+
+<!-- HAND OF JUSTICE --> 
+    <element name="Hand of Justice" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_JUSTICE_DOMAIN_ARCHETYPE_FEATURE_HAND_OF_JUSTICE">
+        <description>
+            <p>At 6th level, you become immune to the frightened condition.</p>
+        </description>
+        <sheet>
+            <description>You are immune to the frightened condition.</description>
+        </sheet>
+    </element>
+
+<!-- DIVINE STRIKE --> 
+    <element name="Divine Strike" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_JUSTICE_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE">
+        <description>
+            <p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 radiant damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+        </description>
+        <sheet>
+            <description level="8">Once on each of your turns, you can cause a weapon attack to deal an extra 1d8 radiant damage to the target on a hit.</description>
+            <description level="14">Once on each of your turns, you can cause a weapon attack to deal an extra 2d8 radiant damage to the target on a hit.</description>
+        </sheet>
+    </element>
+
+<!-- CHANNEL DIVINITY: HOLY DENUNCIATION --> 
+    <element name="Channel Divinity: Holy Denunciation" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_JUSTICE_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_HOLY_DENUNCIATION">
+        <description>
+            <p>At 17th level, you can use your Channel Divinity to persuade others that you hold divine authority to mete out justice. You must present your holy symbol and invoke the name of your deity. As long as your deity is worshiped openly in the land where you are asserting this authority, you have advantage on Wisdom checks and Charisma checks involving justice, judgment, and the law.</p>
+        </description>
+        <sheet alt="Holy Denunciation" usage="Channel Divinity">
+            <description>You must present your holy symbol and invoke the name of your deity. As long as your deity is worshiped openly in the land where you are asserting this authority, you have advantage on Wisdom checks and Charisma checks involving justice, judgment, and the law.</description>
+        </sheet>
+    </element>
 
     
 </elements>

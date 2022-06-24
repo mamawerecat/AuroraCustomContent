@@ -1,35 +1,120 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
     <info>
-        <name>Hunter Domain</name>
-        <update version="0.0.1">
+        <name>Hunting Domain</name>
+        <update version="0.0.2">
             <file name="cleric-hunting.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-hunting.xml" />
         </update>
     </info>
     
-  <!--   
-HUNTING DOMAIN 
-You are master of the hunt. The bounty of the land is yours for the taking. 
-HUNTING DOMAIN SPELLS 
-CLERIC LEVEL 	SPELLS 
-1st 	hunter’s mark, strength of an ox* 
-3rd 	locate animals or plants, pass without trace 
-5th 	speak with plants, tracer* 
-7th 	heart-seeking arrow*, power word pain* 
-9th 	commune with nature, hold monster 
-* Described in this book 
+    <element name="Hunting Domain" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_HUNTING_DOMAIN">
+        <supports>Divine Domain</supports>
+        <description>
+            <p>You are master of the hunt. The bounty of the land is yours for the taking.</p>
+            <h5 class="caption">HUNTING DOMAIN SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>hunter’s mark, strength of an ox</em></td></tr>
+				<tr><td>3rd</td><td><em>locate animals or plants, pass without trace</em></td></tr>
+				<tr><td>5th</td><td><em>speak with plants, tracer</em></td></tr>
+				<tr><td>7th</td><td><em>heart-seeking arrow, power word pain</em></td></tr>
+				<tr><td>9th</td><td><em>commune with nature, hold monster</em></td></tr>
+			</table>
+            <div element="ID_KBP_DM5E_HUNTING_DOMAIN_ARCHETYPE_FEATURE_FOREST_MASTER" />
+            <div element="ID_KBP_DM5E_HUNTING_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_UNDETECTED" />
+            <div element="ID_KBP_DM5E_HUNTING_DOMAIN_ARCHETYPE_FEATURE_RESOLUTE_HUNTER" />
+            <div element="ID_KBP_DM5E_HUNTING_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" />
+            <div element="ID_KBP_DM5E_HUNTING_DOMAIN_ARCHETYPE_FEATURE_DEADLY_STALKER" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_HUNTING_DOMAIN_ARCHETYPE_FEATURE_FOREST_MASTER" level="1" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_HUNTING_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_UNDETECTED" level="2" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_HUNTING_DOMAIN_ARCHETYPE_FEATURE_RESOLUTE_HUNTER" level="6" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_HUNTING_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" level="8" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_HUNTING_DOMAIN_ARCHETYPE_FEATURE_DEADLY_STALKER" level="17" />
 
-FOREST MASTER 
-When you choose this domain at 1st level, you gain proficiency with longbows and heavy crossbows. You also gain proficiency in Nature and Survival. 
-CHANNEL DIVINITY: UNDETECTED 
-At 2nd level, you can use your Channel Divinity to camouflage yourself in any environment, gaining advantage on Stealth checks made to move quietly or to hide. You also leave no scent. The effect lasts for a number of rounds equal to your cleric level + your Wisdom modifier.
-RESOLUTE HUNTER 
-At 6th level, you can select a favored enemy as if you were a ranger. You gain all the benefits of the ranger’s Favored Enemy feature with one exception: you choose additional favored enemies (and languages) at 10th level and 16th level instead of at 6th level and 14th level. 
-DIVINE STRIKE 
-At 8th level, you gain the ability to infuse your weapon strikes with divine energy. On your turn, you can cause one successful weapon attack against a creature to deal an extra 1d8 damage of the type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to 2d8. 
-DEADLY STALKER 
-At 17th level, you can use an action to describe or name a creature that is familiar to you or that you can see within 120 feet. For 24 hours or until the target is dead, whichever occurs first, you have advantage on Wisdom (Survival) checks to track your target and Wisdom (Perception) checks to detect your target. In addition, you have advantage on weapon attack rolls against the target. 
-You can’t use this feature again until you finish a short or long rest.
- -->
+            <grant type="Spell" id="ID_PHB_SPELL_HUNTERS_MARK" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_KBP_DM5E_SPELL_STRENGTH_OF_AN_OX" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_LOCATE_ANIMALS_OR_PLANTS" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PASS_WITHOUT_TRACE" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_PLANTS" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_KBP_DM5E_SPELL_TRACER" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_KBP_DM5E_SPELL_HEART_SEEKING_ARROW" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_KBP_DM5E_SPELL_POWER_WORD_PAIN" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_COMMUNE_WITH_NATURE" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_MONSTER" level="9" spellcasting="Cleric" prepared="true" />
+        </rules>
+    </element>
+
+<!-- FOREST MASTER  -->
+    <element name="Forest Master" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_HUNTING_DOMAIN_ARCHETYPE_FEATURE_FOREST_MASTER">
+        <description>
+            <p>When you choose this domain at 1st level, you gain proficiency with longbows and heavy crossbows. You also gain proficiency in Nature and Survival.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW" /> 
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+        </rules>
+    </element>
+
+<!-- CHANNEL DIVINITY: UNDETECTED  -->
+    <element name="Channel Divinity: Undetected" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_HUNTING_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_UNDETECTED">
+        <description>
+            <p>At 2nd level, you can use your Channel Divinity to camouflage yourself in any environment, gaining advantage on Stealth checks made to move quietly or to hide. You also leave no scent. The effect lasts for a number of rounds equal to your cleric level + your Wisdom modifier.</p>
+        </description>
+        <sheet alt="Undetected" usage="Channel Divinity">
+            <description>You can use your Channel Divinity to camouflage yourself in any environment, gaining advantage on Stealth checks made to move quietly or to hide. You also leave no scent. The effect lasts for {{undected:rounds}} rounds.</description>
+        </sheet>
+        <rules>
+            <stat name="undected:rounds" value="level:cleric" />
+            <stat name="undected:rounds" value="wisdom:modifier" />
+        </rules>
+    </element>
+
+<!-- RESOLUTE HUNTER  -->
+    <element name="Resolute Hunter" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_HUNTING_DOMAIN_ARCHETYPE_FEATURE_RESOLUTE_HUNTER">
+        <description>
+            <p>At 6th level, you can select a favored enemy as if you were a ranger. You gain all the benefits of the ranger’s Favored Enemy feature with one exception: you choose additional favored enemies (and languages) at 10th level and 16th level instead of at 6th level and 14th level.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on Survival checks to track your favored enemies, as well as on Intelligence checks to recall information about them.</description>
+		</sheet>
+        <rules>
+            <select type="Class Feature" name="Resolute Hunter" supports="Favored Enemy" level="6" />
+			<select type="Class Feature" name="Resolute Hunter" supports="Favored Enemy" level="10" />
+			<select type="Class Feature" name="Resolute Hunter" supports="Favored Enemy" level="16" />
+
+            <select type="Language" name="Language (Resolute Hunter)" level="6" />
+			<select type="Language" name="Language (Resolute Hunter)" level="10" />
+			<select type="Language" name="Language (Resolute Hunter)" level="16" />
+        </rules>
+    </element>
+
+<!-- DIVINE STRIKE  -->
+    <element name="Divine Strike" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_HUNTING_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE">
+        <description>
+            <p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+        </description>
+        <sheet>
+            <description level="8">Once on each of your turns, you can cause a weapon attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target on a hit.</description>
+            <description level="14">Once on each of your turns, you can cause a weapon attack to deal an extra 2d8 damage of the same type dealt by the weapon to the target on a hit.</description>
+        </sheet>
+    </element>
+    
+<!-- DEADLY STALKER  -->
+    <element name="Deadly Stalker" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_HUNTING_DOMAIN_ARCHETYPE_FEATURE_DEADLY_STALKER">
+        <description>
+            <p>At 17th level, you can use an action to describe or name a creature that is familiar to you or that you can see within 120 feet. For 24 hours or until the target is dead, whichever occurs first, you have advantage on Wisdom (Survival) checks to track your target and Wisdom (Perception) checks to detect your target. In addition, you have advantage on weapon attack rolls against the target. You can’t use this feature again until you finish a short or long rest.</p>
+        </description>
+        <sheet action="Action" usage="1/Short Rest">
+            <description>You can use an action to describe or name a creature that is familiar to you or that you can see within 120 feet. For 24 hours or until the target is dead, whichever occurs first, you have advantage on Wisdom (Survival) checks to track your target and Wisdom (Perception) checks to detect your target. In addition, you have advantage on weapon attack rolls against the target.</description>
+        </sheet>
+    </element>
     
 </elements>
