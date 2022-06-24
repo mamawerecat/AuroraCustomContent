@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Cat Domain</name>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="cleric-cat.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-cat.xml" />
         </update>
     </info>
@@ -64,11 +64,11 @@
     </element>
 
 <!-- CHANNEL DIVINITY: FELINE FINESSE  -->
-    <element name="Feline Finesse" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_CAT_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_FELINE_FINESSE">
+    <element name="Channel Divinity: Feline Finesse" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_CAT_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_FELINE_FINESSE">
         <description>
             <p>At 2nd level, you can use your Channel Divinity to add a +10 bonus to a single Dexterity ability check or Dexterity-based skill check made by you or someone you designate within 30 feet. Doing this takes no action on your turn or a reaction when it’s not your turn. You make this choice after you see the roll but before the GM says whether the check succeeds or fails.</p>
         </description>
-        <sheet usage="Channel Divinity">
+        <sheet alt="Feline Finesse" usage="Channel Divinity">
             <description>You can use your Channel Divinity to add a +10 bonus to a single Dexterity ability check or Dexterity-based skill check made by you or someone you designate within 30 feet. Doing this takes no action on your turn or a reaction when it’s not your turn. You make this choice after you see the roll but before the GM says whether the check succeeds or fails.</description>
         </sheet>
     </element>

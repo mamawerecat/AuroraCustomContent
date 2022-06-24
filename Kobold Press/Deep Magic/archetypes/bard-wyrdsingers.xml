@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>College of Wyrdsingers</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="bard-wyrdsingers.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/bard-wyrdsingers.xml" />
         </update>
     </info> 
@@ -10,7 +10,7 @@
 <element name="College of Wyrdsingers" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_COLLEGE_OF_WYRDSINGERS">
     <supports>Bard College</supports>
     <description>
-        <p>Bards of the College of Wyrdsingers subscribe to the wyrd, a philosophy that centers around the phenomenon of the same name. The wyrd is that which will be, inexorably tied to such concepts as destiny and fate. Though some might consider the idea of a fixed destiny fatalistic, the bards of this college are inspired by this viewpoint. One may not choose the manner of one’s death, but one can choose how to meet it, and that idea is at the heart of this college. An insect might be caught in a spider’s web. Whether it lives or dies, its struggles ultimately shake the web in its entirety, and it might free itself through such effort. The struggle affects all things, however remotely connected they might be, whereas the insect that merely accepts its death leaves not even a ripple behind. To confront fate, to embrace the wyrd and whatever it brings, is to have the power to shake the world and make it take notice. </p>
+        <p>Bards of the College of Wyrdsingers subscribe to the wyrd, a philosophy that centers around the phenomenon of the same name. The wyrd is that which will be, inexorably tied to such concepts as destiny and fate. Though some might consider the idea of a fixed destiny fatalistic, the bards of this college are inspired by this viewpoint. One may not choose the manner of one’s death, but one can choose how to meet it, and that idea is at the heart of this college. An insect might be caught in a spider’s web. Whether it lives or dies, its struggles ultimately shake the web in its entirety, and it might free itself through such effort. The struggle affects all things, however remotely connected they might be, whereas the insect that merely accepts its death leaves not even a ripple behind. To confront fate, to embrace the wyrd and whatever it brings, is to have the power to shake the world and make it take notice.</p>
         <div element="ID_KBP_DM5E_WYRDSINGERS_ARCHETYPE_FEATURE_BRAGGART" />
         <div element="ID_KBP_DM5E_WYRDSINGERS_ARCHETYPE_FEATURE_INSPIRE_GREATNESS" />
         <div element="ID_KBP_DM5E_WYRDSINGERS_ARCHETYPE_FEATURE_NOT_THIS_DAY" />
@@ -42,7 +42,7 @@
 <!-- INSPIRE GREATNESS -->
     <element name="Inspire Greatness" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_WYRDSINGERS_ARCHETYPE_FEATURE_INSPIRE_GREATNESS">
         <description>
-            <p>Also beginning at 3rd level, you can use a bonus action to instill a sense of worth in a single ally within 60 feet who can hear you. Your ally gains a bonus equal to your Charisma modifier on attack rolls, damage rolls, ability checks, and saving throws for a number of rounds equal to your bard level. That ally cannot benefit from your Bardic Inspiration until the duration of this feature has run its course. You can use this feature once at 3rd level, twice at 8th level, and three times at 15th level. You regain all expended uses when you finish a long rest. </p>
+            <p>Also beginning at 3rd level, you can use a bonus action to instill a sense of worth in a single ally within 60 feet who can hear you. Your ally gains a bonus equal to your Charisma modifier on attack rolls, damage rolls, ability checks, and saving throws for a number of rounds equal to your bard level. That ally cannot benefit from your Bardic Inspiration until the duration of this feature has run its course. You can use this feature once at 3rd level, twice at 8th level, and three times at 15th level. You regain all expended uses when you finish a long rest.</p>
             <p class="indent">Additionally, you can use a bonus action to cast any abjuration spell you know that normally takes 1 action to cast (for example, laugh in the face of fear or lesser restoration). Once you use this feature, you must finish a long rest before you can use it again.</p>
         </description>
         <sheet display="false" />

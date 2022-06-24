@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - S</name>
-        <update version="0.0.5">
+        <update version="0.0.6">
             <file name="s-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/s-spells.xml" />
         </update>
     </info>
@@ -11,7 +11,7 @@
 	<element name="Salt Lash" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SALT_LASH">
 		<supports>Wizard</supports>
 		<description>
-			<p>You create a long, thin blade of razor-sharp salt crystals. You can wield it as a longsword, using your spellcasting ability to modify your weapon attack rolls. The sword deals 2d8 slashing damage on a hit, and any creature struck by the blade must make a successful Constitution saving throw or be stunned by searing pain until the start of your next turn. Constructs and undead are immune to the blade’s secondary (stun) effect; plants and creatures composed mostly of water, such as water elementals, also take an additional 2d8 necrotic damage if they fail the saving throw. </p>
+			<p>You create a long, thin blade of razor-sharp salt crystals. You can wield it as a longsword, using your spellcasting ability to modify your weapon attack rolls. The sword deals 2d8 slashing damage on a hit, and any creature struck by the blade must make a successful Constitution saving throw or be stunned by searing pain until the start of your next turn. Constructs and undead are immune to the blade’s secondary (stun) effect; plants and creatures composed mostly of water, such as water elementals, also take an additional 2d8 necrotic damage if they fail the saving throw.</p>
 			<p class="indent">The spell lasts until you stop concentrating on it, the duration expires, or you let go of the blade for any reason.</p>
 		</description>
 		<setters>
@@ -58,7 +58,7 @@
 		<supports>Bard,Cleric,Ranger,Sorcerer,Warlock,Wizard</supports>
 		<description>
 			<p>You summon death and decay to plague your enemies. For dragons, this act often takes the form of attacking a foe’s armor and scales, as a way of weakening an enemy dragon and leaving it plagued by self-doubt and fear. (This enchantment is useful against any armored creature, not just dragons.) </p>
-			<p class="indent">One creature of your choice within range that has natural armor must make a Constitution saving throw. If it fails, attacks against that creature’s Armor Class are made with advantage, and the creature can’t regain hit points through any means while the spell remains in effect. An affected creature can end the spell by making a successful Constitution saving throw, which also makes the creature immune to further castings of scale rot for 24 hours. </p>
+			<p class="indent">One creature of your choice within range that has natural armor must make a Constitution saving throw. If it fails, attacks against that creature’s Armor Class are made with advantage, and the creature can’t regain hit points through any means while the spell remains in effect. An affected creature can end the spell by making a successful Constitution saving throw, which also makes the creature immune to further castings of scale rot for 24 hours.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, the number of affected targets increases by one for each slot level above 4th.</p>
 		</description>
 		<setters>
@@ -104,7 +104,7 @@
 	<element name="Scry Ambush" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SCRY_AMBUSH">
 		<supports>Bard,Cleric,Druid,Ranger,Sorcerer,Warlock,Wizard</supports>
 		<description>
-			<p>You foresee your foe’s strike a split second before it occurs. When you cast this spell successfully, you also designate a number of your allies that can see or hear you equal to your spellcasting ability modifier + your proficiency bonus. Those allies are also not surprised by the attack and can act normally in the first round of combat. </p>
+			<p>You foresee your foe’s strike a split second before it occurs. When you cast this spell successfully, you also designate a number of your allies that can see or hear you equal to your spellcasting ability modifier + your proficiency bonus. Those allies are also not surprised by the attack and can act normally in the first round of combat.</p>
 			<p class="indent">If you would be surprised, you must make a check using your spellcasting ability at the moment your reaction would be triggered. The check DC is equal to the current initiative count. On a failed check, you are surprised and can’t use your reaction to cast this spell until after your next turn. On a successful check, you can use your reaction to cast this spell immediately.</p>
 		</description>
 		<setters>
@@ -127,8 +127,8 @@
 	<element name="Sculpt Snow" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SCULPT_SNOW">
 		<supports>Druid,Sorcerer,Wizard</supports>
 		<description>
-			<p>When you cast sculpt snow in an area filled with snow, you can create one Large object, two Medium objects, or four smaller objects from snow. With a casting time of 1 action, your sculptings bear only a crude resemblance to generic creatures or objects. If you increase the casting time to 1 minute, your creations take on a more realistic appearance and can even vaguely resemble specific creatures; the resemblance isn’t strong enough to fool anyone, but the creature can be recognized. The sculptures are as durable as a typical snowman. </p>
-			<p class="indent">Sculptures created by this spell can be animated with animate objects or comparable magic. Animated sculptures gain the AC, hit points, and other attributes provided by that spell. When they attack, they deal normal damage plus a similar amount of cold damage; an animated Medium sculpture, for example, deals 2d6 + 1 bludgeoning damage plus 2d6 + 1 cold damage. </p>
+			<p>When you cast sculpt snow in an area filled with snow, you can create one Large object, two Medium objects, or four smaller objects from snow. With a casting time of 1 action, your sculptings bear only a crude resemblance to generic creatures or objects. If you increase the casting time to 1 minute, your creations take on a more realistic appearance and can even vaguely resemble specific creatures; the resemblance isn’t strong enough to fool anyone, but the creature can be recognized. The sculptures are as durable as a typical snowman.</p>
+			<p class="indent">Sculptures created by this spell can be animated with animate objects or comparable magic. Animated sculptures gain the AC, hit points, and other attributes provided by that spell. When they attack, they deal normal damage plus a similar amount of cold damage; an animated Medium sculpture, for example, deals 2d6 + 1 bludgeoning damage plus 2d6 + 1 cold damage.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, you can sculpt one additional Large object for each slot level above 2nd. Two Large objects can be replaced with one Huge object.</p>
 		</description>
 		<setters>
@@ -151,9 +151,9 @@
 	<element name="Seal of Sanctuary" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SEAL_OF_SANCTUARY">
 		<supports>Cleric,Wizard</supports>
 		<description>
-			<p>You inscribe an angelic seal on the ground, the floor, or other solid surface of a structure. The seal creates a spherical sanctuary with a radius of 50 feet, centered on the seal. For the duration, aberrations, elementals, fey, fiends, and undead that approach to within 5 feet of the boundary know they are about to come into contact with a deadly barrier. If such a creature moves so as to touch the boundary, or tries to cross the boundary by any means, including teleportation and extradimensional travel, it must make a Charisma saving throw. On a failed save, it takes 10d8 radiant damage, is repelled to 5 feet outside the boundary, and can’t target anything inside the boundary with attacks, spells, or abilities until the spell ends. On a successful save, the creature takes half as much radiant damage and can cross the boundary. If the creature is a fiend that isn’t on its home plane, it is immediately destroyed (no saving throw) instead of taking damage. </p>
-			<p class="indent">Aberrations, elementals, fey, and undead that are within 50 feet of the seal (inside the boundary) have disadvantage on ability checks, attack rolls, and saving throws, and each such creature takes 2d8 radiant damage at the start of its turn. </p>
-			<p class="indent">Creatures other than aberrations, elementals, fey, fiends, and undead can’t be charmed or frightened while within 50 feet of the seal. </p>
+			<p>You inscribe an angelic seal on the ground, the floor, or other solid surface of a structure. The seal creates a spherical sanctuary with a radius of 50 feet, centered on the seal. For the duration, aberrations, elementals, fey, fiends, and undead that approach to within 5 feet of the boundary know they are about to come into contact with a deadly barrier. If such a creature moves so as to touch the boundary, or tries to cross the boundary by any means, including teleportation and extradimensional travel, it must make a Charisma saving throw. On a failed save, it takes 10d8 radiant damage, is repelled to 5 feet outside the boundary, and can’t target anything inside the boundary with attacks, spells, or abilities until the spell ends. On a successful save, the creature takes half as much radiant damage and can cross the boundary. If the creature is a fiend that isn’t on its home plane, it is immediately destroyed (no saving throw) instead of taking damage.</p>
+			<p class="indent">Aberrations, elementals, fey, and undead that are within 50 feet of the seal (inside the boundary) have disadvantage on ability checks, attack rolls, and saving throws, and each such creature takes 2d8 radiant damage at the start of its turn.</p>
+			<p class="indent">Creatures other than aberrations, elementals, fey, fiends, and undead can’t be charmed or frightened while within 50 feet of the seal.</p>
 			<p class="indent">The seal has AC 18, 50 hit points, resistance to bludgeoning, piercing, and slashing damage, and immunity to psychic and poison damage. Ranged attacks against the seal are made with disadvantage. If it is scribed on the surface of an object that is later destroyed (such as a wooden door), the seal is not damaged and remains in place, perhaps suspended in midair. The spell ends only if the seal is reduced to 0 hit points.</p>
 		</description>
 		<setters>
@@ -302,7 +302,7 @@
 	<element name="Shade" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SHADE">
 		<supports>Bard,Cleric,Sorcerer,Warlock,Wizard</supports>
 		<description>
-			<p>You create a magical screen across your eyes. While the screen remains, you are immune to blindness caused by visible effects, such as color spray. The spell doesn’t alleviate blindness that’s already been inflicted on you. If you normally suffer penalties on attacks or ability checks while in sunlight, those penalties don’t apply while you’re under the effect of this spell. </p>
+			<p>You create a magical screen across your eyes. While the screen remains, you are immune to blindness caused by visible effects, such as color spray. The spell doesn’t alleviate blindness that’s already been inflicted on you. If you normally suffer penalties on attacks or ability checks while in sunlight, those penalties don’t apply while you’re under the effect of this spell.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the duration of the spell increases by 10 minutes for each slot level above 2nd.</p>
 		</description>
 		<setters>
@@ -325,7 +325,7 @@
 	<element name="Shadow Armor" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SHADOW_ARMOR">
 		<supports>Sorcerer,Warlock,Wizard</supports>
 		<description>
-			<p>You can siphon energy from the plane of shadow to protect yourself from an immediate threat. As a reaction, you pull shadows around yourself to distort reality. The attack against you is made with disadvantage, and you have resistance to radiant damage until the start of your next turn. </p>
+			<p>You can siphon energy from the plane of shadow to protect yourself from an immediate threat. As a reaction, you pull shadows around yourself to distort reality. The attack against you is made with disadvantage, and you have resistance to radiant damage until the start of your next turn.</p>
 		</description>
 		<setters>
 			<set name="keywords">shadow</set>
@@ -414,7 +414,7 @@
 	<element name="Shadow Hands" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SHADOW_HANDS">
 		<supports>Warlock,Wizard</supports>
 		<description>
-			<p>A freezing blast of shadow explodes out from you in a 10-foot cone. Any creature caught in the shadow takes 2d4 necrotic damage and is frightened; a successful Wisdom saving throw halves the damage and negates the frightened condition. </p>
+			<p>A freezing blast of shadow explodes out from you in a 10-foot cone. Any creature caught in the shadow takes 2d4 necrotic damage and is frightened; a successful Wisdom saving throw halves the damage and negates the frightened condition.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the damage dealt by the attack increases by 2d4 for each slot level above 1st.</p>
 		</description>
 		<setters>
@@ -460,7 +460,7 @@
 	<element name="Shadow Monsters" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SHADOW_MONSTERS">
 		<supports>Sorcerer,Warlock,Wizard</supports>
 		<description>
-			<p>You choose up to two creatures within range. Each creature must make a Wisdom saving throw. On a failed save, the creature perceives its allies as hostile, shadowy monsters, and it must attack its nearest ally. An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. </p>
+			<p>You choose up to two creatures within range. Each creature must make a Wisdom saving throw. On a failed save, the creature perceives its allies as hostile, shadowy monsters, and it must attack its nearest ally. An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th.</p>
 		</description>
 		<setters>
@@ -528,9 +528,9 @@
 	<element name="Shadow Tendrils" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SHADOW_TENDRILS">
 		<supports>Sorcerer,Warlock,Wizard</supports>
 		<description>
-			<p>Writhing ribbons of quasi-real darkness extend from your hand. As an action, you can make a melee spell attack with the tendrils against any creature within range. On a hit, the target takes 2d8 cold damage and must succeed at a Dexterity saving throw or be restrained. </p>
-			<p class="indent">A creature that starts its turn restrained by the shadow tendrils takes the cold damage again. It can take an action to make a Dexterity check against your spell save DC to free itself. On your turn, as a bonus action, you can drag a creature restrained by the shadow tendrils up to 15 feet closer to you. </p>
-			<p class="indent">The tendrils have AC 13 and 12 hit points. They are immune to bludgeoning damage and to piercing and slashing damage from nonmagical weapons. They are vulnerable to radiant damage. If the tendrils are destroyed by damage but the spell is still in effect, you can re-form them on your turn as a bonus action. </p>
+			<p>Writhing ribbons of quasi-real darkness extend from your hand. As an action, you can make a melee spell attack with the tendrils against any creature within range. On a hit, the target takes 2d8 cold damage and must succeed at a Dexterity saving throw or be restrained.</p>
+			<p class="indent">A creature that starts its turn restrained by the shadow tendrils takes the cold damage again. It can take an action to make a Dexterity check against your spell save DC to free itself. On your turn, as a bonus action, you can drag a creature restrained by the shadow tendrils up to 15 feet closer to you.</p>
+			<p class="indent">The tendrils have AC 13 and 12 hit points. They are immune to bludgeoning damage and to piercing and slashing damage from nonmagical weapons. They are vulnerable to radiant damage. If the tendrils are destroyed by damage but the spell is still in effect, you can re-form them on your turn as a bonus action.</p>
 		</description>
 		<setters>
 			<set name="keywords">shadow</set>
@@ -575,9 +575,9 @@
 	<element name="Shadows Brought to Light" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SHADOWS_BROUGHT_TO_LIGHT">
 		<supports>Bard,Cleric,Paladin,Warlock,Wizard</supports>
 		<description>
-			<p>If a creature you designate within range fails a Charisma saving throw, you cause the target’s shadow to come to life and reveal one of the creature’s most scandalous secrets: some fact that the target would not want widely known (GM’s choice). When casting the spell, you choose whether everyone present will hear the secret, in which case the shadow speaks loudly in a twisted version of the target’s voice, or if the secret is whispered only to you. The shadow speaks in the target’s native language. </p>
-			<p class="indent">If the target does not have a scandalous secret or does not have a spoken language, the spell fails as if the creature’s saving throw had succeeded. </p>
-			<p class="indent">If the secret was spoken aloud, the target takes a −2 penalty to Charisma checks involving anyone who was present when it was revealed. This penalty lasts until you finish a long rest. </p>
+			<p>If a creature you designate within range fails a Charisma saving throw, you cause the target’s shadow to come to life and reveal one of the creature’s most scandalous secrets: some fact that the target would not want widely known (GM’s choice). When casting the spell, you choose whether everyone present will hear the secret, in which case the shadow speaks loudly in a twisted version of the target’s voice, or if the secret is whispered only to you. The shadow speaks in the target’s native language.</p>
+			<p class="indent">If the target does not have a scandalous secret or does not have a spoken language, the spell fails as if the creature’s saving throw had succeeded.</p>
+			<p class="indent">If the secret was spoken aloud, the target takes a −2 penalty to Charisma checks involving anyone who was present when it was revealed. This penalty lasts until you finish a long rest.</p>
 			<p class="indent"><b><i>Ritual Focus.</i></b> If you expend your ritual focus, the target has disadvantage on Charisma checks instead of taking the −2 penalty. Also, once you've expended your ritual focus this mental energy has been expended, a caster’s ritual focus can’t be used again until he or she finishes a short or long rest.</p>
 		</description>
 		<setters>
@@ -600,9 +600,9 @@
 	<element name="Shadowy Retribution" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SHADOWY_RETRIBUTION">
 		<supports>Cleric,Sorcerer,Warlock,Wizard</supports>
 		<description>
-			<p>You fill a small silver cup with your own blood (taking 1d4 piercing damage) while chanting vile curses in the dark. Once the chant is completed, you consume the blood and swear an oath of vengeance against any who harm you. </p>
-			<p class="indent">If you are reduced to 0 hit points, your oath is invoked; a shadow materializes within 5 feet of you. The shadow attacks the creature that reduced you to 0 hit points, ignoring all other targets, until it or the target is slain, at which point the shadow dissipates into nothing. </p>
-			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, an additional shadow is conjured for each slot level above 4th. </p>
+			<p>You fill a small silver cup with your own blood (taking 1d4 piercing damage) while chanting vile curses in the dark. Once the chant is completed, you consume the blood and swear an oath of vengeance against any who harm you.</p>
+			<p class="indent">If you are reduced to 0 hit points, your oath is invoked; a shadow materializes within 5 feet of you. The shadow attacks the creature that reduced you to 0 hit points, ignoring all other targets, until it or the target is slain, at which point the shadow dissipates into nothing.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, an additional shadow is conjured for each slot level above 4th.</p>
 			<p class="indent"><b><i>Ritual Focus.</i></b> If you expend your ritual focus, the spell summons a banshee instead of a shadow. If you also use a higher-level spell slot, additional undead are still shadows. Also, once you've expended your ritual focus this mental energy has been expended, a caster’s ritual focus can’t be used again until he or she finishes a short or long rest.</p>
 		</description>
 		<setters>
@@ -625,7 +625,7 @@
 	<element name="Sheen of Ice" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SHEEN_OF_ICE">
 		<supports>Sorcerer,Warlock,Wizard</supports>
 		<description>
-			<p>A small icy globe shoots from your finger to a point within range and then explodes in a spray of ice. Each creature within 20 feet of that point must make a successful Dexterity saving throw or become coated in ice for 1 minute. Ice-coated creatures move at half speed. An invisible creature becomes outlined by the ice so that it loses the benefits of invisibility while the ice remains. The spell ends for a specific creature if that creature takes 5 or more fire damage. </p>
+			<p>A small icy globe shoots from your finger to a point within range and then explodes in a spray of ice. Each creature within 20 feet of that point must make a successful Dexterity saving throw or become coated in ice for 1 minute. Ice-coated creatures move at half speed. An invisible creature becomes outlined by the ice so that it loses the benefits of invisibility while the ice remains. The spell ends for a specific creature if that creature takes 5 or more fire damage.</p>
 		</description>
 		<setters>
 			<set name="keywords">winter</set>
@@ -691,7 +691,7 @@
 	<element name="Shiver" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SHIVER">
 		<supports>Cleric,Druid,Sorcerer,Wizard</supports>
 		<description>
-			<p>You fill a humanoid creature with such cold that its teeth begin to chatter and its body shakes uncontrollably. Roll 5d8; the total is the maximum hit points of a creature this spell can affect. The affected creature must succeed on a Constitution saving throw, or it cannot cast a spell or load a missile weapon until the end of your next turn. Once a creature has been affected by this spell, it is immune to further castings of this spell for 24 hours. </p>
+			<p>You fill a humanoid creature with such cold that its teeth begin to chatter and its body shakes uncontrollably. Roll 5d8; the total is the maximum hit points of a creature this spell can affect. The affected creature must succeed on a Constitution saving throw, or it cannot cast a spell or load a missile weapon until the end of your next turn. Once a creature has been affected by this spell, it is immune to further castings of this spell for 24 hours.</p>
 			<p class="indent">The maximum hit points you can affect increases by 4d8 when you reach 5th level (9d8), 11th level (13d8), and 17th level (17d8).</p>
 		</description>
 		<setters>
@@ -789,9 +789,9 @@
 	<element name="Slither" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SLITHER">
 		<supports>Wizard</supports>
 		<description>
-			<p>You momentarily become a shadow (a humanoid-shaped absence of light, not the undead creature of that name). You can slide under a door, through a keyhole, or through any other tiny opening. All of your equipment is transformed with you, and you can move up to your full speed during the spell’s duration. While in this form, you have advantage on Dexterity (Stealth) checks made in darkness or dim light and you are immune to nonmagical bludgeoning, piercing, and slashing damage. You can dismiss this spell by using an action to do so. </p>
-			<p class="indent">If you return to your normal form while in a space too small for you (such as a mouse hole, sewer pipe, or the like), you take 4d6 force damage and are pushed to the nearest space within 50 feet big enough to hold you. If the distance is greater than 50 feet, you take an extra 1d6 force damage for every additional 10 feet traveled. </p>
-			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, you can target an additional willing creature that you touch for each slot level above 2nd. </p>
+			<p>You momentarily become a shadow (a humanoid-shaped absence of light, not the undead creature of that name). You can slide under a door, through a keyhole, or through any other tiny opening. All of your equipment is transformed with you, and you can move up to your full speed during the spell’s duration. While in this form, you have advantage on Dexterity (Stealth) checks made in darkness or dim light and you are immune to nonmagical bludgeoning, piercing, and slashing damage. You can dismiss this spell by using an action to do so.</p>
+			<p class="indent">If you return to your normal form while in a space too small for you (such as a mouse hole, sewer pipe, or the like), you take 4d6 force damage and are pushed to the nearest space within 50 feet big enough to hold you. If the distance is greater than 50 feet, you take an extra 1d6 force damage for every additional 10 feet traveled.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, you can target an additional willing creature that you touch for each slot level above 2nd.</p>
 		</description>
 		<setters>
 			<set name="keywords">shadow</set>
@@ -844,7 +844,7 @@
 	<element name="Snow Fort" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SNOW_FORT">
 		<supports>Cleric,Sorcerer,Wizard</supports>
 		<description>
-			<p>This spell creates a simple “fort” from packed snow. The snow fort springs from the ground in an unoccupied space within range. It encircles a 10-foot area with sloping walls 4 feet high. The fort provides half cover (+2 AC) against ranged and melee attacks coming from outside the fort. The walls have AC 12, 30 hit points per side, are immune to cold, necrotic, poison, and psychic damage, and are vulnerable to fire damage. A damaged wall can be repaired by casting a spell that deals cold damage on it, on a point-for-point basis, up to a maximum of 30 points. </p>
+			<p>This spell creates a simple “fort” from packed snow. The snow fort springs from the ground in an unoccupied space within range. It encircles a 10-foot area with sloping walls 4 feet high. The fort provides half cover (+2 AC) against ranged and melee attacks coming from outside the fort. The walls have AC 12, 30 hit points per side, are immune to cold, necrotic, poison, and psychic damage, and are vulnerable to fire damage. A damaged wall can be repaired by casting a spell that deals cold damage on it, on a point-for-point basis, up to a maximum of 30 points.</p>
 			<p class="indent">The spell also creates a dozen snowballs that can be thrown (range 20/60) and that deal 1d4 bludgeoning damage plus 1d4 cold damage on a hit.</p>
 		</description>
 		<setters>
@@ -867,7 +867,7 @@
 	<element name="Snowy Coat" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SNOWY_COAT">
 		<supports>Druid,Ranger</supports>
 		<description>
-			<p>This spell makes a slight alteration to a target creature’s appearance that gives it advantage on Dexterity (Stealth) checks to hide in snowy terrain. In addition, the target can use a bonus action to make itself invisible in snowy terrain for 1 minute. The spell ends at the end of the minute or when the creature attacks or casts a spell. </p>
+			<p>This spell makes a slight alteration to a target creature’s appearance that gives it advantage on Dexterity (Stealth) checks to hide in snowy terrain. In addition, the target can use a bonus action to make itself invisible in snowy terrain for 1 minute. The spell ends at the end of the minute or when the creature attacks or casts a spell.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>
 		</description>
 		<setters>
@@ -890,8 +890,8 @@
 	<element name="Song of the Forest" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SONG_OF_THE_FOREST">
 		<supports>Druid,Ranger,Wizard</supports>
 		<description>
-			<p>You attune your senses to the natural world, so that you detect every sound that occurs within 60 feet: wind blowing through branches, falling leaves, grazing deer, trickling streams, and more. You can clearly picture the source of each sound in your mind. The spell gives you tremorsense out to a range of 10 feet. In addition, you have advantage on Wisdom (Perception) checks that rely on hearing. Creatures that make no noise or that are magically silent cannot be detected by this spell’s effect. </p>
-			<p class="indent">Song of the forest functions only in natural environments; it fails if cast underground, in a city, or in a building that isolates the caster from nature (GM’s discretion). </p>
+			<p>You attune your senses to the natural world, so that you detect every sound that occurs within 60 feet: wind blowing through branches, falling leaves, grazing deer, trickling streams, and more. You can clearly picture the source of each sound in your mind. The spell gives you tremorsense out to a range of 10 feet. In addition, you have advantage on Wisdom (Perception) checks that rely on hearing. Creatures that make no noise or that are magically silent cannot be detected by this spell’s effect.</p>
+			<p class="indent">Song of the forest functions only in natural environments; it fails if cast underground, in a city, or in a building that isolates the caster from nature (GM’s discretion).</p>
 			<p class="indent"><b><i>Ritual Focus.</i></b> If you expend your ritual focus, the spell also gives you blindsight out to a range of 30 feet. Also, once you've expended your ritual focus this mental energy has been expended, a caster’s ritual focus can’t be used again until he or she finishes a short or long rest.</p>
 		</description>
 		<setters>
@@ -1003,7 +1003,7 @@
 	<element name="Spinning Axes" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SPINNING_AXES">
 		<supports>Sorcerer,Warlock,Wizard</supports>
 		<description>
-			<p>Spinning axes made of luminous force burst out from you to strike all creatures within 10 feet of you. Each of those creatures takes 5d8 force damage, or half the damage with a successful Dexterity saving throw. Creatures damaged by this spell that aren’t undead or constructs begin bleeding. A bleeding creature takes 2d6 necrotic damage at the end of each of its turns for 1 minute. A creature can stop the bleeding for itself or another creature by using an action to make a successful Wisdom (Medicine) check against your spell save DC or by applying any amount of magical healing. </p>
+			<p>Spinning axes made of luminous force burst out from you to strike all creatures within 10 feet of you. Each of those creatures takes 5d8 force damage, or half the damage with a successful Dexterity saving throw. Creatures damaged by this spell that aren’t undead or constructs begin bleeding. A bleeding creature takes 2d6 necrotic damage at the end of each of its turns for 1 minute. A creature can stop the bleeding for itself or another creature by using an action to make a successful Wisdom (Medicine) check against your spell save DC or by applying any amount of magical healing.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.</p>
 		</description>
 		<setters>
@@ -1026,7 +1026,7 @@
 	<element name="Starburst" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_STARBURST">
 		<supports>Druid,Warlock,Wizard</supports>
 		<description>
-			<p>You cause a mote of starlight to appear and explode in a 5-foot cube you can see within range. If a creature is in the cube, it must succeed on a Charisma saving throw or take 1d8 radiant damage. </p>
+			<p>You cause a mote of starlight to appear and explode in a 5-foot cube you can see within range. If a creature is in the cube, it must succeed on a Charisma saving throw or take 1d8 radiant damage.</p>
 			<p class="indent">This spell’s damage increases to 2d8 when you reach 5th level, 3d8 when you reach 11th level, and 4d8 when you reach 17th level.</p>
 		</description>
 		<setters>
@@ -1072,8 +1072,8 @@
 	<element name="Star's Heart" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_STARS_HEART">
 		<supports>Sorcerer,Wizard</supports>
 		<description>
-			<p>This spell increases gravity tenfold in a 50-foot radius centered on you. Each creature in the area other than you drops whatever it’s holding, falls prone, becomes incapacitated, and can’t move. If a solid object (such as the ground) is encountered when a flying or levitating creature falls, the creature takes three times the normal falling damage. Any creature except you that enters the area or starts its turn there must make a successful Strength saving throw or fall prone and become incapacitated and unable to move. A creature that starts its turn prone and incapacitated makes a Strength saving throw. On a failed save, the creature takes 8d6 bludgeoning damage; on a successful save, it takes 4d6 bludgeoning damage, it’s no longer incapacitated, and it can move at half speed. </p>
-			<p class="indent">All ranged weapon attacks inside the area have a normal range of 5 feet and a maximum range of 10 feet. The same applies to spells that create missiles that have mass, such as flaming sphere. A creature under the influence of a freedom of movement spell or comparable magic has advantage on the Strength saving throws required by this spell, and its speed isn’t reduced once it recovers from being incapacitated. </p>
+			<p>This spell increases gravity tenfold in a 50-foot radius centered on you. Each creature in the area other than you drops whatever it’s holding, falls prone, becomes incapacitated, and can’t move. If a solid object (such as the ground) is encountered when a flying or levitating creature falls, the creature takes three times the normal falling damage. Any creature except you that enters the area or starts its turn there must make a successful Strength saving throw or fall prone and become incapacitated and unable to move. A creature that starts its turn prone and incapacitated makes a Strength saving throw. On a failed save, the creature takes 8d6 bludgeoning damage; on a successful save, it takes 4d6 bludgeoning damage, it’s no longer incapacitated, and it can move at half speed.</p>
+			<p class="indent">All ranged weapon attacks inside the area have a normal range of 5 feet and a maximum range of 10 feet. The same applies to spells that create missiles that have mass, such as flaming sphere. A creature under the influence of a freedom of movement spell or comparable magic has advantage on the Strength saving throws required by this spell, and its speed isn’t reduced once it recovers from being incapacitated.</p>
 		</description>
 		<setters>
 			<set name="keywords">illumination</set>
@@ -1095,7 +1095,7 @@
 	<element name="Steal Warmth" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_STEAL_WARMTH">
 		<supports>Sorcerer,Warlock,Wizard</supports>
 		<description>
-			<p>When you cast steal warmth after taking cold damage, you select a living creature within 5 feet of you. That creature takes the cold damage instead, or half the damage with a successful Constitution saving throw. You regain hit points equal to the amount of cold damage taken by the target. </p>
+			<p>When you cast steal warmth after taking cold damage, you select a living creature within 5 feet of you. That creature takes the cold damage instead, or half the damage with a successful Constitution saving throw. You regain hit points equal to the amount of cold damage taken by the target.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, the distance to the target you can affect with this spell increases by 5 feet for each slot level above 3rd.</p>
 		</description>
 		<setters>
@@ -1158,6 +1158,29 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
+
+<!-- STRENGTH OF AN OX  -->
+	<element name="Strength of an Ox" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_STRENGTH_OF_AN_OX">
+		<supports>Cleric,Paladin,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>You touch a creature and give it the capacity to carry, push, drag, or lift weight as if it were one size category larger for the duration of the spell. The target is also not subject to the penalties given in the variant rules for encumbrance. Furthermore, the subject can carry a load that would normally be unwieldy, such as a large log, a rowboat, or an oxcart.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b>  When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A 1 pound weight</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element> 
 
 <!-- SUMMON AVATAR  -->
 	<element name="Summon Avatar" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SUMMON_AVATAR">
@@ -1244,7 +1267,7 @@
 	<element name="Surge Dampener" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SURGE_DAMPENER">
 		<supports>Bard,Wizard</supports>
 		<description>
-			<p>Using your strength of will, you cause one creature other than yourself that you touch to become so firmly entrenched within reality that it is protected from the effects of a chaos magic surge. The protected creature can make a DC 13 Charisma saving throw to negate the effect of a chaos magic surge that does not normally allow a saving throw, or it gains advantage on a saving throw that is normally allowed. Once the protected creature makes a successful saving throw allowed by surge dampener, the spell ends. </p>
+			<p>Using your strength of will, you cause one creature other than yourself that you touch to become so firmly entrenched within reality that it is protected from the effects of a chaos magic surge. The protected creature can make a DC 13 Charisma saving throw to negate the effect of a chaos magic surge that does not normally allow a saving throw, or it gains advantage on a saving throw that is normally allowed. Once the protected creature makes a successful saving throw allowed by surge dampener, the spell ends.</p>
 		</description>
 		<setters>
 			<set name="keywords">chaos</set>

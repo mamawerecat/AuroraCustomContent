@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Darkness Domain</name>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="cleric-darkness.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-darkness.xml" />
         </update>
     </info>
@@ -11,15 +11,15 @@
         <supports>Divine Domain</supports>
         <description>
             <p>Darkness enshrouds our private affairs and shelters our secrets. The shadows might protect the hunted from the hunter or conceal danger. Emissaries of the gods who claim dominion over the darkness provide protection for those in need or aid those who hunt in the night, if they are not themselves the hunters.</p>
-			<h5 class="caption">DARKNESS DOMAIN SPELLS </h5>
+			<h5 class="caption">DARKNESS DOMAIN SPELLS</h5>
 			<table>
 				<thead>
 					<tr><td>Cleric Level</td><td>Spells</td></tr>
 				</thead>
 				<tr><td>1st</td><td><em>shadow armor, sleep</em></td></tr>
-				<tr><td>3rd</td><td><em>darkness, dark path*</em></td></tr>
+				<tr><td>3rd</td><td><em>darkness, dark path</em></td></tr>
 				<tr><td>5th</td><td><em>legion, nondetection</em></td></tr>
-				<tr><td>7th</td><td><em>phantasmal killer, shadow monsters*</em></td></tr>
+				<tr><td>7th</td><td><em>phantasmal killer, shadow monsters</em></td></tr>
 				<tr><td>9th</td><td><em>dark dementing, mislead</em></td></tr>
 			</table>
             <div element="ID_KBP_DM5E_DARKNESS_DOMAIN_ARCHETYPE_FEATURE_CREATURE_OF_DARKNESS" />
@@ -63,21 +63,21 @@
     </element>
  
 <!-- CHANNEL DIVINITY: SHADOWSIGHT  -->
-    <element name="Shadowsight" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_DARKNESS_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_SHADOWSIGHT">
+    <element name="Channel Divinity: Shadowsight" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_DARKNESS_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_SHADOWSIGHT">
         <description>
             <p>Starting at 2nd level, you can use your Channel Divinity to gain darkvision out to a range of 60 feet for 1 hour. If you already have darkvision, using your Channel Divinity in this way allows you to see in magical darkness to a distance of 30 feet as if it were dim light.</p>
         </description>
-        <sheet usage="Channel Divinity">
+        <sheet alt="Shadowsight" usage="Channel Divinity">
             <description>You gain darkvision out to a range of 60 feet for 1 hour. If you already have darkvision, using your Channel Divinity in this way allows you to see in magical darkness to a distance of 30 feet as if it were dim light.</description>
         </sheet>
     </element>
  
 <!-- CHANNEL DIVINITY: SHADOW MELD  -->
-    <element name="Shadow Meld" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_DARKNESS_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_SHADOW_MELD">
+    <element name="Channel Divinity: Shadow Meld" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_DARKNESS_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_SHADOW_MELD">
         <description>
             <p>Beginning at 6th level, you can use your Channel Divinity to merge your current location with the version of it that exists on the plane of shadow. The affected area is a sphere with a 60-foot radius centered on you. Within that area, bright light becomes dim light, dim light becomes darkness, and darkness becomes equivalent to magical darkness. The temperature plummets; all creatures other than you in the darkened sphere at the end of their turns must make a successful Constitution saving throw or take 1d8 cold damage. The sphere lasts for 1 minute or until you dismiss it as a bonus action. There’s a chance, if the GM allows, that 2d4 shadows might step through into your world when the effect ends. Such creatures might or might not be hostile.</p>
         </description>
-        <sheet usage="Channel Divinity">
+        <sheet alt="Shadow Meld" usage="Channel Divinity">
             <description>You merge your current location with the version of it that exists on the plane of shadow. The affected area is a sphere with a 60-foot radius centered on you. Within that area, bright light becomes dim light, dim light becomes darkness, and darkness becomes equivalent to magical darkness. The temperature plummets; all creatures other than you in the darkened sphere at the end of their turns must make a successful Constitution saving throw or take 1d8 cold damage. The sphere lasts for 1 minute or until you dismiss it as a bonus action. There’s a chance, if the GM allows, that 2d4 shadows might step through into your world when the effect ends. Such creatures might or might not be hostile.</description>
         </sheet>
     </element>

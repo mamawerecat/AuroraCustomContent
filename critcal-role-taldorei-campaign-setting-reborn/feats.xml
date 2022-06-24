@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Tal'Dorei Feats</name>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="feats.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/critcal-role-taldorei-campaign-setting-reborn/feats.xml" />
         </update>
     </info>
@@ -95,7 +95,7 @@
 <!-- Thrown Arms Master -->
     <element name="Thrown Arms Master" type="Feat" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_FEAT_THROWN_ARMS_MASTER">
         <description>
-            <p>You’ve honed your ability to lob weaponry into the fray, including weapons not meant for ranged combat. You gain the following benefits:></p>
+            <p>You’ve honed your ability to lob weaponry into the fray, including weapons not meant for ranged combat. You gain the following benefits:</p>
             <ul>
                 <li>Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>
                 <li>Simple and martial melee weapons without the thrown property have the thrown property for you. One-handed weapons have a normal range of 20 feet and a long range of 60 feet, while two-handed weapons have a normal range of 15 feet and a long range of 30 feet.</li>

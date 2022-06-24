@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - E</name>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="e-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/e-spells.xml" />
         </update>
     </info>
@@ -62,7 +62,7 @@
 		<supports>Druid,Ranger,Sorcerer,Wizard</supports>
 		<description>
 			<p>The target of ths spell must be a creature that has horns, or the spell fails. Elemental horns causes the touched creature’s horns to crackle with elemental energy. Select one of the following energy types when casting this spell: acid, cold, fire, lightning, or radiant. The creature’s gore attack deals 3d6 damage of the chosen type in addition to any other damage the attack normally deals.</p>
-			<p class="indent">Although commonly seen among tieflings and minotaurs, this spell is rarely employed by other races. </p>
+			<p class="indent">Although commonly seen among tieflings and minotaurs, this spell is rarely employed by other races.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 2d6 for each slot level above 2nd.</p>
 		</description>
 		<setters>
@@ -85,7 +85,7 @@
 	<element name="Elemental Twist" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ELEMENTAL _TWIST">
 		<supports>Sorcerer,Wizard</supports>
 		<description>
-			<p>During this spell’s duration, reality shifts around you whenever you cast a spell that deals acid, cold, fire, lightning, poison, or thunder damage. Assign each damage type a number and roll a d6 to determine the type of damage this casting of the spell deals. In addition, the spell’s damage increases by 1d6. All other properties or effects of the spell are unchanged. </p>
+			<p>During this spell’s duration, reality shifts around you whenever you cast a spell that deals acid, cold, fire, lightning, poison, or thunder damage. Assign each damage type a number and roll a d6 to determine the type of damage this casting of the spell deals. In addition, the spell’s damage increases by 1d6. All other properties or effects of the spell are unchanged.</p>
 		</description>
 		<setters>
 			<set name="keywords">chaos</set>
@@ -132,7 +132,7 @@
 	<element name="Enchant Ring" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ENCHANT_RING">
 		<supports>Sorcerer,Wizard</supports>
 		<description>
-			<p>You enchant a ring you touch that isn’t being worn or carried. The next creature that willingly wears the ring becomes charmed by you for 1 week or until it is harmed by you or one of your allies. If the creature dons the ring while directly threatened by you or one of your allies, the spell fails. </p>
+			<p>You enchant a ring you touch that isn’t being worn or carried. The next creature that willingly wears the ring becomes charmed by you for 1 week or until it is harmed by you or one of your allies. If the creature dons the ring while directly threatened by you or one of your allies, the spell fails.</p>
 			<p class="indent">The charmed creature regards you as a friend. When the spell ends, it doesn’t know it was charmed by you, but it does realize that its attitude toward you has changed (possibly greatly) in a short time. How the creature reacts to you and regards you in the future is up to the GM.</p>
 		</description>
 		<setters>
@@ -155,9 +155,9 @@
 	<element name="Encroaching Shadows" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ENCROACHING_SHADOWS">
 		<supports>Cleric,Sorcerer,Wizard</supports>
 		<description>
-			<p>You cause menacing shadows to invade an area 200 feet on a side and 50 feet high, centered on a point within range. Illumination in the area drops one step (from bright light to dim, or from dim light to darkness). Any spell that creates light in the area that is cast using a lower-level spell slot than was used to cast encroaching shadows is dispelled, and a spell that creates light doesn’t function in the area if that spell is cast using a spell slot of 5th level or lower. Nonmagical effects can’t increase the level of illumination in the affected area. </p>
-			<p class="indent">A spell that creates darkness or shadow takes effect in the area as if the spell slot expended was one level higher than the spell slot actually used. </p>
-			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 7th level or higher, the effect lasts for an additional 12 hours for each slot level above 6th. </p>
+			<p>You cause menacing shadows to invade an area 200 feet on a side and 50 feet high, centered on a point within range. Illumination in the area drops one step (from bright light to dim, or from dim light to darkness). Any spell that creates light in the area that is cast using a lower-level spell slot than was used to cast encroaching shadows is dispelled, and a spell that creates light doesn’t function in the area if that spell is cast using a spell slot of 5th level or lower. Nonmagical effects can’t increase the level of illumination in the affected area.</p>
+			<p class="indent">A spell that creates darkness or shadow takes effect in the area as if the spell slot expended was one level higher than the spell slot actually used.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 7th level or higher, the effect lasts for an additional 12 hours for each slot level above 6th.</p>
 			<p class="indent"><b><i>Ritual Focus.</i></b> If you expend your ritual focus, the spell’s duration increases by 12 hours, and it cannot be dispelled by a spell that creates light, even if that spell is cast using a higher-level spell slot. Also, once you've expended your ritual focus this mental energy has been expended, a caster’s ritual focus can’t be used again until he or she finishes a short or long rest.</p>
 		</description>
 		<setters>
@@ -180,8 +180,8 @@
 	<element name="Enhance Greed" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ENHANCE_GREED">
 		<supports>Bard,Cleric,Sorcerer,Warlock,Wizard</supports>
 		<description>
-			<p>You detect precious metals, gems, and jewelry within 60 feet. You do not discern their exact location, only their presence and direction. Their exact location is revealed if you are within 10 feet of the spot. </p>
-			<p class="indent">Enhance greed penetrates barriers but is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of dirt or wood. </p>
+			<p>You detect precious metals, gems, and jewelry within 60 feet. You do not discern their exact location, only their presence and direction. Their exact location is revealed if you are within 10 feet of the spot.</p>
+			<p class="indent">Enhance greed penetrates barriers but is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of dirt or wood.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the duration of the spell increases by 1 minute, and another 10 feet can be added to its range, for each slot level above 2nd.</p>
 		</description>
 		<setters>
@@ -249,7 +249,7 @@
 	<element name="Evercold" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_EVERCOLD">
 		<supports>Cleric,Sorcerer,Warlock,Wizard</supports>
 		<description>
-			<p>You target a creature within the spell’s range, and that creature must make a successful Wisdom saving throw or take 1d6 cold damage. In addition, the target is cursed to feel as if it’s exposed to extreme cold. For the duration of evercold, the target must make a successful DC 10 Constitution saving throw at the end of each hour or gain one level of exhaustion. The target has advantage on the hourly saving throws if wearing suitable cold-weather clothing, but it has disadvantage on saving throws against other spells and magic that deal cold damage (regardless of its clothing) for the spell’s duration. </p>
+			<p>You target a creature within the spell’s range, and that creature must make a successful Wisdom saving throw or take 1d6 cold damage. In addition, the target is cursed to feel as if it’s exposed to extreme cold. For the duration of evercold, the target must make a successful DC 10 Constitution saving throw at the end of each hour or gain one level of exhaustion. The target has advantage on the hourly saving throws if wearing suitable cold-weather clothing, but it has disadvantage on saving throws against other spells and magic that deal cold damage (regardless of its clothing) for the spell’s duration.</p>
 			<p class="indent">The spell can be ended by its caster or by dispel magic or remove curse.</p>
 		</description>
 		<setters>
@@ -272,8 +272,8 @@
 	<element name="Exsanguinate" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_EXSANGUINATE">
 		<supports>Cleric,Warlock,Wizard</supports>
 		<description>
-			<p>You cause the body of a creature within range to become engorged with blood or ichor. The target must make a Constitution saving throw. On a successful save, it takes 2d6 bludgeoning damage. On a failed save, it takes 4d6 bludgeoning damage each round, it is incapacitated, and it cannot speak, as it vomits up torrents of blood or ichor. In addition, its hit point maximum is reduced by an amount equal to the damage taken. The target dies if this effect reduces its hit point maximum to 0. </p>
-			<p class="indent">At the end of each of its turns, a creature can make a Constitution saving throw, ending the effect on a success— except for the reduction of its hit point maximum, which lasts until the creature finishes a long rest. </p>
+			<p>You cause the body of a creature within range to become engorged with blood or ichor. The target must make a Constitution saving throw. On a successful save, it takes 2d6 bludgeoning damage. On a failed save, it takes 4d6 bludgeoning damage each round, it is incapacitated, and it cannot speak, as it vomits up torrents of blood or ichor. In addition, its hit point maximum is reduced by an amount equal to the damage taken. The target dies if this effect reduces its hit point maximum to 0.</p>
+			<p class="indent">At the end of each of its turns, a creature can make a Constitution saving throw, ending the effect on a success— except for the reduction of its hit point maximum, which lasts until the creature finishes a long rest.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b>When you cast this spell using a spell slot of 6th level or higher, you can target one additional creature for each slot level above 5th.</p>
 		</description>
 		<setters>
@@ -319,9 +319,9 @@
 	<element name="Extract Essence" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_EXTRACT_ESSENCE">
 		<supports>Bard,Druid,Warlock,Wizard</supports>
 		<description>
-			<p>You extract the goodness from food, pulling all the nutritional value out of three days’ worth of meals and concentrating it into a tablespoon of bland, flourlike powder. The flour can be mixed with liquid and drunk or baked into bread. When consumed, it still imparts all the nutritional value of the original food. </p>
-			<p class="indent">The original food appears unchanged, and though it’s still filling, it has no nutritional value. </p>
-			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, an additional three meals’ worth of food can be extracted for each slot level above 1st. </p>
+			<p>You extract the goodness from food, pulling all the nutritional value out of three days’ worth of meals and concentrating it into a tablespoon of bland, flourlike powder. The flour can be mixed with liquid and drunk or baked into bread. When consumed, it still imparts all the nutritional value of the original food.</p>
+			<p class="indent">The original food appears unchanged, and though it’s still filling, it has no nutritional value.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, an additional three meals’ worth of food can be extracted for each slot level above 1st.</p>
 			<p class="indent"><b><i>Ritual Focus.</i></b> If you expend your ritual focus, you can choose to have each day’s worth of meals take the form of a single slice of bread. Also, once you've expended your ritual focus this mental energy has been expended, a caster’s ritual focus can’t be used again until he or she finishes a short or long rest.</p>
 		</description>
 		<setters>

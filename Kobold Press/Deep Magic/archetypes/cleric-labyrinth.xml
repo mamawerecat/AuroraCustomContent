@@ -1,41 +1,113 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
     <info>
-        <name>Beer Domain</name>
-        <update version="0.0.1">
+        <name>Labyrinth Domain</name>
+        <update version="0.0.2">
             <file name="cleric-labyrinth.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-labyrinth.xml" />
         </update>
     </info>
     
+    <element name="Labyrinth Domain" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_LABYRINTH_DOMAIN">
+        <supports>Divine Domain</supports>
+        <description>
+            <p>The savage and cunning god of the minotaurs has few followers, but those who heed the call gain the ability to smash and confound their foes. The Labyrinth domain grants powers associated with the mazes that minotaurs love and with misleading enemies. The maze is your holy temple, and its winding corridors and deadly traps are the hallmarks of your faith.</p>
+            <h5 class="caption">LABYRINTH DOMAIN SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>alarm, expeditious retreat</em></td></tr>
+				<tr><td>3rd</td><td><em>by the light of the moon, pass without trace</em></td></tr>
+				<tr><td>5th</td><td><em>confound senses, nondetection</em></td></tr>
+				<tr><td>7th</td><td><em>dimension door, moon trap</em></td></tr>
+				<tr><td>9th</td><td><em>mislead, passwall</em></td></tr>
+			</table>
+            <div element="ID_KBP_DM5E_LABYRINTH_DOMAIN_ARCHETYPE_FEATURE_FIRST_PASSAGE" />
+            <div element="ID_KBP_DM5E_LABYRINTH_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_WISDOM_OF_THE_WINDING_WAY" />
+            <div element="ID_KBP_DM5E_LABYRINTH_DOMAIN_ARCHETYPE_FEATURE_BEFUDDLING_TOUCH" />
+            <div element="ID_KBP_DM5E_LABYRINTH_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" />
+            <div element="ID_KBP_DM5E_LABYRINTH_DOMAIN_ARCHETYPE_FEATURE_BANISH_TO_THE_MAZE" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_LABYRINTH_DOMAIN_ARCHETYPE_FEATURE_FIRST_PASSAGE" level="1" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_LABYRINTH_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_WISDOM_OF_THE_WINDING_WAY" level="2" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_LABYRINTH_DOMAIN_ARCHETYPE_FEATURE_BEFUDDLING_TOUCH" level="6" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_LABYRINTH_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" level="8" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_LABYRINTH_DOMAIN_ARCHETYPE_FEATURE_BANISH_TO_THE_MAZE" level="17" />
+
+            <grant type="Spell" id="ID_PHB_SPELL_ALARM" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_EXPEDITIOUS_RETREAT" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_KBP_DM5E_SPELL_BY_THE_LIGHT_OF_THE_MOON" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PASS_WITHOUT_TRACE" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_KBP_DM5E_SPELL_CONFOUND_SENSES" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_NONDETECTION" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DIMENSION_DOOR" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_KBP_DM5E_SPELL_MOON_TRAP" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MISLEAD" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PASSWALL" level="9" spellcasting="Cleric" prepared="true" />
+        </rules>
+    </element>
     
-<!-- LABYRINTH DOMAIN 
-The savage and cunning god of the minotaurs has few followers, but those who heed the call gain the ability to smash and confound their foes. The Labyrinth domain grants powers associated with the mazes that minotaurs love and with misleading enemies. The maze is your holy temple, and its winding corridors and deadly traps are the hallmarks of your faith. 
-LABYRINTH DOMAIN SPELLS 
+<!-- FIRST PASSAGE --> 
+    <element name="First Passage" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_LABYRINTH_DOMAIN_ARCHETYPE_FEATURE_FIRST_PASSAGE">
+        <description>
+            <p>When you choose this domain at 1st level, you gain proficiency in Survival. You also learn the Abyssal language.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+            <grant type="Language" id="ID_LANGUAGE_ABYSSAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+        </rules>
+    </element>
 
-CLERIC LEVEL 	SPELLS 
-1st 	alarm, expeditious retreat 
-3rd 	by the light of the moon*, pass without trace 
-5th 	confound senses*, nondetection 
-7th 	dimension door, moon trap* 
-9th 	mislead, passwall 
-* Described in this book 
+<!-- WISDOM OF THE WINDING WAY --> 
+    <element name="Channel Divinity: Wisdom of the Winding Way" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_LABYRINTH_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_WISDOM_OF_THE_WINDING_WAY">
+        <description>
+            <p>At 2nd level, you can use your Channel Divinity to gain advantage on Wisdom (Survival) checks for the purpose of tracking for 1 hour.</p>
+        </description>
+        <sheet alt="Wisdom of the Winding Way" usage="Channel Divinity">
+            <description>You can use your Channel Divinity to gain advantage on Wisdom (Survival) checks for the purpose of tracking for 1 hour.</description>
+        </sheet>
+    </element>
 
-FIRST PASSAGE 
-When you choose this domain at 1st level, you gain proficiency in Survival. You also learn the Abyssal language.
+<!-- BEFUDDLING TOUCH --> 
+    <element name="Befuddling Touch" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_LABYRINTH_DOMAIN_ARCHETYPE_FEATURE_BEFUDDLING_TOUCH">
+        <description>
+            <p>Beginning at 6th level, you can make a melee attack that causes a creature to become confused for 1 round. If your attack hits, you deal no damage, but the creature is confused (as the confusion spell) until the start of your next turn. You expend one use of this ability whether the attack hits or misses. You can use this ability a number of times per day equal to 3 + your Wisdom modifier, and you regain all expended uses when you finish a long rest. This ability has no effect on minotaurs or on creatures that have a challenge rating higher than your cleric level.</p>
+        </description>
+        <sheet usage="{{befuddlingtouch:uses}}/Long Rest">
+            <description>You make a melee attack that causes a creature to become confused for 1 round. If your attack hits, you deal no damage, but the creature is confused (as the confusion spell) until the start of your next turn. You expend one use of this ability whether the attack hits or misses. This ability has no effect on minotaurs or on creatures above CR {{level:cleric}}.</description>
+        </sheet>
+        <rules>
+            <stat name="befuddlingtouch:uses" value="3" />
+            <stat name="befuddlingtouch:uses" value="wisdom:modifier" />
+        </rules>
+    </element>
 
+<!-- DIVINE STRIKE --> 
+    <element name="Divine Strike" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_LABYRINTH_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE">
+        <description>
+            <p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+        </description>
+        <sheet>
+            <description level="8">Once on each of your turns, you can cause a weapon attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target on a hit.</description>
+            <description level="14">Once on each of your turns, you can cause a weapon attack to deal an extra 2d8 damage of the same type dealt by the weapon to the target on a hit.</description>
+        </sheet>
+    </element>
 
-WISDOM OF THE WINDING WAY 
-At 2nd level, you can use your Channel Divinity to gain advantage on Wisdom (Survival) checks for the purpose of tracking for 1 hour. 
-BEFUDDLING TOUCH 
-Beginning at 6th level, you can make a melee attack that causes a creature to become confused for 1 round. If your attack hits, you deal no damage, but the creature is confused (as the confusion spell) until the start of your next turn. You expend one use of this ability whether the attack hits or misses. You can use this ability a number of times per day equal to 3 + your Wisdom modifier, and you regain all expended uses when you finish a long rest. This ability has no effect on minotaurs or on creatures that have a challenge rating higher than your cleric level. 
-DIVINE STRIKE 
-At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to 2d8. 
-BANISH TO THE MAZE 
-At 17th level, you gain the power to banish one creature you can see within 60 feet to an extradimensional labyrinth, similar to the effect of the maze spell. The duration is a number of rounds equal to half your cleric level, unless you end it early by using a bonus action. The target resists the effect with a successful Wisdom saving throw; on a failed save, it is transported into the labyrinth. 
-The target that was sent to the maze can search for the exit. On its turn, it uses its action to make a DC 20 Intelligence check; if the check succeeds, the creature escapes from the labyrinth and returns to its previous location. 
-Once you use this feature, you can't use it again until you finish a long rest. 
-
--->
-
+<!-- BANISH TO THE MAZE --> 
+    <element name="Banish to the Maze" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_LABYRINTH_DOMAIN_ARCHETYPE_FEATURE_BANISH_TO_THE_MAZE">
+        <description>
+            <p>At 17th level, you gain the power to banish one creature you can see within 60 feet to an extradimensional labyrinth, similar to the effect of the maze spell. The duration is a number of rounds equal to half your cleric level, unless you end it early by using a bonus action. The target resists the effect with a successful Wisdom saving throw; on a failed save, it is transported into the labyrinth.</p>
+            <p class="indent">The target that was sent to the maze can search for the exit. On its turn, it uses its action to make a DC 20 Intelligence check; if the check succeeds, the creature escapes from the labyrinth and returns to its previous location.</p>
+            <p class="indent">Once you use this feature, you can't use it again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You banish one creature you can see within 60 feet to an extradimensional labyrinth (similar to the effect of the maze spell) for {{level:cleric:half}} rounds, unless you end it early by using a bonus action. The target resists the effect with a successful Wisdom saving throw (DC {{cleric:spellcasting:dc}}); on a failed save, it is transported into the labyrinth.
+            &#13; On its turn, it can use its action to make a DC 20 Intelligence check; if the check succeeds, the creature escapes from the labyrinth and returns to its previous location.
+            </description>
+        </sheet>
+    </element>
     
 </elements>

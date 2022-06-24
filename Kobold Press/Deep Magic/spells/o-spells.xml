@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - O</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="o-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/o-spells.xml" />
         </update>
     </info>
@@ -11,7 +11,7 @@
 	<element name="Orb of Light" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ORB_OF_LIGHT">
 		<supports>Warlock,Wizard</supports>
 		<description>
-			<p>An orb of light the size of your hand shoots from your fingertips toward a creature within range, which takes 3d8 radiant damage and is blinded for 1 round. A target that makes a successful Dexterity saving throw takes half the damage and is not blinded. </p>
+			<p>An orb of light the size of your hand shoots from your fingertips toward a creature within range, which takes 3d8 radiant damage and is blinded for 1 round. A target that makes a successful Dexterity saving throw takes half the damage and is not blinded.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.</p>
 		</description>
 		<setters>
@@ -34,8 +34,8 @@
 	<element name="Overwhelming Greed" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_OVERWHELMING_GREED">
 		<supports>Sorcerer,Warlock,Wizard</supports>
 		<description>
-			<p>You fill the target with a dragon’s greed for wealth. The target must succeed on a Wisdom saving throw or be overcome with greed, coveting any coins, jewelry, or art objects it can see that have a value of at least 1 gold piece, as well as jealously guarding any wealth it already owns. The target fixates on the most valuable-looking item or items, or the largest concentration of valuables in sight. It will not willingly let the wealth out of its sight. If the target sees an opportunity, it will take the valuables it has fixated on, gaining them by whatever means necessary. If doing so provokes a situation where it takes damage or is otherwise harmed, the affected creature can make another Wisdom saving throw to end the effect. If the creature fails the save, it will continue to try to acquire the wealth, fighting back if necessary. </p>
-			<p class="indent"><b><i>Ending the Effect.</i></b> If the affected creature ends its turn in an area where it cannot see any obviously valuable objects to covet, nor any creatures that might conceivably attempt to take its own property (a horse, for example, would not be considered such a creature), then it can make another Wisdom saving throw. A successful save ends the spell, and the creature recognizes its feelings of greed as magically induced. </p>
+			<p>You fill the target with a dragon’s greed for wealth. The target must succeed on a Wisdom saving throw or be overcome with greed, coveting any coins, jewelry, or art objects it can see that have a value of at least 1 gold piece, as well as jealously guarding any wealth it already owns. The target fixates on the most valuable-looking item or items, or the largest concentration of valuables in sight. It will not willingly let the wealth out of its sight. If the target sees an opportunity, it will take the valuables it has fixated on, gaining them by whatever means necessary. If doing so provokes a situation where it takes damage or is otherwise harmed, the affected creature can make another Wisdom saving throw to end the effect. If the creature fails the save, it will continue to try to acquire the wealth, fighting back if necessary.</p>
+			<p class="indent"><b><i>Ending the Effect.</i></b> If the affected creature ends its turn in an area where it cannot see any obviously valuable objects to covet, nor any creatures that might conceivably attempt to take its own property (a horse, for example, would not be considered such a creature), then it can make another Wisdom saving throw. A successful save ends the spell, and the creature recognizes its feelings of greed as magically induced.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, you can affect one additional creature for each slot level above 4th.</p>
 		</description>
 		<setters>

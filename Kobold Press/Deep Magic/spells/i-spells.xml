@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - I</name>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="i-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/i-spells.xml" />
         </update>
     </info>
@@ -11,7 +11,7 @@
 	<element name="Ice Burn" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ICE_BURN">
 		<supports>Druid,Sorcerer,Warlock,Wizard</supports>
 		<description>
-			<p>You instill deep cold into the body of a creature within range, damaging it and impairing joints and muscles. The target takes 3d10 cold damage and has disadvantage on all Dexterity checks and Dexterity saving throws until this damage is healed. </p>
+			<p>You instill deep cold into the body of a creature within range, damaging it and impairing joints and muscles. The target takes 3d10 cold damage and has disadvantage on all Dexterity checks and Dexterity saving throws until this damage is healed.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature within range for each slot level above 3rd. Each additional target must be within 30 feet of at least one other target.</p>
 		</description>
 		<setters>
@@ -34,9 +34,9 @@
 	<element name="Ice Fortress" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ICE_FORTRESS">
 		<supports>Cleric, Sorcerer, Wizard</supports>
 		<description>
-			<p>A gleaming fortress of ice springs from a square area of ground that you can see within range. It is a 10-foot cube (including floor and roof). The fortress can’t overlap any other structures, but any creatures in its space are harmlessly lifted up as the ice rises into position. The walls are made of ice (AC 13), have 120 hit points each, and are immune to cold, necrotic, poison, and psychic damage. Reducing a wall to 0 hit points destroys it and has a 50 percent chance to cause the roof to collapse. A damaged wall can be repaired by casting a spell that deals cold damage on it, on a point-for-point basis. </p>
-			<p class="indent">Each wall has two arrow slits. One wall also includes an ice door with an arcane lock. You designate at the time of the fort’s creation which creatures can enter the fortification. The door has AC 18 and 60 hit points, or it can be broken open with a successful DC 25 Strength (Athletics) check (DC 15 if the arcane lock is dispelled). </p>
-			<p class="indent">The fortress catches and reflects light, so that creatures outside the fortress who rely on sight have disadvantage on Perception checks and attack rolls made against those within the fortress if it’s in an area of bright sunlight. </p>
+			<p>A gleaming fortress of ice springs from a square area of ground that you can see within range. It is a 10-foot cube (including floor and roof). The fortress can’t overlap any other structures, but any creatures in its space are harmlessly lifted up as the ice rises into position. The walls are made of ice (AC 13), have 120 hit points each, and are immune to cold, necrotic, poison, and psychic damage. Reducing a wall to 0 hit points destroys it and has a 50 percent chance to cause the roof to collapse. A damaged wall can be repaired by casting a spell that deals cold damage on it, on a point-for-point basis.</p>
+			<p class="indent">Each wall has two arrow slits. One wall also includes an ice door with an arcane lock. You designate at the time of the fort’s creation which creatures can enter the fortification. The door has AC 18 and 60 hit points, or it can be broken open with a successful DC 25 Strength (Athletics) check (DC 15 if the arcane lock is dispelled).</p>
+			<p class="indent">The fortress catches and reflects light, so that creatures outside the fortress who rely on sight have disadvantage on Perception checks and attack rolls made against those within the fortress if it’s in an area of bright sunlight.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th level or higher, you can increase the length or width of the fortification by 5 feet for every slot level above 5th. You can make a different choice (width or length) for each slot level above 5th.</p>
 		</description>
 		<setters>
@@ -59,8 +59,8 @@
 	<element name="Ice Hammer" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ICE_HAMMER">
 		<supports>Cleric, Ranger</supports>
 		<description>
-			<p>When you cast ice hammer, a warhammer fashioned from ice appears in your hands. This weapon functions as a standard warhammer in all ways, and it deals an extra 1d10 cold damage on a hit. You can drop the warhammer or give it to another creature. </p>
-			<p class="indent">The warhammer melts and is destroyed when it or its user accumulates 20 or more fire damage, or when the spell ends. </p>
+			<p>When you cast ice hammer, a warhammer fashioned from ice appears in your hands. This weapon functions as a standard warhammer in all ways, and it deals an extra 1d10 cold damage on a hit. You can drop the warhammer or give it to another creature.</p>
+			<p class="indent">The warhammer melts and is destroyed when it or its user accumulates 20 or more fire damage, or when the spell ends.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, you can create one additional hammer for each slot level above 2nd. Alternatively, you can create half as many hammers (round down), but each is oversized (1d10 bludgeoning damage, or 1d12 if wielded with two hands, plus 2d8 cold damage). Medium or smaller creatures have disadvantage when using oversized weapons, even if they are proficient with them.</p>
 		</description>
 		<setters>
@@ -83,8 +83,8 @@
 	<element name="Icicle Daggers" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ICICLE_DAGGERS">
 		<supports>Sorcerer,Warlock,Wizard</supports>
 		<description>
-			<p>When you cast this spell, three icicles appear in your hand. Each icicle has the same properties as a dagger but deals an extra 1d4 cold damage on a hit. </p>
-			<p class="indent">The icicle daggers melt a few seconds after leaving your hand, making it impossible for other creatures to wield them. If the surrounding temperature is at or below freezing, the daggers last for 1 hour. They melt instantly if you take 10 or more fire damage. </p>
+			<p>When you cast this spell, three icicles appear in your hand. Each icicle has the same properties as a dagger but deals an extra 1d4 cold damage on a hit.</p>
+			<p class="indent">The icicle daggers melt a few seconds after leaving your hand, making it impossible for other creatures to wield them. If the surrounding temperature is at or below freezing, the daggers last for 1 hour. They melt instantly if you take 10 or more fire damage.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> If you cast this spell using a spell slot of 2nd level or higher, you can create two additional daggers for each slot level above 1st. If you cast this spell using a spell slot of 4th level or higher, daggers that leave your hand don’t melt until the start of your next turn.</p>
 		</description>
 		<setters>
@@ -129,7 +129,7 @@
 	<element name="Ill-Fated Word" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ILL_FATED_WORD">
 		<supports>Bard,Sorcerer,Word</supports>
 		<description>
-			<p>You call out a distracting epithet to a creature, worsening its chance to succeed at whatever it’s doing. Roll a d4 and subtract the number rolled from an attack roll, ability check, or saving throw that the target has just made; the target uses the lowered result to determine the outcome of its roll. </p>
+			<p>You call out a distracting epithet to a creature, worsening its chance to succeed at whatever it’s doing. Roll a d4 and subtract the number rolled from an attack roll, ability check, or saving throw that the target has just made; the target uses the lowered result to determine the outcome of its roll.</p>
 		</description>
 		<setters>
 			<set name="keywords">chaos</set>
@@ -152,8 +152,8 @@
 		<supports>Cleric,Druid,Sorcerer,Warlock,Wizard</supports>
 		<description>
 			<p>Ghostly spirits emerge from your body and whirl around you. Your body emits dim light in a 15-foot radius for the spell’s duration. Until the spell ends, you gain the following benefits: </p>
-			<p class="indent">	•You have immunity to necrotic damage and resistance to poison damage. </p>
-			<p class="indent">	•Creatures that miss on melee attacks against you become frightened of you until the end of their next turn. </p>
+			<p class="indent">	•You have immunity to necrotic damage and resistance to poison damage.</p>
+			<p class="indent">	•Creatures that miss on melee attacks against you become frightened of you until the end of their next turn.</p>
 			<p class="indent">	•You can use an action to direct the ghostly spirits to assail a creature you can see within 15 feet of you. The target must make a successful Constitution saving throw or take 2d10 necrotic damage and gain one level of exhaustion.</p>
 		</description>
 		<setters>
@@ -176,7 +176,7 @@
 	<element name="Innocuous Aspect" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_INNOCUOUS_ASPECT">
 		<supports>Sorcerer,Warlock,Wizard</supports>
 		<description>
-			<p>An area of false vision encompasses all creatures within 20 feet of you. You and each creature in the area that you choose to affect take on the appearance of a harmless creature or object, chosen by you. Each image is identical, and only appearance is affected. Sound, movement, or physical inspection can reveal the ruse. </p>
+			<p>An area of false vision encompasses all creatures within 20 feet of you. You and each creature in the area that you choose to affect take on the appearance of a harmless creature or object, chosen by you. Each image is identical, and only appearance is affected. Sound, movement, or physical inspection can reveal the ruse.</p>
 			<p class="indent">A creature that uses its action to study the image visually can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, that creature sees through the image.</p>
 		</description>
 		<setters>
@@ -194,5 +194,27 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>   
+
+<!-- INSIGHTFUL MANEUVER  -->
+	<element name="Insightful Maneuver" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_INSIGHTFUL_MANEUVER">
+		<supports>Cleric,Paladin,Ranger,Sorcerer,Warlock,Wizard</supports>
+		<description>
+			<p>With a flash of insight, you know how to take advantage of your foe’s vulnerabilities. Until the end of your turn, the target has vulnerability to one type of damage (your choice). Additionally, if the target has any other vulnerabilities, you learn them.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Divination</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Touch</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">component</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 </elements>

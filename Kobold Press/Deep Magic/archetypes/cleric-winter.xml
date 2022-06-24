@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
     <info>
-        <name>Beer Domain</name>
+        <name>Winter Domain</name>
         <update version="0.0.1">
             <file name="cleric-winter.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-winter.xml" />
         </update>
