@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+    <info>
+        <name>Mountain Domain</name>
+        <update version="0.0.2">
+            <file name="cleric-mountain.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-mountain.xml" />
+        </update>
+    </info>
 
 	<element name="Mountain Domain" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_MOUNTAIN_DOMAIN">
         <supports>Divine Domain</supports>
@@ -52,7 +58,7 @@
         </description>
         <sheet display="false" />
         <rules>
-            <select type="Proficiency" name="Skill Proficiency (Mountain Domain)" supports="ID_PROFICIENCY_SKILL_ATHLETICS||ID_PROFICIENCY_SKILL_NATURE||ID_PROFICIENCY_SKILL_SURVIVAL" />
+            <select type="Proficiency" name="Skill Proficiency (Mountain Domain)" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_SURVIVAL" />
         </rules>
     </element>
 
@@ -63,7 +69,7 @@
         </description>
         <sheet display="false" />
         <rules>
-            <select type="Language" name="Language (Tongues of the Mountains)" supports="ID_LANGUAGE_DWARVISH||ID_LANGUAGE_GIANT" />
+            <select type="Language" name="Language (Tongues of the Mountains)" supports="ID_LANGUAGE_DWARVISH|ID_LANGUAGE_GIANT" />
         </rules>
     </element>
 
@@ -85,7 +91,7 @@
         <sheet display="false" />
         <rules>
             <grant type="Grants" id="ID_VISION_DARKVISION_30" requirements="!ID_VISION_DARKVISION" />
-            <grant type="Grants" id="ID_VISION_DARKVISION_30_MAGICAL" requirements="ID_VISION_DARKVISION" />
+            <grant type="Archetype Feature" id="ID_VISION_DARKVISION_30_MAGICAL" requirements="ID_VISION_DARKVISION" />
         </rules>
     </element>
 
