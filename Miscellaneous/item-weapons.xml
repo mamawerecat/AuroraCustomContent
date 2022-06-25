@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Misc Weapons</name>
+        <update version="0.0.1">
+            <file name="item-weapons.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Miscellaneous/item-weapons.xml" />
+        </update>
+    </info>
+    
+    <element name="Kiss of the Sea" type="Magic Item" source="Magwa’s Magic Item Compendium" id="ID_MMIC_MAGIC_ITEM_KISS_OF_THE_SEA">
+		<description>
+			<p>Appears to be a handle of a whip, with runes carved along the side.</p>
+			<p class="indent">As part of your action you speak a command word to make the whip of crystal clear water extend outward from the handle. The whip stays extended until you speak the command word again, or drop it.</p>
+			<p class="indent">The whip deals 1d4 slashing, and an additional 2d6 ice damage as the water crystallizes into ice.</p>
+			<p class="indent">A number of times equal to your proficiency bonus you can expend a blast of ice dealing 1d6 ice damage to all creaturees in a 10ft radius spehere (no save).</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="whip">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">Whip</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+    
+</elements>
