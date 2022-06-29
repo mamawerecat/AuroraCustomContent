@@ -2,34 +2,110 @@
 <elements>
     <info>
         <name>Travel Domain</name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="cleric-travel.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-travel.xml" />
         </update>
     </info>
     
-    
-<!-- 
-TRAVEL DOMAIN 
-Voyages across oceans, over mountain ranges, through steaming jungles, and from one world to the next all have an aspect of the sacred to them. The wisdom, knowledge, and prosperity gained through furthering one’s experience of the world also venerates the gods who made such places and those who watch over such journeys. An agent of one of these deities might be in some demand as a charm to help ensure safe travel, though the wise know that the gods often consider an easy journey to be less beneficial to the traveler’s spirit. 
-TRAVEL DOMAIN SPELLS 
-CLERIC LEVEL 	SPELLS 
-1st 	comprehend languages, longstrider 
-3rd 	find steed, pass without trace 
-5th 	haste, water walk 
-7th 	dimension door, freedom of movement 
-9th 	passwall, teleportation circle 
+    <element name="Travel Domain" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_TRAVEL_DOMAIN">
+        <supports>Divine Domain</supports>
+        <description>
+            <p>Voyages across oceans, over mountain ranges, through steaming jungles, and from one world to the next all have an aspect of the sacred to them. The wisdom, knowledge, and prosperity gained through furthering one’s experience of the world also venerates the gods who made such places and those who watch over such journeys. An agent of one of these deities might be in some demand as a charm to help ensure safe travel, though the wise know that the gods often consider an easy journey to be less beneficial to the traveler’s spirit.</p>
+            <h5 class="caption">TRAVEL DOMAIN SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>comprehend languages, longstrider</em></td></tr>
+				<tr><td>3rd</td><td><em>find steed, pass without trace</em></td></tr>
+				<tr><td>5th</td><td><em>haste, water walk</em></td></tr>
+				<tr><td>7th</td><td><em>dimension door, freedom of movement</em></td></tr>
+				<tr><td>9th</td><td><em>passwall, teleportation circle</em></td></tr>
+			</table>
+            <div element="ID_KBP_DM5E_TRAVEL_DOMAIN_ARCHETYPE_FEATURE_BORN_TO_THE_ROAD" />
+            <div element="ID_KBP_DM5E_TRAVEL_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_REINVIGORATE" />
+            <div element="ID_KBP_DM5E_TRAVEL_DOMAIN_ARCHETYPE_FEATURE_TRAILBLAZER" />
+            <div element="ID_KBP_DM5E_TRAVEL_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" />
+            <div element="ID_KBP_DM5E_TRAVEL_DOMAIN_ARCHETYPE_FEATURE_WORLD_TRAVELER" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_TRAVEL_DOMAIN_ARCHETYPE_FEATURE_BORN_TO_THE_ROAD" level="1" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_TRAVEL_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_REINVIGORATE" level="2" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_TRAVEL_DOMAIN_ARCHETYPE_FEATURE_TRAILBLAZER" level="6" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_TRAVEL_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" level="8" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_TRAVEL_DOMAIN_ARCHETYPE_FEATURE_WORLD_TRAVELER" level="17" />
 
-BORN TO THE ROAD 
-When you choose this domain at 1st level, you gain proficiency in one of the following skills of your choice: Insight, Nature, or Survival. In addition, you learn two standard languages of your choice and gain proficiency with cartographer’s tools. 
-CHANNEL DIVINITY: REINVIGORATE 
-Starting at 2nd level, you can use your Channel Divinity to remove one level of exhaustion from yourself or from someone else you touch. 
-TRAILBLAZER 
-Beginning at 6th level, if you are planning to travel any distance longer than 5 days’ travel and you have a map of the region to be traversed or firsthand knowledge of the area, you can find a shortcut. Using the alternate path can reduce your travel time by 50 percent. 
-DIVINE STRIKE 
-At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 lightning damage to the target. When you reach 14th level, the extra damage increases to 2d8. 
-WORLD TRAVELER 
-At 17th level, you ignore difficult terrain and you gain resistance to cold and fire damage.
- -->
+            <grant type="Spell" id="ID_PHB_SPELL_COMPREHEND_LANGUAGES" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_LONGSTRIDER" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIND_STEED" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PASS_WITHOUT_TRACE" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HASTE" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WATER_WALK" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DIMENSION_DOOR" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PASSWALL" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_TELEPORTATION_CIRCLE" level="9" spellcasting="Cleric" prepared="true" />
+        </rules>
+    </element>
 
-    
+<!-- BORN TO THE ROAD --> 
+    <element name="Born to the Road" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_TRAVEL_DOMAIN_ARCHETYPE_FEATURE_BORN_TO_THE_ROAD">
+        <description>
+            <p>When you choose this domain at 1st level, you gain proficiency in one of the following skills of your choice: Insight, Nature, or Survival. In addition, you learn two standard languages of your choice and gain proficiency with cartographer’s tools.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Language" name="Language (Born to the Road)" supports="Standard" number="2" />
+            <select type="Proficiency" name="Skill Proficiency (Born to the Road)" supports="ID_PROFICIENCY_SKILL_INSIGHT||ID_PROFICIENCY_SKILL_NATURE||ID_PROFICIENCY_SKILL_SURVIVAL" />
+
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS" />
+        </rules>
+    </element>
+
+<!-- CHANNEL DIVINITY: REINVIGORATE --> 
+    <element name="Channel Divinity: Reinvigorate" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_TRAVEL_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_REINVIGORATE">
+        <description>
+            <p>Starting at 2nd level, you can use your Channel Divinity to remove one level of exhaustion from yourself or from someone else you touch.</p>
+        </description>
+        <sheet alt="Reinvigorate" usage="Channel Divinity">
+            <description>You use your Channel Divinity to remove one level of exhaustion from yourself or from someone else you touch.</description>
+        </sheet>
+    </element>
+
+<!-- TRAILBLAZER --> 
+    <element name="Trailblazer" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_TRAVEL_DOMAIN_ARCHETYPE_FEATURE_TRAILBLAZER">
+        <description>
+            <p>Beginning at 6th level, if you are planning to travel any distance longer than 5 days’ travel and you have a map of the region to be traversed or firsthand knowledge of the area, you can find a shortcut. Using the alternate path can reduce your travel time by 50 percent.</p>
+        </description>
+        <sheet>
+            <description>If you are planning to travel any distance longer than 5 days’ travel and you have a map of the region to be traversed or firsthand knowledge of the area, you can find a shortcut. Using the alternate path can reduce your travel time by 50 percent.</description>
+        </sheet>
+    </element>
+
+<!-- DIVINE STRIKE -->
+    <element name="Divine Strike" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_TRAVEL_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE">
+        <description>
+            <p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 lightning damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+        </description>
+        <sheet>
+            <description level="8">Once on each of your turns, you can cause a weapon attack to deal an extra 1d8 lightning damage to the target on a hit.</description>
+            <description level="14">Once on each of your turns, you can cause a weapon attack to deal an extra 2d8 lightning damage to the target on a hit.</description>
+        </sheet>
+    </element>
+
+<!-- WORLD TRAVELER --> 
+    <element name="World Traveler" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_TRAVEL_DOMAIN_ARCHETYPE_FEATURE_WORLD_TRAVELER">
+        <description>
+            <p>At 17th level, you ignore difficult terrain and you gain resistance to cold and fire damage.</p>
+        </description>
+        <sheet>
+            <description>You ignore difficult terrain.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+        </rules>
+    </element>
+
 </elements>
