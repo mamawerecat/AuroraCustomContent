@@ -7,29 +7,107 @@
         </update>
     </info>
     
-    
-<!-- 
-SPEED DOMAIN 
-In speed and skill there is power, and you serve your faith by engaging in acts of incredible quickness and agility. Eventually you become able to control time itself. 
-SPEED DOMAIN SPELLS 
-CLERIC LEVEL 	SPELLS 
-1st 	expeditious retreat, feather fall 
-3rd 	blur, web 
-5th 	haste, slow 
-7th 	conjure minor elementals, dimension door 
-9th 	hold monster, teleportation circle 
+    <element name="Speed Domain" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_SPEED_DOMAIN">
+        <supports>Divine Domain</supports>
+        <description>
+            <p>In speed and skill there is power, and you serve your faith by engaging in acts of incredible quickness and agility. Eventually you become able to control time itself.</p>
+            <h5 class="caption">SPEED DOMAIN SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>divine favor, insightful maneuver</em></td></tr>
+				<tr><td>3rd</td><td><em>mirror image, see invisibility</em></td></tr>
+				<tr><td>5th</td><td><em>counterspell, slow</em></td></tr>
+				<tr><td>7th</td><td><em>arcane eye, compulsion</em></td></tr>
+				<tr><td>9th</td><td><em>contact other plane, modify memory</em></td></tr>
+			</table>
+            <div element="ID_KBP_DM5E_SPEED_DOMAIN_ARCHETYPE_FEATURE_CELERITY_IN_THOUGHT_AND_ACTION" />
+            <div element="ID_KBP_DM5E_SPEED_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_BURST_OF_SPEED" />
+            <div element="ID_KBP_DM5E_SPEED_DOMAIN_ARCHETYPE_FEATURE_QUICKNESS_OF_THE_GODS" />
+            <div element="ID_KBP_DM5E_SPEED_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" />
+            <div element="ID_KBP_DM5E_SPEED_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_TIME_STOP" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_SPEED_DOMAIN_ARCHETYPE_FEATURE_CELERITY_IN_THOUGHT_AND_ACTION" level="1" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_SPEED_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_BURST_OF_SPEED" level="2" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_SPEED_DOMAIN_ARCHETYPE_FEATURE_QUICKNESS_OF_THE_GODS" level="6" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_SPEED_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" level="8" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_SPEED_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_TIME_STOP" level="17" />
 
-CELERITY IN THOUGHT AND ACTION 
-When you choose this domain at 1st level, your speed increases by 5 feet, and you gain proficiency in Acrobatics and Insight. 
-CHANNEL DIVINITY: BURST OF SPEED 
-Beginning at 2nd level, you can use your Channel Divinity to grant yourself or another creature greater speed. When you use an action to touch a creature, the target adds 10 feet to its walking speed. It also gains the benefit of a bless spell, but only on attacks and saving throws that rely on Dexterity. This effect lasts for a number of rounds equal to 3 + your Wisdom modifier. 
-QUICKNESS OF THE GODS 
-At 6th level, your speed increases by another 5 feet. Also, as a reaction or a bonus action, you can increase your Dexterity modifier by +5 until the end of your current turn. This benefit can be used for all purposes except attack rolls. Once you use this feature, you can’t use it again until you finish a long rest. 
-DIVINE STRIKE 
-At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to 2d8. 
-CHANNEL DIVINITY: TIME STOP 
-At 17th level, you can use your Channel Divinity to stop the flow of time. The effect is identical to the time stop spell; you can take three turns in a row when the effect is triggered. You must finish a long rest before using this ability again.
- -->
+            <grant type="Spell" id="ID_PHB_SPELL_EXPEDITIOUS_RETREAT" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLUR" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WEB" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HASTE" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SLOW" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONJURE_MINOR_ELEMENTALS" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DIMENSION_DOOR" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_MONSTER" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_TELEPORTATION_CIRCLE" level="9" spellcasting="Cleric" prepared="true" />
+        </rules>
+    </element>
 
+<!-- CELERITY IN THOUGHT AND ACTION -->  
+    <element name="Celerity in Thought and Action" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_SPEED_DOMAIN_ARCHETYPE_FEATURE_CELERITY_IN_THOUGHT_AND_ACTION">
+        <description>
+            <p>When you choose this domain at 1st level, your speed increases by 5 feet, and you gain proficiency in Acrobatics and Insight.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+            <stat name="speed:misc" value="5" />
+        </rules>
+    </element>
+
+<!-- CHANNEL DIVINITY: BURST OF SPEED --> 
+    <element name="Channel Divinity: Burst of Speed" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_SPEED_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_BURST_OF_SPEED">
+        <description>
+            <p>Beginning at 2nd level, you can use your Channel Divinity to grant yourself or another creature greater speed. When you use an action to touch a creature, the target adds 10 feet to its walking speed. It also gains the benefit of a bless spell, but only on attacks and saving throws that rely on Dexterity. This effect lasts for a number of rounds equal to 3 + your Wisdom modifier.</p>
+        </description>
+        <sheet alt="Burst of Speed" usage="Channel Divinity" action="Action">
+            <description>When you use an action to touch a creature, the target adds 10 feet to its walking speed. It also gains the benefit of a bless spell, but only on attacks and saving throws that rely on Dexterity. This effect lasts for {{rounds:burstofspeed}} rounds.</description>
+        </sheet>
+        <rules>
+            <stat name="rounds:burstofspeed" value="3" />
+            <stat name="rounds:burstofspeed" value="wisdom:modifier" /> 
+        </rules>
+    </element>
+
+<!-- QUICKNESS OF THE GODS -->  
+    <element name="Quickness of the Gods" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_SPEED_DOMAIN_ARCHETYPE_FEATURE_QUICKNESS_OF_THE_GODS">
+        <description>
+            <p>At 6th level, your speed increases by another 5 feet. Also, as a reaction or a bonus action, you can increase your Dexterity modifier by +5 until the end of your current turn. This benefit can be used for all purposes except attack rolls. Once you use this feature, you can’t use it again until you finish a long rest.</p>
+        </description>
+        <sheet action="Reaction or Bonus Action" usage="1/Long Rest">
+            <description>As a reaction or a bonus action, you can increase your Dexterity modifier by +5 until the end of your current turn. This benefit can be used for all purposes except attack rolls.</description>
+        </sheet>
+        <rules>
+            <stat name="speed:misc" value="5" />
+        </rules>
+    </element>
+
+<!-- DIVINE STRIKE -->  
+    <element name="Divine Strike" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_SPEED_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE">
+        <description>
+            <p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+        </description>
+        <sheet>
+            <description level="8">Once on each of your turns, you can cause a weapon attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target on a hit.</description>
+            <description level="14">Once on each of your turns, you can cause a weapon attack to deal an extra 2d8 damage of the same type dealt by the weapon to the target on a hit.</description>
+        </sheet>
+    </element> 
+
+<!-- CHANNEL DIVINITY: TIME STOP -->  
+    <element name="Channel Divinity: Time Stop" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_SPEED_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_TIME_STOP">
+        <description>
+            <p>At 17th level, you can use your Channel Divinity to stop the flow of time. The effect is identical to the time stop spell; you can take three turns in a row when the effect is triggered. You must finish a long rest before using this ability again.</p>
+        </description>
+        <sheet alt="Time Stop" usage="Channel Divinity 1/Long Rest">
+            <description>You can use your Channel Divinity to stop the flow of time. The effect is identical to the time stop spell; you can take three turns in a row when the effect is triggered. You must finish a long rest before using this ability again.</description>
+        </sheet>
+    </element>
     
 </elements>

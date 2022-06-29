@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Beer Domain</name>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="cleric-beer.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-beer.xml" />
         </update>
     </info>
@@ -18,7 +18,7 @@
 					<tr><td>Cleric Level</td><td>Spells</td></tr>
 				</thead>
 				<tr><td>1st</td><td><em>comprehend languages, heroism</em></td></tr>
-				<tr><td>3rd</td><td><em>blur, bolstering brew*</em></td></tr>
+				<tr><td>3rd</td><td><em>blur, bolstering brew</em></td></tr>
 				<tr><td>5th</td><td><em>hypnotic pattern, mass healing word</em></td></tr>
 				<tr><td>7th</td><td><em>confusion, Otiluke’s resilient sphere</em></td></tr>
 				<tr><td>9th</td><td><em>dream, modify memory</em></td></tr>
