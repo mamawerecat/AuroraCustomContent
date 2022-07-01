@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - C</name>
-        <update version="0.0.7">
+        <update version="0.0.8">
             <file name="c-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/c-spells.xml" />
         </update>
     </info>
@@ -590,7 +590,7 @@
 
 <!-- CHRONAL LANCE --> 	
 	<element name="Chronal Lance" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_CHRONAL_LANCE">
-		<supports>Sorcerer,Wizard</supports>
+		<supports>Sorcerer,Wizard,Temporal</supports>
 		<description>
 			<p>You inflict the ravages of aging on up to three creatures within range, temporarily discomfiting them and making them appear elderly for a time. Each target must make a successful Wisdom saving throw, or its walking speed is halved (round up to the nearest 5-foot increment) and it has disadvantage on Dexterity checks (but not saving throws). An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>

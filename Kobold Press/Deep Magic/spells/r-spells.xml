@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - R</name>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="r-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/r-spells.xml" />
         </update>
     </info>
@@ -35,7 +35,7 @@
 
 <!-- RAVAGES OF TIME --> 
 	<element name="Ravages of Time" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_RAVAGES_OF_TIME">
-		<supports>Cleric,Sorcerer,Wizard</supports>
+		<supports>Cleric,Sorcerer,Wizard,Temporal</supports>
 		<description>
 			<p>You accelerate the aging of one creature within range, causing it to take on the state of a decrepit version of its type. The target suffers three levels of exhaustion that cannot be removed by normal means. A greater restoration spell partially reverses the effect of this spell, removing one level of exhaustion. Constructs and undead are unaffected by this spell, and creatures who live to great age without negative effects, such as dragons, are also unaffected.</p>
 		</description>
@@ -80,7 +80,7 @@
 	
 <!-- RESET --> 
 	<element name="Reset" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_RESET">
-		<supports>Bard,Cleric,Druid,Paladin,Wizard</supports>
+		<supports>Bard,Cleric,Druid,Paladin,Wizard,Temporal</supports>
 		<description>
 			<p>Choose up to four creatures within range. If a target is your ally, it can reroll initiative, keeping whichever of the two results it prefers. If a target is your enemy, it must make a successful Wisdom saving throw or reroll initiative, keeping whichever of the two results you prefer. Changes to the initiative order go into effect at the start of the next round.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, you can affect one additional creature for each slot level above 4th.</p>
@@ -126,7 +126,7 @@
 
 <!-- RIGHT THE STARS  -->
 	<element name="Right the Stars" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_RIGHT_THE_STARS">
-		<supports>Wizard</supports>
+		<supports>Wizard,Temporal</supports>
 		<description>
 			<p>You subtly warp the flow of space and time to enhance your conjurations with cosmic potency. Until the spell ends, the maximum duration of any conjuration spell you cast that requires concentration is doubled, any creature that you summon or create with a conjuration spell has 30 temporary hit points, and you have advantage on Charisma checks and Charisma saving throws.</p>
 		</description>

@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - S</name>
-        <update version="0.0.6">
+        <update version="0.0.7">
             <file name="s-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/s-spells.xml" />
         </update>
     </info>
@@ -102,7 +102,7 @@
 
 <!-- SCRY AMBUSH  -->
 	<element name="Scry Ambush" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SCRY_AMBUSH">
-		<supports>Bard,Cleric,Druid,Ranger,Sorcerer,Warlock,Wizard</supports>
+		<supports>Bard,Cleric,Druid,Ranger,Sorcerer,Warlock,Wizard,Temporal</supports>
 		<description>
 			<p>You foresee your foe’s strike a split second before it occurs. When you cast this spell successfully, you also designate a number of your allies that can see or hear you equal to your spellcasting ability modifier + your proficiency bonus. Those allies are also not surprised by the attack and can act normally in the first round of combat.</p>
 			<p class="indent">If you would be surprised, you must make a check using your spellcasting ability at the moment your reaction would be triggered. The check DC is equal to the current initiative count. On a failed check, you are surprised and can’t use your reaction to cast this spell until after your next turn. On a successful check, you can use your reaction to cast this spell immediately.</p>
@@ -222,7 +222,7 @@
 
 <!-- SEER’S REACTION  -->
 	<element name="Seer's Reaction" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_SEERS_REACTION">
-		<supports>Bard,Cleric,Druid,Ranger,Sorcerer,Wizard</supports>
+		<supports>Bard,Cleric,Druid,Ranger,Sorcerer,Wizard,Temporal</supports>
 		<description>
 			<p>Your foreknowledge allows you to act before others, because you knew what was going to happen. When you cast this spell, make a new initiative roll with a +5 bonus. If the result is higher than your current initiative, your place in the initiative order changes accordingly. If the result is also higher than the current place in the initiative order, you take your next turn immediately and then use the higher number starting in the next round.</p>
 			<p class="indent">Your foreknowledge allows you to act before others, because you knew what was going to happen. When you cast this spell, make a new initiative roll with a +5 bonus. If the result is higher than your current initiative, your place in the initiative order changes accordingly. If the result is also higher than the current place in the initiative order, you take your next turn immediately and then use the higher number starting in the next round.</p>

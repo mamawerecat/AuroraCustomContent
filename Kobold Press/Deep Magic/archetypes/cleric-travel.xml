@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Travel Domain</name>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="cleric-travel.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-travel.xml" />
         </update>
     </info>
@@ -57,7 +57,7 @@
         <sheet display="false" />
         <rules>
             <select type="Language" name="Language (Born to the Road)" supports="Standard" number="2" />
-            <select type="Proficiency" name="Skill Proficiency (Born to the Road)" supports="ID_PROFICIENCY_SKILL_INSIGHT||ID_PROFICIENCY_SKILL_NATURE||ID_PROFICIENCY_SKILL_SURVIVAL" />
+            <select type="Proficiency" name="Skill Proficiency (Born to the Road)" supports="ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_SURVIVAL" />
 
             <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS" />
         </rules>

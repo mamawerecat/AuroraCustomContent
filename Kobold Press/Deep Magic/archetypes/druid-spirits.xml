@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Circle of Spirits</name>
+        <update version="0.0.1">
+            <file name="druid-spirits.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/druid-spirits.xml" />
+        </update>
+    </info>
+
+    <element name="Circle of Spirits" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_DRUID_CIRCLE_OF_SPIRITS">
+		<supports>Druid Circle</supports>
+		<description>
+			<p>Some druids tend to more than the land. They also show concern for the health of the spirits of the land. Druids of the Circle of the Spirits build shrines in the wilderness where they commune with both these spirits and the souls of the departed.</p>
+			<div element="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_SPIRITS_CIRCLE_SPELLS" />
+			<div element="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_SPIRITS_SPIRIT_GUIDE" />
+			<div element="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_SPIRITS_SPIRIT_DANCE" />
+			<div element="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_SPIRITS_SAVIOR_SPIRITS" />
+			<div element="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_SPIRITS_SPIRIT_WALK" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_SPIRITS_CIRCLE_SPELLS" level="2" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_SPIRITS_SPIRIT_GUIDE" level="2" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_SPIRITS_SPIRIT_DANCE" level="2" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_SPIRITS_SAVIOR_SPIRITS" level="6" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_SPIRITS_SPIRIT_WALK" level="10" />
+		</rules>
+	</element>
+
+<!-- Circle Spells -->
+	<element name="Circle Spells" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_SPIRITS_CIRCLE_SPELLS">
+		<description>
+			<p><em>2nd-level Circle of Spirits feature</em></p>
+			<p>Your bond with the spirits of nature grants you knowledge of certain spells. At 3rd, 5th, 7th, and 9th levels, you gain access to the spells listed for those levels in the Circle of Spirits Spells table. </p>
+			<p class="indent">Once you gain access to a circle spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+			<h5 class="caption">Circle of Spirits Spells</h5>
+			<table>
+				<thead><tr><td>Druid Level</td><td>Spells</td></tr></thead>
+				<tr><td>3rd</td><td><em>augury, invisibility</em></td></tr>
+				<tr><td>5th</td><td><em>speak with dead, spirit guardians</em></td></tr>
+				<tr><td>7th</td><td><em>divination, hallucinatory terrain</em></td></tr>
+				<tr><td>9th</td><td><em>antilife shell, scrying</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>You gain access to specific spells as you level up.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_AUGURY" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_INVISIBILITY" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPIRIT_GUARDIANS" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DIVINATION" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HALLUCINATORY_TERRAIN" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ANTILIFE_SHELL" level="9" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SCRYING" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+ 
+ 
+<!-- SPIRIT GUIDE  -->
+	<element name="Spirit Guide" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_SPIRITS_SPIRIT_GUIDE">
+		<description>
+			<p>Starting at 2nd level, you gain the service of a minor spirit guide. You can cast find familiar as a ritual.</p>
+			<p class="indent">As long as you and your spirit guide (familiar) are within 100 feet of each other, the spirit guide can maintain concentration on a druid spell you cast. You must choose whether to do so yourself or make your spirit guide responsible for maintaining concentration at the moment the spell is cast, and that decision can’t be changed on a later turn. You can still have only one concentration spell in effect at a time; if you concentrate on a different spell or effect, the spirit guide’s concentration ends. You can still share your spirit guide’s senses and cast touch spells through the spirit guide normally while it’s maintaining concentration. The spirit guide makes Constitution saving throws to maintain concentration when it takes damage, not when you take damage.</p>
+		</description>
+		<sheet>
+			<description>As long as you and your spirit guide (familiar) are within 100 feet of each other, the spirit guide can maintain concentration on a druid spell you cast. You must choose whether to do so yourself or make your spirit guide responsible for maintaining concentration at the moment the spell is cast, and that decision can’t be changed on a later turn. You can still have only one concentration spell in effect at a time; if you concentrate on a different spell or effect, the spirit guide’s concentration ends. You can still share your spirit guide’s senses and cast touch spells through the spirit guide normally while it’s maintaining concentration. The spirit guide makes Constitution saving throws to maintain concentration when it takes damage, not when you take damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" />
+		</rules>
+	</element>
+
+<!-- SPIRIT DANCE --> 
+	<element name="Spirit Dance" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_SPIRITS_SPIRIT_DANCE">
+		<description>
+			<p>Starting at 6th level, as a bonus action you can engage in a dance to channel the power of the spirit world. If you cast a druid spell on your next turn, one target of the spell has disadvantage on its first saving throw against the spell. Once you use this feature, you can’t use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short Rest">
+			<description>As a bonus action you can engage in a dance to channel the power of the spirit world. If you cast a druid spell on your next turn, one target of the spell has disadvantage on its first saving throw against the spell. Once you use this feature, you can’t use it again until you finish a short or long rest.</description>
+		</sheet>
+	</element>
+
+<!-- SAVIOR SPIRITS --> 
+	<element name="Savior Spirits" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_SPIRITS_SAVIOR_SPIRITS">
+		<description>
+			<p>At 10th level, the spirits rush to your aid when you’re grievously wounded. When you are reduced to 0 hit points but not killed outright, you are reduced to 1 hit point instead. Once you use this feature, you can’t use it again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you are reduced to 0 hit points but not killed outright, you are reduced to 1 hit point instead.</description>
+		</sheet>
+	</element>
+	
+<!-- SPIRIT WALK --> 
+	<element name="Spirit Walk" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_SPIRITS_SPIRIT_WALK">
+		<description>
+			<p>When you reach 14th level, as an action you can dissolve your flesh into ectoplasm for up to 1 minute. For the duration:</p>
+			<p class="indent">•You gain a flying speed equal to your base walking speed.</p>
+			<p class="indent">•You have resistance to acid, cold, fire, lightning, thunder, and nonmagical bludgeoning, piercing, and slashing damage.</p>
+			<p class="indent">•You can’t be grappled, petrified, knocked prone, or restrained.</p>
+			<p class="indent">•You can move through creatures and solid objects as if they were difficult terrain, but you take 1d10 force damage if you end your turn inside an object.</p>
+			<p>Maintaining this feature requires concentration as if it were a spell. Once you use this feature, you can’t use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Short Rest">
+			<description>As an action you can dissolve your flesh into ectoplasm for up to 1 minute. Maintaining this feature requires concentration as if it were a spell. For the duration:
+			&#13;•You gain a flying speed equal to your base walking speed.
+			&#13;•You have resistance to acid, cold, fire, lightning, thunder, and nonmagical bludgeoning, piercing, and slashing damage.
+			&#13;•You can’t be grappled, petrified, knocked prone, or restrained.
+			&#13;•You can move through creatures and solid objects as if they were difficult terrain, but you take 1d10 force damage if you end your turn inside an object.
+			</description>
+		</sheet>
+	</element>
+    
+</elements>

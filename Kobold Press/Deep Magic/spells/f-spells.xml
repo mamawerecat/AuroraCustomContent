@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - F</name>
-        <update version="0.0.5">
+        <update version="0.0.6">
             <file name="f-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/f-spells.xml" />
         </update>
     </info>
@@ -75,7 +75,7 @@
 
 <!-- FLICKERING FATE --> 	
 	<element name="Flickering Fate" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_FLICKERING_FATE">
-		<supports>Wizard</supports>
+		<supports>Wizard,Temporal</supports>
 		<description>
 			<p>You or a creature that you touch can see a few seconds into the future. When the spell is cast, each other creature within 30 feet of the target must make a Wisdom saving throw. Those that fail must declare, in initiative order, what their next action will be. The target of the spell declares his or her action last, after hearing what all other creatures will do. Each creature that declared an action must follow its declaration as closely as possible when its turn comes. For the duration of the spell, the target has advantage on attack rolls, ability checks, and saving throws, and creatures that declared their actions have disadvantage on attack rolls against the target.</p>
 		</description>
@@ -179,7 +179,7 @@
 
 <!-- FORETELL DISTRACTION --> 	
 	<element name="Foretell Distraction" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_FORETELL_DISTRACTION">
-		<supports>Bard,Cleric,Ranger,Sorcerer,Warlock,Wizard</supports>
+		<supports>Bard,Cleric,Ranger,Sorcerer,Warlock,Wizard,Temporal</supports>
 		<description>
 			<p>Thanks to your foreknowledge, you know exactly when your foe will take his or her eyes off you. Casting this spell has the same effect as making a successful Dexterity (Stealth) check, provided cover or concealment is available within 10 feet of you. It doesn’t matter whether enemies can see you when you cast the spell; they glance away at just the right moment. You can move up to 10 feet as part of casting the spell, provided you’re able to move (not restrained or grappled or reduced to a speed of less than 10 feet for any other reason). This move doesn’t count as part of your normal movement. After the spell is cast, you must be in a position where you can remain hidden: a lightly obscured space, for example, or a space where you have total cover. Otherwise, enemies see you again immediately and you’re not hidden.</p>
 		</description>
