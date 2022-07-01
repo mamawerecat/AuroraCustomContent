@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Circle of Roses</name>
+        <update version="0.0.1">
+            <file name="druid-roses.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/druid-roses.xml" />
+        </update>
+    </info>
+    
+    <element name="Circle of Roses" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_DRUID_CIRCLE_OF_ROSES">
+		<supports>Druid Circle</supports>
+		<description>
+			<p>Druids of the Circle of Roses use the power of nature to influence the minds and hearts of those around them, alleviating sorrow, spreading terror, and ensnaring hearts in equal measure. They create sweet and bitter perfumes that transmit their power to any who inhale the scent.</p>
+			<div element="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_ROSES_CIRCLE_SPELLS" />
+			<div element="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_ROSES_BONUS_PROFICIENCY" />
+			<div element="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_ROSES_BITTERSWEET_PERFUME" />
+			<div element="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_ROSES_OVERPOWERING_REMEDY" />
+			<div element="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_ROSES_ROSES_THORNS" />
+			<div element="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_ROSES_LINGERING_PERFUME" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_ROSES_CIRCLE_SPELLS" level="2" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_ROSES_BONUS_PROFICIENCY" level="2" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_ROSES_BITTERSWEET_PERFUME" level="2" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_ROSES_OVERPOWERING_REMEDY" level="6" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_ROSES_ROSES_THORNS" level="10" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_ROSES_LINGERING_PERFUME" level="14" />
+		</rules>
+	</element>
+
+<!-- Circle Spells -->
+	<element name="Circle Spells" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_ROSES_CIRCLE_SPELLS">
+		<description>
+			<p><em>2nd-level Circle of Roses feature</em></p>
+			<p>Your bond with the ebb and flow of nature grants you knowledge of certain spells. At 2nd level, you learn the friends cantrip. At 3rd, 5th, 7th, and 9th levels, you gain access to the spells listed for those levels in the Circle of Roses Spells table.</p>
+			<p class="indent">Once you gain access to a circle spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+			<h5 class="caption">Circle of Roses Spells</h5>
+			<table>
+				<thead><tr><td>Druid Level</td><td>Spells</td></tr></thead>
+				<tr><td>3rd</td><td><em>calm emotions, suggestion</em></td></tr>
+				<tr><td>5th</td><td><em>hypnotic pattern, tongues</em></td></tr>
+				<tr><td>7th</td><td><em>confusion, phantasmal killer</em></td></tr>
+				<tr><td>9th</td><td><em>dominate person, geas</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>You gain access to specific spells as you level up.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FRIENDS" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CALM_EMOTIONS" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SUGGESTION" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HYPNOTIC_PATTERN" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_TONGUES" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONFUSION" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PHANTASMAL_KILLER" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" level="9" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GEAS" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+
+<!-- BONUS PROFICIENCY --> 
+    <element name="Bonus Proficiency" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_ROSES_BONUS_PROFICIENCY">
+        <description>
+            <p>When you choose this circle at 2nd level, you gain proficiency in Deception, Intimidation, or Persuasion.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Proficiency" name="Skill Proficiency (Circle of Roses)" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERCEPTION" />
+        </rules>
+    </element>
+
+<!-- BITTERSWEET PERFUME --> 
+    <element name="Bittersweet Perfume" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_ROSES_BITTERSWEET_PERFUME">
+        <description>
+            <p>Starting at 2nd level, you can expend one use of your Wild Shape as an action to create a floral perfume that manipulates the minds of those who breathe it. One creature of your choice within 10 feet of you must make a Charisma saving throw against your spell save DC. On each of your turns while the perfume lasts, you can use an action to choose a different creature within 10 feet of you to affect with your perfume.</p>
+            <p class="indent">On a failed save, the creature is charmed by you or frightened (your choice) for as long as it remains in the area of your perfume and for 1 minute after it leaves the area. If it ends its turn outside the area, the creature can repeat the saving throw, ending the effect on itself on a success. If you or your allies attack or harm a charmed creature, it is no longer charmed.</p>
+            <p class="indent">If the creature’s saving throw is successful or if the effect ends for it, it is immune to your perfume for the next 24 hours. A creature that doesn’t breathe or that is immune to poison is immune to your perfume.</p>
+            <p class="indent">The perfume lasts for 10 minutes or until you use your Wild Shape again.</p>
+        </description>
+        <sheet action="Action" usage="Wild Shape">
+            <description>One creature of your choice within 10 feet of you must make a DC {{druid:spellcasting:dc}} Charisma saving throw. On each of your turns while the perfume lasts, you can use an action to choose a different creature within 10 feet of you to affect with your perfume.
+            &#13; On a failed save, the creature is charmed by you or frightened (your choice) for as long as it remains in the area of your perfume and for 1 minute after it leaves the area. If it ends its turn outside the area, the creature can repeat the saving throw, ending the effect on itself on a success. If you or your allies attack or harm a charmed creature, it is no longer charmed.
+            &#13; If the creature’s saving throw is successful or if the effect ends for it, it is immune to your perfume for the next 24 hours. A creature that doesn’t breathe or that is immune to poison is immune to your perfume.
+            &#13; The perfume lasts for 10 minutes or until you use your Wild Shape again.</description>
+        </sheet>
+    </element>
+
+<!-- OVERPOWERING REMEDY --> 
+    <element name="Overpowering Remedy" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_ROSES_OVERPOWERING_REMEDY">
+        <description>
+            <p>At 6th level, your perfume can affect one creature of your choice within 20 feet of you, and you can use the scent to offset harmful effects. When you use your Bittersweet Perfume, you can choose to end one disease or one condition affecting a creature in your perfume instead of charming or frightening it. The condition removed can be charmed, frightened, or poisoned.</p>
+        </description>
+        <sheet>
+            <description>When you use your Bittersweet Perfume, you can choose to end one disease or one condition affecting a creature in your perfume instead of charming or frightening it. The condition removed can be charmed, frightened, or poisoned.</description>
+        </sheet>
+    </element>
+
+<!-- ROSE’S THORNS --> 
+    <element name="Rose's Thorns" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_ROSES_ROSES_THORNS">
+        <description>
+            <p>At 10th level, you can stab thorns at the minds of those who dare to take you on. When a creature within 20 feet of you hits you with an attack, you can use your reaction to force the creature to make a Wisdom saving throw against your spell save DC. On a failed save, the creature takes 1d10 psychic damage.</p>
+        </description>
+        <sheet action="Reaction">
+            <description> When a creature within 20 feet of you hits you with an attack, you can use your reaction to force the creature to make a DC {{druid:spellcasting:dc}} Wisdom saving throw. On a failed save, the creature takes 1d10 psychic damage.</description>
+        </sheet>
+    </element>
+
+<!-- LINGERING PERFUME --> 
+    <element name="Lingering Perfume" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_ROSES_LINGERING_PERFUME">
+        <description>
+            <p>When you reach 14th level, a whiff of your perfume surrounds you at all times and lingers in your wake. You are immune to harmful gases and vapors, you have advantage on saving throws against becoming charmed or frightened, and your Bittersweet Perfume now lasts for 1 hour or until you use your Wild Shape again.</p>
+            <p class="indent">In addition, you can intensify the power of your perfume. When a creature becomes charmed or frightened from your Bittersweet Perfume, you can use a bonus action to wrap some of your perfume around it. That creature is considered to be in the area of your perfume, no matter how far it moves away from you, for 1 hour or until you use your Wild Shape again. Once you use this feature, you can’t use it again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You are immune to harmful gases and vapors, you have advantage on saving throws against becoming charmed or frightened, and your Bittersweet Perfume now lasts for 1 hour or until you use your Wild Shape again.
+            &#13;In addition, when a creature becomes charmed or frightened from your Bittersweet Perfume, you can use a bonus action to wrap some of your perfume around it. That creature is considered to be in the area of your perfume, no matter how far it moves away from you, for 1 hour or until you use your Wild Shape again.</description>
+        </sheet>
+    </element>
+    
+</elements>

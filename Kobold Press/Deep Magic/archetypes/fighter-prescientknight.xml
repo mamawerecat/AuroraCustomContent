@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Prescient Knight</name>
+        <update version="0.0.1">
+            <file name="fighter-prescientknight.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/fighter-prescientknight.xml" />
+        </update>
+    </info>
+
+
+	<element name="Prescient Knight" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_FIGHTER_PRESCIENT_KNIGHT">
+		<supports>Martial Archetype</supports>
+		<description>
+			<p>The archetypal Prescient Knight is the culmination of long years of study and dedication to the craft of combat, supplemented by the use of magic that provides a glimpse of the future or makes it possible to turn back the hands of time.</p>
+			<div element="ID_KBP_DM5E_ARCHETYPE_FEATURE_PRESCIENT_KNIGHT_SPELLCASTING"/>
+			<div element="ID_KBP_DM5E_ARCHETYPE_FEATURE_PRESCIENT_KNIGHT_BONUS_PROFICIENCY"/>
+			<div element="ID_KBP_DM5E_ARCHETYPE_FEATURE_PRESCIENT_KNIGHT_REACTIVE_ECHO"/>
+			<div element="ID_KBP_DM5E_ARCHETYPE_FEATURE_PRESCIENT_KNIGHT_MARTIAL_CASTER"/>
+			<div element="ID_KBP_DM5E_ARCHETYPE_FEATURE_PRESCIENT_KNIGHT_CONSTANT_VIGILANCE"/>
+			<div element="ID_KBP_DM5E_ARCHETYPE_FEATURE_PRESCIENT_KNIGHT_EVASION"/>
+			<div element="ID_KBP_DM5E_ARCHETYPE_FEATURE_PRESCIENT_KNIGHT_ANTICIPATORY_STRIKE"/>
+			<div element="ID_KBP_DM5E_ARCHETYPE_FEATURE_PRESCIENT_KNIGHT_ACTION_FREE_OF_THOUGHT"/>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_PRESCIENT_KNIGHT_SPELLCASTING" level="3"/>
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_PRESCIENT_KNIGHT_BONUS_PROFICIENCY" level="3"/>
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_PRESCIENT_KNIGHT_REACTIVE_ECHO" level="3"/>
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_PRESCIENT_KNIGHT_MARTIAL_CASTER" level="3"/>
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_PRESCIENT_KNIGHT_CONSTANT_VIGILANCE" level="7"/>
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_PRESCIENT_KNIGHT_EVASION" level="10"/>
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_PRESCIENT_KNIGHT_ANTICIPATORY_STRIKE" level="15"/>
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_PRESCIENT_KNIGHT_ACTION_FREE_OF_THOUGHT" level="18"/>
+		</rules>
+	</element>
+
+<!-- BONUS PROFICIENCY -->
+    <element name="Bonus Proficiency" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_PRESCIENT_KNIGHT_BONUS_PROFICIENCY">
+        <description>
+            <p>When you choose this archetype at 3rd level, you gain proficiency in Arcana.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+        </rules>
+    </element>
+
+<!-- Spellcasting -->
+	<element name="Spellcasting" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_PRESCIENT_KNIGHT_SPELLCASTING">
+		<description>
+			<p>When you reach 3rd level, you augment your martial prowess with the ability to cast spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the wizard spell list.</p>
+			<p class="indent"><strong><em>Cantrips.</em></strong> You learn two cantrips of your choice from among guidance, quicken, and true strike. You learn the remaining cantrip of the three at 10th level.</p>
+			<p class="indent"><strong><em>Spell Slots.</em></strong> The Prescient Knight Spellcasting table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
+			<p class="indent">For example, if you know the 1st-level spell shield and have a 1st-level and a 2nd-level spell slot available, you can cast shield using either slot.</p>
+			<p class="indent"><strong><em>Spells Known of 1st-Level and Higher.</em></strong> You know three 1st-level spells of your choice, all of which you must choose from the divination and temporal spells on the wizard spell list.</p>
+			<p class="indent">The Spells Known column of the Prescient Knight Spellcasting table shows when you learn more wizard spells of 1st level or higher. You learn additional spells as you progress; newly learned spells have the same school and list restrictions as your original spells. Whenever you gain a level, you can replace one spell you know with another from among those spells you are able to learn. </p>
+			<p class="indent"><strong><em>Spellcasting Ability.</em></strong> Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
+			</center>
+			<h5 class="caption">PRESCIENT KNIGHT SPELLCASTING</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Fighter Level</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td></tr>
+				</thead>
+				<tr><td> 3rd</td><td>2</td><td> 3</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td>2</td><td> 5</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td>2</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td>2</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td>3</td><td> 7</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td>3</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td>3</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td>3</td><td> 9</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>14th</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>15th</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>17th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>18th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>19th</td><td>3</td><td>12</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>20th</td><td>3</td><td>13</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<spellcasting name="Prescient Knight" ability="Intelligence" prepare="false" allowReplace="true">
+			<list>Wizard,(Divination)</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+			<stat name="Prescient knight:spellcasting:slots:1" value="2" level="3" />
+			<stat name="Prescient knight:spellcasting:slots:1" value="1" level="4" />
+			<stat name="Prescient knight:spellcasting:slots:1" value="1" level="7" />
+			<stat name="Prescient knight:spellcasting:slots:2" value="2" level="7" />
+			<stat name="Prescient knight:spellcasting:slots:2" value="1" level="10" />
+			<stat name="Prescient knight:spellcasting:slots:3" value="2" level="13" />
+			<stat name="Prescient knight:spellcasting:slots:3" value="1" level="16" />
+			<stat name="Prescient knight:spellcasting:slots:4" value="1" level="19" />
+			<select type="Spell" name="Cantrip (Prescient Knight)" supports="Guidance||True Strike||Quicken" level="3" number="2" spellcasting="Prescient Knight" />
+			<select type="Spell" name="Cantrip (Prescient Knight)" supports="Guidance||True Strike||Quicken" level="10" number="1" spellcasting="Prescient Knight" />
+			<select type="Spell" name="Spellcasting (Prescient Knight)" supports="($(spellcasting:list)||Temporal), 1" level="3" number="1" spellcasting="Prescient Knight" />
+			<select type="Spell" name="Spellcasting (Prescient Knight)" supports="($(spellcasting:list)||Temporal), 1" level="3" number="2" spellcasting="Prescient Knight" />
+			<select type="Spell" name="Spellcasting (Prescient Knight)" supports="($(spellcasting:list)||Temporal), $(spellcasting:slots)" level="4" spellcasting="Prescient Knight"/>
+			<select type="Spell" name="Spellcasting (Prescient Knight)" supports="($(spellcasting:list)||Temporal), $(spellcasting:slots)" level="7" spellcasting="Prescient Knight"/>
+			<select type="Spell" name="Spellcasting (Prescient Knight)" supports="($(spellcasting:list)||Temporal), $(spellcasting:slots)" level="8" spellcasting="Prescient Knight"/>
+			<select type="Spell" name="Spellcasting (Prescient Knight)" supports="($(spellcasting:list)||Temporal), $(spellcasting:slots)" level="10" spellcasting="Prescient Knight"/>
+			<select type="Spell" name="Spellcasting (Prescient Knight)" supports="($(spellcasting:list)||Temporal), $(spellcasting:slots)" level="11" spellcasting="Prescient Knight"/>
+			<select type="Spell" name="Spellcasting (Prescient Knight)" supports="($(spellcasting:list)||Temporal), $(spellcasting:slots)" level="13" spellcasting="Prescient Knight"/>
+			<select type="Spell" name="Spellcasting (Prescient Knight)" supports="(Wizard||$(spellcasting:list)), $(spellcasting:slots)" level="14" spellcasting="Prescient Knight"/>
+			<select type="Spell" name="Spellcasting (Prescient Knight)" supports="($(spellcasting:list)||Temporal), $(spellcasting:slots)" level="16" spellcasting="Prescient Knight"/>
+			<select type="Spell" name="Spellcasting (Prescient Knight)" supports="($(spellcasting:list)||Temporal), $(spellcasting:slots)" level="19" spellcasting="Prescient Knight"/>
+			<select type="Spell" name="Spellcasting (Prescient Knight)" supports="($(spellcasting:list)||Temporal), $(spellcasting:slots)" level="20" spellcasting="Prescient Knight"/>
+		</rules>
+	</element>
+
+	<append id="ID_PHB_SPELL_GUIDANCE">
+        <supports>Guidance</supports>
+    </append>
+    <append id="ID_PHB_SPELL_TRUE_STRIKE">
+        <supports>True Strike</supports>
+    </append>
+    <append id="ID_KBP_DM5E_SPELL_QUICKEN">
+        <supports>Quicken</supports>
+    </append>
+
+<!-- REACTIVE ECHO --> 	
+	<element name="Reactive Echo" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_PRESCIENT_KNIGHT_REACTIVE_ECHO">
+		<description>
+			<p>Also at 3rd level, you become able to innately anticipate the actions of your foes. You can take a second reaction during a round in which you use your Action Surge.</p>
+		</description>
+		<sheet>
+			<description>You can take a second reaction during a round in which you use your Action Surge.</description>
+		</sheet>
+	</element>
+
+<!-- MARTIAL CASTER --> 	
+	<element name="Martial Caster" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_PRESCIENT_KNIGHT_MARTIAL_CASTER">
+		<description>
+			<p>At 3rd level and higher, you can perform somatic components for your spells while you are wielding a weapon or a shield, as long as you have proficiency with those items.</p>
+		</description>
+		<sheet>
+			<description>You can perform somatic components for your spells while you are wielding a weapon or a shield, as long as you have proficiency with those items</description>
+		</sheet>
+	</element>
+
+<!-- CONSTANT VIGILANCE --> 	
+	<element name="Constant Vigilance" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_PRESCIENT_KNIGHT_CONSTANT_VIGILANCE">
+		<description>
+			<p>Beginning at 7th level, you have a preternatural awareness of your surroundings in times of duress. If you are surprised but not incapacitated at the start of combat, you can use your Action Surge to negate surprise for yourself and take a normal turn plus one additional action (from the Action Surge) in the first round of combat. Additionally, using your Action Surge in this way allows you to give sufficient warning to allies who are within 15 feet of you, so they can also start taking reactions after your turn.</p>
+		</description>
+		<sheet>
+			<description>If you are surprised but not incapacitated at the start of combat, you can use your Action Surge to negate surprise for yourself and take a normal turn plus one additional action (from the Action Surge) in the first round of combat. Additionally, using your Action Surge in this way allows you to give sufficient warning to allies who are within 15 feet of you, so they can also start taking reactions after your turn.</description>
+		</sheet>
+	</element>
+
+<!-- EVASION --> 	
+	<element name="Evasion" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_PRESCIENT_KNIGHT_EVASION">
+		<description>
+			<p>At 10th level, your foreknowledge of events to come allows you to position yourself in the most advantageous manner. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+		</description>
+		<sheet>
+			<description>When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</description>
+		</sheet>
+	</element>
+
+<!-- ANTICIPATORY STRIKE --> 	
+	<element name="Anticipatory Strike" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_PRESCIENT_KNIGHT_ANTICIPATORY_STRIKE">
+		<description>
+			<p>At 15th level, your innate connection to the threads of fate strengthens, providing greater insight into the movements and actions of your opponents. When you use your Action Surge, you have advantage on attack rolls and a +2 bonus to your AC until the end of your next turn.</p>
+		</description>
+		<sheet>
+			<description>When you use your Action Surge, you have advantage on attack rolls and a +2 bonus to your AC until the end of your next turn.</description>
+		</sheet>
+	</element>
+
+<!-- ACTION FREE OF THOUGHT --> 	
+	<element name="Action Free of Thought" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_PRESCIENT_KNIGHT_ACTION_FREE_OF_THOUGHT">
+		<description>
+			<p>At 18th level, your mastery of divination and temporal effects is such that you are able to react to your opponents without conscious thought and with minimal physical effort. During combat, you can take one reaction every turn instead of one per round.</p>
+		</description>
+		<sheet>
+			<description>During combat, you can take one reaction every turn instead of one per round.</description>
+		</sheet>
+	</element>
+    
+</elements>

@@ -2,7 +2,7 @@
 <elements>
 <info>
 	<name>Deep Magic Spells - A</name>
-	<update version="0.0.7">
+	<update version="0.0.8">
 		<file name="a-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/a-spells.xml" />
 	</update>
 </info>
@@ -75,7 +75,7 @@
 
 <!-- ACCELERATE --> 
 	<element name="Accelerate" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ACCELERATE">
-		<supports>Bard,Cleric,Druid,Sorcerer,Wizard</supports>
+		<supports>Bard,Cleric,Druid,Sorcerer,Wizard,Temporal</supports>
 		<description>
 			<p>Choose up to three willing creatures within range, which can include you. For the duration of the spell, each target’s walking speed is doubled. Each target can also use a bonus action on each of its turns to take the Dash action, and it has advantage on Dexterity saving throws.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, you can affect one additional creature for each slot level above 3rd.</p>
@@ -370,7 +370,7 @@
 
 <!-- ALTER TIME FLOW --> 
 	<element name="Alter Time Flow" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ALTER_TIME_FLOW">
-		<supports>Bard,Cleric,Wizard</supports>
+		<supports>Bard,Cleric,Wizard,Temporal</supports>
 		<description>
 			<p>You control the currents of time, affecting all creatures within 30 feet of yourself. You can choose to deliver either a haste or slow effect (as the spell) to each creature in the area. An unwilling creature makes a Constitution saving throw, avoiding the effect on a success. Each unwilling creature must make a new saving throw if it remains in the affected area at the end of its turn. Any affected creature returns to normal if it exits the area, but if a creature reenters the area while the spell is still active, it is subject to the effect of the spell (and receives another saving throw, if unwilling).</p>
 		</description>
@@ -685,7 +685,7 @@
 
 <!-- ANTICIPATE ARCANA  -->
 	<element name="Anticipate Arcana" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ANTICIPATE_ARCANA">
-		<supports>Cleric,Paladin,Sorcerer,Warlock,Wizard</supports>
+		<supports>Cleric,Paladin,Sorcerer,Warlock,Wizard,Temporal</supports>
 		<description>
 			<p>Your foresight gives you an instant to ready your defenses against a magical attack. When you cast anticipate arcana, you have advantage on saving throws against spells and other magical effects until the start of your next turn.</p>
 		</description>
@@ -705,7 +705,7 @@
 
 <!-- ANTICIPATE ATTACK  -->	
 	<element name="Anticipate Attack" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ANTICIPATE_ATTACK">
-		<supports>Bard,Cleric,Druid,Paladin,Ranger,Sorcerer,Wizard</supports>
+		<supports>Bard,Cleric,Druid,Paladin,Ranger,Sorcerer,Wizard,Temporal</supports>
 		<description>
 			<p>In a flash of foreknowledge, you spot an oncoming attack with enough time to avoid it. Upon casting this spell, you can move up to half your speed without provoking opportunity attacks. The oncoming attack still occurs but misses automatically if you are no longer within the attack’s range, are in a space that's impossible for the attack to hit, or can’t be targeted by that attack in your new position. If none of those circumstances apply but the situation has changed—you have moved into a position where you have cover, for example—then the attack is made after taking the new situation into account.</p>
 		</description>
@@ -726,7 +726,7 @@
 
 <!-- ANTICIPATE WEAKNESS --> 	
 	<element name="Anticipate Weakness" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_ANTICIPATE_WEAKNESS">
-		<supports>Bard,Cleric,Druid,Ranger,Sorcerer,Warlock,Wizard</supports>
+		<supports>Bard,Cleric,Druid,Ranger,Sorcerer,Warlock,Wizard,Temporal</supports>
 		<description>
 			<p>With a quick glance into the future, you pinpoint where a gap is about to open in your foe’s defense, and then you strike. After casting anticipate weakness, you have advantage on attack rolls until the end of your turn.</p>
 		</description>
@@ -1041,7 +1041,7 @@
 
 <!-- AUSPICIOUS WARNING  -->
 	<element name="Auspicious Warning" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_AUSPICIOUS_WARNING">
-		<supports>Bard,Sorcerer,Wizard</supports>
+		<supports>Bard,Sorcerer,Wizard,Temporal</supports>
 		<description>
 			<p>Just in time, you call out a fortunate warning to a creature within range. The target rolls a d4 and adds the number rolled to an attack roll, ability check, or saving throw that it has just made and uses the new result for determining success or failure.</p>
 		</description>

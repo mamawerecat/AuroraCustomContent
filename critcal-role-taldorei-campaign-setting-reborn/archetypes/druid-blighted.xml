@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Druid Circle of the Blighted</name>
-        <update version="0.0.4">
+        <update version="0.0.5">
             <file name="druid-blighted.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/critcal-role-taldorei-campaign-setting-reborn/archetypes/druid-blighted.xml" />
         </update>
     </info>
@@ -78,7 +78,7 @@
                 <tr><td>Stats:</td><td><em>STR 8 (−1), DEX 13 (+1), CON  12 (+1), INT 4 (−3), WIS 8 (−1), CHA 3 (−4)</em></td></tr>
                 <tr><td>Damage Vulnerabilities:</td><td><em>fire</em></td></tr>
                 <tr><td>Damage Resistances:</td><td><em>necrotic, poison</em></td></tr>
-                <tr><td>Condition Immunitie:s</td><td><em>blinded, deafened, poisoned</em></td></tr>
+                <tr><td>Condition Immunities:</td><td><em>blinded, deafened, poisoned</em></td></tr>
                 <tr><td>Senses:</td><td><em>blindsight 60 ft. (blind beyond this radius),</em></td></tr>
                 <tr><td>passive Perception:</td><td><em>9</em></td></tr>
                 <tr><td>Languages:</td><td><em>understands the languages you speak</em></td></tr>

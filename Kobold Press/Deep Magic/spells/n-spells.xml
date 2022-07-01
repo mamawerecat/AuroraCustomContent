@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - N</name>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="n-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/n-spells.xml" />
         </update>
     </info>
@@ -55,7 +55,7 @@
 	</element>
 
 <!-- NETHER WEAPON  --> 
-	<element name="Nether Weapon" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_NETHERE_WEAPON">
+	<element name="Nether Weapon" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_NETHER_WEAPON">
 		<supports>Wizard</supports>
 		<description>
 			<p>You whisper in Void Speech and touch a weapon. Until the spell ends, the weapon turns black, becomes magical if it wasn’t before, and deals 2d6 necrotic damage (in addition to its normal damage) on a successful hit. A creature that takes necrotic damage from the enchanted weapon can’t regain hit points until the start of your next turn.</p>

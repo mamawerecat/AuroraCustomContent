@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Deep Magic Spells - D</name>
-        <update version="0.0.6">
+        <update version="0.0.7">
             <file name="d-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/spells/d-spells.xml" />
         </update>
     </info>
@@ -121,7 +121,7 @@
 
 <!-- DECELERATE -->
 	<element name="Decelerate" type="Spell" source="Deep Magic" id="ID_KBP_DM5E_SPELL_DECELERATE">
-		<supports>Druid,Paladin,Ranger,Sorcerer,Warlock,Wizard</supports>
+		<supports>Druid,Paladin,Ranger,Sorcerer,Warlock,Wizard,Temporal</supports>
 		<description>
 			<p>You slow the flow of time around a creature within range that you can see. The creature must make a successful Wisdom saving throw, or its walking speed is halved (round up to the nearest 5-foot increment). The creature can repeat the saving throw at the end of each of its turns, ending the effect on a success. Until the spell ends, on a failed save the target’s speed is halved again at the start of each of your turns. For example, if a creature with a speed of 30 feet fails its initial saving throw, its speed drops to 15 feet. At the start of your next turn, the creature’s speed drops to 10 feet on a failed save, then to 5 feet on the  following round on another failed save. Decelerate can’t reduce a creature’s speed to less than 5 feet.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, you can affect an additional creature for each slot level above 2nd.</p>

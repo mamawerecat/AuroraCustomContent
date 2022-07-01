@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Circle of Oaks Druid</name>
+        <update version="0.0.1">
+            <file name="druid-oak.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/druid-oak.xml" />
+        </update>
+    </info>
+    
+    <element name="Circle of Oaks" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_OAK_CIRCLE">
+        <supports>Druid Circle</supports>
+        <description>
+            <p>There is power in the ancient trees of the world—a quiet, abiding power. Those who live among trees, like the elves, are aware of this power, and they treat it with respect, even reverence. Some druids learn to tap into this power. These are the members of the Circle of Oaks. By suffusing themselves with the vitality and strength of the ancient green, they can perform mighty feats. Although they commonly hail from the ancient forests of the world, Circle of Oaks druids can be found anywhere there are trees of sufficient age from which to draw power.</p>
+            <div element="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_OAK_CIRCLE_SPELLS" />
+            <div element="ID_KBP_DM5E_OAK_CIRCLE_ARCHETYPE_FEATURE_TREE_STEP" />
+            <div element="ID_KBP_DM5E_OAK_CIRCLE_ARCHETYPE_FEATURE_MIGHT_OF_THE_OAK" />
+            <div element="ID_KBP_DM5E_OAK_CIRCLE_ARCHETYPE_FEATURE_ROUSE_OF_THE_GROVE" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_OAK_CIRCLE_SPELLS" level="2" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_OAK_CIRCLE_ARCHETYPE_FEATURE_TREE_STEP" level="6" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_OAK_CIRCLE_ARCHETYPE_FEATURE_MIGHT_OF_THE_OAK" level="10" />
+            <grant type="Archetype Feature" id="ID_KBP_DM5E_OAK_CIRCLE_ARCHETYPE_FEATURE_ROUSE_OF_THE_GROVE" level="14" />
+
+            
+        </rules>
+    </element>
+
+<!-- Circle Spells -->
+	<element name="Circle Spells" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_OAK_CIRCLE_SPELLS">
+		<description>
+			<p><em>2nd-level Circle of Owls feature</em></p>
+			<p>At 3rd, 5th, 7th, and 9th levels, you gain access to the spells listed for those levels in the Circle of Owls Spells table.</p>
+			<p class="indent">Once you gain access to a circle spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+			<h5 class="caption">Circle of Oaks feature</h5>
+            <table>
+				<thead>
+					<tr><td>Druid Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>locate animals or plants, pass without trace</em></td></tr>
+				<tr><td>5th</td><td><em>plant growth, speak with plants</em></td></tr>
+				<tr><td>7th</td><td><em>conjure woodland beings, locate creature</em></td></tr>
+				<tr><td>9th</td><td><em>awaken, tree stride</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>You gain access to specific spells as you level up.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_LOCATE_ANIMALS_OR_PLANTS" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PASS_WITHOUT_TRACE" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PLANT_GROWTH" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_PLANTS" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONJURE_WOODLAND_BEINGS" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_LOCATE_CREATURE" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_AWAKEN" level="9" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_TREE_STRIDE" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element> 
+ 
+<!-- TREE STEP --> 
+    <element name="Tree Step" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_OAK_CIRCLE_ARCHETYPE_FEATURE_TREE_STEP">
+        <description>
+            <p>Starting at 6th level, you can spend half your movement to magically step into a tree and transport yourself through it and out of another tree of the same kind within 60 feet, reappearing in a space of your choice within 5 feet of the destination tree. You can use this feature twice when you reach 10th level, and three times at 14th level, when the range becomes 120 feet. You regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet>
+            <description level="6" usage="1/Long Rest">You can spend half your movement to magically step into a tree and transport yourself through it and out of another tree of the same kind within 60 feet, reappearing in a space of your choice within 5 feet of the destination tree.</description>
+            <description level="10" usage="2/Long Rest">You can spend half your movement to magically step into a tree and transport yourself through it and out of another tree of the same kind within 60 feet, reappearing in a space of your choice within 5 feet of the destination tree.</description>
+            <description level="14" usage="3/Long Rest">You can spend half your movement to magically step into a tree and transport yourself through it and out of another tree of the same kind within 60 feet, reappearing in a space of your choice within 120 feet of the destination tree.</description>
+        </sheet>
+    </element>
+
+<!-- MIGHT OF THE OAK  --> 
+    <element name="Might of the Oak" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_OAK_CIRCLE_ARCHETYPE_FEATURE_MIGHT_OF_THE_OAK">
+        <description>
+            <p>At 10th level, you can expend two uses of Wild Shape at the same time to transform into a tree-like humanoid, similar to a treant, though not as powerful. While in this form, you are a Large plant, and you have the following statistics:</p>
+            <h5 class="caption">Tree Form Stats</h5>
+            <table>
+                <thead>
+                    <tr><td>Stat</td><td>Detail</td></tr>
+                </thead>
+                <tr><td>Armor Class:</td><td><em>15</em></td></tr>
+                <tr><td>HP:</td><td><em>10d10 + 50</em></td></tr>
+                <tr><td>Speed:</td><td><em>30ft</em></td></tr>
+                <tr><td>Stats:</td><td><em>STR 22 (+6), DEX 9 (-1), CON  20 (+5)</em></td></tr>
+                <tr><td>Damage Vulnerabilities:</td><td><em>fire</em></td></tr>
+                <tr><td>Damage Resistances:</td><td><em>bludgeoning, piercing</em></td></tr>
+                <tr><td>False Appearance</td><td><em>While you remain motionless, you are indistinguishable from a tree.</em></td></tr>
+                <tr><td>Multiattack.</td><td><em>You make two slam attacks.</em></td></tr>
+                <tr><td>Slam.</td><td><em>Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage</em></td></tr>
+                <tr><td>Rock.</td><td><em>Ranged Weapon Attack: +9 to hit, range 60/180 ft., one target. Hit: 21 (3d10 + 5) bludgeoning damage.</em></td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description>You can expend two uses of Wild Shape at the same time to transform into a tree-like humanoid, similar to a treant, though not as powerful. While in this form, you are a Large plant. Use treant statistics except your AC is 15; HP: 10d10 + 50; STR 22 (+6), DEX 9 (-1), CON  20 (+5); Slam. Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage; Rock. Ranged Weapon Attack: +9 to hit, range 60/180 ft., one target. Hit: 21 (3d10 + 5) bludgeoning damage.; You also have no Animate Trees or Siege Monster ability.
+			</description>
+        </sheet>
+    </element>
+
+<!-- ROUSE THE GROVE --> 
+    <element name="Rouse the Grove" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_OAK_CIRCLE_ARCHETYPE_FEATURE_ROUSE_OF_THE_GROVE">
+        <description>
+            <p>At 14th level, you can use an action on your turn to stir the trees around you, bringing them to your aid. All trees within 60 feet of you become animated, their roots churning the earth and their branches whipping and slashing. All spaces within 15 feet of a tree are considered difficult terrain for your enemies, but not for you or your allies. A creature concentrating on a spell that starts its turn in one of the affected spaces must succeed on a Constitution saving throw against your spell save DC or lose concentration on the spell.</p>
+            <p class="indent">Also, you can use a bonus action on your turn to cause one affected tree to strike a creature within 15 feet of it with a branch. Make an attack roll, using your spellcasting ability modifier as a bonus to the roll. On a hit, the creature takes 4d6 bludgeoning damage. You can use this feature for a number of rounds equal to your druid level; these rounds need not be consecutive. You regain the full use of this feature when you finish a long rest.</p>
+            <p class="indent">If this feature is used underground, beneath an area where trees grow, the effect is the same, except it is the trees’ roots that burst through walls into rooms or tunnels, producing the same effects. If the GM decides the area is too far underground or is otherwise unsuitable for this feature to be used, it has no effect.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You can use an action on your turn to stir the trees around you, bringing them to your aid. All trees within 60 feet of you become animated, their roots churning the earth and their branches whipping and slashing. All spaces within 15 feet of a tree are considered difficult terrain for your enemies, but not for you or your allies. A creature concentrating on a spell that starts its turn in one of the affected spaces must succeed on a DC {{druid:spellcasting:dc}} Constitution saving throw or lose concentration on the spell.
+            &#13;Also, you can use a bonus action on your turn to cause one affected tree to strike a creature within 15 feet of it with a branch. Make an attack roll +{{druid:spellcasting:attack}} to hit. On a hit, the creature takes 4d6 bludgeoning damage. You can use this feature for {{level:druid}} rounds; these rounds need not be consecutive.
+            &#13;If this feature is used underground, beneath an area where trees grow, the effect is the same, except it is the trees’ roots that burst through walls into rooms or tunnels, producing the same effects. If the GM decides the area is too far underground or is otherwise unsuitable for this feature to be used, it has no effect.</description>
+        </sheet>
+    </element>
+    
+</elements>
