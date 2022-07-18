@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-    <info>
-        <name>Ocean Domain</name>
-        <update version="0.0.2">
-            <file name="cleric-ocean.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-ocean.xml" />
-        </update>
-    </info>
-    
-    <element name="Ocean Domain" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_OCEAN_DOMAIN">
-        <supports>Divine Domain</supports>
-        <description>
-            <p>You invoke the power of salt and sea—the fountain of life—in all its chaotic glory. You are an emissary between sea and shore.</p>
-            <h5 class="caption">OCEAN DOMAIN SPELLS</h5>
+	<info>
+		<name>Ocean Domain</name>
+		<update version="0.0.2">
+			<file name="cleric-ocean.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-ocean.xml" />
+		</update>
+	</info>
+
+	<element name="Ocean Domain" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_OCEAN_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>You invoke the power of salt and sea—the fountain of life—in all its chaotic glory. You are an emissary between sea and shore.</p>
+			<h5 class="caption">OCEAN DOMAIN SPELLS</h5>
 			<table>
 				<thead>
 					<tr><td>Cleric Level</td><td>Spells</td></tr>
@@ -22,21 +22,21 @@
 				<tr><td>7th</td><td><em>conjure minor elementals (excluding fire), evard's black tentacles</em></td></tr>
 				<tr><td>9th</td><td><em>awaken, conjure elemental (excluding fire)</em></td></tr>
 			</table>
-            <div element="ID_KBP_DM5E_OCEAN_DOMAIN_ARCHETYPE_FEATURE_ENVOY_TO_THE_WAVES" />
-            <div element="ID_KBP_DM5E_OCEAN_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_SEA_SPEAKER" />
-            <div element="ID_KBP_DM5E_OCEAN_DOMAIN_ARCHETYPE_FEATURE_AT_HOME_IN_THE_WAVES" />
-            <div element="ID_KBP_DM5E_OCEAN_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" />
-            <div element="ID_KBP_DM5E_OCEAN_DOMAIN_ARCHETYPE_FEATURE_SCALES_OF_THE_SEA" />
-        </description>
-        <sheet display="false" />
-        <rules>
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_OCEAN_DOMAIN_ARCHETYPE_FEATURE_ENVOY_TO_THE_WAVES" level="1" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_OCEAN_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_SEA_SPEAKER" level="2" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_OCEAN_DOMAIN_ARCHETYPE_FEATURE_AT_HOME_IN_THE_WAVES" level="6" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_OCEAN_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" level="8" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_OCEAN_DOMAIN_ARCHETYPE_FEATURE_SCALES_OF_THE_SEA" level="17" />
+			<div element="ID_KBP_DM5E_OCEAN_DOMAIN_ARCHETYPE_FEATURE_ENVOY_TO_THE_WAVES" />
+			<div element="ID_KBP_DM5E_OCEAN_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_SEA_SPEAKER" />
+			<div element="ID_KBP_DM5E_OCEAN_DOMAIN_ARCHETYPE_FEATURE_AT_HOME_IN_THE_WAVES" />
+			<div element="ID_KBP_DM5E_OCEAN_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" />
+			<div element="ID_KBP_DM5E_OCEAN_DOMAIN_ARCHETYPE_FEATURE_SCALES_OF_THE_SEA" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_OCEAN_DOMAIN_ARCHETYPE_FEATURE_ENVOY_TO_THE_WAVES" level="1" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_OCEAN_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_SEA_SPEAKER" level="2" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_OCEAN_DOMAIN_ARCHETYPE_FEATURE_AT_HOME_IN_THE_WAVES" level="6" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_OCEAN_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" level="8" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_OCEAN_DOMAIN_ARCHETYPE_FEATURE_SCALES_OF_THE_SEA" level="17" />
 
-            <grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD" level="1" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_ANIMALS" level="1" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_LOCATE_ANIMALS_OR_PLANTS" level="3" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" level="3" spellcasting="Cleric" prepared="true" />
@@ -46,66 +46,66 @@
 			<grant type="Spell" id="ID_PHB_SPELL_EVARDS_BLACK_TENTACLES" level="7" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_AWAKEN" level="9" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_CONJURE_ELEMENTAL" level="9" spellcasting="Cleric" prepared="true" />
-        </rules>
-    </element>
-    
+		</rules>
+	</element>
 
-<!-- ENVOY TO THE WAVES --> 
-    <element name="Envoy to the Waves" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_OCEAN_DOMAIN_ARCHETYPE_FEATURE_ENVOY_TO_THE_WAVES">
-        <description>
-            <p>When you choose this domain at 1st level, you learn the chill touch cantrip. You also learn the Aquan language, gain proficiency in the Survival skill, and gain proficiency with tridents and nets.</p>
-        </description>
-        <sheet display="false" />
-        <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_CHILL_TOUCH" />
-            <grant type="Language" id="ID_MM_LANGUAGE_AQUAN" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_NET" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+
+<!-- ENVOY TO THE WAVES -->
+	<element name="Envoy to the Waves" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_OCEAN_DOMAIN_ARCHETYPE_FEATURE_ENVOY_TO_THE_WAVES">
+		<description>
+			<p>When you choose this domain at 1st level, you learn the chill touch cantrip. You also learn the Aquan language, gain proficiency in the Survival skill, and gain proficiency with tridents and nets.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_CHILL_TOUCH" />
+			<grant type="Language" id="ID_MM_LANGUAGE_AQUAN" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_NET" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
-        </rules>
-    </element>
+		</rules>
+	</element>
 
-<!-- CHANNEL DIVINITY: SEA SPEAKER --> 
-    <element name="Channel Divinity: Sea Speaker" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_OCEAN_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_SEA_SPEAKER">
-        <description>
-            <p>Beginning at 2nd level, you can use your Channel Divinity to communicate telepathically with aquatic creatures within 100 feet of you. This ability lasts for 1 hour.</p>
-        </description>
-        <sheet usage="Channel Divinity">
-            <description>You can communicate telepathically with aquatic creatures within 100 feet of you. This ability lasts for 1 hour.</description>
-        </sheet>
-    </element>
+<!-- CHANNEL DIVINITY: SEA SPEAKER -->
+	<element name="Channel Divinity: Sea Speaker" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_OCEAN_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_SEA_SPEAKER">
+		<description>
+			<p>Beginning at 2nd level, you can use your Channel Divinity to communicate telepathically with aquatic creatures within 100 feet of you. This ability lasts for 1 hour.</p>
+		</description>
+		<sheet usage="Channel Divinity">
+			<description>You can communicate telepathically with aquatic creatures within 100 feet of you. This ability lasts for 1 hour.</description>
+		</sheet>
+	</element>
 
-<!-- AT HOME IN THE WAVES --> 
-    <element name="At Home in the Waves" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_OCEAN_DOMAIN_ARCHETYPE_FEATURE_AT_HOME_IN_THE_WAVES">
-        <description>
-            <p>At 6th level, you gain a swimming speed of 30 feet and darkvision out to a range of 60 feet. If you already have darkvision, its range extends by 30 feet.</p>
-        </description>
-        <sheet display="false" />
-        <rules>
-            <stat name="innate speed:swim" value="30" bonus="base" />
-            <grant type="Grants" id="ID_INTERNAL_GRANTS_DARKVISION_OR_INCREASE_30" />
-        </rules>
-    </element>
+<!-- AT HOME IN THE WAVES -->
+	<element name="At Home in the Waves" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_OCEAN_DOMAIN_ARCHETYPE_FEATURE_AT_HOME_IN_THE_WAVES">
+		<description>
+			<p>At 6th level, you gain a swimming speed of 30 feet and darkvision out to a range of 60 feet. If you already have darkvision, its range extends by 30 feet.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="innate speed:swim" value="30" bonus="base" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_DARKVISION_OR_INCREASE_30" />
+		</rules>
+	</element>
 
-<!-- DIVINE STRIKE --> 
-    <element name="Divine Strike" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_OCEAN_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE">
-        <description>
-            <p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 cold damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
-        </description>
-        <sheet>
-            <description level="8">Once on each of your turns, you can cause a weapon attack to deal an extra 1d8 cold damage to the target on a hit.</description>
-            <description level="14">Once on each of your turns, you can cause a weapon attack to deal an extra 2d8 cold damage to the target on a hit.</description>
-        </sheet>
-    </element>
+<!-- DIVINE STRIKE -->
+	<element name="Divine Strike" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_OCEAN_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE">
+		<description>
+			<p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 cold damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+		</description>
+		<sheet>
+			<description level="8">Once on each of your turns, you can cause a weapon attack to deal an extra 1d8 cold damage to the target on a hit.</description>
+			<description level="14">Once on each of your turns, you can cause a weapon attack to deal an extra 2d8 cold damage to the target on a hit.</description>
+		</sheet>
+	</element>
 
-<!-- SCALES OF THE SEA --> 
-    <element name="Scales of the Sea" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_OCEAN_DOMAIN_ARCHETYPE_FEATURE_SCALES_OF_THE_SEA">
-        <description>
-            <p>At 17th level, you become able to breathe in water as easily as in air. You also gain the ability to transform your skin into fishlike scales at will. While covered in scales, you have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons, and you have advantage on Dexterity (Stealth) checks made in natural underwater environments. You must use an action to grow the scales or to transform back to your normal skin. The scales can be any color you choose. The scales need to be kept wet; you gain one level of exhaustion at the end of each hour when you have scales and they haven't been thoroughly wetted for that length of time.</p>
-        </description>
-        <sheet>
-            <description>You become able to breathe in water as easily as in air. You also gain the ability to transform your skin into fishlike scales at will. While covered in scales, you have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons, and you have advantage on Dexterity (Stealth) checks made in natural underwater environments. You must use an action to grow the scales or to transform back to your normal skin. The scales can be any color you choose. The scales need to be kept wet; you gain one level of exhaustion at the end of each hour when you have scales and they haven't been thoroughly wetted for that length of time.</description>
-        </sheet>
-    </element>
-    
+<!-- SCALES OF THE SEA -->
+	<element name="Scales of the Sea" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_OCEAN_DOMAIN_ARCHETYPE_FEATURE_SCALES_OF_THE_SEA">
+		<description>
+			<p>At 17th level, you become able to breathe in water as easily as in air. You also gain the ability to transform your skin into fishlike scales at will. While covered in scales, you have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons, and you have advantage on Dexterity (Stealth) checks made in natural underwater environments. You must use an action to grow the scales or to transform back to your normal skin. The scales can be any color you choose. The scales need to be kept wet; you gain one level of exhaustion at the end of each hour when you have scales and they haven't been thoroughly wetted for that length of time.</p>
+		</description>
+		<sheet>
+			<description>You become able to breathe in water as easily as in air. You also gain the ability to transform your skin into fishlike scales at will. While covered in scales, you have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons, and you have advantage on Dexterity (Stealth) checks made in natural underwater environments. You must use an action to grow the scales or to transform back to your normal skin. The scales can be any color you choose. The scales need to be kept wet; you gain one level of exhaustion at the end of each hour when you have scales and they haven't been thoroughly wetted for that length of time.</description>
+		</sheet>
+	</element>
+
 </elements>

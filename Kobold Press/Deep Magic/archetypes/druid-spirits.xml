@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-    <info>
-        <name>Circle of Spirits</name>
-        <update version="0.0.1">
-            <file name="druid-spirits.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/druid-spirits.xml" />
-        </update>
-    </info>
+	<info>
+		<name>Circle of Spirits</name>
+		<update version="0.0.1">
+			<file name="druid-spirits.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/druid-spirits.xml" />
+		</update>
+	</info>
 
-    <element name="Circle of Spirits" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_DRUID_CIRCLE_OF_SPIRITS">
+	<element name="Circle of Spirits" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_DRUID_CIRCLE_OF_SPIRITS">
 		<supports>Druid Circle</supports>
 		<description>
 			<p>Some druids tend to more than the land. They also show concern for the health of the spirits of the land. Druids of the Circle of the Spirits build shrines in the wilderness where they commune with both these spirits and the souls of the departed.</p>
@@ -56,8 +56,8 @@
 			<grant type="Spell" id="ID_PHB_SPELL_SCRYING" level="9" spellcasting="Druid" prepared="true" />
 		</rules>
 	</element>
- 
- 
+
+
 <!-- SPIRIT GUIDE  -->
 	<element name="Spirit Guide" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_SPIRITS_SPIRIT_GUIDE">
 		<description>
@@ -72,7 +72,7 @@
 		</rules>
 	</element>
 
-<!-- SPIRIT DANCE --> 
+<!-- SPIRIT DANCE -->
 	<element name="Spirit Dance" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_SPIRITS_SPIRIT_DANCE">
 		<description>
 			<p>Starting at 6th level, as a bonus action you can engage in a dance to channel the power of the spirit world. If you cast a druid spell on your next turn, one target of the spell has disadvantage on its first saving throw against the spell. Once you use this feature, you can’t use it again until you finish a short or long rest.</p>
@@ -82,7 +82,7 @@
 		</sheet>
 	</element>
 
-<!-- SAVIOR SPIRITS --> 
+<!-- SAVIOR SPIRITS -->
 	<element name="Savior Spirits" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_SPIRITS_SAVIOR_SPIRITS">
 		<description>
 			<p>At 10th level, the spirits rush to your aid when you’re grievously wounded. When you are reduced to 0 hit points but not killed outright, you are reduced to 1 hit point instead. Once you use this feature, you can’t use it again until you finish a long rest.</p>
@@ -91,8 +91,8 @@
 			<description>When you are reduced to 0 hit points but not killed outright, you are reduced to 1 hit point instead.</description>
 		</sheet>
 	</element>
-	
-<!-- SPIRIT WALK --> 
+
+<!-- SPIRIT WALK -->
 	<element name="Spirit Walk" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_SPIRITS_SPIRIT_WALK">
 		<description>
 			<p>When you reach 14th level, as an action you can dissolve your flesh into ectoplasm for up to 1 minute. For the duration:</p>
@@ -111,5 +111,5 @@
 			</description>
 		</sheet>
 	</element>
-    
+
 </elements>

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-    <info>
-        <name>Moon Domain</name>
-        <update version="0.0.1">
-            <file name="cleric-moon.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-moon.xml" />
-        </update>
-    </info>
-    
-    <element name="Moon Domain" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_MOON_DOMAIN">
-        <supports>Divine Domain</supports>
-        <description>
-            <p>You are an initiate into the quiet mysteries of the moon and the subtleties of the night. Your faith illuminates any darkness you face.</p>
-            <h5 class="caption">MOON DOMAIN SPELLS</h5>
+	<info>
+		<name>Moon Domain</name>
+		<update version="0.0.1">
+			<file name="cleric-moon.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-moon.xml" />
+		</update>
+	</info>
+
+	<element name="Moon Domain" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_MOON_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>You are an initiate into the quiet mysteries of the moon and the subtleties of the night. Your faith illuminates any darkness you face.</p>
+			<h5 class="caption">MOON DOMAIN SPELLS</h5>
 			<table>
 				<thead>
 					<tr><td>Cleric Level</td><td>Spells</td></tr>
@@ -22,21 +22,21 @@
 				<tr><td>7th</td><td><em>compulsion, greater invisibility</em></td></tr>
 				<tr><td>9th</td><td><em>dream, hold monster</em></td></tr>
 			</table>
-            <div element="ID_KBP_DM5E_MOON_DOMAIN_ARCHETYPE_FEATURE_MOONS_GRACE" />
-            <div element="ID_KBP_DM5E_MOON_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_NIGHTS_CHILL" />
-            <div element="ID_KBP_DM5E_MOON_DOMAIN_ARCHETYPE_FEATURE_LUMINESCENT_AURA" />
-            <div element="ID_KBP_DM5E_MOON_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" />
-            <div element="ID_KBP_DM5E_MOON_DOMAIN_ARCHETYPE_FEATURE_THE_MOONLIT_WAY" />
-        </description>
-        <sheet display="false" />
-        <rules>
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_MOON_DOMAIN_ARCHETYPE_FEATURE_MOONS_GRACE" level="1" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_MOON_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_NIGHTS_CHILL" level="2" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_MOON_DOMAIN_ARCHETYPE_FEATURE_LUMINESCENT_AURA" level="6" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_MOON_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" level="8" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_MOON_DOMAIN_ARCHETYPE_FEATURE_THE_MOONLIT_WAY" level="17" />
+			<div element="ID_KBP_DM5E_MOON_DOMAIN_ARCHETYPE_FEATURE_MOONS_GRACE" />
+			<div element="ID_KBP_DM5E_MOON_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_NIGHTS_CHILL" />
+			<div element="ID_KBP_DM5E_MOON_DOMAIN_ARCHETYPE_FEATURE_LUMINESCENT_AURA" />
+			<div element="ID_KBP_DM5E_MOON_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" />
+			<div element="ID_KBP_DM5E_MOON_DOMAIN_ARCHETYPE_FEATURE_THE_MOONLIT_WAY" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_MOON_DOMAIN_ARCHETYPE_FEATURE_MOONS_GRACE" level="1" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_MOON_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_NIGHTS_CHILL" level="2" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_MOON_DOMAIN_ARCHETYPE_FEATURE_LUMINESCENT_AURA" level="6" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_MOON_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" level="8" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_MOON_DOMAIN_ARCHETYPE_FEATURE_THE_MOONLIT_WAY" level="17" />
 
-            <grant type="Spell" id="ID_KBP_DM5E_SPELL_AGONIZING_MARK" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_KBP_DM5E_SPELL_AGONIZING_MARK" level="1" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" level="1" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_KBP_DM5E_SPELL_DOME_OF_SILENCE" level="3" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_MOONBEAM" level="3" spellcasting="Cleric" prepared="true" />
@@ -46,63 +46,63 @@
 			<grant type="Spell" id="ID_PHB_SPELL_GREATER_INVISIBILITY" level="7" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_DREAM" level="9" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_HOLD_MONSTER" level="9" spellcasting="Cleric" prepared="true" />
-        </rules>
-    </element>
+		</rules>
+	</element>
 
 
-<!-- MOON’S GRACE --> 
-    <element name="Moon's Grace" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_MOON_DOMAIN_ARCHETYPE_FEATURE_MOONS_GRACE">
-        <description>
-            <p>When you select this domain at 1st level, you gain proficiency in Perception and Stealth, and you don’t have disadvantage on Stealth checks when you wear medium armor.</p>
-        </description>
-        <sheet>
-            <description>You don’t have disadvantage on Stealth checks when you wear medium armor.</description>
-        </sheet>
-        <rules>
-            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
-        </rules>
-    </element>
+<!-- MOON’S GRACE -->
+	<element name="Moon's Grace" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_MOON_DOMAIN_ARCHETYPE_FEATURE_MOONS_GRACE">
+		<description>
+			<p>When you select this domain at 1st level, you gain proficiency in Perception and Stealth, and you don’t have disadvantage on Stealth checks when you wear medium armor.</p>
+		</description>
+		<sheet>
+			<description>You don’t have disadvantage on Stealth checks when you wear medium armor.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+		</rules>
+	</element>
 
-<!-- CHANNEL DIVINITY: NIGHT’S CHILL --> 
-    <element name="Channel Divinity: Night's Chill" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_MOON_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_NIGHTS_CHILL">
-        <description>
-            <p>Starting at 2nd level, you can use your Channel Divinity to harness moonlight, which banishes magical light and deals cold damage to your foes. When you present your holy symbol as an action and use your Channel Divinity, any magical light within 30 feet of you is dispelled. Additionally, each hostile creature within 30 feet of you takes cold damage equal to 2d10 + your cleric level, or half as much damage with a successful Constitution saving throw. A creature that has total cover from you is not affected.</p>
-        </description>
-        <sheet alt="Night's Chill" usage="Channel Divinity" action="Action">
-            <description>Any magical light within 30 feet of you is dispelled. Additionally, each hostile creature within 30 feet of you takes cold damage equal to 2d10 + {{level:cleric}}, or half as much damage with a DC {{cleric:spellcasting:dc}} Constitution saving throw. A creature that has total cover from you is not affected.</description>
-        </sheet>
-    </element>
+<!-- CHANNEL DIVINITY: NIGHT’S CHILL -->
+	<element name="Channel Divinity: Night's Chill" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_MOON_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_NIGHTS_CHILL">
+		<description>
+			<p>Starting at 2nd level, you can use your Channel Divinity to harness moonlight, which banishes magical light and deals cold damage to your foes. When you present your holy symbol as an action and use your Channel Divinity, any magical light within 30 feet of you is dispelled. Additionally, each hostile creature within 30 feet of you takes cold damage equal to 2d10 + your cleric level, or half as much damage with a successful Constitution saving throw. A creature that has total cover from you is not affected.</p>
+		</description>
+		<sheet alt="Night's Chill" usage="Channel Divinity" action="Action">
+			<description>Any magical light within 30 feet of you is dispelled. Additionally, each hostile creature within 30 feet of you takes cold damage equal to 2d10 + {{level:cleric}}, or half as much damage with a DC {{cleric:spellcasting:dc}} Constitution saving throw. A creature that has total cover from you is not affected.</description>
+		</sheet>
+	</element>
 
-<!-- LUMINESCENT AURA --> 
-    <element name="Luminescent Aura" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_MOON_DOMAIN_ARCHETYPE_FEATURE_LUMINESCENT_AURA">
-        <description>
-            <p>At 6th level, you can emit a nimbus of light in a 30-foot radius for a number of rounds equal to your cleric level. This effect acts as a light spell but provides only dim light. All weapons and ammunition are treated as silvered while they’re in the aura and for 1 round after leaving it. Opponents that end their turn in the aura must make a successful Dexterity saving throw or be limned in silver light, identical in effect to a faerie fire spell, until the end of their next turn. You can use this feature three times, and you regain expended uses when you finish a long rest.</p>
-        </description>
-        <sheet usage="3/Long Rest">
-            <description>You emit a nimbus of light in a 30-foot radius for {{level:cleric}} rounds. This effect acts as a light spell but provides only dim light. All weapons and ammunition are treated as silvered while they’re in the aura and for 1 round after leaving it. Opponents that end their turn in the aura must make a DC {{cleric:spellcasting:dc}} Dexterity saving throw or be lined in silver light, identical in effect to a faerie fire spell, until the end of their next turn.</description>
-        </sheet>
-    </element>
- 
+<!-- LUMINESCENT AURA -->
+	<element name="Luminescent Aura" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_MOON_DOMAIN_ARCHETYPE_FEATURE_LUMINESCENT_AURA">
+		<description>
+			<p>At 6th level, you can emit a nimbus of light in a 30-foot radius for a number of rounds equal to your cleric level. This effect acts as a light spell but provides only dim light. All weapons and ammunition are treated as silvered while they’re in the aura and for 1 round after leaving it. Opponents that end their turn in the aura must make a successful Dexterity saving throw or be limned in silver light, identical in effect to a faerie fire spell, until the end of their next turn. You can use this feature three times, and you regain expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="3/Long Rest">
+			<description>You emit a nimbus of light in a 30-foot radius for {{level:cleric}} rounds. This effect acts as a light spell but provides only dim light. All weapons and ammunition are treated as silvered while they’re in the aura and for 1 round after leaving it. Opponents that end their turn in the aura must make a DC {{cleric:spellcasting:dc}} Dexterity saving throw or be lined in silver light, identical in effect to a faerie fire spell, until the end of their next turn.</description>
+		</sheet>
+	</element>
+
  <!-- DIVINE STRIKE -->
-    <element name="Divine Strike" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_MOON_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE">
-        <description>
-            <p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 cold damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
-        </description>
-        <sheet>
-            <description level="8">Once on each of your turns, you can cause a weapon attack to deal an extra 1d8 cold damage to the target on a hit.</description>
-            <description level="14">Once on each of your turns, you can cause a weapon attack to deal an extra 2d8 cold damage to the target on a hit.</description>
-        </sheet>
-    </element>
+	<element name="Divine Strike" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_MOON_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE">
+		<description>
+			<p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 cold damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+		</description>
+		<sheet>
+			<description level="8">Once on each of your turns, you can cause a weapon attack to deal an extra 1d8 cold damage to the target on a hit.</description>
+			<description level="14">Once on each of your turns, you can cause a weapon attack to deal an extra 2d8 cold damage to the target on a hit.</description>
+		</sheet>
+	</element>
 
-<!-- THE MOONLIT WAY --> 
-    <element name="The Moonlit Way" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_MOON_DOMAIN_ARCHETYPE_FEATURE_THE_MOONLIT_WAY">
-        <description>
-            <p>Beginning at 17th level, whenever the moon is visible in the sky, you can use an action to detect magical pathways, portals, and gate effects. To be detected, a portal must be within your line of sight and no farther than 120 feet from you. Detected portals are visible only to you, but you can point out their locations to others. Once you use this feature, you can't use it again until you finish a short or long rest.</p>
-        </description>
-        <sheet usage="1/Short Rest" action="Action">
-            <description>Whenever the moon is visible in the sky, you can use an action to detect magical pathways, portals, and gate effects. To be detected, a portal must be within your line of sight and no farther than 120 feet from you. Detected portals are visible only to you, but you can point out their locations to others. Once you use this feature, you can't use it again until you finish a short or long rest.</description>
-        </sheet>
-    </element>
-    
+<!-- THE MOONLIT WAY -->
+	<element name="The Moonlit Way" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_MOON_DOMAIN_ARCHETYPE_FEATURE_THE_MOONLIT_WAY">
+		<description>
+			<p>Beginning at 17th level, whenever the moon is visible in the sky, you can use an action to detect magical pathways, portals, and gate effects. To be detected, a portal must be within your line of sight and no farther than 120 feet from you. Detected portals are visible only to you, but you can point out their locations to others. Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short Rest" action="Action">
+			<description>Whenever the moon is visible in the sky, you can use an action to detect magical pathways, portals, and gate effects. To be detected, a portal must be within your line of sight and no farther than 120 feet from you. Detected portals are visible only to you, but you can point out their locations to others. Once you use this feature, you can't use it again until you finish a short or long rest.</description>
+		</sheet>
+	</element>
+
 </elements>

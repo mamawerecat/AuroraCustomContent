@@ -23,7 +23,7 @@
 			<set name="weapon">Dagger</set>
 		</setters>
 	</element>
-	
+
 <!-- Anchor of Striking -->
 	<element name="Anchor of Striking" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ANCHOR_OF_STRIKING">
 		<description>
@@ -59,7 +59,7 @@
 		</setters>
 	</element>
 
-<!-- Anointing Mace --> 
+<!-- Anointing Mace -->
 
 	<element name="Anointing Mace" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ANOINTING_MACE">
 		<description>
@@ -94,7 +94,7 @@
 			<set name="stackable">true</set>
 		</setters>
 	</element>
-	
+
 <!-- Arrow of Unpleasant Herbs -->
 
 	<element name="Arrow of Unpleasant Herbs" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ARROW_OF_UNPLEASANT_HERBS">
@@ -110,9 +110,9 @@
 			<set name="stackable">true</set>
 		</setters>
 	</element>
-	
+
 <!-- Asp’s Kiss -->
-	
+
 	<element name="Asp's Kiss" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ASPS_KISS">
 		<description>
 			<p>This haladie features two short, slightly curved blades attached to a single hilt with a short, blue-sheened spike on the hand guard. You gain a +2 bonus to attack and damage rolls made with this magic weapon. While attuned to this sword, you have immunity to poison damage, and, when you take the Dash action, the extra movement you gain is double your speed instead of equal to your speed. When you use the Attack action with this sword, you can make one attack with its hand guard spike (treat as a dagger) as a bonus action. You can use an action to cause indigo poison to coat the blades of this sword. </p>
@@ -177,7 +177,7 @@
 	</element>
 
 <!-- Blackguard’s Blade -->
-	
+
 	<element name="Blackguard's Blade" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BLACKGUARDS_BLADE">
 		<description>
 			<p>You have advantage on attack rolls made with this weapon against a target if another enemy of the target is within 5 feet of it, and it has no allies within 5 feet of it</p>
@@ -230,7 +230,7 @@
 		</setters>
 	</element>
 
-<!-- Blade of the Temple Guardian --> 
+<!-- Blade of the Temple Guardian -->
 	<element name="Blade of the Temple Guardian" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BLADE_OF_THE_TEMPLE_GUARDIAN">
 		<description>
 			<p>This simple but elegant shortsword is a magic weapon. When you are wielding it and use the Flurry of Blows class feature, you can make your bonus attacks with the sword rather than unarmed strikes. If you deal damage to a creature with this weapon and reduce it to 0 hit points, you absorb some of its energy, regaining 1 expended ki point.</p>
@@ -245,7 +245,7 @@
 			<set name="attunement" addition="by a monk">true</set>
 		</setters>
 	</element>
-	
+
 <!-- Bloodbow -->
 
 	<element name="Bloodbow" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BLOODBOW">
@@ -340,7 +340,7 @@
 		</setters>
 	</element>
 
-<!-- Bone Whip --> 
+<!-- Bone Whip -->
 	<element name="Bone Whip" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_BONE_WHIP">
 		<description>
 			<p>This whip is constructed of humanoid vertebrae with their edges magically sharpened and pointed. The bones are joined together into a coiled line by strands of steel wire. The handle is half a femur wrapped in soft leather of tanned humanoid skin. You gain a +1 bonus to attack and damage rolls with this weapon.</p>
@@ -440,7 +440,7 @@
 			<set name="attunement">true</set>
 		</setters>
 	</element>
-		
+
 <!-- Candied Axe -->
 	<element name="Candied Axe" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_CANDIED_AXE">
 		<description>
@@ -568,7 +568,7 @@
 			<set name="rarity">Uncommon</set>
 			<set name="stackable">true</set>
 		</setters>
-	</element>	
+	</element>
 
 <!-- Dagger of the Barbed Devil -->
 	<element name="Dagger of the Barbed Devil" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_DAGGER_OF_THE_BARBED_DEVIL">
@@ -674,8 +674,8 @@
 			<set name="weapon">Dagger</set>
 			<set name="attunement">true</set>
 		</setters>
-	</element>	
-	
+	</element>
+
 <!-- Dragonstooth Blade -->
 	<element name="Dragonstooth Blade" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_DRAGONSTOOTH_BLADE">
 		<description>
@@ -702,7 +702,7 @@
 			<set name="weapon">Greatsword||Longsword</set>
 			<set name="name-format">Dragonstooth {{parent}}</set>
 		</setters>
-	</element>	
+	</element>
 
 <!-- Enraging Ammunition  -->
 	<element name="Enraging Ammunition" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_ENRAGING_AMMUNITION">
@@ -768,8 +768,8 @@
 			<set name="weapon">Dagger</set>
 			<set name="attunement">true</set>
 		</setters>
-	</element>	
-	
+	</element>
+
 <!-- Flash Bullet -->
 	<element name="Flash Bullet" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_FLASH_BULLET">
 		<description>
@@ -815,7 +815,7 @@
 			<set name="weapon">Maul||Warhammer</set>
 		</setters>
 	</element>
-	
+
 <!-- Gale Javelin -->
 	<element name="Gale Javelin" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_GALE_JAVELIN">
 		<description>
@@ -866,7 +866,7 @@
 			<set name="attunement">true</set>
 		</setters>
 	</element>
-	
+
 <!-- Golden Bolt -->
 	 <element name="Golden Bolt" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_GOLDEN_BOLT">
 		 <description>
@@ -969,7 +969,7 @@
 		</setters>
 	</element>
 
-<!-- Impact Club --> 
+<!-- Impact Club -->
 	<element name="Impact Club" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_IMPACT_CLUB">
 		<description>
 			<p>This magic weapon has 3 charges and regains 1d3 expended charges daily at dawn. When you hit a target on your turn, you can take a bonus action to spend 1 charge and attempt to shove the target. The club grants you a +1 bonus on your Strength (Athletics) check to shove the target. If you roll a 20 on your attack roll with the club, you have advantage on your Strength (Athletics) check to shove the target, and you can push the target up to 10 feet away.</p>
@@ -1003,7 +1003,7 @@
 	</element>
 
 <!-- Knockabout Billet -->
-	
+
 	<element name="Knockabout Billet" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_KNOCKABOUT_BILLET">
 		<description>
 			<p>This stout, oaken cudgel helps you knock your opponents to the ground or away from you. When you hit a creature with this magic weapon, you can shove the target as part of the same attack, using your attack roll in place of a Strength (Athletics) check. The weapon deals damage as normal, regardless of the result of the shove. This property of the club can be used no more than once per hour.</p>
@@ -1032,7 +1032,7 @@
 			<set name="weapon">Dagger</set>
 			<set name="attunement">true</set>
 		</setters>
-	</element>	
+	</element>
 
 <!-- Labyrs of the Raging Bull -->
 	<element name="Labyrs of the Raging Bull" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_LABYRS_OF_THE_RAGING_BULL">
@@ -1085,7 +1085,7 @@
 			<set name="weapon">Dagger</set>
 		</setters>
 	</element>
-	
+
 <!-- Manticore’s Tail -->
 	<element name="Manticore’s Tail" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_MANTICORES_TAIL">
 		<description>
@@ -1262,7 +1262,7 @@
 		</setters>
 	</element>
 
-<!-- Pick of Ice Breaking --> 
+<!-- Pick of Ice Breaking -->
 	 <element name="Pick of Ice Breaking" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_PICK_OF_ICE_BREAKING">
 		 <description>
 			 <p>The metal head of this war pick is covered in tiny arcane runes. You gain a +1 bonus to attack and damage rolls made with this magic weapon. The bonus increases to +3 when you use the war pick to attack a construct, elemental, fey, or other creature made almost entirely of ice or snow. When you roll a 20 on an attack roll made with this weapon against such a creature, the target takes an extra 2d8 piercing damage. When you hit an object made of ice or snow with this weapon, the object doesn’t have a damage threshold when determining the damage you deal to it with this weapon.</p>
@@ -1278,7 +1278,7 @@
 		 </setters>
 	 </element>
 
-<!-- Pistol of the Umbral Court --> 
+<!-- Pistol of the Umbral Court -->
 	<element name="Pistol of the Umbral Court" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_PISTOL_OF_THE_UMBRAL_COURT">
 		<description>
 			<p>This hand crossbow is made from coal-colored wood. Its limb is made from cold steel and boasts engravings of sharp teeth. The barrel is magically oiled and smells faintly of ash. The grip is made from rough leather. </p>
@@ -1313,7 +1313,7 @@
 			 <set name="attunement">true</set>
 		 </setters>
 	 </element>
-	
+
 <!-- Rain of Chaos -->
 	<element name="Rain of Chaos" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_RAIN_OF_CHAOS">
 		<description>
@@ -1337,7 +1337,7 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type" addition="longbow">Weapon</set>
-			<set name="rarity">Uncommon</set> 
+			<set name="rarity">Uncommon</set>
 			<set name="weapon">Longbow</set>
 			<set name="attunement">true</set>
 		</setters>
@@ -2051,7 +2051,7 @@
 		</setters>
 	</element>
 
-<!-- Tyrant’s Whip --> 
+<!-- Tyrant’s Whip -->
 	<element name="Tyrant's Whip" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_TYRANTS_WHIP">
 		<description>
 			<p>This wicked whip has 3 charges and regains all expended charges daily at dawn. When you hit with an attack using this magic whip, you can use a bonus action to expend 1 of its charges to cast the command spell (save DC 13) from it on the creature you hit. If the attack is a critical hit, the target has disadvantage on the saving throw.</p>

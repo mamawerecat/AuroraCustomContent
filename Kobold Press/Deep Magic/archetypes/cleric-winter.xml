@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-    <info>
-        <name>Time Domain</name>
-        <update version="0.0.2">
-            <file name="cleric-time.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-time.xml" />
-        </update>
-    </info>
-    
-    <element name="Time Domain" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_TIME_DOMAIN">
-        <supports>Divine Domain</supports>
-        <description>
-            <p>The gods that deal with time are varied. Some see into the future and past; others deal with the cycles of life that mark the passage of time—birth and death, the seasons, or renewal and decay—or have some particular connection to the timeline, such as gods of creation or apocalypse do. The clerics of such gods are often granted powers that allow them to see through or manipulate time, emulating their deities and enabling them to alter events as their gods see fit.</p>
-            <h5 class="caption">TIME DOMAIN SPELLS</h5>
+	<info>
+		<name>Time Domain</name>
+		<update version="0.0.2">
+			<file name="cleric-time.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-time.xml" />
+		</update>
+	</info>
+
+	<element name="Time Domain" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_TIME_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>The gods that deal with time are varied. Some see into the future and past; others deal with the cycles of life that mark the passage of time—birth and death, the seasons, or renewal and decay—or have some particular connection to the timeline, such as gods of creation or apocalypse do. The clerics of such gods are often granted powers that allow them to see through or manipulate time, emulating their deities and enabling them to alter events as their gods see fit.</p>
+			<h5 class="caption">TIME DOMAIN SPELLS</h5>
 			<table>
 				<thead>
 					<tr><td>Cleric Level</td><td>Spells</td></tr>
@@ -22,21 +22,21 @@
 				<tr><td>7th</td><td><em>flickering fate, reset</em></td></tr>
 				<tr><td>9th</td><td><em>modify memory, wall of time</em></td></tr>
 			</table>
-            <div element="ID_KBP_DM5E_TIME_DOMAIN_ARCHETYPE_FEATURE_PRESCIENT_GLIMPSES" />
-            <div element="ID_KBP_DM5E_TIME_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_TIME_SHIFT" />
-            <div element="ID_KBP_DM5E_TIME_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_GROUP_TIME_SHIFT" />
-            <div element="ID_KBP_DM5E_TIME_DOMAIN_ARCHETYPE_FEATURE_PRESCIENT_STRIKE" />
-            <div element="ID_KBP_DM5E_TIME_DOMAIN_ARCHETYPE_FEATURE_MASTER_OF_TIME" />
-        </description>
-        <sheet display="false" />
-        <rules>
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_TIME_DOMAIN_ARCHETYPE_FEATURE_PRESCIENT_GLIMPSES" level="1" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_TIME_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_TIME_SHIFT" level="2" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_TIME_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_GROUP_TIME_SHIFT" level="6" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_TIME_DOMAIN_ARCHETYPE_FEATURE_PRESCIENT_STRIKE" level="8" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_TIME_DOMAIN_ARCHETYPE_FEATURE_MASTER_OF_TIME" level="17" />
+			<div element="ID_KBP_DM5E_TIME_DOMAIN_ARCHETYPE_FEATURE_PRESCIENT_GLIMPSES" />
+			<div element="ID_KBP_DM5E_TIME_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_TIME_SHIFT" />
+			<div element="ID_KBP_DM5E_TIME_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_GROUP_TIME_SHIFT" />
+			<div element="ID_KBP_DM5E_TIME_DOMAIN_ARCHETYPE_FEATURE_PRESCIENT_STRIKE" />
+			<div element="ID_KBP_DM5E_TIME_DOMAIN_ARCHETYPE_FEATURE_MASTER_OF_TIME" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_TIME_DOMAIN_ARCHETYPE_FEATURE_PRESCIENT_GLIMPSES" level="1" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_TIME_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_TIME_SHIFT" level="2" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_TIME_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_GROUP_TIME_SHIFT" level="6" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_TIME_DOMAIN_ARCHETYPE_FEATURE_PRESCIENT_STRIKE" level="8" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_TIME_DOMAIN_ARCHETYPE_FEATURE_MASTER_OF_TIME" level="17" />
 
-            <grant type="Spell" id="ID_KBP_DM5E_SPELL_AUSPICIOUS_WARNING" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_KBP_DM5E_SPELL_AUSPICIOUS_WARNING" level="1" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" level="1" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_KBP_DM5E_SPELL_DECELERATE" level="3" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_GENTLE_REPOSE" level="3" spellcasting="Cleric" prepared="true" />
@@ -46,70 +46,70 @@
 			<grant type="Spell" id="ID_KBP_DM5E_SPELL_RESET" level="7" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_MODIFY_MEMORY" level="9" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_KBP_DM5E_SPELL_WALL_OF_TIME" level="9" spellcasting="Cleric" prepared="true" />
-        </rules>
-    </element>
+		</rules>
+	</element>
 
 
-<!-- PRESCIENT GLIMPSES --> 
-    <element name="Prescient Glimpses" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_TIME_DOMAIN_ARCHETYPE_FEATURE_PRESCIENT_GLIMPSES">
-        <description>
-            <p>When you choose this domain at 1st level, you gain proficiency in Insight and Perception, and your proficiency bonus is doubled for any ability check you make that uses either of those skills.</p>
-            <p class="indent">Additionally, whenever you might be surprised, you can make a Wisdom saving throw against a DC equal to the highest result among the enemy’s initiative rolls. On a successful save, you are not surprised.</p>
-        </description>
-        <sheet>
-            <description>Whenever you might be surprised, you can make a Wisdom saving throw against a DC equal to the highest result among the enemy’s initiative rolls. On a successful save, you are not surprised.</description>
-        </sheet>
-        <rules>
+<!-- PRESCIENT GLIMPSES -->
+	<element name="Prescient Glimpses" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_TIME_DOMAIN_ARCHETYPE_FEATURE_PRESCIENT_GLIMPSES">
+		<description>
+			<p>When you choose this domain at 1st level, you gain proficiency in Insight and Perception, and your proficiency bonus is doubled for any ability check you make that uses either of those skills.</p>
+			<p class="indent">Additionally, whenever you might be surprised, you can make a Wisdom saving throw against a DC equal to the highest result among the enemy’s initiative rolls. On a successful save, you are not surprised.</p>
+		</description>
+		<sheet>
+			<description>Whenever you might be surprised, you can make a Wisdom saving throw against a DC equal to the highest result among the enemy’s initiative rolls. On a successful save, you are not surprised.</description>
+		</sheet>
+		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
-			
-            <stat name="insight:proficiency" value="proficiency" bonus="double" requirements="ID_PROFICIENCY_SKILL_INSIGHT" />
-            <stat name="perception:proficiency" value="proficiency" bonus="double" requirements="ID_PROFICIENCY_SKILL_PERCEPTION" />
-        </rules>
-    </element>
 
-<!-- CHANNEL DIVINITY: TIME SHIFT --> 
-    <element name="Channel Divinity: Time Shift" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_TIME_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_TIME_SHIFT">
-        <description>
-            <p>Starting at 2nd level, you can use your Channel Divinity to shift time and alter the order of initiative. As an action, you can move yourself in the initiative order to any point of your choosing.</p>
-        </description>
-        <sheet alt="Time Shift" usage="Channel Divinity" action="Action">
-            <description>As an action, you can move yourself in the initiative order to any point of your choosing.</description>
-        </sheet>
-    </element>
+			<stat name="insight:proficiency" value="proficiency" bonus="double" requirements="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<stat name="perception:proficiency" value="proficiency" bonus="double" requirements="ID_PROFICIENCY_SKILL_PERCEPTION" />
+		</rules>
+	</element>
 
-<!-- CHANNEL DIVINITY: GROUP TIME SHIFT --> 
-    <element name="Channel Divinity: Group Time Shift" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_TIME_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_GROUP_TIME_SHIFT">
-        <description>
-            <p>Starting at 6th level, you can use your Channel Divinity to shift time for others as well as yourself. Choose up to three allies. When you use your Channel Divinity, you can also move them in the initiative order to any positions of your choosing. An allied creature can choose not to be affected.</p>
-        </description>
-        <sheet alt="Group Time Shift" usage="Channel Divinity" action="Action">
-            <description>Choose up to three allies. When you use your Channel Divinity, you can also move them in the initiative order to any positions of your choosing. An allied creature can choose not to be affected.</description>
-        </sheet>
-    </element>
+<!-- CHANNEL DIVINITY: TIME SHIFT -->
+	<element name="Channel Divinity: Time Shift" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_TIME_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_TIME_SHIFT">
+		<description>
+			<p>Starting at 2nd level, you can use your Channel Divinity to shift time and alter the order of initiative. As an action, you can move yourself in the initiative order to any point of your choosing.</p>
+		</description>
+		<sheet alt="Time Shift" usage="Channel Divinity" action="Action">
+			<description>As an action, you can move yourself in the initiative order to any point of your choosing.</description>
+		</sheet>
+	</element>
 
-<!-- PRESCIENT STRIKE --> 
-    <element name="Prescient Strike" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_TIME_DOMAIN_ARCHETYPE_FEATURE_PRESCIENT_STRIKE">
-        <description>
-            <p>Beginning at 8th level, you intuitively know where your enemies will be in the immediate future and how they will attack. You gain advantage on one attack roll each turn when you take the Attack action. Alternatively, you can take a reaction when a creature attacks you to give that creature disadvantage on its attack roll against you.</p>
-        </description>
-        <sheet>
-            <description>You gain advantage on one attack roll each turn when you take the Attack action. Alternatively, you can take a reaction when a creature attacks you to give that creature disadvantage on its attack roll against you.</description>
-        </sheet>
-    </element>
+<!-- CHANNEL DIVINITY: GROUP TIME SHIFT -->
+	<element name="Channel Divinity: Group Time Shift" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_TIME_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_GROUP_TIME_SHIFT">
+		<description>
+			<p>Starting at 6th level, you can use your Channel Divinity to shift time for others as well as yourself. Choose up to three allies. When you use your Channel Divinity, you can also move them in the initiative order to any positions of your choosing. An allied creature can choose not to be affected.</p>
+		</description>
+		<sheet alt="Group Time Shift" usage="Channel Divinity" action="Action">
+			<description>Choose up to three allies. When you use your Channel Divinity, you can also move them in the initiative order to any positions of your choosing. An allied creature can choose not to be affected.</description>
+		</sheet>
+	</element>
 
-<!-- MASTER OF TIME --> 
-    <element name="Master of Time" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_TIME_DOMAIN_ARCHETYPE_FEATURE_MASTER_OF_TIME">
-        <description>
-            <p>At 17th level, you add foresight and time stop to your spell list. You are never surprised, and whenever you and your allies might be surprised, you can grant up to six allies the ability to make Wisdom saving throws to avoid being surprised, as if they had your Prescient Glimpses feature.</p>
-        </description>
-        <sheet>
-            <description>You are never surprised, and whenever you and your allies might be surprised, you can grant up to six allies the ability to make Wisdom saving throws to avoid being surprised, as if they had your Prescient Glimpses feature.</description>
-        </sheet>
-        <spellcasting name="Cleric" extend="true">
+<!-- PRESCIENT STRIKE -->
+	<element name="Prescient Strike" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_TIME_DOMAIN_ARCHETYPE_FEATURE_PRESCIENT_STRIKE">
+		<description>
+			<p>Beginning at 8th level, you intuitively know where your enemies will be in the immediate future and how they will attack. You gain advantage on one attack roll each turn when you take the Attack action. Alternatively, you can take a reaction when a creature attacks you to give that creature disadvantage on its attack roll against you.</p>
+		</description>
+		<sheet>
+			<description>You gain advantage on one attack roll each turn when you take the Attack action. Alternatively, you can take a reaction when a creature attacks you to give that creature disadvantage on its attack roll against you.</description>
+		</sheet>
+	</element>
+
+<!-- MASTER OF TIME -->
+	<element name="Master of Time" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_TIME_DOMAIN_ARCHETYPE_FEATURE_MASTER_OF_TIME">
+		<description>
+			<p>At 17th level, you add foresight and time stop to your spell list. You are never surprised, and whenever you and your allies might be surprised, you can grant up to six allies the ability to make Wisdom saving throws to avoid being surprised, as if they had your Prescient Glimpses feature.</p>
+		</description>
+		<sheet>
+			<description>You are never surprised, and whenever you and your allies might be surprised, you can grant up to six allies the ability to make Wisdom saving throws to avoid being surprised, as if they had your Prescient Glimpses feature.</description>
+		</sheet>
+		<spellcasting name="Cleric" extend="true">
 			<extend>ID_PHB_SPELL_FORESIGHT</extend>
 			<extend>ID_PHB_SPELL_TIME_STOP</extend>
 		</spellcasting>
-    </element>
+	</element>
 
 </elements>

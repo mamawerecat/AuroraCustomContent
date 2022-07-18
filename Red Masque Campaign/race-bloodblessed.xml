@@ -12,49 +12,49 @@
 	
 <!-- MAIN RACE -->
 
-    <element name="Bloodblessed" type="Race" source="Red Masque Campaign" id="ID_BTC_RMC_RACE_BLOODBLESSED">
-        <description>
-            <p><em>The descendants of the Martyred Saints, the founders of the Bloodlines.</em>  </p>
+	<element name="Bloodblessed" type="Race" source="Red Masque Campaign" id="ID_BTC_RMC_RACE_BLOODBLESSED">
+		<description>
+			<p><em>The descendants of the Martyred Saints, the founders of the Bloodlines.</em>  </p>
 
-                <h4>Bloodblessed Traits</h4>
-                    <p></p>
-                    <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 1.</p>
-                    <p class="indent"><strong><em>Age.</em></strong> The Bloodblessed live many centuries. The Kandaoni current Knight-Tyrant of Shoraulk is known to be over 5,000 years, and still vigorous.</p>
-                    <p class="indent"><strong><em>Size.</em></strong> They can range anywhere from 4-7 feet. You are size Mediuim.</p>
-                    <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
-                    <p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light.  You can’t discern color in darkness, only shades of gray.</p>
-                    <p class="indent"><strong><em>Blood Drain.</em></strong> As a blood blessed, you can regain vitality via the consumption of the blessed essence of blood. Your bite counts as a natural weapon with which you are proficient. Your bite deals 1d4 + your strength modifier piercing damage. The damage die goes up to a d6 at 5th level, d8 at 10th level, and a d10 at level 20. When you are missing half or more of your hit points, you have advantage on attack rolls that you make with this attack. When you use your bite and hit a creature with this attack that isn’t a Construct or undead, you can regain hit points equal to the damage dealt by the bite attack. </p>
-                    <p class="indent"><strong><em>Languages.</em></strong> Common, Walpurgian</p>
-                    <p class="indent"><strong><em>Subracess.</em></strong> There are a variety of subraces of the Bloodblessed. Kandaoni, Sacroxi, </p>
-        </description>
+				<h4>Bloodblessed Traits</h4>
+					<p></p>
+					<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 1.</p>
+					<p class="indent"><strong><em>Age.</em></strong> The Bloodblessed live many centuries. The Kandaoni current Knight-Tyrant of Shoraulk is known to be over 5,000 years, and still vigorous.</p>
+					<p class="indent"><strong><em>Size.</em></strong> They can range anywhere from 4-7 feet. You are size Mediuim.</p>
+					<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+					<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light.  You can’t discern color in darkness, only shades of gray.</p>
+					<p class="indent"><strong><em>Blood Drain.</em></strong> As a blood blessed, you can regain vitality via the consumption of the blessed essence of blood. Your bite counts as a natural weapon with which you are proficient. Your bite deals 1d4 + your strength modifier piercing damage. The damage die goes up to a d6 at 5th level, d8 at 10th level, and a d10 at level 20. When you are missing half or more of your hit points, you have advantage on attack rolls that you make with this attack. When you use your bite and hit a creature with this attack that isn’t a Construct or undead, you can regain hit points equal to the damage dealt by the bite attack. </p>
+					<p class="indent"><strong><em>Languages.</em></strong> Common, Walpurgian</p>
+					<p class="indent"><strong><em>Subracess.</em></strong> There are a variety of subraces of the Bloodblessed. Kandaoni, Sacroxi, </p>
+		</description>
 
-        <sheet display="false" />
+		<sheet display="false" />
 
-        <rules>
-            <stat name="charisma" value="1" />
-            <stat name="innate speed" value="30" bonus="base" />
+		<rules>
+			<stat name="charisma" value="1" />
+			<stat name="innate speed" value="30" bonus="base" />
 
-	    <grant type="Size" id="ID_SIZE_MEDIUM" />
-	    <grant type="Vision" id="ID_VISION_DARKVISION" />
+		<grant type="Size" id="ID_SIZE_MEDIUM" />
+		<grant type="Vision" id="ID_VISION_DARKVISION" />
 
-	    <grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_UA20171113_SUB_RACE_GRUGACH" />
-            <grant type="Language" id="ID_BTC_RMC_LANGUAGE_WALPURGIAN" />
-            
-            <grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_BLOOD_DRAIN" />
-            <grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_BLOODBLESSED_SUBRACE" />
-        </rules>
-    </element>
-    
-    <element name="Blood-drain" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_BLOOD_DRAIN">
-        <description>
-            <p>As a blood blessed, you can regain vitality via the consumption of the blessed essence of blood. Your bite counts as a natural weapon with which you are proficient. Your bite deals 1d4 + your strength modifier piercing damage. The damage die goes up to a d6 at 5th level, d8 at 10th level, and a d10 at level 20. When you are missing half or more of your hit points, you have advantage on attack rolls that you make with this attack. When you use your bite and hit a creature with this attack that isn’t a Construct or undead, you can regain hit points equal to the damage dealt by the bite attack.</p>
-        </description>
-        <sheet>
-            <description>Your bite deals 1d4 + {{strength:modifier}} piercing damage. The damage die goes up to a d6 at 5th level, d8 at 10th level, and a d10 at level 20. When you are missing half or more of your hit points, you have advantage on attack rolls that you make with this attack.  When you use your bite and hit a creature with this attack that isn’t a Construct or undead, you can regain hit points equal to the damage dealt by the bite attack.</description>
-        </sheet>
-    </element>
+		<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_UA20171113_SUB_RACE_GRUGACH" />
+			<grant type="Language" id="ID_BTC_RMC_LANGUAGE_WALPURGIAN" />
+			
+			<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_BLOOD_DRAIN" />
+			<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_BLOODBLESSED_SUBRACE" />
+		</rules>
+	</element>
+	
+	<element name="Blood-drain" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_BLOOD_DRAIN">
+		<description>
+			<p>As a blood blessed, you can regain vitality via the consumption of the blessed essence of blood. Your bite counts as a natural weapon with which you are proficient. Your bite deals 1d4 + your strength modifier piercing damage. The damage die goes up to a d6 at 5th level, d8 at 10th level, and a d10 at level 20. When you are missing half or more of your hit points, you have advantage on attack rolls that you make with this attack. When you use your bite and hit a creature with this attack that isn’t a Construct or undead, you can regain hit points equal to the damage dealt by the bite attack.</p>
+		</description>
+		<sheet>
+			<description>Your bite deals 1d4 + {{strength:modifier}} piercing damage. The damage die goes up to a d6 at 5th level, d8 at 10th level, and a d10 at level 20. When you are missing half or more of your hit points, you have advantage on attack rolls that you make with this attack.  When you use your bite and hit a creature with this attack that isn’t a Construct or undead, you can regain hit points equal to the damage dealt by the bite attack.</description>
+		</sheet>
+	</element>
 
-    <element name="Bloodblessed Subrace" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_BLOODBLESSED_SUBRACE">
+	<element name="Bloodblessed Subrace" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_BLOODBLESSED_SUBRACE">
 		<description>
 			<p>There are three main subraces of Bloodblessed: Kandaoni, Sycoraxi, Anastasoi</p>
 		</description>
@@ -72,69 +72,69 @@
 	<description>
 		<p><em>Among the children of Walpurgis-Skuld, there are none more fervent and honest in their devotion to the Saints then the winged children of Saint Anastasia, blessed Lady of Light and Shadows.</em></p>
 		<p class="indent"><strong><em>Ability Score Increase:</em></strong> Your Wisdom increases by 2 and your Intelligence score increases by 1.</p>
-                <p class="indent"><strong><em>Alignment.</em></strong> As the clan considered closest to the divine Martyrs, the Anastasoi can run the whole gamut of alignments.</p>
+				<p class="indent"><strong><em>Alignment.</em></strong> As the clan considered closest to the divine Martyrs, the Anastasoi can run the whole gamut of alignments.</p>
 		<p class="indent"><strong><em>Shadow and Light.</em></strong> Without the shadow, the light could not illuminate, and without the light, the shadow could not give succor. You have resistance to radiant and necrotic damage.</p>
-                <p class="indent"><strong><em>Blessing of Anastasia and the Martyrs.</em></strong> You bear the blessings of the Martyr of Devotion herself; two large wings.  You have a flying speed of 30 feet.</p>
-                <p class="indent"><strong><em>Blood of the Devoted.</em></strong> You have access to two cantrips and gain a first level spell at level 3 and an additional first level spell at level 5. The spells must be from either the druid, sorcerer or warlock spell lists.  Wisdom is your spellcasting ability.  You are also proficient in religion, and you have advantage in wisdom checks.</p>
-                <p class="indent"><strong><em>Additional Languages.</em></strong> Anastasoi, Celestial, Infernal.</p>
+				<p class="indent"><strong><em>Blessing of Anastasia and the Martyrs.</em></strong> You bear the blessings of the Martyr of Devotion herself; two large wings.  You have a flying speed of 30 feet.</p>
+				<p class="indent"><strong><em>Blood of the Devoted.</em></strong> You have access to two cantrips and gain a first level spell at level 3 and an additional first level spell at level 5. The spells must be from either the druid, sorcerer or warlock spell lists.  Wisdom is your spellcasting ability.  You are also proficient in religion, and you have advantage in wisdom checks.</p>
+				<p class="indent"><strong><em>Additional Languages.</em></strong> Anastasoi, Celestial, Infernal.</p>
 	</description>
 
 	<sheet display="false" />
 
 	<rules>
-                <stat name="wisdom" value="2" />
-                <stat name="intelligence" value="1" />
+				<stat name="wisdom" value="2" />
+				<stat name="intelligence" value="1" />
 
-                <grant type="Language" id="ID_BTC_RMC_LANGUAGE_ANASTASOI" />
-                <grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
-                <grant type="Language" id="ID_LANGUAGE_INFERNAL" />
+				<grant type="Language" id="ID_BTC_RMC_LANGUAGE_ANASTASOI" />
+				<grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
+				<grant type="Language" id="ID_LANGUAGE_INFERNAL" />
 
 		<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_SHADOW_AND_LIGHT" />
-                <grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_BLESSING_OF_ANASTASIA_AND_THE_MARTYRS" />
-                <grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_BLOOD_OF_THE_DEVOTED" />
+				<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_BLESSING_OF_ANASTASIA_AND_THE_MARTYRS" />
+				<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_BLOOD_OF_THE_DEVOTED" />
 	</rules>
 </element>
 
-    <element name="Shadow and Light" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_SHADOW_AND_LIGHT">
-        <description>
-            <p>Without the shadow, the light could not illuminate, and without the light, the shadow could not give succor. You have resistance to radiant and necrotic damage.</p>
-        </description>
-        <sheet>
-            <description>Without the shadow, the light could not illuminate, and without the light, the shadow could not give succor. You have resistance to radiant and necrotic damage.</description>
-        </sheet>
-        <rules>
-            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
-            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
-        </rules>
-    </element>
+	<element name="Shadow and Light" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_SHADOW_AND_LIGHT">
+		<description>
+			<p>Without the shadow, the light could not illuminate, and without the light, the shadow could not give succor. You have resistance to radiant and necrotic damage.</p>
+		</description>
+		<sheet>
+			<description>Without the shadow, the light could not illuminate, and without the light, the shadow could not give succor. You have resistance to radiant and necrotic damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+		</rules>
+	</element>
 
-    <element name="Blessing of Anastasia and the Martyrs" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_BLESSING_OF_ANASTASIA_AND_THE_MARTYRS">
-        <description>
-            <p>You bear the blessings of the Martyr of Devotion herself; two large wings.  You have a flying speed of 30 feet. You cannot use this flying speed if you are wearing heavy armor.</p>
-        </description>
-        <sheet>
-            <description>You bear the blessings of the Martyr of Devotion herself; two large wings.  You have a flying speed of 30 feet.</description>
-        </sheet>
-        <rules>
-            <stat name="innate speed:fly" value="30" bonus="base" equipped="![armor:heavy]" />
-        </rules>
-    </element>
+	<element name="Blessing of Anastasia and the Martyrs" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_BLESSING_OF_ANASTASIA_AND_THE_MARTYRS">
+		<description>
+			<p>You bear the blessings of the Martyr of Devotion herself; two large wings.  You have a flying speed of 30 feet. You cannot use this flying speed if you are wearing heavy armor.</p>
+		</description>
+		<sheet>
+			<description>You bear the blessings of the Martyr of Devotion herself; two large wings.  You have a flying speed of 30 feet.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:fly" value="30" bonus="base" equipped="![armor:heavy]" />
+		</rules>
+	</element>
 
-    <element name="Blood of the Devoted" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_BLOOD_OF_THE_DEVOTED">
-        <description>
-            <p>You have access to two cantrips and gain a first level spell at level 3 and an additional first level spell at level 5. The spells must be from either the druid, sorcerer or warlock spell lists.  Wisdom is your spellcasting ability.  You are also proficient in religion, and you have advantage in wisdom checks.</p>
-        </description>
-        <sheet>
-            <description>You have access to two cantrips and gain a first level spell at level 3 and an additional first level spell at level 5. The spells must be from either the druid, sorcerer or warlock spell lists.  Wisdom is your spellcasting ability.  You are also proficient in religion, and you have advantage in wisdom checks.</description>
-        </sheet>
-        <rules>
-            <select type="Spell" name="Cantrip (Anastasoi)" supports="0,(Druid||Sorcerer||Warlock)" number="2"/>
-            <select type="Spell" name="Blood of the Devoted (Anastasoi)" supports="1,(Druid||Sorcerer||Warlock)" level="3" />
-            <select type="Spell" name="Blood of the Devoted (Anastasoi)" supports="1,(Druid||Sorcerer||Warlock)" level="5" />
+	<element name="Blood of the Devoted" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_BLOOD_OF_THE_DEVOTED">
+		<description>
+			<p>You have access to two cantrips and gain a first level spell at level 3 and an additional first level spell at level 5. The spells must be from either the druid, sorcerer or warlock spell lists.  Wisdom is your spellcasting ability.  You are also proficient in religion, and you have advantage in wisdom checks.</p>
+		</description>
+		<sheet>
+			<description>You have access to two cantrips and gain a first level spell at level 3 and an additional first level spell at level 5. The spells must be from either the druid, sorcerer or warlock spell lists.  Wisdom is your spellcasting ability.  You are also proficient in religion, and you have advantage in wisdom checks.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Cantrip (Anastasoi)" supports="0,(Druid||Sorcerer||Warlock)" number="2"/>
+			<select type="Spell" name="Blood of the Devoted (Anastasoi)" supports="1,(Druid||Sorcerer||Warlock)" level="3" />
+			<select type="Spell" name="Blood of the Devoted (Anastasoi)" supports="1,(Druid||Sorcerer||Warlock)" level="5" />
 
-            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
-        </rules>
-    </element>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+		</rules>
+	</element>
 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ KANDAONI SUBRACE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -144,136 +144,136 @@
 	<description>
 		<p><em>Born and bred for battle, the metal-skinned kandaoni are the most martial of the bloodblessed, holding within their veins the magics and might of the War Martyr himself.</em></p>
 		<p class="indent"><strong><em>Ability Score Increase:</em></strong> Your Strength increase by 2 and your Constitution score increases by 1.</p>
-                <p class="indent"><strong><em>Alignment.</em></strong> As befitting the regimented lifestyle resultant from being the descendent from the War Martyr himself, kandaoni tend to skewer towards lawful alignments.</p>
+				<p class="indent"><strong><em>Alignment.</em></strong> As befitting the regimented lifestyle resultant from being the descendent from the War Martyr himself, kandaoni tend to skewer towards lawful alignments.</p>
 		<p class="indent"><strong><em>Blade of Kandaon.</em></strong> From birth, the kandanoi are trained in the weapons that Saint Kandaon himself used during his mortal lifetime.  Your proficiency with the bastard sword, greatsword, longsword, and shortsword.</p>
-                <p class="indent"><strong><em>Weapon's Bond.</em></strong> As befitting the bloodline of the War Martyr, one must never be without a weapon in hand.  With ten minutes of concentrating, you can establish a bond with one weapon of your choice. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand.</p>
-                <p class="indent"><strong><em>Steelskin</em></strong> Your skin, as per the blessing of the Kandoni bloodline, is resistant to weapons and attack granting you a +1 to AC. </p>
-                <p class="indent"><strong><em>Blood of the War Martyr:</em></strong> You have access to two cantrips from either the Sorcerer or Paladin spell lists. On 3rd level you gain one first level spell from either the Sorcerer or Paladin spell lists. Charisma is your spellcasting ability.You are also proficient in athletics, and you have advantage in strength checks. </p>
-                <p class="indent"><strong><em>Additional Languages.</em></strong> Kandaoni and one of your choice.</p>
+				<p class="indent"><strong><em>Weapon's Bond.</em></strong> As befitting the bloodline of the War Martyr, one must never be without a weapon in hand.  With ten minutes of concentrating, you can establish a bond with one weapon of your choice. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand.</p>
+				<p class="indent"><strong><em>Steelskin</em></strong> Your skin, as per the blessing of the Kandoni bloodline, is resistant to weapons and attack granting you a +1 to AC. </p>
+				<p class="indent"><strong><em>Blood of the War Martyr:</em></strong> You have access to two cantrips from either the Sorcerer or Paladin spell lists. On 3rd level you gain one first level spell from either the Sorcerer or Paladin spell lists. Charisma is your spellcasting ability.You are also proficient in athletics, and you have advantage in strength checks. </p>
+				<p class="indent"><strong><em>Additional Languages.</em></strong> Kandaoni and one of your choice.</p>
 	</description>
 
 	<sheet display="false" />
 
 	<rules>
-                <stat name="strength" value="2" />
+				<stat name="strength" value="2" />
 		<stat name="constitution" value="1" />
 
-                <grant type="Language" id="ID_BTC_RMC_LANGUAGE_KANDAONI" />
-                <select type="Language" name="Language, (Kandaoni)" supports="Standard||Exotic" />
+				<grant type="Language" id="ID_BTC_RMC_LANGUAGE_KANDAONI" />
+				<select type="Language" name="Language, (Kandaoni)" supports="Standard||Exotic" />
 
 		<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_BLADE_OF_KANDAON" />
-                <grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_WEAPONS_BOND" />
-                <grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_STEELSKIN" />
-                <grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_BLOOD_OF_THE_WAR_MARTYR" />
+				<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_WEAPONS_BOND" />
+				<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_STEELSKIN" />
+				<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_BLOOD_OF_THE_WAR_MARTYR" />
 	</rules>
 </element>
 
-    <element name="Blade of Kandaon" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_BLADE_OF_KANDAON">
-        <description>
-            <p>You have proficiency with the bastardsword, greatsword, longsword, and shortsword.</p>
-        </description>
-        <sheet display="false">
-            <description>You have proficiency with the bastardsword, greatsword, longsword, and shortsword.</description>
-        </sheet>
-        <rules>
-            <grant type="Proficiency" id="ID_BTC_RMC_PROFICIENCY_WEAPON_PROFICIENCY_BASTARDSWORD" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" />
-        </rules>
-    </element>
-    
-    <element name="Weapon's Bond" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_WEAPONS_BOND">
-        <description>
-            <p> As befitting the bloodline of the War Martyr, one must never be without a weapon in hand.  With ten minutes of concentrating, you can establish a bond with one weapon of your choice. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand.</p>
-        </description>
-        <sheet>
-            <description> As befitting the bloodline of the War Martyr, one must never be without a weapon in hand.  With ten minutes of concentrating, you can establish a bond with one weapon of your choice. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand.</description>
-        </sheet>
-    </element>
-    
-    <element name="Steelskin" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_STEELSKIN">
-        <description>
-            <p> Your skin, as per the blessing of the Kandoni bloodline, is resistant to weapons and attack granting you a +1 to AC.</p>
-        </description>
-        <sheet>
-            <description> Your skin, as per the blessing of the Kandoni bloodline, is resistant to weapons and attack granting you a +1 to AC.</description>
-        </sheet>
-        <rules>
-            <stat name="ac:steelskin" value="11" />
-            <stat name="ac:calculation" value="ac:steelskin" bonus="calculation" />
-        </rules>
-    </element>
-    
-    <element name="Blood of the War Martyr" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_BLOOD_OF_THE_WAR_MARTYR">
-        <description>
-            <p>You have access to two cantrips from either the Sorcerer or Paladin spell lists. On 3rd level you gain one first level spell from either the Sorcerer or Paladin spell lists. Charisma is your spellcasting ability.You are also proficient in athletics, and you have advantage in strength checks.</p>
-        </description>
-        <sheet>
-            <description>You have access to two cantrips from either the Sorcerer or Cleric spell lists. You are also proficient in athletics, and you have advantage in strength checks.</description>
-            <description level="3">You have access to two cantrips from either the Sorcerer or Cleric spell lists. You gain one first level spell from either the Sorcerer or Paladin spell lists. Charisma is your spellcasting ability. You are also proficient in athletics, and you have advantage in strength checks.</description>
-        </sheet>
-        <rules>
-            <select type="Spell" name="Cantrip (Kandaoni)" supports="0,(Cleric||Sorcerer)" number="2" />
-            <select type="Spell" name="First level (Kandaoni)" supports="1,(Cleric||Sorcerer)" level="3" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
-        </rules>
-    </element>
+	<element name="Blade of Kandaon" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_BLADE_OF_KANDAON">
+		<description>
+			<p>You have proficiency with the bastardsword, greatsword, longsword, and shortsword.</p>
+		</description>
+		<sheet display="false">
+			<description>You have proficiency with the bastardsword, greatsword, longsword, and shortsword.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_BTC_RMC_PROFICIENCY_WEAPON_PROFICIENCY_BASTARDSWORD" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" />
+		</rules>
+	</element>
+	
+	<element name="Weapon's Bond" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_WEAPONS_BOND">
+		<description>
+			<p> As befitting the bloodline of the War Martyr, one must never be without a weapon in hand.  With ten minutes of concentrating, you can establish a bond with one weapon of your choice. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand.</p>
+		</description>
+		<sheet>
+			<description> As befitting the bloodline of the War Martyr, one must never be without a weapon in hand.  With ten minutes of concentrating, you can establish a bond with one weapon of your choice. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand.</description>
+		</sheet>
+	</element>
+	
+	<element name="Steelskin" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_STEELSKIN">
+		<description>
+			<p> Your skin, as per the blessing of the Kandoni bloodline, is resistant to weapons and attack granting you a +1 to AC.</p>
+		</description>
+		<sheet>
+			<description> Your skin, as per the blessing of the Kandoni bloodline, is resistant to weapons and attack granting you a +1 to AC.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:steelskin" value="11" />
+			<stat name="ac:calculation" value="ac:steelskin" bonus="calculation" />
+		</rules>
+	</element>
+	
+	<element name="Blood of the War Martyr" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_BLOOD_OF_THE_WAR_MARTYR">
+		<description>
+			<p>You have access to two cantrips from either the Sorcerer or Paladin spell lists. On 3rd level you gain one first level spell from either the Sorcerer or Paladin spell lists. Charisma is your spellcasting ability.You are also proficient in athletics, and you have advantage in strength checks.</p>
+		</description>
+		<sheet>
+			<description>You have access to two cantrips from either the Sorcerer or Cleric spell lists. You are also proficient in athletics, and you have advantage in strength checks.</description>
+			<description level="3">You have access to two cantrips from either the Sorcerer or Cleric spell lists. You gain one first level spell from either the Sorcerer or Paladin spell lists. Charisma is your spellcasting ability. You are also proficient in athletics, and you have advantage in strength checks.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Cantrip (Kandaoni)" supports="0,(Cleric||Sorcerer)" number="2" />
+			<select type="Spell" name="First level (Kandaoni)" supports="1,(Cleric||Sorcerer)" level="3" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+		</rules>
+	</element>
 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Sycoraxi Subrace ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 
-    <element name="Sycoraxi" type="Sub Race" source="Red Masque Campaign" id="ID_BTC_RMC_SUB_RACE_SYCORAXI">
-    	<supports>Bloodblessed</supports>
+	<element name="Sycoraxi" type="Sub Race" source="Red Masque Campaign" id="ID_BTC_RMC_SUB_RACE_SYCORAXI">
+		<supports>Bloodblessed</supports>
 		<description>
 			<p><em>Children of the shadowy caves and protective earth, the sycoraxi are more at home beneath the surface then most bloodblessed, for they are the children of Saint Caliban.</em></p>
 			<p class="indent"><strong><em>Ability Score Increase:</em></strong> Your Charisma, Wisdom, and Intelligence scores all increase by 1.</p>
-                    	<p class="indent"><strong><em>Alignment.</em></strong> Dwelling deep below the grounds, and being more in touch with the wilder magicks than their hated prosperoi rivals, the sycoraxi skew more towards chaos and neutrality.</p>
+						<p class="indent"><strong><em>Alignment.</em></strong> Dwelling deep below the grounds, and being more in touch with the wilder magicks than their hated prosperoi rivals, the sycoraxi skew more towards chaos and neutrality.</p>
 			<p class="indent"><strong><em>Blessing of Caliban.</em></strong> You never get lost when under the ground.  Once per long rest, you can spend five minutes concentrating, and then instinctively know how to proceed.  Also, when making a Wisdom or perception check, you can use your highest modifier.</p>
-                    	<p class="indent"><strong><em>Blood of the Deep Magiks.</em></strong> You have access to two cantrips and gain a first level spell at level 3 and an additional first level spell at level 5. The spells must be from either the druid, sorcerer or warlock spell lists.  Wisdom is your spellcasting ability.  You are also proficient in athletics, and you have advantage in strength checks.</p>
-                    	<p class="indent"><strong><em>Additional Languages.</em></strong> Sycoraxi and Deep Speech.</p>
+						<p class="indent"><strong><em>Blood of the Deep Magiks.</em></strong> You have access to two cantrips and gain a first level spell at level 3 and an additional first level spell at level 5. The spells must be from either the druid, sorcerer or warlock spell lists.  Wisdom is your spellcasting ability.  You are also proficient in athletics, and you have advantage in strength checks.</p>
+						<p class="indent"><strong><em>Additional Languages.</em></strong> Sycoraxi and Deep Speech.</p>
 		</description>
 
 		<sheet display="false" />
 
 		<rules>
-                	<stat name="charisma" value="1" />
-                	<stat name="wisdom" value="1" />
-                	<stat name="intelligence" value="1" />
+					<stat name="charisma" value="1" />
+					<stat name="wisdom" value="1" />
+					<stat name="intelligence" value="1" />
 
-                	<grant type="Language" id="ID_BTC_RMC_LANGUAGE_SYCORAXI" />
-                	<grant type="Language" id="ID_LANGUAGE_DEEP_SPEECH" />
+					<grant type="Language" id="ID_BTC_RMC_LANGUAGE_SYCORAXI" />
+					<grant type="Language" id="ID_LANGUAGE_DEEP_SPEECH" />
 
 			<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_BLESSING_OF_CALIBAN" />
-                	<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_BLOOD_OF_THE_DEEEP_MAGIKS" />
+					<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_BLOOD_OF_THE_DEEEP_MAGIKS" />
 		</rules>
-    </element>
+	</element>
 
-    <element name="Blessing of Caliban" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_BLESSING_OF_CALIBAN">
-        <description>
-            <p>You never get lost when under the ground.  Once per long rest, you can spend five minutes concentrating, and then instinctively know how to proceed.  Also, when making a Wisdom or perception check, you can use your highest modifier.</p>
-        </description>
-        <sheet>
-            <description>You never get lost when under the ground.  Once per long rest, you can spend five minutes concentrating, and then instinctively know how to proceed.  Also, when making a Wisdom or perception check, you can use your highest modifier.</description>
-        </sheet>
-    </element>
+	<element name="Blessing of Caliban" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_BLESSING_OF_CALIBAN">
+		<description>
+			<p>You never get lost when under the ground.  Once per long rest, you can spend five minutes concentrating, and then instinctively know how to proceed.  Also, when making a Wisdom or perception check, you can use your highest modifier.</p>
+		</description>
+		<sheet>
+			<description>You never get lost when under the ground.  Once per long rest, you can spend five minutes concentrating, and then instinctively know how to proceed.  Also, when making a Wisdom or perception check, you can use your highest modifier.</description>
+		</sheet>
+	</element>
 
-    <element name="Blood of the Deep Magiks" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_BLOOD_OF_THE_DEEEP_MAGIKS">
-        <description>
-            <p>You have access to two cantrips from either the druid, sorcerer, or warlock spell lists. You gain a first level spell at level 3 and an additional first level spell at level 5. Wisdom is your spellcasting ability these spells.  You are also proficient in athletics, and you have advantage in strength checks.</p>
-        </description>
-        <sheet>
-            <description>You have access to two cantrips from either the druid, sorcerer, or warlock spell lists. You gain a first level spell at level 3 and an additional first level spell at level 5. Wisdom is your spellcasting ability these spells.  You are also proficient in athletics, and you have advantage in strength checks.</description>
-        </sheet>
-        <rules>
-            <select type="Spell" name="Cantrip (Sycoraxi)" supports="0,(Druid||Sorcerer||Warlock)" number="2" />
-            <select type="Spell" name="Blood of the Deep Magiks (Sycoraxi)" supports="1,(Druid||Sorcerer||Warlock)" level="3" />
-            <select type="Spell" name="Blood of the Deep Magiks (Sycoraxi)" supports="1,(Druid||Sorcerer||Warlock)" level="5" />
+	<element name="Blood of the Deep Magiks" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_BLOOD_OF_THE_DEEEP_MAGIKS">
+		<description>
+			<p>You have access to two cantrips from either the druid, sorcerer, or warlock spell lists. You gain a first level spell at level 3 and an additional first level spell at level 5. Wisdom is your spellcasting ability these spells.  You are also proficient in athletics, and you have advantage in strength checks.</p>
+		</description>
+		<sheet>
+			<description>You have access to two cantrips from either the druid, sorcerer, or warlock spell lists. You gain a first level spell at level 3 and an additional first level spell at level 5. Wisdom is your spellcasting ability these spells.  You are also proficient in athletics, and you have advantage in strength checks.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Cantrip (Sycoraxi)" supports="0,(Druid||Sorcerer||Warlock)" number="2" />
+			<select type="Spell" name="Blood of the Deep Magiks (Sycoraxi)" supports="1,(Druid||Sorcerer||Warlock)" level="3" />
+			<select type="Spell" name="Blood of the Deep Magiks (Sycoraxi)" supports="1,(Druid||Sorcerer||Warlock)" level="5" />
 
-            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
-        </rules>
-    </element>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+		</rules>
+	</element>
 
 
 </elements>

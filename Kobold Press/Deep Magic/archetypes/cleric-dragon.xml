@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-    <info>
-        <name>Dragon Domain</name>
-        <update version="0.0.2">
-            <file name="cleric-dragon.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-dragon.xml" />
-        </update>
-    </info>
-    
-    <element name="Dragon Domain" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_DRAGON_DOMAIN">
-        <supports>Divine Domain</supports>
-        <description>
-            <p>Dragons are known for many marvelous qualities: mastery of the most unforgiving environments, sagacity, long life, and an eternal hunger for ever more wealth and power. Those who worship dragons or the gods of dragons might strive to emulate several, or perhaps all, of these qualities themselves.</p>
+	<info>
+		<name>Dragon Domain</name>
+		<update version="0.0.2">
+			<file name="cleric-dragon.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-dragon.xml" />
+		</update>
+	</info>
+	
+	<element name="Dragon Domain" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_DRAGON_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>Dragons are known for many marvelous qualities: mastery of the most unforgiving environments, sagacity, long life, and an eternal hunger for ever more wealth and power. Those who worship dragons or the gods of dragons might strive to emulate several, or perhaps all, of these qualities themselves.</p>
 			<h5 class="caption">DARKNESS DOMAIN SPELLS </h5>
 			<table>
 				<thead>
@@ -22,21 +22,21 @@
 				<tr><td>7th</td><td><em>blight, scale rot</em></td></tr>
 				<tr><td>9th</td><td><em>claws of the earth dragon, legend lore</em></td></tr>
 			</table>
-            <div element="ID_KBP_DM5E_DRAGON_DOMAIN_ARCHETYPE_FEATURE_BONUS_PROFICIENCY" />
-            <div element="ID_KBP_DM5E_DRAGON_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_CHARMER_OF_REPTILES" />
-            <div element="ID_KBP_DM5E_DRAGON_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_DRAGONS_RESISTANCE" />
-            <div element="ID_KBP_DM5E_DRAGON_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" />
-            <div element="ID_KBP_DM5E_DRAGON_DOMAIN_ARCHETYPE_FEATURE_FRIGHTFUL_PRESCENCE" />
-        </description>
-        <sheet display="false" />
-        <rules>
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_DRAGON_DOMAIN_ARCHETYPE_FEATURE_BONUS_PROFICIENCY" level="1" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_DRAGON_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_CHARMER_OF_REPTILES" level="2" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_DRAGON_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_DRAGONS_RESISTANCE" level="6" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_DRAGON_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" level="8" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_DRAGON_DOMAIN_ARCHETYPE_FEATURE_FRIGHTFUL_PRESCENCE" level="17" />
+			<div element="ID_KBP_DM5E_DRAGON_DOMAIN_ARCHETYPE_FEATURE_BONUS_PROFICIENCY" />
+			<div element="ID_KBP_DM5E_DRAGON_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_CHARMER_OF_REPTILES" />
+			<div element="ID_KBP_DM5E_DRAGON_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_DRAGONS_RESISTANCE" />
+			<div element="ID_KBP_DM5E_DRAGON_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" />
+			<div element="ID_KBP_DM5E_DRAGON_DOMAIN_ARCHETYPE_FEATURE_FRIGHTFUL_PRESCENCE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_DRAGON_DOMAIN_ARCHETYPE_FEATURE_BONUS_PROFICIENCY" level="1" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_DRAGON_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_CHARMER_OF_REPTILES" level="2" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_DRAGON_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_DRAGONS_RESISTANCE" level="6" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_DRAGON_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" level="8" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_DRAGON_DOMAIN_ARCHETYPE_FEATURE_FRIGHTFUL_PRESCENCE" level="17" />
 
-            <grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" level="1" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" level="1" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_KBP_DM5E_SPELL_LAIR_SENSE" level="3" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_ENTHRALL" level="3" spellcasting="Cleric" prepared="true" />
@@ -46,62 +46,62 @@
 			<grant type="Spell" id="ID_KBP_DM5E_SPELL_SCALE_ROT" level="7" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_KBP_DM5E_SPELL_CLAWS_OF_THE_EARTH_DRAGON" level="9" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_LEGEND_LORE" level="9" spellcasting="Cleric" prepared="true" />
-        </rules>
-    </element>
+		</rules>
+	</element>
 
 <!-- BONUS PROFICIENCY  -->
-    <element name="Bonus Proficiency" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_DRAGON_DOMAIN_ARCHETYPE_FEATURE_BONUS_PROFICIENCY">
-        <description>
-            <p>When you choose this domain at 1st level, you gain proficiency in Arcana, and your proficiency bonus is doubled for any ability check you make that uses this skill. You also gain advantage on saving throws against being frightened.</p>
-        </description>
-        <sheet alt="Dragon's Prescence">
-            <description>You have advantage on saving throws against being frightened.</description>
-        </sheet>
-        <rules>
-            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
-            <stat name="arcana:proficiency" value="proficiency" bonus="double" requirements="ID_PROFICIENCY_SKILL_ARCANA" />
-        </rules>
-    </element>
+	<element name="Bonus Proficiency" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_DRAGON_DOMAIN_ARCHETYPE_FEATURE_BONUS_PROFICIENCY">
+		<description>
+			<p>When you choose this domain at 1st level, you gain proficiency in Arcana, and your proficiency bonus is doubled for any ability check you make that uses this skill. You also gain advantage on saving throws against being frightened.</p>
+		</description>
+		<sheet alt="Dragon's Prescence">
+			<description>You have advantage on saving throws against being frightened.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+			<stat name="arcana:proficiency" value="proficiency" bonus="double" requirements="ID_PROFICIENCY_SKILL_ARCANA" />
+		</rules>
+	</element>
 <!-- CHANNEL DIVINITY: CHARMER OF REPTILES  -->
-    <element name="Channel Divinity: Charmer of Reptiles" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_DRAGON_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_DRAGONS_RESISTANCE">
-        <description>
-            <p>Starting at 2nd level, you can use your Channel Divinity to charm nonintelligent reptiles. As an action, you present your holy symbol and invoke the name of your deity. Each reptilian beast within 30 feet of you that can see you must make a successful Wisdom saving throw or be charmed by you for 1 minute or until it takes damage. While a reptile is charmed by you, it is friendly to you and to other creatures you designate.</p>
-        </description>
-        <sheet alt="Charmer of Reptiles" action="Action" usage="Channel Divinity">
-            <description> As an action, you present your holy symbol and invoke the name of your deity. Each reptilian beast within 30 feet of you that can see you must make a successful Wisdom saving throw or be charmed by you for 1 minute or until it takes damage. While a reptile is charmed by you, it is friendly to you and to other creatures you designate.</description>
-        </sheet>
-    </element>
+	<element name="Channel Divinity: Charmer of Reptiles" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_DRAGON_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_DRAGONS_RESISTANCE">
+		<description>
+			<p>Starting at 2nd level, you can use your Channel Divinity to charm nonintelligent reptiles. As an action, you present your holy symbol and invoke the name of your deity. Each reptilian beast within 30 feet of you that can see you must make a successful Wisdom saving throw or be charmed by you for 1 minute or until it takes damage. While a reptile is charmed by you, it is friendly to you and to other creatures you designate.</p>
+		</description>
+		<sheet alt="Charmer of Reptiles" action="Action" usage="Channel Divinity">
+			<description> As an action, you present your holy symbol and invoke the name of your deity. Each reptilian beast within 30 feet of you that can see you must make a successful Wisdom saving throw or be charmed by you for 1 minute or until it takes damage. While a reptile is charmed by you, it is friendly to you and to other creatures you designate.</description>
+		</sheet>
+	</element>
 
 <!-- CHANNEL DIVINITY: DRAGON’S RESISTANCE  -->
-    <element name="Channel Divinity: Dragon's Resistance" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_DRAGON_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_CHARMER_OF_REPTILES">
-        <description>
-            <p>Starting at 6th level, as a reaction when you fail a saving throw, you can use your Channel Divinity to succeed on that saving throw instead.</p>
-        </description>
-        <sheet alt="Dragon's Resistance" action="Reaction" usage="Channel Divinity">
-            <description>As a reaction when you fail a saving throw, you can use your Channel Divinity to succeed on that saving throw instead.</description>
-        </sheet>
-    </element>
+	<element name="Channel Divinity: Dragon's Resistance" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_DRAGON_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_CHARMER_OF_REPTILES">
+		<description>
+			<p>Starting at 6th level, as a reaction when you fail a saving throw, you can use your Channel Divinity to succeed on that saving throw instead.</p>
+		</description>
+		<sheet alt="Dragon's Resistance" action="Reaction" usage="Channel Divinity">
+			<description>As a reaction when you fail a saving throw, you can use your Channel Divinity to succeed on that saving throw instead.</description>
+		</sheet>
+	</element>
 
 <!-- DIVINE STRIKE  --> 
-    <element name="Divine Strike" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_DRAGON_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE">
-        <description>
-            <p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
-        </description>
-        <sheet>
-            <description level="8">Once on each of your turns, you can cause a weapon attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target on a hit.</description>
-            <description level="14">Once on each of your turns, you can cause a weapon attack to deal an extra 2d8 damage of the same type dealt by the weapon to the target on a hit.</description>
-        </sheet>
-    </element>
+	<element name="Divine Strike" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_DRAGON_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE">
+		<description>
+			<p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+		</description>
+		<sheet>
+			<description level="8">Once on each of your turns, you can cause a weapon attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target on a hit.</description>
+			<description level="14">Once on each of your turns, you can cause a weapon attack to deal an extra 2d8 damage of the same type dealt by the weapon to the target on a hit.</description>
+		</sheet>
+	</element>
 
 <!-- FRIGHTFUL PRESENCE  -->
-    <element name="Frightful Prescence" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_DRAGON_DOMAIN_ARCHETYPE_FEATURE_FRIGHTFUL_PRESCENCE">
-        <description>
-            <p>At 17th level, you gain a Frightful Presence action option similar to a dragon’s. After you use an action to invoke it, you must finish a short or long rest before using it again.</p>
-            <p class="indent"><b><i>Frightful Presence.</i></b> Each creature of your choice that is within 60 feet of you and aware of you must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A frightened creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to your Frightful Presence for the next 24 hours.</p>
-        </description>
-        <sheet action="Action" usage="1/Short Rest">
-            <description>Each creature of your choice that is within 60 feet of you and aware of you must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A frightened creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to your Frightful Presence for the next 24 hours.</description>
-        </sheet>
-    </element>
+	<element name="Frightful Prescence" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_DRAGON_DOMAIN_ARCHETYPE_FEATURE_FRIGHTFUL_PRESCENCE">
+		<description>
+			<p>At 17th level, you gain a Frightful Presence action option similar to a dragon’s. After you use an action to invoke it, you must finish a short or long rest before using it again.</p>
+			<p class="indent"><b><i>Frightful Presence.</i></b> Each creature of your choice that is within 60 feet of you and aware of you must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A frightened creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to your Frightful Presence for the next 24 hours.</p>
+		</description>
+		<sheet action="Action" usage="1/Short Rest">
+			<description>Each creature of your choice that is within 60 feet of you and aware of you must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A frightened creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to your Frightful Presence for the next 24 hours.</description>
+		</sheet>
+	</element>
 
 </elements>

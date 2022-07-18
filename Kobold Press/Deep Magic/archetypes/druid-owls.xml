@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-    <info>
-        <name>Circle of Owls</name>
-        <update version="0.0.1">
-            <file name="druid-owls.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/druid-owls.xml" />
-        </update>
-    </info>
-    
-    <element name="Circle of Owls" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_DRUID_CIRCLE_OF_OWLS">
+	<info>
+		<name>Circle of Owls</name>
+		<update version="0.0.1">
+			<file name="druid-owls.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/druid-owls.xml" />
+		</update>
+	</info>
+
+	<element name="Circle of Owls" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_DRUID_CIRCLE_OF_OWLS">
 		<supports>Druid Circle</supports>
 		<description>
 			<p>Druids of the Circle of Owls maintain their tradition of spying and gathering knowledge and, occasionally, of permanently silencing those who would misuse knowledge. The Circle of Owls druids draw on the power of their namesakes, moving about the world unnoticed as they see and hear what others try desperately to hide.</p>
@@ -48,7 +48,7 @@
 			<description>You gain access to specific spells as you level up.</description>
 		</sheet>
 		<rules>
-            <grant type="Spell" id="ID_PHB_SPELL_MESSAGE" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MESSAGE" level="2" spellcasting="Druid" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" level="3" spellcasting="Druid" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_INVISIBILITY" level="3" spellcasting="Druid" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_NONDETECTION" level="5" spellcasting="Druid" prepared="true" />
@@ -59,62 +59,62 @@
 			<grant type="Spell" id="ID_PHB_SPELL_SCRYING" level="9" spellcasting="Druid" prepared="true" />
 		</rules>
 	</element>
- 
-<!-- BONUS PROFICIENCY --> 
-    <element name="Bonus Proficiency" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_OWLS_BONUS_PROFICIENCY">
-        <description>
-            <p>When you choose this circle at 2nd level, you gain proficiency in either Deception or Stealth.</p>
-        </description>
-        <sheet display="false" />
-        <rules>
-            <select type="Proficiency" name="Skill Proficiency (Circle of Owls)" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_STEALTH" />
-        </rules>
-    </element>
 
-<!-- ON SILENT WINGS --> 
-    <element name="On Silent Wings" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_OWLS_ON_SILENT_WINGS">
-        <description>
-            <p>Starting at 2nd level, you can magically evade the notice of even those who watch you. You can take the Hide action even when other creatures can see you. If you hide successfully, you remain hidden in this way until the end of your next turn (or sooner, if you choose to stop hiding).</p>
-            <p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest.</p>
-        </description>
-        <sheet usage="{{silentwings:wisdom}}/Long Rest">
-            <description>You can take the Hide action even when other creatures can see you. If you hide successfully, you remain hidden in this way until the end of your next turn (or sooner, if you choose to stop hiding).</description>
-        </sheet>
-        <rules>
-            <stat name="silentwings:wisdom" value="1" bonus="base" />
+<!-- BONUS PROFICIENCY -->
+	<element name="Bonus Proficiency" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_OWLS_BONUS_PROFICIENCY">
+		<description>
+			<p>When you choose this circle at 2nd level, you gain proficiency in either Deception or Stealth.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Circle of Owls)" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_STEALTH" />
+		</rules>
+	</element>
+
+<!-- ON SILENT WINGS -->
+	<element name="On Silent Wings" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_OWLS_ON_SILENT_WINGS">
+		<description>
+			<p>Starting at 2nd level, you can magically evade the notice of even those who watch you. You can take the Hide action even when other creatures can see you. If you hide successfully, you remain hidden in this way until the end of your next turn (or sooner, if you choose to stop hiding).</p>
+			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{silentwings:wisdom}}/Long Rest">
+			<description>You can take the Hide action even when other creatures can see you. If you hide successfully, you remain hidden in this way until the end of your next turn (or sooner, if you choose to stop hiding).</description>
+		</sheet>
+		<rules>
+			<stat name="silentwings:wisdom" value="1" bonus="base" />
 			<stat name="silentwings:wisdom" value="wisdom:modifier" bonus="base" />
-        </rules>
-    </element>
+		</rules>
+	</element>
 
-<!-- OWL’S EYES --> 
-    <element name="Owl's Eyes" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_OWLS_OWLS_EYES">
-        <description>
-            <p>At 6th level, you can cast the clairvoyance spell. When you cast the spell in this way, you don’t require components, and the casting time is 1 action. You can choose for the invisible sensor to instead be visible as the image of an owl. </p>
-            <p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
-        </description>
-        <sheet usage="1/Long Rest">
-            <description>You can cast the clairvoyance spell. When you cast the spell in this way, you don’t require components, and the casting time is 1 action. You can choose for the invisible sensor to instead be visible as the image of an owl.</description>
-        </sheet>
-    </element>
+<!-- OWL’S EYES -->
+	<element name="Owl's Eyes" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_OWLS_OWLS_EYES">
+		<description>
+			<p>At 6th level, you can cast the clairvoyance spell. When you cast the spell in this way, you don’t require components, and the casting time is 1 action. You can choose for the invisible sensor to instead be visible as the image of an owl. </p>
+			<p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast the clairvoyance spell. When you cast the spell in this way, you don’t require components, and the casting time is 1 action. You can choose for the invisible sensor to instead be visible as the image of an owl.</description>
+		</sheet>
+	</element>
 
-<!-- SHADOW FLIGHT --> 
-    <element name="Shadow Flight" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_OWLS_SHADOW_FLIGHT">
-        <description>
-            <p>At 10th level, you can slip partially into shadow for a short time. As an action, you can cast the etherealness spell. When you cast the spell in this way, its duration is concentration, up to 1 minute.</p>
-            <p class="indent">Once you use this feature, you can’t use it again until you finish a short or long rest.</p>
-        </description>
-        <sheet action="Action" usage="1/Short Rest">
-            <description>As an action, you can cast the etherealness spell. When you cast the spell in this way, its duration is concentration, up to 1 minute.</description>
-        </sheet>
-    </element>
-<!-- PARLIAMENT OF OWLS --> 
-    <element name="Parliament of Owls" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_OWLS_PARLIMENT_OF_OWLS">
-        <description>
-            <p>When you reach 14th level, you can disperse your form into a swirling storm of owls. As an action, you can use your Wild Shape to become a swarm of owls, which uses the statistics of a swarm of ravens.</p>
-        </description>
-        <sheet action="Action">
-            <description>You can use your Wild Shape to become a swarm of owls, which uses the statistics of a swarm of ravens.</description>
-        </sheet>
-    </element>
+<!-- SHADOW FLIGHT -->
+	<element name="Shadow Flight" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_OWLS_SHADOW_FLIGHT">
+		<description>
+			<p>At 10th level, you can slip partially into shadow for a short time. As an action, you can cast the etherealness spell. When you cast the spell in this way, its duration is concentration, up to 1 minute.</p>
+			<p class="indent">Once you use this feature, you can’t use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Short Rest">
+			<description>As an action, you can cast the etherealness spell. When you cast the spell in this way, its duration is concentration, up to 1 minute.</description>
+		</sheet>
+	</element>
+<!-- PARLIAMENT OF OWLS -->
+	<element name="Parliament of Owls" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_FEATURE_CIRCLE_OF_OWLS_PARLIMENT_OF_OWLS">
+		<description>
+			<p>When you reach 14th level, you can disperse your form into a swirling storm of owls. As an action, you can use your Wild Shape to become a swarm of owls, which uses the statistics of a swarm of ravens.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can use your Wild Shape to become a swarm of owls, which uses the statistics of a swarm of ravens.</description>
+		</sheet>
+	</element>
 
 </elements>

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-    <info>
-        <name>Mountain Domain</name>
-        <update version="0.0.2">
-            <file name="cleric-mountain.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-mountain.xml" />
-        </update>
-    </info>
+	<info>
+		<name>Mountain Domain</name>
+		<update version="0.0.2">
+			<file name="cleric-mountain.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-mountain.xml" />
+		</update>
+	</info>
 
 	<element name="Mountain Domain" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_MOUNTAIN_DOMAIN">
-        <supports>Divine Domain</supports>
-        <description>
-            <p>Mountains signify strength, endurance, and hard-won wisdom. Many gods make their homes in the mountains, and so do many horrors. Those who would know themselves in full must embrace the ordeal of scaling the highest peaks, despite the thin, cold air, deprivation, and hardships that await.</p>
-            <h5 class="caption">MOUNTAIN DOMAIN SPELLS</h5>
+		<supports>Divine Domain</supports>
+		<description>
+			<p>Mountains signify strength, endurance, and hard-won wisdom. Many gods make their homes in the mountains, and so do many horrors. Those who would know themselves in full must embrace the ordeal of scaling the highest peaks, despite the thin, cold air, deprivation, and hardships that await.</p>
+			<h5 class="caption">MOUNTAIN DOMAIN SPELLS</h5>
 			<table>
 				<thead>
 					<tr><td>Cleric Level</td><td>Spells</td></tr>
@@ -22,23 +22,23 @@
 				<tr><td>7th</td><td><em>stone shape, stoneskin</em></td></tr>
 				<tr><td>9th</td><td><em>commune with nature, cone of cold</em></td></tr>
 			</table>
-            <div element="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_BONUS_PROFICIENCY" />
-            <div element="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_TONGUES_OF_THE_MOUNTAINS" />
-            <div element="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_EVER_UPWARD" />
-            <div element="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_DARKVISION" />
-            <div element="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" />
-            <div element="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_AVALANCHE" />
-        </description>
-        <sheet display="false" />
-        <rules>
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_BONUS_PROFICIENCY" level="1" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_TONGUES_OF_THE_MOUNTAINS" level="1" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_EVER_UPWARD" level="2" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_DARKVISION" level="6" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" level="8" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_AVALANCHE" level="17" />
+			<div element="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_BONUS_PROFICIENCY" />
+			<div element="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_TONGUES_OF_THE_MOUNTAINS" />
+			<div element="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_EVER_UPWARD" />
+			<div element="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_DARKVISION" />
+			<div element="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" />
+			<div element="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_AVALANCHE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_BONUS_PROFICIENCY" level="1" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_TONGUES_OF_THE_MOUNTAINS" level="1" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_EVER_UPWARD" level="2" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_DARKVISION" level="6" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" level="8" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_AVALANCHE" level="17" />
 
-            <grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" level="1" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_JUMP" level="1" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_ENHANCE_ABILITY" level="3" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_SPIDER_CLIMB" level="3" spellcasting="Cleric" prepared="true" />
@@ -48,52 +48,52 @@
 			<grant type="Spell" id="ID_PHB_SPELL_STONESKIN" level="7" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_COMMUNE_WITH_NATURE" level="9" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_CONE_OF_COLD" level="9" spellcasting="Cleric" prepared="true" />
-        </rules>
-    </element>
-    
-<!-- BONUS PROFICIENCY --> 
-    <element name="Bonus Proficiency" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_BONUS_PROFICIENCY">
-        <description>
-            <p>When you choose this domain at 1st level, you gain proficiency in Athletics, Nature, or Survival (your choice).</p>
-        </description>
-        <sheet display="false" />
-        <rules>
-            <select type="Proficiency" name="Skill Proficiency (Mountain Domain)" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_SURVIVAL" />
-        </rules>
-    </element>
+		</rules>
+	</element>
 
-<!-- TONGUES OF THE MOUNTAINS --> 
-    <element name="Tongues of the Mountains" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_TONGUES_OF_THE_MOUNTAINS">
-        <description>
-            <p>Also at 1st level, you become fluent in Dwarvish or Giant (your choice).</p>
-        </description>
-        <sheet display="false" />
-        <rules>
-            <select type="Language" name="Language (Tongues of the Mountains)" supports="ID_LANGUAGE_DWARVISH|ID_LANGUAGE_GIANT" />
-        </rules>
-    </element>
+<!-- BONUS PROFICIENCY -->
+	<element name="Bonus Proficiency" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_BONUS_PROFICIENCY">
+		<description>
+			<p>When you choose this domain at 1st level, you gain proficiency in Athletics, Nature, or Survival (your choice).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Mountain Domain)" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_SURVIVAL" />
+		</rules>
+	</element>
 
-<!-- CHANNEL DIVINITY: EVER UPWARD --> 
-    <element name="Channel Divinity: Ever Upward" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_EVER_UPWARD">
-        <description>
-            <p>Starting at 2nd level, you can use your Channel Divinity to grant yourself and up to five other creatures advantage on skill or ability checks made to climb, avoid falling, or avoid the prone condition. The effect lasts for 1 hour.</p>
-        </description>
-        <sheet alt="Ever Upward" usage="Channel Divinity">
-            <description>You grant yourself and up to five other creatures advantage on skill or ability checks made to climb, avoid falling, or avoid the prone condition. The effect lasts for 1 hour.</description>
-        </sheet>
-    </element>
+<!-- TONGUES OF THE MOUNTAINS -->
+	<element name="Tongues of the Mountains" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_TONGUES_OF_THE_MOUNTAINS">
+		<description>
+			<p>Also at 1st level, you become fluent in Dwarvish or Giant (your choice).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Language" name="Language (Tongues of the Mountains)" supports="ID_LANGUAGE_DWARVISH|ID_LANGUAGE_GIANT" />
+		</rules>
+	</element>
 
-<!-- DARKVISION --> 
-    <element name="Darkvision" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_DARKVISION">
-        <description>
-            <p>Beginning at 6th level, you gain darkvision out to a range of 30 feet. If you already have darkvision, you can see in magical darkness out to a range of 30 feet as if it were dim light.</p>
-        </description>
-        <sheet display="false" />
-        <rules>
-            <grant type="Grants" id="ID_VISION_DARKVISION_30" requirements="!ID_VISION_DARKVISION" />
-            <grant type="Archetype Feature" id="ID_VISION_DARKVISION_30_MAGICAL" requirements="ID_VISION_DARKVISION" />
-        </rules>
-    </element>
+<!-- CHANNEL DIVINITY: EVER UPWARD -->
+	<element name="Channel Divinity: Ever Upward" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_EVER_UPWARD">
+		<description>
+			<p>Starting at 2nd level, you can use your Channel Divinity to grant yourself and up to five other creatures advantage on skill or ability checks made to climb, avoid falling, or avoid the prone condition. The effect lasts for 1 hour.</p>
+		</description>
+		<sheet alt="Ever Upward" usage="Channel Divinity">
+			<description>You grant yourself and up to five other creatures advantage on skill or ability checks made to climb, avoid falling, or avoid the prone condition. The effect lasts for 1 hour.</description>
+		</sheet>
+	</element>
+
+<!-- DARKVISION -->
+	<element name="Darkvision" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_DARKVISION">
+		<description>
+			<p>Beginning at 6th level, you gain darkvision out to a range of 30 feet. If you already have darkvision, you can see in magical darkness out to a range of 30 feet as if it were dim light.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_VISION_DARKVISION_30" requirements="!ID_VISION_DARKVISION" />
+			<grant type="Archetype Feature" id="ID_VISION_DARKVISION_30_MAGICAL" requirements="ID_VISION_DARKVISION" />
+		</rules>
+	</element>
 
 	<element name="Darkvision" type="Archetype Feature" source="Player’s Handbook" id="ID_VISION_DARKVISION_30_MAGICAL">
 		<description>
@@ -104,26 +104,26 @@
 		</sheet>
 	</element>
 
-<!-- DIVINE STRIKE --> 
-    <element name="Divine Strike" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE">
-        <description>
-            <p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 cold damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
-        </description>
-        <sheet>
-            <description level="8">Once on each of your turns, you can cause a weapon attack to deal an extra 1d8 cold damage to the target on a hit.</description>
-            <description level="14">Once on each of your turns, you can cause a weapon attack to deal an extra 2d8 cold damage to the target on a hit.</description>
-        </sheet>
-    </element>
+<!-- DIVINE STRIKE -->
+	<element name="Divine Strike" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE">
+		<description>
+			<p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 cold damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+		</description>
+		<sheet>
+			<description level="8">Once on each of your turns, you can cause a weapon attack to deal an extra 1d8 cold damage to the target on a hit.</description>
+			<description level="14">Once on each of your turns, you can cause a weapon attack to deal an extra 2d8 cold damage to the target on a hit.</description>
+		</sheet>
+	</element>
 
-<!-- AVALANCHE --> 
-    <element name="Avalanche" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_AVALANCHE">
-        <description>
-            <p>At 17th level, you can create an avalanche that crushes and buries everything in its path. A 60-foot cone of ice, snow, and rubble erupts from a point of your choosing within 20 feet of you, in a direction you select. Each creature in the cone takes 15d8 bludgeoning damage, or half as much damage with a successful Strength saving throw. A creature that fails the saving throw is also restrained. A restrained creature can be freed by spending an action to make a successful Strength check, either by itself or by an ally within 5 feet of it.</p>
-            <p class="indent">You must be outdoors to create the avalanche. The direction of the cone must be downhill or level; the avalanche can’t flow upill. Walls and other permanent structures block the avalanche. After using this feature, you must finish a long rest before using it again.</p>
-        </description>
-        <sheet>
-            <description>You create an avalanche that crushes and buries everything in its path. A 60-foot cone of ice, snow, and rubble erupts from a point of your choosing within 20 feet of you, in a direction you select. Each creature in the cone takes 15d8 bludgeoning damage, or half as much damage with a DC {{cleric:spellcasting:dc}} Strength saving throw. A creature that fails the saving throw is also restrained. A restrained creature can be freed by spending an action to make a successful Strength check, either by itself or by an ally within 5 feet of it.</description>
-        </sheet>
-    </element>
+<!-- AVALANCHE -->
+	<element name="Avalanche" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_MOUNTAIN_DOMAIN_ARCHETYPE_FEATURE_AVALANCHE">
+		<description>
+			<p>At 17th level, you can create an avalanche that crushes and buries everything in its path. A 60-foot cone of ice, snow, and rubble erupts from a point of your choosing within 20 feet of you, in a direction you select. Each creature in the cone takes 15d8 bludgeoning damage, or half as much damage with a successful Strength saving throw. A creature that fails the saving throw is also restrained. A restrained creature can be freed by spending an action to make a successful Strength check, either by itself or by an ally within 5 feet of it.</p>
+			<p class="indent">You must be outdoors to create the avalanche. The direction of the cone must be downhill or level; the avalanche can’t flow upill. Walls and other permanent structures block the avalanche. After using this feature, you must finish a long rest before using it again.</p>
+		</description>
+		<sheet>
+			<description>You create an avalanche that crushes and buries everything in its path. A 60-foot cone of ice, snow, and rubble erupts from a point of your choosing within 20 feet of you, in a direction you select. Each creature in the cone takes 15d8 bludgeoning damage, or half as much damage with a DC {{cleric:spellcasting:dc}} Strength saving throw. A creature that fails the saving throw is also restrained. A restrained creature can be freed by spending an action to make a successful Strength check, either by itself or by an ally within 5 feet of it.</description>
+		</sheet>
+	</element>
 
 </elements>

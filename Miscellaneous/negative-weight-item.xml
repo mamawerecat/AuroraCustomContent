@@ -1,83 +1,83 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 
-    <info>
-        <name>Misc. Spells</name>
-        <update version="0.0.1">
-            <file name="negative-weight-item.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Miscellaneous/negative-weight-item.xml" />
-        </update>
-    </info>
+	<info>
+		<name>Misc. Spells</name>
+		<update version="0.0.1">
+			<file name="negative-weight-item.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Miscellaneous/negative-weight-item.xml" />
+		</update>
+	</info>
 
-    <element name="-.01 Weight" type="Item" source="Internal" id="ID_INTERNAL_ITEM_MINUS_POINT_ZERO_ONE_WEIGHT">
-        <description>
-            <p>Subtracts .01 from inventory weight. Item is stackable.</p>
-        </description>
-        <setters>
-            <set name="weight" lb="-.01">-.01 lb.</set>
-            <set name="category">Additional Feature</set>
-            <set name="inventory-hidden">true</set>
-            <set name="stackable">true</set>
-        </setters>
-    </element>
+	<element name="-.01 Weight" type="Item" source="Internal" id="ID_INTERNAL_ITEM_MINUS_POINT_ZERO_ONE_WEIGHT">
+		<description>
+			<p>Subtracts .01 from inventory weight. Item is stackable.</p>
+		</description>
+		<setters>
+			<set name="weight" lb="-.01">-.01 lb.</set>
+			<set name="category">Additional Feature</set>
+			<set name="inventory-hidden">true</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
 
-    <element name="-.1 Weight" type="Item" source="Internal" id="ID_INTERNAL_ITEM_MINUS_POINT_ONE_WEIGHT">
-        <description>
-            <p>Subtracts .1 from inventory weight. Item is stackable.</p>
-        </description>
-        <setters>
-            <set name="weight" lb="-.1">-.1 lb.</set>
-            <set name="category">Additional Feature</set>
-            <set name="inventory-hidden">true</set>
-            <set name="stackable">true</set>
-        </setters>
-    </element>
+	<element name="-.1 Weight" type="Item" source="Internal" id="ID_INTERNAL_ITEM_MINUS_POINT_ONE_WEIGHT">
+		<description>
+			<p>Subtracts .1 from inventory weight. Item is stackable.</p>
+		</description>
+		<setters>
+			<set name="weight" lb="-.1">-.1 lb.</set>
+			<set name="category">Additional Feature</set>
+			<set name="inventory-hidden">true</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
 
-    <element name="-1 Weight" type="Item" source="Internal" id="ID_INTERNAL_ITEM_MINUS_ONE_WEIGHT">
-        <description>
-            <p>Subtracts 1 from inventory weight. Item is stackable.</p>
-        </description>
-        <setters>
-            <set name="weight" lb="-1">-1 lb.</set>
-            <set name="category">Additional Feature</set>
-            <set name="inventory-hidden">true</set>
-            <set name="stackable">true</set>
-        </setters>
-    </element>
+	<element name="-1 Weight" type="Item" source="Internal" id="ID_INTERNAL_ITEM_MINUS_ONE_WEIGHT">
+		<description>
+			<p>Subtracts 1 from inventory weight. Item is stackable.</p>
+		</description>
+		<setters>
+			<set name="weight" lb="-1">-1 lb.</set>
+			<set name="category">Additional Feature</set>
+			<set name="inventory-hidden">true</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
 
-    <element name="-5 Weight" type="Item" source="Internal" id="ID_INTERNAL_ITEM_MINUS_FIVE_WEIGHT">
-        <description>
-            <p>Subtracts 5 from inventory weight. Item is stackable.</p>
-        </description>
-        <setters>
-            <set name="weight" lb="-5">-5 lb.</set>
-            <set name="category">Additional Feature</set>
-            <set name="inventory-hidden">true</set>
-            <set name="stackable">true</set>
-        </setters>
-    </element>
+	<element name="-5 Weight" type="Item" source="Internal" id="ID_INTERNAL_ITEM_MINUS_FIVE_WEIGHT">
+		<description>
+			<p>Subtracts 5 from inventory weight. Item is stackable.</p>
+		</description>
+		<setters>
+			<set name="weight" lb="-5">-5 lb.</set>
+			<set name="category">Additional Feature</set>
+			<set name="inventory-hidden">true</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
 
-    <element name="-10 Weight" type="Item" source="Internal" id="ID_INTERNAL_ITEM_MINUS_TEN_WEIGHT">
-        <description>
-            <p>Subtracts 10 from inventory weight. Item is stackable.</p>
-        </description>
-        <setters>
-            <set name="weight" lb="-10">-10 lb.</set>
-            <set name="category">Additional Feature</set>
-            <set name="inventory-hidden">true</set>
-            <set name="stackable">true</set>
-        </setters>
-    </element>
+	<element name="-10 Weight" type="Item" source="Internal" id="ID_INTERNAL_ITEM_MINUS_TEN_WEIGHT">
+		<description>
+			<p>Subtracts 10 from inventory weight. Item is stackable.</p>
+		</description>
+		<setters>
+			<set name="weight" lb="-10">-10 lb.</set>
+			<set name="category">Additional Feature</set>
+			<set name="inventory-hidden">true</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
 
-    <element name="-20 Weight" type="Item" source="Internal" id="ID_INTERNAL_ITEM_MINUS_TWENTY_WEIGHT">
-        <description>
-            <p>Subtracts 20 from inventory weight. Item is stackable.</p>
-        </description>
-        <setters>
-            <set name="weight" lb="-20">-20 lb.</set>
-            <set name="category">Additional Feature</set>
-            <set name="inventory-hidden">true</set>
-            <set name="stackable">true</set>
-        </setters>
-    </element>
+	<element name="-20 Weight" type="Item" source="Internal" id="ID_INTERNAL_ITEM_MINUS_TWENTY_WEIGHT">
+		<description>
+			<p>Subtracts 20 from inventory weight. Item is stackable.</p>
+		</description>
+		<setters>
+			<set name="weight" lb="-20">-20 lb.</set>
+			<set name="category">Additional Feature</set>
+			<set name="inventory-hidden">true</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
 
 </elements>

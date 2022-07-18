@@ -44,7 +44,7 @@
 	        </append>
 			<append id="ID_WOTC_PHB_WEAPON_DAGGER">
 	        	<supports>ID_KBP_VOM_WEAPON_GROUP_ONE_HANDED_MELEE</supports>
-	        </append>	
+	        </append>
 			<append id="ID_WOTC_PHB_WEAPON_FLAIL">
 	        	<supports>ID_KBP_VOM_WEAPON_GROUP_ONE_HANDED_MELEE</supports>
 	        </append>
@@ -77,7 +77,7 @@
 	        </append>
 			<append id="ID_WOTC_PHB_WEAPON_SHORTSWORD">
 	        	<supports>ID_KBP_VOM_WEAPON_GROUP_ONE_HANDED_MELEE</supports>
-	        </append>			
+	        </append>
 			<append id="ID_WOTC_PHB_WEAPON_SICKLE">
 	        	<supports>ID_KBP_VOM_WEAPON_GROUP_ONE_HANDED_MELEE</supports>
 	        </append>
@@ -95,8 +95,8 @@
 	        </append>
 			<append id="ID_WOTC_PHB_WEAPON_WHIP">
 	        	<supports>ID_KBP_VOM_WEAPON_GROUP_ONE_HANDED_MELEE</supports>
-	        </append>			
-	<element name="Weapon Group (Melee Piercing Damage)" type="Weapon Group" source="Vault of Magic" id="ID_KBP_VOM_WEAPON_GROUP_MELEE_PIERCING" /> 
+	        </append>
+	<element name="Weapon Group (Melee Piercing Damage)" type="Weapon Group" source="Vault of Magic" id="ID_KBP_VOM_WEAPON_GROUP_MELEE_PIERCING" />
 			<append id="ID_WOTC_PHB_WEAPON_DAGGER">
 	        	<supports>ID_KBP_VOM_WEAPON_GROUP_MELEE_PIERCING</supports>
 	        </append>
