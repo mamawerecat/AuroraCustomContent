@@ -1,34 +1,149 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-    <info>
-        <name>Misc. Spells</name>
-        <update version="0.0.1">
-            <file name="misc-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Miscellaneous/misc-spells.xml" />
-        </update>
-    </info>
-    
-    <element name="Widogast's Web of Fire" type="Spell" source="Critical Role (Twitter)" id="ID_CRITCAL_ROLE_SPELL_WIDOGASTS_WEB_OF_FIRE">
-        <supports>Wizard</supports>
-        <description>
-            <p>Striking both palms down upon the ground, a web of flame crackles out around the caster and five streaks of fire rapidly snake along the ground toward up to five enemies the caster can see within a range of 60 feet, leaping towards their target and exploding into a column of flame upon reaching them. Each target must make a Dexterity saving throw, taking 8d6 fire damage on a failed save, or half as much damage on a successful one.</p>
-            <p class="indent">Alternatively, all five streaks of fire can instead converge toward a single target, dealing 12d6 fire damage on a failed save, or half as much damage on a successful one.</p>
-            <p class="indent">The fire can travel over obstacles up to 5 feet high, and ignites flammable objects along its path that aren't being worn or carried.</p>
-            <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d6 for each slot level above 4th.</p>
-        </description>
-        <setters>
-            <set name="keywords">fire,wizard</set>
-            <set name="level">4</set>
-            <set name="school">Evocation</set>
-            <set name="time">1 action</set>
-            <set name="range">60 ft</set>
-            <set name="duration">Instantaneous</set>
-            <set name="hasVerbalComponent">true</set>
-            <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">true</set>
-            <set name="materialComponent">A cat's cradle of thread or string coated in phosphorus</set>
-            <set name="isConcentration">false</set>
-            <set name="isRitual">false</set>
-        </setters>
-    </element>
-    
+	<info>
+		<name>Misc. Spells</name>
+		<update version="0.0.2">
+			<file name="misc-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Miscellaneous/misc-spells.xml" />
+		</update>
+	</info>
+	
+	<element name="Widogast's Web of Fire" type="Spell" source="Critical Role (Twitter)" id="ID_CRITCAL_ROLE_SPELL_WIDOGASTS_WEB_OF_FIRE">
+		<supports>Wizard</supports>
+		<description>
+			<p>Striking both palms down upon the ground, a web of flame crackles out around the caster and five streaks of fire rapidly snake along the ground toward up to five enemies the caster can see within a range of 60 feet, leaping towards their target and exploding into a column of flame upon reaching them. Each target must make a Dexterity saving throw, taking 8d6 fire damage on a failed save, or half as much damage on a successful one.</p>
+			<p class="indent">Alternatively, all five streaks of fire can instead converge toward a single target, dealing 12d6 fire damage on a failed save, or half as much damage on a successful one.</p>
+			<p class="indent">The fire can travel over obstacles up to 5 feet high, and ignites flammable objects along its path that aren't being worn or carried.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d6 for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords">fire,wizard</set>
+			<set name="level">4</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A cat's cradle of thread or string coated in phosphorus</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Verdant Burst" type="Spell" source="Grove Magic: New Druid-Specific Spells" id="ID_GM_DSS_SPELL_VERDANT_BURST">
+		<supports>Druid</supports>
+		<description>
+			<p>You draw in earthen energy and send thick and twisting vines exploding toward your enemies. Choose bludgeoning, piercing, or slashing damage. Each creature of your choice that you can see within range must succeed on a Dexterity saving throw or take 1d6 damage of the chosen type.</p>
+			<p class="indent">The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6). This spells range increases to 10 feet at 17th level.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">5 ft.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a small sectrion of vine</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Underweller's Hide" type="Spell" source="Grove Magic: New Druid-Specific Spells" id="ID_GM_DSS_SPELL_UNDERWELLERS_HIDE">
+		<supports>Druid</supports>
+		<description>
+			<p>You channel the earthen magic flowing through the soil beneath your feet into your enemy, transforming their skin into the light-sensitive hide of a subterranean creature. Choose a target within range that is in sunlight to make a Constitution saving throw. On a failed save, the target takes radiant damage equal to 1d10 + your Wisdom modifier and has disadvantage on attack and Wisdom (Perception) rolls that rely on sight while it is in sunlight. On a successful save, the target takes half as much damage and suffers no other effects.</p>
+			<p class="indent">Until this spell ends and while the target remains in sunlight, you may use your action to deal 1d10 radiant damage to the target automatically. Affected creatures may make an additional Constitution saving throw at the end of each of their turns. On a success, the spell ends on the target.</p>
+			<p class="indent">At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">60 ft.</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">the skin from a mole</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Fungal Barricade" type="Spell" source="Grove Magic: New Druid-Specific Spells" id="ID_GM_DSS_SPELL_FUNGAL_BARRICADE">
+		<supports>Druid</supports>
+		<description>
+			<p>You point to an area in a 20-foot radius within range and a carpet of poisonous mushrooms erupts to the surface. Any creature that starts or ends its turn in the area must make a Constitution saving throw. On a failed save, the creature takes 3d6 poison damage and is poisoned. On a successful save they take half as much damage and are not poisoned.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="range">150 ft.</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a small pouch of toadstool caps</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Coil Thorn" type="Spell" source="Grove Magic: New Druid-Specific Spells" id="ID_GM_DSS_SPELL_COIL_THORN">
+		<supports>Druid</supports>
+		<description>
+			<p>You pull from the raw essence of nature to empower your primordial spell, turning shoots and vines into writhing coil thorns dripping with toxins. Until this spell ends, when you successfully hit a creature with verdant burst and it fails its Dexterity saving throw, it takes an additional 3d6 bludgeoning damage and is restrained for a number of rounds equal to your proficiency bonus. A creature that starts its turn restrained by the coil thorns takes 2d4 bludgeoning damage and 2d4 poison damage.</p>
+			<p class="indent">A creature restrained by the coil thorns can use its action to make a Strength check against your spell save DC. On a success, it frees itself.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">3</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a clipping from a coil thorn plant</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Ancient Guise" type="Spell" source="Grove Magic: New Druid-Specific Spells" id="ID_GM_DSS_SPELL_ANCIENT_GUISE">
+		<supports></supports>
+		<description>
+			<p>Your skin turns to leathery scales as your teeth shapen to deadly points and hook-like claws tear their way from the tops of your feet. This transformation lasts until the spell ends and does not impact your ability to cast other spells.</p>
+			<p class="indent">While you’re transformed you gain the following benefits:</p>
+			<p class="indent">•Your base AC becomes 13 + your Wisdom modifier.</p>
+			<p class="indent">•You have proficiency when making unarmed strikes with your teeth or claws, which each count as natural melee weapons. Your teeth deal piercing damage equal to 1d10 + your Wisdom modifier and your claws deal slashing damage equal to 1d10 + your Wisdom modifier.</p>
+			<p class="indent">•You have advantage on an attack rolls made against a creature if at least one of your allies is within 5 feet of the creature and that ally isn't incapacitated.</p>
+			<p class="indent">•If you move at least 20 feet straight toward a creature and then hit it with your claws on the same turn, that target must succeed on a Strength saving throw or be knocked prone. If the target is prone, you can make an attack against it with your teeth as a bonus action.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">4</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a dried lizard tail</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
 </elements>

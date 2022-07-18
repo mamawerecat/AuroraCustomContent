@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-    <info>
-        <name>Hunger Domain</name>
-        <update version="0.0.2">
-            <file name="cleric-hunger.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-hunger.xml" />
-        </update>
-    </info>
-    
-    <element name="Hunger Domain" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_HUNGER_DOMAIN">
-        <supports>Divine Domain</supports>
-        <description>
-            <p>You have dedicated your life to the satisfaction of your appetites, sometimes without regard for others’ needs. You realize you can never be truly sated, but you also know that remaining hungry is the key to amassing power.</p>
-            <h5 class="caption">HUNGER DOMAIN SPELLS</h5>
+	<info>
+		<name>Hunger Domain</name>
+		<update version="0.0.2">
+			<file name="cleric-hunger.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-hunger.xml" />
+		</update>
+	</info>
+	
+	<element name="Hunger Domain" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_HUNGER_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>You have dedicated your life to the satisfaction of your appetites, sometimes without regard for others’ needs. You realize you can never be truly sated, but you also know that remaining hungry is the key to amassing power.</p>
+			<h5 class="caption">HUNGER DOMAIN SPELLS</h5>
 			<table>
 				<thead>
 					<tr><td>Cleric Level</td><td>Spells</td></tr>
@@ -22,25 +22,25 @@
 				<tr><td>7th</td><td><em>blight, desiccating breath*</em></td></tr>
 				<tr><td>9th</td><td><em>cloudkill, cone of cold</em></td></tr>
 			</table>
-            <div element="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_UNSATED" />
-            <div element="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_BONUS_PROFICIENCY" />
-            <div element="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_FEROCIOUS_FEAST" />
-            <div element="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_REVITALIZE" />
-            <div element="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" />
-            <div element="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_RAVENING_HORDE" />
-        </description>
-        <sheet display="false">
-            <description></description>
-        </sheet>
-        <rules>
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_UNSATED" level="1" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_BONUS_PROFICIENCY" level="1" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_FEROCIOUS_FEAST" level="2" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_REVITALIZE" level="6" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" level="8" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_RAVENING_HORDE" level="17" />
+			<div element="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_UNSATED" />
+			<div element="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_BONUS_PROFICIENCY" />
+			<div element="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_FEROCIOUS_FEAST" />
+			<div element="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_REVITALIZE" />
+			<div element="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" />
+			<div element="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_RAVENING_HORDE" />
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_UNSATED" level="1" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_BONUS_PROFICIENCY" level="1" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_FEROCIOUS_FEAST" level="2" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_REVITALIZE" level="6" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" level="8" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_RAVENING_HORDE" level="17" />
 
-            <grant type="Spell" id="ID_PHB_SPELL_FALSE_LIFE" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FALSE_LIFE" level="1" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_GOODBERRY" level="1" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_LOCATE_ANIMALS_OR_PLANTS" level="3" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_SUGGESTION" level="3" spellcasting="Cleric" prepared="true" />
@@ -50,74 +50,74 @@
 			<grant type="Spell" id="ID_KBP_DM5E_SPELL_DESICCATING_BREATH" level="7" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_CLOUDKILL" level="9" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_CONE_OF_COLD" level="9" spellcasting="Cleric" prepared="true" />
-        </rules>
-    </element>
+		</rules>
+	</element>
 
 
 <!-- UNSATED  -->
-    <element name="Unsated" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_UNSATED">
-        <description>
-            <p>When you choose this domain at 1st level, you learn the poison spray cantrip. You also gain proficiency in Survival and proficiency with cooking tools.</p>
-        </description>
-        <sheet display="false" />
-        <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_POISON_SPRAY" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" />
-        </rules>
-    </element>
+	<element name="Unsated" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_UNSATED">
+		<description>
+			<p>When you choose this domain at 1st level, you learn the poison spray cantrip. You also gain proficiency in Survival and proficiency with cooking tools.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_POISON_SPRAY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" />
+		</rules>
+	</element>
 
 <!-- BONUS PROFICIENCY  -->
-    <element name="Bonus Proficiency" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_BONUS_PROFICIENCY">
-        <description>
-            <p>Also at 1st level, you gain proficiency with heavy armor.</p>
-        </description>
-        <sheet display="false" />
-        <rules>
-            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
-        </rules>
-    </element>
+	<element name="Bonus Proficiency" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_BONUS_PROFICIENCY">
+		<description>
+			<p>Also at 1st level, you gain proficiency with heavy armor.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+		</rules>
+	</element>
 <!-- CHANNEL DIVINITY: FEROCIOUS FEAST  -->
-    <element name="Channel Divinity: Ferocious Feast" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_FEROCIOUS_FEAST">
-        <description>
-            <p>At 2nd level, you can use your Channel Divinity to gain a bite attack for 1 minute. The bite deals piercing damage equal to 1d6 + your Strength modifier. On a critical hit, you can add your Wisdom modifier to the damage roll in addition to the normal benefits.</p>
-        </description>
-        <sheet alt="Ferocious Feast" usage="Channel Divinity">
-            <description>You can use your Channel Divinity to gain a bite attack for 1 minute. The bite deals 1d6 + {{strength:modifier}} piercing damage. On a critical hit, you can add {{wisdom:modifier}} to the damage roll in addition to the normal benefits.</description>
-        </sheet>
-    </element>
+	<element name="Channel Divinity: Ferocious Feast" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_FEROCIOUS_FEAST">
+		<description>
+			<p>At 2nd level, you can use your Channel Divinity to gain a bite attack for 1 minute. The bite deals piercing damage equal to 1d6 + your Strength modifier. On a critical hit, you can add your Wisdom modifier to the damage roll in addition to the normal benefits.</p>
+		</description>
+		<sheet alt="Ferocious Feast" usage="Channel Divinity">
+			<description>You can use your Channel Divinity to gain a bite attack for 1 minute. The bite deals 1d6 + {{strength:modifier}} piercing damage. On a critical hit, you can add {{wisdom:modifier}} to the damage roll in addition to the normal benefits.</description>
+		</sheet>
+	</element>
 <!-- REVITALIZE  -->
-    <element name="Revitalize" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_REVITALIZE">
-        <description>
-            <p>Beginning at 6th level, you can remove the effect of a disease, a poison or the poisoned condition, or one level of exhaustion from yourself as an action. You must finish a long rest before using this ability again.</p>
-        </description>
-        <sheet action="Action" usage="1/Long Rest">
-            <description>You can remove the effect of a disease, a poison or the poisoned condition, or one level of exhaustion from yourself.</description>
-        </sheet>
-    </element>
+	<element name="Revitalize" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_REVITALIZE">
+		<description>
+			<p>Beginning at 6th level, you can remove the effect of a disease, a poison or the poisoned condition, or one level of exhaustion from yourself as an action. You must finish a long rest before using this ability again.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You can remove the effect of a disease, a poison or the poisoned condition, or one level of exhaustion from yourself.</description>
+		</sheet>
+	</element>
 
 <!-- DIVINE STRIKE  -->
-    <element name="Divine Strike" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE">
-        <description>
-            <p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 necrotic damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
-        </description>
-        <sheet>
-            <description level="8">Once on each of your turns, you can cause a weapon attack to deal an extra 1d8 necrotic damage to the target on a hit.</description>
-            <description level="14">Once on each of your turns, you can cause a weapon attack to deal an extra 2d8 necrotic damage to the target on a hit.</description>
-        </sheet>
-    </element>
+	<element name="Divine Strike" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE">
+		<description>
+			<p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 necrotic damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+		</description>
+		<sheet>
+			<description level="8">Once on each of your turns, you can cause a weapon attack to deal an extra 1d8 necrotic damage to the target on a hit.</description>
+			<description level="14">Once on each of your turns, you can cause a weapon attack to deal an extra 2d8 necrotic damage to the target on a hit.</description>
+		</sheet>
+	</element>
 <!-- RAVENING HORDE  -->
-    <element name="Ravening Horde" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_RAVENING_HORDE">
-        <description>
-            <p>At 17th level, you can sacrifice the vitality of those around you and inspire an insatiable and horrifying hunger in them. Each living creature within 60 feet of you that fails a Charisma saving throw takes 10d8 necrotic damage and then succumbs to a ravening hunger, dropping whatever it holds and attacking unaffected creatures with their hands and teeth, or with whatever natural weapons they possess, in an attempt to devour them. This effect lasts for a number of rounds equal to 3 + your Wisdom modifier. An affected creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. You can exclude up to ten creatures from the effect, but this doesn’t shield them against being attacked by those who do succumb. This ability doesn’t affect constructs or the undead.</p>
-        </description>
-        <sheet>
-            <description>Each living creature within 60 feet of you that fails a Charisma saving throw (DC {{cleric:spellcasting:dc}}) takes 10d8 necrotic damage and then succumbs to a ravening hunger, dropping whatever it holds and attacking unaffected creatures with their hands and teeth, or with whatever natural weapons they possess, in an attempt to devour them. This effect lasts for {{raveninghorde:rounds}} rounds. An affected creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. You can exclude up to ten creatures from the effect, but this doesn’t shield them against being attacked by those who do succumb. This ability doesn’t affect constructs or the undead.</description>
-        </sheet>
-        <rules>
-            <stat name="raveninghorde:rounds" value="3" />
-            <stat name="raveninghorde:rounds" value="wisdom:modifier" />
-        </rules>
-    </element>
+	<element name="Ravening Horde" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_HUNGER_DOMAIN_ARCHETYPE_FEATURE_RAVENING_HORDE">
+		<description>
+			<p>At 17th level, you can sacrifice the vitality of those around you and inspire an insatiable and horrifying hunger in them. Each living creature within 60 feet of you that fails a Charisma saving throw takes 10d8 necrotic damage and then succumbs to a ravening hunger, dropping whatever it holds and attacking unaffected creatures with their hands and teeth, or with whatever natural weapons they possess, in an attempt to devour them. This effect lasts for a number of rounds equal to 3 + your Wisdom modifier. An affected creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. You can exclude up to ten creatures from the effect, but this doesn’t shield them against being attacked by those who do succumb. This ability doesn’t affect constructs or the undead.</p>
+		</description>
+		<sheet>
+			<description>Each living creature within 60 feet of you that fails a Charisma saving throw (DC {{cleric:spellcasting:dc}}) takes 10d8 necrotic damage and then succumbs to a ravening hunger, dropping whatever it holds and attacking unaffected creatures with their hands and teeth, or with whatever natural weapons they possess, in an attempt to devour them. This effect lasts for {{raveninghorde:rounds}} rounds. An affected creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. You can exclude up to ten creatures from the effect, but this doesn’t shield them against being attacked by those who do succumb. This ability doesn’t affect constructs or the undead.</description>
+		</sheet>
+		<rules>
+			<stat name="raveninghorde:rounds" value="3" />
+			<stat name="raveninghorde:rounds" value="wisdom:modifier" />
+		</rules>
+	</element>
 
 </elements>

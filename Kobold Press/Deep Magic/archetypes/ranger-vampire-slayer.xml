@@ -6,38 +6,38 @@
 		</update>
 	</info>
 
-    <element name="Vampire Slayer" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_VAMPIRE_SLAYER">
-        <supports>Ranger Archetype</supports>
-        <description>
-            <p>Vampire slayers wander remote forests, haunted hills, and fog-bound moors, protecting the common folk of farming villages and cabins at the edge of civilized lands from the creatures of the night. Moving unseen through woodlands, your specialized training allows you to hunt vampires, ghouls, werewolves, and other monsters that prey on the innocent. Although you are most at home in the wilderness, as your skills improve, your attention might turn to older vampires that rule entire baronies, or that command dark keeps and sprawling manors closer to civilization.</p>
-            <p class="indent"></p>
-            <div element="ID_KBP_DM5E_VAMPIRE_SLAYER_ARCHETYPE_FEATURE_FAVORED_ENEMY" />
-            <div element="ID_KBP_DM5E_VAMPIRE_SLAYER_ARCHETYPE_FEATURE_HUNTERS_PREY" />
-            <div element="ID_KBP_DM5E_VAMPIRE_SLAYER_ARCHETYPE_FEATURE_DEFENSIVE_TACTICS" />
-            <div element="ID_KBP_DM5E_VAMPIRE_SLAYER_ARCHETYPE_FEATURE_SLAYERS_STRIKE" />
-            <div element="ID_KBP_DM5E_VAMPIRE_SLAYER_ARCHETYPE_FEATURE_SUPERIOR_HUNTERS_DEFENSE" />
-        </description>
-        <sheet display="false">
-            <description></description>
-        </sheet>
-        <rules>
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_VAMPIRE_SLAYER_ARCHETYPE_FEATURE_FAVORED_ENEMY" level="3" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_VAMPIRE_SLAYER_ARCHETYPE_FEATURE_HUNTERS_PREY" level="3" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_VAMPIRE_SLAYER_ARCHETYPE_FEATURE_DEFENSIVE_TACTICS" level="7" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_VAMPIRE_SLAYER_ARCHETYPE_FEATURE_SLAYERS_STRIKE" level="11" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_VAMPIRE_SLAYER_ARCHETYPE_FEATURE_SUPERIOR_HUNTERS_DEFENSE" level="15" />
-        </rules>
-    </element>
+	<element name="Vampire Slayer" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_VAMPIRE_SLAYER">
+		<supports>Ranger Archetype</supports>
+		<description>
+			<p>Vampire slayers wander remote forests, haunted hills, and fog-bound moors, protecting the common folk of farming villages and cabins at the edge of civilized lands from the creatures of the night. Moving unseen through woodlands, your specialized training allows you to hunt vampires, ghouls, werewolves, and other monsters that prey on the innocent. Although you are most at home in the wilderness, as your skills improve, your attention might turn to older vampires that rule entire baronies, or that command dark keeps and sprawling manors closer to civilization.</p>
+			<p class="indent"></p>
+			<div element="ID_KBP_DM5E_VAMPIRE_SLAYER_ARCHETYPE_FEATURE_FAVORED_ENEMY" />
+			<div element="ID_KBP_DM5E_VAMPIRE_SLAYER_ARCHETYPE_FEATURE_HUNTERS_PREY" />
+			<div element="ID_KBP_DM5E_VAMPIRE_SLAYER_ARCHETYPE_FEATURE_DEFENSIVE_TACTICS" />
+			<div element="ID_KBP_DM5E_VAMPIRE_SLAYER_ARCHETYPE_FEATURE_SLAYERS_STRIKE" />
+			<div element="ID_KBP_DM5E_VAMPIRE_SLAYER_ARCHETYPE_FEATURE_SUPERIOR_HUNTERS_DEFENSE" />
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_VAMPIRE_SLAYER_ARCHETYPE_FEATURE_FAVORED_ENEMY" level="3" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_VAMPIRE_SLAYER_ARCHETYPE_FEATURE_HUNTERS_PREY" level="3" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_VAMPIRE_SLAYER_ARCHETYPE_FEATURE_DEFENSIVE_TACTICS" level="7" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_VAMPIRE_SLAYER_ARCHETYPE_FEATURE_SLAYERS_STRIKE" level="11" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_VAMPIRE_SLAYER_ARCHETYPE_FEATURE_SUPERIOR_HUNTERS_DEFENSE" level="15" />
+		</rules>
+	</element>
 
 <!-- FAVORED ENEMY  -->
-    <element name="Favored Enemy" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_VAMPIRE_SLAYER_ARCHETYPE_FEATURE_FAVORED_ENEMY">
-        <description>
-            <p>If you choose this archetype at 3rd level, your favored enemy becomes undead if you did not select undead at 1st level. When you choose additional favored enemies at 6th and 14th level, you can choose freely from the standard list, and you can also select hags or lycanthropes as an alternative.</p>
-        </description>
-        <sheet>
-            <description>Your favored enemy becomes undead if you did not select undead at 1st level.</description>
-        </sheet>
-    </element>
+	<element name="Favored Enemy" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_VAMPIRE_SLAYER_ARCHETYPE_FEATURE_FAVORED_ENEMY">
+		<description>
+			<p>If you choose this archetype at 3rd level, your favored enemy becomes undead if you did not select undead at 1st level. When you choose additional favored enemies at 6th and 14th level, you can choose freely from the standard list, and you can also select hags or lycanthropes as an alternative.</p>
+		</description>
+		<sheet>
+			<description>Your favored enemy becomes undead if you did not select undead at 1st level.</description>
+		</sheet>
+	</element>
 
 	<!-- ENEMIES -->
 		<element name="Hags" type="Class Feature" source="Deep Magic" id="ID_KBP_DM5E_CLASSFEATURE_RANGER_FAVORED_ENEMY_HAGS">
@@ -45,7 +45,7 @@
 			<requirements>[level:ranger:6]</requirements>
 			<description>
 				<p>Hags were horrible witches of wicked intent and ancient origin, dark fey tied to primal forces whose foul magic and mysterious malevolence haunted fairy tales and nightmares. Equal parts hideous and heinous, hags embodied what it meant to be ugly inside and out, taking on the forms of unsightly old women.</p>
-			</description>		
+			</description>
 		</element>
 
 		<element name="Lycanthropes" type="Class Feature" source="Deep Magic" id="ID_KBP_DM5E_CLASSFEATURE_RANGER_FAVORED_ENEMY_LYCANTHROPES">
@@ -53,78 +53,78 @@
 			<requirements>[level:ranger:6]</requirements>
 			<description>
 				<p>One of the most ancient and feared of all curses, lycanthropy can transform the most civilized humanoid into a ravening beast. In its natural humanoid form, a creature cursed by lycanthropy appears as its normal self. Over time, however, many lycanthropes acquire features suggestive of their animal form. In that animal form, a lycanthrope resembles a powerful version of a normal animal. On close inspection, its eyes show a faint spark of unnatural intelligence and might glow red in the dark.</p>
-			</description>		
+			</description>
 		</element>
 <!-- HUNTER'S PREY -->
-    <element name="Hunter's Prey" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_VAMPIRE_SLAYER_ARCHETYPE_FEATURE_HUNTERS_PREY">
-    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_VAMPIRE_SLAYER_HUNTERS_PREY</requirements>
-        <description>
-            <p>At 3rd level, you gain one of the following features of your choice: either Colossus Slayer, Giant Killer, or Horde Breaker from the Hunter archetype in the standard rules, or Empowered Strike, which is described below.</p>
-            <p class="indent"><strong><em>Colossus Slayer.</em></strong> Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it’s below its hit point maximum. You can deal this extra damage only once per turn.</p>
+	<element name="Hunter's Prey" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_VAMPIRE_SLAYER_ARCHETYPE_FEATURE_HUNTERS_PREY">
+	<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_VAMPIRE_SLAYER_HUNTERS_PREY</requirements>
+		<description>
+			<p>At 3rd level, you gain one of the following features of your choice: either Colossus Slayer, Giant Killer, or Horde Breaker from the Hunter archetype in the standard rules, or Empowered Strike, which is described below.</p>
+			<p class="indent"><strong><em>Colossus Slayer.</em></strong> Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it’s below its hit point maximum. You can deal this extra damage only once per turn.</p>
 			<p class="indent"><strong><em>Giant Killer.</em></strong> When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature.</p>
 			<p class="indent"><strong><em>Horde Breaker.</em></strong> Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon.</p>
-            <p class="indent"><strong><em>Empowered Strike.</em></strong> Your expertise in fighting undead and lycanthropes allows you to harm them even when you’re not wielding a magic weapon. When you fight a creature that has resistance to bludgeoning, piercing, or slashing damage from nonmagical weapons, you can ignore this resistance once per turn when you score a hit with a nonmagical weapon. If you are wielding a magic weapon, the creature takes an extra 1d8 damage from one of your successful attacks on each of your turns.</p>
-        </description>
-        <sheet display="false" />
-        <rules>
-            <select type="Archetype Feature" name="Hunter’s Prey" supports="Hunters Prey" />
-        </rules>
-    </element>
-    
-    <!-- prey  -->
-        <element name="Colossus Slayer" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPE_FEATURE_RANGER_HUNTERS_PREY_COLOSSUS_SLAYER">
-            <supports>Hunters Prey</supports>
-            <description>
-                <p>Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it’s below its hit point maximum. You can deal this extra damage only once per turn.</p>
-            </description>
-            <sheet usage="1/Turn">
-                <description>When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it’s below its hp maximum.</description>
-            </sheet>
-        </element>
-        <element name="Giant Killer" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPE_FEATURE_RANGER_HUNTERS_PREY_GIANT_KILLER">
-            <supports>Hunters Prey</supports>
-            <description>
-                <p>When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature.</p>
-            </description>
-            <sheet action="Reaction">
-                <description>When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature.</description>
-            </sheet>
-        </element>
-        <element name="Horde Breaker" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPE_FEATURE_RANGER_HUNTERS_PREY_HORDE_BREAKER">
-            <supports>Hunters Prey</supports>
-            <description>
-                <p>Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon.</p>
-            </description>
-            <sheet>
-                <description>Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon.</description>
-            </sheet>
-        </element>
-        <element name="Empowered Strike" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_VAMPIRE_SLAYER_ARCHETYPE_FEATURE_RANGER_HUNTERS_PREY_EMPOWERED_STRIKE">
-            <supports>Hunters Prey</supports>
-            <description>
-                <p>Your expertise in fighting undead and lycanthropes allows you to harm them even when you’re not wielding a magic weapon. When you fight a creature that has resistance to bludgeoning, piercing, or slashing damage from nonmagical weapons, you can ignore this resistance once per turn when you score a hit with a nonmagical weapon. If you are wielding a magic weapon, the creature takes an extra 1d8 damage from one of your successful attacks on each of your turns.</p>
-            </description>
-            <sheet usage="1/Turn">
-                <description>When you fight a creature that has resistance to bludgeoning, piercing, or slashing damage from nonmagical weapons, you can ignore this resistance once per turn when you score a hit with a nonmagical weapon. If you are wielding a magic weapon, the creature takes an extra 1d8 damage from one of your successful attacks on each of your turns.</description>
-            </sheet>
-        </element>
+			<p class="indent"><strong><em>Empowered Strike.</em></strong> Your expertise in fighting undead and lycanthropes allows you to harm them even when you’re not wielding a magic weapon. When you fight a creature that has resistance to bludgeoning, piercing, or slashing damage from nonmagical weapons, you can ignore this resistance once per turn when you score a hit with a nonmagical weapon. If you are wielding a magic weapon, the creature takes an extra 1d8 damage from one of your successful attacks on each of your turns.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Hunter’s Prey" supports="Hunters Prey" />
+		</rules>
+	</element>
+
+	<!-- prey  -->
+		<element name="Colossus Slayer" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPE_FEATURE_RANGER_HUNTERS_PREY_COLOSSUS_SLAYER">
+			<supports>Hunters Prey</supports>
+			<description>
+				<p>Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it’s below its hit point maximum. You can deal this extra damage only once per turn.</p>
+			</description>
+			<sheet usage="1/Turn">
+				<description>When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it’s below its hp maximum.</description>
+			</sheet>
+		</element>
+		<element name="Giant Killer" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPE_FEATURE_RANGER_HUNTERS_PREY_GIANT_KILLER">
+			<supports>Hunters Prey</supports>
+			<description>
+				<p>When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature.</p>
+			</description>
+			<sheet action="Reaction">
+				<description>When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature.</description>
+			</sheet>
+		</element>
+		<element name="Horde Breaker" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPE_FEATURE_RANGER_HUNTERS_PREY_HORDE_BREAKER">
+			<supports>Hunters Prey</supports>
+			<description>
+				<p>Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon.</p>
+			</description>
+			<sheet>
+				<description>Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon.</description>
+			</sheet>
+		</element>
+		<element name="Empowered Strike" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_VAMPIRE_SLAYER_ARCHETYPE_FEATURE_RANGER_HUNTERS_PREY_EMPOWERED_STRIKE">
+			<supports>Hunters Prey</supports>
+			<description>
+				<p>Your expertise in fighting undead and lycanthropes allows you to harm them even when you’re not wielding a magic weapon. When you fight a creature that has resistance to bludgeoning, piercing, or slashing damage from nonmagical weapons, you can ignore this resistance once per turn when you score a hit with a nonmagical weapon. If you are wielding a magic weapon, the creature takes an extra 1d8 damage from one of your successful attacks on each of your turns.</p>
+			</description>
+			<sheet usage="1/Turn">
+				<description>When you fight a creature that has resistance to bludgeoning, piercing, or slashing damage from nonmagical weapons, you can ignore this resistance once per turn when you score a hit with a nonmagical weapon. If you are wielding a magic weapon, the creature takes an extra 1d8 damage from one of your successful attacks on each of your turns.</description>
+			</sheet>
+		</element>
 
 <!-- DEFENSIVE TACTICS  -->
-    <element name="Defensive Tactics" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_VAMPIRE_SLAYER_ARCHETYPE_FEATURE_DEFENSIVE_TACTICS">
-    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_VAMPIRE_SLAYER_DEFENSIVE_TACTICS</requirements>
-        <description>
-            <p>At 7th level, you gain one of the following features of your choice: either Escape the Horde, Multiattack Defense, or Steel Will from the Hunter archetype in the standard rules, or Ranger's Resilience, which is described below. </p>
-            <p class="indent"><strong><em>Escape the Horde.</em></strong> Opportunity attacks against you are made with disadvantage.</p>
+	<element name="Defensive Tactics" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_VAMPIRE_SLAYER_ARCHETYPE_FEATURE_DEFENSIVE_TACTICS">
+	<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_VAMPIRE_SLAYER_DEFENSIVE_TACTICS</requirements>
+		<description>
+			<p>At 7th level, you gain one of the following features of your choice: either Escape the Horde, Multiattack Defense, or Steel Will from the Hunter archetype in the standard rules, or Ranger's Resilience, which is described below. </p>
+			<p class="indent"><strong><em>Escape the Horde.</em></strong> Opportunity attacks against you are made with disadvantage.</p>
 			<p class="indent"><strong><em>Multiattack Defense.</em></strong> When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn.</p>
 			<p class="indent"><strong><em>Steel Will.</em></strong> You have advantage on saving throws against being frightened.</p>
-            <p class="indent"><strong><em>Ranger’s Resilience.</em></strong> You have advantage on saving throws against paralysis and against effects that would reduce your hit point maximum. </p>
-        </description>
-        <sheet display="false" />
+			<p class="indent"><strong><em>Ranger’s Resilience.</em></strong> You have advantage on saving throws against paralysis and against effects that would reduce your hit point maximum. </p>
+		</description>
+		<sheet display="false" />
 		<rules>
 			<select type="Archetype Feature" name="Defensive Tactics" supports="Defensive Tactics" />
 		</rules>
-    </element>
-    
+	</element>
+
 	<element name="Ranger’s Resilience" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_VAMPIRE_SLAYER_ARCHETYPE_FEATURE_DEFENSIVE_TACTICS_RANGERS_RESILIENCE">
 		<supports>Defensive Tactics</supports>
 		<description>
@@ -134,10 +134,10 @@
 			<description>You have advantage on saving throws against paralysis and against effects that would reduce your hit point maximum.</description>
 		</sheet>
 	</element>
-        
+
 <!-- SLAYER’S STRIKE  -->
-    <element name="Slayer's Strike" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_VAMPIRE_SLAYER_ARCHETYPE_FEATURE_SLAYERS_STRIKE">
-        <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_VAMPIRE_SLAYER_SLAYERS_STRIKE</requirements>
+	<element name="Slayer's Strike" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_VAMPIRE_SLAYER_ARCHETYPE_FEATURE_SLAYERS_STRIKE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_VAMPIRE_SLAYER_SLAYERS_STRIKE</requirements>
 		<description>
 			<p>At 11th level, you gain one of the following features of your choice: either Volley or Whirlwind Attack from the Hunter archetype in the standard rules, or Straight Through the Heart, which is described below. </p>
 			<p class="indent"><strong><em>Volley.</em></strong> You can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon’s range. You must have ammunition for each target, as normal, and you make a separate attack roll for each target.</p>
@@ -150,44 +150,44 @@
 		</rules>
 	</element>
 
-    <!-- Strikes -->
-        <element name="Volley" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPE_FEATURE_RANGER_MULTIATTACK_VOLLEY">
-            <supports>Slayers Strike</supports>
-            <description>
-                <p>You can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon’s range. You must have ammunition for each target, as normal, and you make a separate attack roll for each target.</p>
-            </description>
-            <sheet action="Action">
-                <description>You can make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon’s range. You must have ammunition for each target, as normal, and you make a separate attack roll for each target.</description>
-            </sheet>
-        </element>
-        <element name="Whirlwind Attack" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPE_FEATURE_RANGER_MULTIATTACK_WHIRLWIND_ATTACK">
-            <supports>Slayers Strike</supports>
-            <description>
-                <p>You can use your action to make a melee attack against any number of creatures within 5 feet of you, with a separate attack roll for each target.</p>
-            </description>
-            <sheet action="Action">
-                <description>You can make a melee attack against any number of creatures within 5 feet of you, with a separate attack roll for each target.</description>
-            </sheet>
-        </element>
-        <element name="Straight Through the Heart" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_VAMPIRE_SLAYER_ARCHETYPE_FEATURE_SLAYERS_STRIKE_STRAIGHT_THROUGH_THE_HEART">
-            <supports>Slayers Strike</supports>
-            <description>
-                <p>When you use an attack action, you can choose to make a single melee attack against a favored enemy in an effort to strike a vulnerable spot. If the attack hits, it deals an extra 6d6 damage.</p>
-            </description>
-            <sheet action="Action">
-                <description>When you use an attack action, you can choose to make a single melee attack against a favored enemy in an effort to strike a vulnerable spot. If the attack hits, it deals an extra 6d6 damage.</description>
-            </sheet>
-        </element>
+	<!-- Strikes -->
+		<element name="Volley" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPE_FEATURE_RANGER_MULTIATTACK_VOLLEY">
+			<supports>Slayers Strike</supports>
+			<description>
+				<p>You can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon’s range. You must have ammunition for each target, as normal, and you make a separate attack roll for each target.</p>
+			</description>
+			<sheet action="Action">
+				<description>You can make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon’s range. You must have ammunition for each target, as normal, and you make a separate attack roll for each target.</description>
+			</sheet>
+		</element>
+		<element name="Whirlwind Attack" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPE_FEATURE_RANGER_MULTIATTACK_WHIRLWIND_ATTACK">
+			<supports>Slayers Strike</supports>
+			<description>
+				<p>You can use your action to make a melee attack against any number of creatures within 5 feet of you, with a separate attack roll for each target.</p>
+			</description>
+			<sheet action="Action">
+				<description>You can make a melee attack against any number of creatures within 5 feet of you, with a separate attack roll for each target.</description>
+			</sheet>
+		</element>
+		<element name="Straight Through the Heart" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_VAMPIRE_SLAYER_ARCHETYPE_FEATURE_SLAYERS_STRIKE_STRAIGHT_THROUGH_THE_HEART">
+			<supports>Slayers Strike</supports>
+			<description>
+				<p>When you use an attack action, you can choose to make a single melee attack against a favored enemy in an effort to strike a vulnerable spot. If the attack hits, it deals an extra 6d6 damage.</p>
+			</description>
+			<sheet action="Action">
+				<description>When you use an attack action, you can choose to make a single melee attack against a favored enemy in an effort to strike a vulnerable spot. If the attack hits, it deals an extra 6d6 damage.</description>
+			</sheet>
+		</element>
 
 <!-- SUPERIOR HUNTER’S DEFENSE -->
-    <element name="Superior Hunter’s Defense" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_VAMPIRE_SLAYER_ARCHETYPE_FEATURE_SUPERIOR_HUNTERS_DEFENSE">
+	<element name="Superior Hunter’s Defense" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_VAMPIRE_SLAYER_ARCHETYPE_FEATURE_SUPERIOR_HUNTERS_DEFENSE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_VAMPIRE_SLAYER_SUPERIOR_HUNTERS_DEFENSE</requirements>
 		<description>
 			<p>At 15th level, you gain one of the following features of your choice: either Evasion, Stand Against the Tide, or Uncanny Dodge from the Hunter archetype in the standard rules, or Greater Resilence, which is described below. .</p>
 			<p class="indent"><strong><em>Evasion.</em></strong> You can nimbly dodge out of the way of certain area effects, such as a red dragon’s fiery breath or a lightning bolt spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
 			<p class="indent"><strong><em>Stand Against the Tide.</em></strong> When a hostile creature misses you with a melee attack, you can use your reaction to force that creature to repeat the same attack against another creature (other than itself) of your choice.</p>
-			<p class="indent"><strong><em>Uncanny Dodge.</em></strong> When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack’s damage against you.</p>		
-			<p class="indent"><strong><em>Greater Resilience.</em></strong> You have advantage on saving throws against the spells and abilities of your favored enemies.</p>		
+			<p class="indent"><strong><em>Uncanny Dodge.</em></strong> When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack’s damage against you.</p>
+			<p class="indent"><strong><em>Greater Resilience.</em></strong> You have advantage on saving throws against the spells and abilities of your favored enemies.</p>
 		</description>
 		<sheet display="false" />
 		<rules>

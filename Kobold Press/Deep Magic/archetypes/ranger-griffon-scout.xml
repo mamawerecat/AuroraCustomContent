@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-    <info>
-        <name>Ranger - Griffon Scout</name>
-        <update version="0.0.1">
-            <file name="ranger-griffon-scout.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/ranger-griffon-scout.xml" />
-        </update>
-    </info>
-    
-    <element name="Griffon Scout" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_GRIFFON_SCOUT">
-        <supports>Ranger Archetype</supports>
-        <description>
-            <p>Elves of the forested woodlands and mountain foothills often uphold the tradition of taming and riding griffons, living on the same windswept crags where griffons nest, thus giving themselves the ability to command vast tracts of woodland territory. Trained by elf veterans and beast tamers, rangers of the Griffon Scout archetype learn to move swiftly and stealthily both on foot and while mounted, gathering information on their enemies and mounting devastating hit-and-run raids with precision and coordination.</p>
-            <p class="indent"></p>
-            <div element="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_GRIFFON_SCOUT_MAGIC" />
-            <div element="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_MOUNTED_SCOUT" />
-            <div element="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_SKIRMISHERS_STEP" />
-            <div element="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_COORDINATED_STRIKES" />
-            <div element="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_GRIFFON_WINGS" />
-            <div element="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_STRIKE_AND_FADE" />
-        </description>
-        <sheet display="false">
-            <description></description>
-        </sheet>
-        <rules>
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_GRIFFON_SCOUT_MAGIC" level="3" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_MOUNTED_SCOUT" level="3" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_SKIRMISHERS_STEP" level="3" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_COORDINATED_STRIKES" level="7" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_GRIFFON_WINGS" level="11" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_STRIKE_AND_FADE" level="15" />
-        </rules>
-    </element>
+	<info>
+		<name>Ranger - Griffon Scout</name>
+		<update version="0.0.1">
+			<file name="ranger-griffon-scout.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/ranger-griffon-scout.xml" />
+		</update>
+	</info>
+
+	<element name="Griffon Scout" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_GRIFFON_SCOUT">
+		<supports>Ranger Archetype</supports>
+		<description>
+			<p>Elves of the forested woodlands and mountain foothills often uphold the tradition of taming and riding griffons, living on the same windswept crags where griffons nest, thus giving themselves the ability to command vast tracts of woodland territory. Trained by elf veterans and beast tamers, rangers of the Griffon Scout archetype learn to move swiftly and stealthily both on foot and while mounted, gathering information on their enemies and mounting devastating hit-and-run raids with precision and coordination.</p>
+			<p class="indent"></p>
+			<div element="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_GRIFFON_SCOUT_MAGIC" />
+			<div element="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_MOUNTED_SCOUT" />
+			<div element="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_SKIRMISHERS_STEP" />
+			<div element="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_COORDINATED_STRIKES" />
+			<div element="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_GRIFFON_WINGS" />
+			<div element="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_STRIKE_AND_FADE" />
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_GRIFFON_SCOUT_MAGIC" level="3" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_MOUNTED_SCOUT" level="3" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_SKIRMISHERS_STEP" level="3" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_COORDINATED_STRIKES" level="7" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_GRIFFON_WINGS" level="11" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_STRIKE_AND_FADE" level="15" />
+		</rules>
+	</element>
 
 <!-- Griffon Scout Magic -->
-    <element name="Griffon Scout Magic" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_GRIFFON_SCOUT_MAGIC">
+	<element name="Griffon Scout Magic" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_GRIFFON_SCOUT_MAGIC">
 		<description>
 			<p>Starting at 3rd level, you learn an additional spell when you reach certain levels, as shown in the Griffon Scout Spells table. These spells count as ranger spells for you, but they don’t count against the number of ranger spells you can know.</p>
 			<h5>GRIFFON SCOUT SPELLS</h5>
@@ -46,7 +46,7 @@
 				<tr><td>9th</td><td><em>haste</em></td></tr>
 				<tr><td>13th</td><td><em>greater invisibility</em></td></tr>
 				<tr><td>17th</td><td><em>rary's telepathic bond</em></td></tr>
-			  </table>            
+			  </table>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -59,53 +59,53 @@
 	</element>
 
 <!-- Mounted Scout -->
-    <element name="Mounted Strike" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_MOUNTED_SCOUT">
-        <description>
-            <p>Starting at 3rd level, you have advantage on Dexterity (Stealth) checks while mounted, and your Dexterity (Stealth) checks apply to both you and your mount.</p>
-        </description>
-        <sheet>
-            <description>You have advantage on Dexterity (Stealth) checks while mounted, and your Dexterity (Stealth) checks apply to both you and your mount.</description>
-        </sheet>
-    </element>
+	<element name="Mounted Strike" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_MOUNTED_SCOUT">
+		<description>
+			<p>Starting at 3rd level, you have advantage on Dexterity (Stealth) checks while mounted, and your Dexterity (Stealth) checks apply to both you and your mount.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Dexterity (Stealth) checks while mounted, and your Dexterity (Stealth) checks apply to both you and your mount.</description>
+		</sheet>
+	</element>
 
 <!-- Skirmisher's Step -->
-    <element name="Skirmisher's Step" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_SKIRMISHERS_STEP">
-        <description>
-            <p>Beginning at 3rd level, when you move at least 20 feet straight toward a creature and hit it with a melee weapon attack in the same turn, that attack deals an extra 1d8 damage of the same type dealt by the weapon to the target. If you move out of the target’s reach before the end of your next turn, whether you are mounted or not, you don’t provoke an opportunity attack from the target.</p>
-        </description>
-        <sheet>
-            <description>When you move at least 20 feet straight toward a creature and hit it with a melee weapon attack in the same turn, that attack deals an extra 1d8 damage of the same type dealt by the weapon to the target. If you move out of the target’s reach before the end of your next turn, whether you are mounted or not, you don’t provoke an opportunity attack from the target.</description>
-        </sheet>
-    </element>
+	<element name="Skirmisher's Step" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_SKIRMISHERS_STEP">
+		<description>
+			<p>Beginning at 3rd level, when you move at least 20 feet straight toward a creature and hit it with a melee weapon attack in the same turn, that attack deals an extra 1d8 damage of the same type dealt by the weapon to the target. If you move out of the target’s reach before the end of your next turn, whether you are mounted or not, you don’t provoke an opportunity attack from the target.</p>
+		</description>
+		<sheet>
+			<description>When you move at least 20 feet straight toward a creature and hit it with a melee weapon attack in the same turn, that attack deals an extra 1d8 damage of the same type dealt by the weapon to the target. If you move out of the target’s reach before the end of your next turn, whether you are mounted or not, you don’t provoke an opportunity attack from the target.</description>
+		</sheet>
+	</element>
 
 <!-- Coordinated Strikes -->
-    <element name="Coordinated Strikes" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_COORDINATED_STRIKES">
-        <description>
-            <p>Starting at 7th level, you can deliver punishing flurries of attacks in perfect coordination with your allies. When one of your allies hits a target within 30 feet of you with an attack, you can use your reaction to make one weapon attack against that target. </p>
-        </description>
-        <sheet action="Reaction">
-            <description>When one of your allies hits a target within 30 feet of you with an attack, you can use your reaction to make one weapon attack against that target.</description>
-        </sheet>
-    </element>
+	<element name="Coordinated Strikes" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_COORDINATED_STRIKES">
+		<description>
+			<p>Starting at 7th level, you can deliver punishing flurries of attacks in perfect coordination with your allies. When one of your allies hits a target within 30 feet of you with an attack, you can use your reaction to make one weapon attack against that target. </p>
+		</description>
+		<sheet action="Reaction">
+			<description>When one of your allies hits a target within 30 feet of you with an attack, you can use your reaction to make one weapon attack against that target.</description>
+		</sheet>
+	</element>
 
 <!-- Griffon Wings -->
-    <element name="Griffon Wings" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_GRIFFON_WINGS">
-        <description>
-            <p>At 11th level, when you cast find steed, you can choose for your steed to take the form of a griffon, though it is a fey instead of a monstrosity.</p>
-        </description>
-        <sheet>
-            <description>When you cast find steed, you can choose for your steed to take the form of a griffon, though it is a fey instead of a monstrosity.</description>
-        </sheet>
-    </element>
+	<element name="Griffon Wings" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_GRIFFON_WINGS">
+		<description>
+			<p>At 11th level, when you cast find steed, you can choose for your steed to take the form of a griffon, though it is a fey instead of a monstrosity.</p>
+		</description>
+		<sheet>
+			<description>When you cast find steed, you can choose for your steed to take the form of a griffon, though it is a fey instead of a monstrosity.</description>
+		</sheet>
+	</element>
 
 <!-- Strike and Fade -->
-    <element name="Strike and Fade" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_STRIKE_AND_FADE">
-        <description>
-            <p>Starting at 15th level, when you move at least 20 feet during your turn, whether you are mounted or not, you become an evasive blur. Until the start of your next turn, a creature that attacks you has disadvantage on the first attack roll it makes against you or your mount.</p>
-        </description>
-        <sheet>
-            <description>When you move at least 20 feet during your turn, whether you are mounted or not, a creature that attacks you has disadvantage on the first attack roll it makes against you or your mount until the start of your next turn.</description>
-        </sheet>
-    </element>
-    
+	<element name="Strike and Fade" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_GRIFFON_SCOUT_ARCHETYPE_FEATURE_STRIKE_AND_FADE">
+		<description>
+			<p>Starting at 15th level, when you move at least 20 feet during your turn, whether you are mounted or not, you become an evasive blur. Until the start of your next turn, a creature that attacks you has disadvantage on the first attack roll it makes against you or your mount.</p>
+		</description>
+		<sheet>
+			<description>When you move at least 20 feet during your turn, whether you are mounted or not, a creature that attacks you has disadvantage on the first attack roll it makes against you or your mount until the start of your next turn.</description>
+		</sheet>
+	</element>
+
 </elements>

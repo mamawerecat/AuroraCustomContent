@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-    <info>
-        <name>Beer Domain</name>
-        <update version="0.0.4">
-            <file name="cleric-beer.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-beer.xml" />
-        </update>
-    </info>
-    
+	<info>
+		<name>Beer Domain</name>
+		<update version="0.0.4">
+			<file name="cleric-beer.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Deep%20Magic/archetypes/cleric-beer.xml" />
+		</update>
+	</info>
+	
 
-    <element name="Beer Domain" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_BEER_DOMAIN">
-        <supports>Divine Domain</supports>
-        <description>
-            <p>The heady brew of fortitude, courage, and companionship is your nectar, and you share its blessings with those who need it.</p>
-            <h5 class="caption">BEER DOMAIN SPELLS</h5>
+	<element name="Beer Domain" type="Archetype" source="Deep Magic" id="ID_KBP_DM5E_ARCHETYPE_BEER_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>The heady brew of fortitude, courage, and companionship is your nectar, and you share its blessings with those who need it.</p>
+			<h5 class="caption">BEER DOMAIN SPELLS</h5>
 			<table>
 				<thead>
 					<tr><td>Cleric Level</td><td>Spells</td></tr>
@@ -23,21 +23,21 @@
 				<tr><td>7th</td><td><em>confusion, Otiluke’s resilient sphere</em></td></tr>
 				<tr><td>9th</td><td><em>dream, modify memory</em></td></tr>
 			</table>
-            <div element="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_DISCIPLE_OF_THE_DRAUGHT" />
-            <div element="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_BLESSED_BREW" />
-            <div element="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_BOOT_AND_RALLY" />
-            <div element="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" />
-            <div element="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_FIRE_IN_THE_BELLY" />
-        </description>
-        <sheet display="false" />
-        <rules>
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_DISCIPLE_OF_THE_DRAUGHT" level="1" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_BLESSED_BREW" level="2" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_BOOT_AND_RALLY" level="6" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" level="8" />
-            <grant type="Archetype Feature" id="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_FIRE_IN_THE_BELLY" level="17" />
+			<div element="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_DISCIPLE_OF_THE_DRAUGHT" />
+			<div element="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_BLESSED_BREW" />
+			<div element="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_BOOT_AND_RALLY" />
+			<div element="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" />
+			<div element="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_FIRE_IN_THE_BELLY" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_DISCIPLE_OF_THE_DRAUGHT" level="1" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_BLESSED_BREW" level="2" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_BOOT_AND_RALLY" level="6" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE" level="8" />
+			<grant type="Archetype Feature" id="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_FIRE_IN_THE_BELLY" level="17" />
 
-            <grant type="Spell" id="ID_PHB_SPELL_COMPREHEND_LANGUAGES" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_COMPREHEND_LANGUAGES" level="1" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_HEROISM" level="1" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_BLUR" level="3" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_KBP_DM5E_SPELL_BOLSTERING_BREW" level="3" spellcasting="Cleric" prepared="true" />
@@ -47,80 +47,80 @@
 			<grant type="Spell" id="ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE" level="7" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_DREAM" level="9" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_MODIFY_MEMORY" level="9" spellcasting="Cleric" prepared="true" />
-        </rules>
-    </element>
+		</rules>
+	</element>
 
 <!-- DISCIPLE OF THE DRAUGHT -->
-    <element name="Disciple of the Draught" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_DISCIPLE_OF_THE_DRAUGHT">
-        <description>
-            <p>When you choose this domain at 1st level, you learn the ale-dritch blast cantrip. You also gain proficiency in either Insight or Medicine (your choice), and you gain proficiency with brewer’s supplies. Your proficiency bonus is doubled for any ability check you make that uses those supplies.</p>
-        </description>
-        <sheet>
-            <description>Your proficiency bonus is doubled for any ability check you make with your brewer's supplies.</description>
-        </sheet>
-        <rules>
-            <grant type="Spell" id="ID_KBP_DM5E_SPELL_ALDEDRITCH_BLAST" />
+	<element name="Disciple of the Draught" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_DISCIPLE_OF_THE_DRAUGHT">
+		<description>
+			<p>When you choose this domain at 1st level, you learn the ale-dritch blast cantrip. You also gain proficiency in either Insight or Medicine (your choice), and you gain proficiency with brewer’s supplies. Your proficiency bonus is doubled for any ability check you make that uses those supplies.</p>
+		</description>
+		<sheet>
+			<description>Your proficiency bonus is doubled for any ability check you make with your brewer's supplies.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_KBP_DM5E_SPELL_ALDEDRITCH_BLAST" />
 
-            <select type="Proficiency" name="Skill Proficiency (Disciple of the Draught)" supports="ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_MEDICINE" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES" />
-        </rules>
-    </element>
+			<select type="Proficiency" name="Skill Proficiency (Disciple of the Draught)" supports="ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_MEDICINE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES" />
+		</rules>
+	</element>
 
 <!-- Channel Divinity: Blessed Brew -->
-    <element name="Channel Divinity: Blessed Brew" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_BLESSED_BREW">
-        <description>
-            <p>Starting at 2nd level, you can use your Channel Divinity to transform a container of nonmagical liquid into blessed brew; the number of doses equals 3 + your Wisdom modifier. Any special properties the liquid previously had are negated. Anyone who imbibes one dose of this brew can choose one of the following benefits:</p>
-            <p class="indent">• advantage on Charisma-based checks</p>
-            <p class="indent">• a +1 bonus to Armor Class</p>
-            <p class="indent">• a +1 increase to the DC of saving throws against their castings of enchantment spells</p>
-            <p>The benefit lasts for 1 hour, leaving behind a warm buzz when it fades. A creature must finish a short or long rest before it can again benefit from a dose of blessed brew. Any blessed brew that is not consumed within an hour turns into ordinary beer.</p>
-        </description>
-        <sheet alt="Blessed Brew" usage="Channel Divinity">
-            <description>You transform a container of nonmagical liquid into blessed brew containing {{blessedbrew:dose}} doses. Any special properties the liquid previously had are negated. Anyone who imbibes one dose of this brew can choose one of the following benefits:
-            &#13;• advantage on Charisma-based checks
-            &#13;• +1 bonus to Armor Class
-            &#13;• +1 increase to the DC of saving throws against their castings of enchantment spells
-            The benefit lasts for 1 hour, leaving behind a warm buzz when it fades. A creature must finish a short or long rest before it can again benefit from a dose of blessed brew. Any blessed brew that is not consumed within an hour turns into ordinary beer.
-            </description>
-        </sheet>
-        <rules>
-            <stat name="blessedbrew:dose" value="3" />
+	<element name="Channel Divinity: Blessed Brew" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_BLESSED_BREW">
+		<description>
+			<p>Starting at 2nd level, you can use your Channel Divinity to transform a container of nonmagical liquid into blessed brew; the number of doses equals 3 + your Wisdom modifier. Any special properties the liquid previously had are negated. Anyone who imbibes one dose of this brew can choose one of the following benefits:</p>
+			<p class="indent">• advantage on Charisma-based checks</p>
+			<p class="indent">• a +1 bonus to Armor Class</p>
+			<p class="indent">• a +1 increase to the DC of saving throws against their castings of enchantment spells</p>
+			<p>The benefit lasts for 1 hour, leaving behind a warm buzz when it fades. A creature must finish a short or long rest before it can again benefit from a dose of blessed brew. Any blessed brew that is not consumed within an hour turns into ordinary beer.</p>
+		</description>
+		<sheet alt="Blessed Brew" usage="Channel Divinity">
+			<description>You transform a container of nonmagical liquid into blessed brew containing {{blessedbrew:dose}} doses. Any special properties the liquid previously had are negated. Anyone who imbibes one dose of this brew can choose one of the following benefits:
+			&#13;• advantage on Charisma-based checks
+			&#13;• +1 bonus to Armor Class
+			&#13;• +1 increase to the DC of saving throws against their castings of enchantment spells
+			The benefit lasts for 1 hour, leaving behind a warm buzz when it fades. A creature must finish a short or long rest before it can again benefit from a dose of blessed brew. Any blessed brew that is not consumed within an hour turns into ordinary beer.
+			</description>
+		</sheet>
+		<rules>
+			<stat name="blessedbrew:dose" value="3" />
 			<stat name="blessedbrew:dose" value="wisdom:modifier" />
-        </rules>
-    </element>
+		</rules>
+	</element>
 
 <!-- CHANNEL DIVINITY: BOOT AND RALLY -->
-    <element name="Channel Divinity: Boot and Rally" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_BOOT_AND_RALLY">
-        <description>
-            <p>Starting at 6th level, you can use your Channel Divinity to aid and rally your allies. All friendly creatures within 30 feet of you that are frightened, paralyzed, poisoned, or stunned gain an immediate saving throw with advantage to remove the condition. On a succesful save, a creature also regains 2d6 hit points.</p>
-        </description>
-        <sheet alt="Boot and Rally" usage="Channel Divinity">
-            <description>All friendly creatures within 30 feet of you that are frightened, paralyzed, poisoned, or stunned gain an immediate saving throw with advantage to remove the condition. On a succesful save, a creature also regains 2d6 hit points.</description>
-        </sheet>
-    </element>
+	<element name="Channel Divinity: Boot and Rally" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_CHANNELDIVINITY_BOOT_AND_RALLY">
+		<description>
+			<p>Starting at 6th level, you can use your Channel Divinity to aid and rally your allies. All friendly creatures within 30 feet of you that are frightened, paralyzed, poisoned, or stunned gain an immediate saving throw with advantage to remove the condition. On a succesful save, a creature also regains 2d6 hit points.</p>
+		</description>
+		<sheet alt="Boot and Rally" usage="Channel Divinity">
+			<description>All friendly creatures within 30 feet of you that are frightened, paralyzed, poisoned, or stunned gain an immediate saving throw with advantage to remove the condition. On a succesful save, a creature also regains 2d6 hit points.</description>
+		</sheet>
+	</element>
 
 <!-- Divine Strike -->
-    <element name="Divine Strike" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE">
-        <description>
-            <p>At 8th level, you gain the ability to infuse your weapon strikes with radiant energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 radiant damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
-        </description>
-        <sheet>
-            <description level="8">Once on each of your turns, you can cause a weapon attack to deal an extra 1d8 radiant damage to the target on a hit.</description>
-            <description level="14">Once on each of your turns, you can cause a weapon attack to deal an extra 2d8 radiant damage to the target on a hit.</description>
-        </sheet>
-    </element>
+	<element name="Divine Strike" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_DIVINE_STRIKE">
+		<description>
+			<p>At 8th level, you gain the ability to infuse your weapon strikes with radiant energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 radiant damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+		</description>
+		<sheet>
+			<description level="8">Once on each of your turns, you can cause a weapon attack to deal an extra 1d8 radiant damage to the target on a hit.</description>
+			<description level="14">Once on each of your turns, you can cause a weapon attack to deal an extra 2d8 radiant damage to the target on a hit.</description>
+		</sheet>
+	</element>
 
 <!-- FIRE IN THE BELLY -->
-    <element name="Fire in the Belly" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_FIRE_IN_THE_BELLY">
-        <description>
-            <p>At 17th level, you gain resistance to cold, poison, and psychic damage.</p>
-        </description>
-        <sheet display="false" />
-        <rules>
-            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
-            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
-            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
-        </rules>
-    </element>
-    
+	<element name="Fire in the Belly" type="Archetype Feature" source="Deep Magic" id="ID_KBP_DM5E_BEER_DOMAIN_ARCHETYPE_FEATURE_FIRE_IN_THE_BELLY">
+		<description>
+			<p>At 17th level, you gain resistance to cold, poison, and psychic damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+		</rules>
+	</element>
+	
 </elements>
