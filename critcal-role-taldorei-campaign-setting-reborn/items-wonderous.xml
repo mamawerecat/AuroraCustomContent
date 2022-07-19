@@ -3,7 +3,7 @@
 
 	<info>
 		<name>Tal'Dorei Items - Gear</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="items-wonderous.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/critcal-role-taldorei-campaign-setting-reborn/items-wonderous.xml" />
 		</update>
 	</info>
@@ -23,9 +23,6 @@
 			<set name="attunement">true</set>
 			<set name="slot">feet</set>
 		</setters>
-		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_HASTE" />
-		</rules>
 	</element>
 
 <!-- Boots of the Vigilant -->
@@ -235,7 +232,6 @@
 		</setters>
 		<rules>
 			<stat name="strength:score:set" value="24" bonus="base" />
-			<grant type="Spell" id="ID_PHB_SPELL_ENLARGE_REDUCE" />
 		</rules>
 	</element>
 
@@ -257,7 +253,6 @@
 		</setters>
 		<rules>
 			<stat name="strength:score:set" value="26" bonus="base" />
-			<grant type="Spell" id="ID_PHB_SPELL_ENLARGE_REDUCE" />
 		</rules>
 	</element>
 
@@ -292,9 +287,6 @@
 			<set name="rarity">Legendary</set>
 			<set name="attunement" addition="by a monk">true</set>
 		</setters>
-		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" />
-		</rules>
 	</element>
 
 <!-- Wraps of Dyamak (Exalted) -->
@@ -313,9 +305,6 @@
 			<set name="rarity">Legendary</set>
 			<set name="attunement" addition="by a monk">true</set>
 		</setters>
-		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" />
-		</rules>
 	</element>
 
 <!-- Flamefriend Lantern -->
@@ -340,10 +329,6 @@
 			<set name="rarity">Rare</set>
 			<set name="attunement">true</set>
 		</setters>
-		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_PRODUCE_FLAME" />
-			<grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" />
-		</rules>
 	</element>
 
 <!-- Skysail -->
@@ -535,7 +520,6 @@
 			<stat name="constitution:save:misc" value="2" />
 			<stat name="wisdom:save:misc" value="2" />
 			<stat name="charisma:save:misc" value="2" />
-			<grant type="Spell" id="ID_PHB_SPELL_BLINK" />
 		</rules>
 	</element>
 
@@ -563,8 +547,6 @@
 			<stat name="constitution:save:misc" value="3" />
 			<stat name="wisdom:save:misc" value="3" />
 			<stat name="charisma:save:misc" value="3" />
-
-			<grant type="Spell" id="ID_PHB_SPELL_BLINK" />
 		</rules>
 	</element>
 
@@ -585,9 +567,6 @@
 			<set name="rarity">Legendary</set>
 		</setters>
 		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" />
-			<grant type="Spell" id="ID_PHB_SPELL_FIREBALL" />
-
 			<stat name="spellcasting:attack" value="1" bonus="Spire of Conflux" />
 			<stat name="spellcasting:dc" value="1" bonus="Spire of Conflux" />
 		</rules>
@@ -611,11 +590,6 @@
 			<set name="rarity">Legendary</set>
 		</setters>
 		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" />
-			<grant type="Spell" id="ID_PHB_SPELL_FIREBALL" />
-			<grant type="Spell" id="ID_PHB_SPELL_CONJURE_ELEMENTAL" />
-			<grant type="Spell" id="ID_PHB_SPELL_ICE_STORM" />
-
 			<stat name="spellcasting:attack" value="1" bonus="Spire of Conflux" />
 			<stat name="spellcasting:dc" value="1" bonus="Spire of Conflux" />
 		</rules>
@@ -639,13 +613,6 @@
 			<set name="rarity">Legendary</set>
 		</setters>
 		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" />
-			<grant type="Spell" id="ID_PHB_SPELL_FIREBALL" />
-			<grant type="Spell" id="ID_PHB_SPELL_CONJURE_ELEMENTAL" />
-			<grant type="Spell" id="ID_PHB_SPELL_ICE_STORM" />
-			<grant type="Spell" id="ID_PHB_SPELL_CHAIN_LIGHTNING" />
-			<grant type="Spell" id="ID_PHB_SPELL_FIRE_STORM" />
-
 			<stat name="spellcasting:attack" value="2" bonus="Spire of Conflux" />
 			<stat name="spellcasting:dc" value="2" bonus="Spire of Conflux" />
 		</rules>

@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Rings</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="rings.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Vault%20of%20Magic/rings.xml" />
 		</update>
 	</info>
@@ -373,9 +373,6 @@
 			<set name="slot">ring</set>
 			<set name="attunement">true</set>
 		</setters>
-		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_COUNTERSPELL" />
-		</rules>
 	</element>
 
 <!-- Ring of Spell Negation (Black) -->
@@ -392,9 +389,6 @@
 			<set name="slot">ring</set>
 			<set name="attunement">true</set>
 		</setters>
-		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_COUNTERSPELL" />
-		</rules>
 	</element>
 
 <!-- Ring of Stored Vitality -->
@@ -657,7 +651,6 @@
 		</setters>
 		<rules>
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
-			<grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" />
 
 			<stat name="religion:misc" value="8" />
 			<stat name="history:misc" value="8" />

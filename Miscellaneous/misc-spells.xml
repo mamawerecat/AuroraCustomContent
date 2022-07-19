@@ -58,7 +58,7 @@
 		<description>
 			<p>You channel the earthen magic flowing through the soil beneath your feet into your enemy, transforming their skin into the light-sensitive hide of a subterranean creature. Choose a target within range that is in sunlight to make a Constitution saving throw. On a failed save, the target takes radiant damage equal to 1d10 + your Wisdom modifier and has disadvantage on attack and Wisdom (Perception) rolls that rely on sight while it is in sunlight. On a successful save, the target takes half as much damage and suffers no other effects.</p>
 			<p class="indent">Until this spell ends and while the target remains in sunlight, you may use your action to deal 1d10 radiant damage to the target automatically. Affected creatures may make an additional Constitution saving throw at the end of each of their turns. On a success, the spell ends on the target.</p>
-			<p class="indent">At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>

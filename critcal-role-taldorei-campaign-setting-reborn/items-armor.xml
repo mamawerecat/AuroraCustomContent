@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Tal'Dorei Campaign Setting Reborn Items- Armor</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="items-armor.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/critcal-role-taldorei-campaign-setting-reborn/items-armor.xml" />
 		</update>
 	</info>
@@ -25,8 +25,6 @@
 		</setters>
 		<rules>
 			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
-
-			<grant type="Spell" id="ID_PHB_SPELL_COMMAND" />
 		</rules>
 	</element>
 
@@ -49,8 +47,6 @@
 		</setters>
 		<rules>
 			<stat name="ac:armored:enhancement" value="2" bonus="enhancement" />
-
-			<grant type="Spell" id="ID_PHB_SPELL_COMMAND" />
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
 		</rules>
 	</element>
@@ -74,8 +70,6 @@
 		</setters>
 		<rules>
 			<stat name="ac:armored:enhancement" value="3" bonus="enhancement" />
-
-			<grant type="Spell" id="ID_PHB_SPELL_COMMAND" />
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_ACID" />
 		</rules>
 	</element>
