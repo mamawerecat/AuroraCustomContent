@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Armor</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="items-armor.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Vault%20of%20Magic/items-armor.xml" />
 		</update>
 	</info>
@@ -385,7 +385,6 @@
 		<rules>
 			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
 			<stat name="strength" value="2" />
-			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" />
 		</rules>
 	</element>
 
@@ -495,9 +494,6 @@
 			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT||ID_INTERNAL_ARMOR_GROUP_MEDIUM||ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
 			<set name="attunement">true</set>
 		</setters>
-		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" />
-		</rules>
 	</element>
 
 
@@ -517,7 +513,6 @@
 		</setters>
 		<rules>
 			<stat name="ac:shield" value="1" bonus="enhancement" />
-			<grant type="Spell" id="ID_PHB_SPELL_FEAR" />
 		</rules>
 	</element>
 
@@ -1042,7 +1037,6 @@
 		</setters>
 		<rules>
 			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
-			<grant type="Spell" id="ID_PHB_SPELL_DARKNESS" />
 		</rules>
 	</element>
 
@@ -1158,7 +1152,6 @@
 		</setters>
 		<rules>
 			<stat name="ac:shield" value="2" bonus="enhancement" />
-			<grant type="Spell" id="ID_PHB_SPELL_SANCTUARY" />
 		</rules>
 	</element>
 

@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name></name>
-		<update version="0.1.4">
+		<update version="0.1.5">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Vault%20of%20Magic/items-weapons.xml" />
 		</update>
 	</info>
@@ -151,9 +151,6 @@
 			<set name="weapon">Handaxe</set>
 			<set name="attunement">true</set>
 		</setters>
-		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY" />
-		</rules>
 	</element>
 
 <!-- Black and White Daggers -->
@@ -462,7 +459,6 @@
 		</setters>
 		<rules>
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
-			<grant type="Spell" id="ID_PHB_SPELL_SLOW" />
 		</rules>
 	</element>
 
@@ -1067,9 +1063,6 @@
 			<set name="attunement">true</set>
 			<set name="name-format">Leaf-Bladed {{parent}}</set>
 		</setters>
-		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_BARKSKIN" />
-		</rules>
 	</element>
 <!-- Lockbreaker -->
 	<element name="Lockbreaker" type="Magic Item" source="Vault of Magic" id="ID_KBP_VOM_MAGIC_ITEM_LOCKBREAKER">
@@ -2065,9 +2058,6 @@
 			<set name="rarity">Uncommon</set>
 			<set name="weapon">Whip</set>
 		</setters>
-		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_COMMAND" />
-		</rules>
 	</element>
 
 <!-- Umbral Chopper -->
@@ -2087,9 +2077,6 @@
 			 <set name="weapon">ID_INTERNAL_WEAPON_GROUP_AXES</set>
 			 <set name="attunement">true</set>
 		 </setters>
-		 <rules>
-			 <grant type="Spell" id="ID_PHB_SPELL_DARKNESS" />
-		 </rules>
 	 </element>
 
 <!-- Unquiet Dagger -->

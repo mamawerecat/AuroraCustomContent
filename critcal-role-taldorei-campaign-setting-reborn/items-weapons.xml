@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Tal'Dorei Campaign Setting Reborn Items- Weapons</name>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/critcal-role-taldorei-campaign-setting-reborn/items-weapons.xml" />
 		</update>
 	</info>
@@ -123,9 +123,6 @@
 			<set name="rarity">Rare</set>
 			<set name="weapon">Greatsword</set>
 		</setters>
-		<rules>
-			<grant type="Spell" name="Magician's Judge" id="ID_PHB_SPELL_DISPEL_MAGIC" />
-		</rules>
 	</element>
 
 <!-- Summer’s Dance -->
@@ -144,9 +141,6 @@
 			<set name="weapon">Scimitar</set>
 			<set name="enhancement">1</set>
 		</setters>
-		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" />
-		</rules>
 	</element>
 
 <!-- Tinkertop Boltblaster 1000 -->
@@ -186,9 +180,6 @@
 			<set name="weapon">ID_INTERNAL_WEAPON_PROPERTY_THROWN||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED||ID_INTERNAL_WEAPON_PROPERTY_RANGED</set>
 			<set name="name-format">Oceanic {{parent}}</set>
 		</setters>
-		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_WATER_BREATHING" />
-		</rules>
 	</element>
 
 <!-- Agony (Dormant) -->
@@ -271,10 +262,6 @@
 			<set name="enhancement">1</set>
 			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_HEAVY_CROSSBOWS</set>
 		</setters>
-		<rules>
-			<grant type="Spell" name="Condemner" id="ID_PHB_SPELL_SILENCE" />
-			<grant type="Spell" name="Condemner" id="ID_PHB_SPELL_FOG_CLOUD" />
-		</rules>
 	</element>
 
 <!-- Condemner (Awakened) -->
@@ -296,11 +283,6 @@
 			<set name="enhancement">2</set>
 			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_HEAVY_CROSSBOWS</set>
 		</setters>
-		<rules>
-			<grant type="Spell" name="Condemner" id="ID_PHB_SPELL_SILENCE" />
-			<grant type="Spell" name="Condemner" id="ID_PHB_SPELL_HOLD_PERSON" />
-			<grant type="Spell" name="Condemner" id="ID_PHB_SPELL_FOG_CLOUD" />
-		</rules>
 	</element>
 
 <!-- Condemner (Exalted) -->
@@ -322,12 +304,6 @@
 			<set name="enhancement">3</set>
 			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_HEAVY_CROSSBOWS</set>
 		</setters>
-		<rules>
-			<grant type="Spell" name="Condemner" id="ID_PHB_SPELL_SILENCE" />
-			<grant type="Spell" name="Condemner" id="ID_PHB_SPELL_HOLD_PERSON" />
-			<grant type="Spell" name="Condemner" id="ID_PHB_SPELL_FOG_CLOUD" />
-			<grant type="Spell" name="Condemner" id="ID_PHB_SPELL_BLIGHT" />
-		</rules>
 	</element>
 
 <!-- Fenthras (Dormant) -->
@@ -468,9 +444,6 @@
 			<set name="rarity">Legendary</set>
 			<set name="weapon">Longsword</set>
 		</setters>
-		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" />
-		</rules>
 	</element>
 
 <!-- Star Razor (Awakened) -->
@@ -491,10 +464,6 @@
 			<set name="rarity">Legendary</set>
 			<set name="weapon">Longsword</set>
 		</setters>
-		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" />
-			<grant type="Spell" id="ID_PHB_SPELL_SEE_INVISIBILITY" />
-		</rules>
 	</element>
 
 <!-- Star Razor (Exalted) -->
@@ -515,11 +484,6 @@
 			<set name="rarity">Legendary</set>
 			<set name="weapon">Longsword</set>
 		</setters>
-		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" />
-			<grant type="Spell" id="ID_PHB_SPELL_SEE_INVISIBILITY" />
-			<grant type="Spell" id="ID_PHB_SPELL_FLY" />
-		</rules>
 	</element>
 
 <!-- Mythcarver (Dormant) -->
@@ -625,9 +589,6 @@
 			<set name="enhancement">2</set>
 			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_MAULS</set>
 		</setters>
-		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" />
-		</rules>
 	</element>
 
 <!-- Pyremaul (Exalted) -->
@@ -650,9 +611,6 @@
 			<set name="enhancement">3</set>
 			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_MAULS</set>
 		</setters>
-		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" />
-		</rules>
 	</element>
 
 </elements>
