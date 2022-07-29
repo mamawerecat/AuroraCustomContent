@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Languages</name>
-		<description>Red Masque Campaign Languages</description>
+		<description>Bohemian Trash Collective Languages</description>
 		<author>Bohemian Trash Collective</author>
 		<update version="0.0.1">
 				 <file name="languages-homebrew.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Red%20Masque%20Campaign/languages-homebrew.xml" />

@@ -4,14 +4,14 @@
 		<name>Valkori</name>
 		<description>Valkori Race</description>
 		<author>Bohemian Trash Collective</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-valkori.index" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Red%20Masque%20Campaign/race-valkori.xml" />
 		</update>
 	</info>
 
-	<element name="Valkori" type="Race" source="Red Masque Campaign" id="ID_BTC_RMC_RACE_VALKORI">
+	<element name="Valkori" type="Race" source="Bohemian Trash Collective" id="ID_BTC_RMC_RACE_VALKORI">
 		<description>
-					 <p class="indent"><strong><em>Age.</em></strong> Valkori live for about 3- 4 centuries</p>
+			<p class="indent"><strong><em>Age.</em></strong> Valkori live for about 3- 4 centuries</p>
 			<p class="indent"><strong><em>Alignment.</em></strong> Death comes for all, regardless of ideal or ability. It is only how you die that truly matters. Most Valkori are neutral, but eager for battle.</p>
 			<p class="indent"><strong><em>Size.</em></strong> You are size Medium.</p>
 			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
@@ -26,18 +26,14 @@
 		<sheet display="false" />
 		<rules>
 			<stat name="innate speed" value="30" bonus="base" />
-
 			<grant type="Vision" id="ID_VISION_DARKVISION" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
-
 			<grant type="Language" id="ID_LANGUAGE_COMMON" />
 			<grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
-
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATAXE" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BATTLEAXE" />
-
 			<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_CHILD_OF_LIGHT_AND_DARKNESS" />
 			<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_WINGED_HARBINGERS" />
 			<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_TONGUES_OF_THE_WINGED" />
@@ -46,7 +42,7 @@
 		</rules>
 	</element>
 
-	<element name="Child of Light and Darkness" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_CHILD_OF_LIGHT_AND_DARKNESS">
+	<element name="Child of Light and Darkness" type="Racial Trait" source="Bohemian Trash Collective" id="ID_BTC_RMC_RACIAL_TRAIT_CHILD_OF_LIGHT_AND_DARKNESS">
 		<description>
 			<p>You have resistance to radiant and necrotic damage.</p>
 		</description>
@@ -59,7 +55,7 @@
 		</rules>
 	</element>
 
-	<element name="Winged Harbingers" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_WINGED_HARBINGERS">
+	<element name="Winged Harbingers" type="Racial Trait" source="Bohemian Trash Collective" id="ID_BTC_RMC_RACIAL_TRAIT_WINGED_HARBINGERS">
 		<description>
 			<p>You have a large pair of wings, and you have a flying speed of 30 feet, as long as you are wearing light armor or no armor at all.</p>
 		</description>
@@ -71,7 +67,7 @@
 		</rules>
 	</element>
 
-	<element name="Tongues of the Winged" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_TONGUES_OF_THE_WINGED">
+	<element name="Tongues of the Winged" type="Racial Trait" source="Bohemian Trash Collective" id="ID_BTC_RMC_RACIAL_TRAIT_TONGUES_OF_THE_WINGED">
 		<description>
 			<p>You can understand the chirps and whistles and cawing of those who make their lives in the air.</p>
 		</description>
@@ -80,7 +76,7 @@
 		</sheet>
 	</element>
 
-	<element name="Talons and Wings" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_TALONS_AND_WINGS">
+	<element name="Talons and Wings" type="Racial Trait" source="Bohemian Trash Collective" id="ID_BTC_RMC_RACIAL_TRAIT_TALONS_AND_WINGS">
 		<description>
 			<p>You have talons and wings that can count as natural weapons, and they can be used to inflict 1d4 + {{strength:modifier}} of slashing damage and bludgeoning damage.</p>
 		</description>
@@ -101,31 +97,26 @@
 		</rules>
 	</element>
 
-	
 <!-- Crow wings-->
 
-
-	<element name="Crow wing" type="Sub Race" source="Red Masque Campaign" id="ID_BTC_RMC_SUB_RACE_CROW_WING">
+	<element name="Crow wing" type="Sub Race" source="Bohemian Trash Collective" id="ID_BTC_RMC_SUB_RACE_CROW_WING">
 		<supports>Valkori</supports>
-			<description>
-				<p><em> Despite their dark appearances, the crowwing valkori are actually the more levelheaded of the flocks, and are focused more on the spiritual side of life and death.</em></p>
-					<p class="indent"><strong><em>Ability Score Increase:</em></strong> Your Wisdom score increases by 2 and Intelligence by 1.</p>
-					<p class="indent"><strong><em>Blessings of the Afterlife.</em></strong> You know two cantrips from the cleric list, and have advantage on rolls and attacks against the undead.</p>
-					<p class="indent"><strong><em>Child of Life and Death.</em></strong> You have proficiency in Medicine and religion. In addition, once per combat encounter, you have the ability to imbibe your weapons with a burst of godly might. You can inflict an extra 1d6 of radiant or Necrotic. This increases to 2d6 at 8th level, and 3d6 at 16th.</p>
-			</description>
-
-			<sheet display="false" />
-
-			<rules>
-				<stat name="wisdom" value="2" />
-				<stat name="intelligence" value="1" />
-
-				<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_BLESSINGS_OF_THE_AFTERLIFE" />
-				<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_CHILD_OF_LIFE_AND_DEATH" />  
-			</rules>
+		<description>
+			<p><em> Despite their dark appearances, the crowwing valkori are actually the more levelheaded of the flocks, and are focused more on the spiritual side of life and death.</em></p>
+			<p class="indent"><strong><em>Ability Score Increase:</em></strong> Your Wisdom score increases by 2 and Intelligence by 1.</p>
+			<p class="indent"><strong><em>Blessings of the Afterlife.</em></strong> You know two cantrips from the cleric list, and have advantage on rolls and attacks against the undead.</p>
+			<p class="indent"><strong><em>Child of Life and Death.</em></strong> You have proficiency in Medicine and religion. In addition, once per combat encounter, you have the ability to imbibe your weapons with a burst of godly might. You can inflict an extra 1d6 of radiant or Necrotic. This increases to 2d6 at 8th level, and 3d6 at 16th.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="2" />
+			<stat name="intelligence" value="1" />
+			<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_BLESSINGS_OF_THE_AFTERLIFE" />
+			<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_CHILD_OF_LIFE_AND_DEATH" />
+		</rules>
 	</element>
 
-	<element name="Blessings of the Afterlife" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_BLESSINGS_OF_THE_AFTERLIFE">
+	<element name="Blessings of the Afterlife" type="Racial Trait" source="Bohemian Trash Collective" id="ID_BTC_RMC_RACIAL_TRAIT_BLESSINGS_OF_THE_AFTERLIFE">
 		<description>
 			<p>You know two cantrips from the cleric list, and have advantage on rolls and attacks against the undead.</p>
 		</description>
@@ -137,7 +128,7 @@
 		</rules>
 	</element>
 
-	<element name="Child of Life and Death" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_CHILD_OF_LIFE_AND_DEATH">
+	<element name="Child of Life and Death" type="Racial Trait" source="Bohemian Trash Collective" id="ID_BTC_RMC_RACIAL_TRAIT_CHILD_OF_LIFE_AND_DEATH">
 		<description>
 			<p>You have proficiency in Medicine and religion. In addition, once per combat encounter, you have the ability to imbibe your weapons with a burst of godly might. You can inflict an extra 1d6 of radiant or Necrotic. This increases to 2d6 at 8th level, and 3d6 at 16th.</p>
 		</description>
@@ -153,13 +144,13 @@
 
 <!--Hawk Wings-->
 
-	<element name="Hawk Wing" type="Sub Race" source="Red Masque Campaign" id="ID_BTC_RMC_SUB_RACE_HAWK_WING">
+	<element name="Hawk Wing" type="Sub Race" source="Bohemian Trash Collective" id="ID_BTC_RMC_SUB_RACE_HAWK_WING">
 		<supports>Valkori</supports>
 		<description>
 			<p><em> Among the flocks, many famed heroes, raid leaders, thegns, and sovereigns have borne the grey wings of this flock.</em></p>
-				<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases 2 and your Strength increases by 1.</p>
-				<p class="indent"><strong><em>Lead the Way.</em></strong> You are proficient in Intimidation and Persuasion.</p>
-				<p class="indent"><strong><em>Rousing Leader.</em></strong> You know the spell Heroism, and, once per long rest, you can imbibe your allies with your grand presence. Your allies are able to choose to either add a d4 to one roll or reroll a roll of their choosing.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases 2 and your Strength increases by 1.</p>
+			<p class="indent"><strong><em>Lead the Way.</em></strong> You are proficient in Intimidation and Persuasion.</p>
+			<p class="indent"><strong><em>Rousing Leader.</em></strong> You know the spell Heroism, and, once per long rest, you can imbibe your allies with your grand presence. Your allies are able to choose to either add a d4 to one roll or reroll a roll of their choosing.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -170,7 +161,7 @@
 		</rules>
 	</element>
 
-	<element name="Lead the Way" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_LEAD_THE_WAY">
+	<element name="Lead the Way" type="Racial Trait" source="Bohemian Trash Collective" id="ID_BTC_RMC_RACIAL_TRAIT_LEAD_THE_WAY">
 		<description>
 			<p>You are proficient in Intimidation and Persuasion.</p>
 		</description>
@@ -178,12 +169,12 @@
 			<description>You are proficient in Intimidation and Persuasion.</description>
 		</sheet>
 		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" /> 
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
 		</rules>
 	</element>
 
-	<element name="Rousing Leader" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_ROUSING_LEADER">
+	<element name="Rousing Leader" type="Racial Trait" source="Bohemian Trash Collective" id="ID_BTC_RMC_RACIAL_TRAIT_ROUSING_LEADER">
 		<description>
 			<p>You know the spell Heroism, and, once per long rest, you can imbibe your allies with your grand presence. Your allies are able to choose to either add a d4 to one roll or reroll a roll of their choosing.</p>
 		</description>
@@ -197,13 +188,13 @@
 
 
 <!--Raven Wing-->
-	<element name="Raven wing" type="Sub Race" source="Red Masque Campaign" id="ID_BTC_RMC_SUB_RACE_RAVEN_WING">
+	<element name="Raven wing" type="Sub Race" source="Bohemian Trash Collective" id="ID_BTC_RMC_SUB_RACE_RAVEN_WING">
 		<supports>Valkori</supports>
 		<description>
 			<p><em>The spellcaster flock, the ravenwings are august and knowledgeable, and are rumored to know many secrets of the arcane. </em></p>
-				<p class="indent"><strong><em>Ability Score Increase. </em></strong> Your Intelligence increases by 2 and your Wisdom by 1.</p>
-				<p class="indent"><strong><em>Arcane Gifts.</em></strong> You know three wizard cantrips.</p>
-				<p class="indent"><strong><em>Knowledge of the Magi.</em></strong> You are proficient in arcana and insight. In addition, you can detect ambient magic with a successful dc 12 insight check, and the ability to cancel one spell directed at you on an arcana dc 12 check once per long rest.</p>
+			<p class="indent"><strong><em>Ability Score Increase. </em></strong> Your Intelligence increases by 2 and your Wisdom by 1.</p>
+			<p class="indent"><strong><em>Arcane Gifts.</em></strong> You know three wizard cantrips.</p>
+			<p class="indent"><strong><em>Knowledge of the Magi.</em></strong> You are proficient in arcana and insight. In addition, you can detect ambient magic with a successful dc 12 insight check, and the ability to cancel one spell directed at you on an arcana dc 12 check once per long rest.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -214,7 +205,7 @@
 		</rules>
 	</element>
 
-	<element name="Arcane Gifts" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_ARCANE_GIFTS">
+	<element name="Arcane Gifts" type="Racial Trait" source="Bohemian Trash Collective" id="ID_BTC_RMC_RACIAL_TRAIT_ARCANE_GIFTS">
 		<description>
 			<p>You know three wizard cantrips.</p>
 		</description>
@@ -226,7 +217,7 @@
 		</rules>
 	</element>
 
-	<element name="Knowledge of the Magi" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_KNOWLEDGE_OF_THE_MAGI">
+	<element name="Knowledge of the Magi" type="Racial Trait" source="Bohemian Trash Collective" id="ID_BTC_RMC_RACIAL_TRAIT_KNOWLEDGE_OF_THE_MAGI">
 		<description>
 			<p>You are proficient in arcana and insight. In addition, you can detect ambient magic with a successful dc 12 insight check, and the ability to cancel one spell directed at you on an arcana dc 12 check once per long rest.</p>
 		</description>
@@ -241,27 +232,24 @@
 
 
 <!--Sparrow Wing-->
-
-
-	<element name="Sparrow wing" type="Sub Race" source="Red Masque Campaign" id="ID_BTC_RMC_SUB_RACE_SPARROW_WING">
+	<element name="Sparrow wing" type="Sub Race" source="Bohemian Trash Collective" id="ID_BTC_RMC_SUB_RACE_SPARROW_WING">
 		<supports>Valkori</supports>
 		<description>
 			<p><em>Smaller, slighter, and remarkably more unassuming than other valkori, the sparrowwings are a flock often employed as spies and scouts and singers, often with the ability to mimic sounds and voices.</em></p>
-				<p class="indent"><strong><em>Ability Score Increase:</em></strong> Your Dexterity score increases by 2 and your Charisma score increases by 1.</p>
-				<p class="indent"><strong><em>Small Stature.</em></strong> You have advantage on stealth checks.</p>
-				<p class="indent"><strong><em>Songbird’s Mimicry.</em></strong> You know two cantrips and one spell from the bard’s spell list. In addition, you are proficient in performance and deception, and can perfectly mimic songs, sounds, and voices.</p>
+			<p class="indent"><strong><em>Ability Score Increase:</em></strong> Your Dexterity score increases by 2 and your Charisma score increases by 1.</p>
+			<p class="indent"><strong><em>Small Stature.</em></strong> You have advantage on stealth checks.</p>
+			<p class="indent"><strong><em>Songbird’s Mimicry.</em></strong> You know two cantrips and one spell from the bard’s spell list. In addition, you are proficient in performance and deception, and can perfectly mimic songs, sounds, and voices.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
 			<stat name="dexterity" value="2" />
 			<stat name="charisma" value="1" />
-			
 			<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_SMALL_STATURE" />
 			<grant type="Racial Trait" id="ID_BTC_RMC_RACIAL_TRAIT_SONGBIRDS_MIMICRY" />
 		</rules>
 	</element>
 
-	<element name="Small Stature" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_SMALL_STATURE">
+	<element name="Small Stature" type="Racial Trait" source="Bohemian Trash Collective" id="ID_BTC_RMC_RACIAL_TRAIT_SMALL_STATURE">
 		<description>
 			<p>You have advantage on stealth checks.</p>
 		</description>
@@ -269,8 +257,8 @@
 			<description>You have advantage on stealth checks.</description>
 		</sheet>
 	</element>
-	
-	<element name="Songbird’s Mimicry" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_SONGBIRDS_MIMICRY">
+
+	<element name="Songbird’s Mimicry" type="Racial Trait" source="Bohemian Trash Collective" id="ID_BTC_RMC_RACIAL_TRAIT_SONGBIRDS_MIMICRY">
 		<description>
 			<p>You know two cantrips and one spell from the bard’s spell list. In addition, you are proficient in performance and deception, and can perfectly mimic songs, sounds, and voices.</p>
 		</description>
@@ -279,17 +267,14 @@
 		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />   
-
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
 			<select type="Spell" name="Cantrip (Sparrow Wing)" supports="0,(Bard)" number="2" />
 			<select type="Spell" name="Songbird's Mimicry (Sparrow Wing)" supports="1,(Bard)" level="3" />
 		</rules>
 	</element>
 
-
 <!--Swan Wing-->
-
-	<element name="Swan wing" type="Sub Race" source="Red Masque Campaign" id="ID_BTC_RMC_SUB_RACE_SWAN_WING">
+	<element name="Swan wing" type="Sub Race" source="Bohemian Trash Collective" id="ID_BTC_RMC_SUB_RACE_SWAN_WING">
 		<supports>Valkori</supports>
 		<description>
 			<p><em> Noticeable for their exceptionally beautiful forms and brilliant white wings, the swan wings are nevertheless one of the more bloodthirsty, viscous and vigorous of the Valkori flocks,and ever eager to fight and die for the glory of the hero gods, and can be found on the front lines, are noted to be excited by combat and bloodshed, even after the fighting has ended. </em></p>
@@ -306,7 +291,7 @@
 		</rules>
 	</element>
 
-	<element name="Blood Frenzy" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_BLOOD_FRENZY ">
+	<element name="Blood Frenzy" type="Racial Trait" source="Bohemian Trash Collective" id="ID_BTC_RMC_RACIAL_TRAIT_BLOOD_FRENZY ">
 		<description>
 			<p>You can go into a battle lust. You are able to rage once per long rest. If you are a barbarian, this is added to your available rages.</p>
 			<p>In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action. While raging, you gain the following benefits if you aren’t wearing heavy armor:</p>
@@ -328,7 +313,7 @@
 		</rules>
 	</element>
 
-	<element name="Blood Soaked Presence" type="Racial Trait" source="Red Masque Campaign" id="ID_BTC_RMC_RACIAL_TRAIT_BLOOD_SOAKED_PRESENCE">
+	<element name="Blood Soaked Presence" type="Racial Trait" source="Bohemian Trash Collective" id="ID_BTC_RMC_RACIAL_TRAIT_BLOOD_SOAKED_PRESENCE">
 		<description>
 			<p>You have proficiency and advantage in intimidation, and once per long rest you can use your presence to force a foe into uncontrollable bloodlust. Pick one creature nearest you. They must succeed on a dc 15 wisdom saving throw. If they fail, they are consumed by fear and bloodlust, and attack their own allies, and the creature nearest them. This continues until they succeed the saving throw.</p>
 		</description>
