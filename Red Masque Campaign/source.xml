@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Red%20Masque%20Campaign/source.xml" />
+		</update>
+	</info>
+	<element name="Bohemian Trash Collective" type="Source" source="Core" id="ID_BOHEMIAN_TRASH_COLLECTIVE">
+		<description>
+			<p>Bohemian Trash Collective are the minds behind a short lived podcast, Strangest Strangers.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">BTC</set>
+			<set name="url">https://anchor.fm/bohemian-trash-collective</set>
+			<set name="image">https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Red%20Masque%20Campaign/btc-logo.png</set>
+			<set name="author" abbreviation="BTC" url="https://twitter.com/StrangestPod">Strangest Strangers</set>
+			<set name="third-party">true</set>
+			<set name="release">20201201</set>
+		</setters>
+	</element>
+</elements>

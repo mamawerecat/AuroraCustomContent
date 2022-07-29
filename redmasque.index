@@ -4,13 +4,14 @@
 		<name>Red Masque</name>
 		<description>Red Masque Campaign homebrew content</description>
 		<author>Bohemian Trash Collective</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="redmasque.index" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/redmasque.index" />
 		</update>
 	</info>
 	<files>
+		<file name="source.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Red%20Masque%20Campaign/source.xml" />
 		
-    		<file name="items-homebrew-weapons.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Red%20Masque%20Campaign/items-homebrew-weapons.xml" />
+    	<file name="items-homebrew-weapons.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Red%20Masque%20Campaign/items-homebrew-weapons.xml" />
 		<file name="items-homebrew.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Red%20Masque%20Campaign/items-homebrew.xml" />
 		<file name="languages-homebrew.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Red%20Masque%20Campaign/languages-homebrew.xml" />
 		<file name="race-bloodblessed.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Red%20Masque%20Campaign/race-bloodblessed.xml" />
