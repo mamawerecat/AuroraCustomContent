@@ -4,17 +4,15 @@
 
 	<info>
 		<name>Items</name>
-		<description>Red Masque Campaign Homebrew</description>
+		<description>Bohemian Trash Collective Homebrew</description>
 		<author>Bohemian Trash Collective</author>
-		<update version="0.0.4">
-				 <file name="items-homebrew.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Red%20Masque%20Campaign/items-homebrew.xml" />
+		<update version="0.0.5">
+			<file name="items-homebrew.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Red%20Masque%20Campaign/items-homebrew.xml" />
 		</update>
 	</info>
-	
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Ghoulhide CLOAK~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-
-    <element name="Ghoulhide Cloak" type="Magic Item" source="Red Masque Campaign" id="ID_BTC_RMC_MAGIC_ITEM_GHOULHIDE_CLOAK">
+<!-- Ghoulhide CLOAK -->
+    <element name="Ghoulhide Cloak" type="Magic Item" source="Bohemian Trash Collective" id="ID_BTC_RMC_MAGIC_ITEM_GHOULHIDE_CLOAK">
 		<description>
 			<p>When wearing this strange cloak of dark-and-pale leather, you are resistant to necrotic damage. In addition, you have advantage on deception and stealth checks against the undead.</p>
 		</description>
@@ -34,10 +32,8 @@
 	</element>
 
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Ghoulhide armor~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-
-    <element name="Ghoulhide Armor" type="Magic Item" source="Red Masque Campaign" id="ID_BTC_RMC_MAGIC_ITEM_GHOULHIDE_ARMOR">
+<!-- Ghoulhide armor -->
+    <element name="Ghoulhide Armor" type="Magic Item" source="Bohemian Trash Collective" id="ID_BTC_RMC_MAGIC_ITEM_GHOULHIDE_ARMOR">
 		<description>
 			<p>When wearing this strange suit of dark-and-pale leather, you are resistant to necrotic damage. In addition, you have +1 to AC, and you have advantage on deception and stealth checks against the undead.</p>
 		</description>
@@ -59,13 +55,11 @@
 	</element>
 
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Medic's Bulwark~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-
-	<element name="Medic's Bulwark" type="Magic Item" source="Red Masque Campaign" id="ID_BTC_RMC_MAGIC_ITEM_MEDICS_BULWARK">
+<!-- Medic's Bulwark -->
+	<element name="Medic's Bulwark" type="Magic Item" source="Bohemian Trash Collective" id="ID_BTC_RMC_MAGIC_ITEM_MEDICS_BULWARK">
 		<description>
 			<p><em>The interior of this large shield is lined with pouches and leather sheathes. This shield adds +1 to ac in addition to what a shield normally grants.</em></p>
-			<p class="indent"> It can hold up to 4 potions and 4 scrolls and a medic's kit (though this can be substituted for another kit).</p> 
+			<p class="indent"> It can hold up to 4 potions and 4 scrolls and a medic's kit (though this can be substituted for another kit).</p>
 			<p class="indent">In addition, when a healing spell is cast by the user, they may add their proficiency bonus to the spell. This can be done three times, and recharges within 24 hours.</p>
 		</description>
 		<setters>
@@ -83,10 +77,8 @@
 	</element>
 
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Plate of the Four~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-
-	<element name="Plate of the Four" type="Magic Item" source="Red Masque Campaign" id="ID_RMC_BTC_MAGIC_ITEM_PLATE_OF_THE_FOUR">
+<!-- Plate of the Four -->
+	<element name="Plate of the Four" type="Magic Item" source="Bohemian Trash Collective" id="ID_RMC_BTC_MAGIC_ITEM_PLATE_OF_THE_FOUR">
 		<description>
 			<p>This suit of plate armor is decorated with symbols of Death and Undeath. You gain a +1 to AC.</p>
 			<p class="indent">When wearing this armor, ritual casting time is cut in half.</p>
@@ -115,10 +107,8 @@
 	</element>
 
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Forcefire Bead~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-
-	<element name="Forcefire Bead" type="Magic Item" source="Red Masque Campaign" id="ID_BTC_RMC_MAGIC_ITEM_FORCEFIRE_BEAD">
+<!-- Forcefire Bead -->
+	<element name="Forcefire Bead" type="Magic Item" source="Bohemian Trash Collective" id="ID_BTC_RMC_MAGIC_ITEM_FORCEFIRE_BEAD">
 		<description>
 			<p><em>This small bead seems to glow slightly with a red hue, and is warm to touch. These were developed by an alchemist artificer from clan Sycorax. They are sometimes best used as grapeshot for cannons. A favored tactic for the dragon riders of Clan Solomonar and the Xang Imperium is to drop barrels of the things on enemy battalions and caravans and fortresses. </em></p>
 			<p class="indent"> You can use an action to throw the bead up to 60 feet. The bead explodes on impact and is destroyed. Each creature within a 10-foot radius of where the bead landed must succeed on a <em>DC 15 Dexterity saving throw</em>. Those that fail the role take <em><strong>4d4 force damage and 1d4 fire damage</strong></em> and then roll a 1d4 to see if they are stunned, rendered prone, become deafened, or are knocked unconscious.</p>
@@ -141,10 +131,8 @@
 	</element>
 
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Nyx's Salt Shaker~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-
-	<element name="Nyx's Salt Shaker" type="Magic Item" source="Red Masque Campaign" id="ID_RMC_BTC_MAGIC_ITEM_NYXS_SALT_SHAKER">
+<!-- Nyx's Salt Shaker -->
+	<element name="Nyx's Salt Shaker" type="Magic Item" source="Bohemian Trash Collective" id="ID_RMC_BTC_MAGIC_ITEM_NYXS_SALT_SHAKER">
 		<description>
 			<p><em><strong>This might look like a simple salt shaker, but the contents have been bewitched to turn a bright shade of pink if sprinkled over food or drink that contains poison. Also makes food delicious!</strong></em></p>
 		</description>
@@ -157,11 +145,8 @@
 		</setters>
 	</element>
 
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Riegel’s Pocket of Perpetual Bacon~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-
-	<element name="Riegel’s Pocket of Perpetual Bacon" type="Magic Item" source="Red Masque Campaign" id="ID_RMC_BTC_MAGIC_ITEM_RIEGELS_POCKET_OF_PERPETUAL_BACON">
+<!-- Riegel’s Pocket of Perpetual Bacon -->
+	<element name="Riegel’s Pocket of Perpetual Bacon" type="Magic Item" source="Bohemian Trash Collective" id="ID_RMC_BTC_MAGIC_ITEM_RIEGELS_POCKET_OF_PERPETUAL_BACON">
 		<description>
 			<p><em><strong>Creates 1d10 strips of bacon per day at dawn. Bacon does not stack, and uneaten bacon disappears at dawn the following day. Bacon is cooked exactly how you like it (chewy, crispy, burnt, or somewhere in between) and comes out at the perfect temperature. named for Sam Riegel (AKA Nott the Brave/Veth Bernato) on Critical role, the first to stuff bacon in a pocket </strong></em> </p>
 		</description>
@@ -174,11 +159,8 @@
 		</setters>
 	</element>
 
-
 <!-- Infiniflask -->
-
-
-	<element name="Solina's Potion of Processing" type="Magic Item" source="Red Masque Campaign" id="ID_RMC_BTC_MAGIC_ITEM_SOLINA_POTION_OF_PROCESSING">
+	<element name="Solina's Potion of Processing" type="Magic Item" source="Bohemian Trash Collective" id="ID_RMC_BTC_MAGIC_ITEM_SOLINA_POTION_OF_PROCESSING">
 		<description>
 			<p>Solina's Potion of Processing is a flask magically engraved with a tiefling drinking and falling down repeatedly. This flask is always full with the owner's alcohol and cannot be used to store anything other than alcohol. You can change the type of liquor stored after 1 hour of concentration.</p>
 		</description>
@@ -191,5 +173,19 @@
 		</setters>
 	</element>
 
-</elements>
+<!-- De-alco-lizer -->
+	<element name="De-alco-lizer" type="Magic Item" source="Bohemian Trash Collective" id="ID_RMC_BTC_MAGIC_ITEM_DEALCOLIZER">
+		<description>
+			<p>A ring that when worn on a finger can be tapped on the side of a glass of an alcoholic beverage and neutralize the alcohol without affecting the taste.</p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="weight">0 lb.</set>
+			<set name="type">Ring</set>
+			<set name="rarity">Uncommon</set>
+			<set name="slot">ring</set>
+			<set name="attunement">false</set>
+		</setters>
+	</element>
 
+</elements>

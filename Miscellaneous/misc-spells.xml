@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Misc. Spells</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="misc-spells.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Miscellaneous/misc-spells.xml" />
 		</update>
 	</info>
@@ -79,7 +79,7 @@
 	<element name="Fungal Barricade" type="Spell" source="Grove Magic: New Druid-Specific Spells" id="ID_GM_DSS_SPELL_FUNGAL_BARRICADE">
 		<supports>Druid</supports>
 		<description>
-			<p>You point to an area in a 20-foot radius within range and a carpet of poisonous mushrooms erupts to the surface. Any creature that starts or ends its turn in the area must make a Constitution saving throw. On a failed save, the creature takes 3d6 poison damage and is poisoned. On a successful save they take half as much damage and are not poisoned.</p>
+			<p>You point to an area in a 20-foot radius within range and a carpet of poisonous mushrooms erupts to the surface. If a creature starts its turn or moves into the area for the first time on its turn it must make a Constitution saving throw. On a failed save, the creature takes 3d6 poison damage and is poisoned. On a successful save they take half as much damage and are not poisoned.</p>
 			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.</p>
 		</description>
 		<setters>
