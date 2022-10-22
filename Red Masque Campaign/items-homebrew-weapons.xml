@@ -111,4 +111,23 @@
     </setters>
 </element>
 
+<!-- Javelin of Fire -->
+
+<element name="Javelin of Fire" type="Magic Item" source="Red Masque Campaign" id="ID_BTC_RMC_MAGIC_ITEM_JAVELIN_OF_FIRE">
+    <description>
+        <p>This javelin is a magic weapon. When you hurl it and speak its command word, it transforms into a ball of fire, forming a line 5 feet wide that extends out from you to a target within 120 feet. Each creature in the line excluding you and the target must make a DC 13 Dexterity saving throw, taking 4d6 fire damage on a failed save, and half as much damage on a successful one. The  ball of fire turns back into a javelin when it reaches the target. Make a ranged weapon attack against the target. On a hit, the target takes damage from the javelin plus 4d6 fire damage.</p>
+		<p class="indent">The javelin's property can't be used again until the next dawn. In the meantime, the javelin can still be used as a magic weapon.</p>
+		<p class="indent">Proficiency with a javelin allows you to add your proficiency bonus to the attack roll for any attack you make with it.</p>
+    </description>
+    <setters>
+        <set name="keywords">fire</set>
+        <set name="category">Magic Weapons</set>
+        <set name="cost" currency="gp">0</set>
+        <set name="type" addition="dagger">Weapon</set>
+        <set name="attunement">true</set>
+        <set name="rarity">Uncommon</set>
+        <set name="weapon">Javelin</set>
+    </setters>
+</element>
+
 </elements>
