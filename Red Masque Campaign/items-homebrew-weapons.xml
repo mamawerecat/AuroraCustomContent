@@ -4,7 +4,7 @@
 		<name>Weapons</name>
 		<description>Bohemian Trash Collective Homebrew Weapons</description>
 		<author>Bohemian Trash Collective</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 				 <file name="items-homebrew-weapons.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Red%20Masque%20Campaign/items-homebrew-weapons.xml" />
 		</update>
 	</info>
