@@ -90,6 +90,28 @@
 			<set name="weapon">Greatsword</set>
 		</setters>
 	</element>
+	
+<!-- Craven Edge -->
+	<element name="Craven Edge" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_CRAVEN_EDGE">
+		<description>
+			<p>Craven Edge is a large, onyx, two-handed greatsword.</p>
+			<p class="indent"> You gain a +3 bonus to attack and damage rolls made with this magic weapon, which has the following properties.</p>
+			<p class="indent"><i><b>Dark Aura.</b></i> Grants the wielder advantage on Charisma (Intimidation) checks when unsheathed.</p>
+			<p class="indent"><i><b>Devour the Weak.</b></i> Whenever Craven Edge damages a living creature, that creature must roll a Constitution saving throw (DC 16). On a failed save, Craven Edge drains one point from the creature's Charisma score and transfers it to the wielder (increasing to a maximum of 25 Charisma) until the next short rest or long rest. Creatures brought to 0 Charisma by this feature are slain.</p>
+			<p class="indent"><i><b>Gluttonous Evolution.</b></i> If Craven Edge devours enough charisma from Devour the Weak to bring the wielder to 25 Charisma, then the blade shifts form into a larger, jagged blade that seeps shadow. Until the wielder's next short rest or long rest, all attacks with this sword deal an additional 2d6 necrotic damage. After the short rest, the attuned creature must make a Constitution saving throw (DC 12) or have the now-hungry weapon, energy spent, devour the wielder's soul, causing instant death.</p>
+			<p class="indent"><i><b>Personality.</b> Craven Edge</i> is cold, vicious, and seeks violence at any opportunity. It wishes to be used by merciless creatures who will feed it when ordered to.</p>
+		</description>
+		<setters>
+			<set name="keywords">greatsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="greatsword">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">3</set>
+			<set name="weapon">Greatsword</set>
+		</setters>
+	</element>	
 
 <!-- Inescapable Lash -->
 	<element name="Inescapable Lash" type="Magic Item" source="Tal'Dorei Campaign Setting Reborn" id="ID_TALDOREI_CR_MAGIC_ITEM_INESCAPABLE_LASH">
