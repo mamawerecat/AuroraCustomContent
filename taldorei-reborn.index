@@ -38,7 +38,7 @@
 	
 		<!--Magic Items-->
 		<file name="items-armor.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/critcal-role-taldorei-campaign-setting-reborn/items-armor.xml" />
-		<file name="items-weapons.xml" url="https://github.com/Santazma/AuroraCustomContent/blob/patch-1/critcal-role-taldorei-campaign-setting-reborn/items-weapons.xml" />
+		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/Santazma/AuroraCustomContent/patch-1/critcal-role-taldorei-campaign-setting-reborn/items-weapons.xml" />
 		<file name="items-wonderous.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/critcal-role-taldorei-campaign-setting-reborn/items-wonderous.xml" />
 
 		<!-- Misc -->
