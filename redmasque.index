@@ -17,5 +17,6 @@
 		<file name="race-bloodblessed.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Red%20Masque%20Campaign/race-bloodblessed.xml" />
 		<file name="race-squirrelfolk.index" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Red%20Masque%20Campaign/race-squirrelfolk.xml" />
 		<file name="race-valkori.index" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Red%20Masque%20Campaign/race-valkori.xml" />
+		<file name="additional-resistances-immunities.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/additional-resistances-immunities.xml" />
 	</files>
 </index>
