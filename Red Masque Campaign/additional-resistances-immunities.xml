@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Additional Resistances Immunities</name>
+		<update version="0.0.1">
+			<file name="additional-resistances-immunities.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/additional-resistances-immunities.xml" />
+		</update>
+	</info>
+
+<!--Resistances-->	
+	<!-- ACID -->
+		<element name="Resistance (Acid)" type="Item" source="Internal" id="ID_BTC_ITEM_RESISTANCE_ACID">
+			<description>
+				<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+				<p>You have resistance to acid damage.</p>
+			</description>
+			<setters>
+				<set name="category">Additional Feature</set>
+				<set name="slot">misc</set>
+				<set name="inventory-hidden">true</set>
+			</setters>
+			<rules>
+				<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+			</rules>
+		</element>
+	<!-- BLUDGEONING -->
+		<element name="Resistance (Bludgeoning)" type="Item" source="Internal" id="ID_BTC_ITEM_RESISTANCE_BLUDGEONING">
+			<description>
+				<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+				<p>You have resistance to bludgeoning damage.</p>
+			</description>
+			<setters>
+				<set name="category">Additional Feature</set>
+				<set name="slot">misc</set>
+				<set name="inventory-hidden">true</set>
+			</setters>
+			<rules>
+				<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+			</rules>
+		</element>
+	<!-- COLD -->
+		<element name="Resistance (Cold)" type="Item" source="Internal" id="ID_BTC_ITEM_RESISTANCE_COLD">
+			<description>
+				<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+				<p>You have resistance to cold damage.</p>
+			</description>
+			<setters>
+				<set name="category">Additional Feature</set>
+				<set name="slot">misc</set>
+				<set name="inventory-hidden">true</set>
+			</setters>
+			<rules>
+				<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+			</rules>
+		</element>
+	<!-- FIRE -->
+		<element name="Resistance (Fire)" type="Item" source="Internal" id="ID_BTC_ITEM_RESISTANCE_FIRE">
+			<description>
+				<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+				<p>You have resistance to fire damage.</p>
+			</description>
+			<setters>
+				<set name="category">Additional Feature</set>
+				<set name="slot">misc</set>
+				<set name="inventory-hidden">true</set>
+			</setters>
+			<rules>
+				<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+			</rules>
+		</element>
+	<!-- FORCE -->
+		<element name="Resistance (Force)" type="Item" source="Internal" id="ID_BTC_ITEM_RESISTANCE_FORCE">
+			<description>
+				<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+				<p class="indent">You have resistance to force damage.</p>
+			</description>
+			<setters>
+				<set name="category">Additional Feature</set>
+				<set name="slot">misc</set>
+				<set name="inventory-hidden">true</set>
+			</setters>
+			<rules>
+				<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FORCE" />
+			</rules>
+		</element>
+	<!-- LIGHTNING -->
+		<element name="Resistance (Lightning)" type="Item" source="Internal" id="ID_BTC_ITEM_RESISTANCE_LIGHTNING">
+			<description>
+				<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+				<p class="indent">You have resistance to lightning damage.</p>
+			</description>
+			<setters>
+				<set name="category">Additional Feature</set>
+				<set name="slot">misc</set>
+				<set name="inventory-hidden">true</set>
+			</setters>
+			<rules>
+				<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+			</rules>
+		</element>
+	<!-- NECROTIC -->
+		<element name="Resistance (Necrotic)" type="Item" source="Internal" id="ID_BTC_ITEM_RESISTANCE_NECROTIC">
+			<description>
+				<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+				<p class="indent">You have resistance to necrotic damage.</p>
+			</description>
+			<setters>
+				<set name="category">Additional Feature</set>
+				<set name="slot">misc</set>
+				<set name="inventory-hidden">true</set>
+			</setters>
+			<rules>
+				<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC"/>
+			</rules>
+		</element>
+	<!-- PIERCING -->
+		<element name="Resistance (Piercing)" type="Item" source="Internal" id="ID_BTC_ITEM_RESISTANCE_PIERCING">
+			<description>
+				<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+				<p class="indent">You have resistance to piercing damage.</p>
+			</description>
+			<setters>
+				<set name="category">Additional Feature</set>
+				<set name="slot">misc</set>
+				<set name="inventory-hidden">true</set>
+			</setters>
+			<rules>
+				<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
+			</rules>
+		</element>
+	<!-- POISION -->
+		<element name="Resistance (Poison)" type="Item" source="Internal" id="ID_BTC_ITEM_RESISTANCE_POISON">
+			<description>
+				<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+				<p>You have resistance to poison damage.</p>
+			</description>
+			<setters>
+				<set name="category">Additional Feature</set>
+				<set name="slot">misc</set>
+				<set name="inventory-hidden">true</set>
+			</setters>
+			<rules>
+				<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+			</rules>
+		</element>
+	<!-- PSYCHIC -->
+		<element name="Resistance (Psychic)" type="Item" source="Internal" id="ID_BTC_ITEM_RESISTANCE_PSYCHIC">
+			<description>
+				<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+				<p class="indent">You have resistance to psychic damage.</p>
+			</description>
+			<setters>
+				<set name="category">Additional Feature</set>
+				<set name="slot">misc</set>
+				<set name="inventory-hidden">true</set>
+			</setters>
+			<rules>
+				<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_PSYCHIC" />
+			</rules>
+		</element>
+	<!-- RADIANT -->
+		<element name="Resistance (Radiant)" type="Item" source="Internal" id="ID_BTC_ITEM_RESISTANCE_RADIANT">
+			<description>
+				<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+				<p class="indent">You have resistance to radiant damage.</p>
+			</description>
+			<setters>
+				<set name="category">Additional Feature</set>
+				<set name="slot">misc</set>
+				<set name="inventory-hidden">true</set>
+			</setters>
+			<rules>
+				<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+			</rules>
+		</element>
+	<!-- SLASHING -->
+		<element name="Resistance (Slashing)" type="Item" source="Internal" id="ID_BTC_ITEM_RESISTANCE_SLASHING">
+			<description>
+				<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+				<p class="indent">You have resistance to slashing damage.</p>
+			</description>
+			<setters>
+				<set name="category">Additional Feature</set>
+				<set name="slot">misc</set>
+				<set name="inventory-hidden">true</set>
+			</setters>
+			<rules>
+				<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
+			</rules>
+		</element>
+	<!-- THUNDER -->
+		<element name="Resistance (Thunder)" type="Item" source="Internal" id="ID_BTC_ITEM_RESISTANCE_THUNDER">
+			<description>
+				<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+				<p class="indent">You have resistance to thunder damage.</p>
+			</description>
+			<setters>
+				<set name="category">Additional Feature</set>
+				<set name="slot">misc</set>
+				<set name="inventory-hidden">true</set>
+			</setters>
+			<rules>
+				<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+			</rules>
+		</element>
+	
+
+<!--Immunities-->
+	<!-- ACID -->
+		<element name="Immunity (Acid)" type="Item" source="Internal" id="ID_BTC_ITEM_IMMUNITY_ACID">
+			<description>
+				<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+				<p class="indent">You have immunity to acid damage.</p>
+			</description>
+			<setters>
+				<set name="category">Additional Feature</set>
+				<set name="slot">misc</set>
+				<set name="inventory-hidden">true</set>
+			</setters>
+			<rules>
+				<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_ACID" />
+			</rules>
+		</element>
+	<!-- BLUDGEONING -->
+		<element name="Immunity (Bludgeoning)" type="Item" source="Internal" id="ID_BTC_ITEM_IMMUNITY_BLUDGEONING">
+			<description>
+				<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+				<p class="indent">You have immunity to bludgeoning damage.</p>
+			</description>
+			<setters>
+				<set name="category">Additional Feature</set>
+				<set name="slot">misc</set>
+				<set name="inventory-hidden">true</set>
+			</setters>
+			<rules>
+				<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_BLUDGEONING" />
+			</rules>
+		</element>
+	<!-- COLD -->
+		<element name="Immunity (Cold)" type="Item" source="Internal" id="ID_BTC_ITEM_IMMUNITY_COLD">
+			<description>
+				<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+				<p class="indent">You have immunity to cold damage.</p>
+			</description>
+			<setters>
+				<set name="category">Additional Feature</set>
+				<set name="slot">misc</set>
+				<set name="inventory-hidden">true</set>
+			</setters>
+			<rules>
+				<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_COLD" />
+			</rules>
+		</element>
+	<!-- FIRE -->
+		<element name="Immunity (Fire)" type="Item" source="Internal" id="ID_BTC_ITEM_IMMUNITY_FIRE">
+			<description>
+				<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+				<p class="indent">You have immunity to fire damage.</p>
+			</description>
+			<setters>
+				<set name="category">Additional Feature</set>
+				<set name="slot">misc</set>
+				<set name="inventory-hidden">true</set>
+			</setters>
+			<rules>
+				<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FIRE" />
+			</rules>
+		</element>
+	<!-- FORCE -->
+		<element name="Immunity (Force)" type="Item" source="Internal" id="ID_BTC_ITEM_IMMUNITY_FORCE">
+			<description>
+				<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+				<p class="indent">You have immunity to force damage.</p>
+			</description>
+			<setters>
+				<set name="category">Additional Feature</set>
+				<set name="slot">misc</set>
+				<set name="inventory-hidden">true</set>
+			</setters>
+			<rules>
+				<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FORCE" />
+			</rules>
+		</element>
+	<!-- LIGHTNING -->
+		<element name="Immunity (Lightning)" type="Item" source="Internal" id="ID_BTC_ITEM_IMMUNITY_LIGHTNING">
+			<description>
+				<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+				<p class="indent">You have immunity to lightning damage.</p>
+			</description>
+			<setters>
+				<set name="category">Additional Feature</set>
+				<set name="slot">misc</set>
+				<set name="inventory-hidden">true</set>
+			</setters>
+			<rules>
+				<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_LIGHTNING" />
+			</rules>
+		</element>
+	<!-- NECROTIC -->
+		<element name="Immunity (Necrotic)" type="Item" source="Internal" id="ID_BTC_ITEM_IMMUNITY_NECROTIC">
+			<description>
+				<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+				<p class="indent">You have immunity to necrotic damage.</p>
+			</description>
+			<setters>
+				<set name="category">Additional Feature</set>
+				<set name="slot">misc</set>
+				<set name="inventory-hidden">true</set>
+			</setters>
+			<rules>
+				<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_NECROTIC" />
+			</rules>
+		</element>
+	<!-- PIERCING -->
+		<element name="Immunity (Piercing)" type="Item" source="Internal" id="ID_BTC_ITEM_IMMUNITY_PIERCING">
+			<description>
+				<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+				<p class="indent">You have immunity to piercing damage.</p>
+			</description>
+			<setters>
+				<set name="category">Additional Feature</set>
+				<set name="slot">misc</set>
+				<set name="inventory-hidden">true</set>
+			</setters>
+			<rules>
+				<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_PIERCING" />
+			</rules>
+		</element>
+	<!-- POISON -->
+		<element name="Immunity (Poison)" type="Item" source="Internal" id="ID_BTC_ITEM_IMMUNITY_POISON">
+			<description>
+				<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+				<p class="indent">You have immunity to poison damage.</p>
+			</description>
+			<setters>
+				<set name="category">Additional Feature</set>
+				<set name="slot">misc</set>
+				<set name="inventory-hidden">true</set>
+			</setters>
+			<rules>
+				<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
+			</rules>
+		</element>
+	<!-- PSYCHIC -->
+		<element name="Immunity (Psychic)" type="Item" source="Internal" id="ID_BTC_ITEM_IMMUNITY_PSYCHIC">
+			<description>
+				<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+				<p class="indent">You have immunity to psychic damage.</p>
+			</description>
+			<setters>
+				<set name="category">Additional Feature</set>
+				<set name="slot">misc</set>
+				<set name="inventory-hidden">true</set>
+			</setters>
+			<rules>
+				<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_PSYCHIC" />
+			</rules>
+		</element>
+	<!-- RADIANT -->
+		<element name="Immunity (Radiant)" type="Item" source="Internal" id="ID_BTC_ITEM_IMMUNITY_RADIANT">
+			<description>
+				<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+				<p class="indent">You have immunity to radiant damage.</p>
+			</description>
+			<setters>
+				<set name="category">Additional Feature</set>
+				<set name="slot">misc</set>
+				<set name="inventory-hidden">true</set>
+			</setters>
+			<rules>
+				<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_RADIANT" />
+			</rules>
+		</element>
+	<!-- SLASHING -->
+		<element name="Immunity (Slashing)" type="Item" source="Internal" id="ID_BTC_ITEM_IMMUNITY_SLASHING">
+			<description>
+				<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+				<p class="indent">You have immunity to slashing damage.</p>
+			</description>
+			<setters>
+				<set name="category">Additional Feature</set>
+				<set name="slot">misc</set>
+				<set name="inventory-hidden">true</set>
+			</setters>
+			<rules>
+				<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_SLASHING" />
+			</rules>
+		</element>
+	<!-- THUNDER -->
+		<element name="Immunity (Thunder)" type="Item" source="Internal" id="ID_BTC_ITEM_IMMUNITY_THUNDER">
+			<description>
+				<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+				<p class="indent">You have immunity to thunder damage.</p>
+			</description>
+			<setters>
+				<set name="category">Additional Feature</set>
+				<set name="slot">misc</set>
+				<set name="inventory-hidden">true</set>
+			</setters>
+			<rules>
+				<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_THUNDER" />
+			</rules>
+		</element>
+
+</elements>
