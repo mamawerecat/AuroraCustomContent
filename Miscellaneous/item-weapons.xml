@@ -2,12 +2,12 @@
 <elements>
     <info>
         <name>Misc Weapons</name>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="item-weapons.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Miscellaneous/item-weapons.xml" />
         </update>
     </info>
     
-    <element name="Kiss of the Sea" type="Magic Item" source="Magwa’s Magic Item Compendium" id="ID_MMIC_MAGIC_ITEM_KISS_OF_THE_SEA">
+    	<element name="Kiss of the Sea" type="Magic Item" source="Magwa’s Magic Item Compendium" id="ID_MMIC_MAGIC_ITEM_KISS_OF_THE_SEA">
 		<description>
 			<p>Appears to be a handle of a whip, with runes carved along the side.</p>
 			<p class="indent">As part of your action you speak a command word to make the whip of crystal clear water extend outward from the handle. The whip stays extended until you speak the command word again, or drop it.</p>
@@ -23,7 +23,32 @@
 			<set name="attunement">true</set>
 		</setters>
 	</element>
-    <element name="Chaos Quiver" type="Magic Item" source="Unknown" id="ID_UNKNOWN_MAGIC_ITEM_CHAOS_QUIVER">
+
+	<element name="Chaos Quiver" type="Magic Item" source="Unknown" id="ID_UNKNOWN_MAGIC_ITEM_CHAOS_QUIVER">
+		<description>
+			<p>On the first attack of your turn, you pull a random magic arrow from the quiver. Arrow is chosen based upon a d4 roll. Chaos Quiver has 5 charges that reset each day at dawn. </p>
+			<p class="indent">Second attack also yields non-magical arrows.</p>
+			<h5>Arrow Type</h5>
+			<table>
+				<thead>
+					<tr><td class="col-10">d6</td><td>Arrow</td></tr>
+				</thead>
+				<tr><td>1</td><td><b>Angry Hornet</b> - This black ammunition has yellow fletching or yellow paint. When you fire this magic ammunition, it makes an angry buzzing sound and multiplies in flight. As it flies, 2d4 identical pieces of ammunition magically appear around it, all speeding toward your target. Roll separate attack rolls for each additional arrow or bullet. Duplicate ammunition disappears after a hit or miss. If the Angry Hornet and all its duplicates miss, it remains magical and can be fired again. Otherwise, it is destroyed.</td></tr>
+				<tr><td>2</td><td><b>Arrow of Unpleasant Herbs</b> - This arrow's tip is filled with magically perserved, poisonous herbs. When a creature takes damage from this arrow, the arrowhead breaks releasing the herbs. The creature must succeed on a DC 15 Constitution save or be incapacitated until the end of its next turn as it retches and reels from the poison.</td></tr>
+				<tr><td>3</td><td><b>Enraging Ammunition</b> - When you hit a creature with a ranged attack using this magical ammunition, the target must succeed on a DC 13 Wisdom saving throw or become enraged for 1 minute. On its turn, an enraged creature moves toward you by the most direct route, trying to get within 5 feet of you. It doesn't avoid opportunity attacks, but it moves around or avoids damaging terrain, such as lava or a pit. If the enraged creature is within 5 feet of you, it attacks you. An enraged creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</td></tr>
+				<tr><td>4</td><td><b>Ensnaring Ammunition</b> - When you hit a creature with a ranged attack using this magical ammunition, the target takes only half the damage from the attack, and the target is restrained as the ammunition bursts into entangling strands that wrap around it. As an action, the restrained target can make a DC 13 Strength check, bursting the bonds on a success. The strands can also be attacked and destroyed (AC 10; hp 5; immunity to bludgeoning, poison, and psychic damage).</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	
+	<element name="Chaos Quiver (Upgraded)" type="Magic Item" source="Unknown" id="ID_UNKNOWN_MAGIC_ITEM_CHAOS_QUIVER_UPGRADED">
 		<description>
 			<p>On the first attack of your turn, you pull a random magic arrow from the quiver. Arrow is chosen based upon a d6 roll. Chaos Quiver has 5 charges that reset each day at dawn. </p>
 			<p class="indent">Second attack also yields non-magical arrows.</p>
