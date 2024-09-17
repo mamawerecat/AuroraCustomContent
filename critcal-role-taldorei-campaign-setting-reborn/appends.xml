@@ -32,7 +32,7 @@
 	        <append id="ID_WOTC_PHB_WEAPON_CROSSBOW_HAND">
 	        	<supports>ID_INTERNAL_WEAPON_GROUP_HAND_CROSSBOWS</supports>
 	        </append>
-	<element name="Weapon Group (One Handed Melee)" type="Weapon Group" source="Vault of Magic" id="ID_KBP_VOM_WEAPON_GROUP_ONE_HANDED_MELEE" />
+	<element name="Weapon Group (One Handed Melee)" type="Weapon Group" source="Internal" id="ID_KBP_VOM_WEAPON_GROUP_ONE_HANDED_MELEE" />
 	        <append id="ID_WOTC_PHB_WEAPON_BATTLEAXE">
 	        	<supports>ID_KBP_VOM_WEAPON_GROUP_ONE_HANDED_MELEE</supports>
 	        </append>
@@ -96,7 +96,7 @@
 			<append id="ID_WOTC_PHB_WEAPON_WHIP">
 	        	<supports>ID_KBP_VOM_WEAPON_GROUP_ONE_HANDED_MELEE</supports>
 	        </append>
-	<element name="Weapon Group (Melee Piercing Damage)" type="Weapon Group" source="Vault of Magic" id="ID_KBP_VOM_WEAPON_GROUP_MELEE_PIERCING" />
+	<element name="Weapon Group (Melee Piercing Damage)" type="Weapon Group" source="Internal" id="ID_KBP_VOM_WEAPON_GROUP_MELEE_PIERCING" />
 			<append id="ID_WOTC_PHB_WEAPON_DAGGER">
 	        	<supports>ID_KBP_VOM_WEAPON_GROUP_MELEE_PIERCING</supports>
 	        </append>
