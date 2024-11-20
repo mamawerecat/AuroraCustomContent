@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Misc Weapons</name>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="item-weapons.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Miscellaneous/item-weapons.xml" />
         </update>
     </info>
@@ -24,7 +24,7 @@
 		</setters>
 	</element>
 
-	<element name="Chaos Quiver" type="Magic Item" source="Unknown" id="ID_UNKNOWN_MAGIC_ITEM_CHAOS_QUIVER">
+	<element name="Chaos Quiver" type="Magic Item" source="Bohemian Trash Collective" id="ID_BTC_RMC_MAGIC_ITEM_CHAOS_QUIVER">
 		<description>
 			<p>On the first attack of your turn, you pull a random magic arrow from the quiver. Arrow is chosen based upon a d4 roll. Chaos Quiver has 5 charges that reset each day at dawn. </p>
 			<p class="indent">Second attack also yields non-magical arrows.</p>
@@ -48,7 +48,7 @@
 		</setters>
 	</element>
 	
-	<element name="Chaos Quiver (Upgraded)" type="Magic Item" source="Unknown" id="ID_UNKNOWN_MAGIC_ITEM_CHAOS_QUIVER_UPGRADED">
+	<element name="Chaos Quiver (Upgraded)" type="Magic Item" source="Bohemian Trash Collective" id="ID_BTC_RMC_MAGIC_ITEM_CHAOS_QUIVER_UPGRADED">
 		<description>
 			<p>On the first attack of your turn, you pull a random magic arrow from the quiver. Arrow is chosen based upon a d6 roll. Chaos Quiver has 5 charges that reset each day at dawn. </p>
 			<p class="indent">Second attack also yields non-magical arrows.</p>
