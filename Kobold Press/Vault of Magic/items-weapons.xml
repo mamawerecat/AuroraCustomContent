@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name></name>
-		<update version="0.1.6">
+		<update version="0.1.7">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/Kobold%20Press/Vault%20of%20Magic/items-weapons.xml" />
 		</update>
 	</info>
@@ -1285,7 +1285,7 @@
 			<set name="type" addition="hand crossbow">Weapon</set>
 			<set name="rarity">Very Rare</set>
 			<set name="enhancement">2</set>
-			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_CROSSBOW_HAND</set>
+			<set name="weapon">Hand Crossbow</set>
 			<set name="attunement">true</set>
 		</setters>
 	</element>
